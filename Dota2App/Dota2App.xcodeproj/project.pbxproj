@@ -19,6 +19,7 @@
 		B18C9E4D164E8B5A00ADE97A /* Dota2App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B18C9E4B164E8B5A00ADE97A /* Dota2App.xcdatamodeld */; };
 		B18C9E50164E8B5A00ADE97A /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18C9E4F164E8B5A00ADE97A /* MasterViewController.m */; };
 		B18C9E53164E8B5A00ADE97A /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18C9E52164E8B5A00ADE97A /* DetailViewController.m */; };
+		B18C9E5C164E8D7A00ADE97A /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = B18C9E5B164E8D7A00ADE97A /* Hero.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		B18C9E4F164E8B5A00ADE97A /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		B18C9E51164E8B5A00ADE97A /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		B18C9E52164E8B5A00ADE97A /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		B18C9E5A164E8D7A00ADE97A /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
+		B18C9E5B164E8D7A00ADE97A /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,7 @@
 		B18C9E39164E8B5900ADE97A /* Dota2App */ = {
 			isa = PBXGroup;
 			children = (
+				B18C9E59164E8CD000ADE97A /* Core Data */,
 				B18C9E42164E8B5900ADE97A /* AppDelegate.h */,
 				B18C9E43164E8B5900ADE97A /* AppDelegate.m */,
 				B18C9E45164E8B5A00ADE97A /* MainStoryboard_iPhone.storyboard */,
@@ -96,7 +100,6 @@
 				B18C9E4F164E8B5A00ADE97A /* MasterViewController.m */,
 				B18C9E51164E8B5A00ADE97A /* DetailViewController.h */,
 				B18C9E52164E8B5A00ADE97A /* DetailViewController.m */,
-				B18C9E4B164E8B5A00ADE97A /* Dota2App.xcdatamodeld */,
 				B18C9E3A164E8B5900ADE97A /* Supporting Files */,
 			);
 			path = Dota2App;
@@ -111,6 +114,16 @@
 				B18C9E41164E8B5900ADE97A /* Dota2App-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B18C9E59164E8CD000ADE97A /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				B18C9E4B164E8B5A00ADE97A /* Dota2App.xcdatamodeld */,
+				B18C9E5A164E8D7A00ADE97A /* Hero.h */,
+				B18C9E5B164E8D7A00ADE97A /* Hero.m */,
+			);
+			name = "Core Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +194,7 @@
 				B18C9E4D164E8B5A00ADE97A /* Dota2App.xcdatamodeld in Sources */,
 				B18C9E50164E8B5A00ADE97A /* MasterViewController.m in Sources */,
 				B18C9E53164E8B5A00ADE97A /* DetailViewController.m in Sources */,
+				B18C9E5C164E8D7A00ADE97A /* Hero.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
