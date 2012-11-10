@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B17D98B3164E946C00C60B36 /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = B17D98B2164E946C00C60B36 /* Hero.m */; };
+		B17D98B6164E947900C60B36 /* Ability.m in Sources */ = {isa = PBXBuildFile; fileRef = B17D98B5164E947900C60B36 /* Ability.m */; };
 		B18C9E32164E8B5900ADE97A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C9E31164E8B5900ADE97A /* UIKit.framework */; };
 		B18C9E34164E8B5900ADE97A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C9E33164E8B5900ADE97A /* Foundation.framework */; };
 		B18C9E36164E8B5900ADE97A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C9E35164E8B5900ADE97A /* CoreGraphics.framework */; };
@@ -19,10 +21,13 @@
 		B18C9E4D164E8B5A00ADE97A /* Dota2App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B18C9E4B164E8B5A00ADE97A /* Dota2App.xcdatamodeld */; };
 		B18C9E50164E8B5A00ADE97A /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18C9E4F164E8B5A00ADE97A /* MasterViewController.m */; };
 		B18C9E53164E8B5A00ADE97A /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18C9E52164E8B5A00ADE97A /* DetailViewController.m */; };
-		B18C9E5C164E8D7A00ADE97A /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = B18C9E5B164E8D7A00ADE97A /* Hero.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B17D98B1164E946C00C60B36 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
+		B17D98B2164E946C00C60B36 /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
+		B17D98B4164E947900C60B36 /* Ability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ability.h; sourceTree = "<group>"; };
+		B17D98B5164E947900C60B36 /* Ability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ability.m; sourceTree = "<group>"; };
 		B18C9E2D164E8B5900ADE97A /* Dota2App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dota2App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B18C9E31164E8B5900ADE97A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B18C9E33164E8B5900ADE97A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -41,8 +46,6 @@
 		B18C9E4F164E8B5A00ADE97A /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		B18C9E51164E8B5A00ADE97A /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		B18C9E52164E8B5A00ADE97A /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		B18C9E5A164E8D7A00ADE97A /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
-		B18C9E5B164E8D7A00ADE97A /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,8 +123,10 @@
 			isa = PBXGroup;
 			children = (
 				B18C9E4B164E8B5A00ADE97A /* Dota2App.xcdatamodeld */,
-				B18C9E5A164E8D7A00ADE97A /* Hero.h */,
-				B18C9E5B164E8D7A00ADE97A /* Hero.m */,
+				B17D98B1164E946C00C60B36 /* Hero.h */,
+				B17D98B2164E946C00C60B36 /* Hero.m */,
+				B17D98B4164E947900C60B36 /* Ability.h */,
+				B17D98B5164E947900C60B36 /* Ability.m */,
 			);
 			name = "Core Data";
 			sourceTree = "<group>";
@@ -194,7 +199,8 @@
 				B18C9E4D164E8B5A00ADE97A /* Dota2App.xcdatamodeld in Sources */,
 				B18C9E50164E8B5A00ADE97A /* MasterViewController.m in Sources */,
 				B18C9E53164E8B5A00ADE97A /* DetailViewController.m in Sources */,
-				B18C9E5C164E8D7A00ADE97A /* Hero.m in Sources */,
+				B17D98B3164E946C00C60B36 /* Hero.m in Sources */,
+				B17D98B6164E947900C60B36 /* Ability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +322,7 @@
 				B18C9E58164E8B5A00ADE97A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

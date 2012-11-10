@@ -11,10 +11,12 @@
 
 @implementation Hero
 
-@dynamic radiant;
-@dynamic dire;
-@dynamic strength;
-@dynamic intelligence;
 @dynamic agility;
+@dynamic dire;
+@dynamic intelligence;
+@dynamic radiant;
+@dynamic strength;
+@dynamic name;
+@dynamic bio;
 
 @end

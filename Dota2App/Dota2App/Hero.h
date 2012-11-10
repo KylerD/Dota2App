@@ -12,10 +12,12 @@
 
 @interface Hero : NSManagedObject
 
-@property (nonatomic, retain) NSNumber * radiant;
-@property (nonatomic, retain) NSNumber * dire;
-@property (nonatomic, retain) NSNumber * strength;
-@property (nonatomic, retain) NSNumber * intelligence;
 @property (nonatomic, retain) NSNumber * agility;
+@property (nonatomic, retain) NSNumber * dire;
+@property (nonatomic, retain) NSNumber * intelligence;
+@property (nonatomic, retain) NSNumber * radiant;
+@property (nonatomic, retain) NSNumber * strength;
+@property (nonatomic, retain) NSString * name;
+@property (nonatomic, retain) NSString * bio;
 
 @end

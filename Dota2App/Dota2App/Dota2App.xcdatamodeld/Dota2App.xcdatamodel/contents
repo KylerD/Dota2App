@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="872" systemVersion="10K549" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Ability" representedClassName="Ability" syncable="YES">
+        <attribute name="ability" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="affects" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="damage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="radius" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="Event">
         <attribute name="timeStamp" optional="YES" attributeType="Date"/>
     </entity>
-    <entity name="Hero" syncable="YES">
+    <entity name="Hero" representedClassName="Hero" syncable="YES">
         <attribute name="agility" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="bio" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dire" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="intelligence" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="radiant" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="strength" optional="YES" attributeType="Boolean" syncable="YES"/>
     </entity>
     <elements>
         <element name="Event" positionX="261" positionY="189" width="128" height="60"/>
         <element name="Hero" positionX="160" positionY="192" width="128" height="120"/>
+        <element name="Ability" positionX="160" positionY="192" width="128" height="150"/>
     </elements>
 </model>

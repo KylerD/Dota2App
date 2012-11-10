@@ -47,6 +47,8 @@
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject)];
     self.navigationItem.rightBarButtonItem = addButton;
+    
+    items = [[NSArray alloc] initWithObjects:@"Heroes", @"Items", @"Mechanics", nil];
 }
 
 - (void)viewDidUnload
