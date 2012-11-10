@@ -21,6 +21,15 @@
 		B18C9E4D164E8B5A00ADE97A /* Dota2App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B18C9E4B164E8B5A00ADE97A /* Dota2App.xcdatamodeld */; };
 		B18C9E50164E8B5A00ADE97A /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18C9E4F164E8B5A00ADE97A /* MasterViewController.m */; };
 		B18C9E53164E8B5A00ADE97A /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18C9E52164E8B5A00ADE97A /* DetailViewController.m */; };
+		B1D6267A164EBBC300A207CD /* MockObjectGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D62679164EBBC300A207CD /* MockObjectGenerator.m */; };
+		B1D62684164EC04700A207CD /* AncientApparition.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D6267C164EC04700A207CD /* AncientApparition.png */; };
+		B1D62685164EC04700A207CD /* BountyHunter.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D6267D164EC04700A207CD /* BountyHunter.png */; };
+		B1D62686164EC04700A207CD /* Clockwerk.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D6267E164EC04700A207CD /* Clockwerk.png */; };
+		B1D62687164EC04700A207CD /* Disruptor.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D6267F164EC04700A207CD /* Disruptor.png */; };
+		B1D62688164EC04700A207CD /* Invoker.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D62680164EC04700A207CD /* Invoker.png */; };
+		B1D62689164EC04700A207CD /* NyxAssassin.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D62681164EC04700A207CD /* NyxAssassin.png */; };
+		B1D6268A164EC04700A207CD /* ShadowDemon.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D62682164EC04700A207CD /* ShadowDemon.png */; };
+		B1D6268B164EC04700A207CD /* Sniper.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D62683164EC04700A207CD /* Sniper.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +55,16 @@
 		B18C9E4F164E8B5A00ADE97A /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		B18C9E51164E8B5A00ADE97A /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		B18C9E52164E8B5A00ADE97A /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		B1D62678164EBBC300A207CD /* MockObjectGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockObjectGenerator.h; sourceTree = "<group>"; };
+		B1D62679164EBBC300A207CD /* MockObjectGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockObjectGenerator.m; sourceTree = "<group>"; };
+		B1D6267C164EC04700A207CD /* AncientApparition.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AncientApparition.png; sourceTree = "<group>"; };
+		B1D6267D164EC04700A207CD /* BountyHunter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BountyHunter.png; sourceTree = "<group>"; };
+		B1D6267E164EC04700A207CD /* Clockwerk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Clockwerk.png; sourceTree = "<group>"; };
+		B1D6267F164EC04700A207CD /* Disruptor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Disruptor.png; sourceTree = "<group>"; };
+		B1D62680164EC04700A207CD /* Invoker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Invoker.png; sourceTree = "<group>"; };
+		B1D62681164EC04700A207CD /* NyxAssassin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NyxAssassin.png; sourceTree = "<group>"; };
+		B1D62682164EC04700A207CD /* ShadowDemon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShadowDemon.png; sourceTree = "<group>"; };
+		B1D62683164EC04700A207CD /* Sniper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sniper.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +85,14 @@
 		B17D98BD164EA18000C60B36 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B1D6267C164EC04700A207CD /* AncientApparition.png */,
+				B1D6267D164EC04700A207CD /* BountyHunter.png */,
+				B1D6267E164EC04700A207CD /* Clockwerk.png */,
+				B1D6267F164EC04700A207CD /* Disruptor.png */,
+				B1D62680164EC04700A207CD /* Invoker.png */,
+				B1D62681164EC04700A207CD /* NyxAssassin.png */,
+				B1D62682164EC04700A207CD /* ShadowDemon.png */,
+				B1D62683164EC04700A207CD /* Sniper.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -82,6 +109,8 @@
 		B18C9E22164E8B5900ADE97A = {
 			isa = PBXGroup;
 			children = (
+				B1D62678164EBBC300A207CD /* MockObjectGenerator.h */,
+				B1D62679164EBBC300A207CD /* MockObjectGenerator.m */,
 				B18C9E39164E8B5900ADE97A /* Dota2App */,
 				B18C9E30164E8B5900ADE97A /* Frameworks */,
 				B18C9E2E164E8B5900ADE97A /* Products */,
@@ -200,6 +229,14 @@
 				B18C9E3E164E8B5900ADE97A /* InfoPlist.strings in Resources */,
 				B18C9E47164E8B5A00ADE97A /* MainStoryboard_iPhone.storyboard in Resources */,
 				B18C9E4A164E8B5A00ADE97A /* MainStoryboard_iPad.storyboard in Resources */,
+				B1D62684164EC04700A207CD /* AncientApparition.png in Resources */,
+				B1D62685164EC04700A207CD /* BountyHunter.png in Resources */,
+				B1D62686164EC04700A207CD /* Clockwerk.png in Resources */,
+				B1D62687164EC04700A207CD /* Disruptor.png in Resources */,
+				B1D62688164EC04700A207CD /* Invoker.png in Resources */,
+				B1D62689164EC04700A207CD /* NyxAssassin.png in Resources */,
+				B1D6268A164EC04700A207CD /* ShadowDemon.png in Resources */,
+				B1D6268B164EC04700A207CD /* Sniper.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +254,7 @@
 				B18C9E53164E8B5A00ADE97A /* DetailViewController.m in Sources */,
 				B17D98B9164EA02500C60B36 /* Hero.m in Sources */,
 				B17D98BC164EA03100C60B36 /* Ability.m in Sources */,
+				B1D6267A164EBBC300A207CD /* MockObjectGenerator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
