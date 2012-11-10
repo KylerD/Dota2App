@@ -11,13 +11,14 @@
 @interface DetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
 - (void)configureView;
+- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 @end
 
 @implementation DetailViewController
 
 @synthesize detailItem = _detailItem;
-@synthesize detailDescriptionLabel = _detailDescriptionLabel;
 @synthesize masterPopoverController = _masterPopoverController;
+@synthesize detailTableView;
 
 #pragma mark - Managing the detail item
 
@@ -38,10 +39,6 @@
 - (void)configureView
 {
     // Update the user interface for the detail item.
-
-    if (self.detailItem) {
-        self.detailDescriptionLabel.text = [self.detailItem description];
-    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -111,5 +108,34 @@
     [self.navigationItem setLeftBarButtonItem:nil animated:YES];
     self.masterPopoverController = nil;
 }
+
+#pragma mark - Table View
+
+// Customize the number of sections in the table view.
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 0;
+}
+
+// Customize the appearance of table view cells.
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"DetailCell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    [self configureCell:cell atIndexPath:indexPath];
+    return cell;
+}
+
+- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
+{
+    
+}
+
 
 @end
