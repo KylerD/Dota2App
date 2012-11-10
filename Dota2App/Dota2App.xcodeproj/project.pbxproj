@@ -1,0 +1,322 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B18C9E32164E8B5900ADE97A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C9E31164E8B5900ADE97A /* UIKit.framework */; };
+		B18C9E34164E8B5900ADE97A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C9E33164E8B5900ADE97A /* Foundation.framework */; };
+		B18C9E36164E8B5900ADE97A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C9E35164E8B5900ADE97A /* CoreGraphics.framework */; };
+		B18C9E38164E8B5900ADE97A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C9E37164E8B5900ADE97A /* CoreData.framework */; };
+		B18C9E3E164E8B5900ADE97A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B18C9E3C164E8B5900ADE97A /* InfoPlist.strings */; };
+		B18C9E40164E8B5900ADE97A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B18C9E3F164E8B5900ADE97A /* main.m */; };
+		B18C9E44164E8B5900ADE97A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B18C9E43164E8B5900ADE97A /* AppDelegate.m */; };
+		B18C9E47164E8B5A00ADE97A /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18C9E45164E8B5A00ADE97A /* MainStoryboard_iPhone.storyboard */; };
+		B18C9E4A164E8B5A00ADE97A /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18C9E48164E8B5A00ADE97A /* MainStoryboard_iPad.storyboard */; };
+		B18C9E4D164E8B5A00ADE97A /* Dota2App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B18C9E4B164E8B5A00ADE97A /* Dota2App.xcdatamodeld */; };
+		B18C9E50164E8B5A00ADE97A /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18C9E4F164E8B5A00ADE97A /* MasterViewController.m */; };
+		B18C9E53164E8B5A00ADE97A /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18C9E52164E8B5A00ADE97A /* DetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B18C9E2D164E8B5900ADE97A /* Dota2App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dota2App.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B18C9E31164E8B5900ADE97A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B18C9E33164E8B5900ADE97A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B18C9E35164E8B5900ADE97A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B18C9E37164E8B5900ADE97A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B18C9E3B164E8B5900ADE97A /* Dota2App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Dota2App-Info.plist"; sourceTree = "<group>"; };
+		B18C9E3D164E8B5900ADE97A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B18C9E3F164E8B5900ADE97A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B18C9E41164E8B5900ADE97A /* Dota2App-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dota2App-Prefix.pch"; sourceTree = "<group>"; };
+		B18C9E42164E8B5900ADE97A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B18C9E43164E8B5900ADE97A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B18C9E46164E8B5A00ADE97A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		B18C9E49164E8B5A00ADE97A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		B18C9E4C164E8B5A00ADE97A /* Dota2App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dota2App.xcdatamodel; sourceTree = "<group>"; };
+		B18C9E4E164E8B5A00ADE97A /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		B18C9E4F164E8B5A00ADE97A /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		B18C9E51164E8B5A00ADE97A /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		B18C9E52164E8B5A00ADE97A /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B18C9E2A164E8B5900ADE97A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B18C9E32164E8B5900ADE97A /* UIKit.framework in Frameworks */,
+				B18C9E34164E8B5900ADE97A /* Foundation.framework in Frameworks */,
+				B18C9E36164E8B5900ADE97A /* CoreGraphics.framework in Frameworks */,
+				B18C9E38164E8B5900ADE97A /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B18C9E22164E8B5900ADE97A = {
+			isa = PBXGroup;
+			children = (
+				B18C9E39164E8B5900ADE97A /* Dota2App */,
+				B18C9E30164E8B5900ADE97A /* Frameworks */,
+				B18C9E2E164E8B5900ADE97A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B18C9E2E164E8B5900ADE97A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B18C9E2D164E8B5900ADE97A /* Dota2App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B18C9E30164E8B5900ADE97A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B18C9E31164E8B5900ADE97A /* UIKit.framework */,
+				B18C9E33164E8B5900ADE97A /* Foundation.framework */,
+				B18C9E35164E8B5900ADE97A /* CoreGraphics.framework */,
+				B18C9E37164E8B5900ADE97A /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B18C9E39164E8B5900ADE97A /* Dota2App */ = {
+			isa = PBXGroup;
+			children = (
+				B18C9E42164E8B5900ADE97A /* AppDelegate.h */,
+				B18C9E43164E8B5900ADE97A /* AppDelegate.m */,
+				B18C9E45164E8B5A00ADE97A /* MainStoryboard_iPhone.storyboard */,
+				B18C9E48164E8B5A00ADE97A /* MainStoryboard_iPad.storyboard */,
+				B18C9E4E164E8B5A00ADE97A /* MasterViewController.h */,
+				B18C9E4F164E8B5A00ADE97A /* MasterViewController.m */,
+				B18C9E51164E8B5A00ADE97A /* DetailViewController.h */,
+				B18C9E52164E8B5A00ADE97A /* DetailViewController.m */,
+				B18C9E4B164E8B5A00ADE97A /* Dota2App.xcdatamodeld */,
+				B18C9E3A164E8B5900ADE97A /* Supporting Files */,
+			);
+			path = Dota2App;
+			sourceTree = "<group>";
+		};
+		B18C9E3A164E8B5900ADE97A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B18C9E3B164E8B5900ADE97A /* Dota2App-Info.plist */,
+				B18C9E3C164E8B5900ADE97A /* InfoPlist.strings */,
+				B18C9E3F164E8B5900ADE97A /* main.m */,
+				B18C9E41164E8B5900ADE97A /* Dota2App-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B18C9E2C164E8B5900ADE97A /* Dota2App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B18C9E56164E8B5A00ADE97A /* Build configuration list for PBXNativeTarget "Dota2App" */;
+			buildPhases = (
+				B18C9E29164E8B5900ADE97A /* Sources */,
+				B18C9E2A164E8B5900ADE97A /* Frameworks */,
+				B18C9E2B164E8B5900ADE97A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dota2App;
+			productName = Dota2App;
+			productReference = B18C9E2D164E8B5900ADE97A /* Dota2App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B18C9E24164E8B5900ADE97A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = B18C9E27164E8B5900ADE97A /* Build configuration list for PBXProject "Dota2App" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B18C9E22164E8B5900ADE97A;
+			productRefGroup = B18C9E2E164E8B5900ADE97A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B18C9E2C164E8B5900ADE97A /* Dota2App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B18C9E2B164E8B5900ADE97A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B18C9E3E164E8B5900ADE97A /* InfoPlist.strings in Resources */,
+				B18C9E47164E8B5A00ADE97A /* MainStoryboard_iPhone.storyboard in Resources */,
+				B18C9E4A164E8B5A00ADE97A /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B18C9E29164E8B5900ADE97A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B18C9E40164E8B5900ADE97A /* main.m in Sources */,
+				B18C9E44164E8B5900ADE97A /* AppDelegate.m in Sources */,
+				B18C9E4D164E8B5A00ADE97A /* Dota2App.xcdatamodeld in Sources */,
+				B18C9E50164E8B5A00ADE97A /* MasterViewController.m in Sources */,
+				B18C9E53164E8B5A00ADE97A /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B18C9E3C164E8B5900ADE97A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B18C9E3D164E8B5900ADE97A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B18C9E45164E8B5A00ADE97A /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B18C9E46164E8B5A00ADE97A /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		B18C9E48164E8B5A00ADE97A /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B18C9E49164E8B5A00ADE97A /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B18C9E54164E8B5A00ADE97A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B18C9E55164E8B5A00ADE97A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B18C9E57164E8B5A00ADE97A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dota2App/Dota2App-Prefix.pch";
+				INFOPLIST_FILE = "Dota2App/Dota2App-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B18C9E58164E8B5A00ADE97A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dota2App/Dota2App-Prefix.pch";
+				INFOPLIST_FILE = "Dota2App/Dota2App-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B18C9E27164E8B5900ADE97A /* Build configuration list for PBXProject "Dota2App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B18C9E54164E8B5A00ADE97A /* Debug */,
+				B18C9E55164E8B5A00ADE97A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B18C9E56164E8B5A00ADE97A /* Build configuration list for PBXNativeTarget "Dota2App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B18C9E57164E8B5A00ADE97A /* Debug */,
+				B18C9E58164E8B5A00ADE97A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B18C9E4B164E8B5A00ADE97A /* Dota2App.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B18C9E4C164E8B5A00ADE97A /* Dota2App.xcdatamodel */,
+			);
+			currentVersion = B18C9E4C164E8B5A00ADE97A /* Dota2App.xcdatamodel */;
+			path = Dota2App.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B18C9E24164E8B5900ADE97A /* Project object */;
+}
