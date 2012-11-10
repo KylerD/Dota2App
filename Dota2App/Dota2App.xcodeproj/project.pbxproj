@@ -63,6 +63,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B17D98BD164EA18000C60B36 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B17D98BE164EA48300C60B36 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				B18C9E45164E8B5A00ADE97A /* MainStoryboard_iPhone.storyboard */,
+				B18C9E48164E8B5A00ADE97A /* MainStoryboard_iPad.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
 		B18C9E22164E8B5900ADE97A = {
 			isa = PBXGroup;
 			children = (
@@ -94,11 +110,11 @@
 		B18C9E39164E8B5900ADE97A /* Dota2App */ = {
 			isa = PBXGroup;
 			children = (
+				B17D98BE164EA48300C60B36 /* Storyboard */,
+				B17D98BD164EA18000C60B36 /* Resources */,
 				B18C9E59164E8CD000ADE97A /* Core Data */,
 				B18C9E42164E8B5900ADE97A /* AppDelegate.h */,
 				B18C9E43164E8B5900ADE97A /* AppDelegate.m */,
-				B18C9E45164E8B5A00ADE97A /* MainStoryboard_iPhone.storyboard */,
-				B18C9E48164E8B5A00ADE97A /* MainStoryboard_iPad.storyboard */,
 				B18C9E4E164E8B5A00ADE97A /* MasterViewController.h */,
 				B18C9E4F164E8B5A00ADE97A /* MasterViewController.m */,
 				B18C9E51164E8B5A00ADE97A /* DetailViewController.h */,

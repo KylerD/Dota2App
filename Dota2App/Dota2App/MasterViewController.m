@@ -42,11 +42,6 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
-    // Set up the edit and add buttons.
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
-
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject)];
-    self.navigationItem.rightBarButtonItem = addButton;
     
     items = [[NSArray alloc] initWithObjects:@"Heroes", @"Items", @"Mechanics", nil];
 }
@@ -88,6 +83,7 @@
     }
 }
 
+#pragma mark - Table View
 // Customize the number of sections in the table view.
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -109,27 +105,13 @@
     return cell;
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // The table view should not be re-orderable.
-    return NO;
-}
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        //populate list on detail, with self.detailViewController.whatever
+        NSString *detailItem = [items objectAtIndex:indexPath.row];
+        self.detailViewController.detailItem = detailItem;
     } 
+
     
 }
 
@@ -137,9 +119,9 @@
 {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         
-        /*NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSManagedObject *selectedObject = [[self fetchedResultsController] objectAtIndexPath:indexPath];
-        [[segue destinationViewController] setDetailItem:selectedObject];*/
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+         NSString *detailItem = [items objectAtIndex:indexPath.row];
+        [[segue destinationViewController] setDetailItem:detailItem];
     }
 }
 
