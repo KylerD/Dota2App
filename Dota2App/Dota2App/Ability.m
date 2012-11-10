@@ -18,5 +18,6 @@
 @dynamic affects;
 @dynamic damage;
 @dynamic radius;
+@dynamic imagePath;
 
 @end

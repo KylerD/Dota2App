@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B17D98B3164E946C00C60B36 /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = B17D98B2164E946C00C60B36 /* Hero.m */; };
-		B17D98B6164E947900C60B36 /* Ability.m in Sources */ = {isa = PBXBuildFile; fileRef = B17D98B5164E947900C60B36 /* Ability.m */; };
+		B17D98B9164EA02500C60B36 /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = B17D98B8164EA02500C60B36 /* Hero.m */; };
+		B17D98BC164EA03100C60B36 /* Ability.m in Sources */ = {isa = PBXBuildFile; fileRef = B17D98BB164EA03100C60B36 /* Ability.m */; };
 		B18C9E32164E8B5900ADE97A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C9E31164E8B5900ADE97A /* UIKit.framework */; };
 		B18C9E34164E8B5900ADE97A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C9E33164E8B5900ADE97A /* Foundation.framework */; };
 		B18C9E36164E8B5900ADE97A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C9E35164E8B5900ADE97A /* CoreGraphics.framework */; };
@@ -24,10 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B17D98B1164E946C00C60B36 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
-		B17D98B2164E946C00C60B36 /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
-		B17D98B4164E947900C60B36 /* Ability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ability.h; sourceTree = "<group>"; };
-		B17D98B5164E947900C60B36 /* Ability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ability.m; sourceTree = "<group>"; };
+		B17D98B7164EA02500C60B36 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
+		B17D98B8164EA02500C60B36 /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
+		B17D98BA164EA03100C60B36 /* Ability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ability.h; sourceTree = "<group>"; };
+		B17D98BB164EA03100C60B36 /* Ability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ability.m; sourceTree = "<group>"; };
 		B18C9E2D164E8B5900ADE97A /* Dota2App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dota2App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B18C9E31164E8B5900ADE97A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B18C9E33164E8B5900ADE97A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -123,10 +123,10 @@
 			isa = PBXGroup;
 			children = (
 				B18C9E4B164E8B5A00ADE97A /* Dota2App.xcdatamodeld */,
-				B17D98B1164E946C00C60B36 /* Hero.h */,
-				B17D98B2164E946C00C60B36 /* Hero.m */,
-				B17D98B4164E947900C60B36 /* Ability.h */,
-				B17D98B5164E947900C60B36 /* Ability.m */,
+				B17D98B7164EA02500C60B36 /* Hero.h */,
+				B17D98B8164EA02500C60B36 /* Hero.m */,
+				B17D98BA164EA03100C60B36 /* Ability.h */,
+				B17D98BB164EA03100C60B36 /* Ability.m */,
 			);
 			name = "Core Data";
 			sourceTree = "<group>";
@@ -199,8 +199,8 @@
 				B18C9E4D164E8B5A00ADE97A /* Dota2App.xcdatamodeld in Sources */,
 				B18C9E50164E8B5A00ADE97A /* MasterViewController.m in Sources */,
 				B18C9E53164E8B5A00ADE97A /* DetailViewController.m in Sources */,
-				B17D98B3164E946C00C60B36 /* Hero.m in Sources */,
-				B17D98B6164E947900C60B36 /* Ability.m in Sources */,
+				B17D98B9164EA02500C60B36 /* Hero.m in Sources */,
+				B17D98BC164EA03100C60B36 /* Ability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

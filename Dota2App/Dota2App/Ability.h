@@ -19,5 +19,6 @@
 @property (nonatomic, retain) NSString * affects;
 @property (nonatomic, retain) NSString * damage;
 @property (nonatomic, retain) NSString * radius;
+@property (nonatomic, retain) NSString * imagePath;
 
 @end

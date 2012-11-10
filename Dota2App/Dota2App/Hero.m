@@ -18,5 +18,6 @@
 @dynamic strength;
 @dynamic name;
 @dynamic bio;
+@dynamic imagePath;
 
 @end

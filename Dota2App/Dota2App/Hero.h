@@ -19,5 +19,6 @@
 @property (nonatomic, retain) NSNumber * strength;
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSString * bio;
+@property (nonatomic, retain) NSString * imagePath;
 
 @end
