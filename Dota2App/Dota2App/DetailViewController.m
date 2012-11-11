@@ -1,4 +1,4 @@
-//
+  //
 //  DetailViewController.m
 //  Dota2App
 //
@@ -8,6 +8,7 @@
 
 #import "DetailViewController.h"
 #import "Hero.h"
+#import "AppDelegate.h"
 
 @interface DetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
@@ -25,7 +26,7 @@
 
 #pragma mark - Managing the detail item
 
-- (void)setDetailItem:(id)newDetailItem
+- (void)setDetailItem:(NSString *)newDetailItem
 {
     if (_detailItem != newDetailItem) {
         _detailItem = newDetailItem;
@@ -41,8 +42,17 @@
 
 - (void)configureView
 {
-    // Update the user interface for the detail item.
     self.title = _detailItem;
+    
+    _fetchedResultsController = [self fetchedResultsControllerWithDetailItem: _detailItem];
+    if (_managedObjectContext) {
+        NSError *error = nil;
+        if (![_fetchedResultsController performFetch:&error]) {
+            NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+        }
+        
+        [detailTableView reloadData];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -54,10 +64,11 @@
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
-{
+{   
+    AppDelegate *del = [[UIApplication sharedApplication] delegate];
+    _managedObjectContext = del.managedObjectContext;
+
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    [self configureView];
 }
 
 - (void)viewDidUnload
@@ -123,13 +134,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if (tableView == self.searchDisplayController.searchResultsTableView) {
-        return [searchResults count];
-        
-    } else {
-        return [_fetchedResultsController.fetchedObjects count];
-        
-    }
+    return [_fetchedResultsController.fetchedObjects count];
 }
 
 // Customize the appearance of table view cells.
@@ -137,63 +142,53 @@
 {
     static NSString *CellIdentifier = @"DetailCell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    UITableViewCell *cell = [detailTableView dequeueReusableCellWithIdentifier:CellIdentifier];
     [self configureCell:cell atIndexPath:indexPath];
     return cell;
 }
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
-{
-    if (detailTableView == self.searchDisplayController.searchResultsTableView) {
-        cell.textLabel.text = [searchResults objectAtIndex:indexPath.row];
-    } else {
-        Hero *hero = [_fetchedResultsController objectAtIndexPath:indexPath];
-        cell.textLabel.text = hero.name;
-    }
-    
+{ 
+    Hero *hero = [_fetchedResultsController objectAtIndexPath:indexPath];
+    cell.textLabel.text = hero.name;
 }
 
 
 #pragma mark - Fetched results controller
 
-- (NSFetchedResultsController *)fetchedResultsController
-{
-    if (_fetchedResultsController != nil) {
-        return _fetchedResultsController;
-    }
+- (NSFetchedResultsController *)fetchedResultsControllerWithDetailItem: (NSString *)detailItem {
     
+    NSString *fetchType = _detailItem;
+
     // Set up the fetched results controller.
     // Create the fetch request for the entity.
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     // Edit the entity name as appropriate.
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Event" inManagedObjectContext:self.managedObjectContext];
+    NSEntityDescription *entity;
+    if ([fetchType isEqualToString:@"Heroes"]) {
+       entity = [NSEntityDescription entityForName:@"Hero" inManagedObjectContext:self.managedObjectContext];
+        // Edit the sort key as appropriate.
+        NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:NO];
+        NSArray *sortDescriptors = [NSArray arrayWithObjects:sortDescriptor, nil];
+        
+        [fetchRequest setSortDescriptors:sortDescriptors];
+    } else {
+        return nil;
+    }
+
     [fetchRequest setEntity:entity];
     
     // Set the batch size to a suitable number.
     [fetchRequest setFetchBatchSize:20];
     
-    // Edit the sort key as appropriate.
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"timeStamp" ascending:NO];
-    NSArray *sortDescriptors = [NSArray arrayWithObjects:sortDescriptor, nil];
-    
-    [fetchRequest setSortDescriptors:sortDescriptors];
+
     
     // Edit the section name key path and cache name if appropriate.
     // nil for section name key path means "no sections".
-    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:@"Master"];
+    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:@"Detail"];
     aFetchedResultsController.delegate = self;
-    self.fetchedResultsController = aFetchedResultsController;
-    
-	NSError *error = nil;
-	if (![self.fetchedResultsController performFetch:&error]) {
-	    /*
-	     Replace this implementation with code to handle the error appropriately.
-         
-	     abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
-	     */
-	    NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-	    abort();
-	}
+    _fetchedResultsController = aFetchedResultsController;
+
     
     return _fetchedResultsController;
 }    
@@ -249,30 +244,19 @@
 }
 
 #pragma mark - Search bar
-
-- (void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
-{
-    NSPredicate *resultPredicate = [NSPredicate 
-                                    predicateWithFormat:@"name contains[cd] %@",
-                                    searchText];
+- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString*)searchString searchScope:(NSInteger)searchOption {
     
-    searchResults = [_fetchedResultsController.fetchedObjects filteredArrayUsingPredicate:resultPredicate];
-}
-
--(BOOL)searchDisplayController:(UISearchDisplayController *)controller 
-shouldReloadTableForSearchString:(NSString *)searchString
-{
-    [self filterContentForSearchText:searchString 
-                               scope:[[self.searchDisplayController.searchBar scopeButtonTitles]
-                                      objectAtIndex:[self.searchDisplayController.searchBar
-                                                     selectedScopeButtonIndex]]];
+    NSPredicate *predicate = nil;
+    predicate = [NSPredicate predicateWithFormat:@"name contains[cd] %@", searchString];
+    [_fetchedResultsController.fetchRequest setPredicate:predicate];
+    
+    NSError *error = nil;
+    if (![_fetchedResultsController performFetch:&error]) {
+        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+        abort();
+    }           
     
     return YES;
 }
-
-
-
-
-
 
 @end

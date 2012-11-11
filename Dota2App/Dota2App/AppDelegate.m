@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "MockObjectGenerator.h"
 #import "MasterViewController.h"
 
 @implementation AppDelegate
@@ -33,6 +33,10 @@
         MasterViewController *controller = (MasterViewController *)navigationController.topViewController;
 
     }
+    
+   MockObjectGenerator *generator = [[MockObjectGenerator alloc] init];
+   [generator generateRandomHeros];
+    
     return YES;
 }
 							

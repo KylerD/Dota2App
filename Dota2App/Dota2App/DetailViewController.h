@@ -13,8 +13,10 @@
     NSArray *searchResults;
 }
 
-@property (strong, nonatomic) id detailItem;
+@property (strong, nonatomic) NSString* detailItem;
 @property (nonatomic, retain) IBOutlet UITableView *detailTableView;
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+
+- (NSFetchedResultsController *)fetchedResultsControllerWithDetailItem: (NSString *)detailItem;
 @end

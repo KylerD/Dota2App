@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Hero.h"
 
 @interface MockObjectGenerator : NSObject {
     // Used to Generate some random hero names/bios/images
@@ -17,7 +18,7 @@
     NSManagedObjectContext *context;
 }
 
-- (void)createHero;
-- (void)generateRandomHero;
+
+- (void)generateRandomHeros;
 
 @end

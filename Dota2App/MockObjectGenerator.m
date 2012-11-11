@@ -10,6 +10,10 @@
 
 #import "AppDelegate.h"
 
+@interface MockObjectGenerator()
+- (void)createHero;
+@end
+
 @implementation MockObjectGenerator
 
 - (id)init {
@@ -36,7 +40,7 @@
     hero.name = [heroNames objectAtIndex:randomNameIndex];
     hero.bio = [heroBiographies objectAtIndex:randomBioIndex];
     hero.imagePath = [heroImages objectAtIndex:randomImageIndex];
-    
+      
 }
 
 - (void)generateRandomHeros {
