@@ -40,6 +40,25 @@
     hero.name = [heroNames objectAtIndex:randomNameIndex];
     hero.bio = [heroBiographies objectAtIndex:randomBioIndex];
     hero.imagePath = [heroImages objectAtIndex:randomImageIndex];
+    int typeChange = arc4random() % 2;
+    if (typeChange == 1) {
+        hero.type = @"Radiant";
+    } else {
+        hero.type = @"Dire";
+    }
+    
+    int specChange = arc4random() % 3;
+    switch (specChange) {
+        case 0:
+            hero.spec = @"Strength";
+            break;
+        case 1:
+            hero.spec = @"Agility";
+            break;
+        case 2:
+            hero.spec = @"Intellect";
+            break;
+    }
       
 }
 

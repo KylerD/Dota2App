@@ -2,7 +2,7 @@
 //  Hero.h
 //  Dota2App
 //
-//  Created by Jamie O'Hara on 10/11/2012.
+//  Created by Jamie O'Hara on 11/11/2012.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
@@ -12,13 +12,10 @@
 
 @interface Hero : NSManagedObject
 
-@property (nonatomic, retain) NSNumber * agility;
-@property (nonatomic, retain) NSNumber * dire;
-@property (nonatomic, retain) NSNumber * intelligence;
-@property (nonatomic, retain) NSNumber * radiant;
-@property (nonatomic, retain) NSNumber * strength;
-@property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSString * bio;
 @property (nonatomic, retain) NSString * imagePath;
+@property (nonatomic, retain) NSString * name;
+@property (nonatomic, retain) NSString * spec;
+@property (nonatomic, retain) NSString * type;
 
 @end

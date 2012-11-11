@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B17D98B9164EA02500C60B36 /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = B17D98B8164EA02500C60B36 /* Hero.m */; };
 		B17D98BC164EA03100C60B36 /* Ability.m in Sources */ = {isa = PBXBuildFile; fileRef = B17D98BB164EA03100C60B36 /* Ability.m */; };
 		B18C9E32164E8B5900ADE97A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C9E31164E8B5900ADE97A /* UIKit.framework */; };
 		B18C9E34164E8B5900ADE97A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C9E33164E8B5900ADE97A /* Foundation.framework */; };
@@ -30,11 +29,10 @@
 		B1D62689164EC04700A207CD /* NyxAssassin.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D62681164EC04700A207CD /* NyxAssassin.png */; };
 		B1D6268A164EC04700A207CD /* ShadowDemon.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D62682164EC04700A207CD /* ShadowDemon.png */; };
 		B1D6268B164EC04700A207CD /* Sniper.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D62683164EC04700A207CD /* Sniper.png */; };
+		B1DAD963165037EF00523981 /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DAD962165037EF00523981 /* Hero.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B17D98B7164EA02500C60B36 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
-		B17D98B8164EA02500C60B36 /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
 		B17D98BA164EA03100C60B36 /* Ability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ability.h; sourceTree = "<group>"; };
 		B17D98BB164EA03100C60B36 /* Ability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ability.m; sourceTree = "<group>"; };
 		B18C9E2D164E8B5900ADE97A /* Dota2App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dota2App.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +63,8 @@
 		B1D62681164EC04700A207CD /* NyxAssassin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NyxAssassin.png; sourceTree = "<group>"; };
 		B1D62682164EC04700A207CD /* ShadowDemon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShadowDemon.png; sourceTree = "<group>"; };
 		B1D62683164EC04700A207CD /* Sniper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sniper.png; sourceTree = "<group>"; };
+		B1DAD961165037EF00523981 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
+		B1DAD962165037EF00523981 /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,10 +168,10 @@
 			isa = PBXGroup;
 			children = (
 				B18C9E4B164E8B5A00ADE97A /* Dota2App.xcdatamodeld */,
-				B17D98B7164EA02500C60B36 /* Hero.h */,
-				B17D98B8164EA02500C60B36 /* Hero.m */,
 				B17D98BA164EA03100C60B36 /* Ability.h */,
 				B17D98BB164EA03100C60B36 /* Ability.m */,
+				B1DAD961165037EF00523981 /* Hero.h */,
+				B1DAD962165037EF00523981 /* Hero.m */,
 			);
 			name = "Core Data";
 			sourceTree = "<group>";
@@ -252,9 +252,9 @@
 				B18C9E4D164E8B5A00ADE97A /* Dota2App.xcdatamodeld in Sources */,
 				B18C9E50164E8B5A00ADE97A /* MasterViewController.m in Sources */,
 				B18C9E53164E8B5A00ADE97A /* DetailViewController.m in Sources */,
-				B17D98B9164EA02500C60B36 /* Hero.m in Sources */,
 				B17D98BC164EA03100C60B36 /* Ability.m in Sources */,
 				B1D6267A164EBBC300A207CD /* MockObjectGenerator.m in Sources */,
+				B1DAD963165037EF00523981 /* Hero.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,18 +14,15 @@
         <attribute name="timeStamp" optional="YES" attributeType="Date"/>
     </entity>
     <entity name="Hero" representedClassName="Hero" syncable="YES">
-        <attribute name="agility" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="bio" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="dire" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="imagePath" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="intelligence" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="radiant" optional="YES" attributeType="Boolean" syncable="YES"/>
-        <attribute name="strength" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="spec" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
+        <element name="Ability" positionX="160" positionY="192" width="128" height="165"/>
         <element name="Event" positionX="261" positionY="189" width="128" height="60"/>
         <element name="Hero" positionX="160" positionY="192" width="128" height="120"/>
-        <element name="Ability" positionX="160" positionY="192" width="128" height="165"/>
     </elements>
 </model>
