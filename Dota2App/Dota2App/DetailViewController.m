@@ -151,6 +151,8 @@
 { 
     Hero *hero = [_fetchedResultsController objectAtIndexPath:indexPath];
     cell.textLabel.text = hero.name;
+    NSString *subtitle = [NSString stringWithFormat:@"%@ - %@", hero.type, hero.spec];
+    cell.detailTextLabel.text = subtitle;
 }
 
 
@@ -241,22 +243,6 @@
 - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
 {
     [detailTableView endUpdates];
-}
-
-#pragma mark - Search bar
-- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString*)searchString searchScope:(NSInteger)searchOption {
-    
-    NSPredicate *predicate = nil;
-    predicate = [NSPredicate predicateWithFormat:@"name contains[cd] %@", searchString];
-    [_fetchedResultsController.fetchRequest setPredicate:predicate];
-    
-    NSError *error = nil;
-    if (![_fetchedResultsController performFetch:&error]) {
-        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-        abort();
-    }           
-    
-    return YES;
 }
 
 @end
