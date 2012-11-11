@@ -30,6 +30,7 @@
 		B1D6268A164EC04700A207CD /* ShadowDemon.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D62682164EC04700A207CD /* ShadowDemon.png */; };
 		B1D6268B164EC04700A207CD /* Sniper.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D62683164EC04700A207CD /* Sniper.png */; };
 		B1DAD963165037EF00523981 /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DAD962165037EF00523981 /* Hero.m */; };
+		B1DAD96616503F0B00523981 /* HeroCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DAD96516503F0B00523981 /* HeroCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,8 @@
 		B1D62683164EC04700A207CD /* Sniper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sniper.png; sourceTree = "<group>"; };
 		B1DAD961165037EF00523981 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
 		B1DAD962165037EF00523981 /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
+		B1DAD96416503F0B00523981 /* HeroCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroCell.h; sourceTree = "<group>"; };
+		B1DAD96516503F0B00523981 /* HeroCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +142,7 @@
 		B18C9E39164E8B5900ADE97A /* Dota2App */ = {
 			isa = PBXGroup;
 			children = (
+				B1DAD9671650440900523981 /* Custom Cells */,
 				B17D98BE164EA48300C60B36 /* Storyboard */,
 				B17D98BD164EA18000C60B36 /* Resources */,
 				B18C9E59164E8CD000ADE97A /* Core Data */,
@@ -174,6 +178,15 @@
 				B1DAD962165037EF00523981 /* Hero.m */,
 			);
 			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		B1DAD9671650440900523981 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B1DAD96416503F0B00523981 /* HeroCell.h */,
+				B1DAD96516503F0B00523981 /* HeroCell.m */,
+			);
+			name = "Custom Cells";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +268,7 @@
 				B17D98BC164EA03100C60B36 /* Ability.m in Sources */,
 				B1D6267A164EBBC300A207CD /* MockObjectGenerator.m in Sources */,
 				B1DAD963165037EF00523981 /* Hero.m in Sources */,
+				B1DAD96616503F0B00523981 /* HeroCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

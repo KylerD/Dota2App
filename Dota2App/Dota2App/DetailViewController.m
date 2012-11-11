@@ -9,6 +9,7 @@
 #import "DetailViewController.h"
 #import "Hero.h"
 #import "AppDelegate.h"
+#import "HeroCell.h"
 
 @interface DetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
@@ -24,20 +25,23 @@
 @synthesize fetchedResultsController = _fetchedResultsController;
 @synthesize managedObjectContext = _managedObjectContext;
 
+
 #pragma mark - Managing the detail item
 
 - (void)setDetailItem:(NSString *)newDetailItem
 {
     if (_detailItem != newDetailItem) {
         _detailItem = newDetailItem;
-        
-        // Update the view.
-        [self configureView];
+
     }
 
     if (self.masterPopoverController != nil) {
         [self.masterPopoverController dismissPopoverAnimated:YES];
     }        
+    
+    if (_managedObjectContext) {
+        [self configureView];
+    }
 }
 
 - (void)configureView
@@ -65,10 +69,9 @@
 
 - (void)viewDidLoad
 {   
+    [super viewDidLoad];
     AppDelegate *del = [[UIApplication sharedApplication] delegate];
     _managedObjectContext = del.managedObjectContext;
-
-    [super viewDidLoad];
 }
 
 - (void)viewDidUnload
@@ -148,11 +151,12 @@
 }
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
-{ 
+{   HeroCell *heroCell = (HeroCell *)cell;
     Hero *hero = [_fetchedResultsController objectAtIndexPath:indexPath];
-    cell.textLabel.text = hero.name;
+    heroCell.cellTitleLabel.text = hero.name;
     NSString *subtitle = [NSString stringWithFormat:@"%@ - %@", hero.type, hero.spec];
-    cell.detailTextLabel.text = subtitle;
+    heroCell.cellDetailLabel.text = subtitle;
+    heroCell.cellImage.image = [UIImage imageNamed:hero.imagePath];
 }
 
 
