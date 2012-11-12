@@ -72,6 +72,7 @@
     [super viewDidLoad];
     AppDelegate *del = [[UIApplication sharedApplication] delegate];
     _managedObjectContext = del.managedObjectContext;
+    [self configureView];
 }
 
 - (void)viewDidUnload
