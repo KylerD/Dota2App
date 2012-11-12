@@ -16,6 +16,7 @@
 
 @synthesize detailItem = _detailItem;
 @synthesize managedObjectContext = _managedObjectContext;
+@synthesize heroPortrait;
 
 
 
@@ -37,7 +38,7 @@
 
 - (void)configureView
 {
-
+    NSLog(@"%@", _detailItem);
     self.title = _detailItem.name;
     self.heroPortrait.image = [UIImage imageNamed:_detailItem.imagePath];
     
@@ -53,8 +54,8 @@
 
 - (void)viewDidLoad
 {
-    [self configureView];
     [super viewDidLoad];
+    [self configureView];
 	// Do any additional setup after loading the view.
 }
 

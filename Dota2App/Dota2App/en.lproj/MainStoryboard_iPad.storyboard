@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="10K549" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="5">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="11G56" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="5">
     <dependencies>
-        <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
         <scene sceneID="14">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="13" sceneMemberID="firstResponder"/>
                 <navigationController id="3" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="6">
                         <autoresizingMask key="autoresizingMask"/>
@@ -16,12 +15,13 @@
                         <segue destination="19" kind="relationship" relationship="rootViewController" id="25"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="13" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="448" y="-630"/>
         </scene>
+        <!--Detail View Controller - Detail-->
         <scene sceneID="16">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="15" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="" title="Detail" id="4" customClass="DetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="26">
                         <rect key="frame" x="0.0" y="64" width="703" height="704"/>
@@ -65,6 +65,7 @@
                                             <outlet property="cellDetailLabel" destination="WiT-J6-TdS" id="oEL-6R-W4Y"/>
                                             <outlet property="cellImage" destination="gji-aV-UuG" id="Mqg-mI-1iU"/>
                                             <outlet property="cellTitleLabel" destination="CdZ-OO-3RH" id="MCT-Ln-YSR"/>
+                                            <segue destination="hLG-GC-gd4" kind="push" identifier="ExtendedDetail" id="I84-Nf-ow4"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -84,6 +85,7 @@
                         <outlet property="searchDisplayController" destination="4Ew-lo-hkL" id="vZj-QW-y0p"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="15" sceneMemberID="firstResponder"/>
                 <searchDisplayController id="4Ew-lo-hkL">
                     <connections>
                         <outlet property="delegate" destination="4" id="55U-Cg-p6d"/>
@@ -95,9 +97,34 @@
             </objects>
             <point key="canvasLocation" x="448" y="248"/>
         </scene>
+        <!--Extended Detail View Controller-->
+        <scene sceneID="wvw-6G-JWZ">
+            <objects>
+                <viewController id="hLG-GC-gd4" customClass="ExtendedDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1cp-GW-8o5">
+                        <rect key="frame" x="0.0" y="64" width="703" height="704"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="No6-YF-HKf">
+                                <rect key="frame" x="18" y="22" width="356" height="400"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PVP-vL-Iyp"/>
+                    <connections>
+                        <outlet property="heroPortrait" destination="No6-YF-HKf" id="UQO-tx-EvW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b7D-oO-SYS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1273" y="238"/>
+        </scene>
+        <!--Split View Controller-->
         <scene sceneID="18">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="17" sceneMemberID="firstResponder"/>
                 <splitViewController id="5" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
@@ -107,12 +134,13 @@
                         <segue destination="42" kind="relationship" relationship="detailViewController" id="51"/>
                     </connections>
                 </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="17" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-687" y="-630"/>
         </scene>
+        <!--Master View Controller - Master-->
         <scene sceneID="24">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="23" sceneMemberID="firstResponder"/>
                 <tableViewController storyboardIdentifier="" title="Master" clearsSelectionOnViewWillAppear="NO" id="19" customClass="MasterViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="20">
                         <rect key="frame" x="0.0" y="64" width="320" height="704"/>
@@ -149,12 +177,13 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Menu" id="40"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="23" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="859" y="-631"/>
         </scene>
+        <!--Navigation Controller-->
         <scene sceneID="50">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="49" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="42" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="43">
                         <autoresizingMask key="autoresizingMask"/>
@@ -163,6 +192,7 @@
                         <segue destination="4" kind="relationship" relationship="rootViewController" id="52"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="49" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-366" y="248"/>
         </scene>
@@ -172,6 +202,12 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="detailTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="ExtendedDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ExtendedDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="heroPortrait" candidateClass="UIImageView"/>
             </relationships>
         </class>
         <class className="HeroCell" superclassName="UITableViewCell">

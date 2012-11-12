@@ -23,7 +23,7 @@
 @synthesize masterPopoverController = _masterPopoverController;
 @synthesize detailTableView;
 @synthesize fetchedResultsController = _fetchedResultsController;
-@synthesize managedObjectContext = _managedObjectContext, savedSearchTerm,extendedDetailViewController;
+@synthesize managedObjectContext = _managedObjectContext, savedSearchTerm;
 
 
 #pragma mark - Managing the detail item
@@ -72,9 +72,6 @@
     [super viewDidLoad];
     AppDelegate *del = [[UIApplication sharedApplication] delegate];
     _managedObjectContext = del.managedObjectContext;
-    
-    self.extendedDetailViewController = (ExtendedDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
-    
 
     [self configureView];
 }
@@ -252,11 +249,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        NSString *detailItem = [_fetchedResultsController objectAtIndexPath:indexPath];
-        self.extendedDetailViewController.detailItem = detailItem;
 
-    }
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -264,8 +257,9 @@
     if ([[segue identifier] isEqualToString:@"ExtendedDetail"]) {
         
         NSIndexPath *indexPath = [self.detailTableView indexPathForSelectedRow];
-        NSString *detailItem = [_fetchedResultsController objectAtIndexPath:indexPath];
-        [[segue destinationViewController] setDetailItem:detailItem];
+        Hero *detailItem = [_fetchedResultsController objectAtIndexPath:indexPath];
+        ExtendedDetailViewController *extendedDC = (ExtendedDetailViewController *)[segue destinationViewController];
+        [extendedDC setDetailItem:detailItem];
     }
 }
 

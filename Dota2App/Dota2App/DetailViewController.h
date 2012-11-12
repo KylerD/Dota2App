@@ -20,7 +20,5 @@
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain) NSString *savedSearchTerm;
 
-@property (retain, nonatomic) ExtendedDetailViewController *extendedDetailViewController;
-
 - (NSFetchedResultsController *)fetchedResultsControllerWithDetailItem: (NSString *)detailItem;
 @end

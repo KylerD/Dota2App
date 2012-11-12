@@ -111,8 +111,6 @@
         NSString *detailItem = [items objectAtIndex:indexPath.row];
         self.detailViewController.detailItem = detailItem;
     } 
-
-    
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
