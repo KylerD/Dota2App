@@ -23,7 +23,7 @@
 @synthesize masterPopoverController = _masterPopoverController;
 @synthesize detailTableView;
 @synthesize fetchedResultsController = _fetchedResultsController;
-@synthesize managedObjectContext = _managedObjectContext;
+@synthesize managedObjectContext = _managedObjectContext, savedSearchTerm;
 
 
 #pragma mark - Managing the detail item
@@ -192,8 +192,9 @@
     
     // Edit the section name key path and cache name if appropriate.
     // nil for section name key path means "no sections".
-    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:@"Detail"];
+    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
     aFetchedResultsController.delegate = self;
+
     _fetchedResultsController = aFetchedResultsController;
 
     
@@ -250,4 +251,42 @@
     [detailTableView endUpdates];
 }
 
+- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
+{
+    [self filterContentForSearchText:[self.searchDisplayController.searchBar text] scope:nil];
+    
+    return YES;
+}
+- (void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
+{
+    self.savedSearchTerm = searchText;
+    
+    freshData = NO;
+    
+    if (![searchText isEqualToString:@""])
+    {
+     
+        NSPredicate *predicate =[NSPredicate predicateWithFormat:@"name contains[cd] %@", searchText];
+        [_fetchedResultsController.fetchRequest setPredicate:predicate];
+
+    }
+    else
+    {
+        //NSPredicate *predicate =[NSPredicate predicateWithFormat:@"All"];
+        [_fetchedResultsController.fetchRequest setPredicate:nil];
+    }
+    
+    NSError *error = nil;
+    if (![[self fetchedResultsController] performFetch:&error]) {
+        // Handle error
+        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+        abort();  // Fail
+    }
+    
+    [self.detailTableView reloadData];
+    
+    //    [searchBar resignFirstResponder];
+    //    [_shadeView setAlpha:0.0f];
+    
+}
 @end

@@ -10,12 +10,15 @@
 
 @interface DetailViewController : UIViewController <UISplitViewControllerDelegate, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, UISearchDisplayDelegate, NSFetchedResultsControllerDelegate> {
     UITableView *detailTableView;
+    BOOL freshData;
 }
 
 @property (strong, nonatomic) NSString* detailItem;
 @property (nonatomic, retain) IBOutlet UITableView *detailTableView;
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain) NSString *savedSearchTerm;
+
 
 
 - (NSFetchedResultsController *)fetchedResultsControllerWithDetailItem: (NSString *)detailItem;
