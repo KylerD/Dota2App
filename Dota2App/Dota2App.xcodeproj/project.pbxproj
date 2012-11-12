@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C493A691651098200A5690B /* ExtendedDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C493A681651098200A5690B /* ExtendedDetailViewController.m */; };
 		B17D98BC164EA03100C60B36 /* Ability.m in Sources */ = {isa = PBXBuildFile; fileRef = B17D98BB164EA03100C60B36 /* Ability.m */; };
 		B18C9E32164E8B5900ADE97A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C9E31164E8B5900ADE97A /* UIKit.framework */; };
 		B18C9E34164E8B5900ADE97A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C9E33164E8B5900ADE97A /* Foundation.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C493A671651098200A5690B /* ExtendedDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendedDetailViewController.h; sourceTree = "<group>"; };
+		0C493A681651098200A5690B /* ExtendedDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendedDetailViewController.m; sourceTree = "<group>"; };
 		B17D98BA164EA03100C60B36 /* Ability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ability.h; sourceTree = "<group>"; };
 		B17D98BB164EA03100C60B36 /* Ability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ability.m; sourceTree = "<group>"; };
 		B18C9E2D164E8B5900ADE97A /* Dota2App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dota2App.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,6 +155,8 @@
 				B18C9E4F164E8B5A00ADE97A /* MasterViewController.m */,
 				B18C9E51164E8B5A00ADE97A /* DetailViewController.h */,
 				B18C9E52164E8B5A00ADE97A /* DetailViewController.m */,
+				0C493A671651098200A5690B /* ExtendedDetailViewController.h */,
+				0C493A681651098200A5690B /* ExtendedDetailViewController.m */,
 				B18C9E3A164E8B5900ADE97A /* Supporting Files */,
 			);
 			path = Dota2App;
@@ -269,6 +274,7 @@
 				B1D6267A164EBBC300A207CD /* MockObjectGenerator.m in Sources */,
 				B1DAD963165037EF00523981 /* Hero.m in Sources */,
 				B1DAD96616503F0B00523981 /* HeroCell.m in Sources */,
+				0C493A691651098200A5690B /* ExtendedDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

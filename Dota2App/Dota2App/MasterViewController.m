@@ -41,6 +41,8 @@
 	// Do any additional setup after loading the view, typically from a nib.
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
     
+
+    
     items = [[NSArray alloc] initWithObjects:@"Heroes", @"Items", @"Mechanics", nil];
 }
 

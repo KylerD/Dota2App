@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <CoreData/CoreData.h>
+@class ExtendedDetailViewController;
 @interface DetailViewController : UIViewController <UISplitViewControllerDelegate, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, UISearchDisplayDelegate, NSFetchedResultsControllerDelegate> {
     UITableView *detailTableView;
     BOOL freshData;
@@ -19,7 +20,7 @@
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain) NSString *savedSearchTerm;
 
-
+@property (retain, nonatomic) ExtendedDetailViewController *extendedDetailViewController;
 
 - (NSFetchedResultsController *)fetchedResultsControllerWithDetailItem: (NSString *)detailItem;
 @end

@@ -10,7 +10,7 @@
 #import "Hero.h"
 #import "AppDelegate.h"
 #import "HeroCell.h"
-
+#import "ExtendedDetailViewController.h"
 @interface DetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
 - (void)configureView;
@@ -23,7 +23,7 @@
 @synthesize masterPopoverController = _masterPopoverController;
 @synthesize detailTableView;
 @synthesize fetchedResultsController = _fetchedResultsController;
-@synthesize managedObjectContext = _managedObjectContext, savedSearchTerm;
+@synthesize managedObjectContext = _managedObjectContext, savedSearchTerm,extendedDetailViewController;
 
 
 #pragma mark - Managing the detail item
@@ -72,6 +72,10 @@
     [super viewDidLoad];
     AppDelegate *del = [[UIApplication sharedApplication] delegate];
     _managedObjectContext = del.managedObjectContext;
+    
+    self.extendedDetailViewController = (ExtendedDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    
+
     [self configureView];
 }
 
@@ -243,6 +247,25 @@
             [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
             [tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath]withRowAnimation:UITableViewRowAnimationFade];
             break;
+    }
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        NSString *detailItem = [_fetchedResultsController objectAtIndexPath:indexPath];
+        self.extendedDetailViewController.detailItem = detailItem;
+
+    }
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"ExtendedDetail"]) {
+        
+        NSIndexPath *indexPath = [self.detailTableView indexPathForSelectedRow];
+        NSString *detailItem = [_fetchedResultsController objectAtIndexPath:indexPath];
+        [[segue destinationViewController] setDetailItem:detailItem];
     }
 }
 
