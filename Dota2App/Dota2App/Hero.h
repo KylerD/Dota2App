@@ -15,8 +15,8 @@
 @property (nonatomic, retain) NSString * bio;
 @property (nonatomic, retain) NSString * detailImage;
 @property (nonatomic, retain) NSString * name;
-@property (nonatomic, retain) NSString * spec;
-@property (nonatomic, retain) NSString * type;
+@property (nonatomic, retain) NSString * attribute;
+@property (nonatomic, retain) NSString * faction;
 @property (nonatomic, retain) NSString * iconImage;
 
 @end

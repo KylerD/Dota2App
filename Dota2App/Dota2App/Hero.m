@@ -14,8 +14,8 @@
 @dynamic bio;
 @dynamic detailImage;
 @dynamic name;
-@dynamic spec;
-@dynamic type;
+@dynamic attribute;
+@dynamic faction;
 @dynamic iconImage;
 
 @end

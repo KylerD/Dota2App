@@ -172,12 +172,19 @@
 
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
-{   HeroCell *heroCell = (HeroCell *)cell;
+{   //Fetch the hero
+    HeroCell *heroCell = (HeroCell *)cell;
     Hero *hero = [fetchedRC objectAtIndexPath:indexPath];
+    //Fetch the hero data
+    NSString *subtitle = [NSString stringWithFormat:@"%@ - %@", hero.faction, hero.attribute];
+    NSString *factionImageName = [NSString stringWithFormat:@"%@.png", hero.faction];
+    NSString *attributeImageName = [NSString stringWithFormat:@"%@.png", hero.attribute];
+    //Configure the cell
     heroCell.cellTitleLabel.text = hero.name;
-    NSString *subtitle = [NSString stringWithFormat:@"%@ - %@", hero.type, hero.spec];
     heroCell.cellDetailLabel.text = subtitle;
     heroCell.cellImage.image = [UIImage imageNamed:hero.detailImage];
+    heroCell.factionImage.image = [UIImage imageNamed:factionImageName];
+    heroCell.attributeImage.image = [UIImage imageNamed:attributeImageName];
 }
 
 #pragma mark - NSFetchedRC Delegate

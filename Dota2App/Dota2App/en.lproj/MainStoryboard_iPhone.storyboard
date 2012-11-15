@@ -55,40 +55,49 @@
                             </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HeroCell" rowHeight="90" id="R9r-5y-kx4" customClass="HeroCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HeroCell" rowHeight="90" id="R9r-5y-kx4" customClass="HeroCell">
                                 <rect key="frame" x="0.0" y="66" width="320" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="89"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EhS-WK-OUu">
-                                            <rect key="frame" x="20" y="20" width="150" height="36"/>
+                                            <rect key="frame" x="20" y="20" width="168" height="36"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Y5z-zJ-Ezt">
-                                            <rect key="frame" x="20" y="54" width="150" height="26"/>
+                                            <rect key="frame" x="53" y="54" width="135" height="26"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="mTs-Fd-5vu">
-                                            <rect key="frame" x="197" y="10" width="70" height="70"/>
+                                            <rect key="frame" x="230" y="10" width="70" height="70"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="gQi-uu-t2l">
+                                            <rect key="frame" x="197" y="55" width="25" height="25"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="pfc-hQ-Xya">
+                                            <rect key="frame" x="20" y="55" width="25" height="25"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
+                                    <outlet property="attributeImage" destination="gQi-uu-t2l" id="dZw-Ga-1oQ"/>
                                     <outlet property="cellDetailLabel" destination="Y5z-zJ-Ezt" id="cM5-BO-YPG"/>
                                     <outlet property="cellImage" destination="mTs-Fd-5vu" id="37E-hM-2zq"/>
                                     <outlet property="cellTitleLabel" destination="EhS-WK-OUu" id="9MB-V8-vyX"/>
-                                    <segue destination="g5B-bk-5l4" kind="push" identifier="showDetail" trigger="accessoryAction" id="ZXX-xK-VHr"/>
-                                    <segue destination="g5B-bk-5l4" kind="push" identifier="showDetail" id="PEm-Qd-xFX"/>
+                                    <outlet property="factionImage" destination="pfc-hQ-Xya" id="OFx-Nd-qWj"/>
+                                    <segue destination="g5B-bk-5l4" kind="push" identifier="showDetail" id="GH7-65-RPs"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -150,7 +159,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="YAA-nc-qh1">
                         <nil key="title"/>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="980-SJ-Wio">
+                        <barButtonItem key="rightBarButtonItem" id="980-SJ-Wio">
                             <view key="customView" contentMode="scaleToFill" id="gey-If-KU4">
                                 <rect key="frame" x="244" y="5" width="71" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -189,9 +198,11 @@
         <class className="HeroCell" superclassName="UITableViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/HeroCell.h"/>
             <relationships>
+                <relationship kind="outlet" name="attributeImage" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="cellDetailLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="cellImage" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="cellTitleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="factionImage" candidateClass="UIImageView"/>
             </relationships>
         </class>
         <class className="MasterViewController" superclassName="UITableViewController">
@@ -203,7 +214,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="PEm-Qd-xFX"/>
-    </inferredMetricsTieBreakers>
 </document>

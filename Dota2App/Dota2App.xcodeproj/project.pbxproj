@@ -34,7 +34,13 @@
 		EDCA22EC1655161000FEDF75 /* axe_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA22E91655160F00FEDF75 /* axe_icon.png */; };
 		EDCA22ED1655161000FEDF75 /* Darkterror_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA22EA1655160F00FEDF75 /* Darkterror_icon.png */; };
 		EDCA22EE1655161000FEDF75 /* tiny_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA22EB1655160F00FEDF75 /* tiny_icon.png */; };
-		EDCA22F11655187200FEDF75 /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCA22F01655187200FEDF75 /* Hero.m */; };
+		EDCA22F3165525FE00FEDF75 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA22F2165525FE00FEDF75 /* Default-568h@2x.png */; };
+		EDCA22F71655286100FEDF75 /* Agility.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA22F41655286100FEDF75 /* Agility.png */; };
+		EDCA22F81655286100FEDF75 /* Intelligence.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA22F51655286100FEDF75 /* Intelligence.png */; };
+		EDCA22F91655286100FEDF75 /* Strength.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA22F61655286100FEDF75 /* Strength.png */; };
+		EDCA22FC165528A900FEDF75 /* Dire.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA22FA165528A900FEDF75 /* Dire.png */; };
+		EDCA2300165528F400FEDF75 /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCA22FF165528F400FEDF75 /* Hero.m */; };
+		EDCA230216552A2900FEDF75 /* Radiant.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA230116552A2900FEDF75 /* Radiant.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,8 +80,14 @@
 		EDCA22E91655160F00FEDF75 /* axe_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = axe_icon.png; sourceTree = "<group>"; };
 		EDCA22EA1655160F00FEDF75 /* Darkterror_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Darkterror_icon.png; sourceTree = "<group>"; };
 		EDCA22EB1655160F00FEDF75 /* tiny_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tiny_icon.png; sourceTree = "<group>"; };
-		EDCA22EF1655187200FEDF75 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
-		EDCA22F01655187200FEDF75 /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
+		EDCA22F2165525FE00FEDF75 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		EDCA22F41655286100FEDF75 /* Agility.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Agility.png; sourceTree = "<group>"; };
+		EDCA22F51655286100FEDF75 /* Intelligence.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Intelligence.png; sourceTree = "<group>"; };
+		EDCA22F61655286100FEDF75 /* Strength.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Strength.png; sourceTree = "<group>"; };
+		EDCA22FA165528A900FEDF75 /* Dire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dire.png; sourceTree = "<group>"; };
+		EDCA22FE165528F400FEDF75 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
+		EDCA22FF165528F400FEDF75 /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
+		EDCA230116552A2900FEDF75 /* Radiant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Radiant.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +108,11 @@
 		B17D98BD164EA18000C60B36 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EDCA230116552A2900FEDF75 /* Radiant.png */,
+				EDCA22FA165528A900FEDF75 /* Dire.png */,
+				EDCA22F41655286100FEDF75 /* Agility.png */,
+				EDCA22F51655286100FEDF75 /* Intelligence.png */,
+				EDCA22F61655286100FEDF75 /* Strength.png */,
 				EDCA22E616550F2200FEDF75 /* hero.png */,
 				B1D6267C164EC04700A207CD /* AncientApparition.png */,
 				B1D6267D164EC04700A207CD /* BountyHunter.png */,
@@ -124,6 +141,7 @@
 		B18C9E22164E8B5900ADE97A = {
 			isa = PBXGroup;
 			children = (
+				EDCA22F2165525FE00FEDF75 /* Default-568h@2x.png */,
 				B1D62678164EBBC300A207CD /* MockObjectGenerator.h */,
 				B1D62679164EBBC300A207CD /* MockObjectGenerator.m */,
 				B18C9E39164E8B5900ADE97A /* Dota2App */,
@@ -186,8 +204,8 @@
 				B18C9E4B164E8B5A00ADE97A /* Dota2App.xcdatamodeld */,
 				B17D98BA164EA03100C60B36 /* Ability.h */,
 				B17D98BB164EA03100C60B36 /* Ability.m */,
-				EDCA22EF1655187200FEDF75 /* Hero.h */,
-				EDCA22F01655187200FEDF75 /* Hero.m */,
+				EDCA22FE165528F400FEDF75 /* Hero.h */,
+				EDCA22FF165528F400FEDF75 /* Hero.m */,
 			);
 			name = "Core Data";
 			sourceTree = "<group>";
@@ -266,6 +284,12 @@
 				EDCA22EC1655161000FEDF75 /* axe_icon.png in Resources */,
 				EDCA22ED1655161000FEDF75 /* Darkterror_icon.png in Resources */,
 				EDCA22EE1655161000FEDF75 /* tiny_icon.png in Resources */,
+				EDCA22F3165525FE00FEDF75 /* Default-568h@2x.png in Resources */,
+				EDCA22F71655286100FEDF75 /* Agility.png in Resources */,
+				EDCA22F81655286100FEDF75 /* Intelligence.png in Resources */,
+				EDCA22F91655286100FEDF75 /* Strength.png in Resources */,
+				EDCA22FC165528A900FEDF75 /* Dire.png in Resources */,
+				EDCA230216552A2900FEDF75 /* Radiant.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +308,7 @@
 				B17D98BC164EA03100C60B36 /* Ability.m in Sources */,
 				B1D6267A164EBBC300A207CD /* MockObjectGenerator.m in Sources */,
 				B1DAD96616503F0B00523981 /* HeroCell.m in Sources */,
-				EDCA22F11655187200FEDF75 /* Hero.m in Sources */,
+				EDCA2300165528F400FEDF75 /* Hero.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

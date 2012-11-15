@@ -17,12 +17,12 @@
         <userInfo/>
     </entity>
     <entity name="Hero" representedClassName="Hero" syncable="YES">
+        <attribute name="attribute" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="bio" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="detailImage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="faction" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="iconImage" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="spec" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
         <element name="Ability" positionX="160" positionY="192" width="128" height="165"/>

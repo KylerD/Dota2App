@@ -48,21 +48,21 @@
     
     int typeChange = arc4random() % 2;
     if (typeChange == 1) {
-        hero.type = @"Radiant";
+        hero.faction = @"Radiant";
     } else {
-        hero.type = @"Dire";
+        hero.faction = @"Dire";
     }
     
     int specChange = arc4random() % 3;
     switch (specChange) {
         case 0:
-            hero.spec = @"Strength";
+            hero.attribute= @"Strength";
             break;
         case 1:
-            hero.spec = @"Agility";
+            hero.attribute = @"Agility";
             break;
         case 2:
-            hero.spec = @"Intellect";
+            hero.attribute = @"Intelligence";
             break;
     }
       
