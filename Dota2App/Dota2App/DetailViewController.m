@@ -129,7 +129,7 @@
 - (IBAction)segmentChanged:(UISegmentedControl *)sender {
     UIViewController *vc = [self viewControllerForSegmentIndex:sender.selectedSegmentIndex];
     [self addChildViewController:vc];
-    [self transitionFromViewController:currentVC toViewController:vc duration:0.5 options:UIViewAnimationOptionTransitionFlipFromBottom animations:^{
+    [self transitionFromViewController:currentVC toViewController:vc duration:0.5 options:UIViewAnimationOptionCurveEaseIn animations:^{
         [currentVC.view removeFromSuperview];
         vc.view.frame = self.view.bounds;
         [self.view addSubview:vc.view];
