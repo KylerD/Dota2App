@@ -9,17 +9,21 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 #import "Hero.h"
+#import "AbilitiesViewController.h"
+
 @class ExtendedDetailViewController;
 @interface DetailViewController : UIViewController <UISplitViewControllerDelegate,NSFetchedResultsControllerDelegate> {
     UIImageView *iconImageView;
     UIImageView *detailImageView;
-    BOOL freshData;
+    UIViewController *currentVC;
+
 }
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain) IBOutlet UIImageView *iconImageView;
-@property (nonatomic, retain) IBOutlet UIImageView *detailImageView;
 @property (nonatomic, retain) Hero *hero;
+@property (nonatomic, retain) IBOutlet UISegmentedControl *segment;
+
 
 @end

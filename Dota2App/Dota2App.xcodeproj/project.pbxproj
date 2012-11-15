@@ -41,6 +41,8 @@
 		EDCA22FC165528A900FEDF75 /* Dire.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA22FA165528A900FEDF75 /* Dire.png */; };
 		EDCA2300165528F400FEDF75 /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCA22FF165528F400FEDF75 /* Hero.m */; };
 		EDCA230216552A2900FEDF75 /* Radiant.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA230116552A2900FEDF75 /* Radiant.png */; };
+		EDCA230A16553AB100FEDF75 /* AbilitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCA230816553AB100FEDF75 /* AbilitiesViewController.m */; };
+		EDCA230E16553EDC00FEDF75 /* InformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCA230D16553EDC00FEDF75 /* InformationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +90,10 @@
 		EDCA22FE165528F400FEDF75 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
 		EDCA22FF165528F400FEDF75 /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
 		EDCA230116552A2900FEDF75 /* Radiant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Radiant.png; sourceTree = "<group>"; };
+		EDCA230716553AB100FEDF75 /* AbilitiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbilitiesViewController.h; sourceTree = "<group>"; };
+		EDCA230816553AB100FEDF75 /* AbilitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbilitiesViewController.m; sourceTree = "<group>"; };
+		EDCA230C16553EDC00FEDF75 /* InformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationViewController.h; sourceTree = "<group>"; };
+		EDCA230D16553EDC00FEDF75 /* InformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +147,7 @@
 		B18C9E22164E8B5900ADE97A = {
 			isa = PBXGroup;
 			children = (
+				EDCA2303165537DE00FEDF75 /* ViewControllers */,
 				EDCA22F2165525FE00FEDF75 /* Default-568h@2x.png */,
 				B1D62678164EBBC300A207CD /* MockObjectGenerator.h */,
 				B1D62679164EBBC300A207CD /* MockObjectGenerator.m */,
@@ -217,6 +224,17 @@
 				B1DAD96516503F0B00523981 /* HeroCell.m */,
 			);
 			name = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		EDCA2303165537DE00FEDF75 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EDCA230716553AB100FEDF75 /* AbilitiesViewController.h */,
+				EDCA230816553AB100FEDF75 /* AbilitiesViewController.m */,
+				EDCA230C16553EDC00FEDF75 /* InformationViewController.h */,
+				EDCA230D16553EDC00FEDF75 /* InformationViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +327,8 @@
 				B1D6267A164EBBC300A207CD /* MockObjectGenerator.m in Sources */,
 				B1DAD96616503F0B00523981 /* HeroCell.m in Sources */,
 				EDCA2300165528F400FEDF75 /* Hero.m in Sources */,
+				EDCA230A16553AB100FEDF75 /* AbilitiesViewController.m in Sources */,
+				EDCA230E16553EDC00FEDF75 /* InformationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

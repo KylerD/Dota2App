@@ -17,10 +17,10 @@
 @end
 
 @implementation DetailViewController
-@synthesize iconImageView, detailImageView, hero = _hero;
+@synthesize iconImageView, hero = _hero;
 @synthesize masterPopoverController = _masterPopoverController;
 @synthesize fetchedResultsController = _fetchedResultsController;
-
+@synthesize segment;
 
 
 #pragma mark - Managing the detail item
@@ -40,13 +40,18 @@
 
 - (void)configureView {
     UIImage *icon = [UIImage imageNamed:_hero.iconImage];
-    UIImage *detailImage = [UIImage imageNamed:_hero.detailImage];
+
     
     [iconImageView setImage:icon];
-    [detailImageView setImage:detailImage];
+
     
-    self.title = _hero.name;
-    
+    // add viewController so you can switch them later.
+    UIViewController *vc = [self viewControllerForSegmentIndex:self.segment.selectedSegmentIndex];
+    [self addChildViewController:vc];
+    vc.view.frame = self.view.bounds;
+    [self.view addSubview:vc.view];
+    currentVC = vc;
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -64,6 +69,7 @@
     _managedObjectContext = del.managedObjectContext;
 
     [self configureView];
+
 }
 
 - (void)viewDidUnload
@@ -119,14 +125,31 @@
     self.masterPopoverController = nil;
 }
 
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([[segue identifier] isEqualToString:@"ExtendedDetail"]) {
-        
-    
-    }
+#pragma mark - Segment contorl
+- (IBAction)segmentChanged:(UISegmentedControl *)sender {
+    UIViewController *vc = [self viewControllerForSegmentIndex:sender.selectedSegmentIndex];
+    [self addChildViewController:vc];
+    [self transitionFromViewController:currentVC toViewController:vc duration:0.5 options:UIViewAnimationOptionTransitionFlipFromBottom animations:^{
+        [currentVC.view removeFromSuperview];
+        vc.view.frame = self.view.bounds;
+        [self.view addSubview:vc.view];
+    } completion:^(BOOL finished) {
+        [vc didMoveToParentViewController:self];
+        [currentVC removeFromParentViewController];
+        currentVC = vc;
+    }];
 }
 
-
+- (UIViewController *)viewControllerForSegmentIndex:(NSInteger)index {
+    UIViewController *vc;
+    switch (index) {
+        case 0:
+            vc = [self.storyboard instantiateViewControllerWithIdentifier:@"InformationVC"];
+            break;
+        case 1:
+            vc = [self.storyboard instantiateViewControllerWithIdentifier:@"AbilityVC"];
+            break;
+    }
+    return vc;
+}
 @end

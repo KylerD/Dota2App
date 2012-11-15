@@ -24,20 +24,26 @@
         <scene sceneID="16">
             <objects>
                 <viewController storyboardIdentifier="" title="Detail" id="4" customClass="DetailViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="26">
+                    <view key="view" contentMode="scaleToFill" id="o8L-We-iod">
                         <rect key="frame" x="0.0" y="64" width="703" height="704"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="Rqt-nc-LAN">
-                                <rect key="frame" x="0.0" y="0.0" width="317" height="256"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Detail" id="53">
+                    <navigationItem key="navigationItem" id="53">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="DH1-Bp-idR">
+                            <rect key="frame" x="7" y="7" width="525" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Information"/>
+                                <segment title="Abilities"/>
+                            </segments>
+                            <connections>
+                                <action selector="segmentChanged:" destination="4" eventType="valueChanged" id="tm8-gd-qbP"/>
+                            </connections>
+                        </segmentedControl>
                         <barButtonItem key="rightBarButtonItem" id="EQ0-Ig-PiU">
                             <view key="customView" contentMode="scaleToFill" id="auT-YZ-duo">
                                 <rect key="frame" x="540" y="5" width="156" height="33"/>
@@ -51,11 +57,12 @@
                             </view>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="detailImageView" destination="Rqt-nc-LAN" id="xi2-yW-qrC"/>
                         <outlet property="iconImageView" destination="lqz-Ni-L6K" id="8Hg-Z8-sJT"/>
                         <outlet property="searchDisplayController" destination="4Ew-lo-hkL" id="vZj-QW-y0p"/>
-                        <outlet property="view" destination="26" id="mFa-y5-pWL"/>
+                        <outlet property="segment" destination="DH1-Bp-idR" id="Qe6-WA-VNq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="15" sceneMemberID="firstResponder"/>
@@ -68,7 +75,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="448" y="248"/>
+            <point key="canvasLocation" x="516" y="278"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="18">
@@ -200,23 +207,82 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="4" kind="relationship" relationship="rootViewController" id="52"/>
+                        <segue destination="4" kind="relationship" relationship="rootViewController" id="MGz-kA-NPb"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="49" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-366" y="248"/>
+            <point key="canvasLocation" x="-276" y="278"/>
+        </scene>
+        <!--Information View Controller-->
+        <scene sceneID="lIw-Jv-2kd">
+            <objects>
+                <viewController storyboardIdentifier="InformationVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7V3-sk-vAF" customClass="InformationViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zpo-11-Fdf">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Hero Information" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TAY-16-9zB">
+                                <rect key="frame" x="258" y="153" width="127" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <splitViewDetailSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yeU-Pt-Y8m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-337" y="1263"/>
+        </scene>
+        <!--Abilities View Controller-->
+        <scene sceneID="eXJ-NH-WOb">
+            <objects>
+                <viewController storyboardIdentifier="AbilityVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="T6e-Ig-B8I" customClass="AbilitiesViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R7u-S7-Tt6">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Ability VC" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Gx0-CL-DW6">
+                                <rect key="frame" x="334" y="199" width="149" height="121"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <splitViewDetailSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kqi-aN-TVp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="575" y="1263"/>
         </scene>
     </scenes>
     <resources>
         <image name="hero.png" width="26" height="17"/>
     </resources>
     <classes>
+        <class className="AbilitiesViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AbilitiesViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="segmentChange:"/>
+                <relationship kind="outlet" name="segment" candidateClass="UISegmentedControl"/>
+            </relationships>
+        </class>
         <class className="DetailViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
             <relationships>
+                <relationship kind="action" name="segmentChanged:" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="detailImageView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="iconImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="segment" candidateClass="UISegmentedControl"/>
             </relationships>
         </class>
         <class className="HeroCell" superclassName="UITableViewCell">
@@ -228,6 +294,9 @@
                 <relationship kind="outlet" name="cellTitleLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="factionImage" candidateClass="UIImageView"/>
             </relationships>
+        </class>
+        <class className="InformationViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/InformationViewController.h"/>
         </class>
         <class className="MasterViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MasterViewController.h"/>
