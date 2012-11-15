@@ -8,7 +8,6 @@
 
 #import "DetailViewController.h"
 #import "Hero.h"
-#import "AppDelegate.h"
 #import "HeroCell.h"
 
 @interface DetailViewController ()
@@ -18,8 +17,6 @@
 
 @implementation DetailViewController
 @synthesize iconImageView, hero = _hero;
-@synthesize masterPopoverController = _masterPopoverController;
-@synthesize fetchedResultsController = _fetchedResultsController;
 @synthesize segment;
 
 
@@ -65,9 +62,6 @@
 - (void)viewDidLoad
 {   
     [super viewDidLoad];
-    AppDelegate *del = [[UIApplication sharedApplication] delegate];
-    _managedObjectContext = del.managedObjectContext;
-
     [self configureView];
 
 }

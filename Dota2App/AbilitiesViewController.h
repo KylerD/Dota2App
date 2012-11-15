@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AbilitiesViewController : UIViewController
+@interface AbilitiesViewController : UIViewController {
+    
+}
 
 @end

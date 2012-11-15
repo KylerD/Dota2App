@@ -19,8 +19,6 @@
 
 }
 
-@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
-@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain) IBOutlet UIImageView *iconImageView;
 @property (nonatomic, retain) Hero *hero;
 @property (nonatomic, retain) IBOutlet UISegmentedControl *segment;
