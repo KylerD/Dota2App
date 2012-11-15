@@ -8,17 +8,18 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import "Hero.h"
 @class ExtendedDetailViewController;
-@interface DetailViewController : UIViewController <UISplitViewControllerDelegate, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, UISearchDisplayDelegate, NSFetchedResultsControllerDelegate> {
-    UITableView *detailTableView;
+@interface DetailViewController : UIViewController <UISplitViewControllerDelegate,NSFetchedResultsControllerDelegate> {
+    UIImageView *iconImageView;
+    UIImageView *detailImageView;
     BOOL freshData;
 }
 
-@property (strong, nonatomic) NSString* detailItem;
-@property (nonatomic, retain) IBOutlet UITableView *detailTableView;
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-@property (nonatomic, retain) NSString *savedSearchTerm;
+@property (nonatomic, retain) IBOutlet UIImageView *iconImageView;
+@property (nonatomic, retain) IBOutlet UIImageView *detailImageView;
+@property (nonatomic, retain) Hero *hero;
 
-- (NSFetchedResultsController *)fetchedResultsControllerWithDetailItem: (NSString *)detailItem;
 @end

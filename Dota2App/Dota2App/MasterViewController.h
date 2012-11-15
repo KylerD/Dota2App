@@ -12,8 +12,12 @@
 
 #import <CoreData/CoreData.h>
 
-@interface MasterViewController : UITableViewController {
-    NSArray *items;
+@interface MasterViewController : UITableViewController <NSFetchedResultsControllerDelegate, UISearchBarDelegate> {
+    NSManagedObjectContext *managedObjectContext;
+    NSFetchedResultsController *fetchedRC;
+    NSString *fetchItem;
+    NSString *savedSearchTerm;
+    BOOL freshData;
 }
 
 @property (strong, nonatomic) DetailViewController *detailViewController;

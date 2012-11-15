@@ -14,6 +14,7 @@
     NSArray *heroNames;
     NSArray *heroBiographies;
     NSArray *heroImages;
+    NSArray *heroIcons;
     //The managed object context
     NSManagedObjectContext *context;
 }
