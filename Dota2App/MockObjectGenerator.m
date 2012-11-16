@@ -40,11 +40,25 @@
     int randomBioIndex = arc4random() % [heroBiographies count];
     int randomImageIndex = arc4random() % [heroImages count];
     int randomIconIndex = arc4random() % [heroIcons count];
-    
+    //Basic details
     hero.name = [heroNames objectAtIndex:randomNameIndex];
     hero.bio = [heroBiographies objectAtIndex:randomBioIndex];
     hero.detailImage = [heroImages objectAtIndex:randomImageIndex];
     hero.iconImage = [heroIcons objectAtIndex:randomIconIndex];
+    //Stats
+    int strengthPoint = (arc4random() % 15) + 10;
+    int strengthExtensionPoint = (arc4random() % 5) + 1;
+    int agilityPoint = (arc4random() % 15) + 10;
+    int agilityExtensionPoint = (arc4random() % 5) + 1;
+    int intPoint = (arc4random() % 15) + 10;
+    int intExtensionPoint = (arc4random() % 5) + 1;
+    NSString *strength = [NSString stringWithFormat:@"%i + %i", strengthPoint, strengthExtensionPoint];
+    NSString *agility = [NSString stringWithFormat:@"%i + %i", agilityPoint, agilityExtensionPoint];
+    NSString *intelligence = [NSString stringWithFormat:@"%i + %i", intPoint, intExtensionPoint];
+    
+    hero.strengthPoints = strength;
+    hero.agilityPoints = agility;
+    hero.intelligencePoints = intelligence;
     
     int typeChange = arc4random() % 2;
     if (typeChange == 1) {
@@ -69,15 +83,17 @@
 }
 
 - (void)generateRandomHeros {
-    
-    for (int i = 0; i < 10; i++) {
-        [self createHero];
+    NSFetchRequest *fetch = [NSFetchRequest fetchRequestWithEntityName:@"Hero"];
+    NSUInteger count = [context countForFetchRequest:fetch error:nil];
+    if (count == 0) {
+        for (int i = 0; i < 10; i++) {
+            [self createHero];
+        }
+        
+        NSError *error;
+        if (![context save:&error]) {
+            NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
+        }
     }
-
-    NSError *error;
-    if (![context save:&error]) {
-        NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
-    }
-
 }
 @end

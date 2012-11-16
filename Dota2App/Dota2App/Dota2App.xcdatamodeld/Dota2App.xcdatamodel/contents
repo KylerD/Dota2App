@@ -17,16 +17,20 @@
         <userInfo/>
     </entity>
     <entity name="Hero" representedClassName="Hero" syncable="YES">
+        <attribute name="agilityPoints" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="attribute" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="bio" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="detailImage" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="faction" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="iconImage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="intelligencePoints" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="role" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="strengthPoints" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
         <element name="Ability" positionX="160" positionY="192" width="128" height="165"/>
         <element name="Event" positionX="261" positionY="189" width="128" height="60"/>
-        <element name="Hero" positionX="160" positionY="192" width="128" height="135"/>
+        <element name="Hero" positionX="160" positionY="192" width="128" height="195"/>
     </elements>
 </model>

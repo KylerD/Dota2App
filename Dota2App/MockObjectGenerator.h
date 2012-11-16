@@ -19,7 +19,6 @@
     NSManagedObjectContext *context;
 }
 
-
 - (void)generateRandomHeros;
 
 @end

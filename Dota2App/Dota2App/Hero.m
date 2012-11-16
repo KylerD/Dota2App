@@ -2,7 +2,7 @@
 //  Hero.m
 //  Dota2App
 //
-//  Created by Kyle Davidson on 15/11/2012.
+//  Created by Kyle Davidson on 16/11/2012.
 //
 //
 
@@ -11,11 +11,15 @@
 
 @implementation Hero
 
+@dynamic attribute;
 @dynamic bio;
 @dynamic detailImage;
-@dynamic name;
-@dynamic attribute;
 @dynamic faction;
 @dynamic iconImage;
+@dynamic name;
+@dynamic strengthPoints;
+@dynamic agilityPoints;
+@dynamic intelligencePoints;
+@dynamic role;
 
 @end

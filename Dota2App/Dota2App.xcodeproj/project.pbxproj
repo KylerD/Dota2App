@@ -39,10 +39,10 @@
 		EDCA22F81655286100FEDF75 /* Intelligence.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA22F51655286100FEDF75 /* Intelligence.png */; };
 		EDCA22F91655286100FEDF75 /* Strength.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA22F61655286100FEDF75 /* Strength.png */; };
 		EDCA22FC165528A900FEDF75 /* Dire.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA22FA165528A900FEDF75 /* Dire.png */; };
-		EDCA2300165528F400FEDF75 /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCA22FF165528F400FEDF75 /* Hero.m */; };
 		EDCA230216552A2900FEDF75 /* Radiant.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA230116552A2900FEDF75 /* Radiant.png */; };
 		EDCA230A16553AB100FEDF75 /* AbilitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCA230816553AB100FEDF75 /* AbilitiesViewController.m */; };
 		EDCA230E16553EDC00FEDF75 /* InformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCA230D16553EDC00FEDF75 /* InformationViewController.m */; };
+		EDCDE7191656567300DAF422 /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCDE7181656567300DAF422 /* Hero.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,13 +87,13 @@
 		EDCA22F51655286100FEDF75 /* Intelligence.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Intelligence.png; sourceTree = "<group>"; };
 		EDCA22F61655286100FEDF75 /* Strength.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Strength.png; sourceTree = "<group>"; };
 		EDCA22FA165528A900FEDF75 /* Dire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dire.png; sourceTree = "<group>"; };
-		EDCA22FE165528F400FEDF75 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
-		EDCA22FF165528F400FEDF75 /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
 		EDCA230116552A2900FEDF75 /* Radiant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Radiant.png; sourceTree = "<group>"; };
 		EDCA230716553AB100FEDF75 /* AbilitiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbilitiesViewController.h; sourceTree = "<group>"; };
 		EDCA230816553AB100FEDF75 /* AbilitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbilitiesViewController.m; sourceTree = "<group>"; };
 		EDCA230C16553EDC00FEDF75 /* InformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationViewController.h; sourceTree = "<group>"; };
 		EDCA230D16553EDC00FEDF75 /* InformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationViewController.m; sourceTree = "<group>"; };
+		EDCDE7171656567300DAF422 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
+		EDCDE7181656567300DAF422 /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,8 +211,8 @@
 				B18C9E4B164E8B5A00ADE97A /* Dota2App.xcdatamodeld */,
 				B17D98BA164EA03100C60B36 /* Ability.h */,
 				B17D98BB164EA03100C60B36 /* Ability.m */,
-				EDCA22FE165528F400FEDF75 /* Hero.h */,
-				EDCA22FF165528F400FEDF75 /* Hero.m */,
+				EDCDE7171656567300DAF422 /* Hero.h */,
+				EDCDE7181656567300DAF422 /* Hero.m */,
 			);
 			name = "Core Data";
 			sourceTree = "<group>";
@@ -326,9 +326,9 @@
 				B17D98BC164EA03100C60B36 /* Ability.m in Sources */,
 				B1D6267A164EBBC300A207CD /* MockObjectGenerator.m in Sources */,
 				B1DAD96616503F0B00523981 /* HeroCell.m in Sources */,
-				EDCA2300165528F400FEDF75 /* Hero.m in Sources */,
 				EDCA230A16553AB100FEDF75 /* AbilitiesViewController.m in Sources */,
 				EDCA230E16553EDC00FEDF75 /* InformationViewController.m in Sources */,
+				EDCDE7191656567300DAF422 /* Hero.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
