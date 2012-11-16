@@ -9,6 +9,7 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="radius" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="isAbilityOf" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Hero" inverseName="hasAbility" inverseEntity="Hero" syncable="YES"/>
     </entity>
     <entity name="Event">
         <attribute name="timeStamp" optional="YES" attributeType="Date">
@@ -27,10 +28,11 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="role" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="strengthPoints" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="hasAbility" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Ability" inverseName="isAbilityOf" inverseEntity="Ability" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Ability" positionX="160" positionY="192" width="128" height="165"/>
+        <element name="Ability" positionX="205" positionY="324" width="128" height="180"/>
         <element name="Event" positionX="261" positionY="189" width="128" height="60"/>
-        <element name="Hero" positionX="160" positionY="192" width="128" height="195"/>
+        <element name="Hero" positionX="-27" positionY="204" width="128" height="210"/>
     </elements>
 </model>

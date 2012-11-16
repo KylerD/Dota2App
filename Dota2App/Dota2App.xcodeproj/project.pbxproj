@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B17D98BC164EA03100C60B36 /* Ability.m in Sources */ = {isa = PBXBuildFile; fileRef = B17D98BB164EA03100C60B36 /* Ability.m */; };
 		B18C9E32164E8B5900ADE97A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C9E31164E8B5900ADE97A /* UIKit.framework */; };
 		B18C9E34164E8B5900ADE97A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C9E33164E8B5900ADE97A /* Foundation.framework */; };
 		B18C9E36164E8B5900ADE97A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C9E35164E8B5900ADE97A /* CoreGraphics.framework */; };
@@ -42,12 +41,16 @@
 		EDCA230216552A2900FEDF75 /* Radiant.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA230116552A2900FEDF75 /* Radiant.png */; };
 		EDCA230A16553AB100FEDF75 /* AbilitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCA230816553AB100FEDF75 /* AbilitiesViewController.m */; };
 		EDCA230E16553EDC00FEDF75 /* InformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCA230D16553EDC00FEDF75 /* InformationViewController.m */; };
-		EDCDE7191656567300DAF422 /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCDE7181656567300DAF422 /* Hero.m */; };
+		EDCDE71F16568C0000DAF422 /* abilityFive.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EDCDE71A16568BFE00DAF422 /* abilityFive.jpeg */; };
+		EDCDE72016568C0000DAF422 /* abilityFour.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EDCDE71B16568BFE00DAF422 /* abilityFour.jpeg */; };
+		EDCDE72116568C0000DAF422 /* abilityOne.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EDCDE71C16568BFF00DAF422 /* abilityOne.jpeg */; };
+		EDCDE72216568C0000DAF422 /* abilityThree.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EDCDE71D16568BFF00DAF422 /* abilityThree.jpeg */; };
+		EDCDE72316568C0000DAF422 /* abilityTwo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EDCDE71E16568BFF00DAF422 /* abilityTwo.jpeg */; };
+		EDCDE72C165692FF00DAF422 /* Ability.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCDE72B165692FF00DAF422 /* Ability.m */; };
+		EDCDE72F1656930900DAF422 /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCDE72E1656930900DAF422 /* Hero.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B17D98BA164EA03100C60B36 /* Ability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ability.h; sourceTree = "<group>"; };
-		B17D98BB164EA03100C60B36 /* Ability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ability.m; sourceTree = "<group>"; };
 		B18C9E2D164E8B5900ADE97A /* Dota2App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dota2App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B18C9E31164E8B5900ADE97A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B18C9E33164E8B5900ADE97A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -92,8 +95,15 @@
 		EDCA230816553AB100FEDF75 /* AbilitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbilitiesViewController.m; sourceTree = "<group>"; };
 		EDCA230C16553EDC00FEDF75 /* InformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationViewController.h; sourceTree = "<group>"; };
 		EDCA230D16553EDC00FEDF75 /* InformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationViewController.m; sourceTree = "<group>"; };
-		EDCDE7171656567300DAF422 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
-		EDCDE7181656567300DAF422 /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
+		EDCDE71A16568BFE00DAF422 /* abilityFive.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = abilityFive.jpeg; sourceTree = "<group>"; };
+		EDCDE71B16568BFE00DAF422 /* abilityFour.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = abilityFour.jpeg; sourceTree = "<group>"; };
+		EDCDE71C16568BFF00DAF422 /* abilityOne.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = abilityOne.jpeg; sourceTree = "<group>"; };
+		EDCDE71D16568BFF00DAF422 /* abilityThree.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = abilityThree.jpeg; sourceTree = "<group>"; };
+		EDCDE71E16568BFF00DAF422 /* abilityTwo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = abilityTwo.jpeg; sourceTree = "<group>"; };
+		EDCDE72A165692FF00DAF422 /* Ability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ability.h; sourceTree = "<group>"; };
+		EDCDE72B165692FF00DAF422 /* Ability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ability.m; sourceTree = "<group>"; };
+		EDCDE72D1656930900DAF422 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
+		EDCDE72E1656930900DAF422 /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +124,11 @@
 		B17D98BD164EA18000C60B36 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EDCDE71A16568BFE00DAF422 /* abilityFive.jpeg */,
+				EDCDE71B16568BFE00DAF422 /* abilityFour.jpeg */,
+				EDCDE71C16568BFF00DAF422 /* abilityOne.jpeg */,
+				EDCDE71D16568BFF00DAF422 /* abilityThree.jpeg */,
+				EDCDE71E16568BFF00DAF422 /* abilityTwo.jpeg */,
 				EDCA230116552A2900FEDF75 /* Radiant.png */,
 				EDCA22FA165528A900FEDF75 /* Dire.png */,
 				EDCA22F41655286100FEDF75 /* Agility.png */,
@@ -209,10 +224,10 @@
 			isa = PBXGroup;
 			children = (
 				B18C9E4B164E8B5A00ADE97A /* Dota2App.xcdatamodeld */,
-				B17D98BA164EA03100C60B36 /* Ability.h */,
-				B17D98BB164EA03100C60B36 /* Ability.m */,
-				EDCDE7171656567300DAF422 /* Hero.h */,
-				EDCDE7181656567300DAF422 /* Hero.m */,
+				EDCDE72A165692FF00DAF422 /* Ability.h */,
+				EDCDE72B165692FF00DAF422 /* Ability.m */,
+				EDCDE72D1656930900DAF422 /* Hero.h */,
+				EDCDE72E1656930900DAF422 /* Hero.m */,
 			);
 			name = "Core Data";
 			sourceTree = "<group>";
@@ -308,6 +323,11 @@
 				EDCA22F91655286100FEDF75 /* Strength.png in Resources */,
 				EDCA22FC165528A900FEDF75 /* Dire.png in Resources */,
 				EDCA230216552A2900FEDF75 /* Radiant.png in Resources */,
+				EDCDE71F16568C0000DAF422 /* abilityFive.jpeg in Resources */,
+				EDCDE72016568C0000DAF422 /* abilityFour.jpeg in Resources */,
+				EDCDE72116568C0000DAF422 /* abilityOne.jpeg in Resources */,
+				EDCDE72216568C0000DAF422 /* abilityThree.jpeg in Resources */,
+				EDCDE72316568C0000DAF422 /* abilityTwo.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,12 +343,12 @@
 				B18C9E4D164E8B5A00ADE97A /* Dota2App.xcdatamodeld in Sources */,
 				B18C9E50164E8B5A00ADE97A /* MasterViewController.m in Sources */,
 				B18C9E53164E8B5A00ADE97A /* DetailViewController.m in Sources */,
-				B17D98BC164EA03100C60B36 /* Ability.m in Sources */,
 				B1D6267A164EBBC300A207CD /* MockObjectGenerator.m in Sources */,
 				B1DAD96616503F0B00523981 /* HeroCell.m in Sources */,
 				EDCA230A16553AB100FEDF75 /* AbilitiesViewController.m in Sources */,
 				EDCA230E16553EDC00FEDF75 /* InformationViewController.m in Sources */,
-				EDCDE7191656567300DAF422 /* Hero.m in Sources */,
+				EDCDE72C165692FF00DAF422 /* Ability.m in Sources */,
+				EDCDE72F1656930900DAF422 /* Hero.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 
 #import "Hero.h"
+#import "Ability.h"
 
 
 @implementation Hero
@@ -21,5 +22,6 @@
 @dynamic agilityPoints;
 @dynamic intelligencePoints;
 @dynamic role;
+@dynamic hasAbility;
 
 @end

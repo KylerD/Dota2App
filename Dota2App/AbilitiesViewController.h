@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Hero.h"
 
 @interface AbilitiesViewController : UIViewController {
     
 }
+
+@property (nonatomic, strong) Hero *hero;
 
 @end
