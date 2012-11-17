@@ -68,7 +68,7 @@
     
     // Edit the section name key path and cache name if appropriate.
     // nil for section name key path means "no sections".
-    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:managedObjectContext sectionNameKeyPath:nil cacheName:nil];
+    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:managedObjectContext sectionNameKeyPath:@"attribute" cacheName:nil];
     aFetchedResultsController.delegate = self;
     
     return aFetchedResultsController;
@@ -130,7 +130,7 @@
 // Customize the number of sections in the table view.
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+    return [[fetchedRC sections] count];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -139,7 +139,8 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [[fetchedRC fetchedObjects] count];
+    return [[[fetchedRC sections] objectAtIndex:section] numberOfObjects];
+    
 }
 
 // Customize the appearance of table view cells.
@@ -170,6 +171,14 @@
     }
 }
 
+-(NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    id <NSFetchedResultsSectionInfo> sectionInfo = [[fetchedRC sections] objectAtIndex:section];
+    
+    NSArray *objects = [sectionInfo objects];
+    NSManagedObject *managedObject = [objects lastObject];
+    return [managedObject valueForKey:@"attribute"];
+    
+}
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {   //Fetch the hero

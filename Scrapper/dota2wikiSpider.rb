@@ -186,7 +186,7 @@ getname = /link = (.*?)\{/
 	getherojson = /<text.*?>(.*?)<\/text>/m
 	getheroinfobox = /infobox(.*?)\s\=\=/im
 	getherobiobox = /Hero bio(.*?)\..\}\}/m
-	getyheroskillboxjson = /Skillbox(.*?)\}\}/m
+	getyheroskillboxjson = /\{\{Ability(.*?)\}\}/m
 	getkvps = /\|\s((.*?)\s=\s(.*?))\s/im
 	getkvptwo = /(\|\s((.*?)\s=\s(.*?))\n)| ((lore)\s\=\s(.*))\.$/m
 	getkvpthree = /\|\s((.*?)\s?=\s?(.*?))\n/m
@@ -320,19 +320,20 @@ end
 			#puts heroSource
 			skillIndex = 0
 			lastKeyName = ""
+
 			heroSource.scan(getyheroskillboxjson){|skilldata|
-				#puts skilldata
+				
 				s = Skill.new
 				skillIndex+=1
 
 				skilldata.each do |heroskilldata|
 					heroskilldata.scan(getkvpthree){ |kvpSkills|
-#puts "--->"
-#puts kvp[0]
-#puts ">"
-#puts kvp[1]
-#puts ">"
-#puts kvp[2]
+# puts "--->"
+# puts kvpSkills[0]
+# puts ">"
+# puts kvpSkills[1]
+# puts ">"
+# puts kvpSkills[2]
 
 
 #Correcting Distributed Key values
@@ -357,7 +358,7 @@ end
 }
 
 
-#puts ">#{s['name']}"
+puts ">#{s['name']}"
 
 
 
