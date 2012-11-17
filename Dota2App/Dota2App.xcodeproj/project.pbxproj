@@ -620,6 +620,7 @@
 		5C3CB3B41657F2A400E8341C /* Witchcraft.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CB1501657F2A400E8341C /* Witchcraft.png */; };
 		5C3CB3B51657F2A400E8341C /* Wrath_of_Nature.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CB1511657F2A400E8341C /* Wrath_of_Nature.png */; };
 		5C3CB3B61657F2A400E8341C /* X_Marks_the_Spot.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CB1521657F2A400E8341C /* X_Marks_the_Spot.png */; };
+		5C3CB3B81657F33C00E8341C /* heroData.json in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CB3B71657F33C00E8341C /* heroData.json */; };
 		B18C9E32164E8B5900ADE97A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C9E31164E8B5900ADE97A /* UIKit.framework */; };
 		B18C9E34164E8B5900ADE97A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C9E33164E8B5900ADE97A /* Foundation.framework */; };
 		B18C9E36164E8B5900ADE97A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C9E35164E8B5900ADE97A /* CoreGraphics.framework */; };
@@ -1278,6 +1279,7 @@
 		5C3CB1501657F2A400E8341C /* Witchcraft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Witchcraft.png; sourceTree = "<group>"; };
 		5C3CB1511657F2A400E8341C /* Wrath_of_Nature.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wrath_of_Nature.png; sourceTree = "<group>"; };
 		5C3CB1521657F2A400E8341C /* X_Marks_the_Spot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = X_Marks_the_Spot.png; sourceTree = "<group>"; };
+		5C3CB3B71657F33C00E8341C /* heroData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heroData.json; sourceTree = "<group>"; };
 		B18C9E2D164E8B5900ADE97A /* Dota2App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dota2App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B18C9E31164E8B5900ADE97A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B18C9E33164E8B5900ADE97A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -2052,9 +2054,18 @@
 			path = skillimg;
 			sourceTree = "<group>";
 		};
+		5C3CB3B91657F34600E8341C /* data */ = {
+			isa = PBXGroup;
+			children = (
+				5C3CB3B71657F33C00E8341C /* heroData.json */,
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
 		B17D98BD164EA18000C60B36 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5C3CB3B91657F34600E8341C /* data */,
 				5C3CAEEA1657F2A400E8341C /* images */,
 				EDCDE71A16568BFE00DAF422 /* abilityFive.jpeg */,
 				EDCDE71B16568BFE00DAF422 /* abilityFour.jpeg */,
@@ -2870,6 +2881,7 @@
 				5C3CB3B41657F2A400E8341C /* Witchcraft.png in Resources */,
 				5C3CB3B51657F2A400E8341C /* Wrath_of_Nature.png in Resources */,
 				5C3CB3B61657F2A400E8341C /* X_Marks_the_Spot.png in Resources */,
+				5C3CB3B81657F33C00E8341C /* heroData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
