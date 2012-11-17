@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C3CAEE91657D58200E8341C /* HeroParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3CAEE81657D58200E8341C /* HeroParser.m */; };
 		B18C9E32164E8B5900ADE97A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C9E31164E8B5900ADE97A /* UIKit.framework */; };
 		B18C9E34164E8B5900ADE97A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C9E33164E8B5900ADE97A /* Foundation.framework */; };
 		B18C9E36164E8B5900ADE97A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C9E35164E8B5900ADE97A /* CoreGraphics.framework */; };
@@ -51,6 +52,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C3CAEE71657D58200E8341C /* HeroParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroParser.h; sourceTree = "<group>"; };
+		5C3CAEE81657D58200E8341C /* HeroParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroParser.m; sourceTree = "<group>"; };
 		B18C9E2D164E8B5900ADE97A /* Dota2App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dota2App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B18C9E31164E8B5900ADE97A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B18C9E33164E8B5900ADE97A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -65,12 +68,12 @@
 		B18C9E46164E8B5A00ADE97A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		B18C9E49164E8B5A00ADE97A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		B18C9E4C164E8B5A00ADE97A /* Dota2App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dota2App.xcdatamodel; sourceTree = "<group>"; };
-		B18C9E4E164E8B5A00ADE97A /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		B18C9E4F164E8B5A00ADE97A /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		B18C9E51164E8B5A00ADE97A /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		B18C9E52164E8B5A00ADE97A /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		B1D62678164EBBC300A207CD /* MockObjectGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockObjectGenerator.h; sourceTree = "<group>"; };
-		B1D62679164EBBC300A207CD /* MockObjectGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockObjectGenerator.m; sourceTree = "<group>"; };
+		B18C9E4E164E8B5A00ADE97A /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MasterViewController.h; path = Dota2App/MasterViewController.h; sourceTree = "<group>"; };
+		B18C9E4F164E8B5A00ADE97A /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MasterViewController.m; path = Dota2App/MasterViewController.m; sourceTree = "<group>"; };
+		B18C9E51164E8B5A00ADE97A /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = Dota2App/DetailViewController.h; sourceTree = "<group>"; };
+		B18C9E52164E8B5A00ADE97A /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = Dota2App/DetailViewController.m; sourceTree = "<group>"; };
+		B1D62678164EBBC300A207CD /* MockObjectGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MockObjectGenerator.h; path = ../MockObjectGenerator.h; sourceTree = "<group>"; };
+		B1D62679164EBBC300A207CD /* MockObjectGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MockObjectGenerator.m; path = ../MockObjectGenerator.m; sourceTree = "<group>"; };
 		B1D6267C164EC04700A207CD /* AncientApparition.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AncientApparition.png; sourceTree = "<group>"; };
 		B1D6267D164EC04700A207CD /* BountyHunter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BountyHunter.png; sourceTree = "<group>"; };
 		B1D6267E164EC04700A207CD /* Clockwerk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Clockwerk.png; sourceTree = "<group>"; };
@@ -85,7 +88,7 @@
 		EDCA22E91655160F00FEDF75 /* axe_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = axe_icon.png; sourceTree = "<group>"; };
 		EDCA22EA1655160F00FEDF75 /* Darkterror_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Darkterror_icon.png; sourceTree = "<group>"; };
 		EDCA22EB1655160F00FEDF75 /* tiny_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tiny_icon.png; sourceTree = "<group>"; };
-		EDCA22F2165525FE00FEDF75 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		EDCA22F2165525FE00FEDF75 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		EDCA22F41655286100FEDF75 /* Agility.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Agility.png; sourceTree = "<group>"; };
 		EDCA22F51655286100FEDF75 /* Intelligence.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Intelligence.png; sourceTree = "<group>"; };
 		EDCA22F61655286100FEDF75 /* Strength.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Strength.png; sourceTree = "<group>"; };
@@ -121,6 +124,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C3CAEE01657D4C800E8341C /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B18C9E42164E8B5900ADE97A /* AppDelegate.h */,
+				B18C9E43164E8B5900ADE97A /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		5C3CAEE11657D4F300E8341C /* Abilities */ = {
+			isa = PBXGroup;
+			children = (
+				EDCA230716553AB100FEDF75 /* AbilitiesViewController.h */,
+				EDCA230816553AB100FEDF75 /* AbilitiesViewController.m */,
+			);
+			name = Abilities;
+			sourceTree = "<group>";
+		};
+		5C3CAEE21657D50000E8341C /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				EDCA230C16553EDC00FEDF75 /* InformationViewController.h */,
+				EDCA230D16553EDC00FEDF75 /* InformationViewController.m */,
+			);
+			name = Info;
+			sourceTree = "<group>";
+		};
+		5C3CAEE31657D51400E8341C /* TestDataGeneration */ = {
+			isa = PBXGroup;
+			children = (
+				B1D62678164EBBC300A207CD /* MockObjectGenerator.h */,
+				B1D62679164EBBC300A207CD /* MockObjectGenerator.m */,
+			);
+			name = TestDataGeneration;
+			sourceTree = "<group>";
+		};
+		5C3CAEE41657D54000E8341C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5C3CAEE61657D55900E8341C /* Parsing */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		5C3CAEE61657D55900E8341C /* Parsing */ = {
+			isa = PBXGroup;
+			children = (
+				5C3CAEE71657D58200E8341C /* HeroParser.h */,
+				5C3CAEE81657D58200E8341C /* HeroParser.m */,
+			);
+			name = Parsing;
+			sourceTree = "<group>";
+		};
 		B17D98BD164EA18000C60B36 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,10 +218,6 @@
 		B18C9E22164E8B5900ADE97A = {
 			isa = PBXGroup;
 			children = (
-				EDCA2303165537DE00FEDF75 /* ViewControllers */,
-				EDCA22F2165525FE00FEDF75 /* Default-568h@2x.png */,
-				B1D62678164EBBC300A207CD /* MockObjectGenerator.h */,
-				B1D62679164EBBC300A207CD /* MockObjectGenerator.m */,
 				B18C9E39164E8B5900ADE97A /* Dota2App */,
 				B18C9E30164E8B5900ADE97A /* Frameworks */,
 				B18C9E2E164E8B5900ADE97A /* Products */,
@@ -194,16 +246,14 @@
 		B18C9E39164E8B5900ADE97A /* Dota2App */ = {
 			isa = PBXGroup;
 			children = (
+				5C3CAEE41657D54000E8341C /* Utilities */,
+				5C3CAEE31657D51400E8341C /* TestDataGeneration */,
+				5C3CAEE01657D4C800E8341C /* AppDelegate */,
+				EDCA2303165537DE00FEDF75 /* ViewControllers */,
 				B1DAD9671650440900523981 /* Custom Cells */,
 				B17D98BE164EA48300C60B36 /* Storyboard */,
 				B17D98BD164EA18000C60B36 /* Resources */,
 				B18C9E59164E8CD000ADE97A /* Core Data */,
-				B18C9E42164E8B5900ADE97A /* AppDelegate.h */,
-				B18C9E43164E8B5900ADE97A /* AppDelegate.m */,
-				B18C9E4E164E8B5A00ADE97A /* MasterViewController.h */,
-				B18C9E4F164E8B5A00ADE97A /* MasterViewController.m */,
-				B18C9E51164E8B5A00ADE97A /* DetailViewController.h */,
-				B18C9E52164E8B5A00ADE97A /* DetailViewController.m */,
 				B18C9E3A164E8B5900ADE97A /* Supporting Files */,
 			);
 			path = Dota2App;
@@ -212,6 +262,7 @@
 		B18C9E3A164E8B5900ADE97A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EDCA22F2165525FE00FEDF75 /* Default-568h@2x.png */,
 				B18C9E3B164E8B5900ADE97A /* Dota2App-Info.plist */,
 				B18C9E3C164E8B5900ADE97A /* InfoPlist.strings */,
 				B18C9E3F164E8B5900ADE97A /* main.m */,
@@ -244,12 +295,15 @@
 		EDCA2303165537DE00FEDF75 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				EDCA230716553AB100FEDF75 /* AbilitiesViewController.h */,
-				EDCA230816553AB100FEDF75 /* AbilitiesViewController.m */,
-				EDCA230C16553EDC00FEDF75 /* InformationViewController.h */,
-				EDCA230D16553EDC00FEDF75 /* InformationViewController.m */,
+				B18C9E4E164E8B5A00ADE97A /* MasterViewController.h */,
+				B18C9E4F164E8B5A00ADE97A /* MasterViewController.m */,
+				B18C9E51164E8B5A00ADE97A /* DetailViewController.h */,
+				B18C9E52164E8B5A00ADE97A /* DetailViewController.m */,
+				5C3CAEE21657D50000E8341C /* Info */,
+				5C3CAEE11657D4F300E8341C /* Abilities */,
 			);
 			name = ViewControllers;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,6 +403,7 @@
 				EDCA230E16553EDC00FEDF75 /* InformationViewController.m in Sources */,
 				EDCDE72C165692FF00DAF422 /* Ability.m in Sources */,
 				EDCDE72F1656930900DAF422 /* Hero.m in Sources */,
+				5C3CAEE91657D58200E8341C /* HeroParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
