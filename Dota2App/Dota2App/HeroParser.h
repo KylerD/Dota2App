@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface HeroParser : NSObject
-
+- (BOOL)parse;
 @end
