@@ -55,8 +55,16 @@
     NSEntityDescription *entity;
     entity = [NSEntityDescription entityForName:entityName inManagedObjectContext:managedObjectContext];
     // Edit the sort key as appropriate.
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:NO];
-    NSArray *sortDescriptors = [NSArray arrayWithObjects:sortDescriptor, nil];
+    //NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:NO];
+    
+     NSSortDescriptor *sortDescriptor1 = [[NSSortDescriptor alloc] initWithKey:@"attribute" ascending:NO selector:@selector(caseInsensitiveCompare:)];
+    
+     NSSortDescriptor *sortDescriptor2 = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:NO selector:@selector(caseInsensitiveCompare:)];
+    
+    
+    NSSortDescriptor *sortDescriptor3 = [[NSSortDescriptor alloc] initWithKey:@"faction" ascending:NO selector:@selector(caseInsensitiveCompare:)];
+    
+    NSArray *sortDescriptors = [NSArray arrayWithObjects:sortDescriptor1,sortDescriptor2,sortDescriptor3, nil];
     
     [fetchRequest setSortDescriptors:sortDescriptors];
     [fetchRequest setEntity:entity];
@@ -68,7 +76,7 @@
     
     // Edit the section name key path and cache name if appropriate.
     // nil for section name key path means "no sections".
-    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:managedObjectContext sectionNameKeyPath:@"attribute" cacheName:nil];
+    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:managedObjectContext sectionNameKeyPath:nil cacheName:nil];
     aFetchedResultsController.delegate = self;
     
     return aFetchedResultsController;
@@ -130,7 +138,8 @@
 // Customize the number of sections in the table view.
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return [[fetchedRC sections] count];
+    //return [[fetchedRC sections] count];
+    return 1;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -176,7 +185,7 @@
     
     NSArray *objects = [sectionInfo objects];
     NSManagedObject *managedObject = [objects lastObject];
-    return [managedObject valueForKey:@"attribute"];
+    return [[[managedObject valueForKey:@"attribute"] lowercaseString] capitalizedString];
     
 }
 
@@ -188,10 +197,12 @@
     NSString *subtitle = [NSString stringWithFormat:@"%@ - %@", hero.faction, hero.attribute];
     NSString *factionImageName = [NSString stringWithFormat:@"%@.png", hero.faction];
     NSString *attributeImageName = [NSString stringWithFormat:@"%@.png", hero.attribute];
+    NSString * heroImageName = [NSString stringWithFormat:@"%@.%@",hero.name,@"png"];
     //Configure the cell
     heroCell.cellTitleLabel.text = hero.name;
     heroCell.cellDetailLabel.text = subtitle;
-    heroCell.cellImage.image = [UIImage imageNamed:hero.detailImage];
+    heroCell.cellImage.image = [UIImage imageNamed:heroImageName];
+    heroCell.cellImage.contentMode = UIViewContentModeScaleAspectFit;
     heroCell.factionImage.image = [UIImage imageNamed:factionImageName];
     heroCell.attributeImage.image = [UIImage imageNamed:attributeImageName];
 }

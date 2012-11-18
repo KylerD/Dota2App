@@ -622,6 +622,7 @@
 		5C3CB3B61657F2A400E8341C /* X_Marks_the_Spot.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CB1521657F2A400E8341C /* X_Marks_the_Spot.png */; };
 		5C3CB3B81657F33C00E8341C /* heroData.json in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CB3B71657F33C00E8341C /* heroData.json */; };
 		5C3CB3C61658287400E8341C /* Hero+DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3CB3C51658287400E8341C /* Hero+DAO.m */; };
+		5C3CB3C71659039200E8341C /* NSManagedObject+CRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3CB3BF16581F1700E8341C /* NSManagedObject+CRUD.m */; };
 		B18C9E32164E8B5900ADE97A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C9E31164E8B5900ADE97A /* UIKit.framework */; };
 		B18C9E34164E8B5900ADE97A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C9E33164E8B5900ADE97A /* Foundation.framework */; };
 		B18C9E36164E8B5900ADE97A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C9E35164E8B5900ADE97A /* CoreGraphics.framework */; };
@@ -635,19 +636,8 @@
 		B18C9E50164E8B5A00ADE97A /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18C9E4F164E8B5A00ADE97A /* MasterViewController.m */; };
 		B18C9E53164E8B5A00ADE97A /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18C9E52164E8B5A00ADE97A /* DetailViewController.m */; };
 		B1D6267A164EBBC300A207CD /* MockObjectGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D62679164EBBC300A207CD /* MockObjectGenerator.m */; };
-		B1D62684164EC04700A207CD /* AncientApparition.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D6267C164EC04700A207CD /* AncientApparition.png */; };
-		B1D62685164EC04700A207CD /* BountyHunter.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D6267D164EC04700A207CD /* BountyHunter.png */; };
-		B1D62686164EC04700A207CD /* Clockwerk.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D6267E164EC04700A207CD /* Clockwerk.png */; };
-		B1D62687164EC04700A207CD /* Disruptor.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D6267F164EC04700A207CD /* Disruptor.png */; };
-		B1D62688164EC04700A207CD /* Invoker.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D62680164EC04700A207CD /* Invoker.png */; };
-		B1D62689164EC04700A207CD /* NyxAssassin.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D62681164EC04700A207CD /* NyxAssassin.png */; };
-		B1D6268A164EC04700A207CD /* ShadowDemon.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D62682164EC04700A207CD /* ShadowDemon.png */; };
-		B1D6268B164EC04700A207CD /* Sniper.png in Resources */ = {isa = PBXBuildFile; fileRef = B1D62683164EC04700A207CD /* Sniper.png */; };
 		B1DAD96616503F0B00523981 /* HeroCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DAD96516503F0B00523981 /* HeroCell.m */; };
 		EDCA22E716550F2200FEDF75 /* hero.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA22E616550F2200FEDF75 /* hero.png */; };
-		EDCA22EC1655161000FEDF75 /* axe_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA22E91655160F00FEDF75 /* axe_icon.png */; };
-		EDCA22ED1655161000FEDF75 /* Darkterror_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA22EA1655160F00FEDF75 /* Darkterror_icon.png */; };
-		EDCA22EE1655161000FEDF75 /* tiny_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA22EB1655160F00FEDF75 /* tiny_icon.png */; };
 		EDCA22F3165525FE00FEDF75 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA22F2165525FE00FEDF75 /* Default-568h@2x.png */; };
 		EDCA22F71655286100FEDF75 /* Agility.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA22F41655286100FEDF75 /* Agility.png */; };
 		EDCA22F81655286100FEDF75 /* Intelligence.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA22F51655286100FEDF75 /* Intelligence.png */; };
@@ -656,11 +646,6 @@
 		EDCA230216552A2900FEDF75 /* Radiant.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA230116552A2900FEDF75 /* Radiant.png */; };
 		EDCA230A16553AB100FEDF75 /* AbilitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCA230816553AB100FEDF75 /* AbilitiesViewController.m */; };
 		EDCA230E16553EDC00FEDF75 /* InformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCA230D16553EDC00FEDF75 /* InformationViewController.m */; };
-		EDCDE71F16568C0000DAF422 /* abilityFive.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EDCDE71A16568BFE00DAF422 /* abilityFive.jpeg */; };
-		EDCDE72016568C0000DAF422 /* abilityFour.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EDCDE71B16568BFE00DAF422 /* abilityFour.jpeg */; };
-		EDCDE72116568C0000DAF422 /* abilityOne.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EDCDE71C16568BFF00DAF422 /* abilityOne.jpeg */; };
-		EDCDE72216568C0000DAF422 /* abilityThree.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EDCDE71D16568BFF00DAF422 /* abilityThree.jpeg */; };
-		EDCDE72316568C0000DAF422 /* abilityTwo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = EDCDE71E16568BFF00DAF422 /* abilityTwo.jpeg */; };
 		EDCDE72C165692FF00DAF422 /* Ability.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCDE72B165692FF00DAF422 /* Ability.m */; };
 		EDCDE72F1656930900DAF422 /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCDE72E1656930900DAF422 /* Hero.m */; };
 /* End PBXBuildFile section */
@@ -1305,20 +1290,9 @@
 		B18C9E52164E8B5A00ADE97A /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = Dota2App/DetailViewController.m; sourceTree = "<group>"; };
 		B1D62678164EBBC300A207CD /* MockObjectGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MockObjectGenerator.h; path = ../MockObjectGenerator.h; sourceTree = "<group>"; };
 		B1D62679164EBBC300A207CD /* MockObjectGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MockObjectGenerator.m; path = ../MockObjectGenerator.m; sourceTree = "<group>"; };
-		B1D6267C164EC04700A207CD /* AncientApparition.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AncientApparition.png; sourceTree = "<group>"; };
-		B1D6267D164EC04700A207CD /* BountyHunter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BountyHunter.png; sourceTree = "<group>"; };
-		B1D6267E164EC04700A207CD /* Clockwerk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Clockwerk.png; sourceTree = "<group>"; };
-		B1D6267F164EC04700A207CD /* Disruptor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Disruptor.png; sourceTree = "<group>"; };
-		B1D62680164EC04700A207CD /* Invoker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Invoker.png; sourceTree = "<group>"; };
-		B1D62681164EC04700A207CD /* NyxAssassin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NyxAssassin.png; sourceTree = "<group>"; };
-		B1D62682164EC04700A207CD /* ShadowDemon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShadowDemon.png; sourceTree = "<group>"; };
-		B1D62683164EC04700A207CD /* Sniper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sniper.png; sourceTree = "<group>"; };
 		B1DAD96416503F0B00523981 /* HeroCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroCell.h; sourceTree = "<group>"; };
 		B1DAD96516503F0B00523981 /* HeroCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroCell.m; sourceTree = "<group>"; };
 		EDCA22E616550F2200FEDF75 /* hero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero.png; sourceTree = "<group>"; };
-		EDCA22E91655160F00FEDF75 /* axe_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = axe_icon.png; sourceTree = "<group>"; };
-		EDCA22EA1655160F00FEDF75 /* Darkterror_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Darkterror_icon.png; sourceTree = "<group>"; };
-		EDCA22EB1655160F00FEDF75 /* tiny_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tiny_icon.png; sourceTree = "<group>"; };
 		EDCA22F2165525FE00FEDF75 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		EDCA22F41655286100FEDF75 /* Agility.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Agility.png; sourceTree = "<group>"; };
 		EDCA22F51655286100FEDF75 /* Intelligence.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Intelligence.png; sourceTree = "<group>"; };
@@ -1329,11 +1303,6 @@
 		EDCA230816553AB100FEDF75 /* AbilitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbilitiesViewController.m; sourceTree = "<group>"; };
 		EDCA230C16553EDC00FEDF75 /* InformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationViewController.h; sourceTree = "<group>"; };
 		EDCA230D16553EDC00FEDF75 /* InformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationViewController.m; sourceTree = "<group>"; };
-		EDCDE71A16568BFE00DAF422 /* abilityFive.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = abilityFive.jpeg; sourceTree = "<group>"; };
-		EDCDE71B16568BFE00DAF422 /* abilityFour.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = abilityFour.jpeg; sourceTree = "<group>"; };
-		EDCDE71C16568BFF00DAF422 /* abilityOne.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = abilityOne.jpeg; sourceTree = "<group>"; };
-		EDCDE71D16568BFF00DAF422 /* abilityThree.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = abilityThree.jpeg; sourceTree = "<group>"; };
-		EDCDE71E16568BFF00DAF422 /* abilityTwo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = abilityTwo.jpeg; sourceTree = "<group>"; };
 		EDCDE72A165692FF00DAF422 /* Ability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ability.h; sourceTree = "<group>"; };
 		EDCDE72B165692FF00DAF422 /* Ability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ability.m; sourceTree = "<group>"; };
 		EDCDE72D1656930900DAF422 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
@@ -2072,28 +2041,12 @@
 			children = (
 				5C3CB3B91657F34600E8341C /* data */,
 				5C3CAEEA1657F2A400E8341C /* images */,
-				EDCDE71A16568BFE00DAF422 /* abilityFive.jpeg */,
-				EDCDE71B16568BFE00DAF422 /* abilityFour.jpeg */,
-				EDCDE71C16568BFF00DAF422 /* abilityOne.jpeg */,
-				EDCDE71D16568BFF00DAF422 /* abilityThree.jpeg */,
-				EDCDE71E16568BFF00DAF422 /* abilityTwo.jpeg */,
 				EDCA230116552A2900FEDF75 /* Radiant.png */,
 				EDCA22FA165528A900FEDF75 /* Dire.png */,
 				EDCA22F41655286100FEDF75 /* Agility.png */,
 				EDCA22F51655286100FEDF75 /* Intelligence.png */,
 				EDCA22F61655286100FEDF75 /* Strength.png */,
 				EDCA22E616550F2200FEDF75 /* hero.png */,
-				B1D6267C164EC04700A207CD /* AncientApparition.png */,
-				B1D6267D164EC04700A207CD /* BountyHunter.png */,
-				B1D6267E164EC04700A207CD /* Clockwerk.png */,
-				B1D6267F164EC04700A207CD /* Disruptor.png */,
-				B1D62680164EC04700A207CD /* Invoker.png */,
-				B1D62681164EC04700A207CD /* NyxAssassin.png */,
-				B1D62682164EC04700A207CD /* ShadowDemon.png */,
-				B1D62683164EC04700A207CD /* Sniper.png */,
-				EDCA22E91655160F00FEDF75 /* axe_icon.png */,
-				EDCA22EA1655160F00FEDF75 /* Darkterror_icon.png */,
-				EDCA22EB1655160F00FEDF75 /* tiny_icon.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -2255,29 +2208,13 @@
 				B18C9E3E164E8B5900ADE97A /* InfoPlist.strings in Resources */,
 				B18C9E47164E8B5A00ADE97A /* MainStoryboard_iPhone.storyboard in Resources */,
 				B18C9E4A164E8B5A00ADE97A /* MainStoryboard_iPad.storyboard in Resources */,
-				B1D62684164EC04700A207CD /* AncientApparition.png in Resources */,
-				B1D62685164EC04700A207CD /* BountyHunter.png in Resources */,
-				B1D62686164EC04700A207CD /* Clockwerk.png in Resources */,
-				B1D62687164EC04700A207CD /* Disruptor.png in Resources */,
-				B1D62688164EC04700A207CD /* Invoker.png in Resources */,
-				B1D62689164EC04700A207CD /* NyxAssassin.png in Resources */,
-				B1D6268A164EC04700A207CD /* ShadowDemon.png in Resources */,
-				B1D6268B164EC04700A207CD /* Sniper.png in Resources */,
 				EDCA22E716550F2200FEDF75 /* hero.png in Resources */,
-				EDCA22EC1655161000FEDF75 /* axe_icon.png in Resources */,
-				EDCA22ED1655161000FEDF75 /* Darkterror_icon.png in Resources */,
-				EDCA22EE1655161000FEDF75 /* tiny_icon.png in Resources */,
 				EDCA22F3165525FE00FEDF75 /* Default-568h@2x.png in Resources */,
 				EDCA22F71655286100FEDF75 /* Agility.png in Resources */,
 				EDCA22F81655286100FEDF75 /* Intelligence.png in Resources */,
 				EDCA22F91655286100FEDF75 /* Strength.png in Resources */,
 				EDCA22FC165528A900FEDF75 /* Dire.png in Resources */,
 				EDCA230216552A2900FEDF75 /* Radiant.png in Resources */,
-				EDCDE71F16568C0000DAF422 /* abilityFive.jpeg in Resources */,
-				EDCDE72016568C0000DAF422 /* abilityFour.jpeg in Resources */,
-				EDCDE72116568C0000DAF422 /* abilityOne.jpeg in Resources */,
-				EDCDE72216568C0000DAF422 /* abilityThree.jpeg in Resources */,
-				EDCDE72316568C0000DAF422 /* abilityTwo.jpeg in Resources */,
 				5C3CB1531657F2A400E8341C /* Icon_Agi.png in Resources */,
 				5C3CB1541657F2A400E8341C /* Icon_Int.png in Resources */,
 				5C3CB1551657F2A400E8341C /* Icon_Str.png in Resources */,
@@ -2901,6 +2838,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C3CB3C71659039200E8341C /* NSManagedObject+CRUD.m in Sources */,
 				B18C9E40164E8B5900ADE97A /* main.m in Sources */,
 				B18C9E44164E8B5900ADE97A /* AppDelegate.m in Sources */,
 				B18C9E4D164E8B5A00ADE97A /* Dota2App.xcdatamodeld in Sources */,

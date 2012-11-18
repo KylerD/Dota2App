@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "MockObjectGenerator.h"
 #import "MasterViewController.h"
+#import "HeroParser.h"
 
 @implementation AppDelegate
 
@@ -25,6 +26,9 @@
         UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
         splitViewController.delegate = (id)navigationController.topViewController;
     }
+    
+    
+    [[[HeroParser alloc] init] parse];
     
    MockObjectGenerator *generator = [[MockObjectGenerator alloc] init];
    [generator generateRandomHeros];

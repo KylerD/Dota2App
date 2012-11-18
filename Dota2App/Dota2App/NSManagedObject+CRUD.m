@@ -9,7 +9,7 @@
 #import "NSManagedObject+CRUD.h"
 #import "AppDelegate.h"
 #import <objc/runtime.h>
-#import "GeneralUtils.h"
+
 
 @implementation NSManagedObject(CRUD)
 
@@ -39,7 +39,7 @@
     @synchronized([NSManagedObject class]) {
         NSManagedObject *object = [self readObjectWithParamterName:parameterName andValue:parameterValue];
         
-        if ([GeneralUtils isEmpty:object]) {
+        if (!object) {
             object = [self createObject];
         }
         
@@ -63,7 +63,7 @@
         
         NSArray *results = [[self database] executeFetchRequest:request error: &error];
         
-        if ([GeneralUtils isntEmpty:results]) {
+        if ([results lastObject]) {
             object = [results objectAtIndex:0];
         }
         
@@ -125,7 +125,7 @@
         BOOL saveSuccessful = true;
         NSError *error;
         if (![[self database] save:&error]) {
-            DDLogError(@"Error saving changes to database - %@", error);
+            NSLog(@"Error saving changes to database - %@", error);
             saveSuccessful = false;
         }
         return saveSuccessful;
