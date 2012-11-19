@@ -9,24 +9,34 @@
 #import "Hero+DAO.h"
 
 @implementation Hero (DAO)
-+ (Hero*)heroFromDictionary:(NSDictionary*)heroDictionary{
+
++ (Hero *)heroFromDictionary:(NSDictionary*)heroDictionary{
     
    // NSLog(@"Creating Hero with Dictionary:%@",heroDictionary);
     
     Hero* hero = [Hero createObject];
     
     //TODO: Map dict to values..
-    hero.attribute = [self interpretValue:[heroDictionary valueForKey:@"primary attribute"]];
+    NSString *attributeMultiCase = [self interpretValue:[heroDictionary valueForKey:@"primary attribute"]];
+    NSString *attributeLowerCase = [attributeMultiCase lowercaseString];
+    /* create the new string */
+    NSString *attribute = [attributeLowerCase capitalizedString];
+    
+    hero.attribute = attribute;
     
     if(!hero.attribute){
-        hero.attribute =@"Unkown";
+        hero.attribute =@"Unknown";
     }
     
+    NSString *heroName = [self interpretValue:[heroDictionary valueForKey:@"name"]];
+    NSString *detailImagePath = [NSString stringWithFormat:@"%@.%@",heroName,@"png"];
+    NSString *iconImagePath = [NSString stringWithFormat:@"%@_icon.%@",heroName,@"png"];
+    
     hero.bio = [self interpretValue:[heroDictionary valueForKey:@"lore"]];
-    hero.detailImage = @"";
+    hero.detailImage = detailImagePath;
     hero.faction = [self interpretValue:[heroDictionary valueForKey:@"faction"]];
-    hero.iconImage = @"";
-    hero.name = [self interpretValue:[heroDictionary valueForKey:@"name"]];
+    hero.iconImage = iconImagePath;
+    hero.name = heroName;
     //More
     
     return hero;

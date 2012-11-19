@@ -54,29 +54,24 @@
     // Edit the entity name as appropriate.
     NSEntityDescription *entity;
     entity = [NSEntityDescription entityForName:entityName inManagedObjectContext:managedObjectContext];
-    // Edit the sort key as appropriate.
-    //NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:NO];
+    [fetchRequest setEntity:entity];
+
     
-     NSSortDescriptor *sortDescriptor1 = [[NSSortDescriptor alloc] initWithKey:@"attribute" ascending:NO selector:@selector(caseInsensitiveCompare:)];
+     NSSortDescriptor *sortDescriptor1 = [[NSSortDescriptor alloc] initWithKey:@"attribute" ascending:YES selector:@selector(caseInsensitiveCompare:)];
+
+     NSSortDescriptor *sortDescriptor2 = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES selector:@selector(caseInsensitiveCompare:)];
     
-     NSSortDescriptor *sortDescriptor2 = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:NO selector:@selector(caseInsensitiveCompare:)];
+        NSSortDescriptor *sortDescriptor3 = [[NSSortDescriptor alloc] initWithKey:@"faction" ascending:NO selector:@selector(caseInsensitiveCompare:)];
     
-    
-    NSSortDescriptor *sortDescriptor3 = [[NSSortDescriptor alloc] initWithKey:@"faction" ascending:NO selector:@selector(caseInsensitiveCompare:)];
-    
-    NSArray *sortDescriptors = [NSArray arrayWithObjects:sortDescriptor1,sortDescriptor2,sortDescriptor3, nil];
+    NSArray *sortDescriptors = [NSArray arrayWithObjects:sortDescriptor1, sortDescriptor2, sortDescriptor3, nil];
     
     [fetchRequest setSortDescriptors:sortDescriptors];
-    [fetchRequest setEntity:entity];
     
     // Set the batch size to a suitable number.
-    [fetchRequest setFetchBatchSize:10];
-    
-    
-    
-    // Edit the section name key path and cache name if appropriate.
-    // nil for section name key path means "no sections".
-    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:managedObjectContext sectionNameKeyPath:nil cacheName:nil];
+    [fetchRequest setFetchBatchSize:25];
+
+    // nil for section name key path means "1 section".
+    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:managedObjectContext sectionNameKeyPath:@"attribute" cacheName:nil];
     aFetchedResultsController.delegate = self;
     
     return aFetchedResultsController;
@@ -135,21 +130,21 @@
 }
 
 #pragma mark - Table View
-// Customize the number of sections in the table view.
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    //return [[fetchedRC sections] count];
-    return 1;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 90;
+    return [[fetchedRC sections] count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [[[fetchedRC sections] objectAtIndex:section] numberOfObjects];
+    id <NSFetchedResultsSectionInfo> sectionInfo = [[fetchedRC sections] objectAtIndex:section];
+    return [sectionInfo numberOfObjects];
     
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 90;
 }
 
 // Customize the appearance of table view cells.
@@ -170,23 +165,15 @@
     } 
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([[segue identifier] isEqualToString:@"showDetail"]) {
-       
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        Hero *selectedHero = [fetchedRC objectAtIndexPath:indexPath];
-        [[segue destinationViewController] setHero:selectedHero];
-    }
-}
-
 -(NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
     id <NSFetchedResultsSectionInfo> sectionInfo = [[fetchedRC sections] objectAtIndex:section];
-    
-    NSArray *objects = [sectionInfo objects];
-    NSManagedObject *managedObject = [objects lastObject];
-    return [[[managedObject valueForKey:@"attribute"] lowercaseString] capitalizedString];
-    
+
+    return [sectionInfo name];
+}
+
+-(NSString *)controller:(NSFetchedResultsController *)controller
+    sectionIndexTitleForSectionName:(NSString *)sectionName {
+    return sectionName;
 }
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
@@ -197,11 +184,10 @@
     NSString *subtitle = [NSString stringWithFormat:@"%@ - %@", hero.faction, hero.attribute];
     NSString *factionImageName = [NSString stringWithFormat:@"%@.png", hero.faction];
     NSString *attributeImageName = [NSString stringWithFormat:@"%@.png", hero.attribute];
-    NSString * heroImageName = [NSString stringWithFormat:@"%@.%@",hero.name,@"png"];
     //Configure the cell
     heroCell.cellTitleLabel.text = hero.name;
     heroCell.cellDetailLabel.text = subtitle;
-    heroCell.cellImage.image = [UIImage imageNamed:heroImageName];
+    heroCell.cellImage.image = [UIImage imageNamed:hero.iconImage];
     heroCell.cellImage.contentMode = UIViewContentModeScaleAspectFit;
     heroCell.factionImage.image = [UIImage imageNamed:factionImageName];
     heroCell.attributeImage.image = [UIImage imageNamed:attributeImageName];
@@ -289,5 +275,18 @@
     
     [self.tableView reloadData];
 }
+
+#pragma mark - Screen Navigation
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"showDetail"]) {
+        
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        Hero *selectedHero = [fetchedRC objectAtIndexPath:indexPath];
+        [[segue destinationViewController] setHero:selectedHero];
+    }
+}
+
 
 @end

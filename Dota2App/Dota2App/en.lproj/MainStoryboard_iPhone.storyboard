@@ -8,7 +8,7 @@
         <scene sceneID="mzi-Xx-fVQ">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="QwK-Pb-ZTE" sceneMemberID="viewController">
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="emA-pQ-0nA">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -76,10 +76,6 @@
                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="mTs-Fd-5vu">
-                                            <rect key="frame" x="230" y="10" width="70" height="70"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
-                                        </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="gQi-uu-t2l">
                                             <rect key="frame" x="197" y="55" width="25" height="25"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -88,13 +84,16 @@
                                             <rect key="frame" x="20" y="55" width="25" height="25"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="zZP-dy-aUz">
+                                            <rect key="frame" x="264" y="26" width="36" height="37"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
                                     <outlet property="attributeImage" destination="gQi-uu-t2l" id="dZw-Ga-1oQ"/>
                                     <outlet property="cellDetailLabel" destination="Y5z-zJ-Ezt" id="cM5-BO-YPG"/>
-                                    <outlet property="cellImage" destination="mTs-Fd-5vu" id="37E-hM-2zq"/>
                                     <outlet property="cellTitleLabel" destination="EhS-WK-OUu" id="9MB-V8-vyX"/>
                                     <outlet property="factionImage" destination="pfc-hQ-Xya" id="OFx-Nd-qWj"/>
                                     <segue destination="g5B-bk-5l4" kind="push" identifier="showDetail" id="GH7-65-RPs"/>
