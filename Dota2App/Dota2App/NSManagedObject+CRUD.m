@@ -27,7 +27,7 @@
     return [delegate managedObjectContext];
 }
 
-+ (id)createObject{
++ (id)createObject {
     @synchronized([NSManagedObject class]) {
         NSString *className = [self entityName];
         

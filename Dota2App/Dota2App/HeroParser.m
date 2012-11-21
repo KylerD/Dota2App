@@ -15,24 +15,25 @@
 @implementation HeroParser
 
 - (BOOL)parse {
+
+    //Note: you can comment this whole method out and just return YES after the first run to stop the massive start time.
     NSData * heroesJSONData = [self getJSONData];
     AppDelegate *del = [[UIApplication sharedApplication] delegate];
     NSArray * heroesJSON = [self getJSONDictionary:heroesJSONData];
     BOOL success = [self createHeroes:heroesJSON];
 
     if (success) {
-        NSError *error;
-        
-        if (![del.managedObjectContext save:&error]) {
-            NSLog(@"Save no work");
-        } else {
-            NSLog(@"Save succesful!");
-        }
+        [del.managedObjectContext performBlock:^{
+            NSError *error = nil;
+            if (![del.managedObjectContext save:&error]) {
+                // Code to handle the error appropriately.
+            } else {
+                // Code to handle success.
+            }
+        }];
     }
 
-    
     return success;
-
 }
 
 - (NSData*)getJSONData {
@@ -56,16 +57,16 @@
 
 -(BOOL)createHeroes:(NSArray*)heroesJSON {
     
-    int failCount = 1;
+    int failCount = 0;
     
     for (NSDictionary * heroJSON in heroesJSON) {
         if(![self createHero:heroJSON]){
-            failCount = 0;
+            failCount++;
             NSLog(@"Failed to create Hero for:/n %@",heroJSON);
         }
     }
 
-    return (BOOL)failCount;
+    return !(BOOL)failCount;
 }
 
 //- (BOOL)createAbilities:(NSArray*)abilitiesJSON {

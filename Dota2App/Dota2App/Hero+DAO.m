@@ -11,11 +11,12 @@
 
 @implementation Hero (DAO)
 
-+ (Hero *)heroFromDictionary:(NSDictionary*)heroDictionary{
++ (Hero *)heroFromDictionary:(NSDictionary*)heroDictionary {
+    NSString *heroName = [self interpretValue:[heroDictionary valueForKey:@"name"]];
     
    // NSLog(@"Creating Hero with Dictionary:%@",heroDictionary);
     
-    Hero* hero = [Hero createObject];
+    Hero* hero = [Hero readOrCreateObjectWithParamterName:@"name" andValue:heroName];
     
     //TODO: Map dict to values..
     NSString *attributeMultiCase = [self interpretValue:[heroDictionary valueForKey:@"primary attribute"]];
@@ -26,10 +27,9 @@
     hero.primaryAttribute = attribute;
     
     if(!hero.primaryAttribute){
-        hero.primaryAttribute =@"Unknown";
+        hero.primaryAttribute = @"Unknown";
     }
-    
-    NSString *heroName = [self interpretValue:[heroDictionary valueForKey:@"name"]];
+
     NSString *detailImagePath = [NSString stringWithFormat:@"%@.%@",heroName,@"png"];
     NSString *iconImagePath = [NSString stringWithFormat:@"%@_icon.%@",heroName,@"png"];
     

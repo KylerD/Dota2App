@@ -57,11 +57,11 @@
     [fetchRequest setEntity:entity];
 
     
-     NSSortDescriptor *sortDescriptor1 = [[NSSortDescriptor alloc] initWithKey:@"primaryAttribute" ascending:YES selector:@selector(caseInsensitiveCompare:)];
+    NSSortDescriptor *sortDescriptor1 = [[NSSortDescriptor alloc] initWithKey:@"primaryAttribute" ascending:YES selector:@selector(caseInsensitiveCompare:)];
 
-     NSSortDescriptor *sortDescriptor2 = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES selector:@selector(caseInsensitiveCompare:)];
+    NSSortDescriptor *sortDescriptor2 = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES selector:@selector(caseInsensitiveCompare:)];
     
-        NSSortDescriptor *sortDescriptor3 = [[NSSortDescriptor alloc] initWithKey:@"faction" ascending:NO selector:@selector(caseInsensitiveCompare:)];
+    NSSortDescriptor *sortDescriptor3 = [[NSSortDescriptor alloc] initWithKey:@"faction" ascending:NO selector:@selector(caseInsensitiveCompare:)];
     
     NSArray *sortDescriptors = [NSArray arrayWithObjects:sortDescriptor1, sortDescriptor2, sortDescriptor3, nil];
     
