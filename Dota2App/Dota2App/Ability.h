@@ -2,7 +2,7 @@
 //  Ability.h
 //  Dota2App
 //
-//  Created by Kyle Davidson on 16/11/2012.
+//  Created by Kyle Davidson on 21/11/2012.
 //
 //
 
@@ -21,6 +21,6 @@
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSString * notes;
 @property (nonatomic, retain) NSString * radius;
-@property (nonatomic, retain) Hero *isAbilityOf;
+@property (nonatomic, retain) Hero *hero;
 
 @end

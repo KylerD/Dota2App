@@ -9,7 +9,7 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="radius" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="isAbilityOf" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Hero" inverseName="hasAbility" inverseEntity="Hero" syncable="YES"/>
+        <relationship name="hero" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Hero" inverseName="abilities" inverseEntity="Hero" syncable="YES"/>
     </entity>
     <entity name="Event">
         <attribute name="timeStamp" optional="YES" attributeType="Date">
@@ -18,21 +18,49 @@
         <userInfo/>
     </entity>
     <entity name="Hero" representedClassName="Hero" syncable="YES">
-        <attribute name="agilityPoints" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="attribute" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="agilGain" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="agilPoints" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="armour" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="attackBackswing" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="attackPoints" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="attackRange" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="bio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="castBackswing" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="castPoints" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="detailImage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dmgMax" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="dmgMin" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="faction" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hp" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="iconImage" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="intelligencePoints" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="intelGain" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="intelPoints" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="lastModified" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="lore" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mana" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="missileSpeed" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="ms" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="primaryAttribute" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="quote" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="role" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="strengthPoints" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="hasAbility" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Ability" inverseName="isAbilityOf" inverseEntity="Ability" syncable="YES"/>
+        <attribute name="sightDay" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="sightNight" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="strGain" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="strPoints" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="turnRate" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="abilities" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Ability" inverseName="hero" inverseEntity="Ability" syncable="YES"/>
+        <relationship name="roles" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Role" inverseName="heros" inverseEntity="Role" syncable="YES"/>
+    </entity>
+    <entity name="Role" representedClassName="Role" syncable="YES">
+        <attribute name="roleImage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="roleName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="heros" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Hero" inverseName="roles" inverseEntity="Hero" syncable="YES"/>
     </entity>
     <elements>
         <element name="Ability" positionX="205" positionY="324" width="128" height="180"/>
-        <element name="Event" positionX="261" positionY="189" width="128" height="60"/>
-        <element name="Hero" positionX="-27" positionY="204" width="128" height="210"/>
+        <element name="Event" positionX="351" positionY="201" width="128" height="60"/>
+        <element name="Hero" positionX="-27" positionY="204" width="128" height="540"/>
+        <element name="Role" positionX="160" positionY="192" width="128" height="90"/>
     </elements>
 </model>

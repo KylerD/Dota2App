@@ -2,7 +2,7 @@
 //  Ability.m
 //  Dota2App
 //
-//  Created by Kyle Davidson on 16/11/2012.
+//  Created by Kyle Davidson on 21/11/2012.
 //
 //
 
@@ -20,6 +20,6 @@
 @dynamic name;
 @dynamic notes;
 @dynamic radius;
-@dynamic isAbilityOf;
+@dynamic hero;
 
 @end

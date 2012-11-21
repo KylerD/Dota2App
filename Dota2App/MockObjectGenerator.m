@@ -54,19 +54,20 @@
     hero.detailImage = [heroImages objectAtIndex:randomImageIndex];
     hero.iconImage = [heroIcons objectAtIndex:randomIconIndex];
     //Stats
-    int strengthPoint = (arc4random() % 15) + 10;
-    int strengthExtensionPoint = (arc4random() % 5) + 1;
-    int agilityPoint = (arc4random() % 15) + 10;
-    int agilityExtensionPoint = (arc4random() % 5) + 1;
-    int intPoint = (arc4random() % 15) + 10;
-    int intExtensionPoint = (arc4random() % 5) + 1;
-    NSString *strength = [NSString stringWithFormat:@"%i + %i", strengthPoint, strengthExtensionPoint];
-    NSString *agility = [NSString stringWithFormat:@"%i + %i", agilityPoint, agilityExtensionPoint];
-    NSString *intelligence = [NSString stringWithFormat:@"%i + %i", intPoint, intExtensionPoint];
+    float strengthPoint = (arc4random() % 15) + 10;
+    float strengthGain = (arc4random() % 5) + 1;
+    float agilityPoint = (arc4random() % 15) + 10;
+    float agilityGain = (arc4random() % 5) + 1;
+    float intPoint = (arc4random() % 15) + 10;
+    float intGain = (arc4random() % 5) + 1;
     
-    hero.strengthPoints = strength;
-    hero.agilityPoints = agility;
-    hero.intelligencePoints = intelligence;
+    hero.strPoints = [NSNumber numberWithFloat:strengthPoint];
+    hero.strGain = [NSNumber numberWithFloat:strengthGain];
+    hero.agilPoints = [NSNumber numberWithFloat:agilityPoint];
+    hero.agilGain = [NSNumber numberWithFloat:agilityGain];
+    hero.intelPoints = [NSNumber numberWithFloat:intPoint];
+    hero.intelGain = [NSNumber numberWithFloat:intGain];
+    
     
     int typeChange = arc4random() % 2;
     if (typeChange == 1) {
@@ -78,13 +79,13 @@
     int specChange = arc4random() % 3;
     switch (specChange) {
         case 0:
-            hero.attribute= @"Strength";
+            hero.primaryAttribute= @"Strength";
             break;
         case 1:
-            hero.attribute = @"Agility";
+            hero.primaryAttribute = @"Agility";
             break;
         case 2:
-            hero.attribute = @"Intelligence";
+            hero.primaryAttribute = @"Intelligence";
             break;
     }
     
@@ -113,7 +114,7 @@
     ability.ability = [abilityTypes objectAtIndex:randomTypeIndex];
     ability.damage = [abilityDamage objectAtIndex:randomDamageTypeIndex];
     //sets up the relationship
-    ability.isAbilityOf = hero;
+    ability.hero = hero;
     
 }
 

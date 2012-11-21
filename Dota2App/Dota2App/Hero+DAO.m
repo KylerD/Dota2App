@@ -22,10 +22,10 @@
     /* create the new string */
     NSString *attribute = [attributeLowerCase capitalizedString];
     
-    hero.attribute = attribute;
+    hero.primaryAttribute = attribute;
     
-    if(!hero.attribute){
-        hero.attribute =@"Unknown";
+    if(!hero.primaryAttribute){
+        hero.primaryAttribute =@"Unknown";
     }
     
     NSString *heroName = [self interpretValue:[heroDictionary valueForKey:@"name"]];
