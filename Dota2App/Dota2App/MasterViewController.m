@@ -57,7 +57,7 @@
     [fetchRequest setEntity:entity];
 
     
-     NSSortDescriptor *sortDescriptor1 = [[NSSortDescriptor alloc] initWithKey:@"attribute" ascending:YES selector:@selector(caseInsensitiveCompare:)];
+     NSSortDescriptor *sortDescriptor1 = [[NSSortDescriptor alloc] initWithKey:@"primaryAttribute" ascending:YES selector:@selector(caseInsensitiveCompare:)];
 
      NSSortDescriptor *sortDescriptor2 = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES selector:@selector(caseInsensitiveCompare:)];
     
@@ -71,7 +71,7 @@
     [fetchRequest setFetchBatchSize:25];
 
     // nil for section name key path means "1 section".
-    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:managedObjectContext sectionNameKeyPath:@"attribute" cacheName:nil];
+    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:managedObjectContext sectionNameKeyPath:@"primaryAttribute" cacheName:nil];
     aFetchedResultsController.delegate = self;
     
     return aFetchedResultsController;
