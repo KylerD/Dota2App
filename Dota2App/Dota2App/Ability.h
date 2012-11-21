@@ -21,6 +21,7 @@
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSString * notes;
 @property (nonatomic, retain) NSString * radius;
+@property (nonatomic, retain) NSString * abilityId;
 @property (nonatomic, retain) Hero *hero;
 
 @end

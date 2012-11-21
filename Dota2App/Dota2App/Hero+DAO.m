@@ -7,6 +7,7 @@
 //
 
 #import "Hero+DAO.h"
+#import "StackMob.h"
 
 @implementation Hero (DAO)
 

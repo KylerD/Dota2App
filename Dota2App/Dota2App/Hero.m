@@ -8,6 +8,7 @@
 
 #import "Hero.h"
 #import "Ability.h"
+#import "Role.h"
 
 
 @implementation Hero
@@ -43,6 +44,7 @@
 @dynamic attackRange;
 @dynamic mana;
 @dynamic hp;
+@dynamic heroId;
 @dynamic abilities;
 @dynamic roles;
 

@@ -20,6 +20,7 @@
 @dynamic name;
 @dynamic notes;
 @dynamic radius;
+@dynamic abilityId;
 @dynamic hero;
 
 @end

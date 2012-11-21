@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class Ability;
+@class Ability, Role;
 
 @interface Hero : NSManagedObject
 
@@ -44,6 +44,7 @@
 @property (nonatomic, retain) NSNumber * attackRange;
 @property (nonatomic, retain) NSNumber * mana;
 @property (nonatomic, retain) NSNumber * hp;
+@property (nonatomic, retain) NSString * heroId;
 @property (nonatomic, retain) NSSet *abilities;
 @property (nonatomic, retain) NSSet *roles;
 @end
@@ -55,8 +56,8 @@
 - (void)addAbilities:(NSSet *)values;
 - (void)removeAbilities:(NSSet *)values;
 
-- (void)addRolesObject:(NSManagedObject *)value;
-- (void)removeRolesObject:(NSManagedObject *)value;
+- (void)addRolesObject:(Role *)value;
+- (void)removeRolesObject:(Role *)value;
 - (void)addRoles:(NSSet *)values;
 - (void)removeRoles:(NSSet *)values;
 

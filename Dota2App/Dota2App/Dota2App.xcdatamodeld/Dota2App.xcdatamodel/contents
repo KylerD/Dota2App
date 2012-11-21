@@ -2,6 +2,7 @@
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="11G63" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Ability" representedClassName="Ability" syncable="YES">
         <attribute name="ability" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="abilityId" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="affects" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="damage" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="duration" optional="YES" attributeType="String" syncable="YES"/>
@@ -31,6 +32,7 @@
         <attribute name="dmgMax" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="dmgMin" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="faction" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="heroId" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="hp" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="iconImage" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="intelGain" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
@@ -58,9 +60,9 @@
         <relationship name="heros" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Hero" inverseName="roles" inverseEntity="Hero" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Ability" positionX="205" positionY="324" width="128" height="180"/>
+        <element name="Ability" positionX="205" positionY="324" width="128" height="195"/>
         <element name="Event" positionX="351" positionY="201" width="128" height="60"/>
-        <element name="Hero" positionX="-27" positionY="204" width="128" height="540"/>
+        <element name="Hero" positionX="-27" positionY="204" width="128" height="555"/>
         <element name="Role" positionX="160" positionY="192" width="128" height="90"/>
     </elements>
 </model>

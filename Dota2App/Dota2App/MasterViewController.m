@@ -66,9 +66,6 @@
     NSArray *sortDescriptors = [NSArray arrayWithObjects:sortDescriptor1, sortDescriptor2, sortDescriptor3, nil];
     
     [fetchRequest setSortDescriptors:sortDescriptors];
-    
-    // Set the batch size to a suitable number.
-    [fetchRequest setFetchBatchSize:25];
 
     // nil for section name key path means "1 section".
     NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:managedObjectContext sectionNameKeyPath:@"primaryAttribute" cacheName:nil];

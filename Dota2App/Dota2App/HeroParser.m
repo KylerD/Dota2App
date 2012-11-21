@@ -7,18 +7,32 @@
 //
 
 #import "HeroParser.h"
-
 #import "Hero.h"
 #import "Hero+DAO.h"
 #import "Ability.h"
+#import "AppDelegate.h"
 
 @implementation HeroParser
 
 - (BOOL)parse {
     NSData * heroesJSONData = [self getJSONData];
+    AppDelegate *del = [[UIApplication sharedApplication] delegate];
     NSArray * heroesJSON = [self getJSONDictionary:heroesJSONData];
     BOOL success = [self createHeroes:heroesJSON];
+
+    if (success) {
+        NSError *error;
+        
+        if (![del.managedObjectContext save:&error]) {
+            NSLog(@"Save no work");
+        } else {
+            NSLog(@"Save succesful!");
+        }
+    }
+
+    
     return success;
+
 }
 
 - (NSData*)getJSONData {
@@ -42,11 +56,11 @@
 
 -(BOOL)createHeroes:(NSArray*)heroesJSON {
     
-    int failCount = 0;
+    int failCount = 1;
     
     for (NSDictionary * heroJSON in heroesJSON) {
         if(![self createHero:heroJSON]){
-            failCount++;
+            failCount = 0;
             NSLog(@"Failed to create Hero for:/n %@",heroJSON);
         }
     }

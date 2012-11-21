@@ -9,6 +9,7 @@
 #import "NSManagedObject+CRUD.h"
 #import "AppDelegate.h"
 #import <objc/runtime.h>
+#import "StackMob.h"
 
 
 @implementation NSManagedObject(CRUD)
@@ -31,6 +32,9 @@
         NSString *className = [self entityName];
         
         NSManagedObject *obj = [NSEntityDescription insertNewObjectForEntityForName:className inManagedObjectContext:[self database]];
+        
+        [obj setValue:[obj assignObjectId] forKey:[obj primaryKeyField]];
+
         return obj;
     }
 }
