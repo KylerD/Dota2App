@@ -27,13 +27,11 @@
         UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
         splitViewController.delegate = (id)navigationController.topViewController;
     }
-    
+    /*
     self.client = [[SMClient alloc] initWithAPIVersion:@"0" publicKey:@"6586fffa-0b95-426c-8763-d30299599b40"];
-    SMCoreDataStore *coreDataStore = [self.client coreDataStoreWithManagedObjectModel:self.managedObjectModel];
-    self.managedObjectContext = [coreDataStore managedObjectContext];
-    
-    [[[HeroParser alloc] init] parse];
-    
+    SMCoreDataStore *coreDataStore = [self.client coreDataStoreWithManagedObjectModel:self.managedObjectModel];*/
+    MockObjectGenerator *generator = [[MockObjectGenerator alloc] init];
+    [generator generateRandomHeros];
     return YES;
 }
 							
@@ -94,9 +92,9 @@
 
 #pragma mark - Core Data stack
 
-/**
+/*
  Returns the managed object context for the application.
- If the context doesn't already exist, it is created and bound to the persistent store coordinator for the application.
+ If the context doesn't already exist, it is created and bound to the persistent store coordinator for the application.*/
  
 - (NSManagedObjectContext *)managedObjectContext
 {
@@ -114,7 +112,7 @@
     return __managedObjectContext;
 }
 
-
+/*
  Returns the managed object model for the application.
  If the model doesn't already exist, it is created from the application's model.
  */
