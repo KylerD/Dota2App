@@ -87,7 +87,7 @@ end
 
 
 def printAbilityDetail(ability)
-	puts "-->#{ability['name']}"
+	puts "Ability-->#{ability['name']}"
 	keyArray = ability.keys
 	keyArray.each do |key|
 		val = ability[key]
@@ -216,13 +216,13 @@ heroArray.each do |h|
 	 		a['lore'] = node.at('div[4]/text()')
 
 			#Get Dynamic ability cols...this bits a bit of a mess..blame Valve
-			heroAbilityKeyValueElement = node.search('.abilityFooterBox')[0]
-			heroAbilityKeyValueArray = cleanDynamicAbilityArray(heroAbilityKeyValueElement.text.split( /\r?\n/ ).collect{|item| item.strip}.reject!(&:empty?))
+			# heroAbilityKeyValueElement = node.search('.abilityFooterBox')[0]
+			# heroAbilityKeyValueArray = cleanDynamicAbilityArray(heroAbilityKeyValueElement.text.split( /\r?\n/ ).collect{|item| item.strip}.reject!(&:empty?))
 
-			#DEBUG...
-			heroAbilityKeyValueArray.each do |abiltyKVP|
-				puts ">'#{abiltyKVP}'"
-			end
+			# #DEBUG...
+			# heroAbilityKeyValueArray.each do |abiltyKVP|
+			# 	puts ">'#{abiltyKVP}'"
+			# end
 
 			#puts "=========>#{heroAbilityKeyValueElement.class} [#{heroAbilityKeyValueElement}]"
 			# a['target'] = node.at('div[2]/div[1]/span[1]/text()')
@@ -257,7 +257,7 @@ heroArray.each do |h|
 	h['abilities'] = heroAbilities
 
 	#Debug: Print Hero detail to console
-	#printHeroDetail(h)
+	printHeroDetail(h)
 end
 
 #TODO: HASH TO JSON CONVERSION
