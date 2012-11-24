@@ -196,7 +196,13 @@ heroArray.each do |h|
  	h['attackVal'] = heroDetailPage.at('//*[@id="overview_AttackVal"]/text()')
  	h['speedVal'] = heroDetailPage.at('//*[@id="overview_SpeedVal"]/text()')
  	h['defenceVal'] = heroDetailPage.at('//*[@id="overview_DefenseVal"]/text()')
-	
+
+ 	#Get Hero Stats
+ 	h['hp'] = heroDetailPage.at('//*[@id="statsLeft"]/div[2]/div[3]/text()')
+ 	h['sight'] = heroDetailPage.at('//*[@id="statsRight"]/div[2]/div/text()')
+	h['range'] = heroDetailPage.at('//*[@id="statsRight"]/div[3]/div/text()')
+	h['missileSpeed'] = heroDetailPage.at('//*[@id="statsRight"]/div[4]/div/text()')
+
 	heroAbilities = Array.new
 
 	#Get Ability Element array
