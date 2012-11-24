@@ -19,6 +19,12 @@
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
 @synthesize client = __client;
 
+
+//STACKMOB SETTINGS
+#define STACKMOB_ENABLE NO
+#define STACKMOB_KEY @"6586fffa-0b95-426c-8763-d30299599b40"
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
@@ -27,11 +33,17 @@
         UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
         splitViewController.delegate = (id)navigationController.topViewController;
     }
-    /*
-    self.client = [[SMClient alloc] initWithAPIVersion:@"0" publicKey:@"6586fffa-0b95-426c-8763-d30299599b40"];
-    SMCoreDataStore *coreDataStore = [self.client coreDataStoreWithManagedObjectModel:self.managedObjectModel];*/
-    MockObjectGenerator *generator = [[MockObjectGenerator alloc] init];
-    [generator generateRandomHeros];
+    
+    if(STACKMOB_ENABLE){
+         self.client = [[SMClient alloc] initWithAPIVersion:@"0" publicKey:STACKMOB_KEY];
+         SMCoreDataStore *coreDataStore = [self.client coreDataStoreWithManagedObjectModel:self.managedObjectModel];
+    } else {
+        MockObjectGenerator *generator = [[MockObjectGenerator alloc] init];
+        [generator generateRandomHeros];
+    }
+    
+
+
     return YES;
 }
 							
