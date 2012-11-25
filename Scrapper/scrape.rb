@@ -5,6 +5,8 @@ require "bundler/setup"
 require 'json'
 require 'mechanize'
 
+verbose = false
+
 def arrayToString(a)
 	return a.map { |i| "'" + i.to_s + "'" }.join(",")
 end
@@ -218,7 +220,7 @@ agent.user_agent_alias = 'Linux Mozilla'
 
 heroArray = Array.new
 
-enableConsolePrinting = false
+
 
 puts "================================================================="
 puts "					DOTA2 SPIDER"
@@ -319,7 +321,7 @@ heroArray.each do |h|
 	h['abilities'] = heroAbilities
 
 	#Debug: Print Hero detail to console
-	if enableConsolePrinting
+	if verbose
 		printHeroDetail(h)
 	end
 end
