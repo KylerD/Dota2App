@@ -204,7 +204,7 @@ def createHashFromMixedKVPArray(a)
 			# 	puts "Processed---Key:#{formattedKey}, value: #{formattedValue}"
 			# end
 		
-			tempAblityHash[formattedKey] = formattedValue
+			tempAblityHash[formattedKey] = formattedValue.strip
 		}
 	end
 	return tempAblityHash
@@ -246,7 +246,7 @@ heroArray.each do |h|
  	h['attackMode'] = heroDetailPage.at('//*[@id="heroBioRoles"]/span/text()')
  	h['roles'] = formatRoleString(heroDetailPage.at('//*[@id="heroBioRoles"]/text()').content)
  	h['bio'] = formatBioString(heroDetailPage.at('//*[@id="bioInner"]/text()').content)
- 	h['attack'] = heroDetailPage.at('//*[@id="overview_AttackVal"]/text()')
+ 	h['attack'] = heroDetailPage.at('//*[@id="overview_AttackVal"]/text()').strip
  	h['ms'] = heroDetailPage.at('//*[@id="overview_SpeedVal"]/text()')
  	h['amour'] = heroDetailPage.at('//*[@id="overview_DefenseVal"]/text()')
 
