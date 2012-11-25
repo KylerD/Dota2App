@@ -119,40 +119,75 @@ def formatBioString(bioString)
 	return bioString.strip
 end
 
+#TODO:
+#Funciton takes KVP that contains stock value with conacted gain value and seperates them
+def formatStockAndGainVal(baseName,StockAndGainValue)
+	#Parse val by '+'
+	#KeyNames = use baseName for stock, <base>Gain for gain
+	#return hash..
+	return StockAndGainKVP
+end
 
-#TODO: THIS FUCKING MESS
+#This function is to correct cases where multiple KVP's can show up inside the same line
+#eg. 'TOSS BONUS: 35% / 50% / 65%SCEPTER BONUS RANGE: 107SCEPTER CLEAVE DAMAGE: 50%SCEPTER BONUS BUILDING DAMAGE: 75%SCEPTER TOSS BONUS: 50% / 65% / 80%'
 def cleanDynamicAbilityArray(a)
-	stupidConcatsRegex = /%([A-Z])|\d([A-Z])/
-	colonRegex = /:/
-
+	
 	cleanKVPs = Array.new
 	splitAbilityKVPs = Array.new
-	cleanedKVPs = Array.new
+
+	colonRegex = /:/
 
 	a.each do |item|
 
 		if(message.scan(colonRegex).size == 0)	
-			#No concat issue present
+			#No concat issue present, add to clean item array
 			cleanArray.push item
 		else
-
-			positionsOfConcats = item.enum_for(:scan,stupidConcatsRegex).map { Regexp.last_match.begin(0) }
+			#Get positions for concats
+			#regex works by recognising two types of patterns.
+			#Type 1: <% SYMBOL><UPPERCASE LETTER>
+			#Type 2: <NUMBER><UPPERCASE LATTER>
+			#There may be other cases..
+			concatBoundaryRegex = /%([A-Z])|\d([A-Z])/
+			#A count of the number of colons is used to validate if a concat(s) may be present
+			#This mechanisim was the lesser of all the evils for parsing section of information
+			#This mechanisim has RISK as formatting changes to the input data will break this..
+			concatBoundaries = item.enum_for(:scan,concatBoundaryRegex).map { Regexp.last_match.begin(0) }
 			
-			if positionsOfConcats.size == 0
+			#Check if there are multiple colons. Assumption is 1 colon per KVP..
+			if concatBoundaries.size == 0
 				puts "Error: colon assumption broke the ability Concat Regex fix"
 			else
-				
-				positionsOfConcats.each do |concatedIndex|
-					splitAttempt = item[(concatedIndex-1)..concatedIndex]
+				#We have 1 or more concats inside 1 array item.
+				#DEBUG
+				puts "Found concat: '#{item}', attempting to split using points of interest: #{arrayToString(positionsOfConcats)}"
+				#for each identified concat boundary..
+				startingPoint = 0
+				concatBoundaries.each do |concatedIndex|
+					#Exract substring for identified boundary..
+					splitAttempt = item[startingPoint..concatedIndex-1]
+					#Moving the substring starting point for the next concat..
+					startingPoint = concatedIndex 
+					#DEBUG
+					puts "Attempted to split (#{startingPoint}-#{concatedIndex}) got:'#{splitAttempt}', adding to array.."
 					splitAbilityKVPs.push splitAttempt
 				end
 			end
 		end
 	end
-
+	#Concat two clean arrays to produce 1 nice clean array
 	return cleanKVPs | splitAbilityKVPs
 end
 
+
+
+#TODO:
+def createHashFromMixedKVPArray(a)
+#parse item by colon
+#Modify case of key
+#add to hash
+#return hash and merge into abilities..
+end
 
 #Agent init and config
 agent = Mechanize.new
