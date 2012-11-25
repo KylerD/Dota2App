@@ -21,5 +21,10 @@
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
+/*
+ * Method which returns a managed object context using the traditional approach, seperate from a stackmob enabled context
+ *@return the context to be returned
+ */
+- (NSManagedObjectContext *)offlineManagedObjectContext;
 
 @end

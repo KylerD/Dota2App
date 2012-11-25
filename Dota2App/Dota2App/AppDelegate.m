@@ -37,7 +37,9 @@
     if(STACKMOB_ENABLE){
          self.client = [[SMClient alloc] initWithAPIVersion:@"0" publicKey:STACKMOB_KEY];
          SMCoreDataStore *coreDataStore = [self.client coreDataStoreWithManagedObjectModel:self.managedObjectModel];
+        self.managedObjectContext = [coreDataStore managedObjectContext];
     } else {
+        self.managedObjectContext = [self offlineManagedObjectContext];
         MockObjectGenerator *generator = [[MockObjectGenerator alloc] init];
         [generator generateRandomHeros];
     }
@@ -108,7 +110,7 @@
  Returns the managed object context for the application.
  If the context doesn't already exist, it is created and bound to the persistent store coordinator for the application.*/
  
-- (NSManagedObjectContext *)managedObjectContext
+- (NSManagedObjectContext *)offlineManagedObjectContext
 {
     if (__managedObjectContext != nil)
     {

@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="11G63" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="5">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="10K549" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="5">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller - Heroes-->
         <scene sceneID="14">
             <objects>
                 <navigationController id="3" sceneMemberID="viewController">
@@ -20,12 +20,11 @@
             </objects>
             <point key="canvasLocation" x="-70" y="-1510"/>
         </scene>
-        <!--Detail View Controller - Detail-->
         <scene sceneID="16">
             <objects>
                 <viewController storyboardIdentifier="" title="Detail" id="4" customClass="DetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o8L-We-iod">
-                        <rect key="frame" x="0.0" y="64" width="703" height="704"/>
+                        <rect key="frame" x="0.0" y="64" width="703" height="660"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -34,7 +33,7 @@
                     <navigationItem key="navigationItem" id="53">
                         <nil key="title"/>
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="DH1-Bp-idR">
-                            <rect key="frame" x="7" y="7" width="525" height="30"/>
+                            <rect key="frame" x="89" y="7" width="525" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
                                 <segment title="Information"/>
@@ -44,23 +43,10 @@
                                 <action selector="segmentChanged:" destination="4" eventType="valueChanged" id="tm8-gd-qbP"/>
                             </connections>
                         </segmentedControl>
-                        <barButtonItem key="rightBarButtonItem" id="EQ0-Ig-PiU">
-                            <view key="customView" contentMode="scaleToFill" id="auT-YZ-duo">
-                                <rect key="frame" x="540" y="5" width="156" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="lqz-Ni-L6K">
-                                        <rect key="frame" x="87" y="0.0" width="69" height="33"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    </imageView>
-                                </subviews>
-                            </view>
-                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="iconImageView" destination="lqz-Ni-L6K" id="8Hg-Z8-sJT"/>
                         <outlet property="searchDisplayController" destination="4Ew-lo-hkL" id="vZj-QW-y0p"/>
                         <outlet property="segment" destination="DH1-Bp-idR" id="Qe6-WA-VNq"/>
                     </connections>
@@ -77,7 +63,6 @@
             </objects>
             <point key="canvasLocation" x="516" y="278"/>
         </scene>
-        <!--Split View Controller-->
         <scene sceneID="18">
             <objects>
                 <splitViewController id="5" sceneMemberID="viewController">
@@ -93,7 +78,6 @@
             </objects>
             <point key="canvasLocation" x="-687" y="-630"/>
         </scene>
-        <!--Master View Controller - Master-->
         <scene sceneID="24">
             <objects>
                 <tableViewController storyboardIdentifier="" title="Master" clearsSelectionOnViewWillAppear="NO" id="19" customClass="MasterViewController" sceneMemberID="viewController">
@@ -181,7 +165,6 @@
             </objects>
             <point key="canvasLocation" x="375" y="-1510"/>
         </scene>
-        <!--Tab Bar Controller-->
         <scene sceneID="nJF-Xu-zqg">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="iGa-z1-DcB" sceneMemberID="viewController">
@@ -199,7 +182,6 @@
             </objects>
             <point key="canvasLocation" x="-544" y="-1526"/>
         </scene>
-        <!--Navigation Controller-->
         <scene sceneID="50">
             <objects>
                 <navigationController id="42" sceneMemberID="viewController">
@@ -214,10 +196,9 @@
             </objects>
             <point key="canvasLocation" x="-276" y="278"/>
         </scene>
-        <!--Information View Controller-->
         <scene sceneID="lIw-Jv-2kd">
             <objects>
-                <viewController storyboardIdentifier="InformationVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7V3-sk-vAF" customClass="InformationViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InformationVC" id="7V3-sk-vAF" customClass="InformationViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DXx-6U-Ubu">
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -233,10 +214,9 @@
             </objects>
             <point key="canvasLocation" x="-369" y="1283"/>
         </scene>
-        <!--Abilities View Controller-->
         <scene sceneID="eXJ-NH-WOb">
             <objects>
-                <viewController storyboardIdentifier="AbilityVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="T6e-Ig-B8I" customClass="AbilitiesViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AbilityVC" id="T6e-Ig-B8I" customClass="AbilitiesViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R7u-S7-Tt6">
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -253,6 +233,34 @@
     <resources>
         <image name="hero.png" width="26" height="17"/>
     </resources>
+    <classes>
+        <class className="AbilitiesViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AbilitiesViewController.h"/>
+        </class>
+        <class className="DetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="iconImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="segment" candidateClass="UISegmentedControl"/>
+            </relationships>
+        </class>
+        <class className="HeroCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HeroCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="attributeImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="cellDetailLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="cellImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="cellTitleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="factionImage" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="InformationViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/InformationViewController.h"/>
+        </class>
+        <class className="MasterViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MasterViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
