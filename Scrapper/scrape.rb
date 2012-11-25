@@ -122,7 +122,13 @@ def formatSlashValueString(valueString)
 	valArrayWithRemovedWhiteSpace = valArray.collect{|val| val.strip}
 	#puts "Split:#{arrayToString(valArrayWithRemovedWhiteSpace)}"
 	#empty string tidy..
-	return valArrayWithRemovedWhiteSpace
+
+	if(valArray.length ==0)
+		return valueString
+	else
+		return valArrayWithRemovedWhiteSpace
+	end
+
 end
 
 
@@ -140,7 +146,6 @@ def formatStockAndGainVal(baseName,stockAndGainString)
 	strippedItems = items.collect{|val| val.strip}
 
 	if items.length < 2
-		puts "Failed to parse Stock and Gain String '#{stockAndGainString}'"
 		stockValAndGainHash[baseName] = stockAndGainString;
 	else 
 		#KeyNames = use baseName for stock, <base>Gain for gain
@@ -206,7 +211,7 @@ def cleanDynamicAbilityArray(a)
 					#puts "Split (#{startingPoint}-#{boundaryIndexValue}) got:'#{splitAttempt}', adding to array.."
 					startingPoint = boundaryIndexValue +1
 					#Adding the individual KVP to an array..
-					splitAbilityKVPs.push splitAttempt
+					splitAbilityKVPs.push splitAttempt.strip
 				end
 			end
 		end
@@ -286,9 +291,9 @@ heroArray.each do |h|
  	h['attackMode'] = heroDetailPage.at('//*[@id="heroBioRoles"]/span/text()')
  	h['roles'] = formatRoleString(heroDetailPage.at('//*[@id="heroBioRoles"]/text()').content)
  	h['bio'] = formatBioString(heroDetailPage.at('//*[@id="bioInner"]/text()').content)
- 	h['attackVal'] = heroDetailPage.at('//*[@id="overview_AttackVal"]/text()')
- 	h['speedVal'] = heroDetailPage.at('//*[@id="overview_SpeedVal"]/text()')
- 	h['defenceVal'] = heroDetailPage.at('//*[@id="overview_DefenseVal"]/text()')
+ 	h['attack'] = heroDetailPage.at('//*[@id="overview_AttackVal"]/text()')
+ 	h['ms'] = heroDetailPage.at('//*[@id="overview_SpeedVal"]/text()')
+ 	h['amour'] = heroDetailPage.at('//*[@id="overview_DefenseVal"]/text()')
 
  	#Get data from Stats section
  	h['hp'] = heroDetailPage.at('//*[@id="statsLeft"]/div[2]/div[3]/text()')
@@ -329,18 +334,18 @@ heroArray.each do |h|
 			heroAbilityKeyValueElement = node.search('.abilityFooterBox')[0]
 			heroAbilityKeyValueArray = heroAbilityKeyValueElement.text.split( /\r?\n/ ).collect{|item| item.strip}.reject!(&:empty?)
 			dynamicAbilityHash = cleanDynamicAbilityArray(heroAbilityKeyValueArray)
-			#Merge ability hashes together..
-			a.merge!(dynamicAbilityHash)
+			#Add Dynamic hases to dynamic key
+			a['dynamic'] = dynamicAbilityHash
 
 			#Get optional ability details
 			manaElement = node.at('div[1]/div[3]/div/div[1]/text()')
 			if manaElement
-				a['manaVal'] = manaElement
+				a['mana'] = formatSlashValueString(manaElement.content)
 			end
 
 			coolDownElement = node.at('div[1]/div[3]/div/div[2]/text()')
 			if coolDownElement
-				a['cooldownVal'] = coolDownElement
+				a['cooldown'] = formatSlashValueString(coolDownElement.content)
 			end
 
 			iframeElement = node.at('div[3]/iframe')
