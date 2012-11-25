@@ -5,51 +5,6 @@ require "bundler/setup"
 require 'json'
 require 'mechanize'
 
-
-#Class
-
-# class Hero
-# 	def initialize()
-# 		@data = Hash.new('unknown')
-# 	end
-# 	def [](key)
-# 		@data[key]
-# 	end
-# 	def []=(key,words)
-# 		#@data[key] += [words].flatten
-# 		@data[key].uniq!
-# 	end
-# 	def getKeys
-# 		return @data.keys
-# 	end
-# 	def to_json(*a)
-# 		@data.to_json(*a)
-# 	end
-# end
-
-
-# class Ability
-# 	def initialize()
-# 		@data = Hash.new { |hash, key| hash[key] = "" }
-# 	end
-# 	def [](key)
-# 		@data[key]
-# 	end
-# 	def []=(key,words)
-# 		#@data[key] += [words].flatten
-# 		@data[key].uniq!
-# 	end
-# 	def getKeys
-# 		return @data.keys
-# 	end
-# 	def to_json(*a)
-# 		@data.to_json(*a)
-# 	end
-# end
-
-
-#FUNTIONS
-
 def arrayToString(a)
 	return a.map { |i| "'" + i.to_s + "'" }.join(",")
 end
