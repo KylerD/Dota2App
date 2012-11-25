@@ -121,12 +121,12 @@ end
 
 #TODO:
 #Funciton takes KVP that contains stock value with conacted gain value and seperates them
-def formatStockAndGainVal(baseName,StockAndGainValue)
-	#Parse val by '+'
-	#KeyNames = use baseName for stock, <base>Gain for gain
-	#return hash..
-	return StockAndGainKVP
-end
+# def formatStockAndGainVal(baseName,StockAndGainValue)
+# 	#Parse val by '+'
+# 	#KeyNames = use baseName for stock, <base>Gain for gain
+# 	#return hash..
+# 	return StockAndGainValue
+# end
 
 #This function is to correct cases where multiple KVP's can show up inside the same line
 #eg. 'TOSS BONUS: 35% / 50% / 65%SCEPTER BONUS RANGE: 107SCEPTER CLEAVE DAMAGE: 50%SCEPTER BONUS BUILDING DAMAGE: 75%SCEPTER TOSS BONUS: 50% / 65% / 80%'
@@ -139,44 +139,58 @@ def cleanDynamicAbilityArray(a)
 
 	a.each do |item|
 
-		if(message.scan(colonRegex).size == 0)	
+		if(item.scan(colonRegex).size == 1)	
 			#No concat issue present, add to clean item array
-			cleanArray.push item
+			puts "Found Item:#{item}"
+			cleanKVPs.push item
 		else
+			#puts "Found UNCLEAN Item:#{item}"
 			#Get positions for concats
 			#regex works by recognising two types of patterns.
 			#Type 1: <% SYMBOL><UPPERCASE LETTER>
 			#Type 2: <NUMBER><UPPERCASE LATTER>
 			#There may be other cases..
-			concatBoundaryRegex = /%([A-Z])|\d([A-Z])/
+			concatBoundaryRegex = /%[A-Z]|\d([A-Z])|[a-z][A-Z]/
 			#A count of the number of colons is used to validate if a concat(s) may be present
 			#This mechanisim was the lesser of all the evils for parsing section of information
 			#This mechanisim has RISK as formatting changes to the input data will break this..
 			concatBoundaries = item.enum_for(:scan,concatBoundaryRegex).map { Regexp.last_match.begin(0) }
-			
+			#ßputs "Found #{concatBoundaries.size} boundaries in '#{item}'"
 			#Check if there are multiple colons. Assumption is 1 colon per KVP..
 			if concatBoundaries.size == 0
 				puts "Error: colon assumption broke the ability Concat Regex fix"
 			else
 				#We have 1 or more concats inside 1 array item.
 				#DEBUG
-				puts "Found concat: '#{item}', attempting to split using points of interest: #{arrayToString(positionsOfConcats)}"
+				puts "Found concat: '#{item}', attempting to split using points of interest: #{arrayToString(concatBoundaries)}"
 				#for each identified concat boundary..
 				startingPoint = 0
-				concatBoundaries.each do |concatedIndex|
-					#Exract substring for identified boundary..
-					splitAttempt = item[startingPoint..concatedIndex-1]
+
+				for i in 0 .. concatBoundaries.length do
+
+					boundaryIndexValue = 0
+
+					if i < concatBoundaries.length
+						boundaryIndexValue = concatBoundaries[i]
+					else
+						boundaryIndexValue = item.length
+					end
+
+					splitAttempt = item[startingPoint..boundaryIndexValue]
 					#Moving the substring starting point for the next concat..
-					startingPoint = concatedIndex 
 					#DEBUG
-					puts "Attempted to split (#{startingPoint}-#{concatedIndex}) got:'#{splitAttempt}', adding to array.."
+					puts "Split (#{startingPoint}-#{boundaryIndexValue}) got:'#{splitAttempt}', adding to array.."
+					startingPoint = boundaryIndexValue +1
 					splitAbilityKVPs.push splitAttempt
 				end
 			end
 		end
 	end
 	#Concat two clean arrays to produce 1 nice clean array
-	return cleanKVPs | splitAbilityKVPs
+	cleanArray =  cleanKVPs | splitAbilityKVPs
+
+
+	return cleanArray
 end
 
 
@@ -186,7 +200,7 @@ def createHashFromMixedKVPArray(a)
 #parse item by colon
 #Modify case of key
 #add to hash
-#return hash and merge into abilities..
+#cleanreturn hash and merge into abilities..
 end
 
 #Agent init and config
@@ -257,9 +271,10 @@ heroArray.each do |h|
 	 		a['lore'] = node.at('div[4]/text()')
 
 			#Get Dynamic ability cols...this bits a bit of a mess..blame Valve
-			# heroAbilityKeyValueElement = node.search('.abilityFooterBox')[0]
-			# heroAbilityKeyValueArray = cleanDynamicAbilityArray(heroAbilityKeyValueElement.text.split( /\r?\n/ ).collect{|item| item.strip}.reject!(&:empty?))
+			heroAbilityKeyValueElement = node.search('.abilityFooterBox')[0]
+			heroAbilityKeyValueArray = heroAbilityKeyValueElement.text.split( /\r?\n/ ).collect{|item| item.strip}.reject!(&:empty?)
 
+			cleanedheroAbilityKeyValueArray = cleanDynamicAbilityArray(heroAbilityKeyValueArray)
 			# #DEBUG...
 			# heroAbilityKeyValueArray.each do |abiltyKVP|
 			# 	puts ">'#{abiltyKVP}'"
@@ -298,7 +313,7 @@ heroArray.each do |h|
 	h['abilities'] = heroAbilities
 
 	#Debug: Print Hero detail to console
-	printHeroDetail(h)
+	#printHeroDetail(h)
 end
 
 #TODO: HASH TO JSON CONVERSION
