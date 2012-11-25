@@ -243,12 +243,7 @@
 }
 
 #pragma mark - Search bar
-- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
-{   
-    [self filterContentForSearchText:[self.searchDisplayController.searchBar text] scope:nil];
-    
-    return YES;
-}
+
 - (void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
 {   
     savedSearchTerm = searchText;
@@ -271,6 +266,13 @@
     }
     
     [self.tableView reloadData];
+}
+
+- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
+{   
+    [self filterContentForSearchText:[self.searchDisplayController.searchBar text] scope:nil];
+    
+    return YES;
 }
 
 #pragma mark - Screen Navigation

@@ -86,7 +86,7 @@
 //    return YES;
 //}
 
-- (BOOL)createHero:(NSDictionary*)heroJSON{
+- (BOOL)createHero:(NSDictionary*)heroJSON {
     //TODO: Create Core data objects
     //NSLog(@"Creating Hero for JSON:/n%@",heroJSON);
     [Hero heroFromDictionary:heroJSON];

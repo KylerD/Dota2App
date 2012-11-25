@@ -23,5 +23,14 @@
 @property (strong, nonatomic) DetailViewController *detailViewController;
 
 
+/*
+ * Fetches a results controller for an entity of entityName
+ * @return The results controller
+ * @param the entityName
+ *
+ */
+- (NSFetchedResultsController *)fetchedResultsControllerForEntity: (NSString *)entityName;
+
+
 
 @end

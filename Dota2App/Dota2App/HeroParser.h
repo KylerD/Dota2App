@@ -10,4 +10,8 @@
 
 @interface HeroParser : NSObject
 - (BOOL)parse;
+-(BOOL)createHeroes:(NSArray*)heroesJSON;
+- (NSArray*)getJSONDictionary:(NSData *)responseData;
+- (NSData*)getJSONData;
+- (BOOL)createHero:(NSDictionary*)heroJSON;
 @end

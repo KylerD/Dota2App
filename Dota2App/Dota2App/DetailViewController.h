@@ -23,5 +23,12 @@
 @property (nonatomic, retain) Hero *hero;
 @property (nonatomic, retain) IBOutlet UISegmentedControl *segment;
 
+/*
+ * Displays a view controller based on the segment selected
+ * @return the view controller to be displayed
+ * @param the segment selected
+ */
+- (UIViewController *)viewControllerForSegmentIndex:(NSInteger)index;
+
 
 @end

@@ -18,7 +18,7 @@
 @implementation DetailViewController
 @synthesize iconImageView, hero = _hero;
 @synthesize segment;
-
+@synthesize masterPopoverController;
 
 #pragma mark - Managing the detail item
 

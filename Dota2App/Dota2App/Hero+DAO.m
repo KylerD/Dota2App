@@ -43,7 +43,7 @@
     return hero;
 }
 
-+ (id)interpretValue:(id)value{
++ (id)interpretValue:(id)value {
     
     if([value isKindOfClass:[NSString class]]){
         return value;

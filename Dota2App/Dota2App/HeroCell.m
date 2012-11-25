@@ -9,7 +9,7 @@
 #import "HeroCell.h"
 
 @implementation HeroCell
-@synthesize cellTitleLabel, cellDetailLabel, cellImage;
+@synthesize cellTitleLabel, cellDetailLabel, cellImage, attributeImage, factionImage;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
