@@ -2,7 +2,7 @@
 
 require 'rubygems'
 require "bundler/setup"
-
+require 'json'
 require 'mechanize'
 
 
@@ -130,14 +130,26 @@ def formatBioString(bioString)
 	return bioString.strip
 end
 
-#TODO:
-#Funciton takes KVP that contains stock value with conacted gain value and seperates them
-# def formatStockAndGainVal(baseName,StockAndGainValue)
-# 	#Parse val by '+'
-# 	#KeyNames = use baseName for stock, <base>Gain for gain
-# 	#return hash..
-# 	return StockAndGainValue
-# end
+
+#Funciton takes KVP that contains stock value with conacted gain value and seperates them eg.  '23 + 2.70'
+def formatStockAndGainVal(baseName,stockAndGainString)
+
+	stockValAndGainHash = Hash.new
+	#Parse val by '+'
+	items = stockAndGainString.content.split(/\+/)
+	strippedItems = items.collect{|val| val.strip}
+
+	if items.length < 2
+		puts "Failed to parse Stock and Gain String '#{stockAndGainString}'"
+		stockValAndGainHash[baseName] = stockAndGainString;
+	else 
+		#KeyNames = use baseName for stock, <base>Gain for gain
+		stockValAndGainHash[baseName] = strippedItems[0]
+		stockValAndGainHash[baseName + 'Gain'] = strippedItems[1]
+	end	
+	#return hash..
+	return stockValAndGainHash
+end
 
 #This function is to correct cases where multiple KVP's can show up inside the same line
 #eg. 'TOSS BONUS: 35% / 50% / 65%SCEPTER BONUS RANGE: 107SCEPTER CLEAVE DAMAGE: 50%SCEPTER BONUS BUILDING DAMAGE: 75%SCEPTER TOSS BONUS: 50% / 65% / 80%'
@@ -204,7 +216,6 @@ def cleanDynamicAbilityArray(a)
 	return createHashFromMixedKVPArray(cleanKVPs | splitAbilityKVPs)
 end
 
-
 def createHashFromMixedKVPArray(a)
 
 	colonBasedkvpMatcher = /(.*):(.*)/
@@ -269,25 +280,33 @@ heroArray.each do |h|
  	#Get Hero page at http://www.dota2.com/hero/<HERO NAME>/
  	heroDetailPage = agent.get h['url']
 
- 	#Get Hero details
+ 	#Get basic Hero details
  	h['portraitUrl'] = heroDetailPage.image_with(:dom_id => "heroTopPortraitIMG")
  	h['name'] = heroDetailPage.at('//*[@id="centerColContent"]/h1/text()')
  	h['attackMode'] = heroDetailPage.at('//*[@id="heroBioRoles"]/span/text()')
  	h['roles'] = formatRoleString(heroDetailPage.at('//*[@id="heroBioRoles"]/text()').content)
  	h['bio'] = formatBioString(heroDetailPage.at('//*[@id="bioInner"]/text()').content)
- 	h['intVal'] = heroDetailPage.at('//*[@id="overview_IntVal"]/text()')
- 	h['strVal'] = heroDetailPage.at('//*[@id="overview_StrVal"]/text()')
- 	h['agiVal'] = heroDetailPage.at('//*[@id="overview_AgiVal"]/text()')
  	h['attackVal'] = heroDetailPage.at('//*[@id="overview_AttackVal"]/text()')
  	h['speedVal'] = heroDetailPage.at('//*[@id="overview_SpeedVal"]/text()')
  	h['defenceVal'] = heroDetailPage.at('//*[@id="overview_DefenseVal"]/text()')
 
- 	#Get Hero Stats
+ 	#Get data from Stats section
  	h['hp'] = heroDetailPage.at('//*[@id="statsLeft"]/div[2]/div[3]/text()')
  	h['sight'] = heroDetailPage.at('//*[@id="statsRight"]/div[2]/div/text()')
  	h['range'] = heroDetailPage.at('//*[@id="statsRight"]/div[3]/div/text()')
  	h['missileSpeed'] = heroDetailPage.at('//*[@id="statsRight"]/div[4]/div/text()')
 
+ 	#Get attribute vals and seperate the gains..Merge them back into hero
+ 	intHash = formatStockAndGainVal('int',heroDetailPage.at('//*[@id="overview_IntVal"]/text()'))
+ 	h.merge!(intHash)
+
+ 	strHash = formatStockAndGainVal('str',heroDetailPage.at('//*[@id="overview_StrVal"]/text()'))
+ 	h.merge!(strHash)
+
+ 	agiHash = formatStockAndGainVal('agi',heroDetailPage.at('//*[@id="overview_AgiVal"]/text()'))
+ 	h.merge!(agiHash)
+
+	#Create Ability array
  	heroAbilities = Array.new
 
 	#Get Ability Element array
@@ -312,19 +331,6 @@ heroArray.each do |h|
 			dynamicAbilityHash = cleanDynamicAbilityArray(heroAbilityKeyValueArray)
 			#Merge ability hashes together..
 			a.merge!(dynamicAbilityHash)
-
-			# #DEBUG...
-			# heroAbilityKeyValueArray.each do |abiltyKVP|
-			# 	puts ">'#{abiltyKVP}'"
-			# end
-
-			#puts "=========>#{heroAbilityKeyValueElement.class} [#{heroAbilityKeyValueElement}]"
-			# a['target'] = node.at('div[2]/div[1]/span[1]/text()')
-			# a['affects'] = node.at('div[2]/div[1]/span[2]/text()')
-			# a['damageType'] = node.at('div[2]/div[1]/span[3]/text()')
-			# a['damage'] = node.at('div[2]/div[2]/span[1]/text()')
-			# a['damage'] = node.at('div[2]/div[2]/span[1]/text()')
-			# a['damage'] = node.at('div[2]/div[2]/span[1]/text()')
 
 			#Get optional ability details
 			manaElement = node.at('div[1]/div[3]/div/div[1]/text()')
@@ -354,11 +360,8 @@ heroArray.each do |h|
 	printHeroDetail(h)
 end
 
-#TODO: HASH TO JSON CONVERSION
 #Write Hero list to JSON
-#File.open("heroData.json", 'w') {|f| f.write(heroArray.to_json()) }
-
-
+File.open("hero.json", 'w') {|f| f.write(heroArray.to_json()) }
 
 
 
