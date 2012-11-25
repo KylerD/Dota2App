@@ -159,6 +159,7 @@
         
         Hero *selectedHero = [fetchedRC objectAtIndexPath:indexPath];
         self.detailViewController.hero= selectedHero;
+        [self.detailViewController configureView];
     } 
 }
 

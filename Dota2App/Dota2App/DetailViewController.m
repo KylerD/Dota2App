@@ -9,6 +9,8 @@
 #import "DetailViewController.h"
 #import "Hero.h"
 #import "HeroCell.h"
+#import "InformationViewController.h"
+#import "AbilitiesViewController.h"
 
 @interface DetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
@@ -48,6 +50,11 @@
     vc.view.frame = self.view.bounds;
     [self.view addSubview:vc.view];
     currentVC = vc;
+    
+    if (infoVCSelected) {
+        InformationViewController *infoVC = (InformationViewController *)currentVC;
+        infoVC.heroLabel.text = self.hero.name;
+    }
 
 }
 
@@ -63,6 +70,8 @@
 {   
     [super viewDidLoad];
     [self configureView];
+    infoVCSelected = YES;
+
 
 }
 
@@ -81,6 +90,7 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -132,6 +142,11 @@
         [currentVC removeFromParentViewController];
         currentVC = vc;
     }];
+    
+    if (infoVCSelected) {
+        InformationViewController *infoVC = (InformationViewController *)vc;
+        infoVC.heroLabel.text = self.hero.name;
+    }
 }
 
 - (UIViewController *)viewControllerForSegmentIndex:(NSInteger)index {
@@ -139,9 +154,11 @@
     switch (index) {
         case 0:
             vc = [self.storyboard instantiateViewControllerWithIdentifier:@"InformationVC"];
+            infoVCSelected = YES;
             break;
         case 1:
             vc = [self.storyboard instantiateViewControllerWithIdentifier:@"AbilityVC"];
+            infoVCSelected = NO;
             break;
     }
     return vc;

@@ -13,6 +13,7 @@
 @end
 
 @implementation InformationViewController
+@synthesize heroLabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

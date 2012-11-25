@@ -16,6 +16,7 @@
     UIImageView *iconImageView;
     UIImageView *detailImageView;
     UIViewController *currentVC;
+    BOOL infoVCSelected;
 
 }
 
@@ -29,6 +30,7 @@
  * @param the segment selected
  */
 - (UIViewController *)viewControllerForSegmentIndex:(NSInteger)index;
+- (void)configureView;
 
 
 @end

@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="2843" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="QwK-Pb-ZTE">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="10K549" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="QwK-Pb-ZTE">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
         <scene sceneID="mzi-Xx-fVQ">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="QwK-Pb-ZTE" sceneMemberID="viewController">
@@ -22,7 +22,6 @@
             </objects>
             <point key="canvasLocation" x="-462" y="39"/>
         </scene>
-        <!--Navigation Controller - Heroes-->
         <scene sceneID="oRH-xo-vgD">
             <objects>
                 <navigationController definesPresentationContext="YES" id="ls3-Ln-bdb" sceneMemberID="viewController">
@@ -38,7 +37,6 @@
             </objects>
             <point key="canvasLocation" x="-40" y="39"/>
         </scene>
-        <!--Master View Controller - Master-->
         <scene sceneID="18">
             <objects>
                 <tableViewController storyboardIdentifier="" title="Master" id="12" customClass="MasterViewController" sceneMemberID="viewController">
@@ -124,16 +122,16 @@
             </objects>
             <point key="canvasLocation" x="450" y="39"/>
         </scene>
-        <!--Abilities View Controller-->
-        <scene sceneID="RKh-cU-SDJ">
+        <scene sceneID="W4W-Ga-Enp">
             <objects>
-                <viewController storyboardIdentifier="AbilityVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Jts-s9-SfV" customClass="AbilitiesViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="YJb-t9-rAw">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cZe-Rx-Wdq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="hZw-Nn-U4y" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9as-dU-2cA">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Abilities View" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WCL-H8-R79">
-                                <rect key="frame" x="131" y="188" width="101" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Detail" lineBreakMode="tailTruncation" minimumFontSize="10" id="jKh-yi-yZ6">
+                                <rect key="frame" x="130" y="161" width="44" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -142,20 +140,69 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="OgA-Cw-zyf"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="426" y="-1249"/>
+        </scene>
+        <scene sceneID="RKh-cU-SDJ">
+            <objects>
+                <viewController storyboardIdentifier="AbilityVC" id="Jts-s9-SfV" customClass="AbilitiesViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YJb-t9-rAw">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="4Be-gR-DRF">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AbilityCell" textLabel="CsS-tp-Dy9" style="IBUITableViewCellStyleDefault" id="nrd-1s-m3c">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CsS-tp-Dy9">
+                                                    <rect key="frame" x="10" y="0.0" width="280" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <segue destination="hZw-Nn-U4y" kind="push" id="Gea-Tn-H1s"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Jts-s9-SfV" id="hgr-RP-uDr"/>
+                                    <outlet property="delegate" destination="Jts-s9-SfV" id="yd0-uT-4kp"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="4Be-gR-DRF" id="84f-6g-Y0Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1GY-iR-yFl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="457" y="-542"/>
+            <point key="canvasLocation" x="-117" y="-1249"/>
         </scene>
-        <!--Information View Controller-->
         <scene sceneID="7UB-by-1hV">
             <objects>
-                <viewController storyboardIdentifier="InformationVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="47e-SO-JZt" customClass="InformationViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InformationVC" id="47e-SO-JZt" customClass="InformationViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Af-JZ-NDo">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Information View" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="X8v-f4-g5m">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="X8v-f4-g5m">
                                 <rect key="frame" x="97" y="184" width="127" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -165,12 +212,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="heroLabel" destination="X8v-f4-g5m" id="7Gn-Qo-FD7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Fe-S5-8VR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="853" y="-542"/>
+            <point key="canvasLocation" x="426" y="-590"/>
         </scene>
-        <!--Detail View Controller-->
         <scene sceneID="u1w-LA-eN5">
             <objects>
                 <viewController id="g5B-bk-5l4" customClass="DetailViewController" sceneMemberID="viewController">
@@ -193,22 +242,9 @@
                                 <action selector="segmentChanged:" destination="g5B-bk-5l4" eventType="valueChanged" id="0Qn-tC-UHG"/>
                             </connections>
                         </segmentedControl>
-                        <barButtonItem key="rightBarButtonItem" id="980-SJ-Wio">
-                            <view key="customView" contentMode="scaleToFill" id="gey-If-KU4">
-                                <rect key="frame" x="244" y="5" width="71" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="PzR-nm-X2W">
-                                        <rect key="frame" x="20" y="0.0" width="51" height="33"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    </imageView>
-                                </subviews>
-                            </view>
-                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="iconImageView" destination="PzR-nm-X2W" id="Qwb-Qy-9mp"/>
                         <outlet property="segment" destination="Tmr-Bf-JQk" id="NjO-Rt-gw9"/>
                         <outlet property="view" destination="AAC-R3-VJQ" id="JOO-8b-4tX"/>
                     </connections>
@@ -221,35 +257,6 @@
     <resources>
         <image name="hero.png" width="26" height="17"/>
     </resources>
-    <classes>
-        <class className="AbilitiesViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AbilitiesViewController.h"/>
-        </class>
-        <class className="DetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="segmentChanged:" candidateClass="UISegmentedControl"/>
-                <relationship kind="outlet" name="iconImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="segment" candidateClass="UISegmentedControl"/>
-            </relationships>
-        </class>
-        <class className="HeroCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/HeroCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="attributeImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="cellDetailLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="cellImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="cellTitleLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="factionImage" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="InformationViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/InformationViewController.h"/>
-        </class>
-        <class className="MasterViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MasterViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

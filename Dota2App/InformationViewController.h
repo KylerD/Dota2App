@@ -12,4 +12,5 @@
     
 }
 
+@property (nonatomic, strong) IBOutlet UILabel *heroLabel;
 @end
