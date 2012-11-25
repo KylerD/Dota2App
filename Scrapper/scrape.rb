@@ -218,10 +218,12 @@ agent.user_agent_alias = 'Linux Mozilla'
 
 heroArray = Array.new
 
+enableConsolePrinting = false
+
 puts "================================================================="
 puts "					DOTA2 SPIDER"
 puts "================================================================="
-
+puts "Getting Hero List.."
 heroListPage = agent.get('http://www.dota2.com/heroes/')
 
 #Getting the list of url's for each Hero found at http://www.dota2.com/heroes/
@@ -233,7 +235,7 @@ heroListPage.links_with(:dom_class => "heroPickerIconLink").each do |link|
 	#Add Hero to hero array
 	heroArray.push h
 end
-
+puts "Getting Hero Detail.."
 #For Each Hero is list, go to URL and Scrap it..
 heroArray.each do |h|
 
@@ -317,11 +319,15 @@ heroArray.each do |h|
 	h['abilities'] = heroAbilities
 
 	#Debug: Print Hero detail to console
-	printHeroDetail(h)
+	if enableConsolePrinting
+		printHeroDetail(h)
+	end
 end
-
+puts "Scrapped #{heroArray.length} Heroes"
+puts "Writing to file.."
 #Write Hero list to JSON
 File.open("hero.json", 'w') {|f| f.write(heroArray.to_json()) }
+puts "Done"
 
 
 
