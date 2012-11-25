@@ -144,6 +144,7 @@ def cleanDynamicAbilityArray(a)
 			#Check if there are multiple colons. Assumption is 1 colon per KVP..
 			if concatBoundaries.size == 0
 				puts "Error: colon assumption broke the ability Concat Regex fix"
+				puts "Item was '#{item}'"
 			else
 				#We have 1 or more concats inside 1 array item.
 				#DEBUG
@@ -197,7 +198,7 @@ def createHashFromMixedKVPArray(a)
 			if value.include? '/'
 				formattedValue = formatSlashValueString(value)
 			else
-				formattedValue = value
+				formattedValue = value.strip
 			end
 
 			# if formattedValue.kind_of?(Array)
@@ -206,7 +207,7 @@ def createHashFromMixedKVPArray(a)
 			# 	puts "Processed---Key:#{formattedKey}, value: #{formattedValue}"
 			# end
 		
-			tempAblityHash[formattedKey] = formattedValue.strip
+			tempAblityHash[formattedKey] = formattedValue
 		}
 	end
 	return tempAblityHash
@@ -247,10 +248,11 @@ heroArray.each do |h|
  	#Get basic Hero details
  	h['portraitUrl'] = heroDetailPage.image_with(:dom_id => "heroTopPortraitIMG")
  	h['name'] = heroDetailPage.at('//*[@id="centerColContent"]/h1/text()')
+ 	puts "Scrapping #{h['name']}"
  	h['attackMode'] = heroDetailPage.at('//*[@id="heroBioRoles"]/span/text()')
  	h['roles'] = formatRoleString(heroDetailPage.at('//*[@id="heroBioRoles"]/text()').content)
  	h['bio'] = formatBioString(heroDetailPage.at('//*[@id="bioInner"]/text()').content)
- 	h['attack'] = heroDetailPage.at('//*[@id="overview_AttackVal"]/text()').strip
+ 	h['attack'] = heroDetailPage.at('//*[@id="overview_AttackVal"]/text()').content.strip
  	h['ms'] = heroDetailPage.at('//*[@id="overview_SpeedVal"]/text()')
  	h['amour'] = heroDetailPage.at('//*[@id="overview_DefenseVal"]/text()')
 
