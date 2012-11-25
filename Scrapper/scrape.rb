@@ -115,6 +115,17 @@ def formatRoleString(roleString)
 	return rolesArrayWithRemovedWhiteSpace.reject!(&:empty?)
 end
 
+def formatSlashValueString(valueString)
+	#Spliting the vals from value string, eg. '6% / 12% / 18% / 24%'
+	valArray = valueString.split(/\//)
+	#whitespace tidy..
+	valArrayWithRemovedWhiteSpace = valArray.collect{|val| val.strip}
+	#puts "Split:#{arrayToString(valArrayWithRemovedWhiteSpace)}"
+	#empty string tidy..
+	return valArrayWithRemovedWhiteSpace
+end
+
+
 def formatBioString(bioString)
 	return bioString.strip
 end
@@ -141,7 +152,7 @@ def cleanDynamicAbilityArray(a)
 
 		if(item.scan(colonRegex).size == 1)	
 			#No concat issue present, add to clean item array
-			puts "Found Item:#{item}"
+			#puts "Found Item:#{item}"
 			cleanKVPs.push item
 		else
 			#puts "Found UNCLEAN Item:#{item}"
@@ -162,7 +173,7 @@ def cleanDynamicAbilityArray(a)
 			else
 				#We have 1 or more concats inside 1 array item.
 				#DEBUG
-				puts "Found concat: '#{item}', attempting to split using points of interest: #{arrayToString(concatBoundaries)}"
+				#puts "Found concat: '#{item}', attempting to split using points of interest: #{arrayToString(concatBoundaries)}"
 				#for each identified concat boundary..
 				startingPoint = 0
 
@@ -170,6 +181,7 @@ def cleanDynamicAbilityArray(a)
 
 					boundaryIndexValue = 0
 
+					#mechanisim to ensure it grabs the last KVP in the concat e.g, last boundary >end of string
 					if i < concatBoundaries.length
 						boundaryIndexValue = concatBoundaries[i]
 					else
@@ -179,28 +191,52 @@ def cleanDynamicAbilityArray(a)
 					splitAttempt = item[startingPoint..boundaryIndexValue]
 					#Moving the substring starting point for the next concat..
 					#DEBUG
-					puts "Split (#{startingPoint}-#{boundaryIndexValue}) got:'#{splitAttempt}', adding to array.."
+					#puts "Split (#{startingPoint}-#{boundaryIndexValue}) got:'#{splitAttempt}', adding to array.."
 					startingPoint = boundaryIndexValue +1
+					#Adding the individual KVP to an array..
 					splitAbilityKVPs.push splitAttempt
 				end
 			end
 		end
 	end
-	#Concat two clean arrays to produce 1 nice clean array
-	cleanArray =  cleanKVPs | splitAbilityKVPs
 
-
-	return cleanArray
+	#Concat two cleaner arrays to convert to hash..
+	return createHashFromMixedKVPArray(cleanKVPs | splitAbilityKVPs)
 end
 
 
-
-#TODO:
 def createHashFromMixedKVPArray(a)
-#parse item by colon
-#Modify case of key
-#add to hash
-#cleanreturn hash and merge into abilities..
+
+	colonBasedkvpMatcher = /(.*):(.*)/
+
+	tempAblityHash = Hash.new
+
+	a.each do |kvp|
+		kvp.scan(colonBasedkvpMatcher){ |key,value|
+
+			if !value
+				next
+			end
+
+			formattedKey = key.downcase.capitalize
+			
+			formattedValue = nil
+			if value.include? '/'
+				formattedValue = formatSlashValueString(value)
+			else
+				formattedValue = value
+			end
+
+			# if formattedValue.kind_of?(Array)
+			# 	puts "Array Processed---Key:#{formattedKey}, value: #{arrayToString(formattedValue)}"
+			# else
+			# 	puts "Processed---Key:#{formattedKey}, value: #{formattedValue}"
+			# end
+		
+			tempAblityHash[formattedKey] = formattedValue
+		}
+	end
+	return tempAblityHash
 end
 
 #Agent init and config
@@ -249,10 +285,10 @@ heroArray.each do |h|
  	#Get Hero Stats
  	h['hp'] = heroDetailPage.at('//*[@id="statsLeft"]/div[2]/div[3]/text()')
  	h['sight'] = heroDetailPage.at('//*[@id="statsRight"]/div[2]/div/text()')
-	h['range'] = heroDetailPage.at('//*[@id="statsRight"]/div[3]/div/text()')
-	h['missileSpeed'] = heroDetailPage.at('//*[@id="statsRight"]/div[4]/div/text()')
+ 	h['range'] = heroDetailPage.at('//*[@id="statsRight"]/div[3]/div/text()')
+ 	h['missileSpeed'] = heroDetailPage.at('//*[@id="statsRight"]/div[4]/div/text()')
 
-	heroAbilities = Array.new
+ 	heroAbilities = Array.new
 
 	#Get Ability Element array
 	heroAbilitiesElements = heroDetailPage.search('.abilitiesInsetBoxContent')
@@ -273,8 +309,10 @@ heroArray.each do |h|
 			#Get Dynamic ability cols...this bits a bit of a mess..blame Valve
 			heroAbilityKeyValueElement = node.search('.abilityFooterBox')[0]
 			heroAbilityKeyValueArray = heroAbilityKeyValueElement.text.split( /\r?\n/ ).collect{|item| item.strip}.reject!(&:empty?)
+			dynamicAbilityHash = cleanDynamicAbilityArray(heroAbilityKeyValueArray)
+			#Merge ability hashes together..
+			a.merge!(dynamicAbilityHash)
 
-			cleanedheroAbilityKeyValueArray = cleanDynamicAbilityArray(heroAbilityKeyValueArray)
 			# #DEBUG...
 			# heroAbilityKeyValueArray.each do |abiltyKVP|
 			# 	puts ">'#{abiltyKVP}'"
@@ -313,7 +351,7 @@ heroArray.each do |h|
 	h['abilities'] = heroAbilities
 
 	#Debug: Print Hero detail to console
-	#printHeroDetail(h)
+	printHeroDetail(h)
 end
 
 #TODO: HASH TO JSON CONVERSION
