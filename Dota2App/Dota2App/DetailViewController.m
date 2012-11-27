@@ -51,11 +51,7 @@
     [self.view addSubview:vc.view];
     currentVC = vc;
     
-    if (infoVCSelected) {
-        InformationViewController *infoVC = (InformationViewController *)currentVC;
-        infoVC.heroLabel.text = self.hero.name;
-    }
-
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -143,10 +139,7 @@
         currentVC = vc;
     }];
     
-    if (infoVCSelected) {
-        InformationViewController *infoVC = (InformationViewController *)vc;
-        infoVC.heroLabel.text = self.hero.name;
-    }
+   
 }
 
 - (UIViewController *)viewControllerForSegmentIndex:(NSInteger)index {

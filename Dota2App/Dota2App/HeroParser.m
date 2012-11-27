@@ -37,7 +37,7 @@
 }
 
 - (NSData*)getJSONData {
-    return [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"heroData" ofType:@"json"]];
+    return [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"hero" ofType:@"json"]];
 }
 
 - (NSArray*)getJSONDictionary:(NSData *)responseData {

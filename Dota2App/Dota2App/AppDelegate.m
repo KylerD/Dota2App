@@ -23,6 +23,7 @@
 //STACKMOB SETTINGS
 #define STACKMOB_ENABLE NO
 #define STACKMOB_KEY @"6586fffa-0b95-426c-8763-d30299599b40"
+#define UseJSON YES
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -39,9 +40,18 @@
          SMCoreDataStore *coreDataStore = [self.client coreDataStoreWithManagedObjectModel:self.managedObjectModel];
         self.managedObjectContext = [coreDataStore managedObjectContext];
     } else {
+        
+        if(UseJSON)
+        {
+            HeroParser * hp = [[HeroParser alloc] init];
+            
+            [hp parse];
+        }
+        else{
         self.managedObjectContext = [self offlineManagedObjectContext];
         MockObjectGenerator *generator = [[MockObjectGenerator alloc] init];
         [generator generateRandomHeros];
+        }
     }
     
 

@@ -8,39 +8,39 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Dota2App/DetailViewController.m"
-         timestampString = "374415456.775241"
+         timestampString = "375720179.63117"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "279"
-         endingLineNumber = "279"
-         landmarkName = "-filterContentForSearchText:scope:"
-         landmarkType = "5">
+         startingLineNumber = "272"
+         endingLineNumber = "272"
+         landmarkName = "@implementation DetailViewController"
+         landmarkType = "3">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Dota2App/DetailViewController.m"
-         timestampString = "374415456.775241"
+         timestampString = "375720179.63117"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "257"
-         endingLineNumber = "257"
-         landmarkName = "-prepareForSegue:sender:"
-         landmarkType = "5">
+         startingLineNumber = "250"
+         endingLineNumber = "250"
+         landmarkName = "@implementation DetailViewController"
+         landmarkType = "3">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Dota2App/DetailViewController.m"
-         timestampString = "374415456.775241"
+         timestampString = "375720179.63117"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "252"
-         endingLineNumber = "252"
-         landmarkName = "-tableView:didSelectRowAtIndexPath:"
-         landmarkType = "5">
+         startingLineNumber = "245"
+         endingLineNumber = "245"
+         landmarkName = "@implementation DetailViewController"
+         landmarkType = "3">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
@@ -91,7 +91,7 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "33"
          endingLineNumber = "33"
-         landmarkName = "-setDetailItem:"
+         landmarkName = "-setHero:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
