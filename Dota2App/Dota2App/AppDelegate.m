@@ -23,7 +23,7 @@
 //STACKMOB SETTINGS
 #define STACKMOB_ENABLE NO
 #define STACKMOB_KEY @"6586fffa-0b95-426c-8763-d30299599b40"
-#define UseJSON YES
+#define UseJSON NO
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

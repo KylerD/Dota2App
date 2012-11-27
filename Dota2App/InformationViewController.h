@@ -39,4 +39,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *attackSpeedLevelOneLabel;
 
 @property (nonatomic, strong) Hero *hero;
+
+- (void)configureView;
+
+
 @end
