@@ -18,10 +18,11 @@
 
     //Note: you can comment this whole method out and just return YES after the first run to stop the massive start time.
     NSData * heroesJSONData = [self getJSONData];
-    AppDelegate *del = [[UIApplication sharedApplication] delegate];
     NSArray * heroesJSON = [self getJSONDictionary:heroesJSONData];
     BOOL success = [self createHeroes:heroesJSON];
-
+    
+    [Hero saveDatabase];
+/*
     if (success) {
         [del.managedObjectContext performBlock:^{
             NSError *error = nil;
@@ -32,7 +33,7 @@
             }
         }];
     }
-
+*/
     return success;
 }
 

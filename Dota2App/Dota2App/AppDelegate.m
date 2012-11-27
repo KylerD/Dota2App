@@ -40,15 +40,16 @@
          SMCoreDataStore *coreDataStore = [self.client coreDataStoreWithManagedObjectModel:self.managedObjectModel];
         self.managedObjectContext = [coreDataStore managedObjectContext];
     } else {
+        self.managedObjectContext = [self offlineManagedObjectContext];
         
         if(UseJSON)
         {
             HeroParser * hp = [[HeroParser alloc] init];
-            
+
             [hp parse];
         }
         else{
-        self.managedObjectContext = [self offlineManagedObjectContext];
+        
         MockObjectGenerator *generator = [[MockObjectGenerator alloc] init];
         [generator generateRandomHeros];
         }

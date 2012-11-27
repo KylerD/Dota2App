@@ -20,6 +20,7 @@
     
     //TODO: Map dict to values..
     NSString *attributeMultiCase = [self interpretValue:[heroDictionary valueForKey:@"primary attribute"]];
+
     NSString *attributeLowerCase = [attributeMultiCase lowercaseString];
     /* create the new string */
     NSString *attribute = [attributeLowerCase capitalizedString];
@@ -29,14 +30,44 @@
     if(!hero.primaryAttribute){
         hero.primaryAttribute = @"Unknown";
     }
-
+    /*
     NSString *detailImagePath = [NSString stringWithFormat:@"%@.%@",heroName,@"png"];
     NSString *iconImagePath = [NSString stringWithFormat:@"%@_icon.%@",heroName,@"png"];
+     
+     hero.detailImage = detailImagePath;
+     hero.iconImage = iconImagePath;
+    */
     
-    hero.bio = [self interpretValue:[heroDictionary valueForKey:@"lore"]];
-    hero.detailImage = detailImagePath;
+    NSNumberFormatter * nf = [[NSNumberFormatter alloc] init];
+    [nf setNumberStyle:NSNumberFormatterDecimalStyle];
+    hero.bio = [self interpretValue:[heroDictionary valueForKey:@"bio"]];
+    hero.armour = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"amour"]]];
+    hero.strPoints = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"str"]]];
+    hero.agilGain = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"agiGain"]]];
+    hero.attackRange = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"range"]]];
+    
+    // this is just a URL and as such we'll probably need to pull this image and cache it.
+    hero.detailImage = [self interpretValue:[heroDictionary valueForKey:@"portraitUrl"]];
+    //
+    
     hero.faction = [self interpretValue:[heroDictionary valueForKey:@"faction"]];
-    hero.iconImage = iconImagePath;
+    if(!hero.faction){
+        hero.faction = @"Unknown";
+    }
+    
+    //hero.roles = [self interpretValue:[heroDictionary valueForKey:@"roles"]];
+    //hero.attackMode = [self interpretValue:[heroDictionary valueForKey:@"roles"]];
+    //hero.url = [self interpretValue:[heroDictionary valueForKey:@"url"]];
+    hero.missileSpeed = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"missileSpeed"]]];
+    hero.intelPoints = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"int"]]];
+    //hero.damage = [self interpretValue:[heroDictionary valueForKey:@"attack"]];
+    hero.intelGain = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"intGain"]]];
+    //hero.sight = [self interpretValue:[heroDictionary valueForKey:@"sight"]];
+    hero.ms = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"ms"]]];
+    
+    
+    
+    
     hero.name = heroName;
     //More
     
