@@ -658,6 +658,7 @@
 		EDCA230216552A2900FEDF75 /* Radiant.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA230116552A2900FEDF75 /* Radiant.png */; };
 		EDCA230A16553AB100FEDF75 /* AbilitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCA230816553AB100FEDF75 /* AbilitiesViewController.m */; };
 		EDCA230E16553EDC00FEDF75 /* InformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCA230D16553EDC00FEDF75 /* InformationViewController.m */; };
+		EDCF644B166CB6FD00BBE08A /* items.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCF644A166CB6FD00BBE08A /* items.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1370,6 +1371,7 @@
 		EDCA230816553AB100FEDF75 /* AbilitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbilitiesViewController.m; sourceTree = "<group>"; };
 		EDCA230C16553EDC00FEDF75 /* InformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationViewController.h; sourceTree = "<group>"; };
 		EDCA230D16553EDC00FEDF75 /* InformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationViewController.m; sourceTree = "<group>"; };
+		EDCF644A166CB6FD00BBE08A /* items.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = items.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2107,6 +2109,7 @@
 		B17D98BD164EA18000C60B36 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EDCF644A166CB6FD00BBE08A /* items.png */,
 				5C3CB3B91657F34600E8341C /* data */,
 				5C3CAEEA1657F2A400E8341C /* images */,
 				EDCA230116552A2900FEDF75 /* Radiant.png */,
@@ -2969,6 +2972,7 @@
 				0C493A8E1665065600A5690B /* movementSpeed.png in Resources */,
 				0C493A8F1665065600A5690B /* damage.png in Resources */,
 				0CE2F41816650AA2006A23CC /* hero.json in Resources */,
+				EDCF644B166CB6FD00BBE08A /* items.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
