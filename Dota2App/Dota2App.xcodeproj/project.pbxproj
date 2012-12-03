@@ -647,7 +647,6 @@
 		ED08F241165D18F3001C4424 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = ED08F214165D18F3001C4424 /* CHANGELOG.md */; };
 		ED08F245165D1930001C4424 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED08F243165D1923001C4424 /* Security.framework */; };
 		ED08F248165D287F001C4424 /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = ED08F247165D287F001C4424 /* Hero.m */; };
-		ED08F24B165D288B001C4424 /* Ability.m in Sources */ = {isa = PBXBuildFile; fileRef = ED08F24A165D288B001C4424 /* Ability.m */; };
 		ED08F24D165D3147001C4424 /* libstackmob-v1.1.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED08F240165D18F3001C4424 /* libstackmob-v1.1.3.a */; };
 		EDCA22E716550F2200FEDF75 /* hero.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA22E616550F2200FEDF75 /* hero.png */; };
 		EDCA22F3165525FE00FEDF75 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA22F2165525FE00FEDF75 /* Default-568h@2x.png */; };
@@ -660,6 +659,8 @@
 		EDCA230E16553EDC00FEDF75 /* InformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCA230D16553EDC00FEDF75 /* InformationViewController.m */; };
 		EDCF644B166CB6FD00BBE08A /* items.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCF644A166CB6FD00BBE08A /* items.png */; };
 		EDCF644F166CC0E300BBE08A /* BuildsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCF644E166CC0E300BBE08A /* BuildsViewController.m */; };
+		EDCF6453166CF3CF00BBE08A /* Ability+DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCF6452166CF3CF00BBE08A /* Ability+DAO.m */; };
+		EDCF6456166CF67D00BBE08A /* Ability.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCF6455166CF67D00BBE08A /* Ability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1359,8 +1360,6 @@
 		ED08F243165D1923001C4424 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		ED08F246165D287F001C4424 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
 		ED08F247165D287F001C4424 /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
-		ED08F249165D288B001C4424 /* Ability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ability.h; sourceTree = "<group>"; };
-		ED08F24A165D288B001C4424 /* Ability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ability.m; sourceTree = "<group>"; };
 		EDCA22E616550F2200FEDF75 /* hero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero.png; sourceTree = "<group>"; };
 		EDCA22F2165525FE00FEDF75 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		EDCA22F41655286100FEDF75 /* Agility.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Agility.png; sourceTree = "<group>"; };
@@ -1375,6 +1374,10 @@
 		EDCF644A166CB6FD00BBE08A /* items.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = items.png; sourceTree = "<group>"; };
 		EDCF644D166CC0E300BBE08A /* BuildsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildsViewController.h; sourceTree = "<group>"; };
 		EDCF644E166CC0E300BBE08A /* BuildsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuildsViewController.m; sourceTree = "<group>"; };
+		EDCF6451166CF3CF00BBE08A /* Ability+DAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Ability+DAO.h"; sourceTree = "<group>"; };
+		EDCF6452166CF3CF00BBE08A /* Ability+DAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Ability+DAO.m"; sourceTree = "<group>"; };
+		EDCF6454166CF67D00BBE08A /* Ability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ability.h; sourceTree = "<group>"; };
+		EDCF6455166CF67D00BBE08A /* Ability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2205,12 +2208,14 @@
 				B18C9E4B164E8B5A00ADE97A /* Dota2App.xcdatamodeld */,
 				ED08F246165D287F001C4424 /* Hero.h */,
 				ED08F247165D287F001C4424 /* Hero.m */,
-				ED08F249165D288B001C4424 /* Ability.h */,
-				ED08F24A165D288B001C4424 /* Ability.m */,
 				ED08F208165D119C001C4424 /* Role.h */,
 				ED08F209165D119C001C4424 /* Role.m */,
 				5C3CB3C41658287400E8341C /* Hero+DAO.h */,
 				5C3CB3C51658287400E8341C /* Hero+DAO.m */,
+				EDCF6451166CF3CF00BBE08A /* Ability+DAO.h */,
+				EDCF6452166CF3CF00BBE08A /* Ability+DAO.m */,
+				EDCF6454166CF67D00BBE08A /* Ability.h */,
+				EDCF6455166CF67D00BBE08A /* Ability.m */,
 			);
 			name = "Core Data";
 			sourceTree = "<group>";
@@ -3010,8 +3015,9 @@
 				5C3CB3C61658287400E8341C /* Hero+DAO.m in Sources */,
 				ED08F20A165D119C001C4424 /* Role.m in Sources */,
 				ED08F248165D287F001C4424 /* Hero.m in Sources */,
-				ED08F24B165D288B001C4424 /* Ability.m in Sources */,
 				EDCF644F166CC0E300BBE08A /* BuildsViewController.m in Sources */,
+				EDCF6453166CF3CF00BBE08A /* Ability+DAO.m in Sources */,
+				EDCF6456166CF67D00BBE08A /* Ability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

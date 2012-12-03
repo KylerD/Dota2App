@@ -8,6 +8,7 @@
 
 #import "Hero+DAO.h"
 #import "StackMob.h"
+#import "Ability+DAO.h"
 
 @implementation Hero (DAO)
 
@@ -71,8 +72,16 @@
     hero.name = heroName;
     //More
     
+    NSArray *abilities = [heroDictionary valueForKey:@"abilities"];
+    for (int i = 0; i < [abilities count]; i++) {
+        NSDictionary *abilityDictionary = [abilities objectAtIndex:i];
+        Ability *ability = [Ability abilityFromDictionary:abilityDictionary];
+        ability.hero = hero;
+    }
+    
     return hero;
 }
+
 
 + (id)interpretValue:(id)value {
     

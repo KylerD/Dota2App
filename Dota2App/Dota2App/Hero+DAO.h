@@ -14,6 +14,6 @@
 
 + (Hero*)heroFromDictionary:(NSDictionary*)heroDictionary;
 + (id)interpretValue:(id)value;
-
++ (void)heroAbilitiesFromDictionary:(NSArray *)dictionary;
 
 @end
