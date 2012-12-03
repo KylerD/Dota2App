@@ -8,6 +8,9 @@
 
 #import "AbilitiesViewController.h"
 #import "AppDelegate.h"
+#import "Ability.h"
+#import "DetailViewController.h"
+#import "AbilityCell.h"
 
 @interface AbilitiesViewController ()
 - (void)configureView;
@@ -30,8 +33,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
+    hero = ((DetailViewController *)self.parentViewController).hero;
+    
     if (hero) {
+
         [self configureView];
     }
     // Do any additional setup after loading the view from its nib.
@@ -44,7 +50,8 @@
 }
 
 - (void)configureView {
-   //To access abilities use hero.hasAbility (NSSet *), it contains Ability objects.
+    abilities = [hero.abilities allObjects];
+    
 }
 
 #pragma mark - Table View
@@ -56,7 +63,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return [abilities count];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -72,11 +79,6 @@
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-   
-}
-
 -(NSString *)controller:(NSFetchedResultsController *)controller
 sectionIndexTitleForSectionName:(NSString *)sectionName {
     return sectionName;
@@ -84,8 +86,15 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {   //Fetch the hero
-    cell.textLabel.text = @"Test";
+    AbilityCell *abilityCell = (AbilityCell *)cell;
+    
+    Ability *ability = [abilities objectAtIndex:[indexPath row]];
+    
+    abilityCell.cellTitleLabel.text = ability.name;
+    
+    //custom code for images for now
+    NSString *imageName = [NSString stringWithFormat:@"%@.png", ability.name];
+    abilityCell.cellImageView.image = [UIImage imageNamed:imageName];
 }
-
 
 @end

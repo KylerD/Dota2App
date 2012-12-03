@@ -98,7 +98,7 @@
 		5C3CB1A61657F2A400E8341C /* Treant_Protector_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF401657F2A400E8341C /* Treant_Protector_icon.png */; };
 		5C3CB1A71657F2A400E8341C /* Undying_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF411657F2A400E8341C /* Undying_icon.png */; };
 		5C3CB1A81657F2A400E8341C /* Ursa_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF421657F2A400E8341C /* Ursa_icon.png */; };
-		5C3CB1A91657F2A400E8341C /* Vengeful_Spirit_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF431657F2A400E8341C /* Vengeful_Spirit_icon.png */; };
+		5C3CB1A91657F2A400E8341C /* Vengeful Spirit_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF431657F2A400E8341C /* Vengeful Spirit_icon.png */; };
 		5C3CB1AA1657F2A400E8341C /* Venomancer_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF441657F2A400E8341C /* Venomancer_icon.png */; };
 		5C3CB1AB1657F2A400E8341C /* Viper_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF451657F2A400E8341C /* Viper_icon.png */; };
 		5C3CB1AC1657F2A400E8341C /* Visage_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF461657F2A400E8341C /* Visage_icon.png */; };
@@ -243,7 +243,7 @@
 		5C3CB2371657F2A400E8341C /* Chaos_Strike.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFD31657F2A400E8341C /* Chaos_Strike.png */; };
 		5C3CB2381657F2A400E8341C /* Chaotic_Offering.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFD41657F2A400E8341C /* Chaotic_Offering.png */; };
 		5C3CB2391657F2A400E8341C /* Charge_of_Darkness.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFD51657F2A400E8341C /* Charge_of_Darkness.png */; };
-		5C3CB23A1657F2A400E8341C /* Chemical_Rage.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFD61657F2A400E8341C /* Chemical_Rage.png */; };
+		5C3CB23A1657F2A400E8341C /* Chemical Rage.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFD61657F2A400E8341C /* Chemical Rage.png */; };
 		5C3CB23B1657F2A400E8341C /* Chilling_Touch.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFD71657F2A400E8341C /* Chilling_Touch.png */; };
 		5C3CB23C1657F2A400E8341C /* Chronosphere.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFD81657F2A400E8341C /* Chronosphere.png */; };
 		5C3CB23D1657F2A400E8341C /* Cold_Feet.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFD91657F2A400E8341C /* Cold_Feet.png */; };
@@ -661,6 +661,7 @@
 		EDCF644F166CC0E300BBE08A /* BuildsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCF644E166CC0E300BBE08A /* BuildsViewController.m */; };
 		EDCF6453166CF3CF00BBE08A /* Ability+DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCF6452166CF3CF00BBE08A /* Ability+DAO.m */; };
 		EDCF6456166CF67D00BBE08A /* Ability.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCF6455166CF67D00BBE08A /* Ability.m */; };
+		EDCF6459166D0C5B00BBE08A /* AbilityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCF6458166D0C5B00BBE08A /* AbilityCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -756,7 +757,7 @@
 		5C3CAF401657F2A400E8341C /* Treant_Protector_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Treant_Protector_icon.png; sourceTree = "<group>"; };
 		5C3CAF411657F2A400E8341C /* Undying_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Undying_icon.png; sourceTree = "<group>"; };
 		5C3CAF421657F2A400E8341C /* Ursa_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ursa_icon.png; sourceTree = "<group>"; };
-		5C3CAF431657F2A400E8341C /* Vengeful_Spirit_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Vengeful_Spirit_icon.png; sourceTree = "<group>"; };
+		5C3CAF431657F2A400E8341C /* Vengeful Spirit_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Vengeful Spirit_icon.png"; sourceTree = "<group>"; };
 		5C3CAF441657F2A400E8341C /* Venomancer_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Venomancer_icon.png; sourceTree = "<group>"; };
 		5C3CAF451657F2A400E8341C /* Viper_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Viper_icon.png; sourceTree = "<group>"; };
 		5C3CAF461657F2A400E8341C /* Visage_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Visage_icon.png; sourceTree = "<group>"; };
@@ -901,7 +902,7 @@
 		5C3CAFD31657F2A400E8341C /* Chaos_Strike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chaos_Strike.png; sourceTree = "<group>"; };
 		5C3CAFD41657F2A400E8341C /* Chaotic_Offering.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chaotic_Offering.png; sourceTree = "<group>"; };
 		5C3CAFD51657F2A400E8341C /* Charge_of_Darkness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Charge_of_Darkness.png; sourceTree = "<group>"; };
-		5C3CAFD61657F2A400E8341C /* Chemical_Rage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chemical_Rage.png; sourceTree = "<group>"; };
+		5C3CAFD61657F2A400E8341C /* Chemical Rage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chemical Rage.png"; sourceTree = "<group>"; };
 		5C3CAFD71657F2A400E8341C /* Chilling_Touch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chilling_Touch.png; sourceTree = "<group>"; };
 		5C3CAFD81657F2A400E8341C /* Chronosphere.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chronosphere.png; sourceTree = "<group>"; };
 		5C3CAFD91657F2A400E8341C /* Cold_Feet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cold_Feet.png; sourceTree = "<group>"; };
@@ -1378,6 +1379,8 @@
 		EDCF6452166CF3CF00BBE08A /* Ability+DAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Ability+DAO.m"; sourceTree = "<group>"; };
 		EDCF6454166CF67D00BBE08A /* Ability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ability.h; sourceTree = "<group>"; };
 		EDCF6455166CF67D00BBE08A /* Ability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ability.m; sourceTree = "<group>"; };
+		EDCF6457166D0C5B00BBE08A /* AbilityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbilityCell.h; sourceTree = "<group>"; };
+		EDCF6458166D0C5B00BBE08A /* AbilityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbilityCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1559,7 +1562,7 @@
 				5C3CAF401657F2A400E8341C /* Treant_Protector_icon.png */,
 				5C3CAF411657F2A400E8341C /* Undying_icon.png */,
 				5C3CAF421657F2A400E8341C /* Ursa_icon.png */,
-				5C3CAF431657F2A400E8341C /* Vengeful_Spirit_icon.png */,
+				5C3CAF431657F2A400E8341C /* Vengeful Spirit_icon.png */,
 				5C3CAF441657F2A400E8341C /* Venomancer_icon.png */,
 				5C3CAF451657F2A400E8341C /* Viper_icon.png */,
 				5C3CAF461657F2A400E8341C /* Visage_icon.png */,
@@ -1718,7 +1721,7 @@
 				5C3CAFD31657F2A400E8341C /* Chaos_Strike.png */,
 				5C3CAFD41657F2A400E8341C /* Chaotic_Offering.png */,
 				5C3CAFD51657F2A400E8341C /* Charge_of_Darkness.png */,
-				5C3CAFD61657F2A400E8341C /* Chemical_Rage.png */,
+				5C3CAFD61657F2A400E8341C /* Chemical Rage.png */,
 				5C3CAFD71657F2A400E8341C /* Chilling_Touch.png */,
 				5C3CAFD81657F2A400E8341C /* Chronosphere.png */,
 				5C3CAFD91657F2A400E8341C /* Cold_Feet.png */,
@@ -2225,6 +2228,8 @@
 			children = (
 				B1DAD96416503F0B00523981 /* HeroCell.h */,
 				B1DAD96516503F0B00523981 /* HeroCell.m */,
+				EDCF6457166D0C5B00BBE08A /* AbilityCell.h */,
+				EDCF6458166D0C5B00BBE08A /* AbilityCell.m */,
 			);
 			name = "Custom Cells";
 			sourceTree = "<group>";
@@ -2458,7 +2463,7 @@
 				5C3CB1A61657F2A400E8341C /* Treant_Protector_icon.png in Resources */,
 				5C3CB1A71657F2A400E8341C /* Undying_icon.png in Resources */,
 				5C3CB1A81657F2A400E8341C /* Ursa_icon.png in Resources */,
-				5C3CB1A91657F2A400E8341C /* Vengeful_Spirit_icon.png in Resources */,
+				5C3CB1A91657F2A400E8341C /* Vengeful Spirit_icon.png in Resources */,
 				5C3CB1AA1657F2A400E8341C /* Venomancer_icon.png in Resources */,
 				5C3CB1AB1657F2A400E8341C /* Viper_icon.png in Resources */,
 				5C3CB1AC1657F2A400E8341C /* Visage_icon.png in Resources */,
@@ -2603,7 +2608,7 @@
 				5C3CB2371657F2A400E8341C /* Chaos_Strike.png in Resources */,
 				5C3CB2381657F2A400E8341C /* Chaotic_Offering.png in Resources */,
 				5C3CB2391657F2A400E8341C /* Charge_of_Darkness.png in Resources */,
-				5C3CB23A1657F2A400E8341C /* Chemical_Rage.png in Resources */,
+				5C3CB23A1657F2A400E8341C /* Chemical Rage.png in Resources */,
 				5C3CB23B1657F2A400E8341C /* Chilling_Touch.png in Resources */,
 				5C3CB23C1657F2A400E8341C /* Chronosphere.png in Resources */,
 				5C3CB23D1657F2A400E8341C /* Cold_Feet.png in Resources */,
@@ -3018,6 +3023,7 @@
 				EDCF644F166CC0E300BBE08A /* BuildsViewController.m in Sources */,
 				EDCF6453166CF3CF00BBE08A /* Ability+DAO.m in Sources */,
 				EDCF6456166CF67D00BBE08A /* Ability.m in Sources */,
+				EDCF6459166D0C5B00BBE08A /* AbilityCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

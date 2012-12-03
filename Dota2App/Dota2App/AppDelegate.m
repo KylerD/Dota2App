@@ -49,9 +49,8 @@
             [hp parse];
         }
         else{
-        
-        MockObjectGenerator *generator = [[MockObjectGenerator alloc] init];
-        [generator generateRandomHeros];
+            MockObjectGenerator *generator = [[MockObjectGenerator alloc] init];
+            [generator generateRandomHeros];
         }
     }
     

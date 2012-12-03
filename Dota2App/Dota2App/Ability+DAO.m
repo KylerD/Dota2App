@@ -13,6 +13,7 @@
 + (Ability *)abilityFromDictionary:(NSDictionary*)abilityDictionary {
     NSString *abilityName = [self interpretValue:[abilityDictionary valueForKey:@"name"]];
     Ability *ability = [Ability readOrCreateObjectWithParamterName:@"name" andValue:abilityName];
+    ability.name = abilityName;
     ability.notes = [self interpretValue:[abilityDictionary valueForKey:@"description"]];
     ability.lore = [self interpretValue:[abilityDictionary valueForKey:@"lore"]];
     ability.videoUrl = [self interpretValue:[abilityDictionary valueForKey:@"videoUrl"]];

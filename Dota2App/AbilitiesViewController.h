@@ -12,7 +12,7 @@
 @interface AbilitiesViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
     
     UITableView *tableView;
-    
+    NSArray *abilities;
 }
 
 @property (nonatomic, strong) Hero *hero;
