@@ -16,79 +16,79 @@
 		5C3CB1541657F2A400E8341C /* Icon_Int.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAEED1657F2A400E8341C /* Icon_Int.png */; };
 		5C3CB1551657F2A400E8341C /* Icon_Str.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAEEE1657F2A400E8341C /* Icon_Str.png */; };
 		5C3CB1561657F2A400E8341C /* Alchemist_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAEF01657F2A400E8341C /* Alchemist_icon.png */; };
-		5C3CB1571657F2A400E8341C /* Ancient_Apparition_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAEF11657F2A400E8341C /* Ancient_Apparition_icon.png */; };
+		5C3CB1571657F2A400E8341C /* Ancient Apparition_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAEF11657F2A400E8341C /* Ancient Apparition_icon.png */; };
 		5C3CB1581657F2A400E8341C /* Anti-Mage_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAEF21657F2A400E8341C /* Anti-Mage_icon.png */; };
 		5C3CB1591657F2A400E8341C /* Axe_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAEF31657F2A400E8341C /* Axe_icon.png */; };
 		5C3CB15A1657F2A400E8341C /* Bane_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAEF41657F2A400E8341C /* Bane_icon.png */; };
 		5C3CB15B1657F2A400E8341C /* Batrider_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAEF51657F2A400E8341C /* Batrider_icon.png */; };
 		5C3CB15C1657F2A400E8341C /* Beastmaster_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAEF61657F2A400E8341C /* Beastmaster_icon.png */; };
 		5C3CB15D1657F2A400E8341C /* Bloodseeker_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAEF71657F2A400E8341C /* Bloodseeker_icon.png */; };
-		5C3CB15E1657F2A400E8341C /* Bounty_Hunter_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAEF81657F2A400E8341C /* Bounty_Hunter_icon.png */; };
+		5C3CB15E1657F2A400E8341C /* Bounty Hunter_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAEF81657F2A400E8341C /* Bounty Hunter_icon.png */; };
 		5C3CB15F1657F2A400E8341C /* Brewmaster_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAEF91657F2A400E8341C /* Brewmaster_icon.png */; };
 		5C3CB1601657F2A400E8341C /* Broodmother_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAEFA1657F2A400E8341C /* Broodmother_icon.png */; };
-		5C3CB1611657F2A400E8341C /* Centaur_Warrunner_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAEFB1657F2A400E8341C /* Centaur_Warrunner_icon.png */; };
-		5C3CB1621657F2A400E8341C /* Chaos_Knight_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAEFC1657F2A400E8341C /* Chaos_Knight_icon.png */; };
+		5C3CB1611657F2A400E8341C /* Centaur Warrunner_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAEFB1657F2A400E8341C /* Centaur Warrunner_icon.png */; };
+		5C3CB1621657F2A400E8341C /* Chaos Knight_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAEFC1657F2A400E8341C /* Chaos Knight_icon.png */; };
 		5C3CB1631657F2A400E8341C /* Chen_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAEFD1657F2A400E8341C /* Chen_icon.png */; };
 		5C3CB1641657F2A400E8341C /* Clinkz_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAEFE1657F2A400E8341C /* Clinkz_icon.png */; };
 		5C3CB1651657F2A400E8341C /* Clockwerk_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAEFF1657F2A400E8341C /* Clockwerk_icon.png */; };
-		5C3CB1661657F2A400E8341C /* Crystal_Maiden_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF001657F2A400E8341C /* Crystal_Maiden_icon.png */; };
-		5C3CB1671657F2A400E8341C /* Dark_Seer_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF011657F2A400E8341C /* Dark_Seer_icon.png */; };
+		5C3CB1661657F2A400E8341C /* Crystal Maiden_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF001657F2A400E8341C /* Crystal Maiden_icon.png */; };
+		5C3CB1671657F2A400E8341C /* Dark Seer_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF011657F2A400E8341C /* Dark Seer_icon.png */; };
 		5C3CB1681657F2A400E8341C /* Dazzle_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF021657F2A400E8341C /* Dazzle_icon.png */; };
-		5C3CB1691657F2A400E8341C /* Death_Prophet_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF031657F2A400E8341C /* Death_Prophet_icon.png */; };
+		5C3CB1691657F2A400E8341C /* Death Prophet_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF031657F2A400E8341C /* Death Prophet_icon.png */; };
 		5C3CB16A1657F2A400E8341C /* Disruptor_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF041657F2A400E8341C /* Disruptor_icon.png */; };
-		5C3CB16B1657F2A400E8341C /* Doom_Bringer_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF051657F2A400E8341C /* Doom_Bringer_icon.png */; };
-		5C3CB16C1657F2A400E8341C /* Dragon_Knight_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF061657F2A400E8341C /* Dragon_Knight_icon.png */; };
-		5C3CB16D1657F2A400E8341C /* Drow_Ranger_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF071657F2A400E8341C /* Drow_Ranger_icon.png */; };
+		5C3CB16B1657F2A400E8341C /* Doom Bringer_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF051657F2A400E8341C /* Doom Bringer_icon.png */; };
+		5C3CB16C1657F2A400E8341C /* Dragon Knight_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF061657F2A400E8341C /* Dragon Knight_icon.png */; };
+		5C3CB16D1657F2A400E8341C /* Drow Ranger_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF071657F2A400E8341C /* Drow Ranger_icon.png */; };
 		5C3CB16E1657F2A400E8341C /* Earthshaker_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF081657F2A400E8341C /* Earthshaker_icon.png */; };
 		5C3CB16F1657F2A400E8341C /* Enchantress_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF091657F2A400E8341C /* Enchantress_icon.png */; };
 		5C3CB1701657F2A400E8341C /* Enigma_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF0A1657F2A400E8341C /* Enigma_icon.png */; };
-		5C3CB1711657F2A400E8341C /* Faceless_Void_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF0B1657F2A400E8341C /* Faceless_Void_icon.png */; };
+		5C3CB1711657F2A400E8341C /* Faceless Void_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF0B1657F2A400E8341C /* Faceless Void_icon.png */; };
 		5C3CB1721657F2A400E8341C /* Gyrocopter_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF0C1657F2A400E8341C /* Gyrocopter_icon.png */; };
 		5C3CB1731657F2A400E8341C /* Huskar_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF0D1657F2A400E8341C /* Huskar_icon.png */; };
 		5C3CB1741657F2A400E8341C /* Invoker_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF0E1657F2A400E8341C /* Invoker_icon.png */; };
 		5C3CB1751657F2A400E8341C /* Jakiro_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF0F1657F2A400E8341C /* Jakiro_icon.png */; };
 		5C3CB1761657F2A400E8341C /* Juggernaut_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF101657F2A400E8341C /* Juggernaut_icon.png */; };
-		5C3CB1771657F2A400E8341C /* Keeper_of_the_Light_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF111657F2A400E8341C /* Keeper_of_the_Light_icon.png */; };
+		5C3CB1771657F2A400E8341C /* Keeper of the Light_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF111657F2A400E8341C /* Keeper of the Light_icon.png */; };
 		5C3CB1781657F2A400E8341C /* Kunkka_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF121657F2A400E8341C /* Kunkka_icon.png */; };
 		5C3CB1791657F2A400E8341C /* Leshrac_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF131657F2A400E8341C /* Leshrac_icon.png */; };
 		5C3CB17A1657F2A400E8341C /* Lich_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF141657F2A400E8341C /* Lich_icon.png */; };
 		5C3CB17B1657F2A400E8341C /* Lifestealer_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF151657F2A400E8341C /* Lifestealer_icon.png */; };
 		5C3CB17C1657F2A400E8341C /* Lina_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF161657F2A400E8341C /* Lina_icon.png */; };
 		5C3CB17D1657F2A400E8341C /* Lion_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF171657F2A400E8341C /* Lion_icon.png */; };
-		5C3CB17E1657F2A400E8341C /* Lone_Druid_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF181657F2A400E8341C /* Lone_Druid_icon.png */; };
+		5C3CB17E1657F2A400E8341C /* Lone Druid_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF181657F2A400E8341C /* Lone Druid_icon.png */; };
 		5C3CB17F1657F2A400E8341C /* Luna_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF191657F2A400E8341C /* Luna_icon.png */; };
 		5C3CB1801657F2A400E8341C /* Lycanthrope_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF1A1657F2A400E8341C /* Lycanthrope_icon.png */; };
 		5C3CB1811657F2A400E8341C /* Magnus_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF1B1657F2A400E8341C /* Magnus_icon.png */; };
 		5C3CB1821657F2A400E8341C /* Meepo_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF1C1657F2A400E8341C /* Meepo_icon.png */; };
 		5C3CB1831657F2A400E8341C /* Mirana_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF1D1657F2A400E8341C /* Mirana_icon.png */; };
 		5C3CB1841657F2A400E8341C /* Morphling_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF1E1657F2A400E8341C /* Morphling_icon.png */; };
-		5C3CB1851657F2A400E8341C /* Naga_Siren_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF1F1657F2A400E8341C /* Naga_Siren_icon.png */; };
-		5C3CB1861657F2A400E8341C /* Nature's_Prophet_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF201657F2A400E8341C /* Nature's_Prophet_icon.png */; };
+		5C3CB1851657F2A400E8341C /* Naga Siren_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF1F1657F2A400E8341C /* Naga Siren_icon.png */; };
+		5C3CB1861657F2A400E8341C /* Nature's Prophet_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF201657F2A400E8341C /* Nature's Prophet_icon.png */; };
 		5C3CB1871657F2A400E8341C /* Necrolyte_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF211657F2A400E8341C /* Necrolyte_icon.png */; };
-		5C3CB1881657F2A400E8341C /* Night_Stalker_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF221657F2A400E8341C /* Night_Stalker_icon.png */; };
-		5C3CB1891657F2A400E8341C /* Nyx_Assassin_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF231657F2A400E8341C /* Nyx_Assassin_icon.png */; };
-		5C3CB18A1657F2A400E8341C /* Ogre_Magi_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF241657F2A400E8341C /* Ogre_Magi_icon.png */; };
+		5C3CB1881657F2A400E8341C /* Night Stalker_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF221657F2A400E8341C /* Night Stalker_icon.png */; };
+		5C3CB1891657F2A400E8341C /* Nyx Assassin_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF231657F2A400E8341C /* Nyx Assassin_icon.png */; };
+		5C3CB18A1657F2A400E8341C /* Ogre Magi_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF241657F2A400E8341C /* Ogre Magi_icon.png */; };
 		5C3CB18B1657F2A400E8341C /* Omniknight_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF251657F2A400E8341C /* Omniknight_icon.png */; };
-		5C3CB18C1657F2A400E8341C /* Outworld_Destroyer_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF261657F2A400E8341C /* Outworld_Destroyer_icon.png */; };
-		5C3CB18D1657F2A400E8341C /* Phantom_Assassin_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF271657F2A400E8341C /* Phantom_Assassin_icon.png */; };
-		5C3CB18E1657F2A400E8341C /* Phantom_Lancer_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF281657F2A400E8341C /* Phantom_Lancer_icon.png */; };
+		5C3CB18C1657F2A400E8341C /* Outworld Destroyer_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF261657F2A400E8341C /* Outworld Destroyer_icon.png */; };
+		5C3CB18D1657F2A400E8341C /* Phantom Assassin_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF271657F2A400E8341C /* Phantom Assassin_icon.png */; };
+		5C3CB18E1657F2A400E8341C /* Phantom Lancer_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF281657F2A400E8341C /* Phantom Lancer_icon.png */; };
 		5C3CB18F1657F2A400E8341C /* Puck_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF291657F2A400E8341C /* Puck_icon.png */; };
 		5C3CB1901657F2A400E8341C /* Pudge_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF2A1657F2A400E8341C /* Pudge_icon.png */; };
 		5C3CB1911657F2A400E8341C /* Pugna_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF2B1657F2A400E8341C /* Pugna_icon.png */; };
-		5C3CB1921657F2A400E8341C /* Queen_of_Pain_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF2C1657F2A400E8341C /* Queen_of_Pain_icon.png */; };
+		5C3CB1921657F2A400E8341C /* Queen of Pain_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF2C1657F2A400E8341C /* Queen of Pain_icon.png */; };
 		5C3CB1931657F2A400E8341C /* Razor_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF2D1657F2A400E8341C /* Razor_icon.png */; };
 		5C3CB1941657F2A400E8341C /* Riki_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF2E1657F2A400E8341C /* Riki_icon.png */; };
 		5C3CB1951657F2A400E8341C /* Rubick_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF2F1657F2A400E8341C /* Rubick_icon.png */; };
-		5C3CB1961657F2A400E8341C /* Sand_King_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF301657F2A400E8341C /* Sand_King_icon.png */; };
-		5C3CB1971657F2A400E8341C /* Shadow_Demon_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF311657F2A400E8341C /* Shadow_Demon_icon.png */; };
-		5C3CB1981657F2A400E8341C /* Shadow_Fiend_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF321657F2A400E8341C /* Shadow_Fiend_icon.png */; };
-		5C3CB1991657F2A400E8341C /* Shadow_Shaman_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF331657F2A400E8341C /* Shadow_Shaman_icon.png */; };
+		5C3CB1961657F2A400E8341C /* Sand King_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF301657F2A400E8341C /* Sand King_icon.png */; };
+		5C3CB1971657F2A400E8341C /* Shadow Demon_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF311657F2A400E8341C /* Shadow Demon_icon.png */; };
+		5C3CB1981657F2A400E8341C /* Shadow Fiend_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF321657F2A400E8341C /* Shadow Fiend_icon.png */; };
+		5C3CB1991657F2A400E8341C /* Shadow Shaman_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF331657F2A400E8341C /* Shadow Shaman_icon.png */; };
 		5C3CB19A1657F2A400E8341C /* Silencer_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF341657F2A400E8341C /* Silencer_icon.png */; };
-		5C3CB19B1657F2A400E8341C /* Skeleton_King_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF351657F2A400E8341C /* Skeleton_King_icon.png */; };
+		5C3CB19B1657F2A400E8341C /* Skeleton King_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF351657F2A400E8341C /* Skeleton King_icon.png */; };
 		5C3CB19C1657F2A400E8341C /* Slardar_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF361657F2A400E8341C /* Slardar_icon.png */; };
 		5C3CB19D1657F2A400E8341C /* Sniper_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF371657F2A400E8341C /* Sniper_icon.png */; };
 		5C3CB19E1657F2A400E8341C /* Spectre_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF381657F2A400E8341C /* Spectre_icon.png */; };
-		5C3CB19F1657F2A400E8341C /* Spirit_Breaker_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF391657F2A400E8341C /* Spirit_Breaker_icon.png */; };
+		5C3CB19F1657F2A400E8341C /* Spirit Breaker_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF391657F2A400E8341C /* Spirit Breaker_icon.png */; };
 		5C3CB1A01657F2A400E8341C /* Storm_Spirit_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF3A1657F2A400E8341C /* Storm_Spirit_icon.png */; };
 		5C3CB1A11657F2A400E8341C /* Sven_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF3B1657F2A400E8341C /* Sven_icon.png */; };
 		5C3CB1A21657F2A400E8341C /* Templar_Assassin_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAF3C1657F2A400E8341C /* Templar_Assassin_icon.png */; };
@@ -674,79 +674,79 @@
 		5C3CAEED1657F2A400E8341C /* Icon_Int.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_Int.png; sourceTree = "<group>"; };
 		5C3CAEEE1657F2A400E8341C /* Icon_Str.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_Str.png; sourceTree = "<group>"; };
 		5C3CAEF01657F2A400E8341C /* Alchemist_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Alchemist_icon.png; sourceTree = "<group>"; };
-		5C3CAEF11657F2A400E8341C /* Ancient_Apparition_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ancient_Apparition_icon.png; sourceTree = "<group>"; };
+		5C3CAEF11657F2A400E8341C /* Ancient Apparition_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ancient Apparition_icon.png"; sourceTree = "<group>"; };
 		5C3CAEF21657F2A400E8341C /* Anti-Mage_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Anti-Mage_icon.png"; sourceTree = "<group>"; };
 		5C3CAEF31657F2A400E8341C /* Axe_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Axe_icon.png; sourceTree = "<group>"; };
 		5C3CAEF41657F2A400E8341C /* Bane_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bane_icon.png; sourceTree = "<group>"; };
 		5C3CAEF51657F2A400E8341C /* Batrider_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Batrider_icon.png; sourceTree = "<group>"; };
 		5C3CAEF61657F2A400E8341C /* Beastmaster_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Beastmaster_icon.png; sourceTree = "<group>"; };
 		5C3CAEF71657F2A400E8341C /* Bloodseeker_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bloodseeker_icon.png; sourceTree = "<group>"; };
-		5C3CAEF81657F2A400E8341C /* Bounty_Hunter_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bounty_Hunter_icon.png; sourceTree = "<group>"; };
+		5C3CAEF81657F2A400E8341C /* Bounty Hunter_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Bounty Hunter_icon.png"; sourceTree = "<group>"; };
 		5C3CAEF91657F2A400E8341C /* Brewmaster_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Brewmaster_icon.png; sourceTree = "<group>"; };
 		5C3CAEFA1657F2A400E8341C /* Broodmother_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Broodmother_icon.png; sourceTree = "<group>"; };
-		5C3CAEFB1657F2A400E8341C /* Centaur_Warrunner_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Centaur_Warrunner_icon.png; sourceTree = "<group>"; };
-		5C3CAEFC1657F2A400E8341C /* Chaos_Knight_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chaos_Knight_icon.png; sourceTree = "<group>"; };
+		5C3CAEFB1657F2A400E8341C /* Centaur Warrunner_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Centaur Warrunner_icon.png"; sourceTree = "<group>"; };
+		5C3CAEFC1657F2A400E8341C /* Chaos Knight_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chaos Knight_icon.png"; sourceTree = "<group>"; };
 		5C3CAEFD1657F2A400E8341C /* Chen_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chen_icon.png; sourceTree = "<group>"; };
 		5C3CAEFE1657F2A400E8341C /* Clinkz_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Clinkz_icon.png; sourceTree = "<group>"; };
 		5C3CAEFF1657F2A400E8341C /* Clockwerk_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Clockwerk_icon.png; sourceTree = "<group>"; };
-		5C3CAF001657F2A400E8341C /* Crystal_Maiden_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Crystal_Maiden_icon.png; sourceTree = "<group>"; };
-		5C3CAF011657F2A400E8341C /* Dark_Seer_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dark_Seer_icon.png; sourceTree = "<group>"; };
+		5C3CAF001657F2A400E8341C /* Crystal Maiden_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Crystal Maiden_icon.png"; sourceTree = "<group>"; };
+		5C3CAF011657F2A400E8341C /* Dark Seer_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dark Seer_icon.png"; sourceTree = "<group>"; };
 		5C3CAF021657F2A400E8341C /* Dazzle_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dazzle_icon.png; sourceTree = "<group>"; };
-		5C3CAF031657F2A400E8341C /* Death_Prophet_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Death_Prophet_icon.png; sourceTree = "<group>"; };
+		5C3CAF031657F2A400E8341C /* Death Prophet_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Death Prophet_icon.png"; sourceTree = "<group>"; };
 		5C3CAF041657F2A400E8341C /* Disruptor_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Disruptor_icon.png; sourceTree = "<group>"; };
-		5C3CAF051657F2A400E8341C /* Doom_Bringer_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Doom_Bringer_icon.png; sourceTree = "<group>"; };
-		5C3CAF061657F2A400E8341C /* Dragon_Knight_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dragon_Knight_icon.png; sourceTree = "<group>"; };
-		5C3CAF071657F2A400E8341C /* Drow_Ranger_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Drow_Ranger_icon.png; sourceTree = "<group>"; };
+		5C3CAF051657F2A400E8341C /* Doom Bringer_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Doom Bringer_icon.png"; sourceTree = "<group>"; };
+		5C3CAF061657F2A400E8341C /* Dragon Knight_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dragon Knight_icon.png"; sourceTree = "<group>"; };
+		5C3CAF071657F2A400E8341C /* Drow Ranger_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Drow Ranger_icon.png"; sourceTree = "<group>"; };
 		5C3CAF081657F2A400E8341C /* Earthshaker_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Earthshaker_icon.png; sourceTree = "<group>"; };
 		5C3CAF091657F2A400E8341C /* Enchantress_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Enchantress_icon.png; sourceTree = "<group>"; };
 		5C3CAF0A1657F2A400E8341C /* Enigma_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Enigma_icon.png; sourceTree = "<group>"; };
-		5C3CAF0B1657F2A400E8341C /* Faceless_Void_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Faceless_Void_icon.png; sourceTree = "<group>"; };
+		5C3CAF0B1657F2A400E8341C /* Faceless Void_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Faceless Void_icon.png"; sourceTree = "<group>"; };
 		5C3CAF0C1657F2A400E8341C /* Gyrocopter_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Gyrocopter_icon.png; sourceTree = "<group>"; };
 		5C3CAF0D1657F2A400E8341C /* Huskar_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Huskar_icon.png; sourceTree = "<group>"; };
 		5C3CAF0E1657F2A400E8341C /* Invoker_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Invoker_icon.png; sourceTree = "<group>"; };
 		5C3CAF0F1657F2A400E8341C /* Jakiro_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Jakiro_icon.png; sourceTree = "<group>"; };
 		5C3CAF101657F2A400E8341C /* Juggernaut_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Juggernaut_icon.png; sourceTree = "<group>"; };
-		5C3CAF111657F2A400E8341C /* Keeper_of_the_Light_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Keeper_of_the_Light_icon.png; sourceTree = "<group>"; };
+		5C3CAF111657F2A400E8341C /* Keeper of the Light_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Keeper of the Light_icon.png"; sourceTree = "<group>"; };
 		5C3CAF121657F2A400E8341C /* Kunkka_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Kunkka_icon.png; sourceTree = "<group>"; };
 		5C3CAF131657F2A400E8341C /* Leshrac_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Leshrac_icon.png; sourceTree = "<group>"; };
 		5C3CAF141657F2A400E8341C /* Lich_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lich_icon.png; sourceTree = "<group>"; };
 		5C3CAF151657F2A400E8341C /* Lifestealer_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lifestealer_icon.png; sourceTree = "<group>"; };
 		5C3CAF161657F2A400E8341C /* Lina_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lina_icon.png; sourceTree = "<group>"; };
 		5C3CAF171657F2A400E8341C /* Lion_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lion_icon.png; sourceTree = "<group>"; };
-		5C3CAF181657F2A400E8341C /* Lone_Druid_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lone_Druid_icon.png; sourceTree = "<group>"; };
+		5C3CAF181657F2A400E8341C /* Lone Druid_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lone Druid_icon.png"; sourceTree = "<group>"; };
 		5C3CAF191657F2A400E8341C /* Luna_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Luna_icon.png; sourceTree = "<group>"; };
 		5C3CAF1A1657F2A400E8341C /* Lycanthrope_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lycanthrope_icon.png; sourceTree = "<group>"; };
 		5C3CAF1B1657F2A400E8341C /* Magnus_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Magnus_icon.png; sourceTree = "<group>"; };
 		5C3CAF1C1657F2A400E8341C /* Meepo_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Meepo_icon.png; sourceTree = "<group>"; };
 		5C3CAF1D1657F2A400E8341C /* Mirana_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Mirana_icon.png; sourceTree = "<group>"; };
 		5C3CAF1E1657F2A400E8341C /* Morphling_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Morphling_icon.png; sourceTree = "<group>"; };
-		5C3CAF1F1657F2A400E8341C /* Naga_Siren_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Naga_Siren_icon.png; sourceTree = "<group>"; };
-		5C3CAF201657F2A400E8341C /* Nature's_Prophet_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nature's_Prophet_icon.png"; sourceTree = "<group>"; };
+		5C3CAF1F1657F2A400E8341C /* Naga Siren_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Naga Siren_icon.png"; sourceTree = "<group>"; };
+		5C3CAF201657F2A400E8341C /* Nature's Prophet_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nature's Prophet_icon.png"; sourceTree = "<group>"; };
 		5C3CAF211657F2A400E8341C /* Necrolyte_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Necrolyte_icon.png; sourceTree = "<group>"; };
-		5C3CAF221657F2A400E8341C /* Night_Stalker_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Night_Stalker_icon.png; sourceTree = "<group>"; };
-		5C3CAF231657F2A400E8341C /* Nyx_Assassin_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Nyx_Assassin_icon.png; sourceTree = "<group>"; };
-		5C3CAF241657F2A400E8341C /* Ogre_Magi_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ogre_Magi_icon.png; sourceTree = "<group>"; };
+		5C3CAF221657F2A400E8341C /* Night Stalker_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Night Stalker_icon.png"; sourceTree = "<group>"; };
+		5C3CAF231657F2A400E8341C /* Nyx Assassin_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Nyx Assassin_icon.png"; sourceTree = "<group>"; };
+		5C3CAF241657F2A400E8341C /* Ogre Magi_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ogre Magi_icon.png"; sourceTree = "<group>"; };
 		5C3CAF251657F2A400E8341C /* Omniknight_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Omniknight_icon.png; sourceTree = "<group>"; };
-		5C3CAF261657F2A400E8341C /* Outworld_Destroyer_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Outworld_Destroyer_icon.png; sourceTree = "<group>"; };
-		5C3CAF271657F2A400E8341C /* Phantom_Assassin_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Phantom_Assassin_icon.png; sourceTree = "<group>"; };
-		5C3CAF281657F2A400E8341C /* Phantom_Lancer_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Phantom_Lancer_icon.png; sourceTree = "<group>"; };
+		5C3CAF261657F2A400E8341C /* Outworld Destroyer_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Outworld Destroyer_icon.png"; sourceTree = "<group>"; };
+		5C3CAF271657F2A400E8341C /* Phantom Assassin_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom Assassin_icon.png"; sourceTree = "<group>"; };
+		5C3CAF281657F2A400E8341C /* Phantom Lancer_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Phantom Lancer_icon.png"; sourceTree = "<group>"; };
 		5C3CAF291657F2A400E8341C /* Puck_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Puck_icon.png; sourceTree = "<group>"; };
 		5C3CAF2A1657F2A400E8341C /* Pudge_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pudge_icon.png; sourceTree = "<group>"; };
 		5C3CAF2B1657F2A400E8341C /* Pugna_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pugna_icon.png; sourceTree = "<group>"; };
-		5C3CAF2C1657F2A400E8341C /* Queen_of_Pain_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Queen_of_Pain_icon.png; sourceTree = "<group>"; };
+		5C3CAF2C1657F2A400E8341C /* Queen of Pain_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Queen of Pain_icon.png"; sourceTree = "<group>"; };
 		5C3CAF2D1657F2A400E8341C /* Razor_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Razor_icon.png; sourceTree = "<group>"; };
 		5C3CAF2E1657F2A400E8341C /* Riki_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Riki_icon.png; sourceTree = "<group>"; };
 		5C3CAF2F1657F2A400E8341C /* Rubick_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rubick_icon.png; sourceTree = "<group>"; };
-		5C3CAF301657F2A400E8341C /* Sand_King_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sand_King_icon.png; sourceTree = "<group>"; };
-		5C3CAF311657F2A400E8341C /* Shadow_Demon_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shadow_Demon_icon.png; sourceTree = "<group>"; };
-		5C3CAF321657F2A400E8341C /* Shadow_Fiend_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shadow_Fiend_icon.png; sourceTree = "<group>"; };
-		5C3CAF331657F2A400E8341C /* Shadow_Shaman_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shadow_Shaman_icon.png; sourceTree = "<group>"; };
+		5C3CAF301657F2A400E8341C /* Sand King_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sand King_icon.png"; sourceTree = "<group>"; };
+		5C3CAF311657F2A400E8341C /* Shadow Demon_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Shadow Demon_icon.png"; sourceTree = "<group>"; };
+		5C3CAF321657F2A400E8341C /* Shadow Fiend_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Shadow Fiend_icon.png"; sourceTree = "<group>"; };
+		5C3CAF331657F2A400E8341C /* Shadow Shaman_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Shadow Shaman_icon.png"; sourceTree = "<group>"; };
 		5C3CAF341657F2A400E8341C /* Silencer_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Silencer_icon.png; sourceTree = "<group>"; };
-		5C3CAF351657F2A400E8341C /* Skeleton_King_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Skeleton_King_icon.png; sourceTree = "<group>"; };
+		5C3CAF351657F2A400E8341C /* Skeleton King_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Skeleton King_icon.png"; sourceTree = "<group>"; };
 		5C3CAF361657F2A400E8341C /* Slardar_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slardar_icon.png; sourceTree = "<group>"; };
 		5C3CAF371657F2A400E8341C /* Sniper_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sniper_icon.png; sourceTree = "<group>"; };
 		5C3CAF381657F2A400E8341C /* Spectre_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spectre_icon.png; sourceTree = "<group>"; };
-		5C3CAF391657F2A400E8341C /* Spirit_Breaker_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spirit_Breaker_icon.png; sourceTree = "<group>"; };
+		5C3CAF391657F2A400E8341C /* Spirit Breaker_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Spirit Breaker_icon.png"; sourceTree = "<group>"; };
 		5C3CAF3A1657F2A400E8341C /* Storm_Spirit_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Storm_Spirit_icon.png; sourceTree = "<group>"; };
 		5C3CAF3B1657F2A400E8341C /* Sven_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sven_icon.png; sourceTree = "<group>"; };
 		5C3CAF3C1657F2A400E8341C /* Templar_Assassin_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Templar_Assassin_icon.png; sourceTree = "<group>"; };
@@ -1477,79 +1477,79 @@
 			isa = PBXGroup;
 			children = (
 				5C3CAEF01657F2A400E8341C /* Alchemist_icon.png */,
-				5C3CAEF11657F2A400E8341C /* Ancient_Apparition_icon.png */,
+				5C3CAEF11657F2A400E8341C /* Ancient Apparition_icon.png */,
 				5C3CAEF21657F2A400E8341C /* Anti-Mage_icon.png */,
 				5C3CAEF31657F2A400E8341C /* Axe_icon.png */,
 				5C3CAEF41657F2A400E8341C /* Bane_icon.png */,
 				5C3CAEF51657F2A400E8341C /* Batrider_icon.png */,
 				5C3CAEF61657F2A400E8341C /* Beastmaster_icon.png */,
 				5C3CAEF71657F2A400E8341C /* Bloodseeker_icon.png */,
-				5C3CAEF81657F2A400E8341C /* Bounty_Hunter_icon.png */,
+				5C3CAEF81657F2A400E8341C /* Bounty Hunter_icon.png */,
 				5C3CAEF91657F2A400E8341C /* Brewmaster_icon.png */,
 				5C3CAEFA1657F2A400E8341C /* Broodmother_icon.png */,
-				5C3CAEFB1657F2A400E8341C /* Centaur_Warrunner_icon.png */,
-				5C3CAEFC1657F2A400E8341C /* Chaos_Knight_icon.png */,
+				5C3CAEFB1657F2A400E8341C /* Centaur Warrunner_icon.png */,
+				5C3CAEFC1657F2A400E8341C /* Chaos Knight_icon.png */,
 				5C3CAEFD1657F2A400E8341C /* Chen_icon.png */,
 				5C3CAEFE1657F2A400E8341C /* Clinkz_icon.png */,
 				5C3CAEFF1657F2A400E8341C /* Clockwerk_icon.png */,
-				5C3CAF001657F2A400E8341C /* Crystal_Maiden_icon.png */,
-				5C3CAF011657F2A400E8341C /* Dark_Seer_icon.png */,
+				5C3CAF001657F2A400E8341C /* Crystal Maiden_icon.png */,
+				5C3CAF011657F2A400E8341C /* Dark Seer_icon.png */,
 				5C3CAF021657F2A400E8341C /* Dazzle_icon.png */,
-				5C3CAF031657F2A400E8341C /* Death_Prophet_icon.png */,
+				5C3CAF031657F2A400E8341C /* Death Prophet_icon.png */,
 				5C3CAF041657F2A400E8341C /* Disruptor_icon.png */,
-				5C3CAF051657F2A400E8341C /* Doom_Bringer_icon.png */,
-				5C3CAF061657F2A400E8341C /* Dragon_Knight_icon.png */,
-				5C3CAF071657F2A400E8341C /* Drow_Ranger_icon.png */,
+				5C3CAF051657F2A400E8341C /* Doom Bringer_icon.png */,
+				5C3CAF061657F2A400E8341C /* Dragon Knight_icon.png */,
+				5C3CAF071657F2A400E8341C /* Drow Ranger_icon.png */,
 				5C3CAF081657F2A400E8341C /* Earthshaker_icon.png */,
 				5C3CAF091657F2A400E8341C /* Enchantress_icon.png */,
 				5C3CAF0A1657F2A400E8341C /* Enigma_icon.png */,
-				5C3CAF0B1657F2A400E8341C /* Faceless_Void_icon.png */,
+				5C3CAF0B1657F2A400E8341C /* Faceless Void_icon.png */,
 				5C3CAF0C1657F2A400E8341C /* Gyrocopter_icon.png */,
 				5C3CAF0D1657F2A400E8341C /* Huskar_icon.png */,
 				5C3CAF0E1657F2A400E8341C /* Invoker_icon.png */,
 				5C3CAF0F1657F2A400E8341C /* Jakiro_icon.png */,
 				5C3CAF101657F2A400E8341C /* Juggernaut_icon.png */,
-				5C3CAF111657F2A400E8341C /* Keeper_of_the_Light_icon.png */,
+				5C3CAF111657F2A400E8341C /* Keeper of the Light_icon.png */,
 				5C3CAF121657F2A400E8341C /* Kunkka_icon.png */,
 				5C3CAF131657F2A400E8341C /* Leshrac_icon.png */,
 				5C3CAF141657F2A400E8341C /* Lich_icon.png */,
 				5C3CAF151657F2A400E8341C /* Lifestealer_icon.png */,
 				5C3CAF161657F2A400E8341C /* Lina_icon.png */,
 				5C3CAF171657F2A400E8341C /* Lion_icon.png */,
-				5C3CAF181657F2A400E8341C /* Lone_Druid_icon.png */,
+				5C3CAF181657F2A400E8341C /* Lone Druid_icon.png */,
 				5C3CAF191657F2A400E8341C /* Luna_icon.png */,
 				5C3CAF1A1657F2A400E8341C /* Lycanthrope_icon.png */,
 				5C3CAF1B1657F2A400E8341C /* Magnus_icon.png */,
 				5C3CAF1C1657F2A400E8341C /* Meepo_icon.png */,
 				5C3CAF1D1657F2A400E8341C /* Mirana_icon.png */,
 				5C3CAF1E1657F2A400E8341C /* Morphling_icon.png */,
-				5C3CAF1F1657F2A400E8341C /* Naga_Siren_icon.png */,
-				5C3CAF201657F2A400E8341C /* Nature's_Prophet_icon.png */,
+				5C3CAF1F1657F2A400E8341C /* Naga Siren_icon.png */,
+				5C3CAF201657F2A400E8341C /* Nature's Prophet_icon.png */,
 				5C3CAF211657F2A400E8341C /* Necrolyte_icon.png */,
-				5C3CAF221657F2A400E8341C /* Night_Stalker_icon.png */,
-				5C3CAF231657F2A400E8341C /* Nyx_Assassin_icon.png */,
-				5C3CAF241657F2A400E8341C /* Ogre_Magi_icon.png */,
+				5C3CAF221657F2A400E8341C /* Night Stalker_icon.png */,
+				5C3CAF231657F2A400E8341C /* Nyx Assassin_icon.png */,
+				5C3CAF241657F2A400E8341C /* Ogre Magi_icon.png */,
 				5C3CAF251657F2A400E8341C /* Omniknight_icon.png */,
-				5C3CAF261657F2A400E8341C /* Outworld_Destroyer_icon.png */,
-				5C3CAF271657F2A400E8341C /* Phantom_Assassin_icon.png */,
-				5C3CAF281657F2A400E8341C /* Phantom_Lancer_icon.png */,
+				5C3CAF261657F2A400E8341C /* Outworld Destroyer_icon.png */,
+				5C3CAF271657F2A400E8341C /* Phantom Assassin_icon.png */,
+				5C3CAF281657F2A400E8341C /* Phantom Lancer_icon.png */,
 				5C3CAF291657F2A400E8341C /* Puck_icon.png */,
 				5C3CAF2A1657F2A400E8341C /* Pudge_icon.png */,
 				5C3CAF2B1657F2A400E8341C /* Pugna_icon.png */,
-				5C3CAF2C1657F2A400E8341C /* Queen_of_Pain_icon.png */,
+				5C3CAF2C1657F2A400E8341C /* Queen of Pain_icon.png */,
 				5C3CAF2D1657F2A400E8341C /* Razor_icon.png */,
 				5C3CAF2E1657F2A400E8341C /* Riki_icon.png */,
 				5C3CAF2F1657F2A400E8341C /* Rubick_icon.png */,
-				5C3CAF301657F2A400E8341C /* Sand_King_icon.png */,
-				5C3CAF311657F2A400E8341C /* Shadow_Demon_icon.png */,
-				5C3CAF321657F2A400E8341C /* Shadow_Fiend_icon.png */,
-				5C3CAF331657F2A400E8341C /* Shadow_Shaman_icon.png */,
+				5C3CAF301657F2A400E8341C /* Sand King_icon.png */,
+				5C3CAF311657F2A400E8341C /* Shadow Demon_icon.png */,
+				5C3CAF321657F2A400E8341C /* Shadow Fiend_icon.png */,
+				5C3CAF331657F2A400E8341C /* Shadow Shaman_icon.png */,
 				5C3CAF341657F2A400E8341C /* Silencer_icon.png */,
-				5C3CAF351657F2A400E8341C /* Skeleton_King_icon.png */,
+				5C3CAF351657F2A400E8341C /* Skeleton King_icon.png */,
 				5C3CAF361657F2A400E8341C /* Slardar_icon.png */,
 				5C3CAF371657F2A400E8341C /* Sniper_icon.png */,
 				5C3CAF381657F2A400E8341C /* Spectre_icon.png */,
-				5C3CAF391657F2A400E8341C /* Spirit_Breaker_icon.png */,
+				5C3CAF391657F2A400E8341C /* Spirit Breaker_icon.png */,
 				5C3CAF3A1657F2A400E8341C /* Storm_Spirit_icon.png */,
 				5C3CAF3B1657F2A400E8341C /* Sven_icon.png */,
 				5C3CAF3C1657F2A400E8341C /* Templar_Assassin_icon.png */,
@@ -2376,79 +2376,79 @@
 				5C3CB1541657F2A400E8341C /* Icon_Int.png in Resources */,
 				5C3CB1551657F2A400E8341C /* Icon_Str.png in Resources */,
 				5C3CB1561657F2A400E8341C /* Alchemist_icon.png in Resources */,
-				5C3CB1571657F2A400E8341C /* Ancient_Apparition_icon.png in Resources */,
+				5C3CB1571657F2A400E8341C /* Ancient Apparition_icon.png in Resources */,
 				5C3CB1581657F2A400E8341C /* Anti-Mage_icon.png in Resources */,
 				5C3CB1591657F2A400E8341C /* Axe_icon.png in Resources */,
 				5C3CB15A1657F2A400E8341C /* Bane_icon.png in Resources */,
 				5C3CB15B1657F2A400E8341C /* Batrider_icon.png in Resources */,
 				5C3CB15C1657F2A400E8341C /* Beastmaster_icon.png in Resources */,
 				5C3CB15D1657F2A400E8341C /* Bloodseeker_icon.png in Resources */,
-				5C3CB15E1657F2A400E8341C /* Bounty_Hunter_icon.png in Resources */,
+				5C3CB15E1657F2A400E8341C /* Bounty Hunter_icon.png in Resources */,
 				5C3CB15F1657F2A400E8341C /* Brewmaster_icon.png in Resources */,
 				5C3CB1601657F2A400E8341C /* Broodmother_icon.png in Resources */,
-				5C3CB1611657F2A400E8341C /* Centaur_Warrunner_icon.png in Resources */,
-				5C3CB1621657F2A400E8341C /* Chaos_Knight_icon.png in Resources */,
+				5C3CB1611657F2A400E8341C /* Centaur Warrunner_icon.png in Resources */,
+				5C3CB1621657F2A400E8341C /* Chaos Knight_icon.png in Resources */,
 				5C3CB1631657F2A400E8341C /* Chen_icon.png in Resources */,
 				5C3CB1641657F2A400E8341C /* Clinkz_icon.png in Resources */,
 				5C3CB1651657F2A400E8341C /* Clockwerk_icon.png in Resources */,
-				5C3CB1661657F2A400E8341C /* Crystal_Maiden_icon.png in Resources */,
-				5C3CB1671657F2A400E8341C /* Dark_Seer_icon.png in Resources */,
+				5C3CB1661657F2A400E8341C /* Crystal Maiden_icon.png in Resources */,
+				5C3CB1671657F2A400E8341C /* Dark Seer_icon.png in Resources */,
 				5C3CB1681657F2A400E8341C /* Dazzle_icon.png in Resources */,
-				5C3CB1691657F2A400E8341C /* Death_Prophet_icon.png in Resources */,
+				5C3CB1691657F2A400E8341C /* Death Prophet_icon.png in Resources */,
 				5C3CB16A1657F2A400E8341C /* Disruptor_icon.png in Resources */,
-				5C3CB16B1657F2A400E8341C /* Doom_Bringer_icon.png in Resources */,
-				5C3CB16C1657F2A400E8341C /* Dragon_Knight_icon.png in Resources */,
-				5C3CB16D1657F2A400E8341C /* Drow_Ranger_icon.png in Resources */,
+				5C3CB16B1657F2A400E8341C /* Doom Bringer_icon.png in Resources */,
+				5C3CB16C1657F2A400E8341C /* Dragon Knight_icon.png in Resources */,
+				5C3CB16D1657F2A400E8341C /* Drow Ranger_icon.png in Resources */,
 				5C3CB16E1657F2A400E8341C /* Earthshaker_icon.png in Resources */,
 				5C3CB16F1657F2A400E8341C /* Enchantress_icon.png in Resources */,
 				5C3CB1701657F2A400E8341C /* Enigma_icon.png in Resources */,
-				5C3CB1711657F2A400E8341C /* Faceless_Void_icon.png in Resources */,
+				5C3CB1711657F2A400E8341C /* Faceless Void_icon.png in Resources */,
 				5C3CB1721657F2A400E8341C /* Gyrocopter_icon.png in Resources */,
 				5C3CB1731657F2A400E8341C /* Huskar_icon.png in Resources */,
 				5C3CB1741657F2A400E8341C /* Invoker_icon.png in Resources */,
 				5C3CB1751657F2A400E8341C /* Jakiro_icon.png in Resources */,
 				5C3CB1761657F2A400E8341C /* Juggernaut_icon.png in Resources */,
-				5C3CB1771657F2A400E8341C /* Keeper_of_the_Light_icon.png in Resources */,
+				5C3CB1771657F2A400E8341C /* Keeper of the Light_icon.png in Resources */,
 				5C3CB1781657F2A400E8341C /* Kunkka_icon.png in Resources */,
 				5C3CB1791657F2A400E8341C /* Leshrac_icon.png in Resources */,
 				5C3CB17A1657F2A400E8341C /* Lich_icon.png in Resources */,
 				5C3CB17B1657F2A400E8341C /* Lifestealer_icon.png in Resources */,
 				5C3CB17C1657F2A400E8341C /* Lina_icon.png in Resources */,
 				5C3CB17D1657F2A400E8341C /* Lion_icon.png in Resources */,
-				5C3CB17E1657F2A400E8341C /* Lone_Druid_icon.png in Resources */,
+				5C3CB17E1657F2A400E8341C /* Lone Druid_icon.png in Resources */,
 				5C3CB17F1657F2A400E8341C /* Luna_icon.png in Resources */,
 				5C3CB1801657F2A400E8341C /* Lycanthrope_icon.png in Resources */,
 				5C3CB1811657F2A400E8341C /* Magnus_icon.png in Resources */,
 				5C3CB1821657F2A400E8341C /* Meepo_icon.png in Resources */,
 				5C3CB1831657F2A400E8341C /* Mirana_icon.png in Resources */,
 				5C3CB1841657F2A400E8341C /* Morphling_icon.png in Resources */,
-				5C3CB1851657F2A400E8341C /* Naga_Siren_icon.png in Resources */,
-				5C3CB1861657F2A400E8341C /* Nature's_Prophet_icon.png in Resources */,
+				5C3CB1851657F2A400E8341C /* Naga Siren_icon.png in Resources */,
+				5C3CB1861657F2A400E8341C /* Nature's Prophet_icon.png in Resources */,
 				5C3CB1871657F2A400E8341C /* Necrolyte_icon.png in Resources */,
-				5C3CB1881657F2A400E8341C /* Night_Stalker_icon.png in Resources */,
-				5C3CB1891657F2A400E8341C /* Nyx_Assassin_icon.png in Resources */,
-				5C3CB18A1657F2A400E8341C /* Ogre_Magi_icon.png in Resources */,
+				5C3CB1881657F2A400E8341C /* Night Stalker_icon.png in Resources */,
+				5C3CB1891657F2A400E8341C /* Nyx Assassin_icon.png in Resources */,
+				5C3CB18A1657F2A400E8341C /* Ogre Magi_icon.png in Resources */,
 				5C3CB18B1657F2A400E8341C /* Omniknight_icon.png in Resources */,
-				5C3CB18C1657F2A400E8341C /* Outworld_Destroyer_icon.png in Resources */,
-				5C3CB18D1657F2A400E8341C /* Phantom_Assassin_icon.png in Resources */,
-				5C3CB18E1657F2A400E8341C /* Phantom_Lancer_icon.png in Resources */,
+				5C3CB18C1657F2A400E8341C /* Outworld Destroyer_icon.png in Resources */,
+				5C3CB18D1657F2A400E8341C /* Phantom Assassin_icon.png in Resources */,
+				5C3CB18E1657F2A400E8341C /* Phantom Lancer_icon.png in Resources */,
 				5C3CB18F1657F2A400E8341C /* Puck_icon.png in Resources */,
 				5C3CB1901657F2A400E8341C /* Pudge_icon.png in Resources */,
 				5C3CB1911657F2A400E8341C /* Pugna_icon.png in Resources */,
-				5C3CB1921657F2A400E8341C /* Queen_of_Pain_icon.png in Resources */,
+				5C3CB1921657F2A400E8341C /* Queen of Pain_icon.png in Resources */,
 				5C3CB1931657F2A400E8341C /* Razor_icon.png in Resources */,
 				5C3CB1941657F2A400E8341C /* Riki_icon.png in Resources */,
 				5C3CB1951657F2A400E8341C /* Rubick_icon.png in Resources */,
-				5C3CB1961657F2A400E8341C /* Sand_King_icon.png in Resources */,
-				5C3CB1971657F2A400E8341C /* Shadow_Demon_icon.png in Resources */,
-				5C3CB1981657F2A400E8341C /* Shadow_Fiend_icon.png in Resources */,
-				5C3CB1991657F2A400E8341C /* Shadow_Shaman_icon.png in Resources */,
+				5C3CB1961657F2A400E8341C /* Sand King_icon.png in Resources */,
+				5C3CB1971657F2A400E8341C /* Shadow Demon_icon.png in Resources */,
+				5C3CB1981657F2A400E8341C /* Shadow Fiend_icon.png in Resources */,
+				5C3CB1991657F2A400E8341C /* Shadow Shaman_icon.png in Resources */,
 				5C3CB19A1657F2A400E8341C /* Silencer_icon.png in Resources */,
-				5C3CB19B1657F2A400E8341C /* Skeleton_King_icon.png in Resources */,
+				5C3CB19B1657F2A400E8341C /* Skeleton King_icon.png in Resources */,
 				5C3CB19C1657F2A400E8341C /* Slardar_icon.png in Resources */,
 				5C3CB19D1657F2A400E8341C /* Sniper_icon.png in Resources */,
 				5C3CB19E1657F2A400E8341C /* Spectre_icon.png in Resources */,
-				5C3CB19F1657F2A400E8341C /* Spirit_Breaker_icon.png in Resources */,
+				5C3CB19F1657F2A400E8341C /* Spirit Breaker_icon.png in Resources */,
 				5C3CB1A01657F2A400E8341C /* Storm_Spirit_icon.png in Resources */,
 				5C3CB1A11657F2A400E8341C /* Sven_icon.png in Resources */,
 				5C3CB1A21657F2A400E8341C /* Templar_Assassin_icon.png in Resources */,

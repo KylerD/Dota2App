@@ -31,13 +31,12 @@
     if(!hero.primaryAttribute){
         hero.primaryAttribute = @"Unknown";
     }
-    /*
-    NSString *detailImagePath = [NSString stringWithFormat:@"%@.%@",heroName,@"png"];
-    NSString *iconImagePath = [NSString stringWithFormat:@"%@_icon.%@",heroName,@"png"];
-     
-     hero.detailImage = detailImagePath;
-     hero.iconImage = iconImagePath;
-    */
+    
+    //images
+    NSString *detailImagePath = [NSString stringWithFormat:@"%@.png",heroName];
+    NSString *iconImagePath = [NSString stringWithFormat:@"%@_icon.png",heroName];
+    hero.detailImage = detailImagePath;
+    hero.iconImage = iconImagePath;
     
     NSNumberFormatter * nf = [[NSNumberFormatter alloc] init];
     [nf setNumberStyle:NSNumberFormatterDecimalStyle];
@@ -46,10 +45,6 @@
     hero.strPoints = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"str"]]];
     hero.agilGain = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"agiGain"]]];
     hero.attackRange = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"range"]]];
-    
-    // this is just a URL and as such we'll probably need to pull this image and cache it.
-    hero.detailImage = [self interpretValue:[heroDictionary valueForKey:@"portraitUrl"]];
-    //
     
     hero.faction = [self interpretValue:[heroDictionary valueForKey:@"faction"]];
     if(!hero.faction){

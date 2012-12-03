@@ -51,6 +51,7 @@
     self.heroNameLabel.text = hero.name;
     self.factionImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png",hero.faction]];
     self.heroImageView.image = [UIImage imageNamed:hero.detailImage];
+
     
     self.strengthPointsLabel.text = [NSString stringWithFormat:@"%@ +%@",hero.strPoints, hero.strGain];
     self.intelligencePointsLabel.text = [NSString stringWithFormat:@"%@ +%@",hero.intelPoints, hero.intelGain];
