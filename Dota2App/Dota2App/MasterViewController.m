@@ -284,7 +284,8 @@
         
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         Hero *selectedHero = [fetchedRC objectAtIndexPath:indexPath];
-        [[segue destinationViewController] setHero:selectedHero];
+        DetailViewController *detailVC = (DetailViewController *)[segue destinationViewController];
+        [detailVC setHero:selectedHero];
     }
 }
 

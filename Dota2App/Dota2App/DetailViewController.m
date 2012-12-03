@@ -153,7 +153,16 @@
             vc = [self.storyboard instantiateViewControllerWithIdentifier:@"AbilityVC"];
             infoVCSelected = NO;
             break;
+        case 2:
+            vc = [self.storyboard instantiateViewControllerWithIdentifier:@"BuildsVC"];
+            infoVCSelected = NO;
+            break;
+        default:
+            vc = [self.storyboard instantiateViewControllerWithIdentifier:@"InformationVC"];
+            infoVCSelected = YES;
+            break;
     }
+    
     return vc;
 }
 @end

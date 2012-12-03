@@ -209,12 +209,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="5rQ-BI-yzK">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ItemCell" textLabel="oLk-jB-AU4" style="IBUITableViewCellStyleDefault" id="5rQ-BI-yzK">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oLk-jB-AU4">
+                                            <rect key="frame" x="10" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                             </tableViewCell>
@@ -249,20 +258,8 @@
                     <view key="view" contentMode="scaleToFill" id="9Af-JZ-NDo">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="X8v-f4-g5m">
-                                <rect key="frame" x="97" y="184" width="127" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <outlet property="heroLabel" destination="X8v-f4-g5m" id="7Gn-Qo-FD7"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Fe-S5-8VR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -281,11 +278,12 @@
                     <navigationItem key="navigationItem" id="YAA-nc-qh1">
                         <nil key="title"/>
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="Tmr-Bf-JQk">
-                            <rect key="frame" x="96" y="7" width="128" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <rect key="frame" x="57" y="7" width="205.33334350585938" height="30"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                             <segments>
-                                <segment title="First"/>
-                                <segment title="Second"/>
+                                <segment title="Info"/>
+                                <segment title="Abilities"/>
+                                <segment title="Builds"/>
                             </segments>
                             <connections>
                                 <action selector="segmentChanged:" destination="g5B-bk-5l4" eventType="valueChanged" id="0Qn-tC-UHG"/>
@@ -301,6 +299,29 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UoR-w6-cAg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="886" y="46"/>
+        </scene>
+        <!--Builds View Controller-->
+        <scene sceneID="NqT-gI-XV3">
+            <objects>
+                <viewController storyboardIdentifier="BuildsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yX6-77-Mdv" customClass="BuildsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N4f-sI-UDf">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Builds Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Jvf-B1-g98">
+                                <rect key="frame" x="88" y="136" width="144" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PPl-CN-XAe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="855" y="-596"/>
         </scene>
     </scenes>
     <resources>

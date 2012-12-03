@@ -659,6 +659,7 @@
 		EDCA230A16553AB100FEDF75 /* AbilitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCA230816553AB100FEDF75 /* AbilitiesViewController.m */; };
 		EDCA230E16553EDC00FEDF75 /* InformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCA230D16553EDC00FEDF75 /* InformationViewController.m */; };
 		EDCF644B166CB6FD00BBE08A /* items.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCF644A166CB6FD00BBE08A /* items.png */; };
+		EDCF644F166CC0E300BBE08A /* BuildsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCF644E166CC0E300BBE08A /* BuildsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1372,6 +1373,8 @@
 		EDCA230C16553EDC00FEDF75 /* InformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationViewController.h; sourceTree = "<group>"; };
 		EDCA230D16553EDC00FEDF75 /* InformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationViewController.m; sourceTree = "<group>"; };
 		EDCF644A166CB6FD00BBE08A /* items.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = items.png; sourceTree = "<group>"; };
+		EDCF644D166CC0E300BBE08A /* BuildsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildsViewController.h; sourceTree = "<group>"; };
+		EDCF644E166CC0E300BBE08A /* BuildsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuildsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2283,6 +2286,7 @@
 		EDCA2303165537DE00FEDF75 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				EDCF6450166CC0E900BBE08A /* Builds */,
 				B18C9E4E164E8B5A00ADE97A /* MasterViewController.h */,
 				B18C9E4F164E8B5A00ADE97A /* MasterViewController.m */,
 				B18C9E51164E8B5A00ADE97A /* DetailViewController.h */,
@@ -2292,6 +2296,15 @@
 			);
 			name = ViewControllers;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		EDCF6450166CC0E900BBE08A /* Builds */ = {
+			isa = PBXGroup;
+			children = (
+				EDCF644D166CC0E300BBE08A /* BuildsViewController.h */,
+				EDCF644E166CC0E300BBE08A /* BuildsViewController.m */,
+			);
+			name = Builds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2998,6 +3011,7 @@
 				ED08F20A165D119C001C4424 /* Role.m in Sources */,
 				ED08F248165D287F001C4424 /* Hero.m in Sources */,
 				ED08F24B165D288B001C4424 /* Ability.m in Sources */,
+				EDCF644F166CC0E300BBE08A /* BuildsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
