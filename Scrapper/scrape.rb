@@ -283,11 +283,11 @@ heroArray.each do |h|
 			topPosInt = Integer(topPos[0])
 
 			if topPosInt == 83
-				primaryAttrib = "str"
+				primaryAttrib = "Strength"
 			elsif topPosInt == 43
-				primaryAttrib = "agi"
+				primaryAttrib = "Agility"
 			elsif topPosInt == 1
-				primaryAttrib = "int"
+				primaryAttrib = "Intelegance"
 			else
 				puts "ERROR - Couldnt identify Primary ability, postion '#{topPos}' was not recognised"
 			end
