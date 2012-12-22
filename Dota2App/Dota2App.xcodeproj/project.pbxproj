@@ -626,6 +626,7 @@
 		5C3CB3C61658287400E8341C /* Hero+DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3CB3C51658287400E8341C /* Hero+DAO.m */; };
 		5C3CB3C71659039200E8341C /* NSManagedObject+CRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3CB3BF16581F1700E8341C /* NSManagedObject+CRUD.m */; };
 		5CD53E061685B08E0002803D /* hero.json in Resources */ = {isa = PBXBuildFile; fileRef = 5CD53E051685B08E0002803D /* hero.json */; };
+		5CD53E091685B5CE0002803D /* Role+DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD53E081685B5CE0002803D /* Role+DAO.m */; };
 		B18C9E32164E8B5900ADE97A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C9E31164E8B5900ADE97A /* UIKit.framework */; };
 		B18C9E34164E8B5900ADE97A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C9E33164E8B5900ADE97A /* Foundation.framework */; };
 		B18C9E36164E8B5900ADE97A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C9E35164E8B5900ADE97A /* CoreGraphics.framework */; };
@@ -1286,6 +1287,8 @@
 		5C3CB3C41658287400E8341C /* Hero+DAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Hero+DAO.h"; sourceTree = "<group>"; };
 		5C3CB3C51658287400E8341C /* Hero+DAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Hero+DAO.m"; sourceTree = "<group>"; };
 		5CD53E051685B08E0002803D /* hero.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = hero.json; path = ../../Scrapper/hero.json; sourceTree = "<group>"; };
+		5CD53E071685B5CE0002803D /* Role+DAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Role+DAO.h"; sourceTree = "<group>"; };
+		5CD53E081685B5CE0002803D /* Role+DAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Role+DAO.m"; sourceTree = "<group>"; };
 		B18C9E2D164E8B5900ADE97A /* Dota2App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dota2App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B18C9E31164E8B5900ADE97A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B18C9E33164E8B5900ADE97A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -2210,6 +2213,8 @@
 				ED08F247165D287F001C4424 /* Hero.m */,
 				ED08F208165D119C001C4424 /* Role.h */,
 				ED08F209165D119C001C4424 /* Role.m */,
+				5CD53E071685B5CE0002803D /* Role+DAO.h */,
+				5CD53E081685B5CE0002803D /* Role+DAO.m */,
 				5C3CB3C41658287400E8341C /* Hero+DAO.h */,
 				5C3CB3C51658287400E8341C /* Hero+DAO.m */,
 				EDCF6451166CF3CF00BBE08A /* Ability+DAO.h */,
@@ -3020,6 +3025,7 @@
 				EDCF6453166CF3CF00BBE08A /* Ability+DAO.m in Sources */,
 				EDCF6456166CF67D00BBE08A /* Ability.m in Sources */,
 				EDCF6459166D0C5B00BBE08A /* AbilityCell.m in Sources */,
+				5CD53E091685B5CE0002803D /* Role+DAO.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

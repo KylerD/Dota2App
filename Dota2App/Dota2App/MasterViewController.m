@@ -179,7 +179,8 @@
     HeroCell *heroCell = (HeroCell *)cell;
     Hero *hero = [fetchedRC objectAtIndexPath:indexPath];
     //Fetch the hero data
-    NSString *subtitle = [NSString stringWithFormat:@"%@ - %@", hero.faction, hero.primaryAttribute];
+    NSString *subtitle;
+    //subtitle = [NSString stringWithFormat:@"%@ - %@", hero.faction, hero.primaryAttribute];
     NSString *factionImageName = [NSString stringWithFormat:@"%@.png", hero.faction];
     NSString *attributeImageName = [NSString stringWithFormat:@"%@.png", hero.primaryAttribute];
     //Configure the cell

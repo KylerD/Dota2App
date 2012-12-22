@@ -9,6 +9,8 @@
 #import "Hero+DAO.h"
 #import "StackMob.h"
 #import "Ability+DAO.h"
+#import "Role.h"
+#import "Role+DAO.h"
 
 @implementation Hero (DAO)
 
@@ -20,7 +22,7 @@
     Hero* hero = [Hero readOrCreateObjectWithParamterName:@"name" andValue:heroName];
     
     //TODO: Map dict to values..
-    NSString *attributeMultiCase = [self interpretValue:[heroDictionary valueForKey:@"primary attribute"]];
+    NSString *attributeMultiCase = [self interpretValue:[heroDictionary valueForKey:@"primary"]];
 
     NSString *attributeLowerCase = [attributeMultiCase lowercaseString];
     /* create the new string */
@@ -65,6 +67,17 @@
     
     
     hero.name = heroName;
+    
+    //ROLES
+    NSArray * roleStrings =  [heroDictionary valueForKey:@"roles"];
+    
+    
+    for (NSString * roleString in  roleStrings) {
+        Role * r = [Role createOrFindRole:roleString];
+        [hero addRolesObject:r];
+    }
+    
+    
     //More
     
     NSArray *abilities = [heroDictionary valueForKey:@"abilities"];
