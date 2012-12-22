@@ -11,6 +11,7 @@
 #import "DetailViewController.h"
 #import "HeroCell.h"
 #import "Hero.h"
+#import "Role.h"
 
 @interface MasterViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
@@ -141,7 +142,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 90;
+    return 62;
 }
 
 // Customize the appearance of table view cells.
@@ -179,8 +180,19 @@
     HeroCell *heroCell = (HeroCell *)cell;
     Hero *hero = [fetchedRC objectAtIndexPath:indexPath];
     //Fetch the hero data
-    NSString *subtitle;
+    NSMutableString *subtitle = [NSMutableString string];
     //subtitle = [NSString stringWithFormat:@"%@ - %@", hero.faction, hero.primaryAttribute];
+    
+    
+    for (Role * r in hero.roles) {
+        [subtitle appendFormat:@"%@ - ",r.roleName];
+    
+    }
+
+    if(![subtitle isEqualToString:@""]){
+        [subtitle deleteCharactersInRange:NSMakeRange(subtitle.length-3,3)];
+    }
+    
     NSString *factionImageName = [NSString stringWithFormat:@"%@.png", hero.faction];
     NSString *attributeImageName = [NSString stringWithFormat:@"%@.png", hero.primaryAttribute];
     //Configure the cell
@@ -253,7 +265,7 @@
     freshData = NO;
     
     if (![searchText isEqualToString:@""]) {
-        NSPredicate *predicate =[NSPredicate predicateWithFormat:@"(name contains[cd] %@) OR (ANY nicknames.name contains[cd] %@)", searchText,searchText];
+        NSPredicate *predicate =[NSPredicate predicateWithFormat:@"(name contains[cd] %@) OR (ANY nicknames.name contains[cd] %@) OR (ANY roles.roleName contains[cd] %@)", searchText,searchText,searchText];
         [fetchedRC.fetchRequest setPredicate:predicate];
         
     } else {

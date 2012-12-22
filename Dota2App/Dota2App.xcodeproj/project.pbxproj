@@ -650,7 +650,7 @@
 		EDCA22E716550F2200FEDF75 /* hero.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA22E616550F2200FEDF75 /* hero.png */; };
 		EDCA22F3165525FE00FEDF75 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA22F2165525FE00FEDF75 /* Default-568h@2x.png */; };
 		EDCA22F71655286100FEDF75 /* Agility.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA22F41655286100FEDF75 /* Agility.png */; };
-		EDCA22F81655286100FEDF75 /* Intelligence.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA22F51655286100FEDF75 /* Intelligence.png */; };
+		EDCA22F81655286100FEDF75 /* Intelegance.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA22F51655286100FEDF75 /* Intelegance.png */; };
 		EDCA22F91655286100FEDF75 /* Strength.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA22F61655286100FEDF75 /* Strength.png */; };
 		EDCA22FC165528A900FEDF75 /* Dire.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA22FA165528A900FEDF75 /* Dire.png */; };
 		EDCA230216552A2900FEDF75 /* Radiant.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA230116552A2900FEDF75 /* Radiant.png */; };
@@ -1322,7 +1322,7 @@
 		EDCA22E616550F2200FEDF75 /* hero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero.png; sourceTree = "<group>"; };
 		EDCA22F2165525FE00FEDF75 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		EDCA22F41655286100FEDF75 /* Agility.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Agility.png; sourceTree = "<group>"; };
-		EDCA22F51655286100FEDF75 /* Intelligence.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Intelligence.png; sourceTree = "<group>"; };
+		EDCA22F51655286100FEDF75 /* Intelegance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Intelegance.png; sourceTree = "<group>"; };
 		EDCA22F61655286100FEDF75 /* Strength.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Strength.png; sourceTree = "<group>"; };
 		EDCA22FA165528A900FEDF75 /* Dire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dire.png; sourceTree = "<group>"; };
 		EDCA230116552A2900FEDF75 /* Radiant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Radiant.png; sourceTree = "<group>"; };
@@ -2080,7 +2080,7 @@
 				EDCA230116552A2900FEDF75 /* Radiant.png */,
 				EDCA22FA165528A900FEDF75 /* Dire.png */,
 				EDCA22F41655286100FEDF75 /* Agility.png */,
-				EDCA22F51655286100FEDF75 /* Intelligence.png */,
+				EDCA22F51655286100FEDF75 /* Intelegance.png */,
 				EDCA22F61655286100FEDF75 /* Strength.png */,
 				EDCA22E616550F2200FEDF75 /* hero.png */,
 				0C493A8A1665065600A5690B /* armor.png */,
@@ -2273,7 +2273,7 @@
 				EDCA22E716550F2200FEDF75 /* hero.png in Resources */,
 				EDCA22F3165525FE00FEDF75 /* Default-568h@2x.png in Resources */,
 				EDCA22F71655286100FEDF75 /* Agility.png in Resources */,
-				EDCA22F81655286100FEDF75 /* Intelligence.png in Resources */,
+				EDCA22F81655286100FEDF75 /* Intelegance.png in Resources */,
 				EDCA22F91655286100FEDF75 /* Strength.png in Resources */,
 				EDCA22FC165528A900FEDF75 /* Dire.png in Resources */,
 				EDCA230216552A2900FEDF75 /* Radiant.png in Resources */,
