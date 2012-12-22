@@ -86,8 +86,20 @@
     fetchItem = @"Hero";
     AppDelegate *del = [[UIApplication sharedApplication] delegate];
     managedObjectContext = del.managedObjectContext;
+    
+    UITapGestureRecognizer* tapRecon = [[UITapGestureRecognizer alloc]
+                                        initWithTarget:self action:@selector(navigationBarSingleTap:)];
+    tapRecon.numberOfTapsRequired = 1;
+    [self.navigationController.navigationBar addGestureRecognizer:tapRecon];
+
     [self configureView];
 
+}
+
+
+
+- (void)navigationBarSingleTap:(UIGestureRecognizer*)recognizer {
+    [self.tableView setContentOffset:CGPointMake(0,0) animated:YES];
 }
 
 - (void)viewDidUnload
