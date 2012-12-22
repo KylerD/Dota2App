@@ -7,10 +7,11 @@
 //
 
 #import "Hero+DAO.h"
-#import "StackMob.h"
+//#import "StackMob.h"
 #import "Ability+DAO.h"
 #import "Role.h"
 #import "Role+DAO.h"
+#import "Nickname.h"
 
 @implementation Hero (DAO)
 
@@ -67,6 +68,12 @@
     
     
     hero.name = heroName;
+    //TODO: Create preprocessed dictionary of Nicknames and use it to create the nicknames, search mechanisim tested and works..
+//    if([heroName isEqualToString:@"Crystal Maiden"]){
+//        Nickname * test = [Nickname createObject];
+//        test.name = @"cm";
+//        [hero addNicknamesObject:test];
+//    }
     
     //ROLES
     NSArray * roleStrings =  [heroDictionary valueForKey:@"roles"];

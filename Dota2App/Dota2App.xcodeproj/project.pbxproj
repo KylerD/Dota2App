@@ -627,6 +627,8 @@
 		5C3CB3C71659039200E8341C /* NSManagedObject+CRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3CB3BF16581F1700E8341C /* NSManagedObject+CRUD.m */; };
 		5CD53E061685B08E0002803D /* hero.json in Resources */ = {isa = PBXBuildFile; fileRef = 5CD53E051685B08E0002803D /* hero.json */; };
 		5CD53E091685B5CE0002803D /* Role+DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD53E081685B5CE0002803D /* Role+DAO.m */; };
+		5CD53E0C168642440002803D /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD53E0B168642430002803D /* Hero.m */; };
+		5CD53E241686495E0002803D /* Nickname.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD53E231686495E0002803D /* Nickname.m */; };
 		B18C9E32164E8B5900ADE97A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C9E31164E8B5900ADE97A /* UIKit.framework */; };
 		B18C9E34164E8B5900ADE97A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C9E33164E8B5900ADE97A /* Foundation.framework */; };
 		B18C9E36164E8B5900ADE97A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C9E35164E8B5900ADE97A /* CoreGraphics.framework */; };
@@ -644,10 +646,7 @@
 		ED08F20A165D119C001C4424 /* Role.m in Sources */ = {isa = PBXBuildFile; fileRef = ED08F209165D119C001C4424 /* Role.m */; };
 		ED08F20F165D1332001C4424 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED08F20B165D131E001C4424 /* MobileCoreServices.framework */; };
 		ED08F212165D133F001C4424 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED08F20D165D1322001C4424 /* SystemConfiguration.framework */; };
-		ED08F241165D18F3001C4424 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = ED08F214165D18F3001C4424 /* CHANGELOG.md */; };
 		ED08F245165D1930001C4424 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED08F243165D1923001C4424 /* Security.framework */; };
-		ED08F248165D287F001C4424 /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = ED08F247165D287F001C4424 /* Hero.m */; };
-		ED08F24D165D3147001C4424 /* libstackmob-v1.1.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED08F240165D18F3001C4424 /* libstackmob-v1.1.3.a */; };
 		EDCA22E716550F2200FEDF75 /* hero.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA22E616550F2200FEDF75 /* hero.png */; };
 		EDCA22F3165525FE00FEDF75 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA22F2165525FE00FEDF75 /* Default-568h@2x.png */; };
 		EDCA22F71655286100FEDF75 /* Agility.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA22F41655286100FEDF75 /* Agility.png */; };
@@ -1289,6 +1288,10 @@
 		5CD53E051685B08E0002803D /* hero.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = hero.json; path = ../../Scrapper/hero.json; sourceTree = "<group>"; };
 		5CD53E071685B5CE0002803D /* Role+DAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Role+DAO.h"; sourceTree = "<group>"; };
 		5CD53E081685B5CE0002803D /* Role+DAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Role+DAO.m"; sourceTree = "<group>"; };
+		5CD53E0A168642430002803D /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
+		5CD53E0B168642430002803D /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
+		5CD53E221686495E0002803D /* Nickname.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nickname.h; sourceTree = "<group>"; };
+		5CD53E231686495E0002803D /* Nickname.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nickname.m; sourceTree = "<group>"; };
 		B18C9E2D164E8B5900ADE97A /* Dota2App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dota2App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B18C9E31164E8B5900ADE97A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B18C9E33164E8B5900ADE97A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -1315,53 +1318,7 @@
 		ED08F209165D119C001C4424 /* Role.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Role.m; sourceTree = "<group>"; };
 		ED08F20B165D131E001C4424 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		ED08F20D165D1322001C4424 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		ED08F214165D18F3001C4424 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
-		ED08F216165D18F3001C4424 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
-		ED08F217165D18F3001C4424 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
-		ED08F218165D18F3001C4424 /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
-		ED08F219165D18F3001C4424 /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
-		ED08F21A165D18F3001C4424 /* AFJSONUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONUtilities.h; sourceTree = "<group>"; };
-		ED08F21B165D18F3001C4424 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
-		ED08F21C165D18F3001C4424 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
-		ED08F21D165D18F3001C4424 /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
-		ED08F21E165D18F3001C4424 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
-		ED08F21F165D18F3001C4424 /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
-		ED08F220165D18F3001C4424 /* Base64EncodedStringFromData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64EncodedStringFromData.h; sourceTree = "<group>"; };
-		ED08F221165D18F3001C4424 /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
-		ED08F222165D18F3001C4424 /* NSArray+Enumerable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Enumerable.h"; sourceTree = "<group>"; };
-		ED08F223165D18F3001C4424 /* NSDictionary+AtomicCounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+AtomicCounter.h"; sourceTree = "<group>"; };
-		ED08F224165D18F3001C4424 /* NSEntityDescription+StackMobSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSEntityDescription+StackMobSerialization.h"; sourceTree = "<group>"; };
-		ED08F225165D18F3001C4424 /* NSManagedObject+StackMobSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+StackMobSerialization.h"; sourceTree = "<group>"; };
-		ED08F226165D18F3001C4424 /* SMBinaryDataConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMBinaryDataConversion.h; sourceTree = "<group>"; };
-		ED08F227165D18F3001C4424 /* SMClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMClient.h; sourceTree = "<group>"; };
-		ED08F228165D18F3001C4424 /* SMCoreDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCoreDataStore.h; sourceTree = "<group>"; };
-		ED08F229165D18F3001C4424 /* SMCustomCodeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMCustomCodeRequest.h; sourceTree = "<group>"; };
-		ED08F22A165D18F3001C4424 /* SMDataStore+Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SMDataStore+Protected.h"; sourceTree = "<group>"; };
-		ED08F22B165D18F3001C4424 /* SMDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMDataStore.h; sourceTree = "<group>"; };
-		ED08F22C165D18F3001C4424 /* SMError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMError.h; sourceTree = "<group>"; };
-		ED08F22D165D18F3001C4424 /* SMIncrementalStore+Query.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SMIncrementalStore+Query.h"; sourceTree = "<group>"; };
-		ED08F22E165D18F3001C4424 /* SMIncrementalStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMIncrementalStore.h; sourceTree = "<group>"; };
-		ED08F22F165D18F3001C4424 /* SMJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMJSONRequestOperation.h; sourceTree = "<group>"; };
-		ED08F230165D18F3001C4424 /* SMNetworkReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMNetworkReachability.h; sourceTree = "<group>"; };
-		ED08F231165D18F3001C4424 /* SMOAuth1Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMOAuth1Client.h; sourceTree = "<group>"; };
-		ED08F232165D18F3001C4424 /* SMOAuth2Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMOAuth2Client.h; sourceTree = "<group>"; };
-		ED08F233165D18F3001C4424 /* SMPushClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPushClient.h; sourceTree = "<group>"; };
-		ED08F234165D18F3001C4424 /* SMPushToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPushToken.h; sourceTree = "<group>"; };
-		ED08F235165D18F3001C4424 /* SMQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMQuery.h; sourceTree = "<group>"; };
-		ED08F236165D18F3001C4424 /* SMRequestOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMRequestOptions.h; sourceTree = "<group>"; };
-		ED08F237165D18F3001C4424 /* SMResponseBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMResponseBlocks.h; sourceTree = "<group>"; };
-		ED08F238165D18F3001C4424 /* SMUserManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMUserManagedObject.h; sourceTree = "<group>"; };
-		ED08F239165D18F3001C4424 /* SMUserSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMUserSession.h; sourceTree = "<group>"; };
-		ED08F23A165D18F3001C4424 /* SMVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMVersion.h; sourceTree = "<group>"; };
-		ED08F23B165D18F3001C4424 /* StackMob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackMob.h; sourceTree = "<group>"; };
-		ED08F23C165D18F3001C4424 /* StackMobPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackMobPush.h; sourceTree = "<group>"; };
-		ED08F23D165D18F3001C4424 /* Synchronization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Synchronization.h; sourceTree = "<group>"; };
-		ED08F23E165D18F3001C4424 /* SystemInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemInformation.h; sourceTree = "<group>"; };
-		ED08F23F165D18F3001C4424 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
-		ED08F240165D18F3001C4424 /* libstackmob-v1.1.3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libstackmob-v1.1.3.a"; sourceTree = "<group>"; };
 		ED08F243165D1923001C4424 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		ED08F246165D287F001C4424 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
-		ED08F247165D287F001C4424 /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
 		EDCA22E616550F2200FEDF75 /* hero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero.png; sourceTree = "<group>"; };
 		EDCA22F2165525FE00FEDF75 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		EDCA22F41655286100FEDF75 /* Agility.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Agility.png; sourceTree = "<group>"; };
@@ -1389,7 +1346,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED08F24D165D3147001C4424 /* libstackmob-v1.1.3.a in Frameworks */,
 				ED08F245165D1930001C4424 /* Security.framework in Frameworks */,
 				ED08F212165D133F001C4424 /* SystemConfiguration.framework in Frameworks */,
 				ED08F20F165D1332001C4424 /* MobileCoreServices.framework in Frameworks */,
@@ -2146,7 +2102,6 @@
 		B18C9E22164E8B5900ADE97A = {
 			isa = PBXGroup;
 			children = (
-				ED08F213165D18F2001C4424 /* StackMob-v1.1.3 */,
 				B18C9E39164E8B5900ADE97A /* Dota2App */,
 				B18C9E30164E8B5900ADE97A /* Frameworks */,
 				B18C9E2E164E8B5900ADE97A /* Products */,
@@ -2209,8 +2164,10 @@
 				5C3CB3BE16581F1700E8341C /* NSManagedObject+CRUD.h */,
 				5C3CB3BF16581F1700E8341C /* NSManagedObject+CRUD.m */,
 				B18C9E4B164E8B5A00ADE97A /* Dota2App.xcdatamodeld */,
-				ED08F246165D287F001C4424 /* Hero.h */,
-				ED08F247165D287F001C4424 /* Hero.m */,
+				5CD53E221686495E0002803D /* Nickname.h */,
+				5CD53E231686495E0002803D /* Nickname.m */,
+				5CD53E0A168642430002803D /* Hero.h */,
+				5CD53E0B168642430002803D /* Hero.m */,
 				ED08F208165D119C001C4424 /* Role.h */,
 				ED08F209165D119C001C4424 /* Role.m */,
 				5CD53E071685B5CE0002803D /* Role+DAO.h */,
@@ -2234,65 +2191,6 @@
 				EDCF6458166D0C5B00BBE08A /* AbilityCell.m */,
 			);
 			name = "Custom Cells";
-			sourceTree = "<group>";
-		};
-		ED08F213165D18F2001C4424 /* StackMob-v1.1.3 */ = {
-			isa = PBXGroup;
-			children = (
-				ED08F214165D18F3001C4424 /* CHANGELOG.md */,
-				ED08F215165D18F3001C4424 /* Headers */,
-				ED08F240165D18F3001C4424 /* libstackmob-v1.1.3.a */,
-			);
-			path = "StackMob-v1.1.3";
-			sourceTree = "<group>";
-		};
-		ED08F215165D18F3001C4424 /* Headers */ = {
-			isa = PBXGroup;
-			children = (
-				ED08F216165D18F3001C4424 /* AFHTTPClient.h */,
-				ED08F217165D18F3001C4424 /* AFHTTPRequestOperation.h */,
-				ED08F218165D18F3001C4424 /* AFImageRequestOperation.h */,
-				ED08F219165D18F3001C4424 /* AFJSONRequestOperation.h */,
-				ED08F21A165D18F3001C4424 /* AFJSONUtilities.h */,
-				ED08F21B165D18F3001C4424 /* AFNetworkActivityIndicatorManager.h */,
-				ED08F21C165D18F3001C4424 /* AFNetworking.h */,
-				ED08F21D165D18F3001C4424 /* AFPropertyListRequestOperation.h */,
-				ED08F21E165D18F3001C4424 /* AFURLConnectionOperation.h */,
-				ED08F21F165D18F3001C4424 /* AFXMLRequestOperation.h */,
-				ED08F220165D18F3001C4424 /* Base64EncodedStringFromData.h */,
-				ED08F221165D18F3001C4424 /* KeychainWrapper.h */,
-				ED08F222165D18F3001C4424 /* NSArray+Enumerable.h */,
-				ED08F223165D18F3001C4424 /* NSDictionary+AtomicCounter.h */,
-				ED08F224165D18F3001C4424 /* NSEntityDescription+StackMobSerialization.h */,
-				ED08F225165D18F3001C4424 /* NSManagedObject+StackMobSerialization.h */,
-				ED08F226165D18F3001C4424 /* SMBinaryDataConversion.h */,
-				ED08F227165D18F3001C4424 /* SMClient.h */,
-				ED08F228165D18F3001C4424 /* SMCoreDataStore.h */,
-				ED08F229165D18F3001C4424 /* SMCustomCodeRequest.h */,
-				ED08F22A165D18F3001C4424 /* SMDataStore+Protected.h */,
-				ED08F22B165D18F3001C4424 /* SMDataStore.h */,
-				ED08F22C165D18F3001C4424 /* SMError.h */,
-				ED08F22D165D18F3001C4424 /* SMIncrementalStore+Query.h */,
-				ED08F22E165D18F3001C4424 /* SMIncrementalStore.h */,
-				ED08F22F165D18F3001C4424 /* SMJSONRequestOperation.h */,
-				ED08F230165D18F3001C4424 /* SMNetworkReachability.h */,
-				ED08F231165D18F3001C4424 /* SMOAuth1Client.h */,
-				ED08F232165D18F3001C4424 /* SMOAuth2Client.h */,
-				ED08F233165D18F3001C4424 /* SMPushClient.h */,
-				ED08F234165D18F3001C4424 /* SMPushToken.h */,
-				ED08F235165D18F3001C4424 /* SMQuery.h */,
-				ED08F236165D18F3001C4424 /* SMRequestOptions.h */,
-				ED08F237165D18F3001C4424 /* SMResponseBlocks.h */,
-				ED08F238165D18F3001C4424 /* SMUserManagedObject.h */,
-				ED08F239165D18F3001C4424 /* SMUserSession.h */,
-				ED08F23A165D18F3001C4424 /* SMVersion.h */,
-				ED08F23B165D18F3001C4424 /* StackMob.h */,
-				ED08F23C165D18F3001C4424 /* StackMobPush.h */,
-				ED08F23D165D18F3001C4424 /* Synchronization.h */,
-				ED08F23E165D18F3001C4424 /* SystemInformation.h */,
-				ED08F23F165D18F3001C4424 /* UIImageView+AFNetworking.h */,
-			);
-			path = Headers;
 			sourceTree = "<group>";
 		};
 		EDCA2303165537DE00FEDF75 /* ViewControllers */ = {
@@ -2991,7 +2889,6 @@
 				5C3CB3B41657F2A400E8341C /* Witchcraft.png in Resources */,
 				5C3CB3B51657F2A400E8341C /* Wrath_of_Nature.png in Resources */,
 				5C3CB3B61657F2A400E8341C /* X_Marks_the_Spot.png in Resources */,
-				ED08F241165D18F3001C4424 /* CHANGELOG.md in Resources */,
 				0C493A8D1665065600A5690B /* armor.png in Resources */,
 				0C493A8E1665065600A5690B /* movementSpeed.png in Resources */,
 				0C493A8F1665065600A5690B /* damage.png in Resources */,
@@ -3020,12 +2917,13 @@
 				5C3CAEE91657D58200E8341C /* HeroParser.m in Sources */,
 				5C3CB3C61658287400E8341C /* Hero+DAO.m in Sources */,
 				ED08F20A165D119C001C4424 /* Role.m in Sources */,
-				ED08F248165D287F001C4424 /* Hero.m in Sources */,
 				EDCF644F166CC0E300BBE08A /* BuildsViewController.m in Sources */,
 				EDCF6453166CF3CF00BBE08A /* Ability+DAO.m in Sources */,
 				EDCF6456166CF67D00BBE08A /* Ability.m in Sources */,
 				EDCF6459166D0C5B00BBE08A /* AbilityCell.m in Sources */,
 				5CD53E091685B5CE0002803D /* Role+DAO.m in Sources */,
+				5CD53E0C168642440002803D /* Hero.m in Sources */,
+				5CD53E241686495E0002803D /* Nickname.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "StackMob.h"
+//#import "StackMob.h"
 
 @class SMClient;
 

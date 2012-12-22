@@ -2,7 +2,7 @@
 //  Hero.m
 //  Dota2App
 //
-//  Created by Kyle Davidson on 21/11/2012.
+//  Created by Luke McNeice on 22/12/2012.
 //
 //
 
@@ -13,39 +13,40 @@
 
 @implementation Hero
 
-@dynamic agilPoints;
-@dynamic primaryAttribute;
-@dynamic bio;
-@dynamic detailImage;
-@dynamic faction;
-@dynamic iconImage;
-@dynamic intelPoints;
-@dynamic name;
-@dynamic role;
-@dynamic strPoints;
-@dynamic lastModified;
-@dynamic strGain;
 @dynamic agilGain;
-@dynamic intelGain;
-@dynamic lore;
+@dynamic agilPoints;
 @dynamic armour;
-@dynamic missileSpeed;
-@dynamic castPoints;
-@dynamic attackPoints;
-@dynamic ms;
 @dynamic attackBackswing;
+@dynamic attackPoints;
+@dynamic attackRange;
+@dynamic bio;
 @dynamic castBackswing;
-@dynamic dmgMin;
+@dynamic castPoints;
+@dynamic detailImage;
 @dynamic dmgMax;
+@dynamic dmgMin;
+@dynamic faction;
+@dynamic heroId;
+@dynamic hp;
+@dynamic iconImage;
+@dynamic intelGain;
+@dynamic intelPoints;
+@dynamic lastModified;
+@dynamic lore;
+@dynamic mana;
+@dynamic missileSpeed;
+@dynamic ms;
+@dynamic name;
+@dynamic primaryAttribute;
 @dynamic quote;
-@dynamic turnRate;
+@dynamic role;
 @dynamic sightDay;
 @dynamic sightNight;
-@dynamic attackRange;
-@dynamic mana;
-@dynamic hp;
-@dynamic heroId;
+@dynamic strGain;
+@dynamic strPoints;
+@dynamic turnRate;
 @dynamic abilities;
 @dynamic roles;
+@dynamic nicknames;
 
 @end

@@ -17,7 +17,7 @@
 @synthesize managedObjectContext = __managedObjectContext;
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
-@synthesize client = __client;
+//@synthesize client = __client;
 
 
 //STACKMOB SETTINGS
@@ -36,9 +36,9 @@
     }
     
     if(STACKMOB_ENABLE){
-         self.client = [[SMClient alloc] initWithAPIVersion:@"0" publicKey:STACKMOB_KEY];
-         SMCoreDataStore *coreDataStore = [self.client coreDataStoreWithManagedObjectModel:self.managedObjectModel];
-        self.managedObjectContext = [coreDataStore managedObjectContext];
+//         self.client = [[SMClient alloc] initWithAPIVersion:@"0" publicKey:STACKMOB_KEY];
+//         SMCoreDataStore *coreDataStore = [self.client coreDataStoreWithManagedObjectModel:self.managedObjectModel];
+//        self.managedObjectContext = [coreDataStore managedObjectContext];
     } else {
         self.managedObjectContext = [self offlineManagedObjectContext];
         

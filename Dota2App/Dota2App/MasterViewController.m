@@ -253,8 +253,7 @@
     freshData = NO;
     
     if (![searchText isEqualToString:@""]) {
-        
-        NSPredicate *predicate =[NSPredicate predicateWithFormat:@"name contains[cd] %@", searchText];
+        NSPredicate *predicate =[NSPredicate predicateWithFormat:@"(name contains[cd] %@) OR (ANY nicknames.name contains[cd] %@)", searchText,searchText];
         [fetchedRC.fetchRequest setPredicate:predicate];
         
     } else {

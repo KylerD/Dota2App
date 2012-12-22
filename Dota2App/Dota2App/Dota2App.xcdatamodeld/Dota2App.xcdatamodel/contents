@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="11G63" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="12C60" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Ability" representedClassName="Ability" syncable="YES">
         <attribute name="ability" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="abilityId" optional="YES" attributeType="String" syncable="YES"/>
@@ -55,7 +55,12 @@
         <attribute name="strPoints" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="turnRate" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <relationship name="abilities" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Ability" inverseName="hero" inverseEntity="Ability" syncable="YES"/>
+        <relationship name="nicknames" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Nickname" inverseName="heroes" inverseEntity="Nickname" syncable="YES"/>
         <relationship name="roles" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Role" inverseName="heros" inverseEntity="Role" syncable="YES"/>
+    </entity>
+    <entity name="Nickname" representedClassName="Nickname" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="heroes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Hero" inverseName="nicknames" inverseEntity="Hero" syncable="YES"/>
     </entity>
     <entity name="Role" representedClassName="Role" syncable="YES">
         <attribute name="roleImage" optional="YES" attributeType="String" syncable="YES"/>
@@ -65,7 +70,8 @@
     <elements>
         <element name="Ability" positionX="205" positionY="324" width="128" height="240"/>
         <element name="Event" positionX="351" positionY="201" width="128" height="60"/>
-        <element name="Hero" positionX="-27" positionY="204" width="128" height="555"/>
+        <element name="Hero" positionX="-27" positionY="204" width="128" height="570"/>
         <element name="Role" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="Nickname" positionX="160" positionY="192" width="128" height="75"/>
     </elements>
 </model>
