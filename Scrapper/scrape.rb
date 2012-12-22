@@ -272,6 +272,29 @@ heroArray.each do |h|
  	agiHash = formatStockAndGainVal('agi',heroDetailPage.at('//*[@id="overview_AgiVal"]/text()'))
  	h.merge!(agiHash)
 
+
+	primaryAttribStyle = heroDetailPage.at('//*[@id="overviewIcon_Primary"]')['style']
+ 	
+	primaryAttrib = ""
+ 	primaryAttribRegex = /.*:(.*?)px/
+
+		primaryAttribStyle.scan(primaryAttribRegex){ |topPos|
+
+			topPosInt = Integer(topPos[0])
+
+			if topPosInt == 83
+				primaryAttrib = "str"
+			elsif topPosInt == 43
+				primaryAttrib = "agi"
+			elsif topPosInt == 1
+				primaryAttrib = "int"
+			else
+				puts "ERROR - Couldnt identify Primary ability, postion '#{topPos}' was not recognised"
+			end
+		}
+
+		h['primary'] = primaryAttrib;
+
 	#Create Ability array
  	heroAbilities = Array.new
 
