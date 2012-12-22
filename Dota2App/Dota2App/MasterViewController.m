@@ -62,14 +62,12 @@
 
     NSSortDescriptor *sortDescriptor2 = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES selector:@selector(caseInsensitiveCompare:)];
     
-    NSSortDescriptor *sortDescriptor3 = [[NSSortDescriptor alloc] initWithKey:@"faction" ascending:NO selector:@selector(caseInsensitiveCompare:)];
-    
-    NSArray *sortDescriptors = [NSArray arrayWithObjects:sortDescriptor1, sortDescriptor2, sortDescriptor3, nil];
+    NSArray *sortDescriptors = [NSArray arrayWithObjects:sortDescriptor2, sortDescriptor1, nil];
     
     [fetchRequest setSortDescriptors:sortDescriptors];
 
     // nil for section name key path means "1 section".
-    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:managedObjectContext sectionNameKeyPath:@"primaryAttribute" cacheName:nil];
+    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:managedObjectContext sectionNameKeyPath:nil cacheName:nil];
     aFetchedResultsController.delegate = self;
     
     return aFetchedResultsController;
@@ -86,14 +84,10 @@
     fetchItem = @"Hero";
     AppDelegate *del = [[UIApplication sharedApplication] delegate];
     managedObjectContext = del.managedObjectContext;
+
+    self.tableView.scrollsToTop = YES;
     
-    UITapGestureRecognizer* tapRecon = [[UITapGestureRecognizer alloc]
-                                        initWithTarget:self action:@selector(navigationBarSingleTap:)];
-    tapRecon.numberOfTapsRequired = 1;
-    [self.navigationController.navigationBar addGestureRecognizer:tapRecon];
-
     [self configureView];
-
 }
 
 
