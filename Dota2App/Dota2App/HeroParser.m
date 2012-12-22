@@ -22,18 +22,7 @@
     BOOL success = [self createHeroes:heroesJSON];
     
     [Hero saveDatabase];
-/*
-    if (success) {
-        [del.managedObjectContext performBlock:^{
-            NSError *error = nil;
-            if (![del.managedObjectContext save:&error]) {
-                // Code to handle the error appropriately.
-            } else {
-                // Code to handle success.
-            }
-        }];
-    }
-*/
+
     return success;
 }
 
