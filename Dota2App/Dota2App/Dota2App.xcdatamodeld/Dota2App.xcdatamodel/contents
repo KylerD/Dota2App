@@ -58,6 +58,20 @@
         <relationship name="nicknames" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Nickname" inverseName="heroes" inverseEntity="Nickname" syncable="YES"/>
         <relationship name="roles" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Role" inverseName="heros" inverseEntity="Role" syncable="YES"/>
     </entity>
+    <entity name="Item" representedClassName="Item" syncable="YES">
+        <attribute name="attribString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="compString" optional="YES" transient="YES" attributeType="String" syncable="YES"/>
+        <attribute name="coolDown" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="cost" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imgName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemID" attributeType="String" syncable="YES"/>
+        <attribute name="lore" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="manaCost" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="components" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Item" inverseName="components" inverseEntity="Item" syncable="YES"/>
+    </entity>
     <entity name="Nickname" representedClassName="Nickname" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="heroes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Hero" inverseName="nicknames" inverseEntity="Hero" syncable="YES"/>
@@ -71,7 +85,8 @@
         <element name="Ability" positionX="205" positionY="324" width="128" height="240"/>
         <element name="Event" positionX="351" positionY="201" width="128" height="60"/>
         <element name="Hero" positionX="-27" positionY="204" width="128" height="570"/>
-        <element name="Role" positionX="160" positionY="192" width="128" height="90"/>
         <element name="Nickname" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="Role" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="Item" positionX="160" positionY="192" width="128" height="225"/>
     </elements>
 </model>

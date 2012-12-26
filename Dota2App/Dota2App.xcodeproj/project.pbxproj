@@ -626,6 +626,9 @@
 		5C3CB3C61658287400E8341C /* Hero+DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3CB3C51658287400E8341C /* Hero+DAO.m */; };
 		5C3CB3C71659039200E8341C /* NSManagedObject+CRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3CB3BF16581F1700E8341C /* NSManagedObject+CRUD.m */; };
 		5C550F67168B4A7600249B67 /* item.json in Resources */ = {isa = PBXBuildFile; fileRef = 5C550F66168B4A7600249B67 /* item.json */; };
+		5C550F6E168B4B5300249B67 /* Itemparser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C550F6D168B4B5300249B67 /* Itemparser.m */; };
+		5C550F75168B4CF900249B67 /* Item+DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C550F74168B4CF900249B67 /* Item+DAO.m */; };
+		5C550F7E168B57B800249B67 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C550F7D168B57B800249B67 /* Item.m */; };
 		5CD53E061685B08E0002803D /* hero.json in Resources */ = {isa = PBXBuildFile; fileRef = 5CD53E051685B08E0002803D /* hero.json */; };
 		5CD53E091685B5CE0002803D /* Role+DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD53E081685B5CE0002803D /* Role+DAO.m */; };
 		5CD53E0C168642440002803D /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD53E0B168642430002803D /* Hero.m */; };
@@ -1288,6 +1291,12 @@
 		5C3CB3C41658287400E8341C /* Hero+DAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Hero+DAO.h"; sourceTree = "<group>"; };
 		5C3CB3C51658287400E8341C /* Hero+DAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Hero+DAO.m"; sourceTree = "<group>"; };
 		5C550F66168B4A7600249B67 /* item.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = item.json; path = ../../Scrapper/item.json; sourceTree = "<group>"; };
+		5C550F6C168B4B5300249B67 /* Itemparser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Itemparser.h; sourceTree = "<group>"; };
+		5C550F6D168B4B5300249B67 /* Itemparser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Itemparser.m; sourceTree = "<group>"; };
+		5C550F73168B4CF900249B67 /* Item+DAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Item+DAO.h"; sourceTree = "<group>"; };
+		5C550F74168B4CF900249B67 /* Item+DAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Item+DAO.m"; sourceTree = "<group>"; };
+		5C550F7C168B57B800249B67 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		5C550F7D168B57B800249B67 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 		5CD53E051685B08E0002803D /* hero.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = hero.json; path = ../../Scrapper/hero.json; sourceTree = "<group>"; };
 		5CD53E071685B5CE0002803D /* Role+DAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Role+DAO.h"; sourceTree = "<group>"; };
 		5CD53E081685B5CE0002803D /* Role+DAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Role+DAO.m"; sourceTree = "<group>"; };
@@ -1413,6 +1422,8 @@
 			children = (
 				5C3CAEE71657D58200E8341C /* HeroParser.h */,
 				5C3CAEE81657D58200E8341C /* HeroParser.m */,
+				5C550F6C168B4B5300249B67 /* Itemparser.h */,
+				5C550F6D168B4B5300249B67 /* Itemparser.m */,
 			);
 			name = Parsing;
 			sourceTree = "<group>";
@@ -2170,6 +2181,10 @@
 				5C3CB3BE16581F1700E8341C /* NSManagedObject+CRUD.h */,
 				5C3CB3BF16581F1700E8341C /* NSManagedObject+CRUD.m */,
 				B18C9E4B164E8B5A00ADE97A /* Dota2App.xcdatamodeld */,
+				5C550F7C168B57B800249B67 /* Item.h */,
+				5C550F7D168B57B800249B67 /* Item.m */,
+				5C550F73168B4CF900249B67 /* Item+DAO.h */,
+				5C550F74168B4CF900249B67 /* Item+DAO.m */,
 				5CD53E221686495E0002803D /* Nickname.h */,
 				5CD53E231686495E0002803D /* Nickname.m */,
 				5CD53E0A168642430002803D /* Hero.h */,
@@ -2942,6 +2957,9 @@
 				5CD53E0C168642440002803D /* Hero.m in Sources */,
 				5CD53E241686495E0002803D /* Nickname.m in Sources */,
 				B1D8820C168B2FE000470825 /* ItemsTableViewController.m in Sources */,
+				5C550F6E168B4B5300249B67 /* Itemparser.m in Sources */,
+				5C550F75168B4CF900249B67 /* Item+DAO.m in Sources */,
+				5C550F7E168B57B800249B67 /* Item.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

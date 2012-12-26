@@ -10,6 +10,7 @@
 #import "MockObjectGenerator.h"
 #import "MasterViewController.h"
 #import "HeroParser.h"
+#import "Itemparser.h"
 
 @implementation AppDelegate
 
@@ -48,6 +49,7 @@
         if(UseJSON)
         {
             [[[HeroParser alloc] init] parse];
+            [[[Itemparser alloc] init] parse];
         }
         else{
             MockObjectGenerator *generator = [[MockObjectGenerator alloc] init];
@@ -181,7 +183,7 @@
          Check the error message to determine what the actual problem was.
          
          
-         If the persistent store is not accessible, there is typically something wrong with the file path. Often, a file URL is pointing into the application's resources directory instead of a writeable directory.
+         If the persistent store is not- accessible, there is typically something wrong with the file path. Often, a file URL is pointing into the application's resources directory instead of a writeable directory.
          
          If you encounter schema incompatibility errors during development, you can reduce their frequency by:
          * Simply deleting the existing store:
