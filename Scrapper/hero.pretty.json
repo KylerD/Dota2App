@@ -1,1293 +1,1287 @@
 [{
-    "roles": ["Initiator", "Disabler", "Support", "Lane Support"],
-    "name": "Earthshaker",
-    "url": "http://www.dota2.com/hero/Earthshaker/",
-    "missileSpeed": "N/A",
-    "int": "16",
     "primary": "Strength",
+    "agiGain": "1.40",
     "str": "22",
-    "sight": "1800 / 800",
-    "agi": "12",
+    "range": "128",
+    "attack": "24 - 34",
     "strGain": "2.50",
+    "portraitUrl": "http://media.steampowered.com/apps/dota2/images/heroes/earthshaker_full.png",
     "intGain": "1.80",
-    "ms": "300",
-    "attackMode": "Melee",
+    "sight": "1800 / 800",
     "abilities": [{
-        "cooldown": ["15"],
-        "name": "Fissure",
-        "videoUrl": "http://www.youtube.com/embed/BAUGZhuCfpQ?hd=1&rel=0",
-        "lore": "The Nishian totem splits the world to its core with tectonic force.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/earthshaker_fissure_hp2.png",
         "description": "Slams the ground with a mighty totem, fissuring the earth while stunning and damaging enemy units in a line.  Creates an impassable ridge of stone.",
-        "mana": ["125", "140", "155", "170"],
         "dynamic": {
-            "Fissure duration": "8",
-            "Damage": ["125", "175", "225", "275"],
-            "Affects": "Enemy Units",
             "Ability": "Unit Target, Point Target",
-            "Stun duration": ["1", "1.25", "1.5", "1.75"]
-        }
+            "Damage": ["125", "175", "225", "275"],
+            "Fissure duration": "8",
+            "Stun duration": ["1", "1.25", "1.5", "1.75"],
+            "Affects": "Enemy Units"
+        },
+        "name": "Fissure",
+        "lore": "The Nishian totem splits the world to its core with tectonic force.",
+        "cooldown": ["15"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/earthshaker_fissure_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/BAUGZhuCfpQ?hd=1&rel=0",
+        "mana": ["125", "140", "155", "170"]
     }, {
-        "cooldown": ["5"],
-        "name": "Enchant Totem",
-        "videoUrl": "http://www.youtube.com/embed/-Z7eObHuxKY?hd=1&rel=0",
-        "lore": "Raigor's gorilla strength can destroy mountains.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/earthshaker_enchant_totem_hp2.png",
         "description": "Empowers Earthshaker's totem, causing it to deal extra damage on the next attack.",
-        "mana": ["50", "50", "50", "50"],
         "dynamic": {
             "Bonus": ["75%", "150%", "225%", "300%"],
-            "Damage": ["0", "0", "0", "0"],
             "Ability": "No Target",
-            "Duration": ["14", "14", "14", "14"]
-        }
+            "Duration": ["14", "14", "14", "14"],
+            "Damage": ["0", "0", "0", "0"]
+        },
+        "name": "Enchant Totem",
+        "lore": "Raigor's gorilla strength can destroy mountains.",
+        "cooldown": ["5"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/earthshaker_enchant_totem_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/-Z7eObHuxKY?hd=1&rel=0",
+        "mana": ["50", "50", "50", "50"]
     }, {
-        "name": "Aftershock",
-        "videoUrl": "http://www.youtube.com/embed/qbUDVeyp55E?hd=1&rel=0",
-        "lore": "The earth trembles beneath the mighty footsteps of Raigor.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/earthshaker_aftershock_hp2.png",
         "description": "Causes the earth to shake underfoot, adding additional damage and stuns to nearby enemy units when Earthshaker casts his abilities.",
         "dynamic": {
             "Radius": "300",
-            "Damage": ["50", "75", "100", "125"],
             "Ability": "Passive",
-            "Duration": ["0.6", "0.9", "1.2", "1.5"]
-        }
+            "Duration": ["0.6", "0.9", "1.2", "1.5"],
+            "Damage": ["50", "75", "100", "125"]
+        },
+        "name": "Aftershock",
+        "lore": "The earth trembles beneath the mighty footsteps of Raigor.",
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/earthshaker_aftershock_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/qbUDVeyp55E?hd=1&rel=0"
     }, {
-        "cooldown": ["150", "130", "110"],
-        "name": "Echo Slam",
-        "videoUrl": "http://www.youtube.com/embed/HHH935Nfdik?hd=1&rel=0",
-        "lore": "Tectonic plates crack, mountains fold, and foes are crushed by the Echo Slam.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/earthshaker_echo_slam_hp2.png",
         "description": "Shockwaves travel through the ground, damaging enemy units.  Each enemy hit causes an echo to damage nearby units.\n\nUpgradable by Aghanim's Scepter.",
-        "mana": ["145", "205", "265"],
         "dynamic": {
-            "Echo damage": ["40", "55", "70"],
             "Radius": "500",
+            "Ability": "No Target",
             "Damage": ["200", "265", "340"],
-            "Ability": "No Target"
-        }
+            "Echo damage": ["40", "55", "70"]
+        },
+        "name": "Echo Slam",
+        "lore": "Tectonic plates crack, mountains fold, and foes are crushed by the Echo Slam.",
+        "cooldown": ["150", "130", "110"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/earthshaker_echo_slam_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/HHH935Nfdik?hd=1&rel=0",
+        "mana": ["145", "205", "265"]
     }],
-    "agiGain": "1.40",
     "hp": "568",
-    "amour": "2.68",
-    "attack": "24 - 34",
-    "range": "128",
-    "portraitUrl": "http://media.steampowered.com/apps/dota2/images/heroes/earthshaker_full.png",
-    "bio": "Like a golem or gargoyle, Earthshaker was one with the earth but now walks freely upon it. Unlike those other entities, he created himself through an act of will, and serves no other master. In restless slumbers, encased in a deep seam of stone, he became aware of the life drifting freely above him. He grew curious. During a season of tremors, the peaks of Nishai shook themselves loose of avalanches, shifting the course of rivers and turning shallow valleys into bottomless chasms. When the land finally ceased quaking, Earthshaker stepped from the settling dust, tossing aside massive boulders as if throwing off a light blanket. He had shaped himself in the image of a mortal beast, and named himself Raigor Stonehoof. He bleeds now, and breathes, and therefore he can die. But his spirit is still that of the earth; he carries its power in the magical totem that never leaves him. And on the day he returns to dust, the earth will greet him as a prodigal son."
-}, {
-    "roles": ["Disabler", "Initiator", "Carry", "Support"],
-    "name": "Sven",
-    "url": "http://www.dota2.com/hero/Sven/",
-    "missileSpeed": "N/A",
-    "int": "14",
-    "primary": "Strength",
-    "str": "23",
-    "sight": "1800 / 800",
-    "agi": "21",
-    "strGain": "2.70",
-    "intGain": "1.30",
-    "ms": "295",
     "attackMode": "Melee",
+    "name": "Earthshaker",
+    "ms": "300",
+    "bio": "Like a golem or gargoyle, Earthshaker was one with the earth but now walks freely upon it. Unlike those other entities, he created himself through an act of will, and serves no other master. In restless slumbers, encased in a deep seam of stone, he became aware of the life drifting freely above him. He grew curious. During a season of tremors, the peaks of Nishai shook themselves loose of avalanches, shifting the course of rivers and turning shallow valleys into bottomless chasms. When the land finally ceased quaking, Earthshaker stepped from the settling dust, tossing aside massive boulders as if throwing off a light blanket. He had shaped himself in the image of a mortal beast, and named himself Raigor Stonehoof. He bleeds now, and breathes, and therefore he can die. But his spirit is still that of the earth; he carries its power in the magical totem that never leaves him. And on the day he returns to dust, the earth will greet him as a prodigal son.",
+    "agi": "12",
+    "amour": "2.68",
+    "roles": ["Initiator", "Disabler", "Support", "Lane Support"],
+    "url": "http://www.dota2.com/hero/Earthshaker/",
+    "int": "16",
+    "missileSpeed": "N/A"
+}, {
+    "primary": "Strength",
+    "agiGain": "2.00",
+    "str": "23",
+    "range": "128",
+    "attack": "31 - 33",
+    "strGain": "2.70",
+    "portraitUrl": "http://media.steampowered.com/apps/dota2/images/heroes/sven_full.png",
+    "intGain": "1.30",
+    "sight": "1800 / 800",
     "abilities": [{
-        "cooldown": ["15"],
-        "name": "Storm Hammer",
-        "videoUrl": "http://www.youtube.com/embed/-BNx6j67GMM?hd=1&rel=0",
-        "lore": "The Rogue Knight's iron gauntlet, taken from the school of his father, strikes his foes to their core.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/sven_storm_bolt_hp2.png",
         "description": "Sven unleashes his magical gauntlet that deals damage and stuns enemy units.",
-        "mana": ["140", "140", "140", "140"],
         "dynamic": {
-            "Damage": ["100", "175", "250", "325"],
-            "Affects": "Enemy Units",
-            "Ability": "Unit Target",
             "Radius": ["255", "255", "255", "255"],
-            "Duration": "2"
-        }
+            "Ability": "Unit Target",
+            "Duration": "2",
+            "Damage": ["100", "175", "250", "325"],
+            "Affects": "Enemy Units"
+        },
+        "name": "Storm Hammer",
+        "lore": "The Rogue Knight's iron gauntlet, taken from the school of his father, strikes his foes to their core.",
+        "cooldown": ["15"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/sven_storm_bolt_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/-BNx6j67GMM?hd=1&rel=0",
+        "mana": ["140", "140", "140", "140"]
     }, {
-        "name": "Great Cleave",
-        "videoUrl": "http://www.youtube.com/embed/XRI-eUBr_S8?hd=1&rel=0",
-        "lore": "The Vigil Knights still seek to reclaim the stolen Outcast Blade from Sven, a weapon capable of cutting wide swaths through lesser warriors.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/sven_great_cleave_hp2.png",
         "description": "Sven strikes with great force, cleaving all nearby enemy units with his attack.\n\nCleave damage on non-primary targets is not reduced by armor values.",
         "dynamic": {
-            "Cleave damage": ["20%", "35%", "50%", "65%"],
             "Radius": "300.000000",
-            "Ability": "Passive"
-        }
+            "Ability": "Passive",
+            "Cleave damage": ["20%", "35%", "50%", "65%"]
+        },
+        "name": "Great Cleave",
+        "lore": "The Vigil Knights still seek to reclaim the stolen Outcast Blade from Sven, a weapon capable of cutting wide swaths through lesser warriors.",
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/sven_great_cleave_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/XRI-eUBr_S8?hd=1&rel=0"
     }, {
-        "cooldown": ["36", "30", "24", "18"],
-        "name": "Warcry",
-        "videoUrl": "http://www.youtube.com/embed/npLme9BdTy8?hd=1&rel=0",
-        "lore": "Calling a few lines from the Vigil Codex fortifies Sven's obedience to his rogue code. So poetic!",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/sven_warcry_hp2.png",
         "description": "Sven's Warcry heartens his allies for battle, increasing their movement speed and armor.  Lasts 8 seconds.",
-        "mana": ["25", "25", "25", "25"],
         "dynamic": {
-            "Bonus armor": ["4", "8", "12", "16"],
             "Radius": "900",
+            "Ability": "No Target",
             "Bonus speed": "12%",
-            "Ability": "No Target"
-        }
+            "Bonus armor": ["4", "8", "12", "16"]
+        },
+        "name": "Warcry",
+        "lore": "Calling a few lines from the Vigil Codex fortifies Sven's obedience to his rogue code. So poetic!",
+        "cooldown": ["36", "30", "24", "18"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/sven_warcry_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/npLme9BdTy8?hd=1&rel=0",
+        "mana": ["25", "25", "25", "25"]
     }, {
-        "cooldown": ["80"],
-        "name": "God's Strength",
-        "videoUrl": "http://www.youtube.com/embed/EbnTUOTMvkg?hd=1&rel=0",
-        "lore": "With the strength that shattered the Sacred Helm, the Rogue Knight stands unopposed in melee combat.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/sven_gods_strength_hp2.png",
         "description": "Sven channels his rogue strength, granting bonus damage for 25 seconds.",
-        "mana": ["100", "150", "200"],
         "dynamic": {
-            "Bonus damage": ["100%", "150%", "200%"],
-            "Ability": "No Target"
-        }
+            "Ability": "No Target",
+            "Bonus damage": ["100%", "150%", "200%"]
+        },
+        "name": "God's Strength",
+        "lore": "With the strength that shattered the Sacred Helm, the Rogue Knight stands unopposed in melee combat.",
+        "cooldown": ["80"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/sven_gods_strength_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/EbnTUOTMvkg?hd=1&rel=0",
+        "mana": ["100", "150", "200"]
     }],
-    "agiGain": "2.00",
     "hp": "587",
-    "amour": "1.94",
-    "attack": "31 - 33",
-    "range": "128",
-    "portraitUrl": "http://media.steampowered.com/apps/dota2/images/heroes/sven_full.png",
-    "bio": "Sven is the bastard son of a Vigil Knight, born of a Pallid Meranth, raised in the Shadeshore Ruins.  With his father executed for violating the Vigil Codex, and his mother shunned by her wild race, Sven believes that honor is to be found in no social order--but only in himself.  After tending his mother through a lingering death, he offered himself as a novice to the Vigil Knights, never revealing his identity.  For thirteen years he studied in his father's school, mastering the rigid code that declared his existence an abomination.  Then, on the day that should have been his In-Swearing, he seized the Outcast Blade, shattered the Sacred Helm, and burned the Codex in the Vigil's Holy Flame.  He strode from Vigil Keep, forever solitary, following his private code to the last strict rune. Still a knight, yes...but a Rogue Knight."
-}, {
-    "roles": ["Disabler", "Nuker", "Initiator", "Durable"],
-    "name": "Tiny",
-    "url": "http://www.dota2.com/hero/Tiny/",
-    "missileSpeed": "N/A",
-    "int": "14",
-    "primary": "Strength",
-    "str": "24",
-    "sight": "1800 / 800",
-    "agi": "9",
-    "strGain": "3.00",
-    "intGain": "1.60",
-    "ms": "285",
     "attackMode": "Melee",
+    "name": "Sven",
+    "ms": "295",
+    "bio": "Sven is the bastard son of a Vigil Knight, born of a Pallid Meranth, raised in the Shadeshore Ruins.  With his father executed for violating the Vigil Codex, and his mother shunned by her wild race, Sven believes that honor is to be found in no social order--but only in himself.  After tending his mother through a lingering death, he offered himself as a novice to the Vigil Knights, never revealing his identity.  For thirteen years he studied in his father's school, mastering the rigid code that declared his existence an abomination.  Then, on the day that should have been his In-Swearing, he seized the Outcast Blade, shattered the Sacred Helm, and burned the Codex in the Vigil's Holy Flame.  He strode from Vigil Keep, forever solitary, following his private code to the last strict rune. Still a knight, yes...but a Rogue Knight.",
+    "agi": "21",
+    "amour": "1.94",
+    "roles": ["Disabler", "Initiator", "Carry", "Support"],
+    "url": "http://www.dota2.com/hero/Sven/",
+    "int": "14",
+    "missileSpeed": "N/A"
+}, {
+    "primary": "Strength",
+    "agiGain": "0.90",
+    "str": "24",
+    "range": "128",
+    "attack": "37 - 43",
+    "strGain": "3.00",
+    "portraitUrl": "http://media.steampowered.com/apps/dota2/images/heroes/tiny_full.png",
+    "intGain": "1.60",
+    "sight": "1800 / 800",
     "abilities": [{
-        "cooldown": ["17"],
-        "name": "Avalanche",
-        "videoUrl": "http://www.youtube.com/embed/t4JvtlBfJug?hd=1&rel=0",
-        "lore": "Inanimate rock becomes animate when called by the Stone Giant.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/tiny_avalanche_hp2.png",
         "description": "Bombards an area with rocks, stunning and damaging enemy land units.",
-        "mana": ["120", "120", "120", "120"],
         "dynamic": {
             "Radius": ["275", "275", "275", "275"],
-            "Damage": ["100", "180", "260", "300"],
             "Ability": "Point Target",
+            "Damage": ["100", "180", "260", "300"],
             "Stun duration": "1"
-        }
+        },
+        "name": "Avalanche",
+        "lore": "Inanimate rock becomes animate when called by the Stone Giant.",
+        "cooldown": ["17"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/tiny_avalanche_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/t4JvtlBfJug?hd=1&rel=0",
+        "mana": ["120", "120", "120", "120"]
     }, {
-        "cooldown": ["10"],
-        "name": "Toss",
-        "videoUrl": "http://www.youtube.com/embed/4oDiWbybHgM?hd=1&rel=0",
-        "lore": "Tiny's gargantuan stature allows him to catapult even the sturdiest of warriors.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/tiny_toss_hp2.png",
         "description": "Grabs a random unit in a 275 radius around Tiny, friend or enemy, and launches it at the target unit to deal damage where they land.  If the tossed unit is an enemy, it will take an extra 20% damage. Toss does more damage as Tiny's size increases.",
-        "mana": ["120", "120", "120", "120"],
         "dynamic": {
-            "Range": "1300",
+            "Radius": ["275", "275", "275", "275"],
             "Ability": "Unit Target",
             "Damage": "Magical",
-            "Radius": ["275", "275", "275", "275"]
-        }
+            "Range": "1300"
+        },
+        "name": "Toss",
+        "lore": "Tiny's gargantuan stature allows him to catapult even the sturdiest of warriors.",
+        "cooldown": ["10"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/tiny_toss_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/4oDiWbybHgM?hd=1&rel=0",
+        "mana": ["120", "120", "120", "120"]
     }, {
-        "name": "Craggy Exterior",
-        "videoUrl": "http://www.youtube.com/embed/P0uPxATF8XE?hd=1&rel=0",
-        "lore": "Melee warriors tend to find attacking the Stone Giant largely ineffective.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/tiny_craggy_exterior_hp2.png",
         "description": "Causes damage to bounce back on Tiny's attackers.  Enemies that attack Tiny from within 300 units have a chance of being stunned for 1.2 seconds.",
         "dynamic": {
+            "Ability": "Passive",
+            "Damage": ["25", "35", "45", "55"],
             "Range": ["300", "300", "300", "300"],
             "Bonus armor": ["2", "3", "4", "5"],
-            "Chance to stun": ["6%", "12%", "18%", "24%"],
-            "Damage": ["25", "35", "45", "55"],
-            "Ability": "Passive"
-        }
+            "Chance to stun": ["6%", "12%", "18%", "24%"]
+        },
+        "name": "Craggy Exterior",
+        "lore": "Melee warriors tend to find attacking the Stone Giant largely ineffective.",
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/tiny_craggy_exterior_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/P0uPxATF8XE?hd=1&rel=0"
     }, {
-        "name": "Grow",
-        "videoUrl": "http://www.youtube.com/embed/4GB3qojLOHo?hd=1&rel=0",
-        "lore": "Watching a hill become a mountain is awe-inspiring - especially if the mountain begins laying waste to adversaries.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/tiny_grow_hp2.png",
         "description": "Tiny gains craggy mass that increases his power at the cost of his attack speed. Increases Tossed unit damage and improves movement speed.\n\nUpgradable by Aghanim's Scepter.",
         "dynamic": {
+            "Scepter cleave damage": "50%",
             "Toss bonus": ["35%", "50%", "65%"],
+            "Attack speed loss": ["20", "35", "50"],
+            "Ability": "Passive",
+            "Movement speed": ["20", "40", "60"],
+            "Scepter bonus building damage": "75%",
             "Bonus damage": ["50", "100", "150"],
             "Scepter toss bonus": ["50%", "65%", "80%"],
-            "Ability": "Passive",
-            "Scepter bonus building damage": "75%",
-            "Movement speed": ["20", "40", "60"],
-            "Scepter bonus range": "107",
-            "Attack speed loss": ["20", "35", "50"],
-            "Scepter cleave damage": "50%"
-        }
+            "Scepter bonus range": "107"
+        },
+        "name": "Grow",
+        "lore": "Watching a hill become a mountain is awe-inspiring - especially if the mountain begins laying waste to adversaries.",
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/tiny_grow_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/4GB3qojLOHo?hd=1&rel=0"
     }],
-    "agiGain": "0.90",
     "hp": "606",
-    "amour": "0.26",
-    "attack": "37 - 43",
-    "range": "128",
-    "portraitUrl": "http://media.steampowered.com/apps/dota2/images/heroes/tiny_full.png",
-    "bio": "Coming to life as a chunk of stone, Tiny's origins are a mystery on which he continually speculates.  He is a Stone Giant now, but what did he used to be?  A splinter broken from a Golem's heel?  A shard swept from a gargoyle-sculptor's workshop?  A fragment of the Oracular Visage of Garthos?  A deep curiosity drives him, and he travels the world tirelessly seeking his origins, his parentage, his people.  As he roams, he gathers weight and size; the forces that weather lesser rocks, instead cause Tiny to grow and ever grow."
-}, {
-    "roles": ["Disabler", "Initiator", "Carry", "Durable"],
-    "name": "Kunkka",
-    "url": "http://www.dota2.com/hero/Kunkka/",
-    "missileSpeed": "N/A",
-    "int": "18",
-    "primary": "Strength",
-    "str": "24",
-    "sight": "1800 / 800",
-    "agi": "14",
-    "strGain": "3.00",
-    "intGain": "1.50",
-    "ms": "300",
     "attackMode": "Melee",
+    "name": "Tiny",
+    "ms": "285",
+    "bio": "Coming to life as a chunk of stone, Tiny's origins are a mystery on which he continually speculates.  He is a Stone Giant now, but what did he used to be?  A splinter broken from a Golem's heel?  A shard swept from a gargoyle-sculptor's workshop?  A fragment of the Oracular Visage of Garthos?  A deep curiosity drives him, and he travels the world tirelessly seeking his origins, his parentage, his people.  As he roams, he gathers weight and size; the forces that weather lesser rocks, instead cause Tiny to grow and ever grow.",
+    "agi": "9",
+    "amour": "0.26",
+    "roles": ["Disabler", "Nuker", "Initiator", "Durable"],
+    "url": "http://www.dota2.com/hero/Tiny/",
+    "int": "14",
+    "missileSpeed": "N/A"
+}, {
+    "primary": "Strength",
+    "agiGain": "1.30",
+    "str": "24",
+    "range": "128",
+    "attack": "26 - 36",
+    "strGain": "3.00",
+    "portraitUrl": "http://media.steampowered.com/apps/dota2/images/heroes/kunkka_full.png",
+    "intGain": "1.50",
+    "sight": "1800 / 800",
     "abilities": [{
-        "cooldown": ["12"],
-        "name": "Torrent",
-        "videoUrl": "http://www.youtube.com/embed/2NeN4ToMrfY?hd=1&rel=0",
-        "lore": "An ancestral rush of water explodes from the center of the world, called upon by the Admiral.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/kunkka_torrent_hp2.png",
         "description": "Summons a rising torrent that, after a short delay, hurls enemy units into the sky, stunning, dealing damage and slowing movement speed.",
-        "mana": ["120", "120", "120", "120"],
         "dynamic": {
-            "Slow duration": ["1", "2", "3", "4"],
-            "Slow": "35%",
             "Radius": ["215", "215", "215", "215"],
-            "Damage": ["120", "180", "240", "300"],
             "Ability": "Point Target",
+            "Slow": "35%",
+            "Damage": ["120", "180", "240", "300"],
             "Delay": ["1.6", "1.6", "1.6", "1.6"],
-            "Stun duration": ["1.53", "1.53", "1.53", "1.53"]
-        }
+            "Stun duration": ["1.53", "1.53", "1.53", "1.53"],
+            "Slow duration": ["1", "2", "3", "4"]
+        },
+        "name": "Torrent",
+        "lore": "An ancestral rush of water explodes from the center of the world, called upon by the Admiral.",
+        "cooldown": ["12"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/kunkka_torrent_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/2NeN4ToMrfY?hd=1&rel=0",
+        "mana": ["120", "120", "120", "120"]
     }, {
+        "description": "Kunkka's legendary sword grants increased damage and cleaves a large area of effect in front of him for a single strike.\n\nCleave damage on non-primary targets is not reduced by armor values.",
+        "dynamic": {
+            "Radius": ["500", "500", "500", "600"],
+            "Ability": "Passive",
+            "Damage": "Physical",
+            "Damage bonus": ["15", "30", "45", "60"]
+        },
         "name": "Tidebringer",
-        "videoUrl": "http://www.youtube.com/embed/GrJOoGLZyWg?hd=1&rel=0",
         "lore": "A lost Claddish soul inhabits Kunkka's trusty Tidebringer, empowering it to destroy demons of the Cataract.",
         "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/kunkka_tidebringer_hp2.png",
-        "description": "Kunkka's legendary sword grants increased damage and cleaves a large area of effect in front of him for a single strike.\n\nCleave damage on non-primary targets is not reduced by armor values.",
-        "mana": ["13", "10", "7", "4"],
-        "dynamic": {
-            "Damage bonus": ["15", "30", "45", "60"],
-            "Damage": "Physical",
-            "Ability": "Passive",
-            "Radius": ["500", "500", "500", "600"]
-        }
+        "videoUrl": "http://www.youtube.com/embed/GrJOoGLZyWg?hd=1&rel=0",
+        "mana": ["13", "10", "7", "4"]
     }, {
-        "cooldown": ["16"],
-        "name": "X Marks the Spot",
-        "videoUrl": "http://www.youtube.com/embed/uF1OsHjC-tY?hd=1&rel=0",
-        "lore": "The Admiral's set of arcane abilities includes some that can be used for battle as well as entertainment.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/kunkka_x_marks_the_spot_hp2.png",
         "description": "Targets a friendly or enemy Hero, marks their position with an X, and returns them to it after several seconds.  Kunkka can trigger the return at any time during the duration.",
-        "mana": ["80", "90", "100", "110"],
         "dynamic": {
-            "Range": ["500", "650", "800", "950"],
-            "Affects": "Heroes",
             "Ability": "Unit Target",
-            "Delay": ["1", "2", "3", "4"]
-        }
+            "Range": ["500", "650", "800", "950"],
+            "Delay": ["1", "2", "3", "4"],
+            "Affects": "Heroes"
+        },
+        "name": "X Marks the Spot",
+        "lore": "The Admiral's set of arcane abilities includes some that can be used for battle as well as entertainment.",
+        "cooldown": ["16"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/kunkka_x_marks_the_spot_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/uF1OsHjC-tY?hd=1&rel=0",
+        "mana": ["80", "90", "100", "110"]
     }, {
-        "cooldown": ["60", "50", "40"],
-        "name": "Ghostship",
-        "videoUrl": "http://www.youtube.com/embed/lfnAIKZ6suE?hd=1&rel=0",
-        "lore": "The final ship of the Claddish Navy is nothing but a phantom, but it is all too real to the enemies of the Admiral.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/kunkka_ghostship_hp2.png",
         "description": "Summons a ghostship to cut a swath through battle, causing damage and stuns to enemy units as it crashes through. Allies are doused in Kunkka's Rum, receiving bonus movement speed and a delayed reaction to damage.",
-        "mana": ["150", "200", "250"],
         "dynamic": {
             "Buff duration": "8",
-            "Damage": ["300", "400", "500"],
             "Ability": "Point Target",
+            "Damage": ["300", "400", "500"],
             "Bonus speed": ["10%", "10%", "10%"],
             "Stun duration": ["1.4", "1.4", "1.4"]
-        }
+        },
+        "name": "Ghostship",
+        "lore": "The final ship of the Claddish Navy is nothing but a phantom, but it is all too real to the enemies of the Admiral.",
+        "cooldown": ["60", "50", "40"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/kunkka_ghostship_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/lfnAIKZ6suE?hd=1&rel=0",
+        "mana": ["150", "200", "250"]
     }, {
-        "cooldown": ["5"],
+        "description": "Returns the marked hero to the X.",
+        "dynamic": {
+            "Ability": "No Target"
+        },
         "name": "Return",
         "lore": null,
+        "cooldown": ["5"],
         "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/kunkka_return_hp2.png",
-        "description": "Returns the marked hero to the X.",
-        "mana": ["50", "50", "50", "50"],
-        "dynamic": {
-            "Ability": "No Target"
-        }
+        "mana": ["50", "50", "50", "50"]
     }],
-    "agiGain": "1.30",
     "hp": "606",
-    "amour": "1.96",
-    "attack": "26 - 36",
-    "range": "128",
-    "portraitUrl": "http://media.steampowered.com/apps/dota2/images/heroes/kunkka_full.png",
-    "bio": "As The Admiral of the mighty Claddish Navy, Kunkka was charged with protecting the isles of his homeland when the demons of the Cataract made a concerted grab at the lands of men. After years of small sorties, and increasingly bold and devastating attacks, the demon fleet flung all its carnivorous ships at the Trembling Isle. Desperate, the Suicide-Mages of Cladd committed their ultimate rite, summoning a host of ancestral spirits to protect the fleet. Against the demons, this was just barely enough to turn the tide. As Kunkka watched the demons take his ships down one by one, he had the satisfaction of wearing away their fleet with his ancestral magic. But at the battle's peak, something in the clash of demons, men and atavistic spirits must have stirred a fourth power that had been slumbering in the depths. The waves rose up in towering spouts around the few remaining ships, and Maelrawn the Tentacular appeared amid the fray. His tendrils wove among the ships, drawing demon and human craft together, churning the water and wind into a raging chaos. What happened in the crucible of that storm, none may truly say. The Cataract roars off into the void, deserted by its former denizens. Kunkka is now The Admiral of but one ship, a ghostly rig which endlessly replays the final seconds of its destruction. Whether he died in that crash is anyone's guess. Not even Tidehunter, who summoned Maelrawn, knows for sure."
-}, {
-    "roles": ["Initiator", "Disabler", "Durable"],
-    "name": "Beastmaster",
-    "url": "http://www.dota2.com/hero/Beastmaster/",
-    "missileSpeed": "N/A",
-    "int": "16",
-    "primary": "Strength",
-    "str": "23",
-    "sight": "1800 / 800",
-    "agi": "18",
-    "strGain": "2.20",
-    "intGain": "1.90",
-    "ms": "310",
     "attackMode": "Melee",
+    "name": "Kunkka",
+    "ms": "300",
+    "bio": "As The Admiral of the mighty Claddish Navy, Kunkka was charged with protecting the isles of his homeland when the demons of the Cataract made a concerted grab at the lands of men. After years of small sorties, and increasingly bold and devastating attacks, the demon fleet flung all its carnivorous ships at the Trembling Isle. Desperate, the Suicide-Mages of Cladd committed their ultimate rite, summoning a host of ancestral spirits to protect the fleet. Against the demons, this was just barely enough to turn the tide. As Kunkka watched the demons take his ships down one by one, he had the satisfaction of wearing away their fleet with his ancestral magic. But at the battle's peak, something in the clash of demons, men and atavistic spirits must have stirred a fourth power that had been slumbering in the depths. The waves rose up in towering spouts around the few remaining ships, and Maelrawn the Tentacular appeared amid the fray. His tendrils wove among the ships, drawing demon and human craft together, churning the water and wind into a raging chaos. What happened in the crucible of that storm, none may truly say. The Cataract roars off into the void, deserted by its former denizens. Kunkka is now The Admiral of but one ship, a ghostly rig which endlessly replays the final seconds of its destruction. Whether he died in that crash is anyone's guess. Not even Tidehunter, who summoned Maelrawn, knows for sure.",
+    "agi": "14",
+    "amour": "1.96",
+    "roles": ["Disabler", "Initiator", "Carry", "Durable"],
+    "url": "http://www.dota2.com/hero/Kunkka/",
+    "int": "18",
+    "missileSpeed": "N/A"
+}, {
+    "primary": "Strength",
+    "agiGain": "1.60",
+    "str": "23",
+    "range": "128",
+    "attack": "33 - 37",
+    "strGain": "2.20",
+    "portraitUrl": "http://media.steampowered.com/apps/dota2/images/heroes/beastmaster_full.png",
+    "intGain": "1.90",
+    "sight": "1800 / 800",
     "abilities": [{
-        "cooldown": ["13"],
-        "name": "Wild Axes",
-        "videoUrl": "http://www.youtube.com/embed/RfMTKPalQ_E?hd=1&rel=0",
-        "lore": "While learning to maneuver in nature alone, the Beastmaster also mastered the use of a pair of tomahawks, adept at cutting down trees as well as adversaries.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/beastmaster_wild_axes_hp2.png",
         "description": "Beastmaster sends his axes flying and calls them home again, slicing through enemy units and trees along their path.  Each axe can hit an enemy once.",
-        "mana": ["120", "120", "120", "120"],
         "dynamic": {
+            "Ability": "Point Target",
             "Range": ["1300", "1300", "1300", "1300"],
-            "Damage": ["90", "120", "150", "180"],
-            "Ability": "Point Target"
-        }
+            "Damage": ["90", "120", "150", "180"]
+        },
+        "name": "Wild Axes",
+        "lore": "While learning to maneuver in nature alone, the Beastmaster also mastered the use of a pair of tomahawks, adept at cutting down trees as well as adversaries.",
+        "cooldown": ["13"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/beastmaster_wild_axes_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/RfMTKPalQ_E?hd=1&rel=0",
+        "mana": ["120", "120", "120", "120"]
     }, {
-        "cooldown": ["40"],
-        "name": "Call of the Wild",
-        "videoUrl": "http://www.youtube.com/embed/3NlXzk_-gx4?hd=1&rel=0",
-        "lore": "After befriending the strange beast of his childhood, Beastmaster has learned to call to animals in times of need.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/beastmaster_call_of_the_wild_hp2.png",
         "description": "Beastmaster calls allies in the form of a watchful Hawk and a powerful Boar.  Previous summons are removed upon casting.\n\nLevel 1: Summons Scout Hawk.\nLevel 2: Summons Scout Hawk and Lesser Boar.\nLevel 3: Summons Greater Hawk and Lesser Boar.\nLevel 4: Summons Greater Hawk and Greater Boar.",
-        "mana": ["25", "25", "25", "25"],
         "dynamic": {
             "Boar duration": ["0", "70", "80", "90"],
-            "Hawk duration": ["60", "70", "80", "80"],
-            "Ability": "No Target"
-        }
+            "Ability": "No Target",
+            "Hawk duration": ["60", "70", "80", "80"]
+        },
+        "name": "Call of the Wild",
+        "lore": "After befriending the strange beast of his childhood, Beastmaster has learned to call to animals in times of need.",
+        "cooldown": ["40"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/beastmaster_call_of_the_wild_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/3NlXzk_-gx4?hd=1&rel=0",
+        "mana": ["25", "25", "25", "25"]
     }, {
-        "name": "Inner Beast",
-        "videoUrl": "http://www.youtube.com/embed/aC2jU2vrI8U?hd=1&rel=0",
-        "lore": "Beastmaster's ability to incite the innate strength of animals was seen in the mauling of the king of Slom.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/beastmaster_inner_beast_hp2.png",
         "description": "Untaps the inner fury of allies, passively increasing their attack speed.",
         "dynamic": {
-            "Affects": "DOTA_Tool",
-            "Ability": "Passive, Aura",
             "Radius": ["1000", "1000", "1000", "1000"],
-            "Bonus attack speed": ["18", "26", "32", "40"]
-        }
+            "Ability": "Passive, Aura",
+            "Bonus attack speed": ["18", "26", "32", "40"],
+            "Affects": "DOTA_Tool"
+        },
+        "name": "Inner Beast",
+        "lore": "Beastmaster's ability to incite the innate strength of animals was seen in the mauling of the king of Slom.",
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/beastmaster_inner_beast_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/aC2jU2vrI8U?hd=1&rel=0"
     }, {
-        "cooldown": ["80", "75", "70"],
-        "name": "Primal Roar",
-        "videoUrl": "http://www.youtube.com/embed/mnHbT9GLIdU?hd=1&rel=0",
-        "lore": "The Beastmaster has learned to channel his primal instincts into an animalistic roar, causing devastation in the ranks of enemies.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/beastmaster_primal_roar_hp2.png",
         "description": "A deafening roar that deals damage and stuns the target enemy unit, while opening a path between Beastmaster and his prey. Nearby enemies also take damage and have their movement speed and attack rate reduced.\n\nUpgradable by Aghanim's Scepter.",
-        "mana": ["150", "175", "200"],
         "dynamic": {
-            "Slow duration": ["2", "3", "4"],
-            "Scepter cooldown": ["45", "45", "45"],
-            "Scepter cast range": ["950", "950", "950"],
-            "Affects": "Enemy Units",
-            "Ability": "Unit Target",
             "Radius": ["250", "250", "250"],
-            "Damage": "Magical",
-            "Attack slow": ["50%", "50%", "50%"],
-            "Movement slow": ["50%", "50%", "50%"],
-            "Stun duration": ["3", "3.5", "4"]
-        }
-    }],
-    "agiGain": "1.60",
-    "hp": "587",
-    "amour": "4.52",
-    "attack": "33 - 37",
-    "range": "128",
-    "portraitUrl": "http://media.steampowered.com/apps/dota2/images/heroes/beastmaster_full.png",
-    "bio": "Karroch was born a child of the stocks. His mother died in childbirth; his father, a farrier for the Last King of Slom, was trampled to death when he was five. Afterward Karroch was indentured to the king's menagerie, where he grew up among all the beasts of the royal court: lions, apes, fell-deer, and things less known, things barely believed in. When the lad was seven, an explorer brought in a beast like none before seen. Dragged before the King in chains, the beast spoke, though its mouth moved not. Its words: a plea for freedom. The King only laughed and ordered the beast perform for his amusement; and when it refused, struck it with the Mad Scepter and ordered it dragged to the stocks."
-}, {
-    "roles": ["Carry", "Durable", "Disabler", "Pusher"],
-    "name": "Dragon Knight",
-    "url": "http://www.dota2.com/hero/Dragon_Knight/",
-    "missileSpeed": "900",
-    "int": "15",
-    "primary": "Strength",
-    "str": "19",
-    "sight": "1800 / 800",
-    "agi": "19",
-    "strGain": "2.80",
-    "intGain": "1.70",
-    "ms": "290",
-    "attackMode": "Melee",
-    "abilities": [{
-        "cooldown": ["12"],
-        "name": "Breathe Fire",
-        "videoUrl": "http://www.youtube.com/embed/wrZnzBN1CmA?hd=1&rel=0",
-        "lore": "Knight Davion's breath has become that of the mighty Eldwurm Slyrak, remembered for burning numerous other knights to a crisp.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/dragon_knight_breathe_fire_hp2.png",
-        "description": "Unleashes a breath of fire on enemy units in a line in front of Dragon Knight.",
-        "mana": ["100", "110", "120", "130"],
-        "dynamic": {
-            "Affects": "Enemy Units",
-            "Ability": "Unit Target, Point Target",
-            "Damage": "Magical"
-        }
-    }, {
-        "cooldown": ["9"],
-        "name": "Dragon Tail",
-        "videoUrl": "http://www.youtube.com/embed/gJSc04KMmbE?hd=1&rel=0",
-        "lore": "Davion's combination of dragon talents and knightly skills makes him a vicious opponent in melee combat.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/dragon_knight_dragon_tail_hp2.png",
-        "description": "Dragon Knight smites an enemy unit in melee range with his shield, stunning it while dealing minor damage.  When in Elder Dragon Form, the cast range increases to 400.",
-        "mana": ["100", "100", "100", "100"],
-        "dynamic": {
-            "Damage": ["25", "50", "75", "100"],
-            "Affects": "Enemy Units",
             "Ability": "Unit Target",
-            "Stun duration": ["2.5", "2.75", "3", "3.25"]
-        }
+            "Attack slow": ["50%", "50%", "50%"],
+            "Scepter cooldown": ["45", "45", "45"],
+            "Damage": "Magical",
+            "Scepter cast range": ["950", "950", "950"],
+            "Stun duration": ["3", "3.5", "4"],
+            "Slow duration": ["2", "3", "4"],
+            "Movement slow": ["50%", "50%", "50%"],
+            "Affects": "Enemy Units"
+        },
+        "name": "Primal Roar",
+        "lore": "The Beastmaster has learned to channel his primal instincts into an animalistic roar, causing devastation in the ranks of enemies.",
+        "cooldown": ["80", "75", "70"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/beastmaster_primal_roar_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/mnHbT9GLIdU?hd=1&rel=0",
+        "mana": ["150", "175", "200"]
+    }],
+    "hp": "587",
+    "attackMode": "Melee",
+    "name": "Beastmaster",
+    "ms": "310",
+    "bio": "Karroch was born a child of the stocks. His mother died in childbirth; his father, a farrier for the Last King of Slom, was trampled to death when he was five. Afterward Karroch was indentured to the king's menagerie, where he grew up among all the beasts of the royal court: lions, apes, fell-deer, and things less known, things barely believed in. When the lad was seven, an explorer brought in a beast like none before seen. Dragged before the King in chains, the beast spoke, though its mouth moved not. Its words: a plea for freedom. The King only laughed and ordered the beast perform for his amusement; and when it refused, struck it with the Mad Scepter and ordered it dragged to the stocks.",
+    "agi": "18",
+    "amour": "4.52",
+    "roles": ["Initiator", "Disabler", "Durable"],
+    "url": "http://www.dota2.com/hero/Beastmaster/",
+    "int": "16",
+    "missileSpeed": "N/A"
+}, {
+    "primary": "Strength",
+    "agiGain": "2.20",
+    "str": "19",
+    "range": "128",
+    "attack": "27 - 33",
+    "strGain": "2.80",
+    "portraitUrl": "http://media.steampowered.com/apps/dota2/images/heroes/dragon_knight_full.png",
+    "intGain": "1.70",
+    "sight": "1800 / 800",
+    "abilities": [{
+        "description": "Unleashes a breath of fire on enemy units in a line in front of Dragon Knight.",
+        "dynamic": {
+            "Ability": "Unit Target, Point Target",
+            "Damage": "Magical",
+            "Affects": "Enemy Units"
+        },
+        "name": "Breathe Fire",
+        "lore": "Knight Davion's breath has become that of the mighty Eldwurm Slyrak, remembered for burning numerous other knights to a crisp.",
+        "cooldown": ["12"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/dragon_knight_breathe_fire_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/wrZnzBN1CmA?hd=1&rel=0",
+        "mana": ["100", "110", "120", "130"]
     }, {
-        "name": "Dragon Blood",
-        "videoUrl": "http://www.youtube.com/embed/mbzF8oyAUfc?hd=1&rel=0",
-        "lore": "Slyrak's blood still courses through Davion's veins, giving him twice the vitality of an ordinary knight.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/dragon_knight_dragon_blood_hp2.png",
+        "description": "Dragon Knight smites an enemy unit in melee range with his shield, stunning it while dealing minor damage.  When in Elder Dragon Form, the cast range increases to 400.",
+        "dynamic": {
+            "Ability": "Unit Target",
+            "Damage": ["25", "50", "75", "100"],
+            "Stun duration": ["2.5", "2.75", "3", "3.25"],
+            "Affects": "Enemy Units"
+        },
+        "name": "Dragon Tail",
+        "lore": "Davion's combination of dragon talents and knightly skills makes him a vicious opponent in melee combat.",
+        "cooldown": ["9"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/dragon_knight_dragon_tail_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/gJSc04KMmbE?hd=1&rel=0",
+        "mana": ["100", "100", "100", "100"]
+    }, {
         "description": "The life blood of the Dragon improves health regeneration and strengthens armor.",
         "dynamic": {
-            "Health regen": ["2", "3", "4", "5"],
             "Armor": ["3", "6", "9", "12"],
-            "Ability": "Passive"
-        }
+            "Ability": "Passive",
+            "Health regen": ["2", "3", "4", "5"]
+        },
+        "name": "Dragon Blood",
+        "lore": "Slyrak's blood still courses through Davion's veins, giving him twice the vitality of an ordinary knight.",
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/dragon_knight_dragon_blood_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/mbzF8oyAUfc?hd=1&rel=0"
     }, {
-        "cooldown": ["115"],
-        "name": "Elder Dragon Form",
-        "videoUrl": "http://www.youtube.com/embed/3HpgABQ8kpA?hd=1&rel=0",
-        "lore": "The dormant dragon power springs forth from within Davion, combining the powers of a legendary knight with a legendary Eldwurm.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/dragon_knight_elder_dragon_form_hp2.png",
         "description": "Dragon Knight can take the form of three powerful elder dragons.\nLEVEL 1 - Green Dragon: Short poison damage over time on attack.\nLEVEL 2 - Red Dragon: Splash damage on attack.\nLEVEL 3 - Blue Dragon: Splash damage and frost attack that slows enemy units.",
-        "mana": ["50", "50", "50"],
         "dynamic": {
+            "Ability": "No Target",
             "Bonus attack range": ["372", "372", "372"],
             "Bonus move speed": ["25", "25", "25"],
-            "Ability": "No Target",
             "Duration": ["60", "60", "60"]
-        }
+        },
+        "name": "Elder Dragon Form",
+        "lore": "The dormant dragon power springs forth from within Davion, combining the powers of a legendary knight with a legendary Eldwurm.",
+        "cooldown": ["115"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/dragon_knight_elder_dragon_form_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/3HpgABQ8kpA?hd=1&rel=0",
+        "mana": ["50", "50", "50"]
     }],
-    "agiGain": "2.20",
     "hp": "511",
-    "amour": "3.66",
-    "attack": "27 - 33",
-    "range": "128",
-    "portraitUrl": "http://media.steampowered.com/apps/dota2/images/heroes/dragon_knight_full.png",
-    "bio": "After years on the trail of a legendary Eldwurm, the Knight Davion found himself facing a disappointing foe: the dreaded Slyrak had grown ancient and frail, its wings tattered, its few remaining scales stricken with scale-rot, its fangs ground to nubs, and its fire-gouts no more threatening than a pack of wet matchsticks. Seeing no honor to be gained in dragon-murder, Knight Davion prepared to turn away and leave his old foe to die in peace. But a voice crept into his thoughts, and Slyrak gave a whispered plea that Davion might honor him with death in combat. Davion agreed, and found himself rewarded beyond expectation for his act of mercy: As he sank his blade in Slyrak's breast, the dragon pierced Davion's throat with a talon. As their blood mingled, Slyrak sent his power out along the Blood Route, sending all its strength and centuries of wisdom to the knight.  The dragon's death sealed their bond and Dragon Knight was born. The ancient power slumbers in the Dragon Knight Davion, waking when he calls it. Or perhaps it is the Dragon that calls the Knight..."
-}, {
-    "roles": ["Initiator", "Durable"],
-    "name": "Clockwerk",
-    "url": "http://www.dota2.com/hero/Clockwerk/",
-    "missileSpeed": "N/A",
-    "int": "17",
-    "primary": "Strength",
-    "str": "24",
-    "sight": "1800 / 800",
-    "agi": "13",
-    "strGain": "2.70",
-    "intGain": "1.30",
-    "ms": "315",
     "attackMode": "Melee",
+    "name": "Dragon Knight",
+    "ms": "290",
+    "bio": "After years on the trail of a legendary Eldwurm, the Knight Davion found himself facing a disappointing foe: the dreaded Slyrak had grown ancient and frail, its wings tattered, its few remaining scales stricken with scale-rot, its fangs ground to nubs, and its fire-gouts no more threatening than a pack of wet matchsticks. Seeing no honor to be gained in dragon-murder, Knight Davion prepared to turn away and leave his old foe to die in peace. But a voice crept into his thoughts, and Slyrak gave a whispered plea that Davion might honor him with death in combat. Davion agreed, and found himself rewarded beyond expectation for his act of mercy: As he sank his blade in Slyrak's breast, the dragon pierced Davion's throat with a talon. As their blood mingled, Slyrak sent his power out along the Blood Route, sending all its strength and centuries of wisdom to the knight.  The dragon's death sealed their bond and Dragon Knight was born. The ancient power slumbers in the Dragon Knight Davion, waking when he calls it. Or perhaps it is the Dragon that calls the Knight...",
+    "agi": "19",
+    "amour": "3.66",
+    "roles": ["Carry", "Durable", "Disabler", "Pusher"],
+    "url": "http://www.dota2.com/hero/Dragon_Knight/",
+    "int": "15",
+    "missileSpeed": "900"
+}, {
+    "primary": "Strength",
+    "agiGain": "2.30",
+    "str": "24",
+    "range": "128",
+    "attack": "31 - 33",
+    "strGain": "2.70",
+    "portraitUrl": "http://media.steampowered.com/apps/dota2/images/heroes/rattletrap_full.png",
+    "intGain": "1.30",
+    "sight": "1800 / 800",
     "abilities": [{
-        "cooldown": ["32", "28", "24", "20"],
-        "name": "Battery Assault",
-        "videoUrl": "http://www.youtube.com/embed/5P3Dk2VzVVo?hd=1&rel=0",
-        "lore": "Some of Rattletrap's contraptions don't quite work correctly, so detonating them proves useful as an offensive maneuver.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/rattletrap_battery_assault_hp2.png",
         "description": "Discharges high-powered shrapnel at random nearby enemy units, dealing minor magical damage and ministun.",
-        "mana": ["75", "75", "75", "75"],
         "dynamic": {
             "Radius": ["275", "275", "275", "275"],
-            "Damage": ["15", "35", "55", "75"],
             "Ability": "No Target",
             "Interval": ["0.7", "0.7", "0.7", "0.7"],
-            "Duration": ["10.5", "10.5", "10.5", "10.5"]
-        }
+            "Duration": ["10.5", "10.5", "10.5", "10.5"],
+            "Damage": ["15", "35", "55", "75"]
+        },
+        "name": "Battery Assault",
+        "lore": "Some of Rattletrap's contraptions don't quite work correctly, so detonating them proves useful as an offensive maneuver.",
+        "cooldown": ["32", "28", "24", "20"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/rattletrap_battery_assault_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/5P3Dk2VzVVo?hd=1&rel=0",
+        "mana": ["75", "75", "75", "75"]
     }, {
-        "cooldown": ["15"],
-        "name": "Power Cogs",
-        "videoUrl": "http://www.youtube.com/embed/rzTnmYGoJXA?hd=1&rel=0",
-        "lore": "One of Clockwerk's inventions of which he is most proud is the power cog - though it is sometimes despised by his allies.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/rattletrap_power_cogs_hp2.png",
         "description": "Forms a barrier of energized cogs around Clockwerk, trapping any units that are near.  Enemies outside the trap that touch a cog are knocked back, losing health and mana. Once a cog has delivered a shock, it will power down.  Cogs can be destroyed by enemies in 3 attacks, but Clockwerk can destroy them with just one.",
-        "mana": ["50", "60", "70", "80"],
         "dynamic": {
-            "Damage": "Magical",
             "Ability": "No Target",
             "Mana/health drain": ["80", "120", "160", "200"],
-            "Duration": ["5", "6", "7", "8"]
-        }
+            "Duration": ["5", "6", "7", "8"],
+            "Damage": "Magical"
+        },
+        "name": "Power Cogs",
+        "lore": "One of Clockwerk's inventions of which he is most proud is the power cog - though it is sometimes despised by his allies.",
+        "cooldown": ["15"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/rattletrap_power_cogs_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/rzTnmYGoJXA?hd=1&rel=0",
+        "mana": ["50", "60", "70", "80"]
     }, {
-        "cooldown": ["20", "18", "16", "14"],
-        "name": "Rocket Flare",
-        "videoUrl": "http://www.youtube.com/embed/etHgBKQTjEE?hd=1&rel=0",
-        "lore": "What started as a festive display has become a useful scouting and bombardment tool.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/rattletrap_rocket_flare_hp2.png",
         "description": "Fires a global range flare that explodes over a given area, damaging enemies and providing vision for 10 seconds.",
-        "mana": ["50", "50", "50", "50"],
         "dynamic": {
             "Radius": ["575", "575", "575", "575"],
-            "Damage": ["80", "120", "160", "200"],
-            "Ability": "Point Target"
-        }
+            "Ability": "Point Target",
+            "Damage": ["80", "120", "160", "200"]
+        },
+        "name": "Rocket Flare",
+        "lore": "What started as a festive display has become a useful scouting and bombardment tool.",
+        "cooldown": ["20", "18", "16", "14"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/rattletrap_rocket_flare_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/etHgBKQTjEE?hd=1&rel=0",
+        "mana": ["50", "50", "50", "50"]
     }, {
-        "cooldown": ["70", "55", "40"],
-        "name": "Hookshot",
-        "videoUrl": "http://www.youtube.com/embed/fbAceDpaO2s?hd=1&rel=0",
-        "lore": "A somewhat unwieldy device, the Hookshot sends the otherwise clunky Clockwerk armor flying through the air.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/rattletrap_hookshot_hp2.png",
         "description": "Fires a grappling device rapidly at the target location.  If the hook hits a non-neutral unit, Clockwerk launches himself into the target, stunning and dealing damage.  Any enemies Clockwerk collides with along the way are subject to damage and stunned. \n\nUpgradable by Aghanim's Scepter.",
-        "mana": ["150", "150", "150"],
         "dynamic": {
-            "Range": ["2000", "2500", "3000"],
+            "Ability": "Point Target",
             "Scepter cooldown": ["12", "12", "12"],
             "Damage": ["100", "200", "300"],
-            "Ability": "Point Target",
+            "Range": ["2000", "2500", "3000"],
             "Stun duration": ["1", "1.5", "2"]
-        }
+        },
+        "name": "Hookshot",
+        "lore": "A somewhat unwieldy device, the Hookshot sends the otherwise clunky Clockwerk armor flying through the air.",
+        "cooldown": ["70", "55", "40"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/rattletrap_hookshot_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/fbAceDpaO2s?hd=1&rel=0",
+        "mana": ["150", "150", "150"]
     }],
-    "agiGain": "2.30",
     "hp": "606",
-    "amour": "1.82",
-    "attack": "31 - 33",
-    "range": "128",
-    "portraitUrl": "http://media.steampowered.com/apps/dota2/images/heroes/rattletrap_full.png",
-    "bio": "Rattletrap descends from the same far-flung kindred as Sniper and Tinker, and like many of the Keen Folk, has offset his diminutive stature through the application of gadgetry and wit.  The son of the son of a clockmaker, Rattletrap was many years apprenticed to that trade before war rode down from the mountains and swept the plains villages free of such innocent vocations.  \"Your new trade is battle,\" his dying father told him as the village of their ancestors lay in charred and smoking ruins."
-}, {
-    "roles": ["Durable", "Lane Support", "Support"],
-    "name": "Omniknight",
-    "url": "http://www.dota2.com/hero/Omniknight/",
-    "missileSpeed": "N/A",
-    "int": "17",
-    "primary": "Strength",
-    "str": "20",
-    "sight": "1800 / 800",
-    "agi": "15",
-    "strGain": "2.65",
-    "intGain": "1.80",
-    "ms": "305",
     "attackMode": "Melee",
+    "name": "Clockwerk",
+    "ms": "315",
+    "bio": "Rattletrap descends from the same far-flung kindred as Sniper and Tinker, and like many of the Keen Folk, has offset his diminutive stature through the application of gadgetry and wit.  The son of the son of a clockmaker, Rattletrap was many years apprenticed to that trade before war rode down from the mountains and swept the plains villages free of such innocent vocations.  \"Your new trade is battle,\" his dying father told him as the village of their ancestors lay in charred and smoking ruins.",
+    "agi": "13",
+    "amour": "1.82",
+    "roles": ["Initiator", "Durable"],
+    "url": "http://www.dota2.com/hero/Clockwerk/",
+    "int": "17",
+    "missileSpeed": "N/A"
+}, {
+    "primary": "Strength",
+    "agiGain": "1.75",
+    "str": "20",
+    "range": "128",
+    "attack": "31 - 41",
+    "strGain": "2.65",
+    "portraitUrl": "http://media.steampowered.com/apps/dota2/images/heroes/omniknight_full.png",
+    "intGain": "1.80",
+    "sight": "1800 / 800",
     "abilities": [{
-        "cooldown": ["10"],
-        "name": "Purification",
-        "videoUrl": "http://www.youtube.com/embed/m-oBmTTH_D8?hd=1&rel=0",
-        "lore": "Priests of the Omniscience are adept at removing impurities from fellow warriors.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/omniknight_purification_hp2.png",
         "description": "Instantly heals a friendly unit and damages all nearby enemy units.",
-        "mana": ["100", "120", "140", "160"],
         "dynamic": {
+            "Radius": ["225", "225", "225", "225"],
+            "Ability": "Unit Target",
             "Heal/damage": ["90", "180", "270", "360"],
             "Damage": "Pure",
-            "Affects": "Allied Units",
-            "Ability": "Unit Target",
-            "Radius": ["225", "225", "225", "225"]
-        }
+            "Affects": "Allied Units"
+        },
+        "name": "Purification",
+        "lore": "Priests of the Omniscience are adept at removing impurities from fellow warriors.",
+        "cooldown": ["10"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/omniknight_purification_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/m-oBmTTH_D8?hd=1&rel=0",
+        "mana": ["100", "120", "140", "160"]
     }, {
-        "cooldown": ["14"],
-        "name": "Repel",
-        "videoUrl": "http://www.youtube.com/embed/4B0U8hgXhRY?hd=1&rel=0",
-        "lore": "When faced with the pit of sacrifice, Purist's resilience to magic was tested and affirmed.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/omniknight_repel_hp2.png",
         "description": "Creates a powerful divine ward that blocks most magic from affecting a target unit.",
-        "mana": ["50", "50", "50", "50"],
         "dynamic": {
-            "Affects": "Heroes",
             "Ability": "Unit Target",
-            "Duration": ["6", "8", "10", "12"]
-        }
+            "Duration": ["6", "8", "10", "12"],
+            "Affects": "Heroes"
+        },
+        "name": "Repel",
+        "lore": "When faced with the pit of sacrifice, Purist's resilience to magic was tested and affirmed.",
+        "cooldown": ["14"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/omniknight_repel_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/4B0U8hgXhRY?hd=1&rel=0",
+        "mana": ["50", "50", "50", "50"]
     }, {
-        "name": "Degen Aura",
-        "videoUrl": "http://www.youtube.com/embed/ZQR5hhwtS0o?hd=1&rel=0",
-        "lore": "The holy embodiment of Purist Thunderwrath is enough to weaken those of lesser faith.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/omniknight_degen_aura_hp2.png",
         "description": "Greatly degenerates the movement and attack capabilities of enemy units that stray too near.",
         "dynamic": {
-            "Affects": "Enemies",
-            "Ability": "Passive, Aura",
             "Radius": ["315", "315", "315", "315"],
-            "Move/attack slow": ["7%", "14%", "21%", "28%"]
-        }
+            "Ability": "Passive, Aura",
+            "Move/attack slow": ["7%", "14%", "21%", "28%"],
+            "Affects": "Enemies"
+        },
+        "name": "Degen Aura",
+        "lore": "The holy embodiment of Purist Thunderwrath is enough to weaken those of lesser faith.",
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/omniknight_degen_aura_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/ZQR5hhwtS0o?hd=1&rel=0"
     }, {
-        "cooldown": ["150"],
-        "name": "Guardian Angel",
-        "videoUrl": "http://www.youtube.com/embed/LAgsYrdh5zc?hd=1&rel=0",
-        "lore": "The All Seeing One casts down his protection over those that Purist calls friend.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/omniknight_guardian_angel_hp2.png",
         "description": "Omniknight summons a Guardian Angel that grants immunity from physical damage and greatly increases hit point regeneration of nearby allies.",
-        "mana": ["125", "175", "250"],
         "dynamic": {
-            "Health regen": ["25", "25", "25"],
             "Radius": ["600", "600", "600"],
             "Ability": "No Target",
-            "Duration": ["5", "6", "7"]
-        }
+            "Duration": ["5", "6", "7"],
+            "Health regen": ["25", "25", "25"]
+        },
+        "name": "Guardian Angel",
+        "lore": "The All Seeing One casts down his protection over those that Purist calls friend.",
+        "cooldown": ["150"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/omniknight_guardian_angel_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/LAgsYrdh5zc?hd=1&rel=0",
+        "mana": ["125", "175", "250"]
     }],
-    "agiGain": "1.75",
     "hp": "530",
+    "attackMode": "Melee",
+    "name": "Omniknight",
+    "ms": "305",
+    "bio": "Purist Thunderwrath was a hard-fighting, road-worn, deeply committed knight, sworn to the order in which he had grown up as squire to elder knights of great reputation. He had spent his entire life in the service of the Omniscience, the All Seeing One. Theirs was a holy struggle, and so embedded was he in his duty that he never questioned it so long as he had the strength to fight and the impetuous valor that comes with youth. But over the long years of the crusade, as his elders passed away and were buried in sorry graves at the side of muddy tracks, as his bond-brothers fell in battle to uncouth creatures that refused to bow to the Omniscience, as his own squires were chewed away by ambush and plague and bad water, he began to question the meaning of his vows--the meaning of the whole crusade. After deep meditation, he parted ways with his army and commenced a long trek back to the cave-riddled cliffs of Emauracus, and there he set a challenge to the priests of the Omniscience. No knight had ever questioned them before, and they tried to throw him into the pit of sacrifice, but Purist would not be moved. For as he faced them down, he began to glow with a holy light, and they saw that the Omniscience had chosen to reveal Itself to him. The Elder Hierophant led him on a journey of weeks down into the deepest chamber, the holy of holies, where waited not some abstract concept of wisdom and insight, not some carved relic requiring an injection of imagination to believe in, but the old one itself. It had not merely dwelt in those rocks for billions of aeons; no, It had created them. The Omniscience had formed the immense mineral shell of the planet around itself, as a defense against the numerous terrors of space. Thus the All Seeing One claimed to have created the world, and given the other truths revealed to Purist on that day, the knight had no reason to refute the story. Perhaps the Omniscience is a liar, deep in its prison of stone, and not the world's creator at all, but Omniknight never again questioned his faith. His campaign had meaning at last. And there can be no question that the glorious powers that imbue him, and give his companions such strength in battle, are real beyond any doubt.",
+    "agi": "15",
     "amour": "4.1",
-    "attack": "31 - 41",
-    "range": "128",
-    "portraitUrl": "http://media.steampowered.com/apps/dota2/images/heroes/omniknight_full.png",
-    "bio": "Purist Thunderwrath was a hard-fighting, road-worn, deeply committed knight, sworn to the order in which he had grown up as squire to elder knights of great reputation. He had spent his entire life in the service of the Omniscience, the All Seeing One. Theirs was a holy struggle, and so embedded was he in his duty that he never questioned it so long as he had the strength to fight and the impetuous valor that comes with youth. But over the long years of the crusade, as his elders passed away and were buried in sorry graves at the side of muddy tracks, as his bond-brothers fell in battle to uncouth creatures that refused to bow to the Omniscience, as his own squires were chewed away by ambush and plague and bad water, he began to question the meaning of his vows--the meaning of the whole crusade. After deep meditation, he parted ways with his army and commenced a long trek back to the cave-riddled cliffs of Emauracus, and there he set a challenge to the priests of the Omniscience. No knight had ever questioned them before, and they tried to throw him into the pit of sacrifice, but Purist would not be moved. For as he faced them down, he began to glow with a holy light, and they saw that the Omniscience had chosen to reveal Itself to him. The Elder Hierophant led him on a journey of weeks down into the deepest chamber, the holy of holies, where waited not some abstract concept of wisdom and insight, not some carved relic requiring an injection of imagination to believe in, but the old one itself. It had not merely dwelt in those rocks for billions of aeons; no, It had created them. The Omniscience had formed the immense mineral shell of the planet around itself, as a defense against the numerous terrors of space. Thus the All Seeing One claimed to have created the world, and given the other truths revealed to Purist on that day, the knight had no reason to refute the story. Perhaps the Omniscience is a liar, deep in its prison of stone, and not the world's creator at all, but Omniknight never again questioned his faith. His campaign had meaning at last. And there can be no question that the glorious powers that imbue him, and give his companions such strength in battle, are real beyond any doubt."
+    "roles": ["Durable", "Lane Support", "Support"],
+    "url": "http://www.dota2.com/hero/Omniknight/",
+    "int": "17",
+    "missileSpeed": "N/A"
 }, {
-    "roles": ["Carry", "Initiator", "Durable"],
-    "name": "Huskar",
-    "url": "http://www.dota2.com/hero/Huskar/",
-    "missileSpeed": "1400",
-    "int": "18",
     "primary": "Strength",
+    "agiGain": "2.40",
     "str": "18",
-    "sight": "1800 / 800",
-    "agi": "20",
+    "range": "400",
+    "attack": "21 - 30",
     "strGain": "2.40",
+    "portraitUrl": "http://media.steampowered.com/apps/dota2/images/heroes/huskar_full.png",
     "intGain": "1.50",
-    "ms": "300",
-    "attackMode": "Ranged",
+    "sight": "1800 / 800",
     "abilities": [{
-        "cooldown": ["25"],
-        "name": "Inner Vitality",
-        "videoUrl": "http://www.youtube.com/embed/Euh9XipSClI?hd=1&rel=0",
-        "lore": "While Huskar has little use for magic, this minor enchantment was learned from the Dazzle and the Dezun priests, to be used in times of great injury.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/huskar_inner_vitality_hp2.png",
         "description": "Unlocks the regenerative power of a friendly unit, with healing based upon its primary attribute. If the target is below 40% it will heal faster.  Lasts 16 seconds.",
-        "mana": ["170", "170", "170", "170"],
         "dynamic": {
-            "Hp regen": ["2", "4", "6", "8"],
-            "Affects": "Allied Heroes",
+            "Bonus from attribute": ["5%", "10%", "15%", "20%"],
             "Ability": "Unit Target",
             "Bonus when hurt": ["15%", "30%", "45%", "60%"],
-            "Bonus from attribute": ["5%", "10%", "15%", "20%"]
-        }
+            "Affects": "Allied Heroes",
+            "Hp regen": ["2", "4", "6", "8"]
+        },
+        "name": "Inner Vitality",
+        "lore": "While Huskar has little use for magic, this minor enchantment was learned from the Dazzle and the Dezun priests, to be used in times of great injury.",
+        "cooldown": ["25"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/huskar_inner_vitality_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/Euh9XipSClI?hd=1&rel=0",
+        "mana": ["170", "170", "170", "170"]
     }, {
-        "cooldown": ["0"],
-        "name": "Burning Spear",
-        "videoUrl": "http://www.youtube.com/embed/OqiIX9VUBgk?hd=1&rel=0",
-        "lore": "The Sacred Warrior ignites his weaponry after marking it with his own blood - causing far greater pain than he himself feels.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/huskar_burning_spear_hp2.png",
         "description": "Huskar sets his spears aflame, dealing damage over time with his regular attack.  Multiple attacks will stack additional damage.  Each attack drains some of Huskar's health.  Lasts 7 seconds.\n\nBurning Spears is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers.",
-        "mana": ["0", "0", "0", "0"],
         "dynamic": {
+            "Ability": "Auto-Cast, Unit Target",
             "Health cost": "15",
             "Damage": ["4", "8", "12", "16"],
-            "Affects": "Enemy Units",
-            "Ability": "Auto-Cast, Unit Target"
-        }
+            "Affects": "Enemy Units"
+        },
+        "name": "Burning Spear",
+        "lore": "The Sacred Warrior ignites his weaponry after marking it with his own blood - causing far greater pain than he himself feels.",
+        "cooldown": ["0"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/huskar_burning_spear_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/OqiIX9VUBgk?hd=1&rel=0",
+        "mana": ["0", "0", "0", "0"]
     }, {
-        "name": "Berserker's Blood",
-        "videoUrl": "http://www.youtube.com/embed/6Dx9pD12lEI?hd=1&rel=0",
-        "lore": "After losing his birthright, Huskar gained a lethality in physical combat that is only heightened as his own blood is spilled.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/huskar_berserkers_blood_hp2.png",
         "description": "Huskar's injuries feed his power, giving increased attack speed and damage for each 7% of missing health.",
         "dynamic": {
-            "Bonus damage": ["2", "4", "6", "8"],
             "Ability": "Passive",
+            "Bonus damage": ["2", "4", "6", "8"],
             "Bonus attack speed": ["3", "6", "9", "12"]
-        }
+        },
+        "name": "Berserker's Blood",
+        "lore": "After losing his birthright, Huskar gained a lethality in physical combat that is only heightened as his own blood is spilled.",
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/huskar_berserkers_blood_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/6Dx9pD12lEI?hd=1&rel=0"
     }, {
-        "cooldown": ["45", "30", "15"],
-        "name": "Life Break",
-        "videoUrl": "http://www.youtube.com/embed/uL4iSDlCveo?hd=1&rel=0",
-        "lore": "No matter the danger, Huskar thrusts himself into melees that only he can survive.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/huskar_life_break_hp2.png",
         "description": "Huskar draws upon his health to break an enemy's life, leaping at a target within attack range to inflict a percentage of that hero's current HP, and slow at the cost of his own vitality.  While leaping, Huskar is magic immune.  Slow lasts 5 seconds.\n\nUpgradable by Aghanim's Scepter.",
-        "mana": ["0", "0", "0"],
         "dynamic": {
-            "Damage dealt": "50%",
-            "Slow": "50%",
             "Scepter damage dealt": "65%",
-            "Scepter cooldown": "4",
             "Damage taken": ["35%", "30%", "25%"],
+            "Damage dealt": "50%",
+            "Ability": "Unit Target",
+            "Slow": "50%",
+            "Scepter cooldown": "4",
             "Damage": "Magical",
-            "Affects": "Enemy Units",
-            "Ability": "Unit Target"
-        }
+            "Affects": "Enemy Units"
+        },
+        "name": "Life Break",
+        "lore": "No matter the danger, Huskar thrusts himself into melees that only he can survive.",
+        "cooldown": ["45", "30", "15"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/huskar_life_break_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/uL4iSDlCveo?hd=1&rel=0",
+        "mana": ["0", "0", "0"]
     }],
-    "agiGain": "2.40",
     "hp": "492",
+    "attackMode": "Ranged",
+    "name": "Huskar",
+    "ms": "300",
+    "bio": "Emerging from the throes of the sacred Nothl Realm, Huskar opened his eyes to see the prodigal shadow priest Dazzle working a deep incantation over him. Against the ancient rites of the Dezun Order, Huskar's spirit had been saved from eternity, but like all who encounter the Nothl he found himself irrevocably changed. No longer at the mercy of a mortal body, his very lifeblood became a source of incredible power; every drop spilled was returned tenfold with a fierce, burning energy. However this newfound gift infuriated Huskar, for in his rescue from the Nothl, Dazzle had denied him a place among the gods. He had been denied his own holy sacrifice. In time the elders of the order sought to expand their influence and Huskar, they agreed, would be a formidable tool in their campaign. Yet becoming a mere weapon for the order that denied him his birthright only upset him further. As the first embers of war appeared on the horizon, he fled his ancestral home to find new allies, all the while seeking a cause worthy of unleashing the power his total sacrifice could bring.",
+    "agi": "20",
     "amour": "1.8",
-    "attack": "21 - 30",
-    "range": "400",
-    "portraitUrl": "http://media.steampowered.com/apps/dota2/images/heroes/huskar_full.png",
-    "bio": "Emerging from the throes of the sacred Nothl Realm, Huskar opened his eyes to see the prodigal shadow priest Dazzle working a deep incantation over him. Against the ancient rites of the Dezun Order, Huskar's spirit had been saved from eternity, but like all who encounter the Nothl he found himself irrevocably changed. No longer at the mercy of a mortal body, his very lifeblood became a source of incredible power; every drop spilled was returned tenfold with a fierce, burning energy. However this newfound gift infuriated Huskar, for in his rescue from the Nothl, Dazzle had denied him a place among the gods. He had been denied his own holy sacrifice. In time the elders of the order sought to expand their influence and Huskar, they agreed, would be a formidable tool in their campaign. Yet becoming a mere weapon for the order that denied him his birthright only upset him further. As the first embers of war appeared on the horizon, he fled his ancestral home to find new allies, all the while seeking a cause worthy of unleashing the power his total sacrifice could bring."
+    "roles": ["Carry", "Initiator", "Durable"],
+    "url": "http://www.dota2.com/hero/Huskar/",
+    "int": "18",
+    "missileSpeed": "1400"
 }, {
-    "roles": ["Durable", "Carry", "Disabler"],
-    "name": "Alchemist",
-    "url": "http://www.dota2.com/hero/Alchemist/",
-    "missileSpeed": "N/A",
-    "int": "25",
     "primary": "Strength",
+    "agiGain": "1.20",
     "str": "25",
-    "sight": "1800 / 1400",
-    "agi": "11",
+    "range": "128",
+    "attack": "24 - 33",
     "strGain": "1.80",
+    "portraitUrl": "http://media.steampowered.com/apps/dota2/images/heroes/alchemist_full.png",
     "intGain": "1.80",
-    "ms": "295",
-    "attackMode": "Melee",
+    "sight": "1800 / 1400",
     "abilities": [{
-        "cooldown": ["22"],
-        "name": "Acid Spray",
-        "videoUrl": "http://www.youtube.com/embed/MUE1KNbho4Q?hd=1&rel=0",
-        "lore": "Using traditional Alchemy from the Darkbrew family, Razzil concocts an acid that dissolves even the toughest metals.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/alchemist_acid_spray_hp2.png",
         "description": "Sprays high-pressure acid across a target area. Enemy units who step across the contaminated terrain take mixed damage per second and have their armor reduced.",
-        "mana": ["130", "140", "150", "160"],
         "dynamic": {
-            "Damage over time": ["14", "20", "26", "32"],
-            "Armor reduction": ["3", "4", "5", "6"],
-            "Damage": "Composite",
-            "Ability": "Point Target",
             "Radius": "625",
-            "Duration": "16"
-        }
+            "Ability": "Point Target",
+            "Duration": "16",
+            "Damage": "Composite",
+            "Armor reduction": ["3", "4", "5", "6"],
+            "Damage over time": ["14", "20", "26", "32"]
+        },
+        "name": "Acid Spray",
+        "lore": "Using traditional Alchemy from the Darkbrew family, Razzil concocts an acid that dissolves even the toughest metals.",
+        "cooldown": ["22"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/alchemist_acid_spray_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/MUE1KNbho4Q?hd=1&rel=0",
+        "mana": ["130", "140", "150", "160"]
     }, {
-        "cooldown": ["16"],
-        "name": "Unstable Concoction",
-        "videoUrl": "http://www.youtube.com/embed/12jG2U6LH6s?hd=1&rel=0",
-        "lore": "A silver lining to the failure of turning a mountain into gold, this volatile solution has destructive potential.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/alchemist_unstable_concoction_hp2.png",
         "description": "Alchemist brews up an unstable concoction that he can throw at an enemy hero, to stun and deal damage in an area around the explosion. The longer the concoction brews, the more damage it deals and the longer the stun. After 5 seconds, the brew reaches its maximum damage and stun time. However, after 7 seconds, the concoction will explode on Alchemist himself if not thrown.",
-        "mana": ["120"],
         "dynamic": {
-            "Max stun": ["1.75", "2.5", "3.25", "4"],
-            "Damage": "Physical",
-            "Ability": "No Target",
+            "Max damage": ["150", "220", "290", "360"],
             "Radius": "175",
-            "Max damage": ["150", "220", "290", "360"]
-        }
+            "Max stun": ["1.75", "2.5", "3.25", "4"],
+            "Ability": "No Target",
+            "Damage": "Physical"
+        },
+        "name": "Unstable Concoction",
+        "lore": "A silver lining to the failure of turning a mountain into gold, this volatile solution has destructive potential.",
+        "cooldown": ["16"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/alchemist_unstable_concoction_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/12jG2U6LH6s?hd=1&rel=0",
+        "mana": ["120"]
     }, {
-        "name": "Greevil's Greed",
-        "videoUrl": "http://www.youtube.com/embed/uHDQHquQk6E?hd=1&rel=0",
-        "lore": "While it is not a mountain, Razzil has mastered the conversion of smaller compounds to line his pockets.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/alchemist_goblins_greed_hp2.png",
         "description": "Alchemist gets bonus gold for killing creeps; the bonus stacks if the creeps are killed within a period of time, after which the count is reset.  The bonus gold is capped at 30 gold.",
         "dynamic": {
-            "Extra bonus gold": ["1", "2", "3", "4"],
+            "Ability": "Passive",
             "Base bonus gold": ["4", "6", "8", "10"],
             "Recent kill window": "25",
-            "Ability": "Passive"
-        }
+            "Extra bonus gold": ["1", "2", "3", "4"]
+        },
+        "name": "Greevil's Greed",
+        "lore": "While it is not a mountain, Razzil has mastered the conversion of smaller compounds to line his pockets.",
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/alchemist_goblins_greed_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/uHDQHquQk6E?hd=1&rel=0"
     }, {
-        "cooldown": ["45"],
-        "name": "Chemical Rage",
-        "videoUrl": "http://www.youtube.com/embed/7SrgzbFp9Rw?hd=1&rel=0",
-        "lore": "The brew Razzil gave to the Ogre during their prison bust has become a useful potion in the midst of combat.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/alchemist_chemical_rage_hp2.png",
         "description": "Alchemist causes his Ogre to enter a chemically induced rage, reducing base attack cooldown and increasing movement speed, hitpoints and regeneration.",
-        "mana": ["50", "100", "150"],
         "dynamic": {
-            "Bonus health regen": ["15", "30", "60"],
-            "Bonus health": ["300", "600", "900"],
-            "Base attack time": ["1.4", "1.2", "1"],
-            "Bonus mana regen": ["3", "7.5", "12"],
-            "Bonus move speed": ["30", "40", "60"],
             "Ability": "No Target",
-            "Duration": "25"
-        }
+            "Bonus move speed": ["30", "40", "60"],
+            "Bonus mana regen": ["3", "7.5", "12"],
+            "Bonus health": ["300", "600", "900"],
+            "Duration": "25",
+            "Base attack time": ["1.4", "1.2", "1"],
+            "Bonus health regen": ["15", "30", "60"]
+        },
+        "name": "Chemical Rage",
+        "lore": "The brew Razzil gave to the Ogre during their prison bust has become a useful potion in the midst of combat.",
+        "cooldown": ["45"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/alchemist_chemical_rage_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/7SrgzbFp9Rw?hd=1&rel=0",
+        "mana": ["50", "100", "150"]
     }, {
-        "name": "Unstable Concoction Throw",
-        "lore": null,
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/alchemist_unstable_concoction_throw_hp2.png",
         "description": "Throw it before it blows up!",
         "dynamic": {
-            "Affects": "Enemy Heroes",
-            "Ability": "Unit Target"
-        }
+            "Ability": "Unit Target",
+            "Affects": "Enemy Heroes"
+        },
+        "name": "Unstable Concoction Throw",
+        "lore": null,
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/alchemist_unstable_concoction_throw_hp2.png"
     }],
-    "agiGain": "1.20",
     "hp": "625",
-    "amour": "1.54",
-    "attack": "24 - 33",
-    "range": "128",
-    "portraitUrl": "http://media.steampowered.com/apps/dota2/images/heroes/alchemist_full.png",
-    "bio": "The sacred science of Chymistry was a Darkbrew family tradition, but no Darkbrew had ever shown the kind of creativity, ambition, and recklessness of young Razzil. However, when adulthood came calling he pushed aside the family trade to try his hand at manufacturing gold through Alchemy. In an act of audacity befitting his reputation, Razzil announced he would transmute an entire mountain into gold. Following two decades of research and spending and preparation, he failed spectacularly, quickly finding himself imprisoned for the widespread destruction his experiment wrought. Yet Razzil was never one to take a setback lightly, and sought escape to continue his research. When his new cellmate turned out to be a fierce ogre, he found just the opportunity he needed. After convincing the ogre not to eat him, Razzil set about carefully concocting a tincture for it to drink, made from the moulds and mosses growing in the prison stone work. In a week's time, it seemed ready. When the ogre drank the potion, it flew into an unstoppable berserker rage, destroying the cell bars and exploding through walls and guards alike. They soon found themselves lost somewhere in the forest surrounding the city with a trail of wreckage in their wake and no signs of pursuit.  In the tonic's afterglow, the ogre seemed serene, happy, and even eager. Resolving to work together, the pair set off to collect the materials needed to attempt Razzil's Alchemic transmutation once more."
-}, {
-    "roles": ["Carry", "Durable", "Initiator", "Pusher"],
-    "name": "Brewmaster",
-    "url": "http://www.dota2.com/hero/Brewmaster/",
-    "missileSpeed": "N/A",
-    "int": "14",
-    "primary": "Strength",
-    "str": "23",
-    "sight": "1800 / 800",
-    "agi": "16",
-    "strGain": "2.90",
-    "intGain": "1.25",
-    "ms": "300",
     "attackMode": "Melee",
+    "name": "Alchemist",
+    "ms": "295",
+    "bio": "The sacred science of Chymistry was a Darkbrew family tradition, but no Darkbrew had ever shown the kind of creativity, ambition, and recklessness of young Razzil. However, when adulthood came calling he pushed aside the family trade to try his hand at manufacturing gold through Alchemy. In an act of audacity befitting his reputation, Razzil announced he would transmute an entire mountain into gold. Following two decades of research and spending and preparation, he failed spectacularly, quickly finding himself imprisoned for the widespread destruction his experiment wrought. Yet Razzil was never one to take a setback lightly, and sought escape to continue his research. When his new cellmate turned out to be a fierce ogre, he found just the opportunity he needed. After convincing the ogre not to eat him, Razzil set about carefully concocting a tincture for it to drink, made from the moulds and mosses growing in the prison stone work. In a week's time, it seemed ready. When the ogre drank the potion, it flew into an unstoppable berserker rage, destroying the cell bars and exploding through walls and guards alike. They soon found themselves lost somewhere in the forest surrounding the city with a trail of wreckage in their wake and no signs of pursuit.  In the tonic's afterglow, the ogre seemed serene, happy, and even eager. Resolving to work together, the pair set off to collect the materials needed to attempt Razzil's Alchemic transmutation once more.",
+    "agi": "11",
+    "amour": "1.54",
+    "roles": ["Durable", "Carry", "Disabler"],
+    "url": "http://www.dota2.com/hero/Alchemist/",
+    "int": "25",
+    "missileSpeed": "N/A"
+}, {
+    "primary": "Strength",
+    "agiGain": "1.95",
+    "str": "23",
+    "range": "128",
+    "attack": "29 - 36",
+    "strGain": "2.90",
+    "portraitUrl": "http://media.steampowered.com/apps/dota2/images/heroes/brewmaster_full.png",
+    "intGain": "1.25",
+    "sight": "1800 / 800",
     "abilities": [{
-        "cooldown": ["12"],
-        "name": "Thunder Clap",
-        "videoUrl": "http://www.youtube.com/embed/iff_66q_-WI?hd=1&rel=0",
-        "lore": "A slam of Mangix' mighty keg starts the festivities.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/brewmaster_thunder_clap_hp2.png",
         "description": "Slams the ground, dealing damage and slowing the movement speed and attack rate of nearby enemy land units.",
-        "mana": ["90", "105", "130", "150"],
         "dynamic": {
-            "Ability": "No Target",
-            "Damage": "Magical",
             "Radius": ["400", "400", "400", "400"],
+            "Ability": "No Target",
             "Attack slow": ["25%", "35%", "45%", "55%"],
             "Duration": ["4.25", "4.25", "4.25", "4.25"],
+            "Damage": "Magical",
             "Movement slow": ["25%", "35%", "45%", "55%"]
-        }
+        },
+        "name": "Thunder Clap",
+        "lore": "A slam of Mangix' mighty keg starts the festivities.",
+        "cooldown": ["12"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/brewmaster_thunder_clap_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/iff_66q_-WI?hd=1&rel=0",
+        "mana": ["90", "105", "130", "150"]
     }, {
-        "cooldown": ["8"],
-        "name": "Drunken Haze",
-        "videoUrl": "http://www.youtube.com/embed/o5T4GnOGj5o?hd=1&rel=0",
-        "lore": "The Order of the Oyo's solution to all problems - another round!",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/brewmaster_drunken_haze_hp2.png",
         "description": "Drenches an enemy unit in alcohol, causing his movement speed to be reduced, and causing his attacks to have a chance to miss.",
-        "mana": ["50", "50", "50", "50"],
         "dynamic": {
-            "Affects": "Enemy Units",
             "Ability": "Unit Target",
-            "Duration": ["8", "8", "8", "8"],
             "Miss chance": ["45%", "55%", "65%", "75%"],
-            "Movement slow": ["14%", "18%", "22%", "26%"]
-        }
+            "Duration": ["8", "8", "8", "8"],
+            "Movement slow": ["14%", "18%", "22%", "26%"],
+            "Affects": "Enemy Units"
+        },
+        "name": "Drunken Haze",
+        "lore": "The Order of the Oyo's solution to all problems - another round!",
+        "cooldown": ["8"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/brewmaster_drunken_haze_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/o5T4GnOGj5o?hd=1&rel=0",
+        "mana": ["50", "50", "50", "50"]
     }, {
-        "name": "Drunken Brawler",
-        "videoUrl": "http://www.youtube.com/embed/mYA6AFcxVhk?hd=1&rel=0",
-        "lore": "When Mangix won his title as the Brewmaster of the Order of Oyo, he also claimed his place in the mastery of inebriation.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/brewmaster_drunken_brawler_hp2.png",
         "description": "Gives a chance to avoid attacks and to deal critical damage.",
         "dynamic": {
-            "Crit damage": ["200%", "200%", "200%", "200%"],
             "Dodge chance": ["10%", "15%", "20%", "25%"],
-            "Crit chance": ["10%", "15%", "20%", "25%"],
-            "Ability": "Passive"
-        }
+            "Ability": "Passive",
+            "Crit damage": ["200%", "200%", "200%", "200%"],
+            "Crit chance": ["10%", "15%", "20%", "25%"]
+        },
+        "name": "Drunken Brawler",
+        "lore": "When Mangix won his title as the Brewmaster of the Order of Oyo, he also claimed his place in the mastery of inebriation.",
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/brewmaster_drunken_brawler_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/mYA6AFcxVhk?hd=1&rel=0"
     }, {
-        "cooldown": ["180", "160", "140"],
-        "name": "Primal Split",
-        "videoUrl": "http://www.youtube.com/embed/uLqYQIf9OuE?hd=1&rel=0",
-        "lore": "It isn't clear whether Mangix is consciously aware of his potent bond with nature, as it often occurs in the midst of a drunken stupor.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/brewmaster_primal_split_hp2.png",
         "description": "Splits Brewmaster into elements, forming 3 specialized warriors, adept at survival. If any of them survive until the end of their summoned timer, the Brewmaster is reborn.\n\nUpgradable by Aghanim's Scepter.",
-        "mana": ["125", "150", "175"],
         "dynamic": {
-            "Scepter duration": ["20", "23", "26"],
-            "Scepter cooldown": ["160", "140", "120"],
             "Ability": "No Target",
-            "Duration": ["15", "17", "19"]
-        }
+            "Scepter duration": ["20", "23", "26"],
+            "Duration": ["15", "17", "19"],
+            "Scepter cooldown": ["160", "140", "120"]
+        },
+        "name": "Primal Split",
+        "lore": "It isn't clear whether Mangix is consciously aware of his potent bond with nature, as it often occurs in the midst of a drunken stupor.",
+        "cooldown": ["180", "160", "140"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/brewmaster_primal_split_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/uLqYQIf9OuE?hd=1&rel=0",
+        "mana": ["125", "150", "175"]
     }],
-    "agiGain": "1.95",
     "hp": "587",
-    "amour": "3.24",
-    "attack": "29 - 36",
-    "range": "128",
-    "portraitUrl": "http://media.steampowered.com/apps/dota2/images/heroes/brewmaster_full.png",
-    "bio": "Deep in the Wailing Mountains, in a valley beneath the Ruined City, the ancient Order of the Oyo has for centuries practiced its rites of holy reverie, communing with the spirit realm in grand festivals of drink.  Born to a mother's flesh by a Celestial father, the youth known as Mangix was the first to grow up with the talents of both lineages.  He trained with the greatest aesthetes of the Order, eventually earning, through diligent drunkenness, the right to challenge for the title of Brewmaster-that appellation most honored among the contemplative malt-brewing sect."
-}, {
-    "roles": ["Durable", "Initiator", "Lane Support", "Disabler"],
-    "name": "Treant Protector",
-    "url": "http://www.dota2.com/hero/Treant_Protector/",
-    "missileSpeed": "N/A",
-    "int": "17",
-    "primary": "Strength",
-    "str": "25",
-    "sight": "1800 / 1200",
-    "agi": "15",
-    "strGain": "3.30",
-    "intGain": "1.80",
-    "ms": "300",
     "attackMode": "Melee",
+    "name": "Brewmaster",
+    "ms": "300",
+    "bio": "Deep in the Wailing Mountains, in a valley beneath the Ruined City, the ancient Order of the Oyo has for centuries practiced its rites of holy reverie, communing with the spirit realm in grand festivals of drink.  Born to a mother's flesh by a Celestial father, the youth known as Mangix was the first to grow up with the talents of both lineages.  He trained with the greatest aesthetes of the Order, eventually earning, through diligent drunkenness, the right to challenge for the title of Brewmaster-that appellation most honored among the contemplative malt-brewing sect.",
+    "agi": "16",
+    "amour": "3.24",
+    "roles": ["Carry", "Durable", "Initiator", "Pusher"],
+    "url": "http://www.dota2.com/hero/Brewmaster/",
+    "int": "14",
+    "missileSpeed": "N/A"
+}, {
+    "primary": "Strength",
+    "agiGain": "2.00",
+    "str": "25",
+    "range": "128",
+    "attack": "56 - 64",
+    "strGain": "3.30",
+    "portraitUrl": "http://media.steampowered.com/apps/dota2/images/heroes/treant_full.png",
+    "intGain": "1.80",
+    "sight": "1800 / 1200",
     "abilities": [{
-        "cooldown": ["10", "8", "6", "4"],
-        "name": "Nature's Guise",
-        "lore": null,
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/treant_natures_guise_hp2.png",
         "description": "Causes the targeted unit to blend in with the forest, becoming invisible to enemies and gaining a movement speed bonus when near a tree.  If the unit moves away from a tree or the spell is cast on a unit with no nearby trees, Nature's Guise is lost.  Treant Protector can cast spells and remain invisible under Nature's Guise.",
-        "mana": ["90", "80", "70", "60"],
         "dynamic": {
-            "Tree radius": ["375", "375", "375", "375"],
             "Fade time": "2",
-            "Affects": "Allied Units",
+            "Tree radius": ["375", "375", "375", "375"],
             "Ability": "Unit Target",
             "Movement speed": ["10%", "10%", "10%", "10%"],
-            "Duration": ["15", "30", "45", "60"]
-        }
-    }, {
-        "cooldown": ["16", "14", "12", "10"],
-        "name": "Leech Seed",
+            "Duration": ["15", "30", "45", "60"],
+            "Affects": "Allied Units"
+        },
+        "name": "Nature's Guise",
         "lore": null,
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/treant_leech_seed_hp2.png",
+        "cooldown": ["10", "8", "6", "4"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/treant_natures_guise_hp2.png",
+        "mana": ["90", "80", "70", "60"]
+    }, {
         "description": "Treant plants a life-sapping seed in an enemy unit, draining its health, while simultaneously slowing it. The seed heals friendly units around it equal to the amount drained.  Pulses 4 times.",
-        "mana": ["140", "140", "140", "140"],
         "dynamic": {
+            "Radius": "500",
+            "Ability": "Unit Target",
+            "Duration": "3",
             "Damage per pulse": ["30", "45", "60", "75"],
             "Damage": "Magical",
-            "Affects": "Enemy Units",
-            "Ability": "Unit Target",
-            "Radius": "500",
-            "Duration": "3",
-            "Movement slow": "24%"
-        }
+            "Movement slow": "24%",
+            "Affects": "Enemy Units"
+        },
+        "name": "Leech Seed",
+        "lore": null,
+        "cooldown": ["16", "14", "12", "10"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/treant_leech_seed_hp2.png",
+        "mana": ["140", "140", "140", "140"]
     }, {
-        "cooldown": ["15"],
+        "description": "Infuses the target hero or structure with a protective coating which grants bonus regeneration. Also grants physical damage block from damage from heroes. Dispels when a number of damage instances are taken.",
+        "dynamic": {
+            "Block": ["20", "40", "60", "80"],
+            "Ability": "Unit Target, Point Target",
+            "Duration": "15",
+            "Regen": ["4", "7", "10", "13"],
+            "Affects": "Allied Units",
+            "Damage instances": "7"
+        },
         "name": "Living Armor",
         "lore": null,
+        "cooldown": ["15"],
         "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/treant_living_armor_hp2.png",
-        "description": "Infuses the target hero or structure with a protective coating which grants bonus regeneration. Also grants physical damage block from damage from heroes. Dispels when a number of damage instances are taken.",
-        "mana": ["25"],
-        "dynamic": {
-            "Damage instances": "7",
-            "Affects": "Allied Units",
-            "Ability": "Unit Target, Point Target",
-            "Regen": ["4", "7", "10", "13"],
-            "Duration": "15",
-            "Block": ["20", "40", "60", "80"]
-        }
+        "mana": ["25"]
     }, {
-        "cooldown": ["70"],
+        "description": "Summons an overgrowth of vines and branches around Treant that prevent afflicted enemies from moving, blinking, going invisible, or attacking.",
+        "dynamic": {
+            "Radius": ["625", "625", "625"],
+            "Ability": "No Target",
+            "Duration": ["3", "3.75", "4.5"],
+            "Damage": "Magical"
+        },
         "name": "Overgrowth",
         "lore": null,
+        "cooldown": ["70"],
         "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/treant_overgrowth_hp2.png",
-        "description": "Summons an overgrowth of vines and branches around Treant that prevent afflicted enemies from moving, blinking, going invisible, or attacking.",
-        "mana": ["150", "175", "200"],
-        "dynamic": {
-            "Damage": "Magical",
-            "Ability": "No Target",
-            "Radius": ["625", "625", "625"],
-            "Duration": ["3", "3.75", "4.5"]
-        }
+        "mana": ["150", "175", "200"]
     }],
-    "agiGain": "2.00",
     "hp": "625",
+    "attackMode": "Melee",
+    "name": "Treant Protector",
+    "ms": "300",
+    "bio": "Far to the west, in the mountains beyond the Vale of Augury, lie the remains of an ancient power, a fount of eldritch energy nestled deep in the high woods. It is said that the things that grow here, grow strangely. To the forces of nature this is a sacred place, made to stay hidden and unknown. Many are the traps and dangers of this land--all-consuming grasses and crossbred fauna and poisonous flowers--but none are so fierce as the mighty Treant Protectors. These ageless, titanic beings, charged with keeping the peace in this dangerous land, ensure that none within encroach without reason, and none without poach their secrets. For time untold they tended to their holy ground, uninterrupted, only dimly aware of the changing world beyond. Yet inevitably the wider world grew aware of this untamed land, and with each passing winter the outsiders grew bolder. Soon they arrived with tools to cut and with flames to burn, and often the Treants would ponder: who are these fragile, industrious creatures? What now had become of the wild, green world? There came and went an age of questions and of doubts, a thousand summers of long traditions set to scrutiny, while more and more the outsiders died and fed their earth. When all that bloomed had finally finished their say, curiosity had overcome caution. It was decided: a lone Protector would be sent into the wider world, and instructed to wander until the glaciers arose once more, to observe the changing land and its creatures, and to discover what unknown dangers could threaten their sacred ground.",
+    "agi": "15",
     "amour": "1.1",
-    "attack": "56 - 64",
-    "range": "128",
-    "portraitUrl": "http://media.steampowered.com/apps/dota2/images/heroes/treant_full.png",
-    "bio": "Far to the west, in the mountains beyond the Vale of Augury, lie the remains of an ancient power, a fount of eldritch energy nestled deep in the high woods. It is said that the things that grow here, grow strangely. To the forces of nature this is a sacred place, made to stay hidden and unknown. Many are the traps and dangers of this land--all-consuming grasses and crossbred fauna and poisonous flowers--but none are so fierce as the mighty Treant Protectors. These ageless, titanic beings, charged with keeping the peace in this dangerous land, ensure that none within encroach without reason, and none without poach their secrets. For time untold they tended to their holy ground, uninterrupted, only dimly aware of the changing world beyond. Yet inevitably the wider world grew aware of this untamed land, and with each passing winter the outsiders grew bolder. Soon they arrived with tools to cut and with flames to burn, and often the Treants would ponder: who are these fragile, industrious creatures? What now had become of the wild, green world? There came and went an age of questions and of doubts, a thousand summers of long traditions set to scrutiny, while more and more the outsiders died and fed their earth. When all that bloomed had finally finished their say, curiosity had overcome caution. It was decided: a lone Protector would be sent into the wider world, and instructed to wander until the glaciers arose once more, to observe the changing land and its creatures, and to discover what unknown dangers could threaten their sacred ground."
+    "roles": ["Durable", "Initiator", "Lane Support", "Disabler"],
+    "url": "http://www.dota2.com/hero/Treant_Protector/",
+    "int": "17",
+    "missileSpeed": "N/A"
 }, {
-    "roles": ["Support", "Lane Support", "Nuker"],
-    "name": "Wisp",
-    "url": "http://www.dota2.com/hero/Wisp/",
-    "missileSpeed": "1200",
-    "int": "23",
     "primary": "Strength",
+    "agiGain": "1.60",
     "str": "17",
-    "sight": "1800 / 800",
-    "agi": "14",
+    "range": "575",
+    "attack": "26 - 35",
     "strGain": "1.90",
+    "portraitUrl": "http://media.steampowered.com/apps/dota2/images/heroes/wisp_full.png",
     "intGain": "1.70",
-    "ms": "295",
-    "attackMode": "Ranged",
+    "sight": "1800 / 800",
     "abilities": [{
-        "cooldown": ["12"],
-        "name": "Tether",
-        "videoUrl": "http://www.youtube.com/embed/KaH5emNgf1A?hd=1&rel=0",
-        "lore": null,
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/wisp_tether_hp2.png",
         "description": "Tether yourself to an allied hero, granting both of you bonus movement speed. When you restore health or mana, your target gains the same amount. Any enemy unit that crosses the tether is stunned. The tether breaks when the allied unit moves too far away, or Wisp cancels the tether.",
-        "mana": ["40", "40", "40", "40"],
         "dynamic": {
-            "Max distance": ["900", "900", "900", "900"],
+            "Ability": "Unit Target",
+            "Stun duration": ["0.75", "1.25", "1.75", "2.25"],
             "Movement speed bonus": ["20%", "20%", "20%", "20%"],
             "Affects": "DOTA_Tool",
-            "Ability": "Unit Target",
-            "Stun duration": ["0.75", "1.25", "1.75", "2.25"]
-        }
+            "Max distance": ["900", "900", "900", "900"]
+        },
+        "name": "Tether",
+        "lore": null,
+        "cooldown": ["12"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/wisp_tether_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/KaH5emNgf1A?hd=1&rel=0",
+        "mana": ["40", "40", "40", "40"]
     }, {
+        "description": "Break the link to the tethered unit.",
+        "dynamic": {
+            "Ability": "No Target"
+        },
         "name": "Break Tether",
         "lore": null,
         "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/wisp_tether_break_hp2.png",
-        "description": "Break the link to the tethered unit.",
-        "mana": ["1"],
-        "dynamic": {
-            "Ability": "No Target"
-        }
+        "mana": ["1"]
     }, {
-        "cooldown": ["20", "18", "16", "14"],
-        "name": "Spirits",
-        "videoUrl": "http://www.youtube.com/embed/VwgmkOJ9qtg?hd=1&rel=0",
-        "lore": null,
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/wisp_spirits_hp2.png",
         "description": "Summon five spirits that dance in a circle around Wisp, damaging all that they hit around you. If a spirit hits an enemy hero, it explodes, damaging all enemy units in an area around it.  Creeps take minor damage from touching a spirit, but don't cause them to explode.",
-        "mana": ["120", "130", "140", "150"],
         "dynamic": {
-            "Oscillation radius": ["875", "875", "875", "875"],
-            "Explosion radius": ["300", "300", "300", "300"],
-            "Ability": "No Target",
             "Hero damage": ["25", "50", "75", "100"],
-            "Creep damage": ["8", "14", "20", "26"]
-        }
-    }, {
-        "name": "Overcharge",
-        "videoUrl": "http://www.youtube.com/embed/4olJB5zwFSY?hd=1&rel=0",
+            "Ability": "No Target",
+            "Creep damage": ["8", "14", "20", "26"],
+            "Oscillation radius": ["875", "875", "875", "875"],
+            "Explosion radius": ["300", "300", "300", "300"]
+        },
+        "name": "Spirits",
         "lore": null,
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/wisp_overcharge_hp2.png",
+        "cooldown": ["20", "18", "16", "14"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/wisp_spirits_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/VwgmkOJ9qtg?hd=1&rel=0",
+        "mana": ["120", "130", "140", "150"]
+    }, {
         "description": "Wisp gains bonus attack speed and damage reduction, at the cost of draining HP and mana per second.  If Wisp is Tethered to an ally, that unit also gains the bonuses.",
         "dynamic": {
-            "Attack speed": ["40", "50", "60", "70"],
             "Hp/mana drain": ["3.5%", "3.5%", "3.5%", "3.5%"],
             "Ability": "No Target, Toggle",
+            "Attack speed": ["40", "50", "60", "70"],
             "Incoming damage reduction": ["5%", "10%", "15%", "20%"]
-        }
-    }, {
-        "cooldown": ["90", "75", "60"],
-        "name": "Relocate",
-        "videoUrl": "http://www.youtube.com/embed/_AEgkh3vlfw?hd=1&rel=0",
+        },
+        "name": "Overcharge",
         "lore": null,
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/wisp_relocate_hp2.png",
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/wisp_overcharge_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/4olJB5zwFSY?hd=1&rel=0"
+    }, {
         "description": "Teleport yourself and any tethered ally to any location on the map. After the spell expires you and any tethered ally will return to where you teleported from.",
-        "mana": ["100", "100", "100"],
         "dynamic": {
-            "Return time": ["12", "12", "12"],
+            "Ability": "Point Target",
             "Cast delay": ["2.5", "2.25", "2"],
-            "Ability": "Point Target"
-        }
-    }, {
-        "name": "Spirits In",
+            "Return time": ["12", "12", "12"]
+        },
+        "name": "Relocate",
         "lore": null,
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/wisp_spirits_in_hp2.png",
+        "cooldown": ["90", "75", "60"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/wisp_relocate_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/_AEgkh3vlfw?hd=1&rel=0",
+        "mana": ["100", "100", "100"]
+    }, {
         "description": "Calls the spirits closer to you. Can be toggled on and off.",
         "dynamic": {
             "Ability": "No Target, Toggle"
-        }
-    }, {
-        "name": "Spirits Out",
+        },
+        "name": "Spirits In",
         "lore": null,
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/wisp_spirits_out_hp2.png",
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/wisp_spirits_in_hp2.png"
+    }, {
         "description": "Sends the spirits farther away from you. Can be toggled on and off.",
         "dynamic": {
             "Ability": "No Target, Toggle"
-        }
+        },
+        "name": "Spirits Out",
+        "lore": null,
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/wisp_spirits_out_hp2.png"
     }],
-    "agiGain": "1.60",
     "hp": "473",
+    "attackMode": "Ranged",
+    "name": "Wisp",
+    "ms": "295",
+    "bio": "Wisp is everywhere, and in all things.  Denounced by enemies as the great unmaker, worshiped by scholars as the twinkling of a divine eye, Wisp occupies all planes at once, the merest fraction of its being crossing into physical existence at any one moment.",
+    "agi": "14",
     "amour": "-0.04",
-    "attack": "26 - 35",
-    "range": "575",
-    "portraitUrl": "http://media.steampowered.com/apps/dota2/images/heroes/wisp_full.png",
-    "bio": "Wisp is everywhere, and in all things.  Denounced by enemies as the great unmaker, worshiped by scholars as the twinkling of a divine eye, Wisp occupies all planes at once, the merest fraction of its being crossing into physical existence at any one moment."
+    "roles": ["Support", "Lane Support", "Nuker"],
+    "url": "http://www.dota2.com/hero/Wisp/",
+    "int": "23",
+    "missileSpeed": "1200"
 }, {
-    "roles": ["Durable", "Disabler", "Initiator"],
-    "name": "Centaur Warrunner",
-    "url": "http://www.dota2.com/hero/Centaur_Warrunner/",
-    "missileSpeed": "N/A",
-    "int": "15",
     "primary": "Strength",
+    "agiGain": "2.00",
     "str": "23",
-    "sight": "1800 / 800",
-    "agi": "15",
+    "range": "128",
+    "attack": "32 - 34",
     "strGain": "3.80",
+    "portraitUrl": "http://media.steampowered.com/apps/dota2/images/heroes/centaur_full.png",
     "intGain": "1.60",
-    "ms": "300",
-    "attackMode": "Melee",
+    "sight": "1800 / 800",
     "abilities": [{
-        "cooldown": ["13"],
-        "name": "Hoof Stomp",
-        "videoUrl": "http://www.youtube.com/embed/FuWaTlMJwjM?hd=1&rel=0",
-        "lore": null,
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/centaur_hoof_stomp_hp2.png",
         "description": "Slams the ground, stunning and damaging nearby enemy units.",
-        "mana": ["85", "100", "115", "130"],
         "dynamic": {
-            "Stomp damage": ["100", "150", "200", "250"],
-            "Damage": "Magical",
+            "Radius": "315",
             "Ability": "No Target",
-            "Radius": "315"
-        }
-    }, {
-        "cooldown": ["8"],
-        "name": "Double Edge",
-        "videoUrl": "http://www.youtube.com/embed/PsHWOHEq5-Q?hd=1&rel=0",
+            "Damage": "Magical",
+            "Stomp damage": ["100", "150", "200", "250"]
+        },
+        "name": "Hoof Stomp",
         "lore": null,
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/centaur_double_edge_hp2.png",
+        "cooldown": ["13"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/centaur_hoof_stomp_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/FuWaTlMJwjM?hd=1&rel=0",
+        "mana": ["85", "100", "115", "130"]
+    }, {
         "description": "Centaur strikes a mighty blow at melee range, damaging both himself and a small area around the target.  Centaur cannot die from Double Edge.",
-        "mana": ["0", "0", "0", "0"],
         "dynamic": {
-            "Affects": "Enemy Units",
             "Ability": "Unit Target",
-            "Damage": "Magical"
-        }
-    }, {
-        "name": "Return",
-        "videoUrl": "http://www.youtube.com/embed/b0obuqv_n5I?hd=1&rel=0",
+            "Damage": "Magical",
+            "Affects": "Enemy Units"
+        },
+        "name": "Double Edge",
         "lore": null,
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/centaur_return_hp2.png",
+        "cooldown": ["8"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/centaur_double_edge_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/PsHWOHEq5-Q?hd=1&rel=0",
+        "mana": ["0", "0", "0", "0"]
+    }, {
         "description": "Centaur immediately counters every attack, damaging the attacker based on a percentage of Centaur's strength.",
         "dynamic": {
             "Ability": "Passive",
             "Strength bonus damage": ["26%", "34%", "42%", "50%"],
             "Damage": "Physical"
-        }
-    }, {
-        "cooldown": ["120", "90", "60"],
-        "name": "Stampede",
-        "videoUrl": "http://www.youtube.com/embed/QTuJyXRa1DI?hd=1&rel=0",
-        "lore": "RUMBLERUMBLERUMBLE",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/centaur_stampede_hp2.png",
-        "description": "Centaur leads all allies into a vicious charge causing them to move through units at max speed and stun enemy units they tread upon. Each enemy can be trampled once and takes damage based on the Warrunner's strength.",
-        "mana": ["80"],
-        "dynamic": {
-            "Strength multiplier damage": ["1", "2", "3"],
-            "Charge duration": "3.75",
-            "Ability": "No Target"
-        }
-    }],
-    "agiGain": "2.00",
-    "hp": "587",
-    "amour": "3.1",
-    "attack": "32 - 34",
-    "range": "128",
-    "portraitUrl": "http://media.steampowered.com/apps/dota2/images/heroes/centaur_full.png",
-    "bio": "It's said that a centaur's road is paved with the corpses of the fallen.  For the one called Warrunner, it has been a long road indeed.  To outsiders, the four-legged clans of Druud are often mistaken for simple, brutish creatures.  Their language has no written form; their culture lacks pictographic traditions, structured music, formalized religion.  For centaurs, combat is the perfect articulation of thought, the highest expression of self.  If killing is an art among centaurs, then Bradwarden the Warrunner is their greatest artist.  He rose to dominance on the proving grounds of Omexe, an ancient arena where centaur clans have for millennia gathered to perform their gladiatorial rites.  As his fame spread, spectators came from far and wide to see the great centaur in action.  Always the first to step into the arena, and the last to leave, he composes a masterpiece in each guttering spray, each thrust of blood-slickened blade-length.  It is the poetry of blood on steel, flung in complex patterns across the pale sands of the killing floor."
-}, {
-    "roles": ["Durable", "Nuker", "Escape"],
-    "name": "Timbersaw",
-    "url": "http://www.dota2.com/hero/Timbersaw/",
-    "missileSpeed": "N/A",
-    "int": "21",
-    "primary": "Strength",
-    "str": "22",
-    "sight": "1800 / 800",
-    "agi": "16",
-    "strGain": "2.10",
-    "intGain": "1.80",
-    "ms": "290",
-    "attackMode": "Melee",
-    "abilities": [{
-        "cooldown": ["8"],
-        "name": "Whirling Death",
+        },
+        "name": "Return",
         "lore": null,
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/shredder_whirling_death_hp2.png",
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/centaur_return_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/b0obuqv_n5I?hd=1&rel=0"
+    }, {
+        "description": "Centaur leads all allies into a vicious charge causing them to move through units at max speed and stun enemy units they tread upon. Each enemy can be trampled once and takes damage based on the Warrunner's strength.",
+        "dynamic": {
+            "Ability": "No Target",
+            "Strength multiplier damage": ["1", "2", "3"],
+            "Charge duration": "3.75"
+        },
+        "name": "Stampede",
+        "lore": "RUMBLERUMBLERUMBLE",
+        "cooldown": ["120", "90", "60"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/centaur_stampede_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/QTuJyXRa1DI?hd=1&rel=0",
+        "mana": ["80"]
+    }],
+    "hp": "587",
+    "attackMode": "Melee",
+    "name": "Centaur Warrunner",
+    "ms": "300",
+    "bio": "It's said that a centaur's road is paved with the corpses of the fallen.  For the one called Warrunner, it has been a long road indeed.  To outsiders, the four-legged clans of Druud are often mistaken for simple, brutish creatures.  Their language has no written form; their culture lacks pictographic traditions, structured music, formalized religion.  For centaurs, combat is the perfect articulation of thought, the highest expression of self.  If killing is an art among centaurs, then Bradwarden the Warrunner is their greatest artist.  He rose to dominance on the proving grounds of Omexe, an ancient arena where centaur clans have for millennia gathered to perform their gladiatorial rites.  As his fame spread, spectators came from far and wide to see the great centaur in action.  Always the first to step into the arena, and the last to leave, he composes a masterpiece in each guttering spray, each thrust of blood-slickened blade-length.  It is the poetry of blood on steel, flung in complex patterns across the pale sands of the killing floor.",
+    "agi": "15",
+    "amour": "3.1",
+    "roles": ["Durable", "Disabler", "Initiator"],
+    "url": "http://www.dota2.com/hero/Centaur_Warrunner/",
+    "int": "15",
+    "missileSpeed": "N/A"
+}, {
+    "primary": "Strength",
+    "agiGain": "1.30",
+    "str": "22",
+    "range": "128",
+    "attack": "26 - 30",
+    "strGain": "2.10",
+    "portraitUrl": "http://media.steampowered.com/apps/dota2/images/heroes/shredder_full.png",
+    "intGain": "1.80",
+    "sight": "1800 / 800",
+    "abilities": [{
         "description": "Timbersaw whirls extremely sharp edges, damaging enemies and destroying trees around him in an area.  If an enemy hero is affected, it loses some of its primary attribute for a short duration.  Whirling Death will deal Pure damage if a tree is cut down in the process.",
-        "mana": ["70", "80", "90", "100"],
         "dynamic": {
             "Stat loss percent": "15%",
+            "Radius": "300",
             "Ability": "No Target",
             "Damage": "Magical",
-            "Radius": "300",
             "Stat loss duration": "7"
-        }
-    }, {
-        "cooldown": ["4"],
-        "name": "Timber Chain",
+        },
+        "name": "Whirling Death",
         "lore": null,
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/shredder_timber_chain_hp2.png",
+        "cooldown": ["8"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/shredder_whirling_death_hp2.png",
+        "mana": ["70", "80", "90", "100"]
+    }, {
         "description": "Timbersaw fires a chain that embeds itself in the first tree it hits, pulling him towards it.  Any enemy in the path takes damage.",
-        "mana": ["60", "70", "80", "90"],
         "dynamic": {
+            "Radius": ["225", "225", "225", "225"],
             "Ability": "Point Target",
             "Damage": "Pure",
-            "Radius": ["225", "225", "225", "225"],
             "Cast range": ["800", "1000", "1200", "1400"]
-        }
-    }, {
-        "name": "Reactive Armor",
+        },
+        "name": "Timber Chain",
         "lore": null,
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/shredder_reactive_armor_hp2.png",
+        "cooldown": ["4"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/shredder_timber_chain_hp2.png",
+        "mana": ["60", "70", "80", "90"]
+    }, {
         "description": "Each time Timbersaw is attacked, he gains increased health regen and armor.",
         "dynamic": {
-            "Max stacks": ["4", "8", "12", "16"],
-            "Bonus armor": "1",
+            "Bonus hp regen": "1",
             "Ability": "Passive",
+            "Max stacks": ["4", "8", "12", "16"],
             "Stack duration": ["16", "16", "16", "16"],
-            "Bonus hp regen": "1"
-        }
-    }, {
-        "cooldown": ["8"],
-        "name": "Chakram",
+            "Bonus armor": "1"
+        },
+        "name": "Reactive Armor",
         "lore": null,
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/shredder_chakram_hp2.png",
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/shredder_reactive_armor_hp2.png"
+    }, {
         "description": "Fires your main saw blade at the target location, and once there the blade will spin, dealing damage in an area around it and slowing enemies.  For each 5% of health missing, enemies caught in the saw blade move more slowly. The blade deals damage and cuts down trees in its path when fired and retracted. You lose the ability to attack and spend mana while the blade is out.",
-        "mana": ["125", "150", "175"],
         "dynamic": {
+            "Radius": "200",
+            "Ability": "Point Target",
             "Slow": "5%",
             "Mana cost per second": ["20", "25", "30"],
             "Damage": "Pure",
-            "Ability": "Point Target",
-            "Radius": "200",
             "Damage per second": ["50", "75", "100"],
             "Pass damage": ["100", "140", "180"]
-        }
+        },
+        "name": "Chakram",
+        "lore": null,
+        "cooldown": ["8"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/shredder_chakram_hp2.png",
+        "mana": ["125", "150", "175"]
     }, {
+        "description": "Returns the Chakram to Timbersaw.",
+        "dynamic": {
+            "Ability": "No Target"
+        },
         "name": "Return Chakram",
         "lore": null,
         "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/shredder_return_chakram_hp2.png",
-        "description": "Returns the Chakram to Timbersaw.",
-        "mana": ["0"],
-        "dynamic": {
-            "Ability": "No Target"
-        }
+        "mana": ["0"]
     }],
-    "agiGain": "1.30",
     "hp": "568",
-    "amour": "0.24",
-    "attack": "26 - 30",
-    "range": "128",
-    "portraitUrl": "http://media.steampowered.com/apps/dota2/images/heroes/shredder_full.png",
-    "bio": "Rizzrack could still hear the screams in his mind.  He worked, frantically turning wrenches, twisting screws, building and carving and forging.  Sleep eluded him; he only built.  Months had passed since he had shut himself in his uncle's workshop, and his deliverance was nearly complete.  He rubbed his back as his eyes drifted shut, and saw a blanket of flowers floating on the placid waves of Augury Bay before exploding into a cloud of pollen that silenced lives as it seized the lungs.  He woke with a choking start.  For hours the rhythmic sound of a whetstone filled the shop as he sharpened a set of massive blades, his mind filled with images of strangling vines garroting neighbors, enwrapping homes.  The flooding of Augury Bay had been nothing compared to the violent horrors the waters left to take root beyond the city walls.  But the saw-suit would make him strong and safe he thought, allowing himself this sliver of hope before the full might of his fear crashed into his fading mind.  Branches and bark and blood.  When the city fell, Rizzrack fled trees that walked, and fought, and killed.  Trees had shattered the gates and swarmed into the city.  Trees had crushed and thrashed and stomped the last that Augury Bay could muster in defense, and stalked the few fleeing refugees.  In addled silence Rizzrack unspooled the thick chain from the suit's arm, his hands quaking as he inspected each link and ran a trembling finger along the claw attached at its end.  The saw-suit was ready."
-}, {
-    "roles": ["Carry", "Escape"],
-    "name": "Anti-Mage",
-    "url": "http://www.dota2.com/hero/Anti-Mage/",
-    "missileSpeed": "N/A",
-    "int": "15",
-    "primary": "Agility",
-    "str": "20",
-    "sight": "1800 / 800",
-    "agi": "22",
-    "strGain": "1.20",
-    "intGain": "1.80",
-    "ms": "315",
     "attackMode": "Melee",
+    "name": "Timbersaw",
+    "ms": "290",
+    "bio": "Rizzrack could still hear the screams in his mind.  He worked, frantically turning wrenches, twisting screws, building and carving and forging.  Sleep eluded him; he only built.  Months had passed since he had shut himself in his uncle's workshop, and his deliverance was nearly complete.  He rubbed his back as his eyes drifted shut, and saw a blanket of flowers floating on the placid waves of Augury Bay before exploding into a cloud of pollen that silenced lives as it seized the lungs.  He woke with a choking start.  For hours the rhythmic sound of a whetstone filled the shop as he sharpened a set of massive blades, his mind filled with images of strangling vines garroting neighbors, enwrapping homes.  The flooding of Augury Bay had been nothing compared to the violent horrors the waters left to take root beyond the city walls.  But the saw-suit would make him strong and safe he thought, allowing himself this sliver of hope before the full might of his fear crashed into his fading mind.  Branches and bark and blood.  When the city fell, Rizzrack fled trees that walked, and fought, and killed.  Trees had shattered the gates and swarmed into the city.  Trees had crushed and thrashed and stomped the last that Augury Bay could muster in defense, and stalked the few fleeing refugees.  In addled silence Rizzrack unspooled the thick chain from the suit's arm, his hands quaking as he inspected each link and ran a trembling finger along the claw attached at its end.  The saw-suit was ready.",
+    "agi": "16",
+    "amour": "0.24",
+    "roles": ["Durable", "Nuker", "Escape"],
+    "url": "http://www.dota2.com/hero/Timbersaw/",
+    "int": "21",
+    "missileSpeed": "N/A"
+}, {
+    "primary": "Agility",
+    "agiGain": "2.80",
+    "str": "20",
+    "range": "128",
+    "attack": "27 - 31",
+    "strGain": "1.20",
+    "portraitUrl": "http://media.steampowered.com/apps/dota2/images/heroes/antimage_full.png",
+    "intGain": "1.80",
+    "sight": "1800 / 800",
     "abilities": [{
-        "name": "Mana Break",
-        "videoUrl": "http://www.youtube.com/embed/5n9dPC349Lw?hd=1&rel=0",
-        "lore": "A modified technique of the Turstarkuri monks' peaceful ways is to turn magical energies on their owner.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/antimage_mana_break_hp2.png",
         "description": "Burns an opponent's mana on each attack.  Mana Break deals 60% of the mana burned as damage to the target.\n\nMana Break is a Unique Attack Modifier, and does not stack with other Unique Attack Modifiers.",
         "dynamic": {
-            "Mana per hit": ["28", "40", "52", "64"],
+            "Ability": "Passive",
             "Damage": "Physical",
-            "Ability": "Passive"
-        }
+            "Mana per hit": ["28", "40", "52", "64"]
+        },
+        "name": "Mana Break",
+        "lore": "A modified technique of the Turstarkuri monks' peaceful ways is to turn magical energies on their owner.",
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/antimage_mana_break_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/5n9dPC349Lw?hd=1&rel=0"
     }, {
-        "cooldown": ["12", "9", "7", "5"],
-        "name": "Blink",
-        "videoUrl": "http://www.youtube.com/embed/HCJe7ilCyXo?hd=1&rel=0",
-        "lore": "In his encounter with the Dead Gods, Anti-Mage learned the value of being elusive.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/antimage_blink_hp2.png",
         "description": "Short distance teleportation that allows Anti-Mage to move in and out of combat.",
-        "mana": ["60", "60", "60", "60"],
         "dynamic": {
-            "Range": ["1000", "1075", "1150", "1150"],
-            "Ability": "Point Target"
-        }
+            "Ability": "Point Target",
+            "Range": ["1000", "1075", "1150", "1150"]
+        },
+        "name": "Blink",
+        "lore": "In his encounter with the Dead Gods, Anti-Mage learned the value of being elusive.",
+        "cooldown": ["12", "9", "7", "5"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/antimage_blink_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/HCJe7ilCyXo?hd=1&rel=0",
+        "mana": ["60", "60", "60", "60"]
     }, {
-        "name": "Spell Shield",
-        "videoUrl": "http://www.youtube.com/embed/pQ6OlMLiA-A?hd=1&rel=0",
-        "lore": "Years of meditation and obsession with revenge have hardened Anti-Mage's skin against mystical opponents.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/antimage_spell_shield_hp2.png",
         "description": "Increases Anti-Mage's resistance to magic damage.",
         "dynamic": {
-            "Resistance": ["26%", "34%", "42%", "50%"],
-            "Ability": "Passive"
-        }
+            "Ability": "Passive",
+            "Resistance": ["26%", "34%", "42%", "50%"]
+        },
+        "name": "Spell Shield",
+        "lore": "Years of meditation and obsession with revenge have hardened Anti-Mage's skin against mystical opponents.",
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/antimage_spell_shield_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/pQ6OlMLiA-A?hd=1&rel=0"
     }, {
-        "cooldown": ["70"],
-        "name": "Mana Void",
-        "videoUrl": "http://www.youtube.com/embed/qi1_xFE6nBI?hd=1&rel=0",
-        "lore": "After bringing enemies to their knees, Anti-Mage punishes them for their use of the arcane arts.",
-        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/antimage_mana_void_hp2.png",
         "description": "For each point of mana missing by the target unit, damage is dealt to it and surrounding enemies.  The main target is also mini-stunned.",
-        "mana": ["125", "200", "275"],
         "dynamic": {
-            "Affects": "Enemy Units",
-            "Ability": "Unit Target",
             "Radius": "300",
+            "Ability": "Unit Target",
             "Damage": "Magical",
-            "Stun duration": ["0.1", "0.2", "0.3"]
-        }
+            "Stun duration": ["0.1", "0.2", "0.3"],
+            "Affects": "Enemy Units"
+        },
+        "name": "Mana Void",
+        "lore": "After bringing enemies to their knees, Anti-Mage punishes them for their use of the arcane arts.",
+        "cooldown": ["70"],
+        "imgUrl": "http://media.steampowered.com/apps/dota2/images/abilities/antimage_mana_void_hp2.png",
+        "videoUrl": "http://www.youtube.com/embed/qi1_xFE6nBI?hd=1&rel=0",
+        "mana": ["125", "200", "275"]
     }],
-    "agiGain": "2.80",
     "hp": "530",
-    "amour": "2.08",
-    "attack": "27 - 31",
-    "range": "128",
-    "portraitUrl": "http://media.steampowered.com/apps/dota2/images/heroes/antimage_full.png",
-    "bio": "The monks of Turstarkuri watched the rugged valleys below their mountain monastery as wave after wave of invaders swept through the lower kingdoms. Ascetic and pragmatic, in their remote monastic eyrie they remained aloof fro
+    "attackMode": "Melee",
+    "name": "Anti-Mage",
+    "ms": "315",
+    "bio": "The monks of Turstarkuri watched the rugged valleys below their mountain monastery as wave after wave of invaders swept through the lower kingdoms. Ascetic and pragmatic, in their remote monastic eyrie they remained aloof from mundane strife, wrapped in meditation that knew no gods or elements of magic. Then came the Legion of the Dead God, crusaders with a sinister mandate to replace all
