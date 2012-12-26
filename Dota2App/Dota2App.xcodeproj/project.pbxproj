@@ -642,6 +642,7 @@
 		B18C9E50164E8B5A00ADE97A /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18C9E4F164E8B5A00ADE97A /* MasterViewController.m */; };
 		B18C9E53164E8B5A00ADE97A /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B18C9E52164E8B5A00ADE97A /* DetailViewController.m */; };
 		B1D6267A164EBBC300A207CD /* MockObjectGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D62679164EBBC300A207CD /* MockObjectGenerator.m */; };
+		B1D8820C168B2FE000470825 /* ItemsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1D8820B168B2FE000470825 /* ItemsTableViewController.m */; };
 		B1DAD96616503F0B00523981 /* HeroCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B1DAD96516503F0B00523981 /* HeroCell.m */; };
 		ED08F20A165D119C001C4424 /* Role.m in Sources */ = {isa = PBXBuildFile; fileRef = ED08F209165D119C001C4424 /* Role.m */; };
 		ED08F20F165D1332001C4424 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED08F20B165D131E001C4424 /* MobileCoreServices.framework */; };
@@ -1312,6 +1313,8 @@
 		B18C9E52164E8B5A00ADE97A /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = Dota2App/DetailViewController.m; sourceTree = "<group>"; };
 		B1D62678164EBBC300A207CD /* MockObjectGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MockObjectGenerator.h; path = ../MockObjectGenerator.h; sourceTree = "<group>"; };
 		B1D62679164EBBC300A207CD /* MockObjectGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MockObjectGenerator.m; path = ../MockObjectGenerator.m; sourceTree = "<group>"; };
+		B1D8820A168B2FE000470825 /* ItemsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemsTableViewController.h; sourceTree = "<group>"; };
+		B1D8820B168B2FE000470825 /* ItemsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsTableViewController.m; sourceTree = "<group>"; };
 		B1DAD96416503F0B00523981 /* HeroCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroCell.h; sourceTree = "<group>"; };
 		B1DAD96516503F0B00523981 /* HeroCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroCell.m; sourceTree = "<group>"; };
 		ED08F208165D119C001C4424 /* Role.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Role.h; sourceTree = "<group>"; };
@@ -2182,6 +2185,15 @@
 			name = "Core Data";
 			sourceTree = "<group>";
 		};
+		B1D88208168B2FAF00470825 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				B1D8820A168B2FE000470825 /* ItemsTableViewController.h */,
+				B1D8820B168B2FE000470825 /* ItemsTableViewController.m */,
+			);
+			name = Items;
+			sourceTree = "<group>";
+		};
 		B1DAD9671650440900523981 /* Custom Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -2196,6 +2208,7 @@
 		EDCA2303165537DE00FEDF75 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B1D88208168B2FAF00470825 /* Items */,
 				EDCF6450166CC0E900BBE08A /* Builds */,
 				B18C9E4E164E8B5A00ADE97A /* MasterViewController.h */,
 				B18C9E4F164E8B5A00ADE97A /* MasterViewController.m */,
@@ -2924,6 +2937,7 @@
 				5CD53E091685B5CE0002803D /* Role+DAO.m in Sources */,
 				5CD53E0C168642440002803D /* Hero.m in Sources */,
 				5CD53E241686495E0002803D /* Nickname.m in Sources */,
+				B1D8820C168B2FE000470825 /* ItemsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

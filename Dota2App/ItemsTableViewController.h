@@ -1,5 +1,5 @@
 //
-//  ItemsViewController.h
+//  ItemsTableViewController.h
 //  Dota2App
 //
 //  Created by Jamie O'Hara on 26/12/2012.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ItemsViewController : UIViewController
+@interface ItemsTableViewController : UITableViewController
 
 @end
