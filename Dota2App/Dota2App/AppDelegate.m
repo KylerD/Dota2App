@@ -47,9 +47,7 @@
         
         if(UseJSON)
         {
-            HeroParser * hp = [[HeroParser alloc] init];
-
-            [hp parse];
+            [[[HeroParser alloc] init] parse];
         }
         else{
             MockObjectGenerator *generator = [[MockObjectGenerator alloc] init];
