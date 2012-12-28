@@ -43,10 +43,19 @@
     i = [Item readObjectWithParamterName:@"itemID" andValue:itemID];
     
     if(!i){
+        
+        NSString * itemName= [itemDictionary valueForKey:@"dname"];
+        
+        NSRange range1 = [itemName rangeOfString:@"DOTA"];
+        NSRange range2 = [itemName rangeOfString:@"Mysterious Spell Scroll"];
+        if ((range1.location != NSNotFound) || (range2.location != NSNotFound)){
+            return nil;
+        }
+        
         i =  [Item createObject];
         
         i.itemID = itemID;
-        i.name = [itemDictionary valueForKey:@"dname"];
+        i.name = itemName;
         i.desc = [itemDictionary valueForKey:@"desc"];
         i.imgName = [itemDictionary valueForKey:@"img"];
         i.attribString = [itemDictionary valueForKey:@"attrib"];
@@ -59,19 +68,14 @@
             i.type = @"component";
         }
         
-        NSLog(@"Cost");
         i.cost = [NSNumber numberWithFloat:[[itemDictionary valueForKey:@"attrib"] floatValue]];
-        NSLog(@"cd");
         i.coolDown = [NSNumber numberWithFloat:[[itemDictionary valueForKey:@"cd"] floatValue]];
-        NSLog(@"mana");
         
         id tryMana = [NSNumber numberWithFloat:[[itemDictionary valueForKey:@"mc"] floatValue]];
         if([tryMana isKindOfClass:[NSNumber class]]){
             i.manaCost = tryMana;
         }
-        
-        NSLog(@"copms");
-        NSArray * compArray  = [itemDictionary valueForKey:@"components"];
+                NSArray * compArray  = [itemDictionary valueForKey:@"components"];
         if(compArray && ![compArray isKindOfClass:[NSNull class]]){ //Creating a transient prop for holding the item ID's (These items may not have been created yet!)
             
             NSMutableString * compArrayString = [NSMutableString string];
@@ -83,7 +87,6 @@
             [compArrayString deleteCharactersInRange:NSMakeRange(compArrayString.length-1,1)];
             i.compString = compArrayString;
         }
-        NSLog(@"done");
     }
     
     return i;

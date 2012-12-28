@@ -7,7 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
 
-@interface ItemsTableViewController : UITableViewController
+@class DetailViewController;
+
+@interface ItemsTableViewController : UITableViewController <NSFetchedResultsControllerDelegate, UISearchBarDelegate> {
+
+NSManagedObjectContext *managedObjectContext;
+NSFetchedResultsController *fetchedRC;
+NSString *fetchItem;
+NSString *savedSearchTerm;
+BOOL freshData;
+}
+
+@property (strong, nonatomic) DetailViewController *detailViewController;
 
 @end

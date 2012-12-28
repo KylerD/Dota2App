@@ -19,7 +19,7 @@
     NSData * itemsJSONData = [self getJSONData];
     NSDictionary * itemsJSONDict = [self getJSONDictionary:itemsJSONData];
     BOOL success = [self createItems:itemsJSONDict];
-    //[Item mapItemComponents];
+    //[Item mapItemComponents];//mapping done laziliy
     [Item saveDatabase];
     
     return success;
@@ -56,6 +56,7 @@
     for (NSString * key in itemIDs) {
         
         NSDictionary * itemDict  = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObject:[itemsJSONDict valueForKey:key]] forKeys:[NSArray arrayWithObject:key]];
+        
         
         if(![self createItem:itemDict]){
             failCount++;
