@@ -630,8 +630,6 @@
 		5C550F6E168B4B5300249B67 /* Itemparser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C550F6D168B4B5300249B67 /* Itemparser.m */; };
 		5C550F75168B4CF900249B67 /* Item+DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C550F74168B4CF900249B67 /* Item+DAO.m */; };
 		5C550F7E168B57B800249B67 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C550F7D168B57B800249B67 /* Item.m */; };
-		5C550F88168F084C00249B67 /* cd.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C550F86168F084C00249B67 /* cd.png */; };
-		5C550F89168F084C00249B67 /* mp.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C550F87168F084C00249B67 /* mp.png */; };
 		5C550FAB168F1B8E00249B67 /* Ability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C550FAA168F1B8E00249B67 /* Ability.m */; };
 		5CD53E061685B08E0002803D /* hero.json in Resources */ = {isa = PBXBuildFile; fileRef = 5CD53E051685B08E0002803D /* hero.json */; };
 		5CD53E091685B5CE0002803D /* Role+DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD53E081685B5CE0002803D /* Role+DAO.m */; };
@@ -656,6 +654,9 @@
 		ED08F212165D133F001C4424 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED08F20D165D1322001C4424 /* SystemConfiguration.framework */; };
 		ED08F245165D1930001C4424 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED08F243165D1923001C4424 /* Security.framework */; };
 		EDC2660F168F077A00734667 /* AbilityDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC2660E168F077A00734667 /* AbilityDetailViewController.m */; };
+		EDC2661A168F1E7900734667 /* ItemsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC26619168F1E7900734667 /* ItemsDetailViewController.m */; };
+		EDC26643168F45E700734667 /* cd.png in Resources */ = {isa = PBXBuildFile; fileRef = EDC26641168F45E700734667 /* cd.png */; };
+		EDC26644168F45E700734667 /* mp.png in Resources */ = {isa = PBXBuildFile; fileRef = EDC26642168F45E700734667 /* mp.png */; };
 		EDCA22E716550F2200FEDF75 /* hero.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA22E616550F2200FEDF75 /* hero.png */; };
 		EDCA22F3165525FE00FEDF75 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA22F2165525FE00FEDF75 /* Default-568h@2x.png */; };
 		EDCA22F71655286100FEDF75 /* Agility.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA22F41655286100FEDF75 /* Agility.png */; };
@@ -1302,8 +1303,6 @@
 		5C550F74168B4CF900249B67 /* Item+DAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Item+DAO.m"; sourceTree = "<group>"; };
 		5C550F7C168B57B800249B67 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
 		5C550F7D168B57B800249B67 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
-		5C550F86168F084C00249B67 /* cd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cd.png; sourceTree = "<group>"; };
-		5C550F87168F084C00249B67 /* mp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mp.png; sourceTree = "<group>"; };
 		5C550FA9168F1B8E00249B67 /* Ability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ability.h; sourceTree = "<group>"; };
 		5C550FAA168F1B8E00249B67 /* Ability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ability.m; sourceTree = "<group>"; };
 		5CD53E051685B08E0002803D /* hero.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = hero.json; path = ../../Scrapper/hero.json; sourceTree = "<group>"; };
@@ -1342,6 +1341,10 @@
 		ED08F243165D1923001C4424 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		EDC2660D168F077A00734667 /* AbilityDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbilityDetailViewController.h; sourceTree = "<group>"; };
 		EDC2660E168F077A00734667 /* AbilityDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbilityDetailViewController.m; sourceTree = "<group>"; };
+		EDC26618168F1E7900734667 /* ItemsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemsDetailViewController.h; sourceTree = "<group>"; };
+		EDC26619168F1E7900734667 /* ItemsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsDetailViewController.m; sourceTree = "<group>"; };
+		EDC26641168F45E700734667 /* cd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cd.png; sourceTree = "<group>"; };
+		EDC26642168F45E700734667 /* mp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mp.png; sourceTree = "<group>"; };
 		EDCA22E616550F2200FEDF75 /* hero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero.png; sourceTree = "<group>"; };
 		EDCA22F2165525FE00FEDF75 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		EDCA22F41655286100FEDF75 /* Agility.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Agility.png; sourceTree = "<group>"; };
@@ -1451,8 +1454,8 @@
 		5C3CAEEB1657F2A400E8341C /* default */ = {
 			isa = PBXGroup;
 			children = (
-				5C550F86168F084C00249B67 /* cd.png */,
-				5C550F87168F084C00249B67 /* mp.png */,
+				EDC26641168F45E700734667 /* cd.png */,
+				EDC26642168F45E700734667 /* mp.png */,
 				5C3CAEEC1657F2A400E8341C /* Icon_Agi.png */,
 				5C3CAEED1657F2A400E8341C /* Icon_Int.png */,
 				5C3CAEEE1657F2A400E8341C /* Icon_Str.png */,
@@ -2243,6 +2246,8 @@
 			children = (
 				B1D8820A168B2FE000470825 /* ItemsTableViewController.h */,
 				B1D8820B168B2FE000470825 /* ItemsTableViewController.m */,
+				EDC26618168F1E7900734667 /* ItemsDetailViewController.h */,
+				EDC26619168F1E7900734667 /* ItemsDetailViewController.m */,
 			);
 			name = Items;
 			sourceTree = "<group>";
@@ -2961,8 +2966,8 @@
 				EDCF644B166CB6FD00BBE08A /* items.png in Resources */,
 				5CD53E061685B08E0002803D /* hero.json in Resources */,
 				5C550F67168B4A7600249B67 /* item.json in Resources */,
-				5C550F88168F084C00249B67 /* cd.png in Resources */,
-				5C550F89168F084C00249B67 /* mp.png in Resources */,
+				EDC26643168F45E700734667 /* cd.png in Resources */,
+				EDC26644168F45E700734667 /* mp.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2997,6 +3002,7 @@
 				5C550F7E168B57B800249B67 /* Item.m in Sources */,
 				5C550FAB168F1B8E00249B67 /* Ability.m in Sources */,
 				EDC2660F168F077A00734667 /* AbilityDetailViewController.m in Sources */,
+				EDC2661A168F1E7900734667 /* ItemsDetailViewController.m in Sources */,
 				17D53795168F37490058C131 /* Hero.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,6 +10,7 @@
 #import "AppDelegate.h"
 #import "DetailViewController.h"
 #import "Item+DAO.h"
+#import "ItemsDetailViewController.h"
 
 @interface ItemsTableViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
@@ -276,12 +277,12 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"showDetail"]) {
+    if ([[segue identifier] isEqualToString:@"ItemDetail"]) {
         
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        Hero *selectedHero = [fetchedRC objectAtIndexPath:indexPath];
-        DetailViewController *detailVC = (DetailViewController *)[segue destinationViewController];
-        [detailVC setHero:selectedHero];
+        Item *selectedItem = [fetchedRC objectAtIndexPath:indexPath];
+        ItemsDetailViewController *detailVC = (ItemsDetailViewController *)[segue destinationViewController];
+        [detailVC setItem:selectedItem];
     }
 }
 
