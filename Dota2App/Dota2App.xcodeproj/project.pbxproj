@@ -10,6 +10,7 @@
 		0C493A8D1665065600A5690B /* armor.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C493A8A1665065600A5690B /* armor.png */; };
 		0C493A8E1665065600A5690B /* movementSpeed.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C493A8B1665065600A5690B /* movementSpeed.png */; };
 		0C493A8F1665065600A5690B /* damage.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C493A8C1665065600A5690B /* damage.png */; };
+		17D53795168F37490058C131 /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D53794168F37490058C131 /* Hero.m */; };
 		5C3CAEE91657D58200E8341C /* HeroParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3CAEE81657D58200E8341C /* HeroParser.m */; };
 		5C3CB1531657F2A400E8341C /* Icon_Agi.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAEEC1657F2A400E8341C /* Icon_Agi.png */; };
 		5C3CB1541657F2A400E8341C /* Icon_Int.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAEED1657F2A400E8341C /* Icon_Int.png */; };
@@ -634,7 +635,6 @@
 		5C550FAB168F1B8E00249B67 /* Ability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C550FAA168F1B8E00249B67 /* Ability.m */; };
 		5CD53E061685B08E0002803D /* hero.json in Resources */ = {isa = PBXBuildFile; fileRef = 5CD53E051685B08E0002803D /* hero.json */; };
 		5CD53E091685B5CE0002803D /* Role+DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD53E081685B5CE0002803D /* Role+DAO.m */; };
-		5CD53E0C168642440002803D /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD53E0B168642430002803D /* Hero.m */; };
 		5CD53E241686495E0002803D /* Nickname.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD53E231686495E0002803D /* Nickname.m */; };
 		B18C9E32164E8B5900ADE97A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C9E31164E8B5900ADE97A /* UIKit.framework */; };
 		B18C9E34164E8B5900ADE97A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18C9E33164E8B5900ADE97A /* Foundation.framework */; };
@@ -675,6 +675,8 @@
 		0C493A8A1665065600A5690B /* armor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = armor.png; sourceTree = "<group>"; };
 		0C493A8B1665065600A5690B /* movementSpeed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = movementSpeed.png; sourceTree = "<group>"; };
 		0C493A8C1665065600A5690B /* damage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = damage.png; sourceTree = "<group>"; };
+		17D53793168F37490058C131 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
+		17D53794168F37490058C131 /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
 		5C3CAEE71657D58200E8341C /* HeroParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroParser.h; sourceTree = "<group>"; };
 		5C3CAEE81657D58200E8341C /* HeroParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroParser.m; sourceTree = "<group>"; };
 		5C3CAEEC1657F2A400E8341C /* Icon_Agi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_Agi.png; sourceTree = "<group>"; };
@@ -1307,8 +1309,6 @@
 		5CD53E051685B08E0002803D /* hero.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = hero.json; path = ../../Scrapper/hero.json; sourceTree = "<group>"; };
 		5CD53E071685B5CE0002803D /* Role+DAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Role+DAO.h"; sourceTree = "<group>"; };
 		5CD53E081685B5CE0002803D /* Role+DAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Role+DAO.m"; sourceTree = "<group>"; };
-		5CD53E0A168642430002803D /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
-		5CD53E0B168642430002803D /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
 		5CD53E221686495E0002803D /* Nickname.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nickname.h; sourceTree = "<group>"; };
 		5CD53E231686495E0002803D /* Nickname.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nickname.m; sourceTree = "<group>"; };
 		B18C9E2D164E8B5900ADE97A /* Dota2App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dota2App.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2131,10 +2131,10 @@
 				5C550FAA168F1B8E00249B67 /* Ability.m */,
 				5C550F7C168B57B800249B67 /* Item.h */,
 				5C550F7D168B57B800249B67 /* Item.m */,
+				17D53793168F37490058C131 /* Hero.h */,
+				17D53794168F37490058C131 /* Hero.m */,
 				5CD53E221686495E0002803D /* Nickname.h */,
 				5CD53E231686495E0002803D /* Nickname.m */,
-				5CD53E0A168642430002803D /* Hero.h */,
-				5CD53E0B168642430002803D /* Hero.m */,
 				ED08F208165D119C001C4424 /* Role.h */,
 				ED08F209165D119C001C4424 /* Role.m */,
 			);
@@ -2990,7 +2990,6 @@
 				EDCF6453166CF3CF00BBE08A /* Ability+DAO.m in Sources */,
 				EDCF6459166D0C5B00BBE08A /* AbilityCell.m in Sources */,
 				5CD53E091685B5CE0002803D /* Role+DAO.m in Sources */,
-				5CD53E0C168642440002803D /* Hero.m in Sources */,
 				5CD53E241686495E0002803D /* Nickname.m in Sources */,
 				B1D8820C168B2FE000470825 /* ItemsTableViewController.m in Sources */,
 				5C550F6E168B4B5300249B67 /* Itemparser.m in Sources */,
@@ -2998,6 +2997,7 @@
 				5C550F7E168B57B800249B67 /* Item.m in Sources */,
 				5C550FAB168F1B8E00249B67 /* Ability.m in Sources */,
 				EDC2660F168F077A00734667 /* AbilityDetailViewController.m in Sources */,
+				17D53795168F37490058C131 /* Hero.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -24,8 +24,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *damagePointsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *movementSpeedPointsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *armorPointsLabel;
+@property (weak, nonatomic) IBOutlet UITextView *bioTextView;
 @property (weak, nonatomic) IBOutlet UILabel *roleLabel;
-@property (weak, nonatomic) IBOutlet UILabel *bioLabel;
+
 @property (weak, nonatomic) IBOutlet UILabel *turnRateLabel;
 @property (weak, nonatomic) IBOutlet UILabel *sightRangeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *attackRangeLabel;
