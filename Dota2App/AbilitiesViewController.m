@@ -11,6 +11,7 @@
 #import "Ability.h"
 #import "DetailViewController.h"
 #import "AbilityCell.h"
+#import "AbilityDetailViewController.h"
 
 @interface AbilitiesViewController ()
 - (void)configureView;
@@ -95,6 +96,17 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     //custom code for images for now
     NSString *imageName = [NSString stringWithFormat:@"%@.png", ability.name];
     abilityCell.cellImageView.image = [UIImage imageNamed:imageName];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"AbilityDetail"]) {
+        
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        Ability *selectedAbility = [abilities objectAtIndex: [indexPath row]];
+        AbilityDetailViewController *abilityDetailVC = (AbilityDetailViewController *)[segue destinationViewController];
+        [abilityDetailVC setAbility:selectedAbility];
+    }
 }
 
 @end

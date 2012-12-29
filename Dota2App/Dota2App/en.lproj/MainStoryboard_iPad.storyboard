@@ -730,7 +730,7 @@
                                         <connections>
                                             <outlet property="cellImageView" destination="B4V-Tl-GXk" id="YUV-xL-sU8"/>
                                             <outlet property="cellTitleLabel" destination="Dy1-xE-GOd" id="9CP-Ot-gkK"/>
-                                            <segue destination="j3C-pY-Kim" kind="push" id="dXb-qi-lBf"/>
+                                            <segue destination="j3C-pY-Kim" kind="push" identifier="AbilityDetail" id="dXb-qi-lBf"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -752,10 +752,10 @@
             </objects>
             <point key="canvasLocation" x="575" y="1263"/>
         </scene>
-        <!--View Controller-->
+        <!--Ability Detail View Controller-->
         <scene sceneID="hbI-ge-RXI">
             <objects>
-                <viewController id="j3C-pY-Kim" sceneMemberID="viewController">
+                <viewController id="j3C-pY-Kim" customClass="AbilityDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EA3-dT-zDy">
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
