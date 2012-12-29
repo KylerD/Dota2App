@@ -64,35 +64,23 @@
     
     self.roleLabel.text = hero.role;
     
+    self.bioLabel.lineBreakMode = UILineBreakModeWordWrap;
+    self.bioLabel.numberOfLines = 0;
 
     
     self.turnRateLabel.text = [NSString stringWithFormat:@"%@",hero.turnRate];
     self.sightRangeLabel.text =  hero.sight;
     self.attackRangeLabel.text =  [NSString stringWithFormat:@"%@",hero.attackRange];
     self.missileSpeedLabel.text =   [NSString stringWithFormat:@"%@",hero.missileSpeed];
-
+    
+    self.bioLabel.text = hero.bio;
+    
+    [self.bioLabel sizeToFit];
     //for testing only
-    
 
-    
 
-    self.bioTextView.text = hero.bio;
-    
-#define MAX_HEIGHT 300
-    
-    NSString *foo = hero.bio;
-    CGSize size = [foo sizeWithFont:[UIFont systemFontOfSize:16]
-                  constrainedToSize:CGSizeMake(self.bioTextView.frame.size.width, MAX_HEIGHT)
-                      lineBreakMode:UILineBreakModeWordWrap];
-    
-    
-    [self.bioTextView setFont:[UIFont systemFontOfSize:16]];
-    [self.bioTextView setFrame:CGRectMake(self.bioTextView.frame.origin.x, self.bioTextView.frame.origin.y, self.bioTextView.frame.size.width, size.height + 10)];
-    
-    [self.bioTextView setBackgroundColor:[UIColor colorWithRed:35 green:36 blue:37 alpha:0]];
+    [self.view setContentSize:CGSizeMake(self.view.frame.size.width- 200, (self.bioLabel.frame.origin.y + self.bioLabel.frame.size.height)+50)];
 
-    
-    
     
     //To access abilities use hero.hasAbility (NSSet *), it contains Ability objects.
 }
@@ -126,6 +114,7 @@
     [self setArmorLevelOneLabel:nil];
     [self setAttackSpeedLevelOneLabel:nil];
     [self setBioTextView:nil];
+    [self setBioLabel:nil];
     [super viewDidUnload];
 }
 
