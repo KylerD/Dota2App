@@ -725,6 +725,7 @@
                 <relationship kind="outlet" name="sightRangeLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="strengthPointsLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="turnRateLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="view" candidateClass="UIScrollView"/>
             </relationships>
         </class>
         <class className="ItemsTableViewController" superclassName="UITableViewController">
