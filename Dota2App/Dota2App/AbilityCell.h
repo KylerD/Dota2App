@@ -10,7 +10,14 @@
 
 @interface AbilityCell : UITableViewCell
 
-@property (nonatomic, strong) IBOutlet UILabel *cellTitleLabel;
-@property (nonatomic, strong) IBOutlet UIImageView *cellImageView;
+@property (nonatomic, strong) IBOutlet UILabel * abilityName;
+@property (nonatomic, strong) IBOutlet UIImageView *icon;
+@property (nonatomic, strong) IBOutlet UILabel * mp;
+@property (nonatomic, strong) IBOutlet UIImageView *mpIcon;
+@property (nonatomic, strong) IBOutlet UILabel * cd;
+@property (nonatomic, strong) IBOutlet UIImageView *cdIcon;
+@property (nonatomic, strong) IBOutlet UILabel * isPassiveLabel;
+
+- (void)isPassive:(BOOL)isPassive;
 
 @end

@@ -18,13 +18,13 @@
 + (Hero *)heroFromDictionary:(NSDictionary*)heroDictionary {
     NSString *heroName = [self interpretValue:[heroDictionary valueForKey:@"name"]];
     
-   // NSLog(@"Creating Hero with Dictionary:%@",heroDictionary);
+    // NSLog(@"Creating Hero with Dictionary:%@",heroDictionary);
     
     Hero* hero = [Hero readOrCreateObjectWithParamterName:@"name" andValue:heroName];
     
     //TODO: Map dict to values..
     NSString *attributeMultiCase = [self interpretValue:[heroDictionary valueForKey:@"primary"]];
-
+    
     NSString *attributeLowerCase = [attributeMultiCase lowercaseString];
     /* create the new string */
     NSString *attribute = [attributeLowerCase capitalizedString];
@@ -48,32 +48,30 @@
     hero.strPoints = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"str"]]];
     hero.agilGain = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"agiGain"]]];
     hero.attackRange = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"range"]]];
-    
+    hero.sight = [self interpretValue:[heroDictionary valueForKey:@"sight"]];
+    hero.damage = [self interpretValue:[heroDictionary valueForKey:@"attack"]];
     hero.faction = [self interpretValue:[heroDictionary valueForKey:@"faction"]];
+    hero.attackType = [self interpretValue:[heroDictionary valueForKey:@"attackMode"]];
     if(!hero.faction){
         hero.faction = @"Unknown";
     }
-    
-    //hero.roles = [self interpretValue:[heroDictionary valueForKey:@"roles"]];
-    //hero.attackMode = [self interpretValue:[heroDictionary valueForKey:@"roles"]];
-    //hero.url = [self interpretValue:[heroDictionary valueForKey:@"url"]];
+
+    hero.strGain = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"strGain"]]];
+    hero.agilPoints = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"agi"]]];
+    hero.url = [self interpretValue:[heroDictionary valueForKey:@"url"]];
     hero.missileSpeed = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"missileSpeed"]]];
     hero.intelPoints = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"int"]]];
-    //hero.damage = [self interpretValue:[heroDictionary valueForKey:@"attack"]];
     hero.intelGain = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"intGain"]]];
-    //hero.sight = [self interpretValue:[heroDictionary valueForKey:@"sight"]];
+
     hero.ms = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"ms"]]];
-    
-    
-    
-    
+
     hero.name = heroName;
     //TODO: Create preprocessed dictionary of Nicknames and use it to create the nicknames, search mechanisim tested and works..
-//    if([heroName isEqualToString:@"Crystal Maiden"]){
-//        Nickname * test = [Nickname createObject];
-//        test.name = @"cm";
-//        [hero addNicknamesObject:test];
-//    }
+    //    if([heroName isEqualToString:@"Crystal Maiden"]){
+    //        Nickname * test = [Nickname createObject];
+    //        test.name = @"cm";
+    //        [hero addNicknamesObject:test];
+    //    }
     
     //ROLES
     NSArray * roleStrings =  [heroDictionary valueForKey:@"roles"];

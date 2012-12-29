@@ -13,7 +13,7 @@
 @end
 @implementation InformationViewController
 @synthesize hero, heroImageView;
-@synthesize damagePointsLabel, missileSpeedLabel, intelligencePointsLabel, attackSpeedLevelOneLabel, attackRangeLabel, attackDurationLabel, heroNameLabel, armorLevelOneLabel, armorPointsLabel, castDurationLabel, movementSpeedPointsLabel, damageLevelOneLabel, factionImageView, bioLabel,roleLabel,primaryAttributeImageView, hitPointsLevelOneLabel, agilityPointsLabel, sightRangeLabel, manaLevelOneLabel, strengthPointsLabel, turnRateLabel;
+@synthesize damagePointsLabel, missileSpeedLabel, intelligencePointsLabel, attackSpeedLevelOneLabel, attackRangeLabel, attackDurationLabel, heroNameLabel, armorLevelOneLabel, armorPointsLabel, castDurationLabel, movementSpeedPointsLabel, damageLevelOneLabel, factionImageView,roleLabel,primaryAttributeImageView, hitPointsLevelOneLabel, agilityPointsLabel, sightRangeLabel, manaLevelOneLabel, strengthPointsLabel, turnRateLabel;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -51,40 +51,46 @@
     self.heroNameLabel.text = hero.name;
     self.factionImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png",hero.faction]];
     self.heroImageView.image = [UIImage imageNamed:hero.detailImage];
-
+    
     
     self.strengthPointsLabel.text = [NSString stringWithFormat:@"%@ +%@",hero.strPoints, hero.strGain];
     self.intelligencePointsLabel.text = [NSString stringWithFormat:@"%@ +%@",hero.intelPoints, hero.intelGain];
     
     self.agilityPointsLabel.text = [NSString stringWithFormat:@"%@ +%@",hero.agilPoints, hero.agilGain];
     
-    self.damagePointsLabel.text = [NSString stringWithFormat:@"%@ - %@",hero.dmgMin, hero.dmgMax];
-    //    self.movementSpeedPointsLabel.text = hero.movementSpeed;
+    self.damagePointsLabel.text = hero.damage;
+    self.movementSpeedPointsLabel.text = [NSString stringWithFormat:@"%@",hero.ms];
     self.armorPointsLabel.text = [NSString stringWithFormat:@"%@",hero.armour];
     
     self.roleLabel.text = hero.role;
     
-    self.bioLabel.lineBreakMode = UILineBreakModeWordWrap;
-    self.bioLabel.numberOfLines = 0;
+
     
     self.turnRateLabel.text = [NSString stringWithFormat:@"%@",hero.turnRate];
-    self.sightRangeLabel.text =  [NSString stringWithFormat:@"%@/%@",hero.sightDay,hero.sightNight];
+    self.sightRangeLabel.text =  hero.sight;
     self.attackRangeLabel.text =  [NSString stringWithFormat:@"%@",hero.attackRange];
     self.missileSpeedLabel.text =   [NSString stringWithFormat:@"%@",hero.missileSpeed];
-    self.attackDurationLabel.text =   [NSString stringWithFormat:@"%@",hero.attackBackswing];
-    self.castDurationLabel.text =   [NSString stringWithFormat:@"%@",hero.castBackswing];
-    
+
     //for testing only
     
-    self.bioLabel.text = hero.bio;
+
     
-    [self.bioLabel sizeToFit];
+
+    self.bioTextView.text = hero.bio;
     
-    self.hitPointsLevelOneLabel.text = [NSString stringWithFormat:@"%@",hero.hp];
-    self.manaLevelOneLabel.text = [NSString stringWithFormat:@"%@",hero.mana];
-    self.damageLevelOneLabel.text = [NSString stringWithFormat:@"%@-%@",hero.dmgMin, hero.dmgMax];
-    self.armorLevelOneLabel.text = [NSString stringWithFormat:@"%@",hero.armour];
-    self.attackSpeedLevelOneLabel.text = [NSString stringWithFormat:@"%@",hero.attackBackswing];
+#define MAX_HEIGHT 300
+    
+    NSString *foo = hero.bio;
+    CGSize size = [foo sizeWithFont:[UIFont systemFontOfSize:16]
+                  constrainedToSize:CGSizeMake(self.bioTextView.frame.size.width, MAX_HEIGHT)
+                      lineBreakMode:UILineBreakModeWordWrap];
+    
+    
+    [self.bioTextView setFont:[UIFont systemFontOfSize:16]];
+    [self.bioTextView setFrame:CGRectMake(self.bioTextView.frame.origin.x, self.bioTextView.frame.origin.y, self.bioTextView.frame.size.width, size.height + 10)];
+    
+    [self.bioTextView setBackgroundColor:[UIColor colorWithRed:35 green:36 blue:37 alpha:0]];
+
     
     
     
@@ -95,7 +101,7 @@
     [self setHeroImageView:nil];
     [self setHeroNameLabel:nil];
     [self setPrimaryAttributeImageView:nil];
-    [self setBioLabel:nil];
+
     [self setFactionImageView:nil];
     
     
@@ -107,7 +113,7 @@
     [self setMovementSpeedPointsLabel:nil];
     [self setArmorPointsLabel:nil];
     [self setRoleLabel:nil];
-    [self setBioLabel:nil];
+
     [self setTurnRateLabel:nil];
     [self setSightRangeLabel:nil];
     [self setAttackRangeLabel:nil];
@@ -119,6 +125,7 @@
     [self setDamageLevelOneLabel:nil];
     [self setArmorLevelOneLabel:nil];
     [self setAttackSpeedLevelOneLabel:nil];
+    [self setBioTextView:nil];
     [super viewDidUnload];
 }
 

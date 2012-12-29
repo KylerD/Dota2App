@@ -2,29 +2,23 @@
 //  Hero.h
 //  Dota2App
 //
-//  Created by Luke McNeice on 22/12/2012.
+//  Created by Stuart McKee on 29/12/2012.
 //
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class Ability, Role;
+@class Ability, Nickname, Role;
 
 @interface Hero : NSManagedObject
 
 @property (nonatomic, retain) NSNumber * agilGain;
 @property (nonatomic, retain) NSNumber * agilPoints;
 @property (nonatomic, retain) NSNumber * armour;
-@property (nonatomic, retain) NSNumber * attackBackswing;
-@property (nonatomic, retain) NSNumber * attackPoints;
 @property (nonatomic, retain) NSNumber * attackRange;
 @property (nonatomic, retain) NSString * bio;
-@property (nonatomic, retain) NSNumber * castBackswing;
-@property (nonatomic, retain) NSNumber * castPoints;
 @property (nonatomic, retain) NSString * detailImage;
-@property (nonatomic, retain) NSNumber * dmgMax;
-@property (nonatomic, retain) NSNumber * dmgMin;
 @property (nonatomic, retain) NSString * faction;
 @property (nonatomic, retain) NSString * heroId;
 @property (nonatomic, retain) NSNumber * hp;
@@ -40,14 +34,16 @@
 @property (nonatomic, retain) NSString * primaryAttribute;
 @property (nonatomic, retain) NSString * quote;
 @property (nonatomic, retain) NSString * role;
-@property (nonatomic, retain) NSNumber * sightDay;
-@property (nonatomic, retain) NSNumber * sightNight;
 @property (nonatomic, retain) NSNumber * strGain;
 @property (nonatomic, retain) NSNumber * strPoints;
 @property (nonatomic, retain) NSNumber * turnRate;
+@property (nonatomic, retain) NSString * damage;
+@property (nonatomic, retain) NSString * sight;
+@property (nonatomic, retain) NSString * attackType;
+@property (nonatomic, retain) NSString * url;
 @property (nonatomic, retain) NSSet *abilities;
-@property (nonatomic, retain) NSSet *roles;
 @property (nonatomic, retain) NSSet *nicknames;
+@property (nonatomic, retain) NSSet *roles;
 @end
 
 @interface Hero (CoreDataGeneratedAccessors)
@@ -57,14 +53,14 @@
 - (void)addAbilities:(NSSet *)values;
 - (void)removeAbilities:(NSSet *)values;
 
+- (void)addNicknamesObject:(Nickname *)value;
+- (void)removeNicknamesObject:(Nickname *)value;
+- (void)addNicknames:(NSSet *)values;
+- (void)removeNicknames:(NSSet *)values;
+
 - (void)addRolesObject:(Role *)value;
 - (void)removeRolesObject:(Role *)value;
 - (void)addRoles:(NSSet *)values;
 - (void)removeRoles:(NSSet *)values;
-
-- (void)addNicknamesObject:(NSManagedObject *)value;
-- (void)removeNicknamesObject:(NSManagedObject *)value;
-- (void)addNicknames:(NSSet *)values;
-- (void)removeNicknames:(NSSet *)values;
 
 @end
