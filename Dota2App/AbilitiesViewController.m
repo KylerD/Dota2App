@@ -52,13 +52,11 @@
 
 - (void)configureView {
     abilities = [hero.abilities allObjects];
-    
 }
 
 #pragma mark - Table View
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
 }
 
@@ -124,8 +122,9 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
         
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         Ability *selectedAbility = [abilities objectAtIndex: [indexPath row]];
-        AbilityDetailViewController *abilityDetailVC = (AbilityDetailViewController *)[segue destinationViewController];
-        [abilityDetailVC setAbility:selectedAbility];
+      AbilityDetailViewController *abilityDetailVC = (AbilityDetailViewController *)[segue destinationViewController];
+      [abilityDetailVC setAbility:selectedAbility];
+
     }
 }
 

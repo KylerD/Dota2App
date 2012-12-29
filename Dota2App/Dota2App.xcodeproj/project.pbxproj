@@ -632,6 +632,8 @@
 		5C550F88168F084C00249B67 /* cd.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C550F86168F084C00249B67 /* cd.png */; };
 		5C550F89168F084C00249B67 /* mp.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C550F87168F084C00249B67 /* mp.png */; };
 		5C550FAB168F1B8E00249B67 /* Ability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C550FAA168F1B8E00249B67 /* Ability.m */; };
+		5C63691E168F431D00208D19 /* AbilityVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C63691D168F431D00208D19 /* AbilityVideoViewController.m */; };
+		5C63691F168F44CF00208D19 /* YouTubeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C636918168F307400208D19 /* YouTubeView.m */; };
 		5CD53E061685B08E0002803D /* hero.json in Resources */ = {isa = PBXBuildFile; fileRef = 5CD53E051685B08E0002803D /* hero.json */; };
 		5CD53E091685B5CE0002803D /* Role+DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD53E081685B5CE0002803D /* Role+DAO.m */; };
 		5CD53E0C168642440002803D /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD53E0B168642430002803D /* Hero.m */; };
@@ -1304,6 +1306,10 @@
 		5C550F87168F084C00249B67 /* mp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mp.png; sourceTree = "<group>"; };
 		5C550FA9168F1B8E00249B67 /* Ability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ability.h; sourceTree = "<group>"; };
 		5C550FAA168F1B8E00249B67 /* Ability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ability.m; sourceTree = "<group>"; };
+		5C636917168F307400208D19 /* YouTubeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YouTubeView.h; sourceTree = "<group>"; };
+		5C636918168F307400208D19 /* YouTubeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YouTubeView.m; sourceTree = "<group>"; };
+		5C63691C168F431D00208D19 /* AbilityVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbilityVideoViewController.h; sourceTree = "<group>"; };
+		5C63691D168F431D00208D19 /* AbilityVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbilityVideoViewController.m; sourceTree = "<group>"; };
 		5CD53E051685B08E0002803D /* hero.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = hero.json; path = ../../Scrapper/hero.json; sourceTree = "<group>"; };
 		5CD53E071685B5CE0002803D /* Role+DAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Role+DAO.h"; sourceTree = "<group>"; };
 		5CD53E081685B5CE0002803D /* Role+DAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Role+DAO.m"; sourceTree = "<group>"; };
@@ -1392,10 +1398,14 @@
 		5C3CAEE11657D4F300E8341C /* Abilities */ = {
 			isa = PBXGroup;
 			children = (
+				5C636917168F307400208D19 /* YouTubeView.h */,
+				5C636918168F307400208D19 /* YouTubeView.m */,
 				EDCA230716553AB100FEDF75 /* AbilitiesViewController.h */,
 				EDCA230816553AB100FEDF75 /* AbilitiesViewController.m */,
 				EDC2660D168F077A00734667 /* AbilityDetailViewController.h */,
 				EDC2660E168F077A00734667 /* AbilityDetailViewController.m */,
+				5C63691C168F431D00208D19 /* AbilityVideoViewController.h */,
+				5C63691D168F431D00208D19 /* AbilityVideoViewController.m */,
 			);
 			name = Abilities;
 			sourceTree = "<group>";
@@ -2973,6 +2983,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C63691F168F44CF00208D19 /* YouTubeView.m in Sources */,
 				5C3CB3C71659039200E8341C /* NSManagedObject+CRUD.m in Sources */,
 				B18C9E40164E8B5900ADE97A /* main.m in Sources */,
 				B18C9E44164E8B5900ADE97A /* AppDelegate.m in Sources */,
@@ -2998,6 +3009,7 @@
 				5C550F7E168B57B800249B67 /* Item.m in Sources */,
 				5C550FAB168F1B8E00249B67 /* Ability.m in Sources */,
 				EDC2660F168F077A00734667 /* AbilityDetailViewController.m in Sources */,
+				5C63691E168F431D00208D19 /* AbilityVideoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3055,6 +3067,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = armv7;
 			};
 			name = Debug;
 		};
@@ -3077,6 +3090,7 @@
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = armv7;
 			};
 			name = Release;
 		};
