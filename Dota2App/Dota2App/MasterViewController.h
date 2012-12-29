@@ -12,7 +12,7 @@
 
 #import <CoreData/CoreData.h>
 
-@interface MasterViewController : UITableViewController <NSFetchedResultsControllerDelegate, UISearchBarDelegate> {
+@interface MasterViewController : UITableViewController <NSFetchedResultsControllerDelegate, UISearchBarDelegate, UISearchDisplayDelegate> {
     NSManagedObjectContext *managedObjectContext;
     NSFetchedResultsController *fetchedRC;
     NSString *fetchItem;

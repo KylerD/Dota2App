@@ -11,6 +11,7 @@
 #import "Ability.h"
 #import "DetailViewController.h"
 #import "AbilityCell.h"
+#import "AbilityDetailViewController.h"
 
 @interface AbilitiesViewController ()
 - (void)configureView;
@@ -115,6 +116,17 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     
     abilityCell.cd.text= cd;
     
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"AbilityDetail"]) {
+        
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        Ability *selectedAbility = [abilities objectAtIndex: [indexPath row]];
+        AbilityDetailViewController *abilityDetailVC = (AbilityDetailViewController *)[segue destinationViewController];
+        [abilityDetailVC setAbility:selectedAbility];
+    }
 }
 
 @end

@@ -655,6 +655,7 @@
 		ED08F20F165D1332001C4424 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED08F20B165D131E001C4424 /* MobileCoreServices.framework */; };
 		ED08F212165D133F001C4424 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED08F20D165D1322001C4424 /* SystemConfiguration.framework */; };
 		ED08F245165D1930001C4424 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED08F243165D1923001C4424 /* Security.framework */; };
+		EDC2660F168F077A00734667 /* AbilityDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC2660E168F077A00734667 /* AbilityDetailViewController.m */; };
 		EDCA22E716550F2200FEDF75 /* hero.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA22E616550F2200FEDF75 /* hero.png */; };
 		EDCA22F3165525FE00FEDF75 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA22F2165525FE00FEDF75 /* Default-568h@2x.png */; };
 		EDCA22F71655286100FEDF75 /* Agility.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCA22F41655286100FEDF75 /* Agility.png */; };
@@ -1339,6 +1340,8 @@
 		ED08F20B165D131E001C4424 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		ED08F20D165D1322001C4424 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		ED08F243165D1923001C4424 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		EDC2660D168F077A00734667 /* AbilityDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbilityDetailViewController.h; sourceTree = "<group>"; };
+		EDC2660E168F077A00734667 /* AbilityDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbilityDetailViewController.m; sourceTree = "<group>"; };
 		EDCA22E616550F2200FEDF75 /* hero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hero.png; sourceTree = "<group>"; };
 		EDCA22F2165525FE00FEDF75 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		EDCA22F41655286100FEDF75 /* Agility.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Agility.png; sourceTree = "<group>"; };
@@ -1391,6 +1394,8 @@
 			children = (
 				EDCA230716553AB100FEDF75 /* AbilitiesViewController.h */,
 				EDCA230816553AB100FEDF75 /* AbilitiesViewController.m */,
+				EDC2660D168F077A00734667 /* AbilityDetailViewController.h */,
+				EDC2660E168F077A00734667 /* AbilityDetailViewController.m */,
 			);
 			name = Abilities;
 			sourceTree = "<group>";
@@ -2992,6 +2997,7 @@
 				5C550F75168B4CF900249B67 /* Item+DAO.m in Sources */,
 				5C550F7E168B57B800249B67 /* Item.m in Sources */,
 				5C550FAB168F1B8E00249B67 /* Ability.m in Sources */,
+				EDC2660F168F077A00734667 /* AbilityDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

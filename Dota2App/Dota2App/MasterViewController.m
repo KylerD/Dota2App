@@ -287,11 +287,9 @@
     [self.tableView reloadData];
 }
 
-- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
-{   
-    [self filterContentForSearchText:[self.searchDisplayController.searchBar text] scope:nil];
-    
-    return YES;
+- (void)searchBar:(UISearchBar *)theSearchBar textDidChange:(NSString *)searchText {
+
+    [self filterContentForSearchText:searchText scope:nil];
 }
 
 #pragma mark - Screen Navigation
