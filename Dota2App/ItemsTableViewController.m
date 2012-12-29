@@ -81,7 +81,7 @@
     fetchItem = @"Item";
     AppDelegate * del = [[UIApplication sharedApplication] delegate];
     managedObjectContext = del.managedObjectContext;
-    
+
     self.tableView.scrollsToTop = YES;
     
     [self configureView];
@@ -108,6 +108,12 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    AppDelegate * del = [[UIApplication sharedApplication] delegate];
+    managedObjectContext = del.managedObjectContext;
+    
+    del.itemNavStack = [self.storyboard instantiateViewControllerWithIdentifier:@"ItemNav"];
+    NSArray *newNavStack = [NSArray arrayWithObjects:[self.splitViewController.viewControllers objectAtIndex:0], del.itemNavStack, nil];
+    self.splitViewController.viewControllers = newNavStack;
 }
 
 - (void)viewWillDisappear:(BOOL)animated

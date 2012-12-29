@@ -84,7 +84,7 @@
     fetchItem = @"Hero";
     AppDelegate *del = [[UIApplication sharedApplication] delegate];
     managedObjectContext = del.managedObjectContext;
-
+    
     self.tableView.scrollsToTop = YES;
     
     [self configureView];
@@ -111,6 +111,12 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    AppDelegate *del = [[UIApplication sharedApplication] delegate];
+    managedObjectContext = del.managedObjectContext;
+    
+    NSArray *newNavStack = [NSArray arrayWithObjects:[self.splitViewController.viewControllers objectAtIndex:0], del.heroNavStack, nil];
+    self.splitViewController.viewControllers = newNavStack;
+    self.tableView.scrollsToTop = YES;
 }
 
 - (void)viewWillDisappear:(BOOL)animated
