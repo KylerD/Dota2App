@@ -18,6 +18,7 @@
 @implementation ItemsTableViewController
 
 @synthesize detailViewController = _detailViewController;
+@synthesize searchBar;
 
 - (void)awakeFromNib
 {
@@ -249,7 +250,7 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     freshData = NO;
     
     if (![searchText isEqualToString:@""]) {
-        NSPredicate *predicate =[NSPredicate predicateWithFormat:@"name contains[cd] %@)", searchText,searchText,searchText];
+        NSPredicate *predicate =[NSPredicate predicateWithFormat:@"name contains[cd] %@", searchText];
         [fetchedRC.fetchRequest setPredicate:predicate];
         
     } else {
@@ -265,11 +266,10 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     [self.tableView reloadData];
 }
 
-- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString
-{
-    [self filterContentForSearchText:[self.searchDisplayController.searchBar text] scope:nil];
-    
-    return YES;
+
+- (void)searchBar:(UISearchBar *)theSearchBar textDidChange:(NSString *)searchText {
+
+    [self filterContentForSearchText:searchText scope:nil];
 }
 
 #pragma mark - Screen Navigation

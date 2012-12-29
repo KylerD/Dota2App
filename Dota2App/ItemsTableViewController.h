@@ -13,13 +13,14 @@
 
 @interface ItemsTableViewController : UITableViewController <NSFetchedResultsControllerDelegate, UISearchBarDelegate> {
 
-NSManagedObjectContext *managedObjectContext;
-NSFetchedResultsController *fetchedRC;
-NSString *fetchItem;
-NSString *savedSearchTerm;
-BOOL freshData;
+    NSManagedObjectContext *managedObjectContext;
+    NSFetchedResultsController *fetchedRC;
+    NSString *fetchItem;
+    NSString *savedSearchTerm;
+    BOOL freshData;
 }
 
 @property (strong, nonatomic) DetailViewController *detailViewController;
+@property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
 
 @end
