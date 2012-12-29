@@ -67,6 +67,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     return 90;
 }
 
@@ -90,11 +91,30 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     
     Ability *ability = [abilities objectAtIndex:[indexPath row]];
     
-    abilityCell.cellTitleLabel.text = ability.name;
+    abilityCell.abilityName.text = ability.name;
     
     //custom code for images for now
-    NSString *imageName = [NSString stringWithFormat:@"%@.png", ability.name];
-    abilityCell.cellImageView.image = [UIImage imageNamed:imageName];
+    //NSString *imageName = [NSString stringWithFormat:@"%@.png", ability.imagePath];//TODO:ICON
+    //abilityCell.textLabel.image = [UIImage imageNamed:imageName];
+    
+    [abilityCell isPassive:[ability.isPassive boolValue]];
+    
+    NSString * mc = ability.mc;
+    
+    if([mc isEqualToString:@""]){
+        mc = @"Free";
+    }
+    
+    abilityCell.mp.text= mc;
+    
+    NSString * cd = ability.cd;
+    
+    if([cd isEqualToString:@""]){
+        cd = @"0";
+    }    
+    
+    abilityCell.cd.text= cd;
+    
 }
 
 @end

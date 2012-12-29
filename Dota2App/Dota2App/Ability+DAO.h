@@ -10,6 +10,15 @@
 
 @interface Ability (DAO)
 
+typedef enum heroAbilityTypes
+{
+    heroAbilityUnknownType,
+    heroAbilityNoTargetType,
+    heroAbilityUnitTargetType,
+    heroAbilityPointTargetType,
+    heroAbilityPointAndUnitTargetType
+}heroAbilityType;
+
 + (Ability *)abilityFromDictionary:(NSDictionary*)abilityDictionary;
 + (id)interpretValue:(id)value;
 

@@ -19,6 +19,92 @@
     ability.videoUrl = [self interpretValue:[abilityDictionary valueForKey:@"videoUrl"]];
     ability.imgUrl = [self interpretValue:[abilityDictionary valueForKey:@"imgUrl"]];
     
+    NSDictionary * dynamicDict = [abilityDictionary valueForKey:@"dynamic"];
+    
+    //Get Ability Type..
+    
+    NSString *abiltiyTypeMixedString = [dynamicDict valueForKey:@"Ability"];
+    
+    NSMutableSet * abilityTypes = [NSMutableSet setWithArray:[abiltiyTypeMixedString componentsSeparatedByString:@", "]];
+    
+    
+    NSMutableSet * abilitiyTypesToRemove = [NSMutableSet set];
+    
+    for (NSString * abilityType in abilityTypes) {
+        
+        NSString * cleanedAbilityType = abilityType;
+        
+        if([cleanedAbilityType isEqualToString:@"Toggle"]){
+            ability.isToggle = [NSNumber numberWithBool:YES];
+            [abilitiyTypesToRemove addObject:cleanedAbilityType];
+        } else if([cleanedAbilityType isEqualToString:@"Aura"]){
+            ability.isAura = [NSNumber numberWithBool:YES];
+             [abilitiyTypesToRemove addObject:cleanedAbilityType];
+        } else if([cleanedAbilityType isEqualToString:@"Auto-Cast"]){
+            ability.isAutoCast = [NSNumber numberWithBool:YES];
+             [abilitiyTypesToRemove addObject:cleanedAbilityType];
+        } else if ([abilityType isEqualToString:@"Passive"]) {
+            ability.isPassive = [NSNumber numberWithBool:YES];
+            [abilitiyTypesToRemove addObject:cleanedAbilityType];
+        }
+    }
+    
+    [abilityTypes minusSet:abilitiyTypesToRemove];
+    
+    heroAbilityType type = heroAbilityUnknownType;
+    
+    if([abilityTypes count] == 1){
+        
+        NSString * abilityType = [abilityTypes anyObject];
+        
+        if ([abilityType isEqualToString:@"Unit Target"]) {
+            type = heroAbilityUnitTargetType;
+        } else if ([abilityType isEqualToString:@"No Target"]) {
+                type = heroAbilityNoTargetType;
+        } else if ([abilityType isEqualToString:@"Point Target"]) {
+            type = heroAbilityPointTargetType;
+        }
+        
+    } else {
+        NSLog(@"Multiple Types found: [%@], assuming point and unit!",abilityTypes);
+        type = heroAbilityPointAndUnitTargetType;
+    }
+    
+    
+    ability.type = [NSNumber numberWithInt:type];
+    
+    //Store Dynamic Values as NSDATA
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:dynamicDict];
+    
+    ability.dynamic = data;    
+    
+    NSArray * manaCost = [abilityDictionary valueForKey:@"mana"];
+    
+    NSMutableString * sb = [NSMutableString string];
+    
+    for (NSString * mp in manaCost) {
+        [sb appendFormat:@"%@ / ",mp];
+    }
+    
+    if(![sb isEqualToString:@""]){
+        [sb deleteCharactersInRange:NSMakeRange(sb.length-3,3)];
+    }
+    
+    ability.mc = [sb copy];
+    sb=nil; sb = [NSMutableString string]; //Reusing...
+    
+    NSArray * coolDown = [abilityDictionary valueForKey:@"cooldown"];
+    
+    for (NSString * cd in coolDown) {
+        [sb appendFormat:@"%@ / ",cd];
+    }
+    
+    if(![sb isEqualToString:@""]){
+        [sb deleteCharactersInRange:NSMakeRange(sb.length-3,3)];
+    }
+    
+    ability.cd = sb;
+    
     return ability;
 }
 
