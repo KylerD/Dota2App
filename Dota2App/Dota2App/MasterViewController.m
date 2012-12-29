@@ -111,11 +111,14 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    AppDelegate *del = [[UIApplication sharedApplication] delegate];
-    managedObjectContext = del.managedObjectContext;
-    
-    NSArray *newNavStack = [NSArray arrayWithObjects:[self.splitViewController.viewControllers objectAtIndex:0], del.heroNavStack, nil];
-    self.splitViewController.viewControllers = newNavStack;
+    // Override point for customization after application launch.
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        AppDelegate *del = [[UIApplication sharedApplication] delegate];
+        managedObjectContext = del.managedObjectContext;
+        
+        NSArray *newNavStack = [NSArray arrayWithObjects:[self.splitViewController.viewControllers objectAtIndex:0], del.heroNavStack, nil];
+        self.splitViewController.viewControllers = newNavStack;
+    }
     self.tableView.scrollsToTop = YES;
 }
 
