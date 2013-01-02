@@ -315,7 +315,7 @@
 		5C3CB27E1657F2A400E8341C /* Fatal_Bonds.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CB01A1657F2A400E8341C /* Fatal_Bonds.png */; };
 		5C3CB27F1657F2A400E8341C /* Feast.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CB01B1657F2A400E8341C /* Feast.png */; };
 		5C3CB2801657F2A400E8341C /* Feral_Impulse.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CB01C1657F2A400E8341C /* Feral_Impulse.png */; };
-		5C3CB2811657F2A400E8341C /* Fiends_Grip.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CB01D1657F2A400E8341C /* Fiends_Grip.png */; };
+		5C3CB2811657F2A400E8341C /* Fiend's_Grip.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CB01D1657F2A400E8341C /* Fiend's_Grip.png */; };
 		5C3CB2821657F2A400E8341C /* Fiery_Soul.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CB01E1657F2A400E8341C /* Fiery_Soul.png */; };
 		5C3CB2831657F2A400E8341C /* Finger_of_Death.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CB01F1657F2A400E8341C /* Finger_of_Death.png */; };
 		5C3CB2841657F2A400E8341C /* Fireblast.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CB0201657F2A400E8341C /* Fireblast.png */; };
@@ -987,7 +987,7 @@
 		5C3CB01A1657F2A400E8341C /* Fatal_Bonds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fatal_Bonds.png; sourceTree = "<group>"; };
 		5C3CB01B1657F2A400E8341C /* Feast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Feast.png; sourceTree = "<group>"; };
 		5C3CB01C1657F2A400E8341C /* Feral_Impulse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Feral_Impulse.png; sourceTree = "<group>"; };
-		5C3CB01D1657F2A400E8341C /* Fiends_Grip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fiends_Grip.png; sourceTree = "<group>"; };
+		5C3CB01D1657F2A400E8341C /* Fiend's_Grip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fiend's_Grip.png"; sourceTree = "<group>"; };
 		5C3CB01E1657F2A400E8341C /* Fiery_Soul.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fiery_Soul.png; sourceTree = "<group>"; };
 		5C3CB01F1657F2A400E8341C /* Finger_of_Death.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Finger_of_Death.png; sourceTree = "<group>"; };
 		5C3CB0201657F2A400E8341C /* Fireblast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fireblast.png; sourceTree = "<group>"; };
@@ -1792,7 +1792,7 @@
 				5C3CB01A1657F2A400E8341C /* Fatal_Bonds.png */,
 				5C3CB01B1657F2A400E8341C /* Feast.png */,
 				5C3CB01C1657F2A400E8341C /* Feral_Impulse.png */,
-				5C3CB01D1657F2A400E8341C /* Fiends_Grip.png */,
+				5C3CB01D1657F2A400E8341C /* Fiend's_Grip.png */,
 				5C3CB01E1657F2A400E8341C /* Fiery_Soul.png */,
 				5C3CB01F1657F2A400E8341C /* Finger_of_Death.png */,
 				5C3CB0201657F2A400E8341C /* Fireblast.png */,
@@ -2665,7 +2665,7 @@
 				5C3CB27E1657F2A400E8341C /* Fatal_Bonds.png in Resources */,
 				5C3CB27F1657F2A400E8341C /* Feast.png in Resources */,
 				5C3CB2801657F2A400E8341C /* Feral_Impulse.png in Resources */,
-				5C3CB2811657F2A400E8341C /* Fiends_Grip.png in Resources */,
+				5C3CB2811657F2A400E8341C /* Fiend's_Grip.png in Resources */,
 				5C3CB2821657F2A400E8341C /* Fiery_Soul.png in Resources */,
 				5C3CB2831657F2A400E8341C /* Finger_of_Death.png in Resources */,
 				5C3CB2841657F2A400E8341C /* Fireblast.png in Resources */,

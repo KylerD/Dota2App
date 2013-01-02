@@ -82,7 +82,6 @@
         [hero addRolesObject:r];
     }
     
-    
     //More
     
     NSArray *abilities = [heroDictionary valueForKey:@"abilities"];

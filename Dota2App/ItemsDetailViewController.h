@@ -9,10 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "Item+DAO.h"
 
-@interface ItemsDetailViewController : UIViewController {
-    
-}
+@interface ItemsDetailViewController : UIViewController
 
-@property (nonatomic, strong) IBOutlet Item *item;
+@property (nonatomic, strong) Item *item;
 
 @end

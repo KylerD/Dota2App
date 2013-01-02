@@ -17,7 +17,10 @@
     ability.notes = [self interpretValue:[abilityDictionary valueForKey:@"description"]];
     ability.lore = [self interpretValue:[abilityDictionary valueForKey:@"lore"]];
     ability.videoUrl = [self interpretValue:[abilityDictionary valueForKey:@"videoUrl"]];
-    ability.imgUrl = [self interpretValue:[abilityDictionary valueForKey:@"imgUrl"]];
+    
+    //TODO: Decide what's going on here: ability.imgUrl = [self interpretValue:[abilityDictionary valueForKey:@"imgUrl"]];
+    NSCharacterSet *spaces = [NSCharacterSet characterSetWithCharactersInString:@" "];
+    ability.imagePath = [[ability.name componentsSeparatedByCharactersInSet: spaces] componentsJoinedByString: @"_"];
     
     NSDictionary * dynamicDict = [abilityDictionary valueForKey:@"dynamic"];
     

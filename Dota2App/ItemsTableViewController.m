@@ -11,6 +11,7 @@
 #import "DetailViewController.h"
 #import "Item+DAO.h"
 #import "ItemsDetailViewController.h"
+#import "ItemCell.h"
 
 @interface ItemsTableViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
@@ -20,6 +21,8 @@
 
 @synthesize detailViewController = _detailViewController;
 @synthesize searchBar;
+
+#pragma mark - Boiler Plate View Code
 
 - (void)awakeFromNib
 {
@@ -50,37 +53,23 @@
     }
 }
 
-- (NSFetchedResultsController *)fetchedResultsControllerForEntity: (NSString *)entityName {
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    // Edit the entity name as appropriate.
-    NSEntityDescription *entity;
-    entity = [NSEntityDescription entityForName:entityName inManagedObjectContext:managedObjectContext];
-    [fetchRequest setEntity:entity];
-    
-    NSSortDescriptor *sortDescriptor2 = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES selector:@selector(caseInsensitiveCompare:)];
-    
-    NSArray *sortDescriptors = [NSArray arrayWithObjects:sortDescriptor2, nil];
-    
-    [fetchRequest setSortDescriptors:sortDescriptors];
-    
-    // nil for section name key path means "1 section".
-    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:managedObjectContext sectionNameKeyPath:nil cacheName:nil];
-    aFetchedResultsController.delegate = self;
-    
-    return aFetchedResultsController;
-    
-}
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
     
     fetchItem = @"Item";
     AppDelegate * del = [[UIApplication sharedApplication] delegate];
     managedObjectContext = del.managedObjectContext;
+    //Set item detail nav stack from storyboard id
+    del.itemNavStack = [self.storyboard instantiateViewControllerWithIdentifier:@"ItemNav"];
+    //Assign to local array for easy access
+    itemNavStack = [NSArray arrayWithObjects:[self.splitViewController.viewControllers objectAtIndex:0], del.itemNavStack, nil];
+    //Change splitViewControllers detail nav using this
+    self.splitViewController.viewControllers = itemNavStack;
+    // Do any additional setup after loading the view, typically from a nib.
+    self.detailViewController = (ItemsDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
 
     self.tableView.scrollsToTop = YES;
     
@@ -110,12 +99,7 @@
     [super viewDidAppear:animated];
     // Override point for customization after application launch.
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        AppDelegate * del = [[UIApplication sharedApplication] delegate];
-        managedObjectContext = del.managedObjectContext;
-        
-        del.itemNavStack = [self.storyboard instantiateViewControllerWithIdentifier:@"ItemNav"];
-        NSArray *newNavStack = [NSArray arrayWithObjects:[self.splitViewController.viewControllers objectAtIndex:0], del.itemNavStack, nil];
-        self.splitViewController.viewControllers = newNavStack;
+        self.splitViewController.viewControllers = itemNavStack;
     }
 }
 
@@ -161,7 +145,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"ItemCell";
-    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    ItemCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     [self configureCell:cell atIndexPath:indexPath];
     return cell;
 }
@@ -170,9 +154,10 @@
 {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
         
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         Item *selectedItem = [fetchedRC objectAtIndexPath:indexPath];
-        //self.detailViewController.item = selectedItem;//TODO
-        //[self.detailViewController configureView];
+        ItemsDetailViewController *detailVC = (ItemsDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+        [detailVC setItem:selectedItem];
     }
 }
 
@@ -187,16 +172,18 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     return sectionName;
 }
 
-- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
+- (void)configureCell:(ItemCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {   //Fetch the hero
-    UITableViewCell * itemCell = (UITableViewCell *)cell;
+
     Item *item = [fetchedRC objectAtIndexPath:indexPath];
     //Fetch the hero data
-    NSMutableString *subtitle = [NSMutableString string];
+
     //subtitle = [NSString stringWithFormat:@"%@ - %@", hero.faction, hero.primaryAttribute];
     //Configure the cell
-    
-    cell.textLabel.text = item.name;
+    NSLog(@"%@",item.imgName);
+    cell.cellTitleLabel.text= item.name;
+    //cell.cellImage.image = [UIImage imageNamed:item.imgName];
+    cell.cellImage.image = [UIImage imageNamed:@"items.png"];
 }
 
 #pragma mark - NSFetchedRC Delegate
@@ -276,6 +263,28 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     [self.tableView reloadData];
 }
 
+- (NSFetchedResultsController *)fetchedResultsControllerForEntity: (NSString *)entityName {
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    // Edit the entity name as appropriate.
+    NSEntityDescription *entity;
+    entity = [NSEntityDescription entityForName:entityName inManagedObjectContext:managedObjectContext];
+    [fetchRequest setEntity:entity];
+    
+    NSSortDescriptor *sortDescriptor2 = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES selector:@selector(caseInsensitiveCompare:)];
+    
+    NSArray *sortDescriptors = [NSArray arrayWithObjects:sortDescriptor2, nil];
+    
+    [fetchRequest setSortDescriptors:sortDescriptors];
+    
+    // nil for section name key path means "1 section".
+    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:managedObjectContext sectionNameKeyPath:nil cacheName:nil];
+    aFetchedResultsController.delegate = self;
+    
+    return aFetchedResultsController;
+    
+}
+
+#pragma mark - Search Bar
 
 - (void)searchBar:(UISearchBar *)theSearchBar textDidChange:(NSString *)searchText {
 
@@ -294,6 +303,5 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
         [detailVC setItem:selectedItem];
     }
 }
-
 
 @end

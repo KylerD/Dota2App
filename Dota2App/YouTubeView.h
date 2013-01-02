@@ -8,9 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YouTubeView : UIWebView 
-{
-}
+@interface YouTubeView : UIWebView
 
 - (YouTubeView *)initWithStringAsURL:(NSString *)urlString frame:(CGRect)frame;
 

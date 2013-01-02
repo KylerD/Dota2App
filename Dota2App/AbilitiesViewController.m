@@ -21,7 +21,8 @@
 @synthesize hero;
 @synthesize tableView;
 
-#pragma mark - View
+#pragma mark - View LifeCycle
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -92,9 +93,8 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     
     abilityCell.abilityName.text = ability.name;
     
-    //custom code for images for now
-    //NSString *imageName = [NSString stringWithFormat:@"%@.png", ability.imagePath];//TODO:ICON
-    //abilityCell.textLabel.image = [UIImage imageNamed:imageName];
+    NSString *skillImgPath = [NSString stringWithFormat:@"%@.png", ability.imagePath];
+    abilityCell.icon.image = [UIImage imageNamed:skillImgPath];
     
     [abilityCell isPassive:[ability.isPassive boolValue]];
     
@@ -112,8 +112,7 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
         cd = @"0";
     }    
     
-    abilityCell.cd.text= cd;
-    
+    abilityCell.cd.text = cd;
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
