@@ -784,8 +784,8 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="EWB-fl-CWT">
-                                                    <rect key="frame" x="664" y="13" width="64" height="64"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Ice_Armor.png" id="EWB-fl-CWT">
+                                                    <rect key="frame" x="566" y="14" width="162" height="64"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="mp.png" id="uNo-8i-gfK">
@@ -903,6 +903,7 @@
     </scenes>
     <resources>
         <image name="Agility.png" width="24" height="24"/>
+        <image name="Ice_Armor.png" width="128" height="128"/>
         <image name="Intelligence.png" width="24" height="24"/>
         <image name="Strength.png" width="24" height="24"/>
         <image name="armor.png" width="39" height="37"/>
@@ -944,6 +945,7 @@
         <class className="DetailViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
             <relationships>
+                <relationship kind="action" name="segmentChanged:" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="iconImageView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="segment" candidateClass="UISegmentedControl"/>
             </relationships>
@@ -988,14 +990,8 @@
                 <relationship kind="outlet" name="turnRateLabel" candidateClass="UILabel"/>
             </relationships>
         </class>
-        <class className="Item" superclassName="NSManagedObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/Item.h"/>
-        </class>
         <class className="ItemsDetailViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ItemsDetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="item" candidateClass="Item"/>
-            </relationships>
         </class>
         <class className="ItemsTableViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ItemsTableViewController.h"/>

@@ -93,9 +93,8 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     
     abilityCell.abilityName.text = ability.name;
     
-    //custom code for images for now
-    //NSString *imageName = [NSString stringWithFormat:@"%@.png", ability.imagePath];//TODO:ICON
-    //abilityCell.textLabel.image = [UIImage imageNamed:imageName];
+    NSString *skillImgPath = [NSString stringWithFormat:@"%@.png", ability.imagePath];
+    abilityCell.icon.image = [UIImage imageNamed:skillImgPath];
     
     [abilityCell isPassive:[ability.isPassive boolValue]];
     
