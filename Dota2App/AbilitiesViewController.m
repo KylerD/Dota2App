@@ -93,8 +93,12 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     
     abilityCell.abilityName.text = ability.name;
     
-    NSString *skillImgPath = [NSString stringWithFormat:@"%@.png", ability.imagePath];
-    abilityCell.icon.image = [UIImage imageNamed:skillImgPath];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    if ([fileManager fileExistsAtPath:ability.imagePath]) {
+        abilityCell.icon.image = [UIImage imageWithContentsOfFile:ability.imagePath];
+    }
+    
     
     [abilityCell isPassive:[ability.isPassive boolValue]];
     
