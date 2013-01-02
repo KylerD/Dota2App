@@ -18,9 +18,21 @@
     ability.lore = [self interpretValue:[abilityDictionary valueForKey:@"lore"]];
     ability.videoUrl = [self interpretValue:[abilityDictionary valueForKey:@"videoUrl"]];
     
-    //TODO: Decide what's going on here: ability.imgUrl = [self interpretValue:[abilityDictionary valueForKey:@"imgUrl"]];
-    NSCharacterSet *spaces = [NSCharacterSet characterSetWithCharactersInString:@" "];
-    ability.imagePath = [[ability.name componentsSeparatedByCharactersInSet: spaces] componentsJoinedByString: @"_"];
+    //Image download and cache
+    NSString *imgUrl = [self interpretValue:[abilityDictionary valueForKey:@"imgUrl"]];
+    ability.imgUrl = imgUrl;
+    NSURL  *url = [NSURL URLWithString:imgUrl];
+    NSData *urlData = [NSData dataWithContentsOfURL:url];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString  *documentsDirectory = [paths objectAtIndex:0];
+    NSString  *filePath = [NSString stringWithFormat:@"%@/%@.png", documentsDirectory, abilityName];
+    
+    if (![fileManager fileExistsAtPath:filePath] && urlData)
+    {
+        [urlData writeToFile:filePath atomically:YES];
+        ability.imagePath = filePath;
+    }
     
     NSDictionary * dynamicDict = [abilityDictionary valueForKey:@"dynamic"];
     
