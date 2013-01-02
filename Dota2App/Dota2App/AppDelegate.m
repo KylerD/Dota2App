@@ -18,6 +18,8 @@
 @synthesize managedObjectContext = __managedObjectContext;
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
+
+@synthesize heroNavStack, itemNavStack;
 //@synthesize client = __client;
 
 
@@ -37,6 +39,8 @@
         UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
         UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
         splitViewController.delegate = (id)navigationController.topViewController;
+        
+        self.heroNavStack = [splitViewController.viewControllers objectAtIndex:1];
     }
     
     if(STACKMOB_ENABLE){

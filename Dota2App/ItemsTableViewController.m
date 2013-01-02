@@ -10,6 +10,7 @@
 #import "AppDelegate.h"
 #import "DetailViewController.h"
 #import "Item+DAO.h"
+#import "ItemsDetailViewController.h"
 
 @interface ItemsTableViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
@@ -80,7 +81,7 @@
     fetchItem = @"Item";
     AppDelegate * del = [[UIApplication sharedApplication] delegate];
     managedObjectContext = del.managedObjectContext;
-    
+
     self.tableView.scrollsToTop = YES;
     
     [self configureView];
@@ -107,6 +108,15 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    // Override point for customization after application launch.
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        AppDelegate * del = [[UIApplication sharedApplication] delegate];
+        managedObjectContext = del.managedObjectContext;
+        
+        del.itemNavStack = [self.storyboard instantiateViewControllerWithIdentifier:@"ItemNav"];
+        NSArray *newNavStack = [NSArray arrayWithObjects:[self.splitViewController.viewControllers objectAtIndex:0], del.itemNavStack, nil];
+        self.splitViewController.viewControllers = newNavStack;
+    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -276,12 +286,12 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"showDetail"]) {
+    if ([[segue identifier] isEqualToString:@"ItemDetail"]) {
         
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        Hero *selectedHero = [fetchedRC objectAtIndexPath:indexPath];
-        DetailViewController *detailVC = (DetailViewController *)[segue destinationViewController];
-        [detailVC setHero:selectedHero];
+        Item *selectedItem = [fetchedRC objectAtIndexPath:indexPath];
+        ItemsDetailViewController *detailVC = (ItemsDetailViewController *)[segue destinationViewController];
+        [detailVC setItem:selectedItem];
     }
 }
 

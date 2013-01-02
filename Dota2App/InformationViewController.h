@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *primaryAttributeImageView;
 
 @property (weak, nonatomic) IBOutlet UIImageView *factionImageView;
+@property (weak, nonatomic) IBOutlet UILabel *bioLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *strengthPointsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *agilityPointsLabel;
@@ -24,8 +25,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *damagePointsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *movementSpeedPointsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *armorPointsLabel;
+@property (weak, nonatomic) IBOutlet UITextView *bioTextView;
 @property (weak, nonatomic) IBOutlet UILabel *roleLabel;
-@property (weak, nonatomic) IBOutlet UILabel *bioLabel;
+
 @property (weak, nonatomic) IBOutlet UILabel *turnRateLabel;
 @property (weak, nonatomic) IBOutlet UILabel *sightRangeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *attackRangeLabel;
@@ -37,7 +39,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *damageLevelOneLabel;
 @property (weak, nonatomic) IBOutlet UILabel *armorLevelOneLabel;
 @property (weak, nonatomic) IBOutlet UILabel *attackSpeedLevelOneLabel;
-
+@property (nonatomic, retain) IBOutlet UIScrollView * view;
 @property (nonatomic, strong) Hero *hero;
 
 - (void)configureView;

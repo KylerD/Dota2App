@@ -2,12 +2,13 @@
 //  Hero.m
 //  Dota2App
 //
-//  Created by Luke McNeice on 22/12/2012.
+//  Created by Stuart McKee on 29/12/2012.
 //
 //
 
 #import "Hero.h"
 #import "Ability.h"
+#import "Nickname.h"
 #import "Role.h"
 
 
@@ -16,15 +17,9 @@
 @dynamic agilGain;
 @dynamic agilPoints;
 @dynamic armour;
-@dynamic attackBackswing;
-@dynamic attackPoints;
 @dynamic attackRange;
 @dynamic bio;
-@dynamic castBackswing;
-@dynamic castPoints;
 @dynamic detailImage;
-@dynamic dmgMax;
-@dynamic dmgMin;
 @dynamic faction;
 @dynamic heroId;
 @dynamic hp;
@@ -40,13 +35,15 @@
 @dynamic primaryAttribute;
 @dynamic quote;
 @dynamic role;
-@dynamic sightDay;
-@dynamic sightNight;
 @dynamic strGain;
 @dynamic strPoints;
 @dynamic turnRate;
+@dynamic damage;
+@dynamic sight;
+@dynamic attackType;
+@dynamic url;
 @dynamic abilities;
-@dynamic roles;
 @dynamic nicknames;
+@dynamic roles;
 
 @end
