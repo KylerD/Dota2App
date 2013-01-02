@@ -75,12 +75,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
     
     fetchItem = @"Item";
     AppDelegate * del = [[UIApplication sharedApplication] delegate];
     managedObjectContext = del.managedObjectContext;
+    //Set item detail nav stack from storyboard id
+    del.itemNavStack = [self.storyboard instantiateViewControllerWithIdentifier:@"ItemNav"];
+    //Assign to local array for easy access
+    itemNavStack = [NSArray arrayWithObjects:[self.splitViewController.viewControllers objectAtIndex:0], del.itemNavStack, nil];
+    //Change splitViewControllers detail nav using this
+    self.splitViewController.viewControllers = itemNavStack;
+    // Do any additional setup after loading the view, typically from a nib.
+    self.detailViewController = (ItemsDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
 
     self.tableView.scrollsToTop = YES;
     
@@ -110,12 +116,7 @@
     [super viewDidAppear:animated];
     // Override point for customization after application launch.
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        AppDelegate * del = [[UIApplication sharedApplication] delegate];
-        managedObjectContext = del.managedObjectContext;
-        
-        del.itemNavStack = [self.storyboard instantiateViewControllerWithIdentifier:@"ItemNav"];
-        NSArray *newNavStack = [NSArray arrayWithObjects:[self.splitViewController.viewControllers objectAtIndex:0], del.itemNavStack, nil];
-        self.splitViewController.viewControllers = newNavStack;
+        self.splitViewController.viewControllers = itemNavStack;
     }
 }
 

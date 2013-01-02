@@ -78,12 +78,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
     
     fetchItem = @"Hero";
     AppDelegate *del = [[UIApplication sharedApplication] delegate];
     managedObjectContext = del.managedObjectContext;
+    
+    heroNavStack = [NSArray arrayWithObjects:[self.splitViewController.viewControllers objectAtIndex:0], del.heroNavStack, nil];
+    
+    self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
     
     self.tableView.scrollsToTop = YES;
     
@@ -113,11 +115,7 @@
     [super viewDidAppear:animated];
     // Override point for customization after application launch.
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        AppDelegate *del = [[UIApplication sharedApplication] delegate];
-        managedObjectContext = del.managedObjectContext;
-        
-        NSArray *newNavStack = [NSArray arrayWithObjects:[self.splitViewController.viewControllers objectAtIndex:0], del.heroNavStack, nil];
-        self.splitViewController.viewControllers = newNavStack;
+        self.splitViewController.viewControllers = heroNavStack;
     }
     self.tableView.scrollsToTop = YES;
 }

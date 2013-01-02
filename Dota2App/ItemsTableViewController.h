@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 
-@class DetailViewController;
+@class ItemsDetailViewController;
 
 @interface ItemsTableViewController : UITableViewController <NSFetchedResultsControllerDelegate, UISearchBarDelegate> {
 
@@ -17,10 +17,11 @@
     NSFetchedResultsController *fetchedRC;
     NSString *fetchItem;
     NSString *savedSearchTerm;
+    NSArray *itemNavStack;
     BOOL freshData;
 }
 
-@property (strong, nonatomic) DetailViewController *detailViewController;
+@property (strong, nonatomic) ItemsDetailViewController *detailViewController;
 @property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
 
 @end
