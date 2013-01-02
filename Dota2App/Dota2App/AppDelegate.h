@@ -15,6 +15,8 @@
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) SMClient *client;
+@property (strong, nonatomic) UINavigationController *heroNavStack;
+@property (strong, nonatomic) UINavigationController *itemNavStack;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;

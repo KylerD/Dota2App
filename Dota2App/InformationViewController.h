@@ -39,7 +39,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *damageLevelOneLabel;
 @property (weak, nonatomic) IBOutlet UILabel *armorLevelOneLabel;
 @property (weak, nonatomic) IBOutlet UILabel *attackSpeedLevelOneLabel;
-@property (nonatomic, retain) IBOutlet UIScrollView * view;
+@property (nonatomic, retain) IBOutlet UIScrollView * scrollView;
 @property (nonatomic, strong) Hero *hero;
 
 - (void)configureView;

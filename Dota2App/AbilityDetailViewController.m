@@ -7,6 +7,7 @@
 //
 
 #import "AbilityDetailViewController.h"
+#import "AbilityVideoViewController.h"
 
 @interface AbilityDetailViewController ()
 
@@ -35,5 +36,15 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"VideoDetail"]) {
+        AbilityVideoViewController *detailVC = (AbilityVideoViewController*)[segue destinationViewController];
+        [detailVC setUrl:self.ability.videoUrl];
+    }
+}
+
+
 
 @end

@@ -76,7 +76,7 @@
     //Store Dynamic Values as NSDATA
     NSData *data = [NSKeyedArchiver archivedDataWithRootObject:dynamicDict];
     
-    ability.dynamic = data;    
+    ability.dynamic = data;
     
     NSArray * manaCost = [abilityDictionary valueForKey:@"mana"];
     
