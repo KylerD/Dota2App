@@ -57,18 +57,21 @@
     
     //Image download and cache
     NSString *imgUrl = [self interpretValue:[heroDictionary valueForKey:@"portraitUrl"]];
-    NSURL  *url = [NSURL URLWithString:imgUrl];
-    NSData *urlData = [NSData dataWithContentsOfURL:url];
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString  *documentsDirectory = [paths objectAtIndex:0];
     NSString  *filePath = [NSString stringWithFormat:@"%@/%@.png", documentsDirectory, heroName];
     
-    if (![fileManager fileExistsAtPath:filePath] && urlData)
-    {
-        [urlData writeToFile:filePath atomically:YES];
-        hero.detailImgPath = filePath;
+    if (![fileManager fileExistsAtPath:filePath]) {
+        NSURL  *url = [NSURL URLWithString:imgUrl];
+        NSData *urlData = [NSData dataWithContentsOfURL:url];
+        if (urlData)
+        {
+            [urlData writeToFile:filePath atomically:YES];
+            hero.detailImgPath = filePath;
+        }
     }
+
 
     hero.strGain = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"strGain"]]];
     hero.agilPoints = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"agi"]]];

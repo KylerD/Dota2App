@@ -21,17 +21,19 @@
     //Image download and cache
     NSString *imgUrl = [self interpretValue:[abilityDictionary valueForKey:@"imgUrl"]];
     ability.imgUrl = imgUrl;
-    NSURL  *url = [NSURL URLWithString:imgUrl];
-    NSData *urlData = [NSData dataWithContentsOfURL:url];
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString  *documentsDirectory = [paths objectAtIndex:0];
     NSString  *filePath = [NSString stringWithFormat:@"%@/%@.png", documentsDirectory, abilityName];
     
-    if (![fileManager fileExistsAtPath:filePath] && urlData)
-    {
-        [urlData writeToFile:filePath atomically:YES];
-        ability.imagePath = filePath;
+    if (![fileManager fileExistsAtPath:filePath]) {
+        NSURL  *url = [NSURL URLWithString:imgUrl];
+        NSData *urlData = [NSData dataWithContentsOfURL:url];
+        if (urlData)
+        {
+            [urlData writeToFile:filePath atomically:YES];
+            ability.imagePath = filePath;
+        }
     }
     
     NSDictionary * dynamicDict = [abilityDictionary valueForKey:@"dynamic"];
