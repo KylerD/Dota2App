@@ -170,9 +170,10 @@
 {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
         
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         Item *selectedItem = [fetchedRC objectAtIndexPath:indexPath];
-        //self.detailViewController.item = selectedItem;//TODO
-        //[self.detailViewController configureView];
+        ItemsDetailViewController *detailVC = (ItemsDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+        [detailVC setItem:selectedItem];
     }
 }
 

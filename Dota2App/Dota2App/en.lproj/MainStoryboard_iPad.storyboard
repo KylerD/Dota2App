@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C3103" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="11G63" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="5">
     <dependencies>
         <deployment defaultVersion="1536" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller - Heroes-->
@@ -252,10 +252,49 @@
             </objects>
             <point key="canvasLocation" x="-126" y="-2743"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pOm-G0-DkK">
+            <objects>
+                <navigationController storyboardIdentifier="ItemNav" definesPresentationContext="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XDe-kN-O2a" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QCM-GY-Fo1">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hFQ-YJ-Fl8" kind="relationship" relationship="rootViewController" id="sGv-nA-tBM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E9H-e2-Czi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="504" y="-2935"/>
+        </scene>
+        <!--Items Detail View Controller-->
+        <scene sceneID="rLH-bi-yJo">
+            <objects>
+                <viewController id="hFQ-YJ-Fl8" customClass="ItemsDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m4p-Ja-zHY">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ItemsDetailVC" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YPS-E8-c7j">
+                                <rect key="frame" x="328" y="337" width="109" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZES-0U-xpP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3D8-52-5Ql" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1504" y="-2904"/>
+        </scene>
         <!--Navigation Controller - Items-->
         <scene sceneID="1hf-xI-Qg8">
             <objects>
-                <navigationController storyboardIdentifier="ItemNav" definesPresentationContext="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="I4a-s5-ntI" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="" definesPresentationContext="YES" id="I4a-s5-ntI" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Items" image="items.png" id="5GO-E1-dGJ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3SK-fA-3mh">
                         <autoresizingMask key="autoresizingMask"/>
@@ -947,6 +986,15 @@
                 <relationship kind="outlet" name="sightRangeLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="strengthPointsLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="turnRateLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="Item" superclassName="NSManagedObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Item.h"/>
+        </class>
+        <class className="ItemsDetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ItemsDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="item" candidateClass="Item"/>
             </relationships>
         </class>
         <class className="ItemsTableViewController" superclassName="UITableViewController">
