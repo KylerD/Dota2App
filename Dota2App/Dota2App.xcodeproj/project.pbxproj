@@ -11,6 +11,7 @@
 		0C493A8E1665065600A5690B /* movementSpeed.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C493A8B1665065600A5690B /* movementSpeed.png */; };
 		0C493A8F1665065600A5690B /* damage.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C493A8C1665065600A5690B /* damage.png */; };
 		17D53795168F37490058C131 /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D53794168F37490058C131 /* Hero.m */; };
+		17D5379C168F4F750058C131 /* ItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D5379B168F4F750058C131 /* ItemCell.m */; };
 		5C3CAEE91657D58200E8341C /* HeroParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3CAEE81657D58200E8341C /* HeroParser.m */; };
 		5C3CB1531657F2A400E8341C /* Icon_Agi.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAEEC1657F2A400E8341C /* Icon_Agi.png */; };
 		5C3CB1541657F2A400E8341C /* Icon_Int.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAEED1657F2A400E8341C /* Icon_Int.png */; };
@@ -678,6 +679,8 @@
 		0C493A8C1665065600A5690B /* damage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = damage.png; sourceTree = "<group>"; };
 		17D53793168F37490058C131 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
 		17D53794168F37490058C131 /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
+		17D5379A168F4F750058C131 /* ItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCell.h; sourceTree = "<group>"; };
+		17D5379B168F4F750058C131 /* ItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCell.m; sourceTree = "<group>"; };
 		5C3CAEE71657D58200E8341C /* HeroParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroParser.h; sourceTree = "<group>"; };
 		5C3CAEE81657D58200E8341C /* HeroParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroParser.m; sourceTree = "<group>"; };
 		5C3CAEEC1657F2A400E8341C /* Icon_Agi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_Agi.png; sourceTree = "<group>"; };
@@ -2255,6 +2258,8 @@
 		B1DAD9671650440900523981 /* Custom Cells */ = {
 			isa = PBXGroup;
 			children = (
+				17D5379A168F4F750058C131 /* ItemCell.h */,
+				17D5379B168F4F750058C131 /* ItemCell.m */,
 				B1DAD96416503F0B00523981 /* HeroCell.h */,
 				B1DAD96516503F0B00523981 /* HeroCell.m */,
 				EDCF6457166D0C5B00BBE08A /* AbilityCell.h */,
@@ -3004,6 +3009,7 @@
 				EDC2660F168F077A00734667 /* AbilityDetailViewController.m in Sources */,
 				EDC2661A168F1E7900734667 /* ItemsDetailViewController.m in Sources */,
 				17D53795168F37490058C131 /* Hero.m in Sources */,
+				17D5379C168F4F750058C131 /* ItemCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

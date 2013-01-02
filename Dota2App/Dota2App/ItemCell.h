@@ -10,4 +10,7 @@
 
 @interface ItemCell : UITableViewCell
 
+@property (nonatomic, retain) IBOutlet UILabel *cellTitleLabel;
+@property (nonatomic, retain) IBOutlet UILabel *cellDetailLabel;
+@property (nonatomic, retain) IBOutlet UIImageView *cellImage;
 @end

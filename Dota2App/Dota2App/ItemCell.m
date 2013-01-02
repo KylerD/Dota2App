@@ -9,6 +9,7 @@
 #import "ItemCell.h"
 
 @implementation ItemCell
+@synthesize cellTitleLabel, cellDetailLabel, cellImage;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
