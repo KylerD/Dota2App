@@ -15,6 +15,8 @@
 @implementation ItemsDetailViewController
 @synthesize item;
 
+#pragma mark - View LifeCycle
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

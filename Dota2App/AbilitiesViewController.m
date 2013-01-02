@@ -21,7 +21,8 @@
 @synthesize hero;
 @synthesize tableView;
 
-#pragma mark - View
+#pragma mark - View LifeCycle
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -112,8 +113,7 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
         cd = @"0";
     }    
     
-    abilityCell.cd.text= cd;
-    
+    abilityCell.cd.text = cd;
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

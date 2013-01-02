@@ -271,11 +271,7 @@
 #pragma mark - Search bar
 
 - (void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
-{   
-    savedSearchTerm = searchText;
-    
-    freshData = NO;
-    
+{
     if (![searchText isEqualToString:@""]) {
         NSPredicate *predicate =[NSPredicate predicateWithFormat:@"(name contains[cd] %@) OR (ANY nicknames.name contains[cd] %@) OR (ANY roles.roleName contains[cd] %@)", searchText,searchText,searchText];
         [fetchedRC.fetchRequest setPredicate:predicate];

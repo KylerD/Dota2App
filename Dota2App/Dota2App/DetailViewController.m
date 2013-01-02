@@ -127,7 +127,8 @@
     self.masterPopoverController = nil;
 }
 
-#pragma mark - Segment contorl
+#pragma mark - Segment control 
+
 - (IBAction)segmentChanged:(UISegmentedControl *)sender {
     UIViewController *vc = [self viewControllerForSegmentIndex:sender.selectedSegmentIndex];
     [self addChildViewController:vc];
@@ -139,8 +140,6 @@
     [currentVC removeFromParentViewController];
     currentVC = vc;
 
-    
-   
 }
 
 - (UIViewController *)viewControllerForSegmentIndex:(NSInteger)index {

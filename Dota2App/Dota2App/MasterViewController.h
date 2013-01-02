@@ -17,8 +17,6 @@
     NSArray *heroNavStack;
     NSFetchedResultsController *fetchedRC;
     NSString *fetchItem;
-    NSString *savedSearchTerm;
-    BOOL freshData;
 }
 
 @property (strong, nonatomic) DetailViewController *detailViewController;
@@ -31,7 +29,5 @@
  *
  */
 - (NSFetchedResultsController *)fetchedResultsControllerForEntity: (NSString *)entityName;
-
-
 
 @end

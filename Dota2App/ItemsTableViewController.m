@@ -21,6 +21,8 @@
 @synthesize detailViewController = _detailViewController;
 @synthesize searchBar;
 
+#pragma mark - Boiler Plate View Code
+
 - (void)awakeFromNib
 {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
@@ -50,26 +52,6 @@
     }
 }
 
-- (NSFetchedResultsController *)fetchedResultsControllerForEntity: (NSString *)entityName {
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    // Edit the entity name as appropriate.
-    NSEntityDescription *entity;
-    entity = [NSEntityDescription entityForName:entityName inManagedObjectContext:managedObjectContext];
-    [fetchRequest setEntity:entity];
-    
-    NSSortDescriptor *sortDescriptor2 = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES selector:@selector(caseInsensitiveCompare:)];
-    
-    NSArray *sortDescriptors = [NSArray arrayWithObjects:sortDescriptor2, nil];
-    
-    [fetchRequest setSortDescriptors:sortDescriptors];
-    
-    // nil for section name key path means "1 section".
-    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:managedObjectContext sectionNameKeyPath:nil cacheName:nil];
-    aFetchedResultsController.delegate = self;
-    
-    return aFetchedResultsController;
-    
-}
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
@@ -278,6 +260,28 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     [self.tableView reloadData];
 }
 
+- (NSFetchedResultsController *)fetchedResultsControllerForEntity: (NSString *)entityName {
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    // Edit the entity name as appropriate.
+    NSEntityDescription *entity;
+    entity = [NSEntityDescription entityForName:entityName inManagedObjectContext:managedObjectContext];
+    [fetchRequest setEntity:entity];
+    
+    NSSortDescriptor *sortDescriptor2 = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES selector:@selector(caseInsensitiveCompare:)];
+    
+    NSArray *sortDescriptors = [NSArray arrayWithObjects:sortDescriptor2, nil];
+    
+    [fetchRequest setSortDescriptors:sortDescriptors];
+    
+    // nil for section name key path means "1 section".
+    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:managedObjectContext sectionNameKeyPath:nil cacheName:nil];
+    aFetchedResultsController.delegate = self;
+    
+    return aFetchedResultsController;
+    
+}
+
+#pragma mark - Search Bar
 
 - (void)searchBar:(UISearchBar *)theSearchBar textDidChange:(NSString *)searchText {
 
@@ -296,6 +300,5 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
         [detailVC setItem:selectedItem];
     }
 }
-
 
 @end
