@@ -174,8 +174,7 @@
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
         
         Hero *selectedHero = [fetchedRC objectAtIndexPath:indexPath];
-        self.detailViewController.hero= selectedHero;
-        [self.detailViewController configureView];
+        [self.detailViewController setHero:selectedHero];
     } 
 }
 

@@ -39,16 +39,18 @@
 
 - (void)configureView {
     UIImage *icon = [UIImage imageNamed:_hero.iconImage];
-
     
     [iconImageView setImage:icon];
-
     
     // add viewController so you can switch them later.
     UIViewController *vc = [self viewControllerForSegmentIndex:self.segment.selectedSegmentIndex];
     [self addChildViewController:vc];
     vc.view.frame = self.view.bounds;
     [self.view addSubview:vc.view];
+    if (currentVC) {
+        [currentVC.view removeFromSuperview];
+        [currentVC removeFromParentViewController];
+    }
     currentVC = vc;
     
     

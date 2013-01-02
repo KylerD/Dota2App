@@ -14,6 +14,7 @@
 @implementation InformationViewController
 @synthesize hero, heroImageView;
 @synthesize damagePointsLabel, missileSpeedLabel, intelligencePointsLabel, attackSpeedLevelOneLabel, attackRangeLabel, attackDurationLabel, heroNameLabel, armorLevelOneLabel, armorPointsLabel, castDurationLabel, movementSpeedPointsLabel, damageLevelOneLabel, factionImageView,roleLabel,primaryAttributeImageView, hitPointsLevelOneLabel, agilityPointsLabel, sightRangeLabel, manaLevelOneLabel, strengthPointsLabel, turnRateLabel;
+@synthesize scrollView;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -78,8 +79,9 @@
     [self.bioLabel sizeToFit];
     //for testing only
 
-
-    [self.view setContentSize:CGSizeMake(self.view.frame.size.width- 200, (self.bioLabel.frame.origin.y + self.bioLabel.frame.size.height)+50)];
+    if (![[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        [self.scrollView setContentSize:CGSizeMake(self.view.frame.size.width- 200, (self.bioLabel.frame.origin.y + self.bioLabel.frame.size.height)+50)];
+    }
 
     
     //To access abilities use hero.hasAbility (NSSet *), it contains Ability objects.
