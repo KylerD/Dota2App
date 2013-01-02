@@ -48,11 +48,14 @@
 }
 
 - (void)configureView {
-    NSLog(@"%@",hero.detailImage);
-    
     self.heroNameLabel.text = hero.name;
     self.factionImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png",hero.faction]];
-    self.heroImageView.image = [UIImage imageNamed:hero.detailImage];
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    
+    if ([fileManager fileExistsAtPath:hero.detailImgPath]) {
+        self.heroImageView.image = [UIImage imageWithContentsOfFile:hero.detailImgPath];
+    }
     
     
     self.strengthPointsLabel.text = [NSString stringWithFormat:@"%@ +%@",hero.strPoints, hero.strGain];

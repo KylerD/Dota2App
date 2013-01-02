@@ -51,7 +51,6 @@
     //Basic details
     hero.name = [heroNames objectAtIndex:randomNameIndex];
     hero.bio = [heroBiographies objectAtIndex:randomBioIndex];
-    hero.detailImage = [heroImages objectAtIndex:randomImageIndex];
     hero.iconImage = [heroIcons objectAtIndex:randomIconIndex];
     //Stats
     float strengthPoint = (arc4random() % 15) + 10;

@@ -20,7 +20,6 @@
 
 }
 
-@property (nonatomic, retain) IBOutlet UIImageView *iconImageView;
 @property (nonatomic, retain) Hero *hero;
 @property (nonatomic, retain) IBOutlet UISegmentedControl *segment;
 
