@@ -631,8 +631,6 @@
 		5C550F75168B4CF900249B67 /* Item+DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C550F74168B4CF900249B67 /* Item+DAO.m */; };
 		5C550F7E168B57B800249B67 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C550F7D168B57B800249B67 /* Item.m */; };
 		5C550FAB168F1B8E00249B67 /* Ability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C550FAA168F1B8E00249B67 /* Ability.m */; };
-		5C63691E168F431D00208D19 /* AbilityVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C63691D168F431D00208D19 /* AbilityVideoViewController.m */; };
-		5C63691F168F44CF00208D19 /* YouTubeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C636918168F307400208D19 /* YouTubeView.m */; };
 		5CD53E061685B08E0002803D /* hero.json in Resources */ = {isa = PBXBuildFile; fileRef = 5CD53E051685B08E0002803D /* hero.json */; };
 		5CD53E091685B5CE0002803D /* Role+DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD53E081685B5CE0002803D /* Role+DAO.m */; };
 		5CD53E241686495E0002803D /* Nickname.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD53E231686495E0002803D /* Nickname.m */; };
@@ -1308,10 +1306,6 @@
 		5C550F7D168B57B800249B67 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 		5C550FA9168F1B8E00249B67 /* Ability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ability.h; sourceTree = "<group>"; };
 		5C550FAA168F1B8E00249B67 /* Ability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ability.m; sourceTree = "<group>"; };
-		5C636917168F307400208D19 /* YouTubeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YouTubeView.h; sourceTree = "<group>"; };
-		5C636918168F307400208D19 /* YouTubeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YouTubeView.m; sourceTree = "<group>"; };
-		5C63691C168F431D00208D19 /* AbilityVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbilityVideoViewController.h; sourceTree = "<group>"; };
-		5C63691D168F431D00208D19 /* AbilityVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbilityVideoViewController.m; sourceTree = "<group>"; };
 		5CD53E051685B08E0002803D /* hero.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = hero.json; path = ../../Scrapper/hero.json; sourceTree = "<group>"; };
 		5CD53E071685B5CE0002803D /* Role+DAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Role+DAO.h"; sourceTree = "<group>"; };
 		5CD53E081685B5CE0002803D /* Role+DAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Role+DAO.m"; sourceTree = "<group>"; };
@@ -1404,14 +1398,10 @@
 		5C3CAEE11657D4F300E8341C /* Abilities */ = {
 			isa = PBXGroup;
 			children = (
-				5C636917168F307400208D19 /* YouTubeView.h */,
-				5C636918168F307400208D19 /* YouTubeView.m */,
 				EDCA230716553AB100FEDF75 /* AbilitiesViewController.h */,
 				EDCA230816553AB100FEDF75 /* AbilitiesViewController.m */,
 				EDC2660D168F077A00734667 /* AbilityDetailViewController.h */,
 				EDC2660E168F077A00734667 /* AbilityDetailViewController.m */,
-				5C63691C168F431D00208D19 /* AbilityVideoViewController.h */,
-				5C63691D168F431D00208D19 /* AbilityVideoViewController.m */,
 			);
 			name = Abilities;
 			sourceTree = "<group>";
@@ -2993,7 +2983,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C63691F168F44CF00208D19 /* YouTubeView.m in Sources */,
 				5C3CB3C71659039200E8341C /* NSManagedObject+CRUD.m in Sources */,
 				B18C9E40164E8B5900ADE97A /* main.m in Sources */,
 				B18C9E44164E8B5900ADE97A /* AppDelegate.m in Sources */,
@@ -3018,7 +3007,6 @@
 				5C550F7E168B57B800249B67 /* Item.m in Sources */,
 				5C550FAB168F1B8E00249B67 /* Ability.m in Sources */,
 				EDC2660F168F077A00734667 /* AbilityDetailViewController.m in Sources */,
-				5C63691E168F431D00208D19 /* AbilityVideoViewController.m in Sources */,
 				EDC2661A168F1E7900734667 /* ItemsDetailViewController.m in Sources */,
 				17D5379C168F4F750058C131 /* ItemCell.m in Sources */,
 				ED8CB6C1169483A800E5A1C3 /* Hero.m in Sources */,
