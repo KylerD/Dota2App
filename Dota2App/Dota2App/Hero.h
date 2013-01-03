@@ -2,7 +2,7 @@
 //  Hero.h
 //  Dota2App
 //
-//  Created by Stuart McKee on 29/12/2012.
+//  Created by Kyle Davidson on 02/01/2013.
 //
 //
 
@@ -17,8 +17,10 @@
 @property (nonatomic, retain) NSNumber * agilPoints;
 @property (nonatomic, retain) NSNumber * armour;
 @property (nonatomic, retain) NSNumber * attackRange;
+@property (nonatomic, retain) NSString * attackType;
 @property (nonatomic, retain) NSString * bio;
-@property (nonatomic, retain) NSString * detailImage;
+@property (nonatomic, retain) NSString * damage;
+@property (nonatomic, retain) NSString * detailImgPath;
 @property (nonatomic, retain) NSString * faction;
 @property (nonatomic, retain) NSString * heroId;
 @property (nonatomic, retain) NSNumber * hp;
@@ -34,12 +36,10 @@
 @property (nonatomic, retain) NSString * primaryAttribute;
 @property (nonatomic, retain) NSString * quote;
 @property (nonatomic, retain) NSString * role;
+@property (nonatomic, retain) NSString * sight;
 @property (nonatomic, retain) NSNumber * strGain;
 @property (nonatomic, retain) NSNumber * strPoints;
 @property (nonatomic, retain) NSNumber * turnRate;
-@property (nonatomic, retain) NSString * damage;
-@property (nonatomic, retain) NSString * sight;
-@property (nonatomic, retain) NSString * attackType;
 @property (nonatomic, retain) NSString * url;
 @property (nonatomic, retain) NSSet *abilities;
 @property (nonatomic, retain) NSSet *nicknames;

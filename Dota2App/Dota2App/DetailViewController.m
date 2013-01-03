@@ -18,7 +18,7 @@
 @end
 
 @implementation DetailViewController
-@synthesize iconImageView, hero = _hero;
+@synthesize hero = _hero;
 @synthesize segment;
 @synthesize masterPopoverController;
 
@@ -38,9 +38,6 @@
 }
 
 - (void)configureView {
-    UIImage *icon = [UIImage imageNamed:_hero.iconImage];
-    
-    [iconImageView setImage:icon];
     
     // add viewController so you can switch them later.
     UIViewController *vc = [self viewControllerForSegmentIndex:self.segment.selectedSegmentIndex];
@@ -52,8 +49,6 @@
         [currentVC removeFromParentViewController];
     }
     currentVC = vc;
-    
-    
 }
 
 - (void)didReceiveMemoryWarning

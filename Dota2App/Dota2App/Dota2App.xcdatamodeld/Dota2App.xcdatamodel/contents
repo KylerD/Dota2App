@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="12C3103" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="11G63" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Ability" representedClassName="Ability" syncable="YES">
         <attribute name="ability" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="abilityId" optional="YES" attributeType="String" syncable="YES"/>
@@ -37,7 +37,7 @@
         <attribute name="attackType" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="bio" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="damage" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="detailImage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="detailImgPath" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="faction" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="heroId" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="hp" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
