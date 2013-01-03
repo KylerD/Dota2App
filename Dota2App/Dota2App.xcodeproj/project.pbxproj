@@ -626,6 +626,7 @@
 		5C3CB3B61657F2A400E8341C /* X_Marks_the_Spot.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CB1521657F2A400E8341C /* X_Marks_the_Spot.png */; };
 		5C3CB3C61658287400E8341C /* Hero+DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3CB3C51658287400E8341C /* Hero+DAO.m */; };
 		5C3CB3C71659039200E8341C /* NSManagedObject+CRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3CB3BF16581F1700E8341C /* NSManagedObject+CRUD.m */; };
+		5C47D48F1696170F00C2DA74 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C47D48E1696170F00C2DA74 /* QuartzCore.framework */; };
 		5C550F67168B4A7600249B67 /* item.json in Resources */ = {isa = PBXBuildFile; fileRef = 5C550F66168B4A7600249B67 /* item.json */; };
 		5C550F6E168B4B5300249B67 /* Itemparser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C550F6D168B4B5300249B67 /* Itemparser.m */; };
 		5C550F75168B4CF900249B67 /* Item+DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C550F74168B4CF900249B67 /* Item+DAO.m */; };
@@ -1297,6 +1298,7 @@
 		5C3CB3BF16581F1700E8341C /* NSManagedObject+CRUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+CRUD.m"; sourceTree = "<group>"; };
 		5C3CB3C41658287400E8341C /* Hero+DAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Hero+DAO.h"; sourceTree = "<group>"; };
 		5C3CB3C51658287400E8341C /* Hero+DAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Hero+DAO.m"; sourceTree = "<group>"; };
+		5C47D48E1696170F00C2DA74 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		5C550F66168B4A7600249B67 /* item.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = item.json; path = ../../Scrapper/item.json; sourceTree = "<group>"; };
 		5C550F6C168B4B5300249B67 /* Itemparser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Itemparser.h; sourceTree = "<group>"; };
 		5C550F6D168B4B5300249B67 /* Itemparser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Itemparser.m; sourceTree = "<group>"; };
@@ -1373,6 +1375,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C47D48F1696170F00C2DA74 /* QuartzCore.framework in Frameworks */,
 				ED08F245165D1930001C4424 /* Security.framework in Frameworks */,
 				ED08F212165D133F001C4424 /* SystemConfiguration.framework in Frameworks */,
 				ED08F20F165D1332001C4424 /* MobileCoreServices.framework in Frameworks */,
@@ -2178,6 +2181,7 @@
 		B18C9E22164E8B5900ADE97A = {
 			isa = PBXGroup;
 			children = (
+				5C47D48E1696170F00C2DA74 /* QuartzCore.framework */,
 				B18C9E39164E8B5900ADE97A /* Dota2App */,
 				B18C9E30164E8B5900ADE97A /* Frameworks */,
 				B18C9E2E164E8B5900ADE97A /* Products */,

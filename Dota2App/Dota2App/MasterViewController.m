@@ -7,11 +7,15 @@
 //
 
 #import "MasterViewController.h"
+
+#import <QuartzCore/QuartzCore.h>
+
 #import "AppDelegate.h"
 #import "DetailViewController.h"
 #import "HeroCell.h"
 #import "Hero.h"
 #import "Role.h"
+
 
 @interface MasterViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
@@ -211,6 +215,10 @@
     heroCell.cellTitleLabel.text = hero.name;
     heroCell.cellDetailLabel.text = subtitle;
     heroCell.cellImage.image = [UIImage imageNamed:hero.iconImage];
+    
+//    heroCell.cellImage.layer.borderColor = [UIColor colorWithRed:0.89 green:0.69 blue:0.25 alpha:1.0].CGColor;//89,68,25
+//    heroCell.cellImage.layer.borderWidth = 1.0f;
+    
     heroCell.cellImage.contentMode = UIViewContentModeScaleAspectFit;
     heroCell.factionImage.image = [UIImage imageNamed:factionImageName];
     heroCell.attributeImage.image = [UIImage imageNamed:attributeImageName];
