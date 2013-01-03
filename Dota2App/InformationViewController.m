@@ -83,7 +83,7 @@
     [self.bioLabel sizeToFit];
     //for testing only
 
-    if (![[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
         [self.scrollView setContentSize:CGSizeMake(self.view.frame.size.width- 200, (self.bioLabel.frame.origin.y + self.bioLabel.frame.size.height)+50)];
     }
 
