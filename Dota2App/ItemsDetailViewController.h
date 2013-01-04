@@ -12,5 +12,11 @@
 @interface ItemsDetailViewController : UIViewController
 
 @property (nonatomic, strong) Item *item;
-
+@property (nonatomic, retain) IBOutlet UILabel * cost;
+@property (nonatomic, retain) IBOutlet UILabel * name;
+@property (nonatomic, retain) IBOutlet UILabel * description;
+@property (nonatomic, retain) IBOutlet UILabel * lore;
+@property (nonatomic, retain) IBOutlet UILabel * manaCost;
+@property (nonatomic, retain) IBOutlet UILabel * cooldown;
+@property (nonatomic, retain) IBOutlet UIImageView * image;
 @end

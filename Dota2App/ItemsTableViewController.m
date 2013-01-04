@@ -301,6 +301,7 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
         Item *selectedItem = [fetchedRC objectAtIndexPath:indexPath];
         ItemsDetailViewController *detailVC = (ItemsDetailViewController *)[segue destinationViewController];
         [detailVC setItem:selectedItem];
+        NSLog(@"sfsfd");
     }
 }
 
