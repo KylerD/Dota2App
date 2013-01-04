@@ -14,7 +14,7 @@
 @end
 
 @implementation ItemsDetailViewController
-@synthesize item = _item;
+@synthesize item = _item, manaCost,manaImage,lore,name;
 
 
 
@@ -62,20 +62,44 @@
     for (NSString * itemConsumables in _item.components) {
         NSLog(@"%i. %@",count, itemConsumables);
     }
+    NSLog(@"%@",_item.lore);
+    
+    
+    
     
     self.name.text = _item.name;
     self.lore.text = _item.lore;
-    self.description.text = _item.desc;
+    self.description.text = [_item.desc stringByReplacingOccurrencesOfString:@"<br />"withString:@""];
     self.manaCost.text = [NSString stringWithFormat:@"%@",_item.manaCost];
-    self.cost = [NSString stringWithFormat:@"%@",_item.cost];
-    
+    self.cost.text = [NSString stringWithFormat:@"%@",_item.cost];
+    self.cooldown.text = [NSString stringWithFormat:@"%@", _item.coolDown];
     
     self.lore.lineBreakMode = UILineBreakModeWordWrap;
     self.lore.numberOfLines = 0;
     self.description.lineBreakMode = UILineBreakModeWordWrap;
     self.description.numberOfLines = 0;
+   
+    self.lore.frame = CGRectMake(self.lore.frame.origin.x,self.lore.frame.origin.y,670,self.lore.frame.size.height);
+    
     [self.lore sizeToFit];
+    
+    self.description.frame = CGRectMake(self.description.frame.origin.x,self.lore.frame.origin.y+self.lore.frame.size.height+30,670,self.description.frame.size.height);
+
     [self.description sizeToFit];
+    
+
+    if ([self.cooldown.text isEqualToString:@"0"]) {
+        self.cooldown.hidden = true;
+        self.manaCost.hidden = true;
+        self.cooldownImage.hidden = true;
+        self.manaImage.hidden = true;
+    }
+    else{
+        self.cooldown.hidden = false;
+        self.manaCost.hidden = false;
+        self.cooldownImage.hidden = false;
+        self.manaImage.hidden = false;
+    }
 }
 
 - (void)didReceiveMemoryWarning

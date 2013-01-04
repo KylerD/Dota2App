@@ -10,6 +10,9 @@
 		0C493A8D1665065600A5690B /* armor.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C493A8A1665065600A5690B /* armor.png */; };
 		0C493A8E1665065600A5690B /* movementSpeed.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C493A8B1665065600A5690B /* movementSpeed.png */; };
 		0C493A8F1665065600A5690B /* damage.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C493A8C1665065600A5690B /* damage.png */; };
+		17B0412916970DA800663F45 /* gold.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B0412616970DA800663F45 /* gold.png */; };
+		17B0412A16970DA800663F45 /* cooldown.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B0412716970DA800663F45 /* cooldown.png */; };
+		17B0412B16970DA800663F45 /* manaCost.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B0412816970DA800663F45 /* manaCost.png */; };
 		17D5379C168F4F750058C131 /* ItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D5379B168F4F750058C131 /* ItemCell.m */; };
 		5C3CAEE91657D58200E8341C /* HeroParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3CAEE81657D58200E8341C /* HeroParser.m */; };
 		5C3CB1531657F2A400E8341C /* Icon_Agi.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAEEC1657F2A400E8341C /* Icon_Agi.png */; };
@@ -678,6 +681,9 @@
 		0C493A8A1665065600A5690B /* armor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = armor.png; sourceTree = "<group>"; };
 		0C493A8B1665065600A5690B /* movementSpeed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = movementSpeed.png; sourceTree = "<group>"; };
 		0C493A8C1665065600A5690B /* damage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = damage.png; sourceTree = "<group>"; };
+		17B0412616970DA800663F45 /* gold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gold.png; sourceTree = "<group>"; };
+		17B0412716970DA800663F45 /* cooldown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cooldown.png; sourceTree = "<group>"; };
+		17B0412816970DA800663F45 /* manaCost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = manaCost.png; sourceTree = "<group>"; };
 		17D5379A168F4F750058C131 /* ItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCell.h; sourceTree = "<group>"; };
 		17D5379B168F4F750058C131 /* ItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCell.m; sourceTree = "<group>"; };
 		5C3CAEE71657D58200E8341C /* HeroParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroParser.h; sourceTree = "<group>"; };
@@ -2165,6 +2171,9 @@
 				0C493A8A1665065600A5690B /* armor.png */,
 				0C493A8B1665065600A5690B /* movementSpeed.png */,
 				0C493A8C1665065600A5690B /* damage.png */,
+				17B0412616970DA800663F45 /* gold.png */,
+				17B0412716970DA800663F45 /* cooldown.png */,
+				17B0412816970DA800663F45 /* manaCost.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -2977,6 +2986,9 @@
 				5C550F67168B4A7600249B67 /* item.json in Resources */,
 				EDC26643168F45E700734667 /* cd.png in Resources */,
 				EDC26644168F45E700734667 /* mp.png in Resources */,
+				17B0412916970DA800663F45 /* gold.png in Resources */,
+				17B0412A16970DA800663F45 /* cooldown.png in Resources */,
+				17B0412B16970DA800663F45 /* manaCost.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

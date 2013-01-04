@@ -68,7 +68,7 @@
             i.type = @"component";
         }
         
-        i.cost = [NSNumber numberWithFloat:[[itemDictionary valueForKey:@"attrib"] floatValue]];
+        i.cost = [NSNumber numberWithFloat:[[itemDictionary valueForKey:@"cost"] floatValue]];
         i.coolDown = [NSNumber numberWithFloat:[[itemDictionary valueForKey:@"cd"] floatValue]];
         
         id tryMana = [NSNumber numberWithFloat:[[itemDictionary valueForKey:@"mc"] floatValue]];

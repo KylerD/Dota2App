@@ -14,7 +14,7 @@
 
 @implementation AbilityDetailViewController
 @synthesize ability;
-@synthesize titleLabel, descriptionLabel, mcLabel, cdLabel, abilityImage, abilityLabel, affectsLabel, damageTypeLabel, healOrDamageLabel, radiusLabel, videoWebView;
+@synthesize titleLabel, descriptionLabel, mcLabel, cdLabel, abilityImage, affectsLabel, damageTypeLabel, radiusLabel, videoWebView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -38,11 +38,13 @@
     //Set the description
     [self.descriptionLabel setText:self.ability.notes];
     //Set the mana cost
-    NSString *manaCost = [NSString stringWithFormat:@"MANA COST: %@", self.ability.mc];
+    NSString *manaCost = [NSString stringWithFormat:@"Mana cost: %@", self.ability.mc];
     [self.mcLabel setText:manaCost];
     //Set the cooldown
-    NSString *cooldown = [NSString stringWithFormat:@"COOLDOWN: %@", self.ability.cd];
+    NSString *cooldown = [NSString stringWithFormat:@"Cooldown: %@", self.ability.cd];
     [self.cdLabel setText:cooldown];
+    
+    self.radiusLabel.text = [NSString stringWithFormat:@"Radius: %@", self.ability.radius];
     
     
     NSFileManager *fileManager = [NSFileManager defaultManager];
@@ -51,28 +53,31 @@
         self.abilityImage.image = [UIImage imageWithContentsOfFile:ability.imagePath];
     }
     
-    // HTML to embed YouTube video
-    
-    
-    NSString* embedHTML = @"\
-    <html><head>\
-    <style type=\"text/css\">\
-    body {\
-        background-color: transparent;\
-    color: white;\
-    }\
-    </style>\
-    </head><body style=\"margin:0\">\
-    <iframe width=\"%0.0f\" height=\"%0.0f\" src=\"%@\" frameborder=\"0\" allowfullscreen></iframe>\
-    </body></html>";
-    NSString* html = [NSString stringWithFormat:embedHTML, self.videoWebView.frame.size.width, self.videoWebView.frame.size.height, self.ability.videoUrl];
-    [self.videoWebView loadHTMLString:html baseURL:nil];    // Load the html into the webview
+        
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:self.ability.videoUrl]];
+    [self.videoWebView loadRequest:request];
 
 
 }
 
-- (void)didReceiveMemoryWarning
-{
+
+
+
+#pragma mark -
+#pragma mark UIWebViewDelegate
+//To check if youtube try to show the overview page of m.youtube.com or the current movie
+//if the user click on the youtube logo this method stop loading the mobile page
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
+    NSURL *urlRequest = [request URL];
+    
+    if ([[urlRequest absoluteString] isEqualToString:self.ability.videoUrl]) {
+        return YES;
+    }
+    
+    return NO;
+}
+
+- (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

@@ -18,5 +18,9 @@
 @property (nonatomic, retain) IBOutlet UILabel * lore;
 @property (nonatomic, retain) IBOutlet UILabel * manaCost;
 @property (nonatomic, retain) IBOutlet UILabel * cooldown;
+
+
 @property (nonatomic, retain) IBOutlet UIImageView * image;
+@property (nonatomic, retain) IBOutlet UIImageView * manaImage;
+@property (nonatomic, retain) IBOutlet UIImageView * cooldownImage;
 @end
