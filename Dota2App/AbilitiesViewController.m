@@ -100,6 +100,7 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     }
     
     
+    abilityCell.icon.frame = CGRectMake(abilityCell.icon.frame.origin.x,abilityCell.icon.frame.origin.y,128,69);
     [abilityCell isPassive:[ability.isPassive boolValue]];
     
     NSString * mc = ability.mc;
