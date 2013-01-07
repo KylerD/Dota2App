@@ -10,6 +10,7 @@
 #import "Hero.h"
 @interface InformationViewController : UIViewController  {
     NSArray * heroStatsRowItemArray;
+
 }
 
 @property (weak, nonatomic) IBOutlet UIImageView *heroImageView;
@@ -41,6 +42,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *attackSpeedLevelOneLabel;
 @property (nonatomic, retain) IBOutlet UIScrollView * scrollView;
 @property (nonatomic, strong) Hero *hero;
+
 
 - (void)configureView;
 

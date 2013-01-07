@@ -66,7 +66,7 @@
     self.damagePointsLabel.text = hero.damage;
     self.movementSpeedPointsLabel.text = [NSString stringWithFormat:@"%@",hero.ms];
     self.armorPointsLabel.text = [NSString stringWithFormat:@"%@",hero.armour];
-    
+    NSLog(@"%@",hero.role);
     self.roleLabel.text = hero.role;
     
     self.bioLabel.lineBreakMode = UILineBreakModeWordWrap;

@@ -9,7 +9,7 @@
 #import "AbilityCell.h"
 
 @implementation AbilityCell
-@synthesize textLabel, icon, mp,cd, mpIcon, cdIcon, abilityName,isPassiveLabel;
+@synthesize textLabel, icon, mp,cd, mpIcon, cdIcon, abilityName,isPassiveLabel, lore;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
