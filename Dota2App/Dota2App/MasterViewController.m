@@ -87,7 +87,10 @@
     AppDelegate *del = [[UIApplication sharedApplication] delegate];
     managedObjectContext = del.managedObjectContext;
     
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+    
     heroNavStack = [NSArray arrayWithObjects:[self.splitViewController.viewControllers objectAtIndex:0], del.heroNavStack, nil];
+    }
     
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
     

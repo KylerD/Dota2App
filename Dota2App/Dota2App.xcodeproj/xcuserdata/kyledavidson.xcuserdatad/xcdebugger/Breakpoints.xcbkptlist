@@ -20,19 +20,6 @@
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "InformationViewController.m"
-         timestampString = "379257360.696702"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "86"
-         endingLineNumber = "86"
-         landmarkName = "-configureView"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
          filePath = "AbilitiesViewController.m"
          timestampString = "378826782.017565"
          startingColumnNumber = "9223372036854775807"
@@ -47,11 +34,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Dota2App/MasterViewController.m"
-         timestampString = "378826782.017565"
+         timestampString = "379261772.202176"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "275"
-         endingLineNumber = "275"
+         startingLineNumber = "278"
+         endingLineNumber = "278"
          landmarkName = "-controllerDidChangeContent:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -78,7 +65,7 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "104"
          endingLineNumber = "104"
-         landmarkName = "-configureCell:atIndexPath:"
+         landmarkName = "-controller:sectionIndexTitleForSectionName:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
