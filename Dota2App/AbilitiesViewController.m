@@ -71,21 +71,26 @@
    
     Ability *ability = [abilities objectAtIndex:[indexPath row]];
     
-
+    int manaCoolDownHeight = 0;
+    
+    if (![ability.mc isEqualToString:@""]) {
+        manaCoolDownHeight = 30;
+    }
+    
     if ([ability.notes isEqualToString: @""]) {
-        return 130;
+        return 110+manaCoolDownHeight;
     }
     else{
         // FLT_MAX here simply means no constraint in height
-        CGSize maximumLabelSize = CGSizeMake(768, FLT_MAX);
+        CGSize maximumLabelSize = CGSizeMake(541, FLT_MAX);
     
         CGSize expectedLabelSize = [ability.notes sizeWithFont:[UIFont systemFontOfSize:15.0] constrainedToSize:maximumLabelSize lineBreakMode:UILineBreakModeWordWrap];
     
         NSLog(@"%f",expectedLabelSize.height);
-        if (expectedLabelSize.height+130<180) {
-            return 130;
+        if (expectedLabelSize.height+80<110) {
+            return 110+manaCoolDownHeight;
         }else{
-            return expectedLabelSize.height+130;
+            return expectedLabelSize.height+80+manaCoolDownHeight;
         }
     }
     
@@ -120,7 +125,6 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     abilityCell.lore.numberOfLines = 0;
     
     [abilityCell.lore sizeToFit];
-    
 
     NSFileManager *fileManager = [NSFileManager defaultManager];
     
@@ -133,12 +137,33 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
 
     }
     
+    if (![ability.mc isEqualToString:@""]) {
+        
+        int yOrigin = abilityCell.lore.frame.origin.y + abilityCell.lore.frame.size.height + 20;
+        
+        if (yOrigin <100) {
+            yOrigin = 100;
+        }
+        
+        
+        UIImageView * manaCostImage = [[UIImageView alloc] init];
+        manaCostImage.image = [UIImage imageNamed:@"manaCost.png"];
+        [abilityCell addSubview:manaCostImage];
+        manaCostImage.frame = CGRectMake(50, yOrigin,25,25);
+        
+        UILabel * manaCostLabel = [[UILabel alloc] init];
+        manaCostLabel.text = ability.mc;
+        manaCostLabel.frame = CGRectMake(80, yOrigin, 400,40);
+        [manaCostLabel sizeToFit];
+        [manaCostLabel setBackgroundColor:[UIColor clearColor]];
+        manaCostLabel.textColor = [UIColor whiteColor];
+        
+        [abilityCell addSubview:manaCostLabel];
+    }
+  
     
-
+    
     [abilityCell isPassive:[ability.isPassive boolValue]];
-    
-
-
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
