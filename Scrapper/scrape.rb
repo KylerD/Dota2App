@@ -6,6 +6,20 @@ require 'json'
 require 'mechanize'
 
 verbose = false
+imagesOnly = false
+
+#Agent init and config
+agent = Mechanize.new
+
+agent.user_agent = 'Individueller User-Agent'
+agent.user_agent_alias = 'Linux Mozilla'
+
+ARGV.each do|a|
+	puts "Argument: #{a}"
+	if a == "-i"
+		imagesOnly = true
+	end
+end
 
 def arrayToString(a)
 	return a.map { |i| "'" + i.to_s + "'" }.join(",")
@@ -206,18 +220,102 @@ def createHashFromMixedKVPArray(a)
 			# else
 			# 	puts "Processed---Key:#{formattedKey}, value: #{formattedValue}"
 			# end
-		
+
 			tempAblityHash[formattedKey] = formattedValue
 		}
 	end
 	return tempAblityHash
 end
 
-#Agent init and config
-agent = Mechanize.new
 
-agent.user_agent = 'Individueller User-Agent'
-agent.user_agent_alias = 'Linux Mozilla'
+def get_hero_icon(heroname,agent)
+
+	puts "	>Geting Hero Icon"
+
+	basenormalurl = 'http://www.dota2wiki.com'
+
+	source = agent.get("#{basenormalurl}/wiki/#{heroname}")
+	heroIconURL = source.image_with(:alt => "#{heroname}")
+
+	localimgpath = "images/heroiconimg/#{heroname}_icon.png"
+
+	begin
+
+		if FileTest.exists?(localimgpath)
+			puts "	 File Found locally"
+			return localimgpath
+		end
+
+
+		puts "Downloading: #{heroIconURL}"
+		agent.get(heroIconURL).save localimgpath
+
+
+
+		return localimgpath;
+	rescue Exception=>e
+		puts "Download img Error:#{e}"
+		return "heroiconimg/default_icon.png";
+	end
+
+end
+
+def get_hero_image(avatarURL,heroname,agent)
+
+	puts "	>Geting Hero Avatar"
+
+	#basenormalurl = 'http://media.steampowered.com/apps/dota2/images/heroes'
+	cleanedname = heroname.content.downcase.gsub(/\s+/,"_")
+	# heroImageURL = "#{basenormalurl}/#{cleanedname}_full.png"
+
+	localimgpath = "images/heroimg/#{heroname}.png"
+	begin
+
+		if FileTest.exists?(localimgpath)
+			puts "	 File Found locally"
+			return localimgpath
+		end
+
+
+
+		puts "Downloading: #{avatarURL}"
+		agent.get(avatarURL).save localimgpath
+
+
+		return localimgpath;
+	rescue Exception=>e
+		puts "Download img Error:#{e}"
+		return "heroiconimg/default.png";
+	end
+
+end
+
+def get_ability_image(abilityName,url,agent)
+
+	puts "	>Geting #{abilityName} Image"
+
+	localimgpath = "images/skillimg/#{abilityName}.png"
+
+	begin
+
+		if FileTest.exists?(localimgpath)
+			puts "	 File Found locally"
+			return localimgpath
+		end
+
+		puts "Downloading: #{url}"
+		agent.get(url).save localimgpath
+
+		return localimgpath;
+	rescue Exception=>e
+		puts "Download img Error:#{e}"
+		return "skillimg/default.png";
+	end
+
+end
+
+
+
 
 heroArray = Array.new
 
@@ -226,6 +324,7 @@ heroArray = Array.new
 puts "================================================================="
 puts "					DOTA2 SPIDER"
 puts "================================================================="
+
 puts "Getting Hero List.."
 heroListPage = agent.get('http://www.dota2.com/heroes/')
 
@@ -249,6 +348,8 @@ heroArray.each do |h|
  	h['portraitUrl'] = heroDetailPage.image_with(:dom_id => "heroTopPortraitIMG")
  	h['name'] = heroDetailPage.at('//*[@id="centerColContent"]/h1/text()')
  	puts "Scrapping #{h['name']}"
+ 	get_hero_icon(h['name'],agent)
+ 	get_hero_image(h['portraitUrl'],h['name'],agent)
  	h['attackMode'] = heroDetailPage.at('//*[@id="heroBioRoles"]/span/text()')
  	h['roles'] = formatRoleString(heroDetailPage.at('//*[@id="heroBioRoles"]/text()').content)
  	h['bio'] = formatBioString(heroDetailPage.at('//*[@id="bioInner"]/text()').content)
@@ -273,30 +374,30 @@ heroArray.each do |h|
  	h.merge!(agiHash)
 
 
-	primaryAttribStyle = heroDetailPage.at('//*[@id="overviewIcon_Primary"]')['style']
+ 	primaryAttribStyle = heroDetailPage.at('//*[@id="overviewIcon_Primary"]')['style']
  	
-	primaryAttrib = ""
+ 	primaryAttrib = ""
  	primaryAttribRegex = /.*:(.*?)px/
 
-		primaryAttribStyle.scan(primaryAttribRegex){ |topPos|
+ 	primaryAttribStyle.scan(primaryAttribRegex){ |topPos|
 
-			topPosInt = Integer(topPos[0])
+ 		topPosInt = Integer(topPos[0])
 
-			if topPosInt == 83
-				primaryAttrib = "Strength"
-			elsif topPosInt == 43
-				primaryAttrib = "Agility"
-			elsif topPosInt == 1
-				primaryAttrib = "Intelligence"
-			else
-				puts "ERROR - Couldnt identify Primary ability, postion '#{topPos}' was not recognised"
-			end
-		}
+ 		if topPosInt == 83
+ 			primaryAttrib = "Strength"
+ 		elsif topPosInt == 43
+ 			primaryAttrib = "Agility"
+ 		elsif topPosInt == 1
+ 			primaryAttrib = "Intelligence"
+ 		else
+ 			puts "ERROR - Couldnt identify Primary ability, postion '#{topPos}' was not recognised"
+ 		end
+ 	}
 
-		h['primary'] = primaryAttrib;
+ 	h['primary'] = primaryAttrib;
 
 	#Create Ability array
- 	heroAbilities = Array.new
+	heroAbilities = Array.new
 
 	#Get Ability Element array
 	heroAbilitiesElements = heroDetailPage.search('.abilitiesInsetBoxContent')
@@ -307,10 +408,10 @@ heroArray.each do |h|
 
 			#Create Ability Object
 			a = Hash.new
-
 	 		#Get consistant ability details
 	 		a['imgUrl'] = node.at('div[1]/div[1]/img')['src']
 	 		a['name'] = node.at('div[1]/div[2]/h2/text()')
+	 		get_ability_image(a['name'],a['imgUrl'],agent)
 	 		a['description'] = node.at('div[1]/div[2]/p/text()')
 	 		a['lore'] = node.at('div[4]/text()')
 
@@ -357,6 +458,13 @@ puts "Writing to file.."
 #Write Hero list to JSON
 File.open("hero.json", 'w') {|f| f.write(heroArray.to_json()) }
 puts "JSON Done"
+
+# heroArray.each do |h|
+
+# 	get_image_at_page(h['imgUrl'],'heroimg',"#{h['name']}.png")
+# end
+
+
 
 
 
