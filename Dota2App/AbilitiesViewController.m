@@ -137,13 +137,15 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
 
     }
     
+    
+    int yOrigin = abilityCell.lore.frame.origin.y + abilityCell.lore.frame.size.height + 20;
+    
+    if (yOrigin <100) {
+        yOrigin = 100;
+    }
+    
     if (![ability.mc isEqualToString:@""]) {
-        
-        int yOrigin = abilityCell.lore.frame.origin.y + abilityCell.lore.frame.size.height + 20;
-        
-        if (yOrigin <100) {
-            yOrigin = 100;
-        }
+       
         
         
         UIImageView * manaCostImage = [[UIImageView alloc] init];
@@ -160,6 +162,26 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
         
         [abilityCell addSubview:manaCostLabel];
     }
+    
+    if (![ability.cd isEqualToString:@""]) {
+        
+        
+        UIImageView * cooldownImage = [[UIImageView alloc] init];
+        cooldownImage.image = [UIImage imageNamed:@"cooldown.png"];
+        [abilityCell addSubview:cooldownImage];
+        cooldownImage.frame = CGRectMake(300, yOrigin,25,25);
+        
+        UILabel * cooldownLabel= [[UILabel alloc] init];
+        cooldownLabel.text = ability.cd;
+        cooldownLabel.frame = CGRectMake(330, yOrigin, 400,40);
+        [cooldownLabel sizeToFit];
+        [cooldownLabel setBackgroundColor:[UIColor clearColor]];
+        cooldownLabel.textColor = [UIColor whiteColor];
+        
+        [abilityCell addSubview:cooldownLabel];
+    }
+    
+
   
     
     
