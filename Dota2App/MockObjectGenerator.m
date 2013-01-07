@@ -46,7 +46,6 @@
     Hero *hero =  [NSEntityDescription insertNewObjectForEntityForName:@"Hero" inManagedObjectContext:context];
     int randomNameIndex = arc4random() % [heroNames count];
     int randomBioIndex = arc4random() % [heroBiographies count];
-    int randomImageIndex = arc4random() % [heroImages count];
     int randomIconIndex = arc4random() % [heroIcons count];
     //Basic details
     hero.name = [heroNames objectAtIndex:randomNameIndex];
@@ -102,15 +101,12 @@
     int randomNoteIndex = arc4random() % [abilityNotes count];
     int randomImageIndex = arc4random() % [abilityImages count];
     int randomDamageTypeIndex = arc4random() % [abilityDamage count];
-    int randomAffectsIndex = arc4random() % [abilityAffects count];
-    int randomTypeIndex = arc4random() % [abilityTypes count];
+
     
     //set attributes
     ability.name = [abilityNames objectAtIndex:randomNameIndex];
     ability.notes = [abilityNotes objectAtIndex:randomNoteIndex];
     ability.imagePath = [abilityImages objectAtIndex:randomImageIndex];
-    ability.affects = [abilityAffects objectAtIndex:randomAffectsIndex];
-    ability.ability = [abilityTypes objectAtIndex:randomTypeIndex];
     ability.damage = [abilityDamage objectAtIndex:randomDamageTypeIndex];
     //sets up the relationship
     ability.hero = hero;

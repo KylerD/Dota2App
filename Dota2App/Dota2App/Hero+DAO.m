@@ -57,6 +57,7 @@
     
     //Image download and cache
     NSString *imgUrl = [self interpretValue:[heroDictionary valueForKey:@"portraitUrl"]];
+    hero.detailImgUrl = imgUrl;
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString  *documentsDirectory = [paths objectAtIndex:0];

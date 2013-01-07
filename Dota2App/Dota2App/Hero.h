@@ -2,7 +2,7 @@
 //  Hero.h
 //  Dota2App
 //
-//  Created by Kyle Davidson on 02/01/2013.
+//  Created by Kyle Davidson on 07/01/2013.
 //
 //
 
@@ -34,13 +34,12 @@
 @property (nonatomic, retain) NSNumber * ms;
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSString * primaryAttribute;
-@property (nonatomic, retain) NSString * quote;
 @property (nonatomic, retain) NSString * role;
 @property (nonatomic, retain) NSString * sight;
 @property (nonatomic, retain) NSNumber * strGain;
 @property (nonatomic, retain) NSNumber * strPoints;
-@property (nonatomic, retain) NSNumber * turnRate;
 @property (nonatomic, retain) NSString * url;
+@property (nonatomic, retain) NSString * detailImgUrl;
 @property (nonatomic, retain) NSSet *abilities;
 @property (nonatomic, retain) NSSet *nicknames;
 @property (nonatomic, retain) NSSet *roles;

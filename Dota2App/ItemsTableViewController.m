@@ -62,14 +62,17 @@
     fetchItem = @"Item";
     AppDelegate * del = [[UIApplication sharedApplication] delegate];
     managedObjectContext = del.managedObjectContext;
-    //Set item detail nav stack from storyboard id
-    del.itemNavStack = [self.storyboard instantiateViewControllerWithIdentifier:@"ItemNav"];
-    //Assign to local array for easy access
-    itemNavStack = [NSArray arrayWithObjects:[self.splitViewController.viewControllers objectAtIndex:0], del.itemNavStack, nil];
-    //Change splitViewControllers detail nav using this
-    self.splitViewController.viewControllers = itemNavStack;
-    // Do any additional setup after loading the view, typically from a nib.
-    self.detailViewController = (ItemsDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        //Set item detail nav stack from storyboard id
+        del.itemNavStack = [self.storyboard instantiateViewControllerWithIdentifier:@"ItemNav"];
+        //Assign to local array for easy access
+        itemNavStack = [NSArray arrayWithObjects:[self.splitViewController.viewControllers objectAtIndex:0], del.itemNavStack, nil];
+        //Change splitViewControllers detail nav using this
+        self.splitViewController.viewControllers = itemNavStack;
+            
+        // Do any additional setup after loading the view, typically from a nib.
+        self.detailViewController = (ItemsDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    }
 
     self.tableView.scrollsToTop = YES;
     
