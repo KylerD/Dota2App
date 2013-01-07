@@ -76,16 +76,16 @@
         return 180;
     }
     else{
-    // FLT_MAX here simply means no constraint in height
-    CGSize maximumLabelSize = CGSizeMake(768, FLT_MAX);
+        // FLT_MAX here simply means no constraint in height
+        CGSize maximumLabelSize = CGSizeMake(768, FLT_MAX);
     
-        CGSize expectedLabelSize = [ability.notes sizeWithFont:[UIFont systemFontOfSize:16.0] constrainedToSize:maximumLabelSize lineBreakMode:UILineBreakModeWordWrap];
+        CGSize expectedLabelSize = [ability.notes sizeWithFont:[UIFont systemFontOfSize:15.0] constrainedToSize:maximumLabelSize lineBreakMode:UILineBreakModeWordWrap];
     
         NSLog(@"%f",expectedLabelSize.height);
-        if (expectedLabelSize.height<180) {
+        if (expectedLabelSize.height+150<180) {
             return 180;
         }else{
-            return expectedLabelSize.height+115;
+            return expectedLabelSize.height+150;
         }
     }
     
@@ -127,7 +127,7 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     }
     
     
-[abilityCell.icon setFrame:CGRectMake(abilityCell.icon.frame.origin.x,abilityCell.icon.frame.origin.y, 128,69)];
+[abilityCell.icon setFrame:CGRectMake(abilityCell.icon.frame.origin.x,abilityCell.icon.frame.origin.y, 69,69)];
     [abilityCell isPassive:[ability.isPassive boolValue]];
     
     NSString * mc = ability.mc;
@@ -147,13 +147,16 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     abilityCell.cd.text = cd;
     
     
+    if(abilityCell.lore.frame.size.height>65){
+    
     abilityCell.cd.frame = CGRectMake(abilityCell.cd.frame.origin.x,abilityCell.lore.frame.origin.y + abilityCell.lore.frame.size.height + 20, abilityCell.cd.frame.size.width, abilityCell.cd.frame.size.width);
     
-    /*
-    abilityCell.mp;
-    abilityCell.mpIcon;
-    abilityCell.cdIcon;
-     */
+    abilityCell.mp.frame = CGRectMake(abilityCell.mp.frame.origin.x,abilityCell.lore.frame.origin.y + abilityCell.lore.frame.size.height + 20, abilityCell.mp.frame.size.width, abilityCell.mp.frame.size.width);
+    
+    abilityCell.mpIcon.frame = CGRectMake(abilityCell.mpIcon.frame.origin.x,abilityCell.lore.frame.origin.y + abilityCell.lore.frame.size.height + 20, abilityCell.mpIcon.frame.size.width, abilityCell.mpIcon.frame.size.width);
+    abilityCell.cdIcon.frame  =CGRectMake(abilityCell.cdIcon.frame.origin.x,abilityCell.lore.frame.origin.y + abilityCell.lore.frame.size.height + 20, abilityCell.cdIcon.frame.size.width, abilityCell.cdIcon.frame.size.width);
+     
+    }
     
 
 }
