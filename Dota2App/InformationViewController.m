@@ -82,15 +82,9 @@
     self.bioLabel.text = hero.bio;
     
     [self.bioLabel sizeToFit];
-    //for testing only
 
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        [self.scrollView setContentSize:CGSizeMake(self.view.frame.size.width- 200, (self.bioLabel.frame.origin.y)+ self.bioLabel.frame.size.height+50)];
+    [self.scrollView setContentSize:CGSizeMake(self.view.frame.size.width, self.bioLabel.frame.origin.y + self.bioLabel.frame.size.height+100)];
 
-    }
-
-    
-    //To access abilities use hero.hasAbility (NSSet *), it contains Ability objects.
 }
 - (void)viewDidUnload {
     
