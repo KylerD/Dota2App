@@ -222,6 +222,14 @@
 //    heroCell.cellImage.layer.borderColor = [UIColor colorWithRed:0.89 green:0.69 blue:0.25 alpha:1.0].CGColor;//89,68,25
 //    heroCell.cellImage.layer.borderWidth = 1.0f;
     
+    UIView *sbview = [[UIView alloc] initWithFrame:CGRectMake(0, 0, heroCell.frame.size.width, heroCell.frame.size.height)];
+    CAGradientLayer *gradient = [CAGradientLayer layer];
+    gradient.frame = sbview.bounds;
+    gradient.colors = [NSArray arrayWithObjects:(id)[UIColor colorWithRed:117/ 255.0 green:0/ 255.0 blue:2/ 255.0 alpha:1.0].CGColor, (id)[UIColor colorWithRed:41/ 255.0 green:0/ 255.0 blue:2/ 255.0 alpha:1.0].CGColor, nil];
+    [sbview.layer insertSublayer:gradient atIndex:0];
+    
+    heroCell.selectedBackgroundView = sbview;
+    
     heroCell.cellImage.contentMode = UIViewContentModeScaleAspectFit;
     heroCell.factionImage.image = [UIImage imageNamed:factionImageName];
     heroCell.attributeImage.image = [UIImage imageNamed:attributeImageName];
