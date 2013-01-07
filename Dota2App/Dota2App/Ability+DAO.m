@@ -29,10 +29,13 @@
     if (![fileManager fileExistsAtPath:filePath]) {
         NSURL  *url = [NSURL URLWithString:imgUrl];
         NSData *urlData = [NSData dataWithContentsOfURL:url];
-        if (urlData)
-        {
+        if (urlData) {
             [urlData writeToFile:filePath atomically:YES];
             ability.imagePath = filePath;
+        } else {    //Else use bundled image
+            NSString *bundleImageName = [NSString stringWithFormat:@"%@.png", ability.name];
+            ability.imagePath = bundleImageName;
+            
         }
     }
     
