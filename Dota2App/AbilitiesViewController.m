@@ -12,6 +12,7 @@
 #import "DetailViewController.h"
 #import "AbilityCell.h"
 #import "AbilityDetailViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface AbilitiesViewController ()
 - (void)configureView;
@@ -174,6 +175,20 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     }
     
     [abilityCell isPassive:[ability.isPassive boolValue]];
+    
+    CGFloat abilityCellHeight = [self tableView:self.tableView heightForRowAtIndexPath:indexPath];
+
+//tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+    
+    UIView *sbview = [[UIView alloc] initWithFrame:CGRectMake(0, 0, abilityCell.frame.size.width, abilityCellHeight)];
+    CAGradientLayer *gradient = [CAGradientLayer layer];
+    gradient.frame = sbview.bounds;
+    gradient.colors = [NSArray arrayWithObjects:(id)[UIColor colorWithRed:117/ 255.0 green:0/ 255.0 blue:2/ 255.0 alpha:1.0].CGColor, (id)[UIColor colorWithRed:41/ 255.0 green:0/ 255.0 blue:2/ 255.0 alpha:1.0].CGColor, nil];
+    [sbview.layer insertSublayer:gradient atIndex:0];
+    
+    abilityCell.selectedBackgroundView = sbview;
+
+    
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
