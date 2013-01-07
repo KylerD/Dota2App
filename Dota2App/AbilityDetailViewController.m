@@ -28,8 +28,6 @@
 - (void)viewDidLoad
 {   NSLog(@"%@", self.ability);
     
-    
-    
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     

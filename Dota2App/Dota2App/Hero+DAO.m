@@ -70,7 +70,7 @@
             [urlData writeToFile:filePath atomically:YES];
             hero.detailImgPath = filePath;
         } else {    //Else use bundled image
-            NSString *bundleImageName = [NSString stringWithFormat:@"%@.png", hero.name];
+            NSString *bundleImageName = [NSString stringWithFormat:@"%@.png", heroName];
             hero.detailImgPath = bundleImageName;
             
         }

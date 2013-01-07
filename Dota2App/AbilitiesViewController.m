@@ -97,6 +97,9 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     
     if ([fileManager fileExistsAtPath:ability.imagePath]) {
         abilityCell.icon.image = [UIImage imageWithContentsOfFile:ability.imagePath];
+    } else {
+        //In this case image path is just the bundled image name.
+        abilityCell.icon.image = [UIImage imageNamed:ability.imagePath];
     }
     
     
