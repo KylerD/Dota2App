@@ -39,12 +39,11 @@
     NSString * itemID = [[topLevelItemDictionary allKeys] lastObject];
     
     NSDictionary * itemDictionary = [topLevelItemDictionary valueForKey:itemID];
+    NSString * itemName= [itemDictionary valueForKey:@"dname"];
     
-    i = [Item readObjectWithParamterName:@"itemID" andValue:itemID];
+    i = [Item readObjectWithParamterName:@"name" andValue:itemName];
     
     if(!i){
-        
-        NSString * itemName= [itemDictionary valueForKey:@"dname"];
         
         NSRange range1 = [itemName rangeOfString:@"DOTA"];
         NSRange range2 = [itemName rangeOfString:@"Mysterious Spell Scroll"];
@@ -54,7 +53,6 @@
         
         i =  [Item createObject];
         
-        i.itemID = itemID;
         i.name = itemName;
         i.desc = [itemDictionary valueForKey:@"desc"];
         i.imgName = [itemDictionary valueForKey:@"img"];
