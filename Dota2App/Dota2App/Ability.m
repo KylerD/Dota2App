@@ -2,7 +2,7 @@
 //  Ability.m
 //  Dota2App
 //
-//  Created by Kyle Davidson on 07/01/2013.
+//  Created by Luke McNeice on 07/01/2013.
 //
 //
 
@@ -16,6 +16,7 @@
 @dynamic damage;
 @dynamic dynamic;
 @dynamic imagePath;
+@dynamic imgUrl;
 @dynamic isAura;
 @dynamic isAutoCast;
 @dynamic isPassive;
@@ -27,7 +28,8 @@
 @dynamic radius;
 @dynamic type;
 @dynamic videoUrl;
-@dynamic imgUrl;
+@dynamic index;
+@dynamic isChanneled;
 @dynamic hero;
 
 @end
