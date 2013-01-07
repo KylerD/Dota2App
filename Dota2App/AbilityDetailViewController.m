@@ -55,9 +55,20 @@
     } else {
         //In this case image path is just the bundled image name.
         self.abilityImage.image = [UIImage imageNamed:ability.imagePath];
+        
     }
+    
+    [self.videoWebView  loadHTMLString:@"<html><body style=\"background-color:black;\"></body></html>" baseURL:nil];
+
+    [self performSelector:@selector(loadURL:) withObject:nil afterDelay:0.1];
+}
+
+-(void)loadURL:(id)sender{
+
+    [self.videoWebView  stopLoading]; //added this line to stop the previous request
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:self.ability.videoUrl]];
     [self.videoWebView loadRequest:request];
+
 }
 
 
