@@ -621,6 +621,7 @@
 		5C6DD7B9169B637B004063DF /* Witchcraft.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C6DD563169B637A004063DF /* Witchcraft.png */; };
 		5C6DD7BA169B637B004063DF /* Wrath of Nature.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C6DD564169B637A004063DF /* Wrath of Nature.png */; };
 		5C6DD7BB169B637B004063DF /* X Marks the Spot.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C6DD565169B637A004063DF /* X Marks the Spot.png */; };
+		5C6DD7BD169B6B23004063DF /* avatar_container.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C6DD7BC169B6B23004063DF /* avatar_container.png */; };
 		5CD53E061685B08E0002803D /* hero.json in Resources */ = {isa = PBXBuildFile; fileRef = 5CD53E051685B08E0002803D /* hero.json */; };
 		5CD53E091685B5CE0002803D /* Role+DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD53E081685B5CE0002803D /* Role+DAO.m */; };
 		5CD53E241686495E0002803D /* Nickname.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD53E231686495E0002803D /* Nickname.m */; };
@@ -1287,6 +1288,7 @@
 		5C6DD563169B637A004063DF /* Witchcraft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Witchcraft.png; sourceTree = "<group>"; };
 		5C6DD564169B637A004063DF /* Wrath of Nature.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wrath of Nature.png"; sourceTree = "<group>"; };
 		5C6DD565169B637A004063DF /* X Marks the Spot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "X Marks the Spot.png"; sourceTree = "<group>"; };
+		5C6DD7BC169B6B23004063DF /* avatar_container.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar_container.png; sourceTree = "<group>"; };
 		5CD53E051685B08E0002803D /* hero.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = hero.json; path = ../../Scrapper/hero.json; sourceTree = "<group>"; };
 		5CD53E071685B5CE0002803D /* Role+DAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Role+DAO.h"; sourceTree = "<group>"; };
 		5CD53E081685B5CE0002803D /* Role+DAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Role+DAO.m"; sourceTree = "<group>"; };
@@ -1442,6 +1444,7 @@
 			isa = PBXGroup;
 			children = (
 				EDCA230116552A2900FEDF75 /* Radiant.png */,
+				5C6DD7BC169B6B23004063DF /* avatar_container.png */,
 				EDCA22FA165528A900FEDF75 /* Dire.png */,
 				EDCA22F41655286100FEDF75 /* Agility.png */,
 				EDCA22F51655286100FEDF75 /* Intelligence.png */,
@@ -2946,6 +2949,7 @@
 				5C6DD7B9169B637B004063DF /* Witchcraft.png in Resources */,
 				5C6DD7BA169B637B004063DF /* Wrath of Nature.png in Resources */,
 				5C6DD7BB169B637B004063DF /* X Marks the Spot.png in Resources */,
+				5C6DD7BD169B6B23004063DF /* avatar_container.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
