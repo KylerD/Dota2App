@@ -657,6 +657,7 @@
 		ED0BE400169AE3E70096A843 /* Witchcraft.png in Resources */ = {isa = PBXBuildFile; fileRef = ED0BE259169AE3E70096A843 /* Witchcraft.png */; };
 		ED0BE401169AE3E70096A843 /* Wrath of Nature.png in Resources */ = {isa = PBXBuildFile; fileRef = ED0BE25A169AE3E70096A843 /* Wrath of Nature.png */; };
 		ED0BE402169AE3E70096A843 /* X Marks the Spot.png in Resources */ = {isa = PBXBuildFile; fileRef = ED0BE25B169AE3E70096A843 /* X Marks the Spot.png */; };
+		ED0BE406169AE78A0096A843 /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0BE405169AE78A0096A843 /* FeedbackViewController.m */; };
 		ED8CB6C1169483A800E5A1C3 /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8CB6C0169483A800E5A1C3 /* Hero.m */; };
 		EDC2660F168F077A00734667 /* AbilityDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC2660E168F077A00734667 /* AbilityDetailViewController.m */; };
 		EDC2661A168F1E7900734667 /* ItemsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC26619168F1E7900734667 /* ItemsDetailViewController.m */; };
@@ -1348,6 +1349,8 @@
 		ED0BE259169AE3E70096A843 /* Witchcraft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Witchcraft.png; sourceTree = "<group>"; };
 		ED0BE25A169AE3E70096A843 /* Wrath of Nature.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wrath of Nature.png"; sourceTree = "<group>"; };
 		ED0BE25B169AE3E70096A843 /* X Marks the Spot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "X Marks the Spot.png"; sourceTree = "<group>"; };
+		ED0BE404169AE78A0096A843 /* FeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackViewController.h; sourceTree = "<group>"; };
+		ED0BE405169AE78A0096A843 /* FeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackViewController.m; sourceTree = "<group>"; };
 		ED8CB6BF169483A800E5A1C3 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
 		ED8CB6C0169483A800E5A1C3 /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
 		EDC2660D168F077A00734667 /* AbilityDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbilityDetailViewController.h; sourceTree = "<group>"; };
@@ -2281,9 +2284,19 @@
 			name = "Custom Cells";
 			sourceTree = "<group>";
 		};
+		ED0BE403169AE6F80096A843 /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+				ED0BE404169AE78A0096A843 /* FeedbackViewController.h */,
+				ED0BE405169AE78A0096A843 /* FeedbackViewController.m */,
+			);
+			name = Feedback;
+			sourceTree = "<group>";
+		};
 		EDCA2303165537DE00FEDF75 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				ED0BE403169AE6F80096A843 /* Feedback */,
 				B1D88208168B2FAF00470825 /* Items */,
 				EDCF6450166CC0E900BBE08A /* Builds */,
 				B18C9E4E164E8B5A00ADE97A /* MasterViewController.h */,
@@ -3026,6 +3039,7 @@
 				EDC2661A168F1E7900734667 /* ItemsDetailViewController.m in Sources */,
 				17D5379C168F4F750058C131 /* ItemCell.m in Sources */,
 				ED8CB6C1169483A800E5A1C3 /* Hero.m in Sources */,
+				ED0BE406169AE78A0096A843 /* FeedbackViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
