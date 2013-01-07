@@ -51,7 +51,11 @@
     
     if ([fileManager fileExistsAtPath:ability.imagePath]) {
         self.abilityImage.image = [UIImage imageWithContentsOfFile:ability.imagePath];
+    } else {
+        //In this case image path is just the bundled image name.
+        self.abilityImage.image = [UIImage imageNamed:ability.imagePath];
     }
+
     
         
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:self.ability.videoUrl]];

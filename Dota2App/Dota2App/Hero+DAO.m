@@ -65,10 +65,14 @@
     if (![fileManager fileExistsAtPath:filePath]) {
         NSURL  *url = [NSURL URLWithString:imgUrl];
         NSData *urlData = [NSData dataWithContentsOfURL:url];
-        if (urlData)
-        {
+        //If there's an internet connection grab url image
+        if (urlData) {
             [urlData writeToFile:filePath atomically:YES];
             hero.detailImgPath = filePath;
+        } else {    //Else use bundled image
+            NSString *bundleImageName = [NSString stringWithFormat:@"%@.png", hero.name];
+            hero.detailImgPath = bundleImageName;
+            
         }
     }
 

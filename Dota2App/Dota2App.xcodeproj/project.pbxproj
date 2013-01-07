@@ -204,59 +204,59 @@
 		5C3CB20D1657F2A400E8341C /* Wisp.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFA81657F2A400E8341C /* Wisp.png */; };
 		5C3CB20E1657F2A400E8341C /* Witch Doctor.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFA91657F2A400E8341C /* Witch Doctor.png */; };
 		5C3CB20F1657F2A400E8341C /* Zeus.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFAA1657F2A400E8341C /* Zeus.png */; };
-		5C3CB2101657F2A400E8341C /* Acid_Spray.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFAC1657F2A400E8341C /* Acid_Spray.png */; };
-		5C3CB2111657F2A400E8341C /* Adaptive_Strike.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFAD1657F2A400E8341C /* Adaptive_Strike.png */; };
+		5C3CB2101657F2A400E8341C /* Acid Spray.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFAC1657F2A400E8341C /* Acid Spray.png */; };
+		5C3CB2111657F2A400E8341C /* Adaptive Strike.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFAD1657F2A400E8341C /* Adaptive Strike.png */; };
 		5C3CB2121657F2A400E8341C /* Aftershock.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFAE1657F2A400E8341C /* Aftershock.png */; };
 		5C3CB2131657F2A400E8341C /* Alacrity.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFAF1657F2A400E8341C /* Alacrity.png */; };
-		5C3CB2141657F2A400E8341C /* Amplify_Damage.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFB01657F2A400E8341C /* Amplify_Damage.png */; };
-		5C3CB2151657F2A400E8341C /* Anchor_Smash.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFB11657F2A400E8341C /* Anchor_Smash.png */; };
-		5C3CB2161657F2A400E8341C /* Arc_Lightning.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFB21657F2A400E8341C /* Arc_Lightning.png */; };
-		5C3CB2171657F2A400E8341C /* Arcane_Aura.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFB31657F2A400E8341C /* Arcane_Aura.png */; };
-		5C3CB2181657F2A400E8341C /* Arcane_Orb.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFB41657F2A400E8341C /* Arcane_Orb.png */; };
+		5C3CB2141657F2A400E8341C /* Amplify Damage.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFB01657F2A400E8341C /* Amplify Damage.png */; };
+		5C3CB2151657F2A400E8341C /* Anchor Smash.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFB11657F2A400E8341C /* Anchor Smash.png */; };
+		5C3CB2161657F2A400E8341C /* Arc Lightning.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFB21657F2A400E8341C /* Arc Lightning.png */; };
+		5C3CB2171657F2A400E8341C /* Arcane Aura.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFB31657F2A400E8341C /* Arcane Aura.png */; };
+		5C3CB2181657F2A400E8341C /* Arcane Orb.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFB41657F2A400E8341C /* Arcane Orb.png */; };
 		5C3CB2191657F2A400E8341C /* Assassinate.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFB51657F2A400E8341C /* Assassinate.png */; };
-		5C3CB21A1657F2A400E8341C /* Astral_Imprisonment.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFB61657F2A400E8341C /* Astral_Imprisonment.png */; };
+		5C3CB21A1657F2A400E8341C /* Astral Imprisonment.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFB61657F2A400E8341C /* Astral Imprisonment.png */; };
 		5C3CB21B1657F2A400E8341C /* Avalanche.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFB71657F2A400E8341C /* Avalanche.png */; };
 		5C3CB21C1657F2A400E8341C /* Backstab.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFB81657F2A400E8341C /* Backstab.png */; };
 		5C3CB21D1657F2A400E8341C /* Backtrack.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFB91657F2A400E8341C /* Backtrack.png */; };
-		5C3CB21E1657F2A400E8341C /* Ball_Lightning.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFBA1657F2A400E8341C /* Ball_Lightning.png */; };
+		5C3CB21E1657F2A400E8341C /* Ball Lightning.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFBA1657F2A400E8341C /* Ball Lightning.png */; };
 		5C3CB21F1657F2A400E8341C /* Bash.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFBB1657F2A400E8341C /* Bash.png */; };
-		5C3CB2201657F2A400E8341C /* Battery_Assault.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFBC1657F2A400E8341C /* Battery_Assault.png */; };
-		5C3CB2211657F2A400E8341C /* Battle_Cry.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFBD1657F2A400E8341C /* Battle_Cry.png */; };
-		5C3CB2221657F2A400E8341C /* Berserker's_Blood.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFBE1657F2A400E8341C /* Berserker's_Blood.png */; };
-		5C3CB2231657F2A400E8341C /* Black_Hole.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFBF1657F2A400E8341C /* Black_Hole.png */; };
-		5C3CB2241657F2A400E8341C /* Blade_Dance.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFC01657F2A400E8341C /* Blade_Dance.png */; };
-		5C3CB2251657F2A400E8341C /* Blade_fury.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFC11657F2A400E8341C /* Blade_fury.png */; };
-		5C3CB2261657F2A400E8341C /* Blinding_Light.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFC21657F2A400E8341C /* Blinding_Light.png */; };
+		5C3CB2201657F2A400E8341C /* Battery Assault.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFBC1657F2A400E8341C /* Battery Assault.png */; };
+		5C3CB2211657F2A400E8341C /* Battle Cry.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFBD1657F2A400E8341C /* Battle Cry.png */; };
+		5C3CB2221657F2A400E8341C /* Berserker's Blood.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFBE1657F2A400E8341C /* Berserker's Blood.png */; };
+		5C3CB2231657F2A400E8341C /* Black Hole.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFBF1657F2A400E8341C /* Black Hole.png */; };
+		5C3CB2241657F2A400E8341C /* Blade Dance.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFC01657F2A400E8341C /* Blade Dance.png */; };
+		5C3CB2251657F2A400E8341C /* Blade fury.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFC11657F2A400E8341C /* Blade fury.png */; };
+		5C3CB2261657F2A400E8341C /* Blinding Light.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFC21657F2A400E8341C /* Blinding Light.png */; };
 		5C3CB2271657F2A400E8341C /* Blink.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFC31657F2A400E8341C /* Blink.png */; };
-		5C3CB2281657F2A400E8341C /* Blink_Strike.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFC41657F2A400E8341C /* Blink_Strike.png */; };
-		5C3CB2291657F2A400E8341C /* Blood_Bath.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFC51657F2A400E8341C /* Blood_Bath.png */; };
+		5C3CB2281657F2A400E8341C /* Blink Strike.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFC41657F2A400E8341C /* Blink Strike.png */; };
+		5C3CB2291657F2A400E8341C /* Blood Bath.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFC51657F2A400E8341C /* Blood Bath.png */; };
 		5C3CB22A1657F2A400E8341C /* Bloodrage.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFC61657F2A400E8341C /* Bloodrage.png */; };
 		5C3CB22B1657F2A400E8341C /* Blur.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFC71657F2A400E8341C /* Blur.png */; };
-		5C3CB22C1657F2A400E8341C /* Brain_Sap.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFC81657F2A400E8341C /* Brain_Sap.png */; };
-		5C3CB22D1657F2A400E8341C /* Breathe_Fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFC91657F2A400E8341C /* Breathe_Fire.png */; };
-		5C3CB22E1657F2A400E8341C /* Burning_Spear.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFCA1657F2A400E8341C /* Burning_Spear.png */; };
+		5C3CB22C1657F2A400E8341C /* Brain Sap.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFC81657F2A400E8341C /* Brain Sap.png */; };
+		5C3CB22D1657F2A400E8341C /* Breathe Fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFC91657F2A400E8341C /* Breathe Fire.png */; };
+		5C3CB22E1657F2A400E8341C /* Burning Spear.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFCA1657F2A400E8341C /* Burning Spear.png */; };
 		5C3CB22F1657F2A400E8341C /* Burrowstrike.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFCB1657F2A400E8341C /* Burrowstrike.png */; };
-		5C3CB2301657F2A400E8341C /* Call_Down.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFCC1657F2A400E8341C /* Call_Down.png */; };
-		5C3CB2311657F2A400E8341C /* Call_of_the_Wild.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFCD1657F2A400E8341C /* Call_of_the_Wild.png */; };
-		5C3CB2321657F2A400E8341C /* Caustic_Finale.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFCE1657F2A400E8341C /* Caustic_Finale.png */; };
-		5C3CB2331657F2A400E8341C /* Chain_Frost.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFCF1657F2A400E8341C /* Chain_Frost.png */; };
-		5C3CB2341657F2A400E8341C /* Chakra_Magic.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFD01657F2A400E8341C /* Chakra_Magic.png */; };
-		5C3CB2351657F2A400E8341C /* Chaos_Bolt.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFD11657F2A400E8341C /* Chaos_Bolt.png */; };
-		5C3CB2361657F2A400E8341C /* Chaos_Meteor.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFD21657F2A400E8341C /* Chaos_Meteor.png */; };
-		5C3CB2371657F2A400E8341C /* Chaos_Strike.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFD31657F2A400E8341C /* Chaos_Strike.png */; };
-		5C3CB2381657F2A400E8341C /* Chaotic_Offering.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFD41657F2A400E8341C /* Chaotic_Offering.png */; };
-		5C3CB2391657F2A400E8341C /* Charge_of_Darkness.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFD51657F2A400E8341C /* Charge_of_Darkness.png */; };
+		5C3CB2301657F2A400E8341C /* Call Down.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFCC1657F2A400E8341C /* Call Down.png */; };
+		5C3CB2311657F2A400E8341C /* Call of the Wild.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFCD1657F2A400E8341C /* Call of the Wild.png */; };
+		5C3CB2321657F2A400E8341C /* Caustic Finale.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFCE1657F2A400E8341C /* Caustic Finale.png */; };
+		5C3CB2331657F2A400E8341C /* Chain Frost.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFCF1657F2A400E8341C /* Chain Frost.png */; };
+		5C3CB2341657F2A400E8341C /* Chakra Magic.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFD01657F2A400E8341C /* Chakra Magic.png */; };
+		5C3CB2351657F2A400E8341C /* Chaos Bolt.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFD11657F2A400E8341C /* Chaos Bolt.png */; };
+		5C3CB2361657F2A400E8341C /* Chaos Meteor.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFD21657F2A400E8341C /* Chaos Meteor.png */; };
+		5C3CB2371657F2A400E8341C /* Chaos Strike.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFD31657F2A400E8341C /* Chaos Strike.png */; };
+		5C3CB2381657F2A400E8341C /* Chaotic Offering.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFD41657F2A400E8341C /* Chaotic Offering.png */; };
+		5C3CB2391657F2A400E8341C /* Charge of Darkness.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFD51657F2A400E8341C /* Charge of Darkness.png */; };
 		5C3CB23A1657F2A400E8341C /* Chemical Rage.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFD61657F2A400E8341C /* Chemical Rage.png */; };
-		5C3CB23B1657F2A400E8341C /* Chilling_Touch.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFD71657F2A400E8341C /* Chilling_Touch.png */; };
+		5C3CB23B1657F2A400E8341C /* Chilling Touch.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFD71657F2A400E8341C /* Chilling Touch.png */; };
 		5C3CB23C1657F2A400E8341C /* Chronosphere.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFD81657F2A400E8341C /* Chronosphere.png */; };
-		5C3CB23D1657F2A400E8341C /* Cold_Feet.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFD91657F2A400E8341C /* Cold_Feet.png */; };
-		5C3CB23E1657F2A400E8341C /* Cold_Snap.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFDA1657F2A400E8341C /* Cold_Snap.png */; };
+		5C3CB23D1657F2A400E8341C /* Cold Feet.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFD91657F2A400E8341C /* Cold Feet.png */; };
+		5C3CB23E1657F2A400E8341C /* Cold Snap.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFDA1657F2A400E8341C /* Cold Snap.png */; };
 		5C3CB23F1657F2A400E8341C /* Consume.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFDB1657F2A400E8341C /* Consume.png */; };
-		5C3CB2401657F2A400E8341C /* Corrosive_Skin.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFDC1657F2A400E8341C /* Corrosive_Skin.png */; };
-		5C3CB2411657F2A400E8341C /* Coup_de_Grace.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFDD1657F2A400E8341C /* Coup_de_Grace.png */; };
-		5C3CB2421657F2A400E8341C /* Craggy_Exterior.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFDE1657F2A400E8341C /* Craggy_Exterior.png */; };
-		5C3CB2431657F2A400E8341C /* Crippling_Fear.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFDF1657F2A400E8341C /* Crippling_Fear.png */; };
-		5C3CB2441657F2A400E8341C /* Crypt_Swarm.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFE01657F2A400E8341C /* Crypt_Swarm.png */; };
+		5C3CB2401657F2A400E8341C /* Corrosive Skin.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFDC1657F2A400E8341C /* Corrosive Skin.png */; };
+		5C3CB2411657F2A400E8341C /* Coup de Grace.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFDD1657F2A400E8341C /* Coup de Grace.png */; };
+		5C3CB2421657F2A400E8341C /* Craggy Exterior.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFDE1657F2A400E8341C /* Craggy Exterior.png */; };
+		5C3CB2431657F2A400E8341C /* Crippling Fear.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFDF1657F2A400E8341C /* Crippling Fear.png */; };
+		5C3CB2441657F2A400E8341C /* Crypt Swarm.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFE01657F2A400E8341C /* Crypt Swarm.png */; };
 		5C3CB2451657F2A400E8341C /* Crystal_Nova.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFE11657F2A400E8341C /* Crystal_Nova.png */; };
 		5C3CB2461657F2A400E8341C /* Curse_of_the_Silent.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFE21657F2A400E8341C /* Curse_of_the_Silent.png */; };
 		5C3CB2471657F2A400E8341C /* Cyclone.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C3CAFE31657F2A400E8341C /* Cyclone.png */; };
@@ -877,59 +877,59 @@
 		5C3CAFA81657F2A400E8341C /* Wisp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wisp.png; sourceTree = "<group>"; };
 		5C3CAFA91657F2A400E8341C /* Witch Doctor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Witch Doctor.png"; sourceTree = "<group>"; };
 		5C3CAFAA1657F2A400E8341C /* Zeus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Zeus.png; sourceTree = "<group>"; };
-		5C3CAFAC1657F2A400E8341C /* Acid_Spray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Acid_Spray.png; sourceTree = "<group>"; };
-		5C3CAFAD1657F2A400E8341C /* Adaptive_Strike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Adaptive_Strike.png; sourceTree = "<group>"; };
+		5C3CAFAC1657F2A400E8341C /* Acid Spray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Acid Spray.png"; sourceTree = "<group>"; };
+		5C3CAFAD1657F2A400E8341C /* Adaptive Strike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Adaptive Strike.png"; sourceTree = "<group>"; };
 		5C3CAFAE1657F2A400E8341C /* Aftershock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Aftershock.png; sourceTree = "<group>"; };
 		5C3CAFAF1657F2A400E8341C /* Alacrity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Alacrity.png; sourceTree = "<group>"; };
-		5C3CAFB01657F2A400E8341C /* Amplify_Damage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Amplify_Damage.png; sourceTree = "<group>"; };
-		5C3CAFB11657F2A400E8341C /* Anchor_Smash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Anchor_Smash.png; sourceTree = "<group>"; };
-		5C3CAFB21657F2A400E8341C /* Arc_Lightning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Arc_Lightning.png; sourceTree = "<group>"; };
-		5C3CAFB31657F2A400E8341C /* Arcane_Aura.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Arcane_Aura.png; sourceTree = "<group>"; };
-		5C3CAFB41657F2A400E8341C /* Arcane_Orb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Arcane_Orb.png; sourceTree = "<group>"; };
+		5C3CAFB01657F2A400E8341C /* Amplify Damage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Amplify Damage.png"; sourceTree = "<group>"; };
+		5C3CAFB11657F2A400E8341C /* Anchor Smash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Anchor Smash.png"; sourceTree = "<group>"; };
+		5C3CAFB21657F2A400E8341C /* Arc Lightning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Arc Lightning.png"; sourceTree = "<group>"; };
+		5C3CAFB31657F2A400E8341C /* Arcane Aura.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Arcane Aura.png"; sourceTree = "<group>"; };
+		5C3CAFB41657F2A400E8341C /* Arcane Orb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Arcane Orb.png"; sourceTree = "<group>"; };
 		5C3CAFB51657F2A400E8341C /* Assassinate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Assassinate.png; sourceTree = "<group>"; };
-		5C3CAFB61657F2A400E8341C /* Astral_Imprisonment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Astral_Imprisonment.png; sourceTree = "<group>"; };
+		5C3CAFB61657F2A400E8341C /* Astral Imprisonment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Astral Imprisonment.png"; sourceTree = "<group>"; };
 		5C3CAFB71657F2A400E8341C /* Avalanche.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Avalanche.png; sourceTree = "<group>"; };
 		5C3CAFB81657F2A400E8341C /* Backstab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Backstab.png; sourceTree = "<group>"; };
 		5C3CAFB91657F2A400E8341C /* Backtrack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Backtrack.png; sourceTree = "<group>"; };
-		5C3CAFBA1657F2A400E8341C /* Ball_Lightning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ball_Lightning.png; sourceTree = "<group>"; };
+		5C3CAFBA1657F2A400E8341C /* Ball Lightning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ball Lightning.png"; sourceTree = "<group>"; };
 		5C3CAFBB1657F2A400E8341C /* Bash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bash.png; sourceTree = "<group>"; };
-		5C3CAFBC1657F2A400E8341C /* Battery_Assault.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Battery_Assault.png; sourceTree = "<group>"; };
-		5C3CAFBD1657F2A400E8341C /* Battle_Cry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Battle_Cry.png; sourceTree = "<group>"; };
-		5C3CAFBE1657F2A400E8341C /* Berserker's_Blood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Berserker's_Blood.png"; sourceTree = "<group>"; };
-		5C3CAFBF1657F2A400E8341C /* Black_Hole.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Black_Hole.png; sourceTree = "<group>"; };
-		5C3CAFC01657F2A400E8341C /* Blade_Dance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blade_Dance.png; sourceTree = "<group>"; };
-		5C3CAFC11657F2A400E8341C /* Blade_fury.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blade_fury.png; sourceTree = "<group>"; };
-		5C3CAFC21657F2A400E8341C /* Blinding_Light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blinding_Light.png; sourceTree = "<group>"; };
+		5C3CAFBC1657F2A400E8341C /* Battery Assault.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Battery Assault.png"; sourceTree = "<group>"; };
+		5C3CAFBD1657F2A400E8341C /* Battle Cry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Battle Cry.png"; sourceTree = "<group>"; };
+		5C3CAFBE1657F2A400E8341C /* Berserker's Blood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Berserker's Blood.png"; sourceTree = "<group>"; };
+		5C3CAFBF1657F2A400E8341C /* Black Hole.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Black Hole.png"; sourceTree = "<group>"; };
+		5C3CAFC01657F2A400E8341C /* Blade Dance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blade Dance.png"; sourceTree = "<group>"; };
+		5C3CAFC11657F2A400E8341C /* Blade fury.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blade fury.png"; sourceTree = "<group>"; };
+		5C3CAFC21657F2A400E8341C /* Blinding Light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blinding Light.png"; sourceTree = "<group>"; };
 		5C3CAFC31657F2A400E8341C /* Blink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blink.png; sourceTree = "<group>"; };
-		5C3CAFC41657F2A400E8341C /* Blink_Strike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blink_Strike.png; sourceTree = "<group>"; };
-		5C3CAFC51657F2A400E8341C /* Blood_Bath.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blood_Bath.png; sourceTree = "<group>"; };
+		5C3CAFC41657F2A400E8341C /* Blink Strike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blink Strike.png"; sourceTree = "<group>"; };
+		5C3CAFC51657F2A400E8341C /* Blood Bath.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Blood Bath.png"; sourceTree = "<group>"; };
 		5C3CAFC61657F2A400E8341C /* Bloodrage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bloodrage.png; sourceTree = "<group>"; };
 		5C3CAFC71657F2A400E8341C /* Blur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blur.png; sourceTree = "<group>"; };
-		5C3CAFC81657F2A400E8341C /* Brain_Sap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Brain_Sap.png; sourceTree = "<group>"; };
-		5C3CAFC91657F2A400E8341C /* Breathe_Fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Breathe_Fire.png; sourceTree = "<group>"; };
-		5C3CAFCA1657F2A400E8341C /* Burning_Spear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Burning_Spear.png; sourceTree = "<group>"; };
+		5C3CAFC81657F2A400E8341C /* Brain Sap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brain Sap.png"; sourceTree = "<group>"; };
+		5C3CAFC91657F2A400E8341C /* Breathe Fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Breathe Fire.png"; sourceTree = "<group>"; };
+		5C3CAFCA1657F2A400E8341C /* Burning Spear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Burning Spear.png"; sourceTree = "<group>"; };
 		5C3CAFCB1657F2A400E8341C /* Burrowstrike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Burrowstrike.png; sourceTree = "<group>"; };
-		5C3CAFCC1657F2A400E8341C /* Call_Down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Call_Down.png; sourceTree = "<group>"; };
-		5C3CAFCD1657F2A400E8341C /* Call_of_the_Wild.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Call_of_the_Wild.png; sourceTree = "<group>"; };
-		5C3CAFCE1657F2A400E8341C /* Caustic_Finale.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Caustic_Finale.png; sourceTree = "<group>"; };
-		5C3CAFCF1657F2A400E8341C /* Chain_Frost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chain_Frost.png; sourceTree = "<group>"; };
-		5C3CAFD01657F2A400E8341C /* Chakra_Magic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chakra_Magic.png; sourceTree = "<group>"; };
-		5C3CAFD11657F2A400E8341C /* Chaos_Bolt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chaos_Bolt.png; sourceTree = "<group>"; };
-		5C3CAFD21657F2A400E8341C /* Chaos_Meteor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chaos_Meteor.png; sourceTree = "<group>"; };
-		5C3CAFD31657F2A400E8341C /* Chaos_Strike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chaos_Strike.png; sourceTree = "<group>"; };
-		5C3CAFD41657F2A400E8341C /* Chaotic_Offering.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chaotic_Offering.png; sourceTree = "<group>"; };
-		5C3CAFD51657F2A400E8341C /* Charge_of_Darkness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Charge_of_Darkness.png; sourceTree = "<group>"; };
+		5C3CAFCC1657F2A400E8341C /* Call Down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Call Down.png"; sourceTree = "<group>"; };
+		5C3CAFCD1657F2A400E8341C /* Call of the Wild.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Call of the Wild.png"; sourceTree = "<group>"; };
+		5C3CAFCE1657F2A400E8341C /* Caustic Finale.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Caustic Finale.png"; sourceTree = "<group>"; };
+		5C3CAFCF1657F2A400E8341C /* Chain Frost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chain Frost.png"; sourceTree = "<group>"; };
+		5C3CAFD01657F2A400E8341C /* Chakra Magic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chakra Magic.png"; sourceTree = "<group>"; };
+		5C3CAFD11657F2A400E8341C /* Chaos Bolt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chaos Bolt.png"; sourceTree = "<group>"; };
+		5C3CAFD21657F2A400E8341C /* Chaos Meteor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chaos Meteor.png"; sourceTree = "<group>"; };
+		5C3CAFD31657F2A400E8341C /* Chaos Strike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chaos Strike.png"; sourceTree = "<group>"; };
+		5C3CAFD41657F2A400E8341C /* Chaotic Offering.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chaotic Offering.png"; sourceTree = "<group>"; };
+		5C3CAFD51657F2A400E8341C /* Charge of Darkness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Charge of Darkness.png"; sourceTree = "<group>"; };
 		5C3CAFD61657F2A400E8341C /* Chemical Rage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chemical Rage.png"; sourceTree = "<group>"; };
-		5C3CAFD71657F2A400E8341C /* Chilling_Touch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chilling_Touch.png; sourceTree = "<group>"; };
+		5C3CAFD71657F2A400E8341C /* Chilling Touch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chilling Touch.png"; sourceTree = "<group>"; };
 		5C3CAFD81657F2A400E8341C /* Chronosphere.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chronosphere.png; sourceTree = "<group>"; };
-		5C3CAFD91657F2A400E8341C /* Cold_Feet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cold_Feet.png; sourceTree = "<group>"; };
-		5C3CAFDA1657F2A400E8341C /* Cold_Snap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cold_Snap.png; sourceTree = "<group>"; };
+		5C3CAFD91657F2A400E8341C /* Cold Feet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cold Feet.png"; sourceTree = "<group>"; };
+		5C3CAFDA1657F2A400E8341C /* Cold Snap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cold Snap.png"; sourceTree = "<group>"; };
 		5C3CAFDB1657F2A400E8341C /* Consume.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Consume.png; sourceTree = "<group>"; };
-		5C3CAFDC1657F2A400E8341C /* Corrosive_Skin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Corrosive_Skin.png; sourceTree = "<group>"; };
-		5C3CAFDD1657F2A400E8341C /* Coup_de_Grace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Coup_de_Grace.png; sourceTree = "<group>"; };
-		5C3CAFDE1657F2A400E8341C /* Craggy_Exterior.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Craggy_Exterior.png; sourceTree = "<group>"; };
-		5C3CAFDF1657F2A400E8341C /* Crippling_Fear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Crippling_Fear.png; sourceTree = "<group>"; };
-		5C3CAFE01657F2A400E8341C /* Crypt_Swarm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Crypt_Swarm.png; sourceTree = "<group>"; };
+		5C3CAFDC1657F2A400E8341C /* Corrosive Skin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Corrosive Skin.png"; sourceTree = "<group>"; };
+		5C3CAFDD1657F2A400E8341C /* Coup de Grace.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Coup de Grace.png"; sourceTree = "<group>"; };
+		5C3CAFDE1657F2A400E8341C /* Craggy Exterior.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Craggy Exterior.png"; sourceTree = "<group>"; };
+		5C3CAFDF1657F2A400E8341C /* Crippling Fear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Crippling Fear.png"; sourceTree = "<group>"; };
+		5C3CAFE01657F2A400E8341C /* Crypt Swarm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Crypt Swarm.png"; sourceTree = "<group>"; };
 		5C3CAFE11657F2A400E8341C /* Crystal_Nova.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Crystal_Nova.png; sourceTree = "<group>"; };
 		5C3CAFE21657F2A400E8341C /* Curse_of_the_Silent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Curse_of_the_Silent.png; sourceTree = "<group>"; };
 		5C3CAFE31657F2A400E8341C /* Cyclone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cyclone.png; sourceTree = "<group>"; };
@@ -1678,59 +1678,59 @@
 		5C3CAFAB1657F2A400E8341C /* skillimg */ = {
 			isa = PBXGroup;
 			children = (
-				5C3CAFAC1657F2A400E8341C /* Acid_Spray.png */,
-				5C3CAFAD1657F2A400E8341C /* Adaptive_Strike.png */,
+				5C3CAFAC1657F2A400E8341C /* Acid Spray.png */,
+				5C3CAFAD1657F2A400E8341C /* Adaptive Strike.png */,
 				5C3CAFAE1657F2A400E8341C /* Aftershock.png */,
 				5C3CAFAF1657F2A400E8341C /* Alacrity.png */,
-				5C3CAFB01657F2A400E8341C /* Amplify_Damage.png */,
-				5C3CAFB11657F2A400E8341C /* Anchor_Smash.png */,
-				5C3CAFB21657F2A400E8341C /* Arc_Lightning.png */,
-				5C3CAFB31657F2A400E8341C /* Arcane_Aura.png */,
-				5C3CAFB41657F2A400E8341C /* Arcane_Orb.png */,
+				5C3CAFB01657F2A400E8341C /* Amplify Damage.png */,
+				5C3CAFB11657F2A400E8341C /* Anchor Smash.png */,
+				5C3CAFB21657F2A400E8341C /* Arc Lightning.png */,
+				5C3CAFB31657F2A400E8341C /* Arcane Aura.png */,
+				5C3CAFB41657F2A400E8341C /* Arcane Orb.png */,
 				5C3CAFB51657F2A400E8341C /* Assassinate.png */,
-				5C3CAFB61657F2A400E8341C /* Astral_Imprisonment.png */,
+				5C3CAFB61657F2A400E8341C /* Astral Imprisonment.png */,
 				5C3CAFB71657F2A400E8341C /* Avalanche.png */,
 				5C3CAFB81657F2A400E8341C /* Backstab.png */,
 				5C3CAFB91657F2A400E8341C /* Backtrack.png */,
-				5C3CAFBA1657F2A400E8341C /* Ball_Lightning.png */,
+				5C3CAFBA1657F2A400E8341C /* Ball Lightning.png */,
 				5C3CAFBB1657F2A400E8341C /* Bash.png */,
-				5C3CAFBC1657F2A400E8341C /* Battery_Assault.png */,
-				5C3CAFBD1657F2A400E8341C /* Battle_Cry.png */,
-				5C3CAFBE1657F2A400E8341C /* Berserker's_Blood.png */,
-				5C3CAFBF1657F2A400E8341C /* Black_Hole.png */,
-				5C3CAFC01657F2A400E8341C /* Blade_Dance.png */,
-				5C3CAFC11657F2A400E8341C /* Blade_fury.png */,
-				5C3CAFC21657F2A400E8341C /* Blinding_Light.png */,
+				5C3CAFBC1657F2A400E8341C /* Battery Assault.png */,
+				5C3CAFBD1657F2A400E8341C /* Battle Cry.png */,
+				5C3CAFBE1657F2A400E8341C /* Berserker's Blood.png */,
+				5C3CAFBF1657F2A400E8341C /* Black Hole.png */,
+				5C3CAFC01657F2A400E8341C /* Blade Dance.png */,
+				5C3CAFC11657F2A400E8341C /* Blade fury.png */,
+				5C3CAFC21657F2A400E8341C /* Blinding Light.png */,
 				5C3CAFC31657F2A400E8341C /* Blink.png */,
-				5C3CAFC41657F2A400E8341C /* Blink_Strike.png */,
-				5C3CAFC51657F2A400E8341C /* Blood_Bath.png */,
+				5C3CAFC41657F2A400E8341C /* Blink Strike.png */,
+				5C3CAFC51657F2A400E8341C /* Blood Bath.png */,
 				5C3CAFC61657F2A400E8341C /* Bloodrage.png */,
 				5C3CAFC71657F2A400E8341C /* Blur.png */,
-				5C3CAFC81657F2A400E8341C /* Brain_Sap.png */,
-				5C3CAFC91657F2A400E8341C /* Breathe_Fire.png */,
-				5C3CAFCA1657F2A400E8341C /* Burning_Spear.png */,
+				5C3CAFC81657F2A400E8341C /* Brain Sap.png */,
+				5C3CAFC91657F2A400E8341C /* Breathe Fire.png */,
+				5C3CAFCA1657F2A400E8341C /* Burning Spear.png */,
 				5C3CAFCB1657F2A400E8341C /* Burrowstrike.png */,
-				5C3CAFCC1657F2A400E8341C /* Call_Down.png */,
-				5C3CAFCD1657F2A400E8341C /* Call_of_the_Wild.png */,
-				5C3CAFCE1657F2A400E8341C /* Caustic_Finale.png */,
-				5C3CAFCF1657F2A400E8341C /* Chain_Frost.png */,
-				5C3CAFD01657F2A400E8341C /* Chakra_Magic.png */,
-				5C3CAFD11657F2A400E8341C /* Chaos_Bolt.png */,
-				5C3CAFD21657F2A400E8341C /* Chaos_Meteor.png */,
-				5C3CAFD31657F2A400E8341C /* Chaos_Strike.png */,
-				5C3CAFD41657F2A400E8341C /* Chaotic_Offering.png */,
-				5C3CAFD51657F2A400E8341C /* Charge_of_Darkness.png */,
+				5C3CAFCC1657F2A400E8341C /* Call Down.png */,
+				5C3CAFCD1657F2A400E8341C /* Call of the Wild.png */,
+				5C3CAFCE1657F2A400E8341C /* Caustic Finale.png */,
+				5C3CAFCF1657F2A400E8341C /* Chain Frost.png */,
+				5C3CAFD01657F2A400E8341C /* Chakra Magic.png */,
+				5C3CAFD11657F2A400E8341C /* Chaos Bolt.png */,
+				5C3CAFD21657F2A400E8341C /* Chaos Meteor.png */,
+				5C3CAFD31657F2A400E8341C /* Chaos Strike.png */,
+				5C3CAFD41657F2A400E8341C /* Chaotic Offering.png */,
+				5C3CAFD51657F2A400E8341C /* Charge of Darkness.png */,
 				5C3CAFD61657F2A400E8341C /* Chemical Rage.png */,
-				5C3CAFD71657F2A400E8341C /* Chilling_Touch.png */,
+				5C3CAFD71657F2A400E8341C /* Chilling Touch.png */,
 				5C3CAFD81657F2A400E8341C /* Chronosphere.png */,
-				5C3CAFD91657F2A400E8341C /* Cold_Feet.png */,
-				5C3CAFDA1657F2A400E8341C /* Cold_Snap.png */,
+				5C3CAFD91657F2A400E8341C /* Cold Feet.png */,
+				5C3CAFDA1657F2A400E8341C /* Cold Snap.png */,
 				5C3CAFDB1657F2A400E8341C /* Consume.png */,
-				5C3CAFDC1657F2A400E8341C /* Corrosive_Skin.png */,
-				5C3CAFDD1657F2A400E8341C /* Coup_de_Grace.png */,
-				5C3CAFDE1657F2A400E8341C /* Craggy_Exterior.png */,
-				5C3CAFDF1657F2A400E8341C /* Crippling_Fear.png */,
-				5C3CAFE01657F2A400E8341C /* Crypt_Swarm.png */,
+				5C3CAFDC1657F2A400E8341C /* Corrosive Skin.png */,
+				5C3CAFDD1657F2A400E8341C /* Coup de Grace.png */,
+				5C3CAFDE1657F2A400E8341C /* Craggy Exterior.png */,
+				5C3CAFDF1657F2A400E8341C /* Crippling Fear.png */,
+				5C3CAFE01657F2A400E8341C /* Crypt Swarm.png */,
 				5C3CAFE11657F2A400E8341C /* Crystal_Nova.png */,
 				5C3CAFE21657F2A400E8341C /* Curse_of_the_Silent.png */,
 				5C3CAFE31657F2A400E8341C /* Cyclone.png */,
@@ -2555,59 +2555,59 @@
 				5C3CB20D1657F2A400E8341C /* Wisp.png in Resources */,
 				5C3CB20E1657F2A400E8341C /* Witch Doctor.png in Resources */,
 				5C3CB20F1657F2A400E8341C /* Zeus.png in Resources */,
-				5C3CB2101657F2A400E8341C /* Acid_Spray.png in Resources */,
-				5C3CB2111657F2A400E8341C /* Adaptive_Strike.png in Resources */,
+				5C3CB2101657F2A400E8341C /* Acid Spray.png in Resources */,
+				5C3CB2111657F2A400E8341C /* Adaptive Strike.png in Resources */,
 				5C3CB2121657F2A400E8341C /* Aftershock.png in Resources */,
 				5C3CB2131657F2A400E8341C /* Alacrity.png in Resources */,
-				5C3CB2141657F2A400E8341C /* Amplify_Damage.png in Resources */,
-				5C3CB2151657F2A400E8341C /* Anchor_Smash.png in Resources */,
-				5C3CB2161657F2A400E8341C /* Arc_Lightning.png in Resources */,
-				5C3CB2171657F2A400E8341C /* Arcane_Aura.png in Resources */,
-				5C3CB2181657F2A400E8341C /* Arcane_Orb.png in Resources */,
+				5C3CB2141657F2A400E8341C /* Amplify Damage.png in Resources */,
+				5C3CB2151657F2A400E8341C /* Anchor Smash.png in Resources */,
+				5C3CB2161657F2A400E8341C /* Arc Lightning.png in Resources */,
+				5C3CB2171657F2A400E8341C /* Arcane Aura.png in Resources */,
+				5C3CB2181657F2A400E8341C /* Arcane Orb.png in Resources */,
 				5C3CB2191657F2A400E8341C /* Assassinate.png in Resources */,
-				5C3CB21A1657F2A400E8341C /* Astral_Imprisonment.png in Resources */,
+				5C3CB21A1657F2A400E8341C /* Astral Imprisonment.png in Resources */,
 				5C3CB21B1657F2A400E8341C /* Avalanche.png in Resources */,
 				5C3CB21C1657F2A400E8341C /* Backstab.png in Resources */,
 				5C3CB21D1657F2A400E8341C /* Backtrack.png in Resources */,
-				5C3CB21E1657F2A400E8341C /* Ball_Lightning.png in Resources */,
+				5C3CB21E1657F2A400E8341C /* Ball Lightning.png in Resources */,
 				5C3CB21F1657F2A400E8341C /* Bash.png in Resources */,
-				5C3CB2201657F2A400E8341C /* Battery_Assault.png in Resources */,
-				5C3CB2211657F2A400E8341C /* Battle_Cry.png in Resources */,
-				5C3CB2221657F2A400E8341C /* Berserker's_Blood.png in Resources */,
-				5C3CB2231657F2A400E8341C /* Black_Hole.png in Resources */,
-				5C3CB2241657F2A400E8341C /* Blade_Dance.png in Resources */,
-				5C3CB2251657F2A400E8341C /* Blade_fury.png in Resources */,
-				5C3CB2261657F2A400E8341C /* Blinding_Light.png in Resources */,
+				5C3CB2201657F2A400E8341C /* Battery Assault.png in Resources */,
+				5C3CB2211657F2A400E8341C /* Battle Cry.png in Resources */,
+				5C3CB2221657F2A400E8341C /* Berserker's Blood.png in Resources */,
+				5C3CB2231657F2A400E8341C /* Black Hole.png in Resources */,
+				5C3CB2241657F2A400E8341C /* Blade Dance.png in Resources */,
+				5C3CB2251657F2A400E8341C /* Blade fury.png in Resources */,
+				5C3CB2261657F2A400E8341C /* Blinding Light.png in Resources */,
 				5C3CB2271657F2A400E8341C /* Blink.png in Resources */,
-				5C3CB2281657F2A400E8341C /* Blink_Strike.png in Resources */,
-				5C3CB2291657F2A400E8341C /* Blood_Bath.png in Resources */,
+				5C3CB2281657F2A400E8341C /* Blink Strike.png in Resources */,
+				5C3CB2291657F2A400E8341C /* Blood Bath.png in Resources */,
 				5C3CB22A1657F2A400E8341C /* Bloodrage.png in Resources */,
 				5C3CB22B1657F2A400E8341C /* Blur.png in Resources */,
-				5C3CB22C1657F2A400E8341C /* Brain_Sap.png in Resources */,
-				5C3CB22D1657F2A400E8341C /* Breathe_Fire.png in Resources */,
-				5C3CB22E1657F2A400E8341C /* Burning_Spear.png in Resources */,
+				5C3CB22C1657F2A400E8341C /* Brain Sap.png in Resources */,
+				5C3CB22D1657F2A400E8341C /* Breathe Fire.png in Resources */,
+				5C3CB22E1657F2A400E8341C /* Burning Spear.png in Resources */,
 				5C3CB22F1657F2A400E8341C /* Burrowstrike.png in Resources */,
-				5C3CB2301657F2A400E8341C /* Call_Down.png in Resources */,
-				5C3CB2311657F2A400E8341C /* Call_of_the_Wild.png in Resources */,
-				5C3CB2321657F2A400E8341C /* Caustic_Finale.png in Resources */,
-				5C3CB2331657F2A400E8341C /* Chain_Frost.png in Resources */,
-				5C3CB2341657F2A400E8341C /* Chakra_Magic.png in Resources */,
-				5C3CB2351657F2A400E8341C /* Chaos_Bolt.png in Resources */,
-				5C3CB2361657F2A400E8341C /* Chaos_Meteor.png in Resources */,
-				5C3CB2371657F2A400E8341C /* Chaos_Strike.png in Resources */,
-				5C3CB2381657F2A400E8341C /* Chaotic_Offering.png in Resources */,
-				5C3CB2391657F2A400E8341C /* Charge_of_Darkness.png in Resources */,
+				5C3CB2301657F2A400E8341C /* Call Down.png in Resources */,
+				5C3CB2311657F2A400E8341C /* Call of the Wild.png in Resources */,
+				5C3CB2321657F2A400E8341C /* Caustic Finale.png in Resources */,
+				5C3CB2331657F2A400E8341C /* Chain Frost.png in Resources */,
+				5C3CB2341657F2A400E8341C /* Chakra Magic.png in Resources */,
+				5C3CB2351657F2A400E8341C /* Chaos Bolt.png in Resources */,
+				5C3CB2361657F2A400E8341C /* Chaos Meteor.png in Resources */,
+				5C3CB2371657F2A400E8341C /* Chaos Strike.png in Resources */,
+				5C3CB2381657F2A400E8341C /* Chaotic Offering.png in Resources */,
+				5C3CB2391657F2A400E8341C /* Charge of Darkness.png in Resources */,
 				5C3CB23A1657F2A400E8341C /* Chemical Rage.png in Resources */,
-				5C3CB23B1657F2A400E8341C /* Chilling_Touch.png in Resources */,
+				5C3CB23B1657F2A400E8341C /* Chilling Touch.png in Resources */,
 				5C3CB23C1657F2A400E8341C /* Chronosphere.png in Resources */,
-				5C3CB23D1657F2A400E8341C /* Cold_Feet.png in Resources */,
-				5C3CB23E1657F2A400E8341C /* Cold_Snap.png in Resources */,
+				5C3CB23D1657F2A400E8341C /* Cold Feet.png in Resources */,
+				5C3CB23E1657F2A400E8341C /* Cold Snap.png in Resources */,
 				5C3CB23F1657F2A400E8341C /* Consume.png in Resources */,
-				5C3CB2401657F2A400E8341C /* Corrosive_Skin.png in Resources */,
-				5C3CB2411657F2A400E8341C /* Coup_de_Grace.png in Resources */,
-				5C3CB2421657F2A400E8341C /* Craggy_Exterior.png in Resources */,
-				5C3CB2431657F2A400E8341C /* Crippling_Fear.png in Resources */,
-				5C3CB2441657F2A400E8341C /* Crypt_Swarm.png in Resources */,
+				5C3CB2401657F2A400E8341C /* Corrosive Skin.png in Resources */,
+				5C3CB2411657F2A400E8341C /* Coup de Grace.png in Resources */,
+				5C3CB2421657F2A400E8341C /* Craggy Exterior.png in Resources */,
+				5C3CB2431657F2A400E8341C /* Crippling Fear.png in Resources */,
+				5C3CB2441657F2A400E8341C /* Crypt Swarm.png in Resources */,
 				5C3CB2451657F2A400E8341C /* Crystal_Nova.png in Resources */,
 				5C3CB2461657F2A400E8341C /* Curse_of_the_Silent.png in Resources */,
 				5C3CB2471657F2A400E8341C /* Cyclone.png in Resources */,
