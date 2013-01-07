@@ -73,7 +73,7 @@
     
 
     if ([ability.notes isEqualToString: @""]) {
-        return 180;
+        return 130;
     }
     else{
         // FLT_MAX here simply means no constraint in height
@@ -82,10 +82,10 @@
         CGSize expectedLabelSize = [ability.notes sizeWithFont:[UIFont systemFontOfSize:15.0] constrainedToSize:maximumLabelSize lineBreakMode:UILineBreakModeWordWrap];
     
         NSLog(@"%f",expectedLabelSize.height);
-        if (expectedLabelSize.height+150<180) {
-            return 180;
+        if (expectedLabelSize.height+130<180) {
+            return 130;
         }else{
-            return expectedLabelSize.height+150;
+            return expectedLabelSize.height+130;
         }
     }
     
@@ -111,6 +111,8 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     
     Ability *ability = [abilities objectAtIndex:[indexPath row]];
     
+
+    
     abilityCell.abilityName.text = ability.name;
     abilityCell.lore.text = ability.notes;
     
@@ -118,49 +120,24 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     abilityCell.lore.numberOfLines = 0;
     
     [abilityCell.lore sizeToFit];
-//    
     
+
     NSFileManager *fileManager = [NSFileManager defaultManager];
     
     if ([fileManager fileExistsAtPath:ability.imagePath]) {
         abilityCell.icon.image = [UIImage imageWithContentsOfFile:ability.imagePath];
+
     } else {
         //In this case image path is just the bundled image name.
         abilityCell.icon.image = [UIImage imageNamed:ability.imagePath];
+
     }
     
     
-[abilityCell.icon setFrame:CGRectMake(abilityCell.icon.frame.origin.x,abilityCell.icon.frame.origin.y, 69,69)];
+
     [abilityCell isPassive:[ability.isPassive boolValue]];
     
-    NSString * mc = ability.mc;
-    
-    if([mc isEqualToString:@""]){
-        mc = @"Free";
-    }
-    
-    abilityCell.mp.text= mc;
-    
-    NSString * cd = ability.cd;
-    
-    if([cd isEqualToString:@""]){
-        cd = @"0";
-    }    
-    
-    abilityCell.cd.text = cd;
-    
-    
-    if(abilityCell.lore.frame.size.height>65){
-    
-    abilityCell.cd.frame = CGRectMake(abilityCell.cd.frame.origin.x,abilityCell.lore.frame.origin.y + abilityCell.lore.frame.size.height + 20, abilityCell.cd.frame.size.width, abilityCell.cd.frame.size.width);
-    
-    abilityCell.mp.frame = CGRectMake(abilityCell.mp.frame.origin.x,abilityCell.lore.frame.origin.y + abilityCell.lore.frame.size.height + 20, abilityCell.mp.frame.size.width, abilityCell.mp.frame.size.width);
-    
-    abilityCell.mpIcon.frame = CGRectMake(abilityCell.mpIcon.frame.origin.x,abilityCell.lore.frame.origin.y + abilityCell.lore.frame.size.height + 20, abilityCell.mpIcon.frame.size.width, abilityCell.mpIcon.frame.size.width);
-    abilityCell.cdIcon.frame  =CGRectMake(abilityCell.cdIcon.frame.origin.x,abilityCell.lore.frame.origin.y + abilityCell.lore.frame.size.height + 20, abilityCell.cdIcon.frame.size.width, abilityCell.cdIcon.frame.size.width);
-     
-    }
-    
+
 
 }
 
