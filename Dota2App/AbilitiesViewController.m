@@ -54,7 +54,21 @@
 }
 
 - (void)configureView {
-    abilities = [hero.abilities allObjects];
+    fetchItem = @"Ability";
+    AppDelegate *del = [[UIApplication sharedApplication] delegate];
+    managedObjectContext = del.managedObjectContext;
+    
+    
+    fetchedRC = [self fetchedResultsControllerForEntity: fetchItem];
+    if (managedObjectContext) {
+        NSError *error = nil;
+        if (![fetchedRC performFetch:&error]) {
+            NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+        }
+        
+        [self.tableView reloadData];
+    }
+    
 }
 
 #pragma mark - Table View
@@ -65,12 +79,13 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [abilities count];
+    id <NSFetchedResultsSectionInfo> sectionInfo = [[fetchedRC sections] objectAtIndex:section];
+    return [sectionInfo numberOfObjects];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
    
-    Ability *ability = [abilities objectAtIndex:[indexPath row]];
+    Ability *ability = [fetchedRC objectAtIndexPath:indexPath];
     
     int manaCoolDownHeight = 0;
     
@@ -114,7 +129,8 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {   //Fetch the hero
     AbilityCell *abilityCell = (AbilityCell *)cell;
-    Ability *ability = [abilities objectAtIndex:[indexPath row]];
+    
+    Ability *ability = [fetchedRC objectAtIndexPath:indexPath];
     
     abilityCell.abilityName.text = ability.name;
     
@@ -196,11 +212,90 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     if ([[segue identifier] isEqualToString:@"AbilityDetail"]) {
         
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        Ability *selectedAbility = [abilities objectAtIndex: [indexPath row]];
+        Ability *selectedAbility = [fetchedRC objectAtIndexPath:indexPath];
       AbilityDetailViewController *abilityDetailVC = (AbilityDetailViewController *)[segue destinationViewController];
       [abilityDetailVC setAbility:selectedAbility];
 
     }
 }
+
+#pragma mark - NSFetchedRC Delegate
+
+- (NSFetchedResultsController *)fetchedResultsControllerForEntity: (NSString *)entityName {
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    // Edit the entity name as appropriate.
+    NSEntityDescription *entity;
+    entity = [NSEntityDescription entityForName:entityName inManagedObjectContext:managedObjectContext];
+    [fetchRequest setEntity:entity];
+    
+    
+    NSSortDescriptor *sortDescriptor1 = [[NSSortDescriptor alloc] initWithKey:@"index" ascending:YES selector:@selector(caseInsensitiveCompare:)];
+    
+    NSPredicate * pred = [NSPredicate predicateWithFormat:@"hero = %@",self.hero];
+    
+    NSArray *sortDescriptors = [NSArray arrayWithObjects:sortDescriptor1, nil];
+    
+    [fetchRequest setSortDescriptors:sortDescriptors];
+    [fetchRequest setPredicate:pred];
+    
+    // nil for section name key path means "1 section".
+    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:managedObjectContext sectionNameKeyPath:nil cacheName:nil];
+    aFetchedResultsController.delegate = self;
+    
+    return aFetchedResultsController;
+    
+}
+
+
+
+- (void)controllerWillChangeContent:(NSFetchedResultsController *)controller
+{
+    [self.tableView beginUpdates];
+}
+
+- (void)controller:(NSFetchedResultsController *)controller didChangeSection:(id <NSFetchedResultsSectionInfo>)sectionInfo
+           atIndex:(NSUInteger)sectionIndex forChangeType:(NSFetchedResultsChangeType)type
+{
+    switch(type) {
+        case NSFetchedResultsChangeInsert:
+            [self.tableView insertSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
+            break;
+            
+        case NSFetchedResultsChangeDelete:
+            [self.tableView deleteSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
+            break;
+    }
+}
+
+- (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject
+       atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type
+      newIndexPath:(NSIndexPath *)newIndexPath
+{
+    
+    switch(type) {
+        case NSFetchedResultsChangeInsert:
+            [tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+            break;
+            
+        case NSFetchedResultsChangeDelete:
+            [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+            break;
+            
+        case NSFetchedResultsChangeUpdate:
+            [self configureCell:[tableView cellForRowAtIndexPath:indexPath] atIndexPath:indexPath];
+            break;
+            
+        case NSFetchedResultsChangeMove:
+            [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+            [tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath]withRowAnimation:UITableViewRowAnimationFade];
+            break;
+    }
+}
+
+- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
+{
+    [self.tableView endUpdates];
+}
+
 
 @end

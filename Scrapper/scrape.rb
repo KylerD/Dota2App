@@ -337,6 +337,8 @@ heroArray.each do |h|
 				a['videoUrl'] = iframeElement['src']
 			end	
 
+			#adding an index so parser can keep the order later
+			a['index'] = heroAbilities.count
 			#add ability to ability array
 			heroAbilities.push a
 		end
@@ -354,7 +356,7 @@ puts "Scrapped #{heroArray.length} Heroes"
 puts "Writing to file.."
 #Write Hero list to JSON
 File.open("hero.json", 'w') {|f| f.write(heroArray.to_json()) }
-puts "Done"
+puts "JSON Done"
 
 
 

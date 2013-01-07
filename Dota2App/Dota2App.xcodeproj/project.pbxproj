@@ -211,6 +211,7 @@
 		5C550F6E168B4B5300249B67 /* Itemparser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C550F6D168B4B5300249B67 /* Itemparser.m */; };
 		5C550F75168B4CF900249B67 /* Item+DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C550F74168B4CF900249B67 /* Item+DAO.m */; };
 		5C550F7E168B57B800249B67 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C550F7D168B57B800249B67 /* Item.m */; };
+		5C6DCE57169B432F004063DF /* Ability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6DCE56169B432F004063DF /* Ability.m */; };
 		5CD53E061685B08E0002803D /* hero.json in Resources */ = {isa = PBXBuildFile; fileRef = 5CD53E051685B08E0002803D /* hero.json */; };
 		5CD53E091685B5CE0002803D /* Role+DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD53E081685B5CE0002803D /* Role+DAO.m */; };
 		5CD53E241686495E0002803D /* Nickname.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD53E231686495E0002803D /* Nickname.m */; };
@@ -657,7 +658,6 @@
 		ED0BE401169AE3E70096A843 /* Wrath of Nature.png in Resources */ = {isa = PBXBuildFile; fileRef = ED0BE25A169AE3E70096A843 /* Wrath of Nature.png */; };
 		ED0BE402169AE3E70096A843 /* X Marks the Spot.png in Resources */ = {isa = PBXBuildFile; fileRef = ED0BE25B169AE3E70096A843 /* X Marks the Spot.png */; };
 		ED0BE406169AE78A0096A843 /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0BE405169AE78A0096A843 /* FeedbackViewController.m */; };
-		ED0BE40F169B01CA0096A843 /* Ability.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0BE40E169B01CA0096A843 /* Ability.m */; };
 		ED0BE412169B01D80096A843 /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0BE411169B01D80096A843 /* Hero.m */; };
 		EDC2660F168F077A00734667 /* AbilityDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC2660E168F077A00734667 /* AbilityDetailViewController.m */; };
 		EDC2661A168F1E7900734667 /* ItemsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC26619168F1E7900734667 /* ItemsDetailViewController.m */; };
@@ -890,6 +890,8 @@
 		5C550F74168B4CF900249B67 /* Item+DAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Item+DAO.m"; sourceTree = "<group>"; };
 		5C550F7C168B57B800249B67 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
 		5C550F7D168B57B800249B67 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		5C6DCE55169B432F004063DF /* Ability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ability.h; sourceTree = "<group>"; };
+		5C6DCE56169B432F004063DF /* Ability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ability.m; sourceTree = "<group>"; };
 		5CD53E051685B08E0002803D /* hero.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = hero.json; path = ../../Scrapper/hero.json; sourceTree = "<group>"; };
 		5CD53E071685B5CE0002803D /* Role+DAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Role+DAO.h"; sourceTree = "<group>"; };
 		5CD53E081685B5CE0002803D /* Role+DAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Role+DAO.m"; sourceTree = "<group>"; };
@@ -1349,8 +1351,6 @@
 		ED0BE25B169AE3E70096A843 /* X Marks the Spot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "X Marks the Spot.png"; sourceTree = "<group>"; };
 		ED0BE404169AE78A0096A843 /* FeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackViewController.h; sourceTree = "<group>"; };
 		ED0BE405169AE78A0096A843 /* FeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackViewController.m; sourceTree = "<group>"; };
-		ED0BE40D169B01CA0096A843 /* Ability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ability.h; sourceTree = "<group>"; };
-		ED0BE40E169B01CA0096A843 /* Ability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ability.m; sourceTree = "<group>"; };
 		ED0BE410169B01D80096A843 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
 		ED0BE411169B01D80096A843 /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
 		EDC2660D168F077A00734667 /* AbilityDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbilityDetailViewController.h; sourceTree = "<group>"; };
@@ -2145,14 +2145,14 @@
 		5C550F90168F0A1A00249B67 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5C6DCE55169B432F004063DF /* Ability.h */,
+				5C6DCE56169B432F004063DF /* Ability.m */,
 				5C550F7C168B57B800249B67 /* Item.h */,
 				5C550F7D168B57B800249B67 /* Item.m */,
 				5CD53E221686495E0002803D /* Nickname.h */,
 				5CD53E231686495E0002803D /* Nickname.m */,
 				ED08F208165D119C001C4424 /* Role.h */,
 				ED08F209165D119C001C4424 /* Role.m */,
-				ED0BE40D169B01CA0096A843 /* Ability.h */,
-				ED0BE40E169B01CA0096A843 /* Ability.m */,
 				ED0BE410169B01D80096A843 /* Hero.h */,
 				ED0BE411169B01D80096A843 /* Hero.m */,
 			);
@@ -3038,8 +3038,8 @@
 				EDC2661A168F1E7900734667 /* ItemsDetailViewController.m in Sources */,
 				17D5379C168F4F750058C131 /* ItemCell.m in Sources */,
 				ED0BE406169AE78A0096A843 /* FeedbackViewController.m in Sources */,
-				ED0BE40F169B01CA0096A843 /* Ability.m in Sources */,
 				ED0BE412169B01D80096A843 /* Hero.m in Sources */,
+				5C6DCE57169B432F004063DF /* Ability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

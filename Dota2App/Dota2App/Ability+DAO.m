@@ -66,7 +66,11 @@
         } else if ([abilityType isEqualToString:@"Passive"]) {
             ability.isPassive = [NSNumber numberWithBool:YES];
             [abilitiyTypesToRemove addObject:cleanedAbilityType];
+        } else if ([abilityType isEqualToString:@"Channeled"]) {
+            ability.isChanneled = [NSNumber numberWithBool:YES];
+            [abilitiyTypesToRemove addObject:cleanedAbilityType];
         }
+
     }
     
     [abilityTypes minusSet:abilitiyTypesToRemove];
@@ -86,7 +90,7 @@
         }
         
     } else {
-        NSLog(@"Multiple Types found: [%@], assuming point and unit!",abilityTypes);
+        //NSLog(@"Multiple Types found: [%@], assuming point and unit!",abilityTypes);
         type = heroAbilityPointAndUnitTargetType;
     }
     
@@ -124,6 +128,8 @@
     }
     
     ability.cd = sb;
+    
+    ability.index = [abilityDictionary valueForKey:@"index"];
     
  
     return ability;

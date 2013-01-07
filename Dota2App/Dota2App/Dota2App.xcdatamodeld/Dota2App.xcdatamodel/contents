@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="11G63" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="12C60" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Ability" representedClassName="Ability" syncable="YES">
         <attribute name="cd" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="damage" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dynamic" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="imagePath" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="imgUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="index" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="isAura" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="isAutoCast" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isChanneled" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="isPassive" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="isToggle" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="lore" optional="YES" attributeType="String" syncable="YES"/>
@@ -81,7 +83,7 @@
         <relationship name="heros" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Hero" inverseName="roles" inverseEntity="Hero" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Ability" positionX="205" positionY="324" width="128" height="300"/>
+        <element name="Ability" positionX="205" positionY="324" width="128" height="330"/>
         <element name="Event" positionX="351" positionY="201" width="128" height="60"/>
         <element name="Hero" positionX="-27" positionY="204" width="128" height="495"/>
         <element name="Item" positionX="160" positionY="192" width="128" height="225"/>

@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "Hero.h"
 
-@interface AbilitiesViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
-    
+@interface AbilitiesViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, NSFetchedResultsControllerDelegate> {
+    NSManagedObjectContext *managedObjectContext;
+    NSFetchedResultsController *fetchedRC;
+    NSString *fetchItem;
     UITableView *tableView;
     NSArray *abilities;
         int cellHeight;
