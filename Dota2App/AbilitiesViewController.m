@@ -35,6 +35,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
     
     hero = ((DetailViewController *)self.parentViewController).hero;
     
@@ -67,10 +68,29 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+   
+    Ability *ability = [abilities objectAtIndex:[indexPath row]];
     
-    return 90;
-}
 
+    if ([ability.notes isEqualToString: @""]) {
+        return 180;
+    }
+    else{
+    // FLT_MAX here simply means no constraint in height
+    CGSize maximumLabelSize = CGSizeMake(768, FLT_MAX);
+    
+        CGSize expectedLabelSize = [ability.notes sizeWithFont:[UIFont systemFontOfSize:16.0] constrainedToSize:maximumLabelSize lineBreakMode:UILineBreakModeWordWrap];
+    
+        NSLog(@"%f",expectedLabelSize.height);
+        if (expectedLabelSize.height<180) {
+            return 180;
+        }else{
+            return expectedLabelSize.height+115;
+        }
+    }
+    
+}
+ 
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -92,6 +112,13 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     Ability *ability = [abilities objectAtIndex:[indexPath row]];
     
     abilityCell.abilityName.text = ability.name;
+    abilityCell.lore.text = ability.notes;
+    
+    abilityCell.lore.lineBreakMode = UILineBreakModeWordWrap;
+    abilityCell.lore.numberOfLines = 0;
+    
+    [abilityCell.lore sizeToFit];
+//    
     
     NSFileManager *fileManager = [NSFileManager defaultManager];
     
@@ -103,7 +130,7 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     }
     
     
-    abilityCell.icon.frame = CGRectMake(abilityCell.icon.frame.origin.x,abilityCell.icon.frame.origin.y,128,69);
+[abilityCell.icon setFrame:CGRectMake(abilityCell.icon.frame.origin.x,abilityCell.icon.frame.origin.y, 128,69)];
     [abilityCell isPassive:[ability.isPassive boolValue]];
     
     NSString * mc = ability.mc;
@@ -121,6 +148,17 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     }    
     
     abilityCell.cd.text = cd;
+    
+    
+    abilityCell.cd.frame = CGRectMake(abilityCell.cd.frame.origin.x,abilityCell.lore.frame.origin.y + abilityCell.lore.frame.size.height + 20, abilityCell.cd.frame.size.width, abilityCell.cd.frame.size.width);
+    
+    /*
+    abilityCell.mp;
+    abilityCell.mpIcon;
+    abilityCell.cdIcon;
+     */
+    
+
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

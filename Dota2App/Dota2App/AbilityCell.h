@@ -17,6 +17,7 @@
 @property (nonatomic, strong) IBOutlet UILabel * cd;
 @property (nonatomic, strong) IBOutlet UIImageView *cdIcon;
 @property (nonatomic, strong) IBOutlet UILabel * isPassiveLabel;
+@property (nonatomic, strong) IBOutlet UILabel * lore;
 
 - (void)isPassive:(BOOL)isPassive;
 

@@ -13,6 +13,7 @@
     
     UITableView *tableView;
     NSArray *abilities;
+        int cellHeight;
 }
 
 @property (nonatomic, strong) Hero *hero;
