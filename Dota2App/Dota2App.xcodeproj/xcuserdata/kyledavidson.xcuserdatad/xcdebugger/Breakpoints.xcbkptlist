@@ -21,11 +21,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "InformationViewController.m"
-         timestampString = "379246800.700318"
+         timestampString = "379257360.696702"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "88"
-         endingLineNumber = "88"
+         startingLineNumber = "86"
+         endingLineNumber = "86"
          landmarkName = "-configureView"
          landmarkType = "5">
       </FileBreakpoint>
@@ -86,11 +86,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "AbilityDetailViewController.m"
-         timestampString = "379247387.516903"
+         timestampString = "379250789.737764"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "72"
-         endingLineNumber = "72"
+         startingLineNumber = "70"
+         endingLineNumber = "70"
          landmarkName = "@implementation AbilityDetailViewController"
          landmarkType = "3">
       </FileBreakpoint>
@@ -112,11 +112,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Dota2App/Hero+DAO.m"
-         timestampString = "379247483.112291"
+         timestampString = "379257360.696702"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "69"
-         endingLineNumber = "69"
+         startingLineNumber = "70"
+         endingLineNumber = "70"
          landmarkName = "+heroFromDictionary:"
          landmarkType = "5">
       </FileBreakpoint>

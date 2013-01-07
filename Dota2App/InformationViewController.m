@@ -75,8 +75,6 @@
     self.bioLabel.lineBreakMode = UILineBreakModeWordWrap;
     self.bioLabel.numberOfLines = 0;
 
-    
-    self.turnRateLabel.text = [NSString stringWithFormat:@"%@",hero.turnRate];
     self.sightRangeLabel.text =  hero.sight;
     self.attackRangeLabel.text =  [NSString stringWithFormat:@"%@",hero.attackRange];
     self.missileSpeedLabel.text =   [NSString stringWithFormat:@"%@",hero.missileSpeed];

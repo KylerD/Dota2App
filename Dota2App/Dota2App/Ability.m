@@ -2,7 +2,7 @@
 //  Ability.m
 //  Dota2App
 //
-//  Created by Luke McNeice on 29/12/2012.
+//  Created by Kyle Davidson on 07/01/2013.
 //
 //
 
@@ -12,26 +12,22 @@
 
 @implementation Ability
 
-@dynamic ability;
-@dynamic abilityId;
-@dynamic affects;
+@dynamic cd;
 @dynamic damage;
-@dynamic duration;
+@dynamic dynamic;
 @dynamic imagePath;
-@dynamic imgUrl;
+@dynamic isAura;
+@dynamic isAutoCast;
+@dynamic isPassive;
+@dynamic isToggle;
 @dynamic lore;
+@dynamic mc;
 @dynamic name;
 @dynamic notes;
 @dynamic radius;
-@dynamic videoUrl;
-@dynamic cd;
-@dynamic mc;
-@dynamic dynamic;
 @dynamic type;
-@dynamic isToggle;
-@dynamic isAutoCast;
-@dynamic isAura;
-@dynamic isPassive;
+@dynamic videoUrl;
+@dynamic imgUrl;
 @dynamic hero;
 
 @end
