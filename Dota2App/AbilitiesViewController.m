@@ -113,17 +113,13 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {   //Fetch the hero
     AbilityCell *abilityCell = (AbilityCell *)cell;
-    
     Ability *ability = [abilities objectAtIndex:[indexPath row]];
     
-
-    
     abilityCell.abilityName.text = ability.name;
-    abilityCell.lore.text = ability.notes;
     
+    abilityCell.lore.text = ability.notes;
     abilityCell.lore.lineBreakMode = UILineBreakModeWordWrap;
     abilityCell.lore.numberOfLines = 0;
-    
     [abilityCell.lore sizeToFit];
 
     NSFileManager *fileManager = [NSFileManager defaultManager];
@@ -136,8 +132,7 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
         abilityCell.icon.image = [UIImage imageNamed:ability.imagePath];
 
     }
-    
-    
+
     int yOrigin = abilityCell.lore.frame.origin.y + abilityCell.lore.frame.size.height + 20;
     
     if (yOrigin <100) {
@@ -146,12 +141,10 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     
     if (![ability.mc isEqualToString:@""]) {
        
-        
-        
         UIImageView * manaCostImage = [[UIImageView alloc] init];
         manaCostImage.image = [UIImage imageNamed:@"manaCost.png"];
-        [abilityCell addSubview:manaCostImage];
         manaCostImage.frame = CGRectMake(50, yOrigin,25,25);
+        [abilityCell addSubview:manaCostImage];
         
         UILabel * manaCostLabel = [[UILabel alloc] init];
         manaCostLabel.text = ability.mc;
@@ -159,17 +152,16 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
         [manaCostLabel sizeToFit];
         [manaCostLabel setBackgroundColor:[UIColor clearColor]];
         manaCostLabel.textColor = [UIColor whiteColor];
-        
+        [manaCostLabel setHighlightedTextColor:[UIColor blackColor]];
         [abilityCell addSubview:manaCostLabel];
     }
     
     if (![ability.cd isEqualToString:@""]) {
-        
-        
+
         UIImageView * cooldownImage = [[UIImageView alloc] init];
         cooldownImage.image = [UIImage imageNamed:@"cooldown.png"];
-        [abilityCell addSubview:cooldownImage];
         cooldownImage.frame = CGRectMake(300, yOrigin,25,25);
+        [abilityCell addSubview:cooldownImage];
         
         UILabel * cooldownLabel= [[UILabel alloc] init];
         cooldownLabel.text = ability.cd;
@@ -177,13 +169,9 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
         [cooldownLabel sizeToFit];
         [cooldownLabel setBackgroundColor:[UIColor clearColor]];
         cooldownLabel.textColor = [UIColor whiteColor];
-        
+        [cooldownLabel setHighlightedTextColor:[UIColor blackColor]];
         [abilityCell addSubview:cooldownLabel];
     }
-    
-
-  
-    
     
     [abilityCell isPassive:[ability.isPassive boolValue]];
 }

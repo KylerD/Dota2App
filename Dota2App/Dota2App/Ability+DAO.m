@@ -125,8 +125,7 @@
     
     ability.cd = sb;
     
-    ability.radius = [abilityDictionary valueForKey:@"radius"];
-    
+ 
     return ability;
 }
 

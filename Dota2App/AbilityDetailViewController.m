@@ -33,8 +33,6 @@
     
     //Set the title
     [self.titleLabel setText:self.ability.name];
-    //Set the description
-    [self.descriptionLabel setText:self.ability.notes];
     //Set the mana cost
     NSString *manaCost = [NSString stringWithFormat:@"Mana cost: %@", self.ability.mc];
     [self.mcLabel setText:manaCost];
@@ -42,8 +40,13 @@
     NSString *cooldown = [NSString stringWithFormat:@"Cooldown: %@", self.ability.cd];
     [self.cdLabel setText:cooldown];
     
-    self.radiusLabel.text = [NSString stringWithFormat:@"Radius: %@", self.ability.radius];
+
     
+    NSDictionary * d = [NSKeyedUnarchiver unarchiveObjectWithData:self.ability.dynamic];
+   
+
+   
+    [self makeDatHotAssGridWithThisBadassDynamicDictionary:d];
     
     NSFileManager *fileManager = [NSFileManager defaultManager];
     
@@ -53,15 +56,40 @@
         //In this case image path is just the bundled image name.
         self.abilityImage.image = [UIImage imageNamed:ability.imagePath];
     }
-
-    
-        
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:self.ability.videoUrl]];
     [self.videoWebView loadRequest:request];
-
-
 }
 
+
+-(void)makeDatHotAssGridWithThisBadassDynamicDictionary:(NSDictionary*)badassDictionary{
+    int gridSize = [badassDictionary count];
+    int y = 164; //193 29
+
+    
+
+    for (int count = 0; count<gridSize; count++) {
+        
+        
+        if (count==2||count==4) {
+            y = 193;
+        }
+        
+        UILabel * gridLabel = [[UILabel alloc] init];
+
+        
+        
+        if (count%2==0) {
+            gridLabel.frame = CGRectMake(392,y,100,40);
+        }
+        else{
+            gridLabel.frame = CGRectMake(20,y,100,40);
+        }
+        [gridLabel setBackgroundColor:[UIColor clearColor]];
+        gridLabel.textColor = [UIColor whiteColor];
+        [gridLabel sizeToFit];
+        [self.view addSubview:gridLabel];
+    }
+}
 
 
 
