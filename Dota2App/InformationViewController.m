@@ -91,7 +91,7 @@
     
     [self.bioLabel sizeToFit];
 
-    [self.scrollView setContentSize:CGSizeMake(self.view.frame.size.width, self.bioLabel.frame.origin.y + self.bioLabel.frame.size.height+100)];
+    [self.scrollView setContentSize:CGSizeMake(0, self.bioLabel.frame.origin.y + self.bioLabel.frame.size.height+100)];
 
 }
 - (void)viewDidUnload {
