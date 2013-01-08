@@ -189,7 +189,7 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     
     [abilityCell isPassive:[ability.isPassive boolValue]];
     
-    /*CGFloat abilityCellHeight = [self tableView:self.tableView heightForRowAtIndexPath:indexPath];
+    CGFloat abilityCellHeight = [self tableView:self.theTableView heightForRowAtIndexPath:indexPath];
 
 //tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
     
@@ -199,7 +199,7 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     gradient.colors = [NSArray arrayWithObjects:(id)[UIColor colorWithRed:117/ 255.0 green:0/ 255.0 blue:2/ 255.0 alpha:1.0].CGColor, (id)[UIColor colorWithRed:41/ 255.0 green:0/ 255.0 blue:2/ 255.0 alpha:1.0].CGColor, nil];
     [sbview.layer insertSublayer:gradient atIndex:0];
     
-    abilityCell.selectedBackgroundView = sbview;*/
+    abilityCell.selectedBackgroundView = sbview;
 
     
 }
