@@ -66,15 +66,8 @@
     self.heroNameLabel.text = hero.name;
     self.factionImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png",hero.faction]];
     
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    //If web image has been downloaded use it, else use bundled image
-    if ([fileManager fileExistsAtPath:hero.detailImgPath]) {
-        self.heroImageView.image = [UIImage imageWithContentsOfFile:hero.detailImgPath];
-    } else {
-        //In this case detailImagePath is just the bundled image name.
-        self.heroImageView.image = [UIImage imageNamed:hero.detailImgPath];
-    }
-    
+
+    self.heroImageView.image = [UIImage imageWithContentsOfFile:hero.detailImgPath];
     
     self.strengthPointsLabel.text = [NSString stringWithFormat:@"%@ +%@",hero.strPoints, hero.strGain];
     self.intelligencePointsLabel.text = [NSString stringWithFormat:@"%@ +%@",hero.intelPoints, hero.intelGain];

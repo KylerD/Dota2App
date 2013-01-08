@@ -48,16 +48,9 @@
    
     [self makeDatHotAssGridWithThisBadassDynamicDictionary:d];
     
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    
-    if ([fileManager fileExistsAtPath:ability.imagePath]) {
-        self.abilityImage.image = [UIImage imageWithContentsOfFile:ability.imagePath];
-    } else {
-        //In this case image path is just the bundled image name.
-        self.abilityImage.image = [UIImage imageNamed:ability.imagePath];
-        
-    }
-    
+
+    self.abilityImage.image = [UIImage imageWithContentsOfFile:ability.imagePath];
+  
     [self.videoWebView  loadHTMLString:@"<html><body style=\"background-color:black;\"></body></html>" baseURL:nil];
 
     [self performSelector:@selector(loadURL:) withObject:nil afterDelay:0.1];

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="12C60" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="11G63" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Ability" representedClassName="Ability" syncable="YES">
         <attribute name="cd" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="damage" optional="YES" attributeType="String" syncable="YES"/>
@@ -65,7 +65,8 @@
         <attribute name="coolDown" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <attribute name="cost" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="imgName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imgPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imgUrl" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="itemID" attributeType="String" syncable="YES"/>
         <attribute name="lore" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="manaCost" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
@@ -86,7 +87,7 @@
         <element name="Ability" positionX="205" positionY="324" width="128" height="330"/>
         <element name="Event" positionX="351" positionY="201" width="128" height="60"/>
         <element name="Hero" positionX="-27" positionY="204" width="128" height="495"/>
-        <element name="Item" positionX="160" positionY="192" width="128" height="225"/>
+        <element name="Item" positionX="160" positionY="192" width="128" height="240"/>
         <element name="Nickname" positionX="160" positionY="192" width="128" height="75"/>
         <element name="Role" positionX="160" positionY="192" width="128" height="90"/>
     </elements>

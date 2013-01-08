@@ -139,16 +139,7 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     abilityCell.lore.numberOfLines = 0;
     [abilityCell.lore sizeToFit];
 
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    
-    if ([fileManager fileExistsAtPath:ability.imagePath]) {
-        abilityCell.icon.image = [UIImage imageWithContentsOfFile:ability.imagePath];
-
-    } else {
-        //In this case image path is just the bundled image name.
-        abilityCell.icon.image = [UIImage imageNamed:ability.imagePath];
-
-    }
+    abilityCell.icon.image = [UIImage imageWithContentsOfFile:ability.imagePath];
 
     int yOrigin = abilityCell.lore.frame.origin.y + abilityCell.lore.frame.size.height + 20;
     

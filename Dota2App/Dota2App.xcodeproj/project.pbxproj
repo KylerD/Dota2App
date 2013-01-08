@@ -21,7 +21,6 @@
 		5C550F67168B4A7600249B67 /* item.json in Resources */ = {isa = PBXBuildFile; fileRef = 5C550F66168B4A7600249B67 /* item.json */; };
 		5C550F6E168B4B5300249B67 /* Itemparser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C550F6D168B4B5300249B67 /* Itemparser.m */; };
 		5C550F75168B4CF900249B67 /* Item+DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C550F74168B4CF900249B67 /* Item+DAO.m */; };
-		5C550F7E168B57B800249B67 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C550F7D168B57B800249B67 /* Item.m */; };
 		5C6DCE57169B432F004063DF /* Ability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6DCE56169B432F004063DF /* Ability.m */; };
 		5C6DD566169B637A004063DF /* Alchemist_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C6DD30E169B6379004063DF /* Alchemist_icon.png */; };
 		5C6DD567169B637A004063DF /* Ancient Apparition_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C6DD30F169B6379004063DF /* Ancient Apparition_icon.png */; };
@@ -663,6 +662,7 @@
 		EDCF644F166CC0E300BBE08A /* BuildsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCF644E166CC0E300BBE08A /* BuildsViewController.m */; };
 		EDCF6453166CF3CF00BBE08A /* Ability+DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCF6452166CF3CF00BBE08A /* Ability+DAO.m */; };
 		EDCF6459166D0C5B00BBE08A /* AbilityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCF6458166D0C5B00BBE08A /* AbilityCell.m */; };
+		EDE2DAA8169C1DF900FC4532 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE2DAA7169C1DF900FC4532 /* Item.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -686,8 +686,6 @@
 		5C550F6D168B4B5300249B67 /* Itemparser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Itemparser.m; sourceTree = "<group>"; };
 		5C550F73168B4CF900249B67 /* Item+DAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Item+DAO.h"; sourceTree = "<group>"; };
 		5C550F74168B4CF900249B67 /* Item+DAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Item+DAO.m"; sourceTree = "<group>"; };
-		5C550F7C168B57B800249B67 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
-		5C550F7D168B57B800249B67 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 		5C6DCE55169B432F004063DF /* Ability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ability.h; sourceTree = "<group>"; };
 		5C6DCE56169B432F004063DF /* Ability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ability.m; sourceTree = "<group>"; };
 		5C6DD30E169B6379004063DF /* Alchemist_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Alchemist_icon.png; sourceTree = "<group>"; };
@@ -1351,6 +1349,8 @@
 		EDCF6452166CF3CF00BBE08A /* Ability+DAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Ability+DAO.m"; sourceTree = "<group>"; };
 		EDCF6457166D0C5B00BBE08A /* AbilityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbilityCell.h; sourceTree = "<group>"; };
 		EDCF6458166D0C5B00BBE08A /* AbilityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbilityCell.m; sourceTree = "<group>"; };
+		EDE2DAA6169C1DF900FC4532 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		EDE2DAA7169C1DF900FC4532 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1501,14 +1501,14 @@
 			children = (
 				5C6DCE55169B432F004063DF /* Ability.h */,
 				5C6DCE56169B432F004063DF /* Ability.m */,
-				5C550F7C168B57B800249B67 /* Item.h */,
-				5C550F7D168B57B800249B67 /* Item.m */,
 				5CD53E221686495E0002803D /* Nickname.h */,
 				5CD53E231686495E0002803D /* Nickname.m */,
 				ED08F208165D119C001C4424 /* Role.h */,
 				ED08F209165D119C001C4424 /* Role.m */,
 				ED0BE410169B01D80096A843 /* Hero.h */,
 				ED0BE411169B01D80096A843 /* Hero.m */,
+				EDE2DAA6169C1DF900FC4532 /* Item.h */,
+				EDE2DAA7169C1DF900FC4532 /* Item.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -2981,13 +2981,13 @@
 				B1D8820C168B2FE000470825 /* ItemsTableViewController.m in Sources */,
 				5C550F6E168B4B5300249B67 /* Itemparser.m in Sources */,
 				5C550F75168B4CF900249B67 /* Item+DAO.m in Sources */,
-				5C550F7E168B57B800249B67 /* Item.m in Sources */,
 				EDC2660F168F077A00734667 /* AbilityDetailViewController.m in Sources */,
 				EDC2661A168F1E7900734667 /* ItemsDetailViewController.m in Sources */,
 				17D5379C168F4F750058C131 /* ItemCell.m in Sources */,
 				ED0BE406169AE78A0096A843 /* FeedbackViewController.m in Sources */,
 				ED0BE412169B01D80096A843 /* Hero.m in Sources */,
 				5C6DCE57169B432F004063DF /* Ability.m in Sources */,
+				EDE2DAA8169C1DF900FC4532 /* Item.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

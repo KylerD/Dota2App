@@ -45,6 +45,8 @@
     
     if(!i){
         
+        NSString *itemPathPrefix = @"http://media.steampowered.com/apps/dota2/images/items/";
+        
         NSRange range1 = [itemName rangeOfString:@"DOTA"];
         NSRange range2 = [itemName rangeOfString:@"Mysterious Spell Scroll"];
         if ((range1.location != NSNotFound) || (range2.location != NSNotFound)){
@@ -55,7 +57,35 @@
         
         i.name = itemName;
         i.desc = [itemDictionary valueForKey:@"desc"];
-        i.imgName = [itemDictionary valueForKey:@"img"];
+        //gets the web url for the image, prefix + imgName property of dict
+        i.imgUrl = [NSString stringWithFormat:@"%@%@", itemPathPrefix, [itemDictionary valueForKey:@"img"]];
+        
+        NSFileManager *fileManager = [NSFileManager defaultManager];
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString  *documentsDirectory = [paths objectAtIndex:0];
+        
+        
+        NSString  *downloadedfilePath = [NSString stringWithFormat:@"%@/%@.png", documentsDirectory, itemName];
+        NSString *bundleImagePath = [[NSBundle mainBundle]
+                                     pathForResource:itemName
+                                     ofType:@"png"];
+        
+        
+        if ([fileManager fileExistsAtPath:bundleImagePath]) {//Check bundle for image
+            i.imgPath = bundleImagePath;
+        } else if ([fileManager fileExistsAtPath:downloadedfilePath]) { //check if previously downloaded
+            i.imgPath = downloadedfilePath;
+        } else {
+            //Download it!
+            NSURL  *url = [NSURL URLWithString:i.imgUrl];
+            NSData *urlData = [NSData dataWithContentsOfURL:url];
+            //If there's an internet connection grab url image
+            if (urlData) {
+                [urlData writeToFile:downloadedfilePath atomically:YES];
+                i.imgPath = downloadedfilePath;
+            }
+        }
+
         i.attribString = [itemDictionary valueForKey:@"attrib"];
         i.lore = [itemDictionary valueForKey:@"lore"];
         

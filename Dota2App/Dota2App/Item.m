@@ -2,7 +2,7 @@
 //  Item.m
 //  Dota2App
 //
-//  Created by Luke McNeice on 26/12/2012.
+//  Created by Kyle Davidson on 08/01/2013.
 //
 //
 
@@ -12,17 +12,18 @@
 
 @implementation Item
 
-@dynamic name;
-@dynamic imgName;
-@dynamic cost;
-@dynamic manaCost;
-@dynamic coolDown;
-@dynamic lore;
-@dynamic type;
 @dynamic attribString;
+@dynamic compString;
+@dynamic coolDown;
+@dynamic cost;
 @dynamic desc;
 @dynamic itemID;
-@dynamic compString;
+@dynamic lore;
+@dynamic manaCost;
+@dynamic name;
+@dynamic type;
+@dynamic imgPath;
+@dynamic imgUrl;
 @dynamic components;
 
 @end
