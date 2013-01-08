@@ -8,6 +8,7 @@
 
 #import "ItemsDetailViewController.h"
 #import "DetailViewController.h"
+#import "ItemCell.h"
 
 @interface ItemsDetailViewController ()
 
@@ -15,10 +16,6 @@
 
 @implementation ItemsDetailViewController
 @synthesize item = _item, manaCost,manaImage,lore,name;
-
-
-
-
 
 - (void)setItem:(Item *)item {
     if (_item != item) {
@@ -64,10 +61,12 @@
     }
     NSLog(@"%@",_item.lore);
     
-    
-    
-    
     self.name.text = _item.name;
+    self.title = _item.name;
+    if (![_item.components count]) {
+        self.tableView.hidden = YES;
+    }
+    self.image.image = [UIImage imageWithContentsOfFile:_item.imgPath];
     self.lore.text = _item.lore;
     self.description.text = [_item.desc stringByReplacingOccurrencesOfString:@"<br />"withString:@""];
     self.manaCost.text = [NSString stringWithFormat:@"%@",_item.manaCost];
@@ -107,22 +106,36 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-/*
- "mekansm":{
- "img":"mekansm_lg.png",
- "dname":"Mekansm",
- "qual":"rare",
- "cost":2306,
- "desc":"Active: Restore - Heals 250 HP and gives +2 armor in an area.<br \/>\nPassive: Mekansm Aura - Bonus HP Regen in an area.<br \/>\n<br \/>\nMultiple instances of Mekansm Aura do not stack.",
- "attrib":"+ <span class=\"attribVal\">5<\/span> <span class=\"attribValText\">All Attributes<\/span><br \/>\n+ <span class=\"attribVal\">5<\/span> <span class=\"attribValText\">Armor<\/span><br \/>\nBONUS HP REGEN: <span class=\"attribVal\">4<\/span>",
- "mc":150,
- "cd":45,
- "lore":"A glowing jewel formed out of assorted parts that somehow fit together perfectly.",
- "components":[
- "headdress",
- "buckler"
- ],
- "created":true
- }
- */
+
+#pragma mark - Table View Del
+
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 1;
+}
+
+
+// Customize the appearance of table view cells.
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"ItemCell";
+    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    [self configureCell:cell atIndexPath:indexPath];
+    return cell;
+}
+
+- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
+{   //Fetch the hero
+    ItemCell *itemCell = (ItemCell *)cell;
+    itemCell.cellTitleLabel.text = @"Test";
+}
+
+
+
+
 @end

@@ -58,22 +58,31 @@
     //Image download and cache
     NSString *imgUrl = [self interpretValue:[heroDictionary valueForKey:@"portraitUrl"]];
     hero.detailImgUrl = imgUrl;
+    
+    
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString  *documentsDirectory = [paths objectAtIndex:0];
-    NSString  *filePath = [NSString stringWithFormat:@"%@/%@.png", documentsDirectory, heroName];
     
-    if (![fileManager fileExistsAtPath:filePath]) {
-        NSURL  *url = [NSURL URLWithString:imgUrl];
-        NSData *urlData = [NSData dataWithContentsOfURL:url];
-        //If there's an internet connection grab url image
-        if (urlData) {
-            [urlData writeToFile:filePath atomically:YES];
-            hero.detailImgPath = filePath;
-        } else {    //Else use bundled image
-            NSString *bundleImageName = [NSString stringWithFormat:@"%@.png", heroName];
-            hero.detailImgPath = bundleImageName;
-            
+    
+    NSString  *downloadedfilePath = [NSString stringWithFormat:@"%@/%@.png", documentsDirectory, heroName];
+    NSString *bundleImagePath = [[NSBundle mainBundle]
+                      pathForResource:heroName
+                      ofType:@"png"];
+    
+    
+    if ([fileManager fileExistsAtPath:bundleImagePath]) {//Check bundle for image
+            hero.detailImgPath = bundleImagePath;
+        } else if ([fileManager fileExistsAtPath:downloadedfilePath]) { //check if previously downloaded
+            hero.detailImgPath = downloadedfilePath;
+        } else {
+            //Download it!
+            NSURL  *url = [NSURL URLWithString:imgUrl];
+            NSData *urlData = [NSData dataWithContentsOfURL:url];
+            //If there's an internet connection grab url image
+            if (urlData) {
+                [urlData writeToFile:downloadedfilePath atomically:YES];
+                hero.detailImgPath = downloadedfilePath;
         }
     }
 

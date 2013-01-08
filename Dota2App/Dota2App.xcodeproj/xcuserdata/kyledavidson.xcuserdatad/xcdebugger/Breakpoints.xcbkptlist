@@ -39,20 +39,7 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "278"
          endingLineNumber = "278"
-         landmarkName = "-controllerDidChangeContent:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "ItemsDetailViewController.m"
-         timestampString = "378826782.017565"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "31"
-         endingLineNumber = "31"
-         landmarkName = "-viewDidLoad"
+         landmarkName = "-controller:didChangeObject:atIndexPath:forChangeType:newIndexPath:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -65,7 +52,7 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "104"
          endingLineNumber = "104"
-         landmarkName = "-tableView:cellForRowAtIndexPath:"
+         landmarkName = "-tableView:heightForRowAtIndexPath:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -73,13 +60,13 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "AbilityDetailViewController.m"
-         timestampString = "379250789.737764"
+         timestampString = "379330975.308372"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "70"
-         endingLineNumber = "70"
-         landmarkName = "@implementation AbilityDetailViewController"
-         landmarkType = "3">
+         startingLineNumber = "63"
+         endingLineNumber = "63"
+         landmarkName = "-loadURL:"
+         landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
@@ -118,6 +105,45 @@
          startingLineNumber = "36"
          endingLineNumber = "36"
          landmarkName = "+abilityFromDictionary:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "InformationViewController.m"
+         timestampString = "379330975.308372"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "72"
+         endingLineNumber = "72"
+         landmarkName = "-configureView"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Dota2App/Item+DAO.m"
+         timestampString = "379331125.449142"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "74"
+         endingLineNumber = "74"
+         landmarkName = "+createOrFindItem:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "ItemsDetailViewController.m"
+         timestampString = "379332449.416575"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "63"
+         endingLineNumber = "63"
+         landmarkName = "-configureView"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

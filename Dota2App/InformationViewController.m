@@ -8,6 +8,10 @@
 
 #import "InformationViewController.h"
 #import "DetailViewController.h"
+
+#import <QuartzCore/QuartzCore.h>
+
+
 @interface InformationViewController ()
 
 @end
@@ -48,18 +52,22 @@
 }
 
 - (void)configureView {
+    
+    
+    UIView *sbview = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.scrollView.frame.size.width, self.scrollView.frame.size.height)];
+    
+    CAGradientLayer *gradient = [CAGradientLayer layer];
+    gradient.frame = sbview.bounds;
+    gradient.colors = [NSArray arrayWithObjects:(id)[UIColor colorWithRed:35/ 255.0 green:36/ 255.0 blue:37/ 255.0 alpha:1.0].CGColor, (id)[UIColor colorWithRed:10/ 255.0 green:11/ 255.0 blue:12/ 255.0 alpha:1.0].CGColor, nil];
+    [sbview.layer insertSublayer:gradient atIndex:0];
+    
+    [self.view insertSubview:sbview atIndex:0];
+    
     self.heroNameLabel.text = hero.name;
     self.factionImageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@.png",hero.faction]];
     
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    //If web image has been downloaded use it, else use bundled image
-    if ([fileManager fileExistsAtPath:hero.detailImgPath]) {
-        self.heroImageView.image = [UIImage imageWithContentsOfFile:hero.detailImgPath];
-    } else {
-        //In this case detailImagePath is just the bundled image name.
-        self.heroImageView.image = [UIImage imageNamed:hero.detailImgPath];
-    }
-    
+
+    self.heroImageView.image = [UIImage imageWithContentsOfFile:hero.detailImgPath];
     
     self.strengthPointsLabel.text = [NSString stringWithFormat:@"%@ +%@",hero.strPoints, hero.strGain];
     self.intelligencePointsLabel.text = [NSString stringWithFormat:@"%@ +%@",hero.intelPoints, hero.intelGain];
@@ -83,7 +91,7 @@
     
     [self.bioLabel sizeToFit];
 
-    [self.scrollView setContentSize:CGSizeMake(self.view.frame.size.width, self.bioLabel.frame.origin.y + self.bioLabel.frame.size.height+100)];
+    [self.scrollView setContentSize:CGSizeMake(0, self.bioLabel.frame.origin.y + self.bioLabel.frame.size.height+100)];
 
 }
 - (void)viewDidUnload {

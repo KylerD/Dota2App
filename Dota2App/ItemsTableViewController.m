@@ -183,10 +183,10 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
 
     //subtitle = [NSString stringWithFormat:@"%@ - %@", hero.faction, hero.primaryAttribute];
     //Configure the cell
-    NSLog(@"%@",item.imgName);
+    NSLog(@"%@",item.imgPath);
     cell.cellTitleLabel.text= item.name;
     //cell.cellImage.image = [UIImage imageNamed:item.imgName];
-    cell.cellImage.image = [UIImage imageNamed:@"items.png"];
+    cell.cellImage.image = [UIImage imageWithContentsOfFile:item.imgPath];
 }
 
 #pragma mark - NSFetchedRC Delegate

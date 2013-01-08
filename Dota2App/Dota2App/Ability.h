@@ -2,7 +2,7 @@
 //  Ability.h
 //  Dota2App
 //
-//  Created by Kyle Davidson on 07/01/2013.
+//  Created by Luke McNeice on 07/01/2013.
 //
 //
 
@@ -17,6 +17,7 @@
 @property (nonatomic, retain) NSString * damage;
 @property (nonatomic, retain) NSData * dynamic;
 @property (nonatomic, retain) NSString * imagePath;
+@property (nonatomic, retain) NSString * imgUrl;
 @property (nonatomic, retain) NSNumber * isAura;
 @property (nonatomic, retain) NSNumber * isAutoCast;
 @property (nonatomic, retain) NSNumber * isPassive;
@@ -28,7 +29,8 @@
 @property (nonatomic, retain) NSString * radius;
 @property (nonatomic, retain) NSNumber * type;
 @property (nonatomic, retain) NSString * videoUrl;
-@property (nonatomic, retain) NSString * imgUrl;
+@property (nonatomic, retain) NSNumber * index;
+@property (nonatomic, retain) NSNumber * isChanneled;
 @property (nonatomic, retain) Hero *hero;
 
 @end
