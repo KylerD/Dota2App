@@ -148,37 +148,39 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     }
     
     if (![ability.mc isEqualToString:@""]) {
-       
-        UIImageView * manaCostImage = [[UIImageView alloc] init];
-        manaCostImage.image = [UIImage imageNamed:@"manaCost.png"];
-        manaCostImage.frame = CGRectMake(50, yOrigin,25,25);
-        [abilityCell addSubview:manaCostImage];
+        [abilityCell.mpIcon removeFromSuperview];
+        [abilityCell.mp removeFromSuperview];
+        abilityCell.mpIcon = [[UIImageView alloc] init];
+        abilityCell.mpIcon.image = [UIImage imageNamed:@"manaCost.png"];
+        abilityCell.mpIcon.frame = CGRectMake(50, yOrigin,25,25);
+        [abilityCell addSubview:abilityCell.mpIcon];
         
-        UILabel * manaCostLabel = [[UILabel alloc] init];
-        manaCostLabel.text = ability.mc;
-        manaCostLabel.frame = CGRectMake(80, yOrigin, 400,40);
-        [manaCostLabel sizeToFit];
-        [manaCostLabel setBackgroundColor:[UIColor clearColor]];
-        manaCostLabel.textColor = [UIColor whiteColor];
-        [manaCostLabel setHighlightedTextColor:[UIColor blackColor]];
-        [abilityCell addSubview:manaCostLabel];
+        abilityCell.mp = [[UILabel alloc] init];
+        abilityCell.mp.text = ability.mc;
+        abilityCell.mp.frame = CGRectMake(80, yOrigin, 400,40);
+        [abilityCell.mp sizeToFit];
+        [abilityCell.mp setBackgroundColor:[UIColor clearColor]];
+        abilityCell.mp.textColor = [UIColor whiteColor];
+        [abilityCell.mp setHighlightedTextColor:[UIColor blackColor]];
+        [abilityCell addSubview:abilityCell.mp];
     }
     
     if (![ability.cd isEqualToString:@""]) {
-
-        UIImageView * cooldownImage = [[UIImageView alloc] init];
-        cooldownImage.image = [UIImage imageNamed:@"cooldown.png"];
-        cooldownImage.frame = CGRectMake(300, yOrigin,25,25);
-        [abilityCell addSubview:cooldownImage];
+        [abilityCell.cdIcon removeFromSuperview];
+        [abilityCell.cd removeFromSuperview];
+        abilityCell.cdIcon = [[UIImageView alloc] init];
+        abilityCell.cdIcon.image = [UIImage imageNamed:@"cooldown.png"];
+        abilityCell.cdIcon.frame = CGRectMake(300, yOrigin,25,25);
+        [abilityCell addSubview:abilityCell.cdIcon];
         
-        UILabel * cooldownLabel= [[UILabel alloc] init];
-        cooldownLabel.text = ability.cd;
-        cooldownLabel.frame = CGRectMake(330, yOrigin, 400,40);
-        [cooldownLabel sizeToFit];
-        [cooldownLabel setBackgroundColor:[UIColor clearColor]];
-        cooldownLabel.textColor = [UIColor whiteColor];
-        [cooldownLabel setHighlightedTextColor:[UIColor blackColor]];
-        [abilityCell addSubview:cooldownLabel];
+        abilityCell.cd= [[UILabel alloc] init];
+        abilityCell.cd.text = ability.cd;
+        abilityCell.cd.frame = CGRectMake(330, yOrigin, 400,40);
+        [abilityCell.cd sizeToFit];
+        [abilityCell.cd setBackgroundColor:[UIColor clearColor]];
+        abilityCell.cd.textColor = [UIColor whiteColor];
+        [abilityCell.cd setHighlightedTextColor:[UIColor blackColor]];
+        [abilityCell addSubview:abilityCell.cd];
     }
     
     [abilityCell isPassive:[ability.isPassive boolValue]];
