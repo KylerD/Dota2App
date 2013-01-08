@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Item+DAO.h"
 
-@interface ItemsDetailViewController : UIViewController
+@interface ItemsDetailViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) Item *item;
 @property (nonatomic, retain) IBOutlet UILabel * cost;
@@ -23,4 +23,6 @@
 @property (nonatomic, retain) IBOutlet UIImageView * image;
 @property (nonatomic, retain) IBOutlet UIImageView * manaImage;
 @property (nonatomic, retain) IBOutlet UIImageView * cooldownImage;
+@property (nonatomic, retain) IBOutlet UITableView *tableView;
+
 @end

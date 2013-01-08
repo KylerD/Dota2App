@@ -18,7 +18,7 @@
 @property (nonatomic, retain) NSNumber * coolDown;
 @property (nonatomic, retain) NSNumber * cost;
 @property (nonatomic, retain) NSString * desc;
-@property (nonatomic, retain) NSString * itemID;
+@property (nonatomic, retain) NSString * itemId;
 @property (nonatomic, retain) NSString * lore;
 @property (nonatomic, retain) NSNumber * manaCost;
 @property (nonatomic, retain) NSString * name;

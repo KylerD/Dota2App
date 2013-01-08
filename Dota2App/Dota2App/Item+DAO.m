@@ -92,7 +92,7 @@
         id tryType = [itemDictionary valueForKey:@"qual"];
         if([tryType isKindOfClass:[NSString class]]){ 
             i.type = (NSString*)tryType;
-        } else { //Fucking Shadow amulet
+        } else { //Fucking Shadow amulet < Lmao
             i.type = @"component";
         }
         

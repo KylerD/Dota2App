@@ -662,7 +662,7 @@
 		EDCF644F166CC0E300BBE08A /* BuildsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCF644E166CC0E300BBE08A /* BuildsViewController.m */; };
 		EDCF6453166CF3CF00BBE08A /* Ability+DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCF6452166CF3CF00BBE08A /* Ability+DAO.m */; };
 		EDCF6459166D0C5B00BBE08A /* AbilityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCF6458166D0C5B00BBE08A /* AbilityCell.m */; };
-		EDE2DAA8169C1DF900FC4532 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE2DAA7169C1DF900FC4532 /* Item.m */; };
+		EDE2DAAB169C297F00FC4532 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE2DAAA169C297F00FC4532 /* Item.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1342,15 +1342,15 @@
 		EDCA230816553AB100FEDF75 /* AbilitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbilitiesViewController.m; sourceTree = "<group>"; };
 		EDCA230C16553EDC00FEDF75 /* InformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationViewController.h; sourceTree = "<group>"; };
 		EDCA230D16553EDC00FEDF75 /* InformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationViewController.m; sourceTree = "<group>"; };
-		EDCF644A166CB6FD00BBE08A /* items.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = items.png; sourceTree = "<group>"; };
+		EDCF644A166CB6FD00BBE08A /* items.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = items.png; path = ../../items.png; sourceTree = "<group>"; };
 		EDCF644D166CC0E300BBE08A /* BuildsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildsViewController.h; sourceTree = "<group>"; };
 		EDCF644E166CC0E300BBE08A /* BuildsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuildsViewController.m; sourceTree = "<group>"; };
 		EDCF6451166CF3CF00BBE08A /* Ability+DAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Ability+DAO.h"; sourceTree = "<group>"; };
 		EDCF6452166CF3CF00BBE08A /* Ability+DAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Ability+DAO.m"; sourceTree = "<group>"; };
 		EDCF6457166D0C5B00BBE08A /* AbilityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbilityCell.h; sourceTree = "<group>"; };
 		EDCF6458166D0C5B00BBE08A /* AbilityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbilityCell.m; sourceTree = "<group>"; };
-		EDE2DAA6169C1DF900FC4532 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
-		EDE2DAA7169C1DF900FC4532 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		EDE2DAA9169C297F00FC4532 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		EDE2DAAA169C297F00FC4532 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1443,6 +1443,7 @@
 		5C3CAEEB1657F2A400E8341C /* default */ = {
 			isa = PBXGroup;
 			children = (
+				EDCF644A166CB6FD00BBE08A /* items.png */,
 				EDCA230116552A2900FEDF75 /* Radiant.png */,
 				5C6DD7BC169B6B23004063DF /* avatar_container.png */,
 				EDCA22FA165528A900FEDF75 /* Dire.png */,
@@ -1507,8 +1508,8 @@
 				ED08F209165D119C001C4424 /* Role.m */,
 				ED0BE410169B01D80096A843 /* Hero.h */,
 				ED0BE411169B01D80096A843 /* Hero.m */,
-				EDE2DAA6169C1DF900FC4532 /* Item.h */,
-				EDE2DAA7169C1DF900FC4532 /* Item.m */,
+				EDE2DAA9169C297F00FC4532 /* Item.h */,
+				EDE2DAAA169C297F00FC4532 /* Item.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -2135,7 +2136,6 @@
 		B17D98BD164EA18000C60B36 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				EDCF644A166CB6FD00BBE08A /* items.png */,
 				5C3CB3B91657F34600E8341C /* data */,
 				5C3CAEEA1657F2A400E8341C /* images */,
 			);
@@ -2987,7 +2987,7 @@
 				ED0BE406169AE78A0096A843 /* FeedbackViewController.m in Sources */,
 				ED0BE412169B01D80096A843 /* Hero.m in Sources */,
 				5C6DCE57169B432F004063DF /* Ability.m in Sources */,
-				EDE2DAA8169C1DF900FC4532 /* Item.m in Sources */,
+				EDE2DAAB169C297F00FC4532 /* Item.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

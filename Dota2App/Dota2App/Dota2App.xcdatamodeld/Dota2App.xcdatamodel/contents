@@ -67,7 +67,7 @@
         <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="imgPath" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="imgUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="itemID" attributeType="String" syncable="YES"/>
+        <attribute name="itemId" attributeType="String" syncable="YES"/>
         <attribute name="lore" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="manaCost" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>

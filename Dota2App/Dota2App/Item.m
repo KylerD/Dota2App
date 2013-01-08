@@ -17,7 +17,7 @@
 @dynamic coolDown;
 @dynamic cost;
 @dynamic desc;
-@dynamic itemID;
+@dynamic itemId;
 @dynamic lore;
 @dynamic manaCost;
 @dynamic name;
