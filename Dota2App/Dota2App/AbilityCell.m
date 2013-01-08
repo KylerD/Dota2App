@@ -34,6 +34,17 @@
     self.cdIcon.hidden = isPassive;
     self.isPassiveLabel.hidden = !isPassive;
     
-}   
+}
+
+- (void)manaHidden:(BOOL)hidden{
+    self.mp.hidden = hidden;
+    self.mpIcon.hidden = hidden;
+}
+
+
+- (void)cooldownHidden:(BOOL)hidden{
+    self.cd.hidden = hidden;
+    self.cdIcon.hidden = hidden;
+}
 
 @end

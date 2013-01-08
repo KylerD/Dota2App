@@ -13,13 +13,13 @@
     NSManagedObjectContext *managedObjectContext;
     NSFetchedResultsController *fetchedRC;
     NSString *fetchItem;
-    UITableView *theTableView;
+    UITableView *tableView;
     NSArray *abilities;
         int cellHeight;
 }
 
 @property (nonatomic, strong) Hero *hero;
-@property (nonatomic, strong) IBOutlet UITableView *theTableView;
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 

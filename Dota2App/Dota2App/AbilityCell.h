@@ -20,5 +20,6 @@
 @property (nonatomic, strong) IBOutlet UILabel * lore;
 
 - (void)isPassive:(BOOL)isPassive;
-
+- (void)manaHidden:(BOOL)hidden;
+- (void)cooldownHidden:(BOOL)hidden;
 @end
