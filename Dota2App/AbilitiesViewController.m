@@ -20,7 +20,7 @@
 
 @implementation AbilitiesViewController
 @synthesize hero;
-@synthesize tableView;
+@synthesize theTableView;
 
 #pragma mark - View LifeCycle
 
@@ -66,7 +66,7 @@
             NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
         }
         
-        [self.tableView reloadData];
+        [self.theTableView reloadData];
     }
     
 }
@@ -99,9 +99,9 @@
     else{
         // FLT_MAX here simply means no constraint in height
         CGSize maximumLabelSize = CGSizeMake(541, FLT_MAX);
-    
+        
         CGSize expectedLabelSize = [ability.notes sizeWithFont:[UIFont systemFontOfSize:15.0] constrainedToSize:maximumLabelSize lineBreakMode:UILineBreakModeWordWrap];
-    
+        
         NSLog(@"%f",expectedLabelSize.height);
         if (expectedLabelSize.height+80<110) {
             return 110+manaCoolDownHeight;
@@ -116,8 +116,12 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"AbilityCell";
-    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    AbilityCell *cell = (AbilityCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[AbilityCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
     [self configureCell:cell atIndexPath:indexPath];
+    
     return cell;
 }
 
@@ -185,7 +189,7 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     
     [abilityCell isPassive:[ability.isPassive boolValue]];
     
-    CGFloat abilityCellHeight = [self tableView:self.tableView heightForRowAtIndexPath:indexPath];
+    /*CGFloat abilityCellHeight = [self tableView:self.tableView heightForRowAtIndexPath:indexPath];
 
 //tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
     
@@ -195,7 +199,7 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     gradient.colors = [NSArray arrayWithObjects:(id)[UIColor colorWithRed:117/ 255.0 green:0/ 255.0 blue:2/ 255.0 alpha:1.0].CGColor, (id)[UIColor colorWithRed:41/ 255.0 green:0/ 255.0 blue:2/ 255.0 alpha:1.0].CGColor, nil];
     [sbview.layer insertSublayer:gradient atIndex:0];
     
-    abilityCell.selectedBackgroundView = sbview;
+    abilityCell.selectedBackgroundView = sbview;*/
 
     
 }
@@ -204,7 +208,7 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
 {
     if ([[segue identifier] isEqualToString:@"AbilityDetail"]) {
         
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        NSIndexPath *indexPath = [self.theTableView indexPathForSelectedRow];
         Ability *selectedAbility = [fetchedRC objectAtIndexPath:indexPath];
       AbilityDetailViewController *abilityDetailVC = (AbilityDetailViewController *)[segue destinationViewController];
       [abilityDetailVC setAbility:selectedAbility];
@@ -243,7 +247,7 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
 
 - (void)controllerWillChangeContent:(NSFetchedResultsController *)controller
 {
-    [self.tableView beginUpdates];
+    [self.theTableView beginUpdates];
 }
 
 - (void)controller:(NSFetchedResultsController *)controller didChangeSection:(id <NSFetchedResultsSectionInfo>)sectionInfo
@@ -251,11 +255,11 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
 {
     switch(type) {
         case NSFetchedResultsChangeInsert:
-            [self.tableView insertSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
+            [self.theTableView insertSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
             break;
             
         case NSFetchedResultsChangeDelete:
-            [self.tableView deleteSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
+            [self.theTableView deleteSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
             break;
     }
 }
@@ -267,27 +271,27 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     
     switch(type) {
         case NSFetchedResultsChangeInsert:
-            [tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+            [self.theTableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
             break;
             
         case NSFetchedResultsChangeDelete:
-            [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+            [self.theTableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
             break;
             
         case NSFetchedResultsChangeUpdate:
-            [self configureCell:[tableView cellForRowAtIndexPath:indexPath] atIndexPath:indexPath];
+            [self configureCell:[self.theTableView cellForRowAtIndexPath:indexPath] atIndexPath:indexPath];
             break;
             
         case NSFetchedResultsChangeMove:
-            [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-            [tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath]withRowAnimation:UITableViewRowAnimationFade];
+            [self.theTableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+            [self.theTableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath]withRowAnimation:UITableViewRowAnimationFade];
             break;
     }
 }
 
 - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
 {
-    [self.tableView endUpdates];
+    [self.theTableView endUpdates];
 }
 
 
