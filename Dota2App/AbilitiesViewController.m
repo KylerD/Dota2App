@@ -112,7 +112,7 @@
         }
         
         //MANA AND COOLDOWN CALCULATION
-        if(![ability.mc isEqualToString:@""]){
+        if(![ability.mc isEqualToString:@""] || ![ability.cd isEqualToString:@""]){
             calculatedHeight += CELL_MANACOOLDOWN_ADD;
         }
         
