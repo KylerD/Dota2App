@@ -33,6 +33,7 @@
     
     //Set the title
     [self.titleLabel setText:self.ability.name];
+    self.title = self.ability.name;
     //Set the mana cost
     NSString *manaCost = [NSString stringWithFormat:@"Mana cost: %@", self.ability.mc];
     [self.mcLabel setText:manaCost];
