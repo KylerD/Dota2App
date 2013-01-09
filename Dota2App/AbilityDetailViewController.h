@@ -21,6 +21,7 @@
 @property (nonatomic, strong) IBOutlet UILabel *affectsLabel;
 @property (nonatomic, strong) IBOutlet UILabel *damageTypeLabel;
 @property (nonatomic, strong) IBOutlet UILabel *radiusLabel;
+@property (nonatomic, strong) IBOutlet UILabel *loreLabel;
 @property (nonatomic, strong) IBOutlet UIWebView *videoWebView;
 @property (nonatomic, strong) IBOutlet UIImageView *abilityImage;
 

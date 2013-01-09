@@ -173,9 +173,7 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
         abilityCell.cd.text = ability.cd;
     }
     else{
-    //This is a mess...and asking for trouble...
-        
-    
+        //This is a mess...and asking for trouble...
         if (![ability.mc isEqualToString:@""]) {
             [abilityCell.mpIcon removeFromSuperview];
             [abilityCell.mp removeFromSuperview];
@@ -183,7 +181,7 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
             abilityCell.mpIcon.image = [UIImage imageNamed:@"manaCost.png"];
             abilityCell.mpIcon.frame = CGRectMake(111, yOrigin,25,25);//50
             [abilityCell addSubview:abilityCell.mpIcon];
-    
+            
             abilityCell.mp = [[UILabel alloc] init];
             abilityCell.mp.text = ability.mc;
             abilityCell.mp.frame = CGRectMake(151, yOrigin, 400,40);//80
@@ -193,7 +191,7 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
             [abilityCell.mp setHighlightedTextColor:[UIColor blackColor]];
             [abilityCell addSubview:abilityCell.mp];
         }
-    
+        
         if (![ability.cd isEqualToString:@""]) {
             [abilityCell.cdIcon removeFromSuperview];
             [abilityCell.cd removeFromSuperview];
@@ -201,19 +199,17 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
             abilityCell.cdIcon.image = [UIImage imageNamed:@"cooldown.png"];
             abilityCell.cdIcon.frame = CGRectMake(361, yOrigin,25,25);//300
             [abilityCell addSubview:abilityCell.cdIcon];
-    
+            
             abilityCell.cd= [[UILabel alloc] init];
             abilityCell.cd.text = ability.cd;
             abilityCell.cd.frame = CGRectMake(401, yOrigin, 400,40);//330
             [abilityCell.cd sizeToFit];
             [abilityCell.cd setBackgroundColor:[UIColor clearColor]];
             abilityCell.cd.textColor = [UIColor whiteColor];
-           [abilityCell.cd setHighlightedTextColor:[UIColor blackColor]];
+            [abilityCell.cd setHighlightedTextColor:[UIColor blackColor]];
             [abilityCell addSubview:abilityCell.cd];
         }
     }
-    
-    
     [abilityCell isPassive:[ability.isPassive boolValue]];
     
     //Draw Gradient

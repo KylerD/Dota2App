@@ -31,26 +31,12 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    //Set the title
-    [self.titleLabel setText:self.ability.name];
-    self.title = self.ability.name;
-    //Set the mana cost
-    NSString *manaCost = [NSString stringWithFormat:@"Mana cost: %@", self.ability.mc];
-    [self.mcLabel setText:manaCost];
-    //Set the cooldown
-    NSString *cooldown = [NSString stringWithFormat:@"Cooldown: %@", self.ability.cd];
-    [self.cdLabel setText:cooldown];
-    
 
-    
-    NSDictionary * d = [NSKeyedUnarchiver unarchiveObjectWithData:self.ability.dynamic];
-   
-
-   
-    [self makeDatHotAssGridWithThisBadassDynamicDictionary:d];
     
 
     self.abilityImage.image = [UIImage imageWithContentsOfFile:ability.imagePath];
+    
+    [self configureView];
   
     [self.videoWebView  loadHTMLString:@"<html><body style=\"background-color:black;\"></body></html>" baseURL:nil];
 
@@ -65,8 +51,50 @@
 
 }
 
+-(void)configureView{
+    if(UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone){
+        //Set the title
+        [self.titleLabel setText:self.ability.name];
+        //Set the mana cost
+        
+ 
+        self.descriptionLabel.lineBreakMode = UILineBreakModeWordWrap;
+        self.descriptionLabel.numberOfLines = 0;
+        self.loreLabel.lineBreakMode = UILineBreakModeWordWrap;
+        self.loreLabel.numberOfLines = 0;
+        [self.descriptionLabel setText:self.ability.notes];
+        [self.descriptionLabel sizeToFit];
+        
+//        [self makeDatHotAssIPHONEGridWithThisBadassDynamicDictionary:theDictionaryOfTheGods];
+        
+        
+        /*   This will be set to be below the bottom of the hot ass grid
+        [self.loreLabel setText:self.ability.lore];
+        [self.loreLabel sizeToFit];
+        self.loreLabel.frame = CGRectMake(self.descriptionLabel.frame.origin.x,self.descriptionLabel.frame.size.height+self.descriptionLabel.frame.origin.y,self.loreLabel.frame.size.width, self.loreLabel.frame.size.height);
+         
+         */
+        if ([ability.isPassive boolValue]) {
+            
+        }
+        else{
+            [self.mcLabel setText:self.ability.mc];
+            [self.cdLabel setText:self.ability.cd];
+        }
+        
+    }
+    
+    
+    NSDictionary * d = [NSKeyedUnarchiver unarchiveObjectWithData:self.ability.dynamic];
+        
+        
+        
+        [self makeDatHotAssGridWithThisBadassDynamicDictionary:d];
+    
+}
 
--(void)makeDatHotAssGridWithThisBadassDynamicDictionary:(NSDictionary*)badassDictionary{
+
+-(void)makeDatHotAssIPADGridWithThisBadassDynamicDictionary:(NSDictionary*)badassDictionary{
     int gridSize = [badassDictionary count];
     int y = 164; //193 29
 
@@ -81,6 +109,36 @@
         
         UILabel * gridLabel = [[UILabel alloc] init];
 
+        
+        
+        if (count%2==0) {
+            gridLabel.frame = CGRectMake(392,y,100,40);
+        }
+        else{
+            gridLabel.frame = CGRectMake(20,y,100,40);
+        }
+        [gridLabel setBackgroundColor:[UIColor clearColor]];
+        gridLabel.textColor = [UIColor whiteColor];
+        [gridLabel sizeToFit];
+        [self.view addSubview:gridLabel];
+    }
+}
+
+-(void)makeDatHotAssIPHONERowsWithThisBadassDynamicDictionary:(NSDictionary*)badassDictionary{
+    int gridSize = [badassDictionary count];
+    int y = 164; //193 29
+    
+    
+    
+    for (int count = 0; count<gridSize; count++) {
+        
+        
+        if (count==2||count==4) {
+            y = 193;
+        }
+        
+        UILabel * gridLabel = [[UILabel alloc] init];
+        
         
         
         if (count%2==0) {
