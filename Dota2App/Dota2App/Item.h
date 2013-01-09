@@ -2,7 +2,7 @@
 //  Item.h
 //  Dota2App
 //
-//  Created by Kyle Davidson on 08/01/2013.
+//  Created by Kyle Davidson on 09/01/2013.
 //
 //
 
@@ -18,13 +18,14 @@
 @property (nonatomic, retain) NSNumber * coolDown;
 @property (nonatomic, retain) NSNumber * cost;
 @property (nonatomic, retain) NSString * desc;
+@property (nonatomic, retain) NSString * imgPath;
+@property (nonatomic, retain) NSString * imgUrl;
 @property (nonatomic, retain) NSString * itemId;
 @property (nonatomic, retain) NSString * lore;
 @property (nonatomic, retain) NSNumber * manaCost;
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSString * type;
-@property (nonatomic, retain) NSString * imgPath;
-@property (nonatomic, retain) NSString * imgUrl;
+@property (nonatomic, retain) NSString * uniqueItemId;
 @property (nonatomic, retain) NSSet *components;
 @end
 

@@ -72,6 +72,7 @@
         <attribute name="manaCost" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uniqueItemId" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="components" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Item" inverseName="components" inverseEntity="Item" syncable="YES"/>
     </entity>
     <entity name="Nickname" representedClassName="Nickname" syncable="YES">
@@ -87,7 +88,7 @@
         <element name="Ability" positionX="205" positionY="324" width="128" height="330"/>
         <element name="Event" positionX="351" positionY="201" width="128" height="60"/>
         <element name="Hero" positionX="-27" positionY="204" width="128" height="495"/>
-        <element name="Item" positionX="160" positionY="192" width="128" height="240"/>
+        <element name="Item" positionX="160" positionY="192" width="128" height="255"/>
         <element name="Nickname" positionX="160" positionY="192" width="128" height="75"/>
         <element name="Role" positionX="160" positionY="192" width="128" height="90"/>
     </elements>
