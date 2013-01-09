@@ -42,7 +42,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     if (_item) {
         [self configureView];
     }
@@ -53,8 +52,20 @@
 }
 
 -(void)configureView
-{
-    int count =1;
+{   //initially hide the table view
+    self.tableView.hidden = YES;
+    
+    if (![_item.components count]) {
+        [_item mapItemComponents];
+    }
+    
+    itemComponents = [_item.components allObjects];
+    if (![itemComponents count] == 0) {
+        self.tableView.hidden = NO;
+        [self.tableView reloadData];
+    }
+    
+    int count = 1;
             NSLog(@"%@ is made from:",_item.name);
     for (NSString * itemConsumables in _item.components) {
         NSLog(@"%i. %@",count, itemConsumables);
@@ -63,9 +74,7 @@
     
     self.name.text = _item.name;
     self.title = _item.name;
-    if (![_item.components count]) {
-        self.tableView.hidden = YES;
-    }
+
     self.image.image = [UIImage imageWithContentsOfFile:_item.imgPath];
     self.lore.text = _item.lore;
     self.description.text = [_item.desc stringByReplacingOccurrencesOfString:@"<br />"withString:@""];
@@ -86,6 +95,7 @@
 
     [self.description sizeToFit];
     
+    self.tableView.frame = CGRectMake(self.tableView.frame.origin.x, self.description.frame.origin.y + self.description.frame.size.height + 30, self.tableView.frame.size.width, self.tableView.frame.size.height);
 
     if ([self.cooldown.text isEqualToString:@"0"]) {
         self.cooldown.hidden = true;
@@ -116,7 +126,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return [itemComponents count];
 }
 
 
@@ -132,7 +142,11 @@
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {   //Fetch the hero
     ItemCell *itemCell = (ItemCell *)cell;
-    itemCell.cellTitleLabel.text = @"Test";
+    Item *itemComponent = [itemComponents objectAtIndex:[indexPath row]];
+    itemCell.cellTitleLabel.text= itemComponent.name;
+    //cell.cellImage.image = [UIImage imageNamed:item.imgName];
+    itemCell.cellImage.image = [UIImage imageWithContentsOfFile:itemComponent.imgPath];
+    
 }
 
 

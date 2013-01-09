@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "Item+DAO.h"
 
-@interface ItemsDetailViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface ItemsDetailViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
+    NSArray *itemComponents;
+}
 
 @property (nonatomic, strong) Item *item;
 @property (nonatomic, retain) IBOutlet UILabel * cost;

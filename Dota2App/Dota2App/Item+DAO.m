@@ -21,8 +21,10 @@
     
     
     for (NSString * comp in comps) {
-        Item * compItem = [Item readObjectWithParamterName:@"itemID" andValue:comp];
-        [self addComponentsObject:compItem];
+        Item * compItem = [Item readObjectWithParamterName:@"uniqueItemId" andValue:comp];
+        if (compItem) {
+            [self addComponentsObject:compItem];
+        }
     }
     
     [Item saveDatabase];
@@ -41,7 +43,7 @@
     NSDictionary * itemDictionary = [topLevelItemDictionary valueForKey:itemID];
     NSString * itemName= [itemDictionary valueForKey:@"dname"];
     
-    i = [Item readObjectWithParamterName:@"name" andValue:itemName];
+    i = [Item readObjectWithParamterName:@"uniqueItemId" andValue:itemID];
     
     if(!i){
         
@@ -56,6 +58,7 @@
         i =  [Item createObject];
         
         i.name = itemName;
+        i.uniqueItemId = itemID;
         i.desc = [itemDictionary valueForKey:@"desc"];
         //gets the web url for the image, prefix + imgName property of dict
         i.imgUrl = [NSString stringWithFormat:@"%@%@", itemPathPrefix, [itemDictionary valueForKey:@"img"]];

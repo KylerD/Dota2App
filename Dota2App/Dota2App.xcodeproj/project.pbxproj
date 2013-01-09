@@ -645,6 +645,7 @@
 		ED08F245165D1930001C4424 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED08F243165D1923001C4424 /* Security.framework */; };
 		ED0BE406169AE78A0096A843 /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0BE405169AE78A0096A843 /* FeedbackViewController.m */; };
 		ED0BE412169B01D80096A843 /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0BE411169B01D80096A843 /* Hero.m */; };
+		EDC1DEFC169D84060024E6B5 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC1DEFB169D84060024E6B5 /* Item.m */; };
 		EDC2660F168F077A00734667 /* AbilityDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC2660E168F077A00734667 /* AbilityDetailViewController.m */; };
 		EDC2661A168F1E7900734667 /* ItemsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC26619168F1E7900734667 /* ItemsDetailViewController.m */; };
 		EDC26643168F45E700734667 /* cd.png in Resources */ = {isa = PBXBuildFile; fileRef = EDC26641168F45E700734667 /* cd.png */; };
@@ -662,7 +663,6 @@
 		EDCF644F166CC0E300BBE08A /* BuildsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCF644E166CC0E300BBE08A /* BuildsViewController.m */; };
 		EDCF6453166CF3CF00BBE08A /* Ability+DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCF6452166CF3CF00BBE08A /* Ability+DAO.m */; };
 		EDCF6459166D0C5B00BBE08A /* AbilityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCF6458166D0C5B00BBE08A /* AbilityCell.m */; };
-		EDE2DAAB169C297F00FC4532 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE2DAAA169C297F00FC4532 /* Item.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1325,6 +1325,8 @@
 		ED0BE405169AE78A0096A843 /* FeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackViewController.m; sourceTree = "<group>"; };
 		ED0BE410169B01D80096A843 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
 		ED0BE411169B01D80096A843 /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
+		EDC1DEFA169D84060024E6B5 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		EDC1DEFB169D84060024E6B5 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 		EDC2660D168F077A00734667 /* AbilityDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbilityDetailViewController.h; sourceTree = "<group>"; };
 		EDC2660E168F077A00734667 /* AbilityDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbilityDetailViewController.m; sourceTree = "<group>"; };
 		EDC26618168F1E7900734667 /* ItemsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemsDetailViewController.h; sourceTree = "<group>"; };
@@ -1349,8 +1351,6 @@
 		EDCF6452166CF3CF00BBE08A /* Ability+DAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Ability+DAO.m"; sourceTree = "<group>"; };
 		EDCF6457166D0C5B00BBE08A /* AbilityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbilityCell.h; sourceTree = "<group>"; };
 		EDCF6458166D0C5B00BBE08A /* AbilityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbilityCell.m; sourceTree = "<group>"; };
-		EDE2DAA9169C297F00FC4532 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
-		EDE2DAAA169C297F00FC4532 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1508,8 +1508,8 @@
 				ED08F209165D119C001C4424 /* Role.m */,
 				ED0BE410169B01D80096A843 /* Hero.h */,
 				ED0BE411169B01D80096A843 /* Hero.m */,
-				EDE2DAA9169C297F00FC4532 /* Item.h */,
-				EDE2DAAA169C297F00FC4532 /* Item.m */,
+				EDC1DEFA169D84060024E6B5 /* Item.h */,
+				EDC1DEFB169D84060024E6B5 /* Item.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -2987,7 +2987,7 @@
 				ED0BE406169AE78A0096A843 /* FeedbackViewController.m in Sources */,
 				ED0BE412169B01D80096A843 /* Hero.m in Sources */,
 				5C6DCE57169B432F004063DF /* Ability.m in Sources */,
-				EDE2DAAB169C297F00FC4532 /* Item.m in Sources */,
+				EDC1DEFC169D84060024E6B5 /* Item.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

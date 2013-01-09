@@ -2,7 +2,7 @@
 //  Item.m
 //  Dota2App
 //
-//  Created by Kyle Davidson on 08/01/2013.
+//  Created by Kyle Davidson on 09/01/2013.
 //
 //
 
@@ -17,13 +17,14 @@
 @dynamic coolDown;
 @dynamic cost;
 @dynamic desc;
+@dynamic imgPath;
+@dynamic imgUrl;
 @dynamic itemId;
 @dynamic lore;
 @dynamic manaCost;
 @dynamic name;
 @dynamic type;
-@dynamic imgPath;
-@dynamic imgUrl;
+@dynamic uniqueItemId;
 @dynamic components;
 
 @end
