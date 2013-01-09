@@ -320,6 +320,15 @@
     [self filterContentForSearchText:searchText scope:nil];
 }
 
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
+{
+    [searchBar resignFirstResponder];
+}
+
+- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar {
+    [searchBar resignFirstResponder];
+}
+
 #pragma mark - Screen Navigation
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
