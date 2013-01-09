@@ -163,13 +163,18 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     
     abilityCell.icon.image = [UIImage imageWithContentsOfFile:ability.imagePath];
     
-        int yOrigin = abilityCell.lore.frame.origin.y + abilityCell.lore.frame.size.height + CELL_MANACOOLDOWN_PADDING;
+    int yOrigin = abilityCell.lore.frame.origin.y + abilityCell.lore.frame.size.height + CELL_MANACOOLDOWN_PADDING;
+    if (yOrigin <100) {
+        yOrigin = 100;
+    }
     
-    
+    if(UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone){
+        abilityCell.mp.text = ability.mc;
+        abilityCell.cd.text = ability.cd;
+    }
+    else{
     //This is a mess...and asking for trouble...
-        if (yOrigin <100) {
-            yOrigin = 100;
-        }
+        
     
         if (![ability.mc isEqualToString:@""]) {
             [abilityCell.mpIcon removeFromSuperview];
@@ -206,6 +211,7 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
            [abilityCell.cd setHighlightedTextColor:[UIColor blackColor]];
             [abilityCell addSubview:abilityCell.cd];
         }
+    }
     
     
     [abilityCell isPassive:[ability.isPassive boolValue]];
