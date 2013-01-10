@@ -10,6 +10,7 @@
 		0C493A8D1665065600A5690B /* armor.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C493A8A1665065600A5690B /* armor.png */; };
 		0C493A8E1665065600A5690B /* movementSpeed.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C493A8B1665065600A5690B /* movementSpeed.png */; };
 		0C493A8F1665065600A5690B /* damage.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C493A8C1665065600A5690B /* damage.png */; };
+		1707690D169F0CF900FAC276 /* AbilityVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1707690C169F0CF900FAC276 /* AbilityVideoViewController.m */; };
 		17B0412916970DA800663F45 /* gold.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B0412616970DA800663F45 /* gold.png */; };
 		17B0412A16970DA800663F45 /* cooldown.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B0412716970DA800663F45 /* cooldown.png */; };
 		17B0412B16970DA800663F45 /* manaCost.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B0412816970DA800663F45 /* manaCost.png */; };
@@ -669,6 +670,8 @@
 		0C493A8A1665065600A5690B /* armor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = armor.png; path = ../../armor.png; sourceTree = "<group>"; };
 		0C493A8B1665065600A5690B /* movementSpeed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = movementSpeed.png; path = ../../movementSpeed.png; sourceTree = "<group>"; };
 		0C493A8C1665065600A5690B /* damage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = damage.png; path = ../../damage.png; sourceTree = "<group>"; };
+		1707690B169F0CF900FAC276 /* AbilityVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbilityVideoViewController.h; sourceTree = "<group>"; };
+		1707690C169F0CF900FAC276 /* AbilityVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbilityVideoViewController.m; sourceTree = "<group>"; };
 		17B0412616970DA800663F45 /* gold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gold.png; path = ../../gold.png; sourceTree = "<group>"; };
 		17B0412716970DA800663F45 /* cooldown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cooldown.png; path = ../../cooldown.png; sourceTree = "<group>"; };
 		17B0412816970DA800663F45 /* manaCost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = manaCost.png; path = ../../manaCost.png; sourceTree = "<group>"; };
@@ -1372,6 +1375,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1707690F169F0D1300FAC276 /* iPhone Video */ = {
+			isa = PBXGroup;
+			children = (
+				1707690B169F0CF900FAC276 /* AbilityVideoViewController.h */,
+				1707690C169F0CF900FAC276 /* AbilityVideoViewController.m */,
+			);
+			name = "iPhone Video";
+			sourceTree = "<group>";
+		};
 		5C3CAEE01657D4C800E8341C /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -1388,6 +1400,7 @@
 				EDCA230816553AB100FEDF75 /* AbilitiesViewController.m */,
 				EDC2660D168F077A00734667 /* AbilityDetailViewController.h */,
 				EDC2660E168F077A00734667 /* AbilityDetailViewController.m */,
+				1707690F169F0D1300FAC276 /* iPhone Video */,
 			);
 			name = Abilities;
 			sourceTree = "<group>";
@@ -2988,6 +3001,7 @@
 				ED0BE412169B01D80096A843 /* Hero.m in Sources */,
 				EDC1DEFC169D84060024E6B5 /* Item.m in Sources */,
 				5CAEDBFE169DD39D0050CC23 /* Ability.m in Sources */,
+				1707690D169F0CF900FAC276 /* AbilityVideoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

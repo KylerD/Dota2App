@@ -27,6 +27,9 @@
 @property (nonatomic, strong) IBOutlet UIImageView *mcIcon;
 @property (nonatomic, strong) IBOutlet UIImageView *cdIcon;
 @property (nonatomic, strong) IBOutlet UIScrollView *view;
+@property (nonatomic, strong) IBOutlet UIButton *videoButton;
+
+
 
 -(void)makeDatHotAssIPADGridWithThisBadassDynamicDictionary:(NSDictionary*)badassDictionary;
 @end

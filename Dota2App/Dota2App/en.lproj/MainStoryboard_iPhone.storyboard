@@ -135,7 +135,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iIE-z6-RiB">
-                                        <rect key="frame" x="118" y="378" width="73" height="44"/>
+                                        <rect key="frame" x="20" y="377" width="280" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="Video">
@@ -189,13 +189,6 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="lore of ability" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bdP-PV-h6t">
-                                        <rect key="frame" x="20" y="162" width="280" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                             </scrollView>
@@ -207,9 +200,9 @@
                         <outlet property="abilityImage" destination="Qw4-tW-wPg" id="OmK-ef-89A"/>
                         <outlet property="cdLabel" destination="xoG-oT-n7K" id="zWO-lA-mYM"/>
                         <outlet property="descriptionLabel" destination="XNT-UC-VKK" id="OCk-We-SE3"/>
-                        <outlet property="loreLabel" destination="bdP-PV-h6t" id="udB-eu-bpL"/>
                         <outlet property="mcLabel" destination="RIM-Sv-xRj" id="2nL-Tv-6St"/>
                         <outlet property="titleLabel" destination="q8B-cp-fKX" id="mfn-4p-jY4"/>
+                        <outlet property="videoButton" destination="iIE-z6-RiB" id="Ajd-gi-Dip"/>
                         <outlet property="view" destination="mvR-8N-zt5" id="ype-X6-Mhc"/>
                     </connections>
                 </viewController>
@@ -229,6 +222,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="300"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Rpa-TM-AOn" id="RKG-b1-FjT"/>
+                                </connections>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -236,6 +232,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="JjZ-xl-kn0"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="abilityVideo" destination="3bM-89-JHU" id="2Do-jW-c6T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sJk-mK-kp8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -710,14 +709,24 @@
             <relationships>
                 <relationship kind="outlet" name="abilityImage" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="affectsLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="cdIcon" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="cdLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="damageTypeLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="descriptionLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="loreLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="mcIcon" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="mcLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="radiusLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="videoButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="videoWebView" candidateClass="UIWebView"/>
+                <relationship kind="outlet" name="view" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
+        <class className="AbilityVideoViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AbilityVideoViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="abilityVideo" candidateClass="UIWebView"/>
             </relationships>
         </class>
         <class className="BuildsViewController" superclassName="UIViewController">

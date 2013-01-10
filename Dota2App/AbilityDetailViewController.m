@@ -7,6 +7,7 @@
 //
 
 #import "AbilityDetailViewController.h"
+#import "AbilityVideoViewController.h"
 
 @interface AbilityDetailViewController ()
 
@@ -97,7 +98,9 @@
 
         
         
-    if(UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone){}
+    if(UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone){
+        [self makeDatHotAssIPHONERowsWithThisBadassDynamicDictionary:JSON];
+    }
     else{
     
         [self makeDatHotAssIPADGridWithThisBadassDynamicDictionary:JSON];
@@ -145,6 +148,7 @@
                 [gridLabel sizeToFit];
         [self.view addSubview:gridLabel];
         
+        
         [self.videoWebView setFrame:CGRectMake(self.videoWebView.frame.origin.x, gridLabel.frame.origin.y+gridLabel.frame.size.height+20, self.videoWebView.frame.size.width, self.videoWebView.frame.size.height)];
         
        
@@ -168,32 +172,60 @@
 
 -(void)makeDatHotAssIPHONERowsWithThisBadassDynamicDictionary:(NSDictionary*)badassDictionary{
     int gridSize = [badassDictionary count];
-    int y = 164; //193 29
+    int y = self.descriptionLabel.frame.origin.y+self.descriptionLabel.frame.size.height; //193 29
     
-    
+    NSArray * keys =[badassDictionary allKeys];
     
     for (int count = 0; count<gridSize; count++) {
         
         
-        if (count==2||count==4) {
-            y = 193;
+        
+        if (count%2 ==0){
+            y+=29;
         }
+        
         
         UILabel * gridLabel = [[UILabel alloc] init];
         
+        NSLog(@"%@",[badassDictionary valueForKey:@"Radius"]);
         
         
-        if (count%2==0) {
-            gridLabel.frame = CGRectMake(392,y,100,40);
-        }
-        else{
-            gridLabel.frame = CGRectMake(20,y,100,40);
-        }
+        gridLabel.frame = CGRectMake(20,y,300,200);
+        
         [gridLabel setBackgroundColor:[UIColor clearColor]];
         gridLabel.textColor = [UIColor whiteColor];
+        
+        gridLabel.lineBreakMode = UILineBreakModeWordWrap;
+        gridLabel.numberOfLines = 0;
+        
+        
+        
+        gridLabel.text = [NSString stringWithFormat:@"%@: %@",[keys objectAtIndex:count],[badassDictionary valueForKey:[keys objectAtIndex:count]]];
+        
+        
         [gridLabel sizeToFit];
         [self.view addSubview:gridLabel];
+        
+        [self.videoButton setFrame:CGRectMake(self.videoButton.frame.origin.x, gridLabel.frame.origin.y+gridLabel.frame.size.height+20, self.videoButton.frame.size.width, self.videoButton.frame.size.height)];
+        
+        
+        
     }
+    UILabel * loreLabel = [[UILabel alloc] init];
+    
+    [loreLabel setBackgroundColor:[UIColor clearColor]];
+    loreLabel.textColor = [UIColor whiteColor];
+    
+    loreLabel.lineBreakMode = UILineBreakModeWordWrap;
+    loreLabel.numberOfLines = 0;
+    loreLabel.text = self.ability.lore;
+    [loreLabel setFrame:CGRectMake(20, self.videoButton.frame.origin.y+self.videoButton.frame.size.height+20, 280, loreLabel.frame.size.height)];
+    [loreLabel sizeToFit];
+    
+    [self.view addSubview:loreLabel];
+    
+    [self.view setContentSize:CGSizeMake(0, loreLabel.frame.origin.y + loreLabel.frame.size.height+100)];
+
 }
 
 
@@ -217,5 +249,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"VideoDetail"]) {
+        
+
+        AbilityVideoViewController *abilityDetailVC = (AbilityVideoViewController *)[segue destinationViewController];
+        [abilityDetailVC setAbility:self.ability];
+        
+    }
+}
 
 @end
