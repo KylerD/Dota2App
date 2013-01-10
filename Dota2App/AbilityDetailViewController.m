@@ -158,7 +158,7 @@
     loreLabel.lineBreakMode = UILineBreakModeWordWrap;
     loreLabel.numberOfLines = 0;
     loreLabel.text = self.ability.lore;
-    [loreLabel setFrame:CGRectMake(self.videoWebView.frame.origin.x, self.videoWebView.frame.origin.y+self.videoWebView.frame.size.height/1.5, 729, loreLabel.frame.size.height)];
+    [loreLabel setFrame:CGRectMake(self.videoWebView.frame.origin.x, self.videoWebView.frame.origin.y+self.videoWebView.frame.size.height/1.5, 670, loreLabel.frame.size.height)];
     [loreLabel sizeToFit];
     
     [self.view addSubview:loreLabel];
