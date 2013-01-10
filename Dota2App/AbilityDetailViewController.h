@@ -24,6 +24,9 @@
 @property (nonatomic, strong) IBOutlet UILabel *loreLabel;
 @property (nonatomic, strong) IBOutlet UIWebView *videoWebView;
 @property (nonatomic, strong) IBOutlet UIImageView *abilityImage;
+@property (nonatomic, strong) IBOutlet UIImageView *mcIcon;
+@property (nonatomic, strong) IBOutlet UIImageView *cdIcon;
+@property (nonatomic, strong) IBOutlet UIScrollView *view;
 
 -(void)makeDatHotAssIPADGridWithThisBadassDynamicDictionary:(NSDictionary*)badassDictionary;
 @end

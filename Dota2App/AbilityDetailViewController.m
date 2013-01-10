@@ -41,6 +41,9 @@
     [self.videoWebView  loadHTMLString:@"<html><body style=\"background-color:black;\"></body></html>" baseURL:nil];
 
     [self performSelector:@selector(loadURL:) withObject:nil afterDelay:0.1];
+    
+    
+    
 }
 
 -(void)loadURL:(id)sender{
@@ -52,7 +55,7 @@
 }
 
 -(void)configureView{
-    if(UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone){
+
         //Set the title
         [self.titleLabel setText:self.ability.name];
         //Set the mana cost
@@ -75,14 +78,17 @@
          
          */
         if ([ability.isPassive boolValue]) {
-            
+            [self.mcLabel setHidden:TRUE];
+            [self.cdLabel setHidden:TRUE];
+            [self.mcIcon setHidden:TRUE];
+            [self.cdIcon setHidden:TRUE];
         }
         else{
             [self.mcLabel setText:self.ability.mc];
             [self.cdLabel setText:self.ability.cd];
         }
         
-    }
+    
     
     NSDictionary *JSON =
     [NSJSONSerialization JSONObjectWithData: [self.ability.dynamic dataUsingEncoding:NSUTF8StringEncoding]
@@ -91,40 +97,73 @@
 
         
         
-        
+    if(UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone){}
+    else{
+    
         [self makeDatHotAssIPADGridWithThisBadassDynamicDictionary:JSON];
+    }
     
 }
 
 
 -(void)makeDatHotAssIPADGridWithThisBadassDynamicDictionary:(NSDictionary*)badassDictionary{
     int gridSize = [badassDictionary count];
-    int y = 164; //193 29
+    int y = self.descriptionLabel.frame.origin.y+self.descriptionLabel.frame.size.height; //193 29
 
-    
+    NSArray * keys =[badassDictionary allKeys];
 
     for (int count = 0; count<gridSize; count++) {
         
+    
         
-        if (count==2||count==4) {
-            y = 193;
+        if (count%2 ==0){
+            y+=29;
         }
+
         
         UILabel * gridLabel = [[UILabel alloc] init];
 
-        
+        NSLog(@"%@",[badassDictionary valueForKey:@"Radius"]);
         
         if (count%2==0) {
-            gridLabel.frame = CGRectMake(392,y,100,40);
+            gridLabel.frame = CGRectMake(392,y,300,200);
         }
         else{
-            gridLabel.frame = CGRectMake(20,y,100,40);
+            gridLabel.frame = CGRectMake(20,y,300,200);
         }
         [gridLabel setBackgroundColor:[UIColor clearColor]];
         gridLabel.textColor = [UIColor whiteColor];
-        [gridLabel sizeToFit];
+        
+        gridLabel.lineBreakMode = UILineBreakModeWordWrap;
+        gridLabel.numberOfLines = 0;
+        
+        
+        
+        gridLabel.text = [NSString stringWithFormat:@"%@: %@",[keys objectAtIndex:count],[badassDictionary valueForKey:[keys objectAtIndex:count]]];
+        
+        
+                [gridLabel sizeToFit];
         [self.view addSubview:gridLabel];
+        
+        [self.videoWebView setFrame:CGRectMake(self.videoWebView.frame.origin.x, gridLabel.frame.origin.y+gridLabel.frame.size.height+20, self.videoWebView.frame.size.width, self.videoWebView.frame.size.height)];
+        
+       
+        
     }
+    UILabel * loreLabel = [[UILabel alloc] init];
+    
+    [loreLabel setBackgroundColor:[UIColor clearColor]];
+    loreLabel.textColor = [UIColor whiteColor];
+    
+    loreLabel.lineBreakMode = UILineBreakModeWordWrap;
+    loreLabel.numberOfLines = 0;
+    loreLabel.text = self.ability.lore;
+    [loreLabel setFrame:CGRectMake(self.videoWebView.frame.origin.x, self.videoWebView.frame.origin.y+self.videoWebView.frame.size.height/1.5, 729, loreLabel.frame.size.height)];
+    [loreLabel sizeToFit];
+    
+    [self.view addSubview:loreLabel];
+    
+    [self.view setContentSize:CGSizeMake(0, loreLabel.frame.origin.y + loreLabel.frame.size.height+100)];
 }
 
 -(void)makeDatHotAssIPHONERowsWithThisBadassDynamicDictionary:(NSDictionary*)badassDictionary{
