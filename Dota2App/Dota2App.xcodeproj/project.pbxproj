@@ -21,7 +21,6 @@
 		5C550F67168B4A7600249B67 /* item.json in Resources */ = {isa = PBXBuildFile; fileRef = 5C550F66168B4A7600249B67 /* item.json */; };
 		5C550F6E168B4B5300249B67 /* Itemparser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C550F6D168B4B5300249B67 /* Itemparser.m */; };
 		5C550F75168B4CF900249B67 /* Item+DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C550F74168B4CF900249B67 /* Item+DAO.m */; };
-		5C6DCE57169B432F004063DF /* Ability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C6DCE56169B432F004063DF /* Ability.m */; };
 		5C6DD566169B637A004063DF /* Alchemist_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C6DD30E169B6379004063DF /* Alchemist_icon.png */; };
 		5C6DD567169B637A004063DF /* Ancient Apparition_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C6DD30F169B6379004063DF /* Ancient Apparition_icon.png */; };
 		5C6DD568169B637A004063DF /* Anti-Mage_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C6DD310169B6379004063DF /* Anti-Mage_icon.png */; };
@@ -621,6 +620,7 @@
 		5C6DD7BA169B637B004063DF /* Wrath of Nature.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C6DD564169B637A004063DF /* Wrath of Nature.png */; };
 		5C6DD7BB169B637B004063DF /* X Marks the Spot.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C6DD565169B637A004063DF /* X Marks the Spot.png */; };
 		5C6DD7BD169B6B23004063DF /* avatar_container.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C6DD7BC169B6B23004063DF /* avatar_container.png */; };
+		5CAEDBFE169DD39D0050CC23 /* Ability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAEDBFD169DD39D0050CC23 /* Ability.m */; };
 		5CD53E061685B08E0002803D /* hero.json in Resources */ = {isa = PBXBuildFile; fileRef = 5CD53E051685B08E0002803D /* hero.json */; };
 		5CD53E091685B5CE0002803D /* Role+DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD53E081685B5CE0002803D /* Role+DAO.m */; };
 		5CD53E241686495E0002803D /* Nickname.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD53E231686495E0002803D /* Nickname.m */; };
@@ -686,8 +686,6 @@
 		5C550F6D168B4B5300249B67 /* Itemparser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Itemparser.m; sourceTree = "<group>"; };
 		5C550F73168B4CF900249B67 /* Item+DAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Item+DAO.h"; sourceTree = "<group>"; };
 		5C550F74168B4CF900249B67 /* Item+DAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Item+DAO.m"; sourceTree = "<group>"; };
-		5C6DCE55169B432F004063DF /* Ability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ability.h; sourceTree = "<group>"; };
-		5C6DCE56169B432F004063DF /* Ability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ability.m; sourceTree = "<group>"; };
 		5C6DD30E169B6379004063DF /* Alchemist_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Alchemist_icon.png; sourceTree = "<group>"; };
 		5C6DD30F169B6379004063DF /* Ancient Apparition_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ancient Apparition_icon.png"; sourceTree = "<group>"; };
 		5C6DD310169B6379004063DF /* Anti-Mage_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Anti-Mage_icon.png"; sourceTree = "<group>"; };
@@ -1287,6 +1285,8 @@
 		5C6DD564169B637A004063DF /* Wrath of Nature.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wrath of Nature.png"; sourceTree = "<group>"; };
 		5C6DD565169B637A004063DF /* X Marks the Spot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "X Marks the Spot.png"; sourceTree = "<group>"; };
 		5C6DD7BC169B6B23004063DF /* avatar_container.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar_container.png; sourceTree = "<group>"; };
+		5CAEDBFC169DD39D0050CC23 /* Ability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ability.h; sourceTree = "<group>"; };
+		5CAEDBFD169DD39D0050CC23 /* Ability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ability.m; sourceTree = "<group>"; };
 		5CD53E051685B08E0002803D /* hero.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = hero.json; path = ../../Scrapper/hero.json; sourceTree = "<group>"; };
 		5CD53E071685B5CE0002803D /* Role+DAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Role+DAO.h"; sourceTree = "<group>"; };
 		5CD53E081685B5CE0002803D /* Role+DAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Role+DAO.m"; sourceTree = "<group>"; };
@@ -1500,8 +1500,8 @@
 		5C550F90168F0A1A00249B67 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				5C6DCE55169B432F004063DF /* Ability.h */,
-				5C6DCE56169B432F004063DF /* Ability.m */,
+				5CAEDBFC169DD39D0050CC23 /* Ability.h */,
+				5CAEDBFD169DD39D0050CC23 /* Ability.m */,
 				5CD53E221686495E0002803D /* Nickname.h */,
 				5CD53E231686495E0002803D /* Nickname.m */,
 				ED08F208165D119C001C4424 /* Role.h */,
@@ -2986,8 +2986,8 @@
 				17D5379C168F4F750058C131 /* ItemCell.m in Sources */,
 				ED0BE406169AE78A0096A843 /* FeedbackViewController.m in Sources */,
 				ED0BE412169B01D80096A843 /* Hero.m in Sources */,
-				5C6DCE57169B432F004063DF /* Ability.m in Sources */,
 				EDC1DEFC169D84060024E6B5 /* Item.m in Sources */,
+				5CAEDBFE169DD39D0050CC23 /* Ability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

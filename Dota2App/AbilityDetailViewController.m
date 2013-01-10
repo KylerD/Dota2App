@@ -84,12 +84,15 @@
         
     }
     
-    
-    NSDictionary * d = [NSKeyedUnarchiver unarchiveObjectWithData:self.ability.dynamic];
+    NSDictionary *JSON =
+    [NSJSONSerialization JSONObjectWithData: [self.ability.dynamic dataUsingEncoding:NSUTF8StringEncoding]
+                                    options: NSJSONReadingMutableContainers
+                                      error: nil];
+
         
         
-
-
+        
+        [self makeDatHotAssIPADGridWithThisBadassDynamicDictionary:JSON];
     
 }
 

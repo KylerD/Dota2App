@@ -25,5 +25,5 @@
 @property (nonatomic, strong) IBOutlet UIWebView *videoWebView;
 @property (nonatomic, strong) IBOutlet UIImageView *abilityImage;
 
-
+-(void)makeDatHotAssIPADGridWithThisBadassDynamicDictionary:(NSDictionary*)badassDictionary;
 @end

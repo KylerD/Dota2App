@@ -97,10 +97,14 @@
     
     ability.type = [NSNumber numberWithInt:type];
     
-    //Store Dynamic Values as NSDATA
-    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:dynamicDict];
+    //Store Dynamic Values as NSDATA    
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dynamicDict
+                                                       options:0
+                                                         error:nil];
     
-    ability.dynamic = data;
+    NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    
+    ability.dynamic = jsonString;
     
     NSArray * manaCost = [abilityDictionary valueForKey:@"mana"];
     
