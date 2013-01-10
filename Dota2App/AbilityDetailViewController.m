@@ -88,8 +88,8 @@
     NSDictionary * d = [NSKeyedUnarchiver unarchiveObjectWithData:self.ability.dynamic];
         
         
-        
-        [self makeDatHotAssGridWithThisBadassDynamicDictionary:d];
+
+
     
 }
 
