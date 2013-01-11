@@ -36,7 +36,7 @@
     }
     
     //images
-
+    
     NSString *iconImagePath = [NSString stringWithFormat:@"%@_icon.png",heroName];
     hero.iconImage = iconImagePath;
     
@@ -67,34 +67,34 @@
     
     NSString  *downloadedfilePath = [NSString stringWithFormat:@"%@/%@.png", documentsDirectory, heroName];
     NSString *bundleImagePath = [[NSBundle mainBundle]
-                      pathForResource:heroName
-                      ofType:@"png"];
+                                 pathForResource:heroName
+                                 ofType:@"png"];
     
     
     if ([fileManager fileExistsAtPath:bundleImagePath]) {//Check bundle for image
-            hero.detailImgPath = bundleImagePath;
-        } else if ([fileManager fileExistsAtPath:downloadedfilePath]) { //check if previously downloaded
+        hero.detailImgPath = bundleImagePath;
+    } else if ([fileManager fileExistsAtPath:downloadedfilePath]) { //check if previously downloaded
+        hero.detailImgPath = downloadedfilePath;
+    } else {
+        //Download it!
+        NSURL  *url = [NSURL URLWithString:imgUrl];
+        NSData *urlData = [NSData dataWithContentsOfURL:url];
+        //If there's an internet connection grab url image
+        if (urlData) {
+            [urlData writeToFile:downloadedfilePath atomically:YES];
             hero.detailImgPath = downloadedfilePath;
-        } else {
-            //Download it!
-            NSURL  *url = [NSURL URLWithString:imgUrl];
-            NSData *urlData = [NSData dataWithContentsOfURL:url];
-            //If there's an internet connection grab url image
-            if (urlData) {
-                [urlData writeToFile:downloadedfilePath atomically:YES];
-                hero.detailImgPath = downloadedfilePath;
         }
     }
-
+    
     hero.strGain = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"strGain"]]];
     hero.agilPoints = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"agi"]]];
     hero.url = [self interpretValue:[heroDictionary valueForKey:@"url"]];
     hero.missileSpeed = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"missileSpeed"]]];
     hero.intelPoints = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"int"]]];
     hero.intelGain = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"intGain"]]];
-
+    
     hero.ms = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"ms"]]];
-
+    
     hero.name = heroName;
     //TODO: Create preprocessed dictionary of Nicknames and use it to create the nicknames, search mechanisim tested and works..
     //    if([heroName isEqualToString:@"Crystal Maiden"]){
@@ -111,14 +111,30 @@
         [hero addRolesObject:r];
     }
     
-    //More
-    
+    //Abilities
     NSArray *abilities = [heroDictionary valueForKey:@"abilities"];
     for (int i = 0; i < [abilities count]; i++) {
         NSDictionary *abilityDictionary = [abilities objectAtIndex:i];
         Ability *ability = [Ability abilityFromDictionary:abilityDictionary forHero:hero];
         ability.hero = hero;
     }
+    
+    //Inital Nickname
+    NSArray * wordsInHeroName  = [hero.name componentsSeparatedByString:@" "];
+    NSMutableString * simpleNickname = [NSMutableString string];
+    
+    if([wordsInHeroName count]>1){
+        
+        for (NSString * word in wordsInHeroName) {
+            NSString * firstChar = [word substringToIndex:1];
+            [simpleNickname appendFormat:@"%@",firstChar];
+        }
+        
+        Nickname * nick = [Nickname createObject];
+        nick.name = simpleNickname;
+        [hero addNicknamesObject:nick];
+    }
+    
     
     return hero;
 }
