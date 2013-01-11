@@ -2,7 +2,7 @@
 //  Ability.h
 //  Dota2App
 //
-//  Created by Luke McNeice on 11/01/2013.
+//  Created by Kyle Davidson on 11/01/2013.
 //
 //
 
@@ -13,6 +13,7 @@
 
 @interface Ability : NSManagedObject
 
+@property (nonatomic, retain) NSString * abilityId;
 @property (nonatomic, retain) NSString * cd;
 @property (nonatomic, retain) NSString * damage;
 @property (nonatomic, retain) NSString * dynamic;
@@ -31,7 +32,7 @@
 @property (nonatomic, retain) NSString * radius;
 @property (nonatomic, retain) NSNumber * type;
 @property (nonatomic, retain) NSString * videoUrl;
-@property (nonatomic, retain) NSString * abilityId;
+@property (nonatomic, retain) NSString * uniqueAbilityId;
 @property (nonatomic, retain) Hero *hero;
 
 @end

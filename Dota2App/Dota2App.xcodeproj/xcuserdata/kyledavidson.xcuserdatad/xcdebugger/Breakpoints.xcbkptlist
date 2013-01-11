@@ -86,12 +86,12 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Dota2App/Ability+DAO.m"
-         timestampString = "379247594.613685"
+         timestampString = "379610934.149259"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "36"
-         endingLineNumber = "36"
-         landmarkName = "+abilityFromDictionary:"
+         startingLineNumber = "37"
+         endingLineNumber = "37"
+         landmarkName = "+abilityFromDictionary:forHero:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint

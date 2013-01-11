@@ -621,7 +621,6 @@
 		5C6DD7BA169B637B004063DF /* Wrath of Nature.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C6DD564169B637A004063DF /* Wrath of Nature.png */; };
 		5C6DD7BB169B637B004063DF /* X Marks the Spot.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C6DD565169B637A004063DF /* X Marks the Spot.png */; };
 		5C6DD7BD169B6B23004063DF /* avatar_container.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C6DD7BC169B6B23004063DF /* avatar_container.png */; };
-		5CD0F76F16A0241E003C6A67 /* Ability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD0F76E16A0241E003C6A67 /* Ability.m */; };
 		5CD0F77816A046C1003C6A67 /* GuidesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD0F77616A046C1003C6A67 /* GuidesViewController.m */; };
 		5CD0F77B16A04993003C6A67 /* Medusa_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CD0F77A16A04993003C6A67 /* Medusa_icon.png */; };
 		5CD53E061685B08E0002803D /* hero.json in Resources */ = {isa = PBXBuildFile; fileRef = 5CD53E051685B08E0002803D /* hero.json */; };
@@ -648,6 +647,7 @@
 		ED08F245165D1930001C4424 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED08F243165D1923001C4424 /* Security.framework */; };
 		ED0BE406169AE78A0096A843 /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0BE405169AE78A0096A843 /* FeedbackViewController.m */; };
 		ED0BE412169B01D80096A843 /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = ED0BE411169B01D80096A843 /* Hero.m */; };
+		ED8A1DAC16A066D20042AF9C /* Ability.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8A1DAB16A066D20042AF9C /* Ability.m */; };
 		EDC1DEFC169D84060024E6B5 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC1DEFB169D84060024E6B5 /* Item.m */; };
 		EDC2660F168F077A00734667 /* AbilityDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC2660E168F077A00734667 /* AbilityDetailViewController.m */; };
 		EDC2661A168F1E7900734667 /* ItemsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC26619168F1E7900734667 /* ItemsDetailViewController.m */; };
@@ -1289,8 +1289,6 @@
 		5C6DD564169B637A004063DF /* Wrath of Nature.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wrath of Nature.png"; sourceTree = "<group>"; };
 		5C6DD565169B637A004063DF /* X Marks the Spot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "X Marks the Spot.png"; sourceTree = "<group>"; };
 		5C6DD7BC169B6B23004063DF /* avatar_container.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar_container.png; sourceTree = "<group>"; };
-		5CD0F76D16A0241E003C6A67 /* Ability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ability.h; sourceTree = "<group>"; };
-		5CD0F76E16A0241E003C6A67 /* Ability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ability.m; sourceTree = "<group>"; };
 		5CD0F77516A046C1003C6A67 /* GuidesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuidesViewController.h; sourceTree = "<group>"; };
 		5CD0F77616A046C1003C6A67 /* GuidesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuidesViewController.m; sourceTree = "<group>"; };
 		5CD0F77A16A04993003C6A67 /* Medusa_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Medusa_icon.png; sourceTree = "<group>"; };
@@ -1332,6 +1330,8 @@
 		ED0BE405169AE78A0096A843 /* FeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackViewController.m; sourceTree = "<group>"; };
 		ED0BE410169B01D80096A843 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
 		ED0BE411169B01D80096A843 /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
+		ED8A1DAA16A066D20042AF9C /* Ability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ability.h; sourceTree = "<group>"; };
+		ED8A1DAB16A066D20042AF9C /* Ability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ability.m; sourceTree = "<group>"; };
 		EDC1DEFA169D84060024E6B5 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
 		EDC1DEFB169D84060024E6B5 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 		EDC2660D168F077A00734667 /* AbilityDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbilityDetailViewController.h; sourceTree = "<group>"; };
@@ -1515,8 +1515,6 @@
 		5C550F90168F0A1A00249B67 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				5CD0F76D16A0241E003C6A67 /* Ability.h */,
-				5CD0F76E16A0241E003C6A67 /* Ability.m */,
 				5CD53E221686495E0002803D /* Nickname.h */,
 				5CD53E231686495E0002803D /* Nickname.m */,
 				ED08F208165D119C001C4424 /* Role.h */,
@@ -1525,6 +1523,8 @@
 				ED0BE411169B01D80096A843 /* Hero.m */,
 				EDC1DEFA169D84060024E6B5 /* Item.h */,
 				EDC1DEFB169D84060024E6B5 /* Item.m */,
+				ED8A1DAA16A066D20042AF9C /* Ability.h */,
+				ED8A1DAB16A066D20042AF9C /* Ability.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -3004,8 +3004,8 @@
 				ED0BE412169B01D80096A843 /* Hero.m in Sources */,
 				EDC1DEFC169D84060024E6B5 /* Item.m in Sources */,
 				1707690D169F0CF900FAC276 /* AbilityVideoViewController.m in Sources */,
-				5CD0F76F16A0241E003C6A67 /* Ability.m in Sources */,
 				5CD0F77816A046C1003C6A67 /* GuidesViewController.m in Sources */,
+				ED8A1DAC16A066D20042AF9C /* Ability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
