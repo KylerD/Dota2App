@@ -17,7 +17,7 @@
     Ability *ability = [Ability readOrCreateObjectWithParamterName:@"uniqueAbilityId" andValue:uniqueAbilityID];
     
     ability.name = abilityName;
-
+    ability.uniqueAbilityId = uniqueAbilityID;
     ability.notes = [self interpretValue:[abilityDictionary valueForKey:@"description"]];
     ability.lore = [self interpretValue:[abilityDictionary valueForKey:@"lore"]];
     ability.videoUrl = [self interpretValue:[abilityDictionary valueForKey:@"videoUrl"]];
