@@ -621,7 +621,7 @@
 		5C6DD7BA169B637B004063DF /* Wrath of Nature.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C6DD564169B637A004063DF /* Wrath of Nature.png */; };
 		5C6DD7BB169B637B004063DF /* X Marks the Spot.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C6DD565169B637A004063DF /* X Marks the Spot.png */; };
 		5C6DD7BD169B6B23004063DF /* avatar_container.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C6DD7BC169B6B23004063DF /* avatar_container.png */; };
-		5CAEDBFE169DD39D0050CC23 /* Ability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CAEDBFD169DD39D0050CC23 /* Ability.m */; };
+		5CD0F76F16A0241E003C6A67 /* Ability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD0F76E16A0241E003C6A67 /* Ability.m */; };
 		5CD53E061685B08E0002803D /* hero.json in Resources */ = {isa = PBXBuildFile; fileRef = 5CD53E051685B08E0002803D /* hero.json */; };
 		5CD53E091685B5CE0002803D /* Role+DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD53E081685B5CE0002803D /* Role+DAO.m */; };
 		5CD53E241686495E0002803D /* Nickname.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD53E231686495E0002803D /* Nickname.m */; };
@@ -1288,8 +1288,8 @@
 		5C6DD564169B637A004063DF /* Wrath of Nature.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wrath of Nature.png"; sourceTree = "<group>"; };
 		5C6DD565169B637A004063DF /* X Marks the Spot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "X Marks the Spot.png"; sourceTree = "<group>"; };
 		5C6DD7BC169B6B23004063DF /* avatar_container.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar_container.png; sourceTree = "<group>"; };
-		5CAEDBFC169DD39D0050CC23 /* Ability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ability.h; sourceTree = "<group>"; };
-		5CAEDBFD169DD39D0050CC23 /* Ability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ability.m; sourceTree = "<group>"; };
+		5CD0F76D16A0241E003C6A67 /* Ability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ability.h; sourceTree = "<group>"; };
+		5CD0F76E16A0241E003C6A67 /* Ability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ability.m; sourceTree = "<group>"; };
 		5CD53E051685B08E0002803D /* hero.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = hero.json; path = ../../Scrapper/hero.json; sourceTree = "<group>"; };
 		5CD53E071685B5CE0002803D /* Role+DAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Role+DAO.h"; sourceTree = "<group>"; };
 		5CD53E081685B5CE0002803D /* Role+DAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Role+DAO.m"; sourceTree = "<group>"; };
@@ -1513,8 +1513,8 @@
 		5C550F90168F0A1A00249B67 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				5CAEDBFC169DD39D0050CC23 /* Ability.h */,
-				5CAEDBFD169DD39D0050CC23 /* Ability.m */,
+				5CD0F76D16A0241E003C6A67 /* Ability.h */,
+				5CD0F76E16A0241E003C6A67 /* Ability.m */,
 				5CD53E221686495E0002803D /* Nickname.h */,
 				5CD53E231686495E0002803D /* Nickname.m */,
 				ED08F208165D119C001C4424 /* Role.h */,
@@ -3000,8 +3000,8 @@
 				ED0BE406169AE78A0096A843 /* FeedbackViewController.m in Sources */,
 				ED0BE412169B01D80096A843 /* Hero.m in Sources */,
 				EDC1DEFC169D84060024E6B5 /* Item.m in Sources */,
-				5CAEDBFE169DD39D0050CC23 /* Ability.m in Sources */,
 				1707690D169F0CF900FAC276 /* AbilityVideoViewController.m in Sources */,
+				5CD0F76F16A0241E003C6A67 /* Ability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

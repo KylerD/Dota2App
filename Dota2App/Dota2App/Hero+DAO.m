@@ -86,7 +86,6 @@
         }
     }
 
-
     hero.strGain = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"strGain"]]];
     hero.agilPoints = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"agi"]]];
     hero.url = [self interpretValue:[heroDictionary valueForKey:@"url"]];
@@ -107,7 +106,6 @@
     //ROLES
     NSArray * roleStrings =  [heroDictionary valueForKey:@"roles"];
     
-    
     for (NSString * roleString in  roleStrings) {
         Role * r = [Role createOrFindRole:roleString];
         [hero addRolesObject:r];
@@ -118,7 +116,7 @@
     NSArray *abilities = [heroDictionary valueForKey:@"abilities"];
     for (int i = 0; i < [abilities count]; i++) {
         NSDictionary *abilityDictionary = [abilities objectAtIndex:i];
-        Ability *ability = [Ability abilityFromDictionary:abilityDictionary];
+        Ability *ability = [Ability abilityFromDictionary:abilityDictionary forHero:hero];
         ability.hero = hero;
     }
     

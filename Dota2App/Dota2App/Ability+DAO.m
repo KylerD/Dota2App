@@ -7,13 +7,16 @@
 //
 
 #import "Ability+DAO.h"
+#import "Hero.h"
 
 @implementation Ability (DAO)
 
-+ (Ability *)abilityFromDictionary:(NSDictionary*)abilityDictionary {
++ (Ability *)abilityFromDictionary:(NSDictionary*)abilityDictionary forHero:(Hero*)hero {
     NSString *abilityName = [self interpretValue:[abilityDictionary valueForKey:@"name"]];
-    Ability *ability = [Ability readOrCreateObjectWithParamterName:@"name" andValue:abilityName];
+    NSString * abilityID = [NSString stringWithFormat:@"%@%@",hero.name,abilityName];
+    Ability *ability = [Ability readOrCreateObjectWithParamterName:@"abilityId" andValue:abilityID];
     ability.name = abilityName;
+    ability.abilityId = abilityID;
     ability.notes = [self interpretValue:[abilityDictionary valueForKey:@"description"]];
     ability.lore = [self interpretValue:[abilityDictionary valueForKey:@"lore"]];
     ability.videoUrl = [self interpretValue:[abilityDictionary valueForKey:@"videoUrl"]];
