@@ -120,7 +120,10 @@
     }
     
     //Inital Nickname
-    NSArray * wordsInHeroName  = [hero.name componentsSeparatedByString:@" "];
+    NSString *sep = @" -";
+    NSCharacterSet *set = [NSCharacterSet characterSetWithCharactersInString:sep];
+    NSArray *wordsInHeroName=[hero.name componentsSeparatedByCharactersInSet:set];
+
     NSMutableString * simpleNickname = [NSMutableString string];
     
     if([wordsInHeroName count]>1){
