@@ -12,4 +12,6 @@
 
 @interface GuidesViewController : UITableViewController
 
+@property (nonatomic, strong) IBOutlet UIWebView *webView;
+
 @end

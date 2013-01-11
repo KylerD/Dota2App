@@ -12,6 +12,7 @@
 #import "InformationViewController.h"
 #import "AbilitiesViewController.h"
 #import "AbilityDetailViewController.h"
+#import "GuidesViewController.h"
 
 @interface DetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
@@ -158,6 +159,9 @@
         case 1:
             vc = [self.storyboard instantiateViewControllerWithIdentifier:@"AbilityVC"];
             infoVCSelected = NO;
+            break;
+        case 2:
+            vc = [self.storyboard instantiateViewControllerWithIdentifier:@"GuidesVC"];
             break;
         default:
             vc = [self.storyboard instantiateViewControllerWithIdentifier:@"InformationVC"];

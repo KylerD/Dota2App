@@ -663,7 +663,6 @@
 		EDCA230A16553AB100FEDF75 /* AbilitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCA230816553AB100FEDF75 /* AbilitiesViewController.m */; };
 		EDCA230E16553EDC00FEDF75 /* InformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCA230D16553EDC00FEDF75 /* InformationViewController.m */; };
 		EDCF644B166CB6FD00BBE08A /* items.png in Resources */ = {isa = PBXBuildFile; fileRef = EDCF644A166CB6FD00BBE08A /* items.png */; };
-		EDCF644F166CC0E300BBE08A /* BuildsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCF644E166CC0E300BBE08A /* BuildsViewController.m */; };
 		EDCF6453166CF3CF00BBE08A /* Ability+DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCF6452166CF3CF00BBE08A /* Ability+DAO.m */; };
 		EDCF6459166D0C5B00BBE08A /* AbilityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCF6458166D0C5B00BBE08A /* AbilityCell.m */; };
 /* End PBXBuildFile section */
@@ -1353,8 +1352,6 @@
 		EDCA230C16553EDC00FEDF75 /* InformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationViewController.h; sourceTree = "<group>"; };
 		EDCA230D16553EDC00FEDF75 /* InformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationViewController.m; sourceTree = "<group>"; };
 		EDCF644A166CB6FD00BBE08A /* items.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = items.png; path = ../../items.png; sourceTree = "<group>"; };
-		EDCF644D166CC0E300BBE08A /* BuildsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildsViewController.h; sourceTree = "<group>"; };
-		EDCF644E166CC0E300BBE08A /* BuildsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuildsViewController.m; sourceTree = "<group>"; };
 		EDCF6451166CF3CF00BBE08A /* Ability+DAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Ability+DAO.h"; sourceTree = "<group>"; };
 		EDCF6452166CF3CF00BBE08A /* Ability+DAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Ability+DAO.m"; sourceTree = "<group>"; };
 		EDCF6457166D0C5B00BBE08A /* AbilityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbilityCell.h; sourceTree = "<group>"; };
@@ -2288,7 +2285,6 @@
 				5CD0F77416A0469D003C6A67 /* Guides */,
 				ED0BE403169AE6F80096A843 /* Feedback */,
 				B1D88208168B2FAF00470825 /* Items */,
-				EDCF6450166CC0E900BBE08A /* Builds */,
 				B18C9E4E164E8B5A00ADE97A /* MasterViewController.h */,
 				B18C9E4F164E8B5A00ADE97A /* MasterViewController.m */,
 				B18C9E51164E8B5A00ADE97A /* DetailViewController.h */,
@@ -2298,15 +2294,6 @@
 			);
 			name = ViewControllers;
 			path = ..;
-			sourceTree = "<group>";
-		};
-		EDCF6450166CC0E900BBE08A /* Builds */ = {
-			isa = PBXGroup;
-			children = (
-				EDCF644D166CC0E300BBE08A /* BuildsViewController.h */,
-				EDCF644E166CC0E300BBE08A /* BuildsViewController.m */,
-			);
-			name = Builds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -3003,7 +2990,6 @@
 				5C3CAEE91657D58200E8341C /* HeroParser.m in Sources */,
 				5C3CB3C61658287400E8341C /* Hero+DAO.m in Sources */,
 				ED08F20A165D119C001C4424 /* Role.m in Sources */,
-				EDCF644F166CC0E300BBE08A /* BuildsViewController.m in Sources */,
 				EDCF6453166CF3CF00BBE08A /* Ability+DAO.m in Sources */,
 				EDCF6459166D0C5B00BBE08A /* AbilityCell.m in Sources */,
 				5CD53E091685B5CE0002803D /* Role+DAO.m in Sources */,
