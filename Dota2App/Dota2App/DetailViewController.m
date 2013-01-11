@@ -11,6 +11,7 @@
 #import "HeroCell.h"
 #import "InformationViewController.h"
 #import "AbilitiesViewController.h"
+#import "AbilityDetailViewController.h"
 
 @interface DetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
@@ -40,7 +41,17 @@
 - (void)configureView {
     
     // add viewController so you can switch them later.
+    //getCurrent on screenVC
+    NSArray * vcStack = [[self navigationController] viewControllers];
+    
+    for (UIViewController * vcFromStack in vcStack) {
+        if([vcFromStack isKindOfClass:[AbilityDetailViewController class]]){
+           [[self navigationController] popViewControllerAnimated:YES];
+        }
+    }
+    
     UIViewController *vc = [self viewControllerForSegmentIndex:self.segment.selectedSegmentIndex];
+    
     [self addChildViewController:vc];
     vc.view.frame = self.view.bounds;
     [self.view addSubview:vc.view];
