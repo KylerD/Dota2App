@@ -2,7 +2,7 @@
 //  Role.h
 //  Dota2App
 //
-//  Created by Kyle Davidson on 21/11/2012.
+//  Created by Kyle Davidson on 11/01/2013.
 //
 //
 
@@ -13,8 +13,9 @@
 
 @interface Role : NSManagedObject
 
-@property (nonatomic, retain) NSString * roleName;
 @property (nonatomic, retain) NSString * roleImage;
+@property (nonatomic, retain) NSString * roleName;
+@property (nonatomic, retain) NSString * roleId;
 @property (nonatomic, retain) NSSet *heros;
 @end
 

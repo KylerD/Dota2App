@@ -2,7 +2,7 @@
 //  Nickname.h
 //  Dota2App
 //
-//  Created by Luke McNeice on 22/12/2012.
+//  Created by Kyle Davidson on 11/01/2013.
 //
 //
 
@@ -14,6 +14,7 @@
 @interface Nickname : NSManagedObject
 
 @property (nonatomic, retain) NSString * name;
+@property (nonatomic, retain) NSString * nicknameId;
 @property (nonatomic, retain) NSSet *heroes;
 @end
 

@@ -79,9 +79,11 @@
     </entity>
     <entity name="Nickname" representedClassName="Nickname" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nicknameId" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="heroes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Hero" inverseName="nicknames" inverseEntity="Hero" syncable="YES"/>
     </entity>
     <entity name="Role" representedClassName="Role" syncable="YES">
+        <attribute name="roleId" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="roleImage" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="roleName" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="heros" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Hero" inverseName="roles" inverseEntity="Hero" syncable="YES"/>
@@ -91,7 +93,7 @@
         <element name="Event" positionX="351" positionY="201" width="128" height="60"/>
         <element name="Hero" positionX="-27" positionY="204" width="128" height="495"/>
         <element name="Item" positionX="160" positionY="192" width="128" height="255"/>
-        <element name="Nickname" positionX="160" positionY="192" width="128" height="75"/>
-        <element name="Role" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="Nickname" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="Role" positionX="160" positionY="192" width="128" height="105"/>
     </elements>
 </model>
