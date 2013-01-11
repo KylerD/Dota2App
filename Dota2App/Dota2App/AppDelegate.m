@@ -28,9 +28,14 @@
 #define STACKMOB_KEY @"6586fffa-0b95-426c-8763-d30299599b40"
 #define UseJSON YES
 
+#define SOB_USER_AGENT @"Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; Valve Steam GameOverlay/2119; ) AppleWebKit/535.15 (KHTML, like Gecko) Chrome/18.0.989.0 Safari/535.11"
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:SOB_USER_AGENT, @"UserAgent", nil];
+    [[NSUserDefaults standardUserDefaults] registerDefaults:dictionary];
     
     [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:85/ 255.0 green:0/ 255.0 blue:2/ 255.0 alpha:1.0]];
     
