@@ -97,6 +97,12 @@
     self.tableView.scrollsToTop = YES;
     
     [self configureView];
+    
+    //AUtoselect first item
+//    NSIndexPath * ip = [NSIndexPath indexPathForRow:0 inSection:0];
+//    [self.tableView selectRowAtIndexPath:ip animated:NO scrollPosition:0];
+//    [self.tableView.delegate tableView:self.tableView didSelectRowAtIndexPath:ip];
+    
 }
 
 
