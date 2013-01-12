@@ -10,4 +10,8 @@
 
 @interface Itemparser : NSObject
 - (BOOL)parse;
+- (NSData*)getJSONData;
+- (NSDictionary*)getJSONDictionary:(NSData *)responseData;
+-(BOOL)createItems:(NSDictionary*)itemsJSONDict;
+- (BOOL)createItem:(NSDictionary*)itemJSON;
 @end

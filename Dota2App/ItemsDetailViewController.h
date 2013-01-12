@@ -27,4 +27,7 @@
 @property (nonatomic, retain) IBOutlet UIImageView * cooldownImage;
 @property (nonatomic, retain) IBOutlet UITableView *tableView;
 
+-(void)configureView;
+- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
+
 @end

@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "MockObjectGenerator.h"
 #import "MasterViewController.h"
 #import "HeroParser.h"
 #import "Itemparser.h"
@@ -60,14 +59,9 @@
             [[[HeroParser alloc] init] parse];
             [[[Itemparser alloc] init] parse];
         }
-        else{
-            MockObjectGenerator *generator = [[MockObjectGenerator alloc] init];
-            [generator generateRandomHeros];
-        }
+
     }
     
-
-
     return YES;
 }
 							

@@ -22,5 +22,8 @@
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
+/* Creates a fetched results controller based on the entity name based in 
+ @param entityName: the name of the entity to be used by the fetch request */
+- (NSFetchedResultsController *)fetchedResultsControllerForEntity: (NSString *)entityName;
 
 @end

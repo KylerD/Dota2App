@@ -18,18 +18,15 @@
 @property (nonatomic, strong) IBOutlet UILabel *descriptionLabel;
 @property (nonatomic, strong) IBOutlet UILabel *mcLabel;
 @property (nonatomic, strong) IBOutlet UILabel *cdLabel;
-@property (nonatomic, strong) IBOutlet UILabel *affectsLabel;
-@property (nonatomic, strong) IBOutlet UILabel *damageTypeLabel;
-@property (nonatomic, strong) IBOutlet UILabel *radiusLabel;
-@property (nonatomic, strong) IBOutlet UILabel *loreLabel;
 @property (nonatomic, strong) IBOutlet UIWebView *videoWebView;
 @property (nonatomic, strong) IBOutlet UIImageView *abilityImage;
 @property (nonatomic, strong) IBOutlet UIImageView *mcIcon;
 @property (nonatomic, strong) IBOutlet UIImageView *cdIcon;
 @property (nonatomic, strong) IBOutlet UIScrollView *view;
-@property (nonatomic, strong) IBOutlet UIButton *videoButton;
 
 
+- (void)makeiPhoneGridWithDictionary: (NSDictionary*)dictionary;
+- (void)makeiPadGridWithDictionary: (NSDictionary*)dictionary;
 
--(void)makeDatHotAssIPADGridWithThisBadassDynamicDictionary:(NSDictionary*)badassDictionary;
+-(void)configureView;
 @end

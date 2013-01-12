@@ -7,14 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-//#import "StackMob.h"
 
-@class SMClient;
+
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate> 
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) SMClient *client;
 @property (strong, nonatomic) UINavigationController *heroNavStack;
 @property (strong, nonatomic) UINavigationController *itemNavStack;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;

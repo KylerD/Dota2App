@@ -25,5 +25,8 @@
 @property (strong, nonatomic) ItemsDetailViewController *detailViewController;
 @property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
 
+/* Creates a fetched results controller based on the entity name based in 
+ @param entityName: the name of the entity to be used by the fetch request */
+- (NSFetchedResultsController *)fetchedResultsControllerForEntity: (NSString *)entityName;
 
 @end

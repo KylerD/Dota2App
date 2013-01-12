@@ -18,7 +18,7 @@
 @implementation InformationViewController
 @synthesize hero, heroImageView;
 @synthesize damagePointsLabel, missileSpeedLabel, intelligencePointsLabel, attackSpeedLevelOneLabel, attackRangeLabel, attackDurationLabel, heroNameLabel, armorLevelOneLabel, armorPointsLabel, castDurationLabel, movementSpeedPointsLabel, damageLevelOneLabel, factionImageView,roleLabel,primaryAttributeImageView, hitPointsLevelOneLabel, agilityPointsLabel, sightRangeLabel, manaLevelOneLabel, strengthPointsLabel, turnRateLabel;
-@synthesize scrollView;
+@synthesize scrollView, bioLabel, bioTextView;
 
 #pragma mark - View LifeCycle
 

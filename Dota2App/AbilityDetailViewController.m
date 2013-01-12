@@ -15,7 +15,8 @@
 
 @implementation AbilityDetailViewController
 @synthesize ability;
-@synthesize titleLabel, descriptionLabel, mcLabel, cdLabel, abilityImage, affectsLabel, damageTypeLabel, radiusLabel, videoWebView;
+@synthesize titleLabel, descriptionLabel, mcLabel, cdLabel, abilityImage, videoWebView;
+@synthesize mcIcon, cdIcon, view;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -55,7 +56,7 @@
 
 }
 
--(void)configureView{
+-(void)configureView {
 
         //Set the title
         [self.titleLabel setText:self.ability.name];
@@ -64,8 +65,7 @@
  
         self.descriptionLabel.lineBreakMode = UILineBreakModeWordWrap;
         self.descriptionLabel.numberOfLines = 0;
-        self.loreLabel.lineBreakMode = UILineBreakModeWordWrap;
-        self.loreLabel.numberOfLines = 0;
+    
         [self.descriptionLabel setText:self.ability.notes];
         [self.descriptionLabel sizeToFit];
         
@@ -99,17 +99,17 @@
         
         
     if(UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone){
-        [self makeDatHotAssIPHONERowsWithThisBadassDynamicDictionary:JSON];
+        [self makeiPhoneGridWithDictionary:JSON];
     }
     else{
     
-        [self makeDatHotAssIPADGridWithThisBadassDynamicDictionary:JSON];
+        [self makeiPadGridWithDictionary:JSON];
     }
     
 }
 
 
--(void)makeDatHotAssIPADGridWithThisBadassDynamicDictionary:(NSDictionary*)badassDictionary{
+-(void)makeiPadGridWithDictionary: (NSDictionary*)badassDictionary{
     int gridSize = [badassDictionary count];
     int y = self.descriptionLabel.frame.origin.y+self.descriptionLabel.frame.size.height; //193 29
 
@@ -170,7 +170,7 @@
     [self.view setContentSize:CGSizeMake(0, loreLabel.frame.origin.y + loreLabel.frame.size.height+100)];
 }
 
--(void)makeDatHotAssIPHONERowsWithThisBadassDynamicDictionary:(NSDictionary*)badassDictionary{
+- (void)makeiPhoneGridWithDictionary: (NSDictionary*)badassDictionary {
     int gridSize = [badassDictionary count];
     int y = self.descriptionLabel.frame.origin.y+self.descriptionLabel.frame.size.height; //193 29
     
@@ -206,8 +206,7 @@
         [gridLabel sizeToFit];
         [self.view addSubview:gridLabel];
         
-        [self.videoButton setFrame:CGRectMake(self.videoButton.frame.origin.x, gridLabel.frame.origin.y+gridLabel.frame.size.height+20, self.videoButton.frame.size.width, self.videoButton.frame.size.height)];
-        
+
         
         
     }
@@ -219,7 +218,7 @@
     loreLabel.lineBreakMode = UILineBreakModeWordWrap;
     loreLabel.numberOfLines = 0;
     loreLabel.text = self.ability.lore;
-    [loreLabel setFrame:CGRectMake(20, self.videoButton.frame.origin.y+self.videoButton.frame.size.height+20, 280, loreLabel.frame.size.height)];
+    [loreLabel setFrame:CGRectMake(20, self.videoWebView.frame.origin.y+self.videoWebView.frame.size.height+20, 280, loreLabel.frame.size.height)];
     [loreLabel sizeToFit];
     
     [self.view addSubview:loreLabel];

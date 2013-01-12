@@ -13,7 +13,7 @@
 @end
 
 @implementation AbilityVideoViewController
-@synthesize abilityVideo;
+@synthesize abilityVideo, ability;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
