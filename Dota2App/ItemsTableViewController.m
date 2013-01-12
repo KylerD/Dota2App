@@ -185,6 +185,7 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     //Configure the cell
     NSLog(@"%@",item.imgPath);
     cell.cellTitleLabel.text= item.name;
+    cell.cellDetailLabel.text = [item.cost stringValue];
     //cell.cellImage.image = [UIImage imageNamed:item.imgName];
     cell.cellImage.image = [UIImage imageWithContentsOfFile:item.imgPath];
 }
