@@ -6,7 +6,15 @@ require 'json'
 require 'mechanize'
 
 verbose = false
-imagesOnly = false
+language = "english"
+
+
+ARGV.each do|a|
+	puts "Argument: #{a}"
+	if a == "rus"
+		language = "russian"
+	end
+end
 
 #Agent init and config
 agent = Mechanize.new
@@ -14,12 +22,7 @@ agent = Mechanize.new
 agent.user_agent = 'Individueller User-Agent'
 agent.user_agent_alias = 'Linux Mozilla'
 
-ARGV.each do|a|
-	puts "Argument: #{a}"
-	if a == "-i"
-		imagesOnly = true
-	end
-end
+
 
 def arrayToString(a)
 	return a.map { |i| "'" + i.to_s + "'" }.join(",")
@@ -324,9 +327,15 @@ heroArray = Array.new
 puts "================================================================="
 puts "					DOTA2 SPIDER"
 puts "================================================================="
-
+puts language
 puts "Getting Hero List.."
-heroListPage = agent.get('http://www.dota2.com/heroes/')
+heroes_page_url = "http://www.dota2.com/heroes/?l"+language
+heroListPage = agent.get(heroes_page_url)
+
+cookie = Mechanize::Cookie.new('Steam_Language',language)
+cookie.domain = ""
+cookie.path = "/"
+agent.cookie_jar.add(URI.parse(heroes_page_url), cookie)
 
 #Getting the list of url's for each Hero found at http://www.dota2.com/heroes/
 heroListPage.links_with(:dom_class => "heroPickerIconLink").each do |link|
@@ -456,50 +465,5 @@ end
 puts "Scrapped #{heroArray.length} Heroes"
 puts "Writing to file.."
 #Write Hero list to JSON
-File.open("hero.json", 'w') {|f| f.write(heroArray.to_json()) }
+File.open("hero." + language + ".json", 'w') {|f| f.write(heroArray.to_json()) }
 puts "JSON Done"
-
-# heroArray.each do |h|
-
-# 	get_image_at_page(h['imgUrl'],'heroimg',"#{h['name']}.png")
-# end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
