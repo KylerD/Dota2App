@@ -648,8 +648,6 @@
 		ED8A1DAC16A066D20042AF9C /* Ability.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8A1DAB16A066D20042AF9C /* Ability.m */; };
 		ED8A1DFA16A06F6B0042AF9C /* Nickname.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8A1DF916A06F6B0042AF9C /* Nickname.m */; };
 		ED8A1DFD16A06F910042AF9C /* Role.m in Sources */ = {isa = PBXBuildFile; fileRef = ED8A1DFC16A06F910042AF9C /* Role.m */; };
-		ED8A1E2C16A070A20042AF9C /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = ED8A1DFF16A070A20042AF9C /* CHANGELOG.md */; };
-		ED8A1E2D16A070A20042AF9C /* libstackmob-v1.1.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED8A1E2B16A070A20042AF9C /* libstackmob-v1.1.3.a */; };
 		EDC1DEFC169D84060024E6B5 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC1DEFB169D84060024E6B5 /* Item.m */; };
 		EDC2660F168F077A00734667 /* AbilityDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC2660E168F077A00734667 /* AbilityDetailViewController.m */; };
 		EDC2661A168F1E7900734667 /* ItemsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC26619168F1E7900734667 /* ItemsDetailViewController.m */; };
@@ -1334,7 +1332,6 @@
 		ED8A1DF916A06F6B0042AF9C /* Nickname.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nickname.m; sourceTree = "<group>"; };
 		ED8A1DFB16A06F910042AF9C /* Role.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Role.h; sourceTree = "<group>"; };
 		ED8A1DFC16A06F910042AF9C /* Role.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Role.m; sourceTree = "<group>"; };
-		ED8A1DFF16A070A20042AF9C /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
 		ED8A1E0116A070A20042AF9C /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
 		ED8A1E0216A070A20042AF9C /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		ED8A1E0316A070A20042AF9C /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
@@ -1377,7 +1374,6 @@
 		ED8A1E2816A070A20042AF9C /* Synchronization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Synchronization.h; sourceTree = "<group>"; };
 		ED8A1E2916A070A20042AF9C /* SystemInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemInformation.h; sourceTree = "<group>"; };
 		ED8A1E2A16A070A20042AF9C /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
-		ED8A1E2B16A070A20042AF9C /* libstackmob-v1.1.3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libstackmob-v1.1.3.a"; sourceTree = "<group>"; };
 		EDC1DEFA169D84060024E6B5 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
 		EDC1DEFB169D84060024E6B5 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 		EDC2660D168F077A00734667 /* AbilityDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbilityDetailViewController.h; sourceTree = "<group>"; };
@@ -1417,7 +1413,6 @@
 				B18C9E34164E8B5900ADE97A /* Foundation.framework in Frameworks */,
 				B18C9E36164E8B5900ADE97A /* CoreGraphics.framework in Frameworks */,
 				B18C9E38164E8B5900ADE97A /* CoreData.framework in Frameworks */,
-				ED8A1E2D16A070A20042AF9C /* libstackmob-v1.1.3.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2330,9 +2325,7 @@
 		ED8A1DFE16A070A20042AF9C /* StackMob-v1.1.3 */ = {
 			isa = PBXGroup;
 			children = (
-				ED8A1DFF16A070A20042AF9C /* CHANGELOG.md */,
 				ED8A1E0016A070A20042AF9C /* Headers */,
-				ED8A1E2B16A070A20042AF9C /* libstackmob-v1.1.3.a */,
 			);
 			name = "StackMob-v1.1.3";
 			path = "../../Downloads/StackMob-v1.1.3";
@@ -3075,7 +3068,6 @@
 				5C6DD7BB169B637B004063DF /* X Marks the Spot.png in Resources */,
 				5C6DD7BD169B6B23004063DF /* avatar_container.png in Resources */,
 				5CD0F77B16A04993003C6A67 /* Medusa_icon.png in Resources */,
-				ED8A1E2C16A070A20042AF9C /* CHANGELOG.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
