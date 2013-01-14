@@ -16,7 +16,7 @@
 @implementation AbilityDetailViewController
 @synthesize ability;
 @synthesize titleLabel, descriptionLabel, mcLabel, cdLabel, abilityImage, videoWebView;
-@synthesize mcIcon, cdIcon;
+@synthesize mcIcon, cdIcon, scrollView, videoButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,9 +33,6 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-
-    
-
     self.abilityImage.image = [UIImage imageWithContentsOfFile:ability.imagePath];
     
     [self configureView];
@@ -56,7 +53,7 @@
 
 }
 
--(void)configureView {
+- (void)configureView {
 
         //Set the title
         [self.titleLabel setText:self.ability.name];
@@ -146,7 +143,7 @@
         
         
                 [gridLabel sizeToFit];
-        [self.view addSubview:gridLabel];
+        [self.scrollView addSubview:gridLabel];
         
         
         [self.videoWebView setFrame:CGRectMake(self.videoWebView.frame.origin.x, gridLabel.frame.origin.y+gridLabel.frame.size.height+20, self.videoWebView.frame.size.width, self.videoWebView.frame.size.height)];
@@ -165,9 +162,9 @@
     [loreLabel setFrame:CGRectMake(self.videoWebView.frame.origin.x, self.videoWebView.frame.origin.y+self.videoWebView.frame.size.height/1.5, 670, loreLabel.frame.size.height)];
     [loreLabel sizeToFit];
     
-    [self.view addSubview:loreLabel];
+    [self.scrollView addSubview:loreLabel];
     
-    [self.view setContentSize:CGSizeMake(0, loreLabel.frame.origin.y + loreLabel.frame.size.height+100)];
+    [self.scrollView setContentSize:CGSizeMake(0, loreLabel.frame.origin.y + loreLabel.frame.size.height+100)];
 }
 
 - (void)makeiPhoneGridWithDictionary: (NSDictionary*)badassDictionary {
@@ -204,11 +201,10 @@
         
         
         [gridLabel sizeToFit];
-        [self.view addSubview:gridLabel];
+        [self.scrollView addSubview:gridLabel];
         
+        [self.videoButton setFrame:CGRectMake(self.videoButton.frame.origin.x, gridLabel.frame.origin.y+gridLabel.frame.size.height+20, self.videoButton.frame.size.width, self.videoButton.frame.size.height)];
 
-        
-        
     }
     UILabel * loreLabel = [[UILabel alloc] init];
     
@@ -221,9 +217,9 @@
     [loreLabel setFrame:CGRectMake(20, self.videoWebView.frame.origin.y+self.videoWebView.frame.size.height+20, 280, loreLabel.frame.size.height)];
     [loreLabel sizeToFit];
     
-    [self.view addSubview:loreLabel];
+    [self.scrollView addSubview:loreLabel];
     
-    [self.view setContentSize:CGSizeMake(0, loreLabel.frame.origin.y + loreLabel.frame.size.height+100)];
+    [self.scrollView setContentSize:CGSizeMake(0, loreLabel.frame.origin.y + loreLabel.frame.size.height+100)];
 
 }
 
@@ -251,7 +247,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"VideoDetail"]) {
+    if ([[segue identifier] isEqualToString:@"AbilityVideo"]) {
         
 
         AbilityVideoViewController *abilityDetailVC = (AbilityVideoViewController *)[segue destinationViewController];
