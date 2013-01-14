@@ -24,6 +24,7 @@
 @property (nonatomic, strong) IBOutlet UIImageView *cdIcon;
 @property (nonatomic, strong) IBOutlet UIScrollView *scrollView;
 @property (nonatomic, strong) IBOutlet UIButton *videoButton;
+@property (nonatomic, retain) IBOutlet UIView * gradient;
 
 - (void)makeiPhoneGridWithDictionary: (NSDictionary*)dictionary;
 - (void)makeiPadGridWithDictionary: (NSDictionary*)dictionary;

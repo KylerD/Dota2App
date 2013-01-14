@@ -66,17 +66,17 @@
         [self.tableView reloadData];
     }
     
-    int count = 1;
-            NSLog(@"%@ is made from:",_item.name);
-    for (NSString * itemConsumables in _item.components) {
-        NSLog(@"%i. %@",count, itemConsumables);
-    }
-    NSLog(@"%@",_item.lore);
-    
     self.name.text = _item.name;
     self.title = _item.name;
-
+    
     self.image.image = [UIImage imageWithContentsOfFile:_item.imgPath];
+    
+    self.image.layer.shadowColor = [UIColor blackColor].CGColor;
+    self.image.layer.shadowOffset = CGSizeMake(2, 2);
+    self.image.layer.shadowOpacity = 1;
+    self.image.layer.shadowRadius = 5.0;
+    self.image.clipsToBounds = NO;
+
     self.lore.text = _item.lore;
     self.description.text = [_item.desc stringByReplacingOccurrencesOfString:@"<br />"withString:@""];
     self.manaCost.text = [NSString stringWithFormat:@"%@",_item.manaCost];
@@ -87,16 +87,38 @@
     self.lore.numberOfLines = 0;
     self.description.lineBreakMode = UILineBreakModeWordWrap;
     self.description.numberOfLines = 0;
+    
+    CAGradientLayer *makeGradient = [CAGradientLayer layer];
+    makeGradient.frame = self.gradient.bounds;
+    makeGradient.colors = [NSArray arrayWithObjects:(id)[[UIColor colorWithRed:46/255.0 green:48/255.0 blue:48/255.0 alpha:1] CGColor],(id)[[UIColor colorWithRed:35/255.0 green:38/255.0 blue:38/255.0 alpha:1] CGColor], nil];
+    [self.gradient.layer insertSublayer:makeGradient atIndex:1];
+    
+    self.gradient.layer.shadowColor = [UIColor blackColor].CGColor;
+    self.gradient.layer.shadowOffset = CGSizeMake(0,1);
+    self.gradient.layer.shadowOpacity = 1;
+    self.gradient.layer.shadowRadius = 1.0;
+    self.gradient.clipsToBounds = NO;
    
-    self.lore.frame = CGRectMake(self.lore.frame.origin.x,self.lore.frame.origin.y,670,self.lore.frame.size.height);
+    
+    
+    if(UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone){
+        self.description.frame = CGRectMake(self.description.frame.origin.x,self.description.frame.origin.y,280,self.description.frame.size.height);
+        [self.description sizeToFit];
+        self.lore.frame = CGRectMake(self.lore.frame.origin.x,self.description.frame.origin.y+self.description.frame.size.height+30,280,self.lore.frame.size.height);
+    }
+    else{
+        self.description.frame = CGRectMake(self.description.frame.origin.x,self.description.frame.origin.y,670,self.description.frame.size.height);
+        [self.description sizeToFit];
+        self.lore.frame = CGRectMake(self.lore.frame.origin.x,self.description.frame.origin.y+self.description.frame.size.height+30,670,self.lore.frame.size.height);
+    }
     
     [self.lore sizeToFit];
     
-    self.description.frame = CGRectMake(self.description.frame.origin.x,self.lore.frame.origin.y+self.lore.frame.size.height+30,670,self.description.frame.size.height);
-
-    [self.description sizeToFit];
     
-    self.tableView.frame = CGRectMake(self.tableView.frame.origin.x, self.description.frame.origin.y + self.description.frame.size.height + 30, self.tableView.frame.size.width, self.tableView.frame.size.height);
+
+    
+    
+    self.tableView.frame = CGRectMake(self.tableView.frame.origin.x, self.lore.frame.origin.y + self.lore.frame.size.height, self.tableView.frame.size.width, self.tableView.frame.size.height);
 
     if ([self.cooldown.text isEqualToString:@"0"]) {
         self.cooldown.hidden = true;

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "Item+DAO.h"
+#import <QuartzCore/QuartzCore.h>
+#import "QuartzCore/CALayer.h"
 
 @interface ItemsDetailViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
     NSArray *itemComponents;
@@ -20,7 +22,7 @@
 @property (nonatomic, retain) IBOutlet UILabel * lore;
 @property (nonatomic, retain) IBOutlet UILabel * manaCost;
 @property (nonatomic, retain) IBOutlet UILabel * cooldown;
-
+@property (nonatomic, retain) IBOutlet UIView * gradient;
 
 @property (nonatomic, retain) IBOutlet UIImageView * image;
 @property (nonatomic, retain) IBOutlet UIImageView * manaImage;

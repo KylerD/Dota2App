@@ -11,6 +11,8 @@
 		0C493A8E1665065600A5690B /* movementSpeed.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C493A8B1665065600A5690B /* movementSpeed.png */; };
 		0C493A8F1665065600A5690B /* damage.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C493A8C1665065600A5690B /* damage.png */; };
 		1707690D169F0CF900FAC276 /* AbilityVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1707690C169F0CF900FAC276 /* AbilityVideoViewController.m */; };
+		1707692816A43DC100FAC276 /* iconPlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 1707692716A43DC100FAC276 /* iconPlay.png */; };
+		1707692B16A4694F00FAC276 /* playicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1707692A16A4694F00FAC276 /* playicon.png */; };
 		17B0412916970DA800663F45 /* gold.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B0412616970DA800663F45 /* gold.png */; };
 		17B0412A16970DA800663F45 /* cooldown.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B0412716970DA800663F45 /* cooldown.png */; };
 		17B0412B16970DA800663F45 /* manaCost.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B0412816970DA800663F45 /* manaCost.png */; };
@@ -673,6 +675,8 @@
 		0C493A8C1665065600A5690B /* damage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = damage.png; path = ../../damage.png; sourceTree = "<group>"; };
 		1707690B169F0CF900FAC276 /* AbilityVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbilityVideoViewController.h; sourceTree = "<group>"; };
 		1707690C169F0CF900FAC276 /* AbilityVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbilityVideoViewController.m; sourceTree = "<group>"; };
+		1707692716A43DC100FAC276 /* iconPlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconPlay.png; sourceTree = "<group>"; };
+		1707692A16A4694F00FAC276 /* playicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playicon.png; sourceTree = "<group>"; };
 		17B0412616970DA800663F45 /* gold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gold.png; path = ../../gold.png; sourceTree = "<group>"; };
 		17B0412716970DA800663F45 /* cooldown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cooldown.png; path = ../../cooldown.png; sourceTree = "<group>"; };
 		17B0412816970DA800663F45 /* manaCost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = manaCost.png; path = ../../manaCost.png; sourceTree = "<group>"; };
@@ -1447,6 +1451,8 @@
 		5C3CAEEA1657F2A400E8341C /* images */ = {
 			isa = PBXGroup;
 			children = (
+				1707692A16A4694F00FAC276 /* playicon.png */,
+				1707692716A43DC100FAC276 /* iconPlay.png */,
 				5C6DD30D169B6379004063DF /* heroiconimg */,
 				5C6DD36D169B6379004063DF /* heroimg */,
 				5C6DD3CD169B6379004063DF /* skillimg */,
@@ -2967,6 +2973,8 @@
 				5C6DD7BB169B637B004063DF /* X Marks the Spot.png in Resources */,
 				5C6DD7BD169B6B23004063DF /* avatar_container.png in Resources */,
 				5CD0F77B16A04993003C6A67 /* Medusa_icon.png in Resources */,
+				1707692816A43DC100FAC276 /* iconPlay.png in Resources */,
+				1707692B16A4694F00FAC276 /* playicon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -180,14 +180,17 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
 
     Item *item = [fetchedRC objectAtIndexPath:indexPath];
     //Fetch the hero data
-
-    //subtitle = [NSString stringWithFormat:@"%@ - %@", hero.faction, hero.primaryAttribute];
     //Configure the cell
-    NSLog(@"%@",item.imgPath);
     cell.cellTitleLabel.text= item.name;
     cell.cellDetailLabel.text = [item.cost stringValue];
     //cell.cellImage.image = [UIImage imageNamed:item.imgName];
     cell.cellImage.image = [UIImage imageWithContentsOfFile:item.imgPath];
+    
+    cell.cellImage.layer.shadowColor = [UIColor blackColor].CGColor;
+    cell.cellImage.layer.shadowOffset = CGSizeMake(2, 2);
+    cell.cellImage.layer.shadowOpacity = 1;
+    cell.cellImage.layer.shadowRadius = 5.0;
+    cell.cellImage.clipsToBounds = NO;
 }
 
 #pragma mark - NSFetchedRC Delegate
@@ -305,7 +308,7 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
         Item *selectedItem = [fetchedRC objectAtIndexPath:indexPath];
         ItemsDetailViewController *detailVC = (ItemsDetailViewController *)[segue destinationViewController];
         [detailVC setItem:selectedItem];
-        NSLog(@"sfsfd");
+
     }
 }
 
