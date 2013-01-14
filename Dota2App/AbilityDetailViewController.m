@@ -16,7 +16,7 @@
 @implementation AbilityDetailViewController
 @synthesize ability;
 @synthesize titleLabel, descriptionLabel, mcLabel, cdLabel, abilityImage, videoWebView;
-@synthesize mcIcon, cdIcon, view;
+@synthesize mcIcon, cdIcon;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
