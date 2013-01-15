@@ -16,7 +16,7 @@
 
 @end
 @implementation InformationViewController
-@synthesize hero, heroImageView, overviewContainer;
+@synthesize hero, heroImageView, overviewContainer, bioContainer, statsContainer;
 @synthesize damagePointsLabel, missileSpeedLabel, intelligencePointsLabel, attackRangeLabel, attackDurationLabel, heroNameLabel, armorPointsLabel, castDurationLabel, movementSpeedPointsLabel, factionImageView,roleLabel,primaryAttributeImageView, agilityPointsLabel, sightRangeLabel, strengthPointsLabel, turnRateLabel;
 @synthesize scrollView, bioLabel, bioTextView;
 
@@ -58,7 +58,7 @@
     self.overviewContainer.layer.shadowOffset = CGSizeMake(0,1);
     self.overviewContainer.layer.shadowOpacity = 1;
     self.overviewContainer.layer.shadowRadius = 1.0;
-    self.overviewContainer.clipsToBounds = NO;
+
     
     self.heroNameLabel.text = hero.name;
 
@@ -67,7 +67,7 @@
     self.heroImageView.layer.shadowOffset = CGSizeMake(2, 2);
     self.heroImageView.layer.shadowOpacity = 1;
     self.heroImageView.layer.shadowRadius = 5.0;
-    self.heroImageView.clipsToBounds = NO;
+ 
     
     self.strengthPointsLabel.text = [NSString stringWithFormat:@"%@ +%@",hero.strPoints, hero.strGain];
     self.intelligencePointsLabel.text = [NSString stringWithFormat:@"%@ +%@",hero.intelPoints, hero.intelGain];
@@ -88,7 +88,7 @@
     self.bioLabel.layer.borderColor = [UIColor redColor].CGColor;
     self.bioLabel.layer.borderWidth = 3.0;
     
-    [self.scrollView setContentSize:CGSizeMake(0, self.bioLabel.frame.origin.y + self.bioLabel.frame.size.height+100)];
+    [self.scrollView setContentSize:CGSizeMake(self.scrollView.frame.size.width, self.bioLabel.frame.origin.y + self.bioLabel.frame.size.height+100)];
 
     int backgroundGradientHeight = self.scrollView.contentSize.height;    
     if (backgroundGradientHeight<789) {
