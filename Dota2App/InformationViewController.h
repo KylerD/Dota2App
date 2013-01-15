@@ -19,6 +19,9 @@
 @property (weak, nonatomic) IBOutlet UIView *statsContainer;
 @property (nonatomic, retain) IBOutlet UIScrollView * scrollView;
 
+//Header Labels
+@property (strong, nonatomic) IBOutlet UILabel *statsHeaderLabel;
+
 
 @property (weak, nonatomic) IBOutlet UIImageView *heroImageView;
 @property (weak, nonatomic) IBOutlet UILabel *heroNameLabel;
@@ -47,6 +50,14 @@
 
 
 - (void)configureView;
+/*
+ * Configures gradient layers for the containers and adds them as sublayers
+ */
+- (void)configureGradientLayers;
+/*
+ * Configures subviews of scrollview depending on dynamic height of hero bio
+ */
+- (void)configureScrollviewLayout;
 
 
 @end
