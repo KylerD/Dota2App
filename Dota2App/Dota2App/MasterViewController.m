@@ -98,11 +98,6 @@
     
     [self configureView];
     
-    //AUtoselect first item
-//    NSIndexPath * ip = [NSIndexPath indexPathForRow:0 inSection:0];
-//    [self.tableView selectRowAtIndexPath:ip animated:NO scrollPosition:0];
-//    [self.tableView.delegate tableView:self.tableView didSelectRowAtIndexPath:ip];
-    
 }
 
 
@@ -131,6 +126,20 @@
         self.splitViewController.viewControllers = heroNavStack;
     }
     self.tableView.scrollsToTop = YES;
+    //Select first hero automatically once view is configured
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+    
+    if ([self.tableView.delegate respondsToSelector:@selector(tableView:willSelectRowAtIndexPath:)]) {
+        [self.tableView.delegate tableView:self.tableView willSelectRowAtIndexPath:indexPath];
+    }
+    
+    [self.tableView selectRowAtIndexPath:indexPath animated:YES scrollPosition: UITableViewScrollPositionNone];
+    
+    if ([self.tableView.delegate respondsToSelector:@selector(tableView:didSelectRowAtIndexPath:)]) {
+        [self.tableView.delegate tableView:self.tableView didSelectRowAtIndexPath:indexPath];
+    }
+    
+
 }
 
 - (void)viewWillDisappear:(BOOL)animated
