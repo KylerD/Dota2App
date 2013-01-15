@@ -13,6 +13,8 @@
 
 @interface ItemsDetailViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
     NSArray *itemComponents;
+    int recipeCost;
+    
 }
 
 @property (nonatomic, strong) Item *item;
@@ -23,6 +25,7 @@
 @property (nonatomic, retain) IBOutlet UILabel * manaCost;
 @property (nonatomic, retain) IBOutlet UILabel * cooldown;
 @property (nonatomic, retain) IBOutlet UIView * gradient;
+@property (nonatomic, retain) IBOutlet UIScrollView * scrollView;
 
 @property (nonatomic, retain) IBOutlet UIImageView * image;
 @property (nonatomic, retain) IBOutlet UIImageView * manaImage;

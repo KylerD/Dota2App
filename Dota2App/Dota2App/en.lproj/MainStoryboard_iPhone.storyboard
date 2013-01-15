@@ -356,35 +356,51 @@
                                 <rect key="frame" x="8" y="9" width="304" height="127"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fx6-FD-1g3">
-                                        <rect key="frame" x="107" y="11" width="162" height="21"/>
+                                    <view hidden="YES" contentMode="scaleToFill" id="IFN-CQ-Vgj">
+                                        <rect key="frame" x="152" y="-10" width="1" height="1"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="mp.png" id="Fvs-UV-J4T">
-                                        <rect key="frame" x="107" y="52" width="20" height="20"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="cd.png" id="svR-xX-s18">
+                                        <rect key="frame" x="113" y="87" width="20" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="cd.png" id="svR-xX-s18">
-                                        <rect key="frame" x="107" y="87" width="20" height="20"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="mp.png" id="Fvs-UV-J4T">
+                                        <rect key="frame" x="113" y="52" width="20" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Manacost" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lmq-wG-94o">
-                                        <rect key="frame" x="138" y="51" width="146" height="21"/>
+                                        <rect key="frame" x="144" y="51" width="146" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Cooldown" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jgL-1b-i5L">
-                                        <rect key="frame" x="138" y="86" width="146" height="21"/>
+                                        <rect key="frame" x="144" y="86" width="146" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fx6-FD-1g3">
+                                        <rect key="frame" x="113" y="11" width="162" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Aid-PC-ntW">
+                                        <rect key="frame" x="43" y="86" width="51" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="gold.png" id="kIa-gs-xVY">
+                                        <rect key="frame" x="13" y="88" width="25" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="Xid-O3-7zj">
@@ -392,19 +408,69 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Decription of item" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7ms-og-hfa">
-                                <rect key="frame" x="20" y="144" width="280" height="21"/>
+                                <rect key="frame" x="20" y="149" width="280" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Lore of item" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lj0-nC-6uY">
-                                <rect key="frame" x="20" y="173" width="280" height="21"/>
+                                <rect key="frame" x="20" y="177" width="280" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="yhR-jo-pgS">
+                                <rect key="frame" x="20" y="207" width="280" height="500"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="ItemCell" id="SBc-vi-2WK" customClass="ItemCell">
+                                        <rect key="frame" x="0.0" y="46" width="280" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="260" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ATg-dJ-tsg">
+                                                    <rect key="frame" x="63" y="11" width="108" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="3Wl-Sb-u7c">
+                                                    <rect key="frame" x="13" y="6" width="42" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="gold.png" id="hoA-tq-7CR">
+                                                    <rect key="frame" x="219" y="15" width="25" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6Qc-HN-rAC">
+                                                    <rect key="frame" x="179" y="11" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="cellDetailLabel" destination="6Qc-HN-rAC" id="Grv-tO-x0F"/>
+                                            <outlet property="cellImage" destination="3Wl-Sb-u7c" id="YdC-zk-f5c"/>
+                                            <outlet property="cellTitleLabel" destination="ATg-dJ-tsg" id="6UI-Go-wEF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="PjS-wH-Wmc" id="sfo-kl-dvF"/>
+                                    <outlet property="delegate" destination="PjS-wH-Wmc" id="ajq-fB-JYF"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                     </scrollView>
@@ -412,7 +478,7 @@
                     <connections>
                         <outlet property="cooldown" destination="jgL-1b-i5L" id="G1W-rU-SLK"/>
                         <outlet property="cooldownImage" destination="svR-xX-s18" id="VUA-Vp-IRF"/>
-                        <outlet property="cost" destination="lmq-wG-94o" id="GNi-lD-7gc"/>
+                        <outlet property="cost" destination="Aid-PC-ntW" id="SYK-ef-TbO"/>
                         <outlet property="description" destination="7ms-og-hfa" id="kjA-RM-sXW"/>
                         <outlet property="gradient" destination="5n3-BN-isU" id="IUk-hS-J8d"/>
                         <outlet property="image" destination="Xid-O3-7zj" id="Xd8-tL-ArP"/>
@@ -420,7 +486,8 @@
                         <outlet property="manaCost" destination="lmq-wG-94o" id="wWp-Fe-60b"/>
                         <outlet property="manaImage" destination="Fvs-UV-J4T" id="BnG-tC-lag"/>
                         <outlet property="name" destination="fx6-FD-1g3" id="3CJ-qN-6Ul"/>
-                        <outlet property="view" destination="y5a-b8-Vhg" id="Mr4-oQ-kwi"/>
+                        <outlet property="scrollView" destination="y5a-b8-Vhg" id="GLY-78-8TF"/>
+                        <outlet property="tableView" destination="yhR-jo-pgS" id="URU-TU-dYS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Opg-dC-wid" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -795,130 +862,6 @@
         <image name="movementSpeed.png" width="63" height="39"/>
         <image name="mp.png" width="22" height="22"/>
     </resources>
-    <classes>
-        <class className="AbilitiesViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AbilitiesViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="AbilityCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AbilityCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="abilityName" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="cd" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="cdIcon" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="icon" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="isPassiveLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="lore" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="mp" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="mpIcon" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="AbilityDetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AbilityDetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="abilityImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="cdIcon" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="cdLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="descriptionLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="gradient" candidateClass="UIView"/>
-                <relationship kind="outlet" name="mcIcon" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="mcLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="videoButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="videoWebView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="AbilityVideoViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AbilityVideoViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="abilityVideo" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="DetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="segment" candidateClass="UISegmentedControl"/>
-            </relationships>
-        </class>
-        <class className="GuidesViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GuidesViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="HeroCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/HeroCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="attributeImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="cellDetailLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="cellImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="cellTitleLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="factionImage" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="InformationViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/InformationViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="agilityPointsLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="armorPointsLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="attackDurationLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="attackRangeLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="bioLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="bioTextView" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="castDurationLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="damagePointsLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="factionImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="heroImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="heroNameLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="intelligencePointsLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="missileSpeedLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="movementSpeedPointsLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="primaryAttributeImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="roleLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-                <relationship kind="outlet" name="sightRangeLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="strengthPointsLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="topGradient" candidateClass="UIView"/>
-                <relationship kind="outlet" name="turnRateLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="ItemCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ItemCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="cellDetailLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="cellImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="cellTitleLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="ItemsDetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ItemsDetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="cooldown" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="cooldownImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="cost" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="description" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="gradient" candidateClass="UIView"/>
-                <relationship kind="outlet" name="image" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="lore" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="manaCost" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="manaImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="name" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="ItemsTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ItemsTableViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="searchBar" candidateClass="UISearchBar"/>
-            </relationships>
-        </class>
-        <class className="MasterViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MasterViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

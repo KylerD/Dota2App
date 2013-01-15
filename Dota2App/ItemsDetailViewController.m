@@ -22,7 +22,7 @@
     if (_item != item) {
         _item = item;
     }
-
+    
     if (_item) {
         [self configureView];
     }
@@ -46,7 +46,8 @@
     if (_item) {
         [self configureView];
     }
-
+    
+    
 	// Do any additional setup after loading the view.
     
     
@@ -55,6 +56,7 @@
 -(void)configureView
 {   //initially hide the table view
     self.tableView.hidden = YES;
+    recipeCost = 0;
     
     if (![_item.components count]) {
         [_item mapItemComponents];
@@ -63,7 +65,24 @@
     itemComponents = [_item.components allObjects];
     if (![itemComponents count] == 0) {
         self.tableView.hidden = NO;
-        [self.tableView reloadData];
+        
+        
+        for (Item * componentItem in [_item.components allObjects]) {
+            recipeCost += [componentItem.cost intValue];
+        }
+        if (recipeCost == [_item.cost intValue]) {
+            recipeCost = 0;
+        }
+        else{
+            recipeCost =  [_item.cost intValue]-recipeCost;
+        }
+        //Stupid ass hack relationship in CoreData, fix later- -- - -  - - - - - - - - - - - - - - - - - - - - - - - -
+        if (recipeCost < 0) {
+            self.tableView.hidden = YES;
+        }
+        else{
+            [self.tableView reloadData];
+        }
     }
     
     self.name.text = _item.name;
@@ -76,7 +95,7 @@
     self.image.layer.shadowOpacity = 1;
     self.image.layer.shadowRadius = 5.0;
     self.image.clipsToBounds = NO;
-
+    
     self.lore.text = _item.lore;
     self.description.text = [_item.desc stringByReplacingOccurrencesOfString:@"<br />"withString:@""];
     self.manaCost.text = [NSString stringWithFormat:@"%@",_item.manaCost];
@@ -98,28 +117,26 @@
     self.gradient.layer.shadowOpacity = 1;
     self.gradient.layer.shadowRadius = 1.0;
     self.gradient.clipsToBounds = NO;
-   
+    
     
     
     if(UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone){
         self.description.frame = CGRectMake(self.description.frame.origin.x,self.description.frame.origin.y,280,self.description.frame.size.height);
         [self.description sizeToFit];
-        self.lore.frame = CGRectMake(self.lore.frame.origin.x,self.description.frame.origin.y+self.description.frame.size.height+30,280,self.lore.frame.size.height);
+        self.lore.frame = CGRectMake(self.lore.frame.origin.x,self.description.frame.origin.y+self.description.frame.size.height+10,280,self.lore.frame.size.height);
     }
     else{
         self.description.frame = CGRectMake(self.description.frame.origin.x,self.description.frame.origin.y,670,self.description.frame.size.height);
         [self.description sizeToFit];
-        self.lore.frame = CGRectMake(self.lore.frame.origin.x,self.description.frame.origin.y+self.description.frame.size.height+30,670,self.lore.frame.size.height);
+        self.lore.frame = CGRectMake(self.lore.frame.origin.x,self.description.frame.origin.y+self.description.frame.size.height+10,670,self.lore.frame.size.height);
     }
     
     [self.lore sizeToFit];
     
     
-
+    self.tableView.frame = CGRectMake(self.tableView.frame.origin.x, self.lore.frame.origin.y + self.lore.frame.size.height+10, self.tableView.frame.size.width, [itemComponents count]* self.tableView.rowHeight+150);
     
-    
-    self.tableView.frame = CGRectMake(self.tableView.frame.origin.x, self.lore.frame.origin.y + self.lore.frame.size.height, self.tableView.frame.size.width, self.tableView.frame.size.height);
-
+    [self.scrollView setContentSize:CGSizeMake(0, self.tableView.frame.origin.y + self.tableView.frame.size.height)];
     if ([self.cooldown.text isEqualToString:@"0"]) {
         self.cooldown.hidden = true;
         self.manaCost.hidden = true;
@@ -149,7 +166,12 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [itemComponents count];
+    
+    if (recipeCost ==0) {
+        return [itemComponents count];
+    }else{
+        return [itemComponents count] + 1;
+    }
 }
 
 
@@ -164,13 +186,33 @@
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {   //Fetch the hero
+    NSLog(@"%d",indexPath.row);
     ItemCell *itemCell = (ItemCell *)cell;
-    Item *itemComponent = [itemComponents objectAtIndex:[indexPath row]];
-    itemCell.cellTitleLabel.text= itemComponent.name;
-    //cell.cellImage.image = [UIImage imageNamed:item.imgName];
-    itemCell.cellImage.image = [UIImage imageWithContentsOfFile:itemComponent.imgPath];
-    
+    if (indexPath.row >= [itemComponents count]) {
+        itemCell.cellTitleLabel.text = @"Recipe";
+        itemCell.cellDetailLabel.text = [NSString stringWithFormat:@"%d",recipeCost];
+        itemCell.cellImage.image = [UIImage imageNamed:@"Recipe_Scroll.png"];
+
+        
+    }else{
+        NSLog(@"%d",[itemComponents count]);
+        Item *itemComponent = [itemComponents objectAtIndex:[indexPath row]];
+        itemCell.cellTitleLabel.text= itemComponent.name;
+        itemCell.cellDetailLabel.text = [NSString stringWithFormat:@"%@",itemComponent.cost];
+        //cell.cellImage.image = [UIImage imageNamed:item.imgName];
+        itemCell.cellImage.image = [UIImage imageWithContentsOfFile:itemComponent.imgPath];
+        
+        itemCell.cellImage.layer.shadowColor = [UIColor blackColor].CGColor;
+        itemCell.cellImage.layer.shadowOffset = CGSizeMake(1,1);
+        itemCell.cellImage.layer.shadowOpacity = 1;
+        itemCell.cellImage.layer.shadowRadius = 1.0;
+        itemCell.cellImage.clipsToBounds = NO;
+
+    }
+    itemCell.backgroundView = [[UIView alloc] initWithFrame:CGRectZero];
 }
+
+
 
 
 
