@@ -74,10 +74,17 @@
     self.missileSpeedLabel.text =   [NSString stringWithFormat:@"%@",hero.missileSpeed];
     
     self.bioLabel.text = hero.bio;
-    [self.bioLabel sizeToFit];
-    self.bioLabel.layer.borderColor = [UIColor redColor].CGColor;
-    self.bioLabel.layer.borderWidth = 3.0;
+    //Calculate the expected size based on the font and linebreak mode of your label
+    // FLT_MAX here simply means no constraint in height
+    CGSize maximumLabelSize = CGSizeMake(self.bioLabel.frame.size.width, FLT_MAX);
     
+    CGSize expectedLabelSize = [hero.bio sizeWithFont:self.bioLabel.font constrainedToSize:maximumLabelSize lineBreakMode:self.bioLabel.lineBreakMode];   
+    
+    //adjust the label the the new height.
+    CGRect newFrame = self.bioLabel.frame;
+    newFrame.size.height = expectedLabelSize.height + 20;
+    self.bioLabel.frame = newFrame;
+
     //configure scroll view based on dynamic properties of hero
     [self configureScrollviewLayout];
     
@@ -85,7 +92,7 @@
     [self configureGradientLayers];
     
     //Configure Scrollview
-    [self.scrollView setContentSize:CGSizeMake(self.scrollView.frame.size.width, self.statsContainer.frame.origin.y + self.statsContainer.frame.size.height+100)];
+    [self.scrollView setContentSize:CGSizeMake(0, self.statsContainer.frame.origin.y + self.statsContainer.frame.size.height+100)];
 
     int backgroundGradientHeight = self.scrollView.contentSize.height;    
     if (backgroundGradientHeight<789) {
