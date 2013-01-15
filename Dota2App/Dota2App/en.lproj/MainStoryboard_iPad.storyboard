@@ -417,12 +417,12 @@
                         <outlet property="cooldownImage" destination="0Ya-xz-ME8" id="P58-50-lPd"/>
                         <outlet property="cost" destination="qiD-ka-u9P" id="yiA-P5-a6D"/>
                         <outlet property="description" destination="Zoy-ZJ-6dO" id="Ys0-Yj-5by"/>
-                        <outlet property="gradient" destination="gHb-zu-luU" id="xW5-jj-vW1"/>
                         <outlet property="image" destination="0Ni-Qz-WkV" id="lBk-GW-xip"/>
                         <outlet property="lore" destination="CZa-3Y-h9L" id="8tn-rj-GSh"/>
                         <outlet property="manaCost" destination="j3V-6z-PJu" id="cR8-Cd-gDb"/>
                         <outlet property="manaImage" destination="V7d-eY-WQH" id="JzA-5O-Fps"/>
                         <outlet property="name" destination="MiW-f3-7k2" id="Jej-cH-e9X"/>
+                        <outlet property="overviewContainer" destination="gHb-zu-luU" id="fmM-85-Gaz"/>
                         <outlet property="scrollView" destination="PLD-Kf-IS2" id="Bbp-Pn-cao"/>
                         <outlet property="tableView" destination="7hI-K5-uh9" id="Dvb-Vc-z6F"/>
                     </connections>
@@ -726,11 +726,11 @@
                         <outlet property="intelligencePointsLabel" destination="OmF-E3-Pzp" id="0xp-Kt-axQ"/>
                         <outlet property="missileSpeedLabel" destination="T5p-0Q-OdL" id="gaw-kA-BX3"/>
                         <outlet property="movementSpeedPointsLabel" destination="uO3-hV-ElL" id="1lO-cF-gbx"/>
+                        <outlet property="overviewContainer" destination="iif-hw-sTk" id="A8J-s3-9Kl"/>
                         <outlet property="roleLabel" destination="F7g-YC-XIr" id="ZZA-kP-Ril"/>
                         <outlet property="scrollView" destination="tZj-Np-kRR" id="Ly1-Xe-J3Y"/>
                         <outlet property="sightRangeLabel" destination="db7-fJ-rmc" id="teV-AK-7L6"/>
                         <outlet property="strengthPointsLabel" destination="hp6-Bd-8J7" id="bgS-3n-kb7"/>
-                        <outlet property="topGradient" destination="iif-hw-sTk" id="zeC-Yd-4Z4"/>
                         <outlet property="turnRateLabel" destination="8cw-f4-q7W" id="8oW-JA-Hc4"/>
                     </connections>
                 </viewController>
@@ -821,65 +821,65 @@
             <objects>
                 <viewController id="j3C-pY-Kim" customClass="AbilityDetailViewController" sceneMemberID="viewController">
                     <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="fLh-lc-FSO">
-                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <rect key="frame" x="0.0" y="64" width="768" height="1004"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="x7R-E7-uyb">
-                                <rect key="frame" x="10" y="10" width="680" height="148"/>
+                                <rect key="frame" x="20" y="20" width="680" height="148"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="raF-ca-5rN">
-                                <rect key="frame" x="20" y="20" width="128" height="128"/>
+                                <rect key="frame" x="30" y="30" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="avatar_container.png" id="Bxx-IF-vbj">
-                                <rect key="frame" x="20" y="20" width="128" height="128"/>
+                                <rect key="frame" x="30" y="30" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Shz-7g-iMU">
-                                <rect key="frame" x="170" y="20" width="256" height="21"/>
+                                <rect key="frame" x="180" y="30" width="256" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="mp.png" id="bFR-Co-A5N">
-                                <rect key="frame" x="170" y="60" width="20" height="20"/>
+                                <rect key="frame" x="180" y="70" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="cd.png" id="fUu-zo-mLh">
-                                <rect key="frame" x="170" y="88" width="20" height="20"/>
+                                <rect key="frame" x="180" y="98" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Mana Cost:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uDL-t7-mr5">
-                                <rect key="frame" x="198" y="60" width="291" height="21"/>
+                                <rect key="frame" x="208" y="70" width="291" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Cooldown:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qvh-LD-OTH">
-                                <rect key="frame" x="198" y="87" width="304" height="21"/>
+                                <rect key="frame" x="208" y="97" width="304" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <webView contentMode="scaleToFill" scalesPageToFit="YES" id="5YT-Gg-sbT">
-                                <rect key="frame" x="20" y="289" width="729" height="784"/>
+                                <rect key="frame" x="30" y="299" width="729" height="784"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <dataDetectorType key="dataDetectorTypes"/>
                             </webView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3mv-bZ-p5g">
-                                <rect key="frame" x="20" y="170" width="670" height="21"/>
+                                <rect key="frame" x="30" y="180" width="670" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.13333333333333333" green="0.13725490196078433" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.039215686274509803" green="0.043137254901960784" blue="0.047058823529411764" alpha="1" colorSpace="calibratedRGB"/>
                     </scrollView>
                     <navigationItem key="navigationItem" id="tNF-Td-Ll2"/>
                     <connections>
@@ -887,9 +887,9 @@
                         <outlet property="cdIcon" destination="fUu-zo-mLh" id="AQr-En-NgR"/>
                         <outlet property="cdLabel" destination="qvh-LD-OTH" id="Rx4-xV-zDx"/>
                         <outlet property="descriptionLabel" destination="3mv-bZ-p5g" id="qlN-iV-66o"/>
-                        <outlet property="gradient" destination="x7R-E7-uyb" id="XJy-A3-F3o"/>
                         <outlet property="mcIcon" destination="bFR-Co-A5N" id="L6w-Gq-TjH"/>
                         <outlet property="mcLabel" destination="uDL-t7-mr5" id="xJk-Bw-I16"/>
+                        <outlet property="overviewContainer" destination="x7R-E7-uyb" id="DGr-Rc-v5u"/>
                         <outlet property="scrollView" destination="fLh-lc-FSO" id="mID-sg-ymA"/>
                         <outlet property="titleLabel" destination="Shz-7g-iMU" id="cm5-fY-ZAX"/>
                         <outlet property="videoWebView" destination="5YT-Gg-sbT" id="BJK-TA-qjq"/>
@@ -916,126 +916,6 @@
         <image name="movementSpeed.png" width="63" height="39"/>
         <image name="mp.png" width="22" height="22"/>
     </resources>
-    <classes>
-        <class className="AbilitiesViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AbilitiesViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="AbilityCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AbilityCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="abilityName" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="cd" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="cdIcon" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="icon" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="isPassiveLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="lore" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="mp" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="mpIcon" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="AbilityDetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AbilityDetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="abilityImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="cdIcon" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="cdLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="descriptionLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="gradient" candidateClass="UIView"/>
-                <relationship kind="outlet" name="mcIcon" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="mcLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-                <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="videoButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="videoWebView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="DetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="segmentChanged:" candidateClass="UISegmentedControl"/>
-                <relationship kind="outlet" name="segment" candidateClass="UISegmentedControl"/>
-            </relationships>
-        </class>
-        <class className="GuidesViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GuidesViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="HeroCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/HeroCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="attributeImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="cellDetailLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="cellImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="cellTitleLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="factionImage" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="InformationViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/InformationViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="agilityPointsLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="armorPointsLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="attackDurationLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="attackRangeLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="bioLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="bioTextView" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="castDurationLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="damagePointsLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="factionImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="heroImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="heroNameLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="intelligencePointsLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="missileSpeedLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="movementSpeedPointsLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="primaryAttributeImageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="roleLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-                <relationship kind="outlet" name="sightRangeLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="strengthPointsLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="topGradient" candidateClass="UIView"/>
-                <relationship kind="outlet" name="turnRateLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="ItemCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ItemCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="cellDetailLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="cellImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="cellTitleLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="ItemsDetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ItemsDetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="cooldown" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="cooldownImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="cost" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="description" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="gradient" candidateClass="UIView"/>
-                <relationship kind="outlet" name="image" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="lore" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="manaCost" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="manaImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="name" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="ItemsTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ItemsTableViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="searchBar" candidateClass="UISearchBar"/>
-            </relationships>
-        </class>
-        <class className="MasterViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MasterViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

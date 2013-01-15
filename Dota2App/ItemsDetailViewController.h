@@ -24,7 +24,7 @@
 @property (nonatomic, retain) IBOutlet UILabel * lore;
 @property (nonatomic, retain) IBOutlet UILabel * manaCost;
 @property (nonatomic, retain) IBOutlet UILabel * cooldown;
-@property (nonatomic, retain) IBOutlet UIView * gradient;
+@property (nonatomic, retain) IBOutlet UIView * overviewContainer;
 @property (nonatomic, retain) IBOutlet UIScrollView * scrollView;
 
 @property (nonatomic, retain) IBOutlet UIImageView * image;

@@ -108,15 +108,15 @@
     self.description.numberOfLines = 0;
     
     CAGradientLayer *makeGradient = [CAGradientLayer layer];
-    makeGradient.frame = self.gradient.bounds;
+    makeGradient.frame = self.overviewContainer.bounds;
     makeGradient.colors = [NSArray arrayWithObjects:(id)[[UIColor colorWithRed:46/255.0 green:48/255.0 blue:48/255.0 alpha:1] CGColor],(id)[[UIColor colorWithRed:35/255.0 green:38/255.0 blue:38/255.0 alpha:1] CGColor], nil];
-    [self.gradient.layer insertSublayer:makeGradient atIndex:1];
+    [self.overviewContainer.layer insertSublayer:makeGradient atIndex:1];
     
-    self.gradient.layer.shadowColor = [UIColor blackColor].CGColor;
-    self.gradient.layer.shadowOffset = CGSizeMake(0,1);
-    self.gradient.layer.shadowOpacity = 1;
-    self.gradient.layer.shadowRadius = 1.0;
-    self.gradient.clipsToBounds = NO;
+    self.overviewContainer.layer.shadowColor = [UIColor blackColor].CGColor;
+    self.overviewContainer.layer.shadowOffset = CGSizeMake(0,1);
+    self.overviewContainer.layer.shadowOpacity = 1;
+    self.overviewContainer.layer.shadowRadius = 1.0;
+    self.overviewContainer.clipsToBounds = NO;
     
     
     
@@ -149,6 +149,22 @@
         self.cooldownImage.hidden = false;
         self.manaImage.hidden = false;
     }
+    
+    int backgroundGradientHeight = self.scrollView.contentSize.height;
+    
+    if (backgroundGradientHeight<789) {
+        backgroundGradientHeight = 789;
+    }
+    
+    
+    UIView *sbview = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.scrollView.frame.size.width, backgroundGradientHeight)];
+    
+    CAGradientLayer *gradient = [CAGradientLayer layer];
+    gradient.frame = sbview.bounds;
+    gradient.colors = [NSArray arrayWithObjects:(id)[UIColor colorWithRed:35/ 255.0 green:36/ 255.0 blue:37/ 255.0 alpha:1.0].CGColor, (id)[UIColor colorWithRed:10/ 255.0 green:11/ 255.0 blue:12/ 255.0 alpha:1.0].CGColor, nil];
+    [sbview.layer insertSublayer:gradient atIndex:0];
+    [self.view insertSubview:sbview atIndex:0];
+
 }
 
 - (void)didReceiveMemoryWarning

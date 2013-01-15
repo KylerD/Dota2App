@@ -208,9 +208,9 @@
                         <outlet property="cdIcon" destination="xAi-I0-h12" id="IlX-Cf-PIq"/>
                         <outlet property="cdLabel" destination="xoG-oT-n7K" id="zWO-lA-mYM"/>
                         <outlet property="descriptionLabel" destination="XNT-UC-VKK" id="OCk-We-SE3"/>
-                        <outlet property="gradient" destination="Tv0-eS-drq" id="dU6-Oc-Q63"/>
                         <outlet property="mcIcon" destination="sKj-kU-ioU" id="JIG-vf-ofL"/>
                         <outlet property="mcLabel" destination="RIM-Sv-xRj" id="2nL-Tv-6St"/>
+                        <outlet property="overviewContainer" destination="Tv0-eS-drq" id="4GY-x3-jhB"/>
                         <outlet property="scrollView" destination="mvR-8N-zt5" id="byP-Ia-KXo"/>
                         <outlet property="titleLabel" destination="q8B-cp-fKX" id="mfn-4p-jY4"/>
                         <outlet property="videoButton" destination="sHX-Nr-5od" id="Tp3-bJ-R62"/>
@@ -480,12 +480,12 @@
                         <outlet property="cooldownImage" destination="svR-xX-s18" id="VUA-Vp-IRF"/>
                         <outlet property="cost" destination="Aid-PC-ntW" id="SYK-ef-TbO"/>
                         <outlet property="description" destination="7ms-og-hfa" id="kjA-RM-sXW"/>
-                        <outlet property="gradient" destination="5n3-BN-isU" id="IUk-hS-J8d"/>
                         <outlet property="image" destination="Xid-O3-7zj" id="Xd8-tL-ArP"/>
                         <outlet property="lore" destination="lj0-nC-6uY" id="1Wz-bX-8e3"/>
                         <outlet property="manaCost" destination="lmq-wG-94o" id="wWp-Fe-60b"/>
                         <outlet property="manaImage" destination="Fvs-UV-J4T" id="BnG-tC-lag"/>
                         <outlet property="name" destination="fx6-FD-1g3" id="3CJ-qN-6Ul"/>
+                        <outlet property="overviewContainer" destination="5n3-BN-isU" id="Ssv-bS-rjc"/>
                         <outlet property="scrollView" destination="y5a-b8-Vhg" id="GLY-78-8TF"/>
                         <outlet property="tableView" destination="yhR-jo-pgS" id="URU-TU-dYS"/>
                     </connections>
@@ -772,11 +772,11 @@
                         <outlet property="intelligencePointsLabel" destination="jRC-yG-sXH" id="SZW-eh-VPE"/>
                         <outlet property="missileSpeedLabel" destination="qua-bj-CPP" id="ZbC-aP-7F0"/>
                         <outlet property="movementSpeedPointsLabel" destination="PCD-AO-nZc" id="z9C-xc-cO4"/>
+                        <outlet property="overviewContainer" destination="T2g-XA-vmw" id="qrt-rR-H7k"/>
                         <outlet property="roleLabel" destination="9JU-Gi-fcp" id="STt-5M-Txf"/>
                         <outlet property="scrollView" destination="ZTE-yu-n27" id="cgr-7k-dtx"/>
                         <outlet property="sightRangeLabel" destination="uNa-fQ-y8Q" id="oDN-wc-WJJ"/>
                         <outlet property="strengthPointsLabel" destination="lqD-L9-60I" id="Ydn-9S-5w1"/>
-                        <outlet property="topGradient" destination="T2g-XA-vmw" id="Psa-xh-Cld"/>
                         <outlet property="turnRateLabel" destination="Y6K-qk-vOb" id="NKG-Yt-NEQ"/>
                     </connections>
                 </viewController>

@@ -35,7 +35,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *missileSpeedLabel;
 @property (weak, nonatomic) IBOutlet UILabel *attackDurationLabel;
 @property (weak, nonatomic) IBOutlet UILabel *castDurationLabel;
-@property (weak, nonatomic) IBOutlet UIView *topGradient;
+@property (weak, nonatomic) IBOutlet UIView *overviewContainer;
 @property (nonatomic, retain) IBOutlet UIScrollView * scrollView;
 @property (nonatomic, strong) Hero *hero;
 
