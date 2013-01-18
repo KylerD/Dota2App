@@ -191,6 +191,22 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     cell.cellImage.layer.shadowOpacity = 1;
     cell.cellImage.layer.shadowRadius = 5.0;
     cell.cellImage.clipsToBounds = NO;
+    
+    
+    UIView *sbview = [[UIView alloc] initWithFrame:CGRectMake(0, 0, cell.frame.size.width, cell.frame.size.height)];
+    CAGradientLayer *gradient = [CAGradientLayer layer];
+    gradient.frame = sbview.bounds;
+    gradient.colors = [NSArray arrayWithObjects:(id)[UIColor colorWithRed:117/ 255.0 green:0/ 255.0 blue:2/ 255.0 alpha:1.0].CGColor, (id)[UIColor colorWithRed:41/ 255.0 green:0/ 255.0 blue:2/ 255.0 alpha:1.0].CGColor, nil];
+    [sbview.layer insertSublayer:gradient atIndex:0];
+    
+    UIView *bgview = [[UIView alloc] initWithFrame:CGRectMake(0, 0, cell.frame.size.width, cell.frame.size.height)];
+    CAGradientLayer *gradient2 = [CAGradientLayer layer];
+    gradient2.frame = sbview.bounds;
+    gradient2.colors = [NSArray arrayWithObjects:(id)[UIColor colorWithRed:35/ 255.0 green:36/ 255.0 blue:37/ 255.0 alpha:1.0].CGColor, (id)[UIColor colorWithRed:30/ 255.0 green:31/ 255.0 blue:32/ 255.0 alpha:1.0].CGColor, nil];
+    [bgview.layer insertSublayer:gradient2 atIndex:0];
+    cell.backgroundView = bgview;
+    
+    cell.selectedBackgroundView = sbview;
 }
 
 #pragma mark - NSFetchedRC Delegate
