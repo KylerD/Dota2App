@@ -17,6 +17,7 @@
 @implementation ItemsDetailViewController
 @synthesize item = _item, manaCost,manaImage,lore,name;
 @synthesize cost, description, cooldown, cooldownImage, image, tableView;
+@synthesize overviewContainer, scrollView;
 
 - (void)setItem:(Item *)item {
     if (_item != item) {

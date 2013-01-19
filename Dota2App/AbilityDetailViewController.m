@@ -7,7 +7,6 @@
 //
 
 #import "AbilityDetailViewController.h"
-#import "AbilityVideoViewController.h"
 #import "QuartzCore/CALayer.h"
 #import <QuartzCore/QuartzCore.h>
 
@@ -185,6 +184,8 @@
         
         [loreLabel setFrame:CGRectMake(20, gridLabel.frame.origin.y+gridLabel.frame.size.height+20, 280, loreLabel.frame.size.height)];
         [loreLabel sizeToFit];
+        
+         [self.videoWebView setFrame:CGRectMake(self.videoWebView.frame.origin.x, gridLabel.frame.origin.y+gridLabel.frame.size.height+20, self.videoWebView.frame.size.width, self.videoWebView.frame.size.height)];
     }
     [self.scrollView setContentSize:CGSizeMake(0, loreLabel.frame.origin.y + loreLabel.frame.size.height+100)];
 }
@@ -211,15 +212,5 @@
 }
 
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    if ([[segue identifier] isEqualToString:@"AbilityVideo"]) {
-        
-
-        AbilityVideoViewController *abilityDetailVC = (AbilityVideoViewController *)[segue destinationViewController];
-        [abilityDetailVC setAbility:self.ability];
-        
-    }
-}
 
 @end
