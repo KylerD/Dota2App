@@ -86,6 +86,7 @@
         }
     }
     
+    
     self.name.text = _item.name;
     self.title = _item.name;
     
@@ -114,14 +115,32 @@
     self.overviewContainer.layer.shadowOffset = CGSizeMake(0,1);
     self.overviewContainer.layer.shadowOpacity = 1;
     self.overviewContainer.layer.shadowRadius = 1.0;
-
-    [self.description sizeToFit];
-    [self.lore sizeToFit];
     
+    CGSize maximumLabelSize = CGSizeMake(self.description.frame.size.width, FLT_MAX);
+    
+    CGSize descriptionExpectedLabelSize = [self.description.text sizeWithFont:self.description.font constrainedToSize:maximumLabelSize lineBreakMode:self.description.lineBreakMode];   
+    
+    //adjust the label the the new height.
+    CGRect newFrame = self.description.frame;
+    newFrame.size.height = descriptionExpectedLabelSize.height + 20;
+    self.description.frame = newFrame;
+
+
+    CGSize loreExpectedLabelSize = [self.lore.text sizeWithFont:self.lore.font constrainedToSize:maximumLabelSize lineBreakMode:self.lore.lineBreakMode];  
     self.lore.frame = CGRectMake(self.lore.frame.origin.x,self.description.frame.origin.y+self.description.frame.size.height + 8,self.lore.frame.size.width,self.lore.frame.size.height);
-    self.tableView.frame = CGRectMake(self.tableView.frame.origin.x, self.lore.frame.origin.y + self.lore.frame.size.height + 8, self.tableView.frame.size.width, self.tableView.frame.size.height);
+    CGRect newLoreFrame = self.lore.frame;
+    newLoreFrame.size.height = loreExpectedLabelSize.height + 20;
+    self.lore.frame = newLoreFrame;
+
+    
+    self.tableView.frame = CGRectMake(self.tableView.frame.origin.x, 
+                                      self.lore.frame.origin.y + self.lore.frame.size.height+8,
+                                      self.tableView.frame.size.width,
+                                      [itemComponents count]* self.tableView.rowHeight+150);
+
     
     [self.scrollView setContentSize:CGSizeMake(0, self.tableView.frame.origin.y + self.tableView.frame.size.height)];
+    
     
     if ([self.cooldown.text isEqualToString:@"0"]) {
         self.cooldown.hidden = true;
@@ -135,17 +154,8 @@
         self.cooldownImage.hidden = false;
         self.manaImage.hidden = false;
     }
-    
-    int backgroundGradientHeight = self.scrollView.contentSize.height;
-    
-    
-    UIView *sbview = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.scrollView.frame.size.width, backgroundGradientHeight)];
-    
-    CAGradientLayer *gradient = [CAGradientLayer layer];
-    gradient.frame = sbview.bounds;
-    gradient.colors = [NSArray arrayWithObjects:(id)[UIColor colorWithRed:35/ 255.0 green:36/ 255.0 blue:37/ 255.0 alpha:1.0].CGColor, (id)[UIColor colorWithRed:10/ 255.0 green:11/ 255.0 blue:12/ 255.0 alpha:1.0].CGColor, nil];
-    [sbview.layer insertSublayer:gradient atIndex:0];
-    [self.view insertSubview:sbview atIndex:0];
+
+
 
 }
 

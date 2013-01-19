@@ -94,17 +94,7 @@
     //Configure Scrollview
     [self.scrollView setContentSize:CGSizeMake(0, self.statsContainer.frame.origin.y + self.statsContainer.frame.size.height+100)];
 
-    int backgroundGradientHeight = self.scrollView.contentSize.height;    
-    if (backgroundGradientHeight<789) {
-        backgroundGradientHeight = 789;
-    }
-    
-    UIView *sbview = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.scrollView.frame.size.width, backgroundGradientHeight)];
-    CAGradientLayer *gradient = [CAGradientLayer layer];
-    gradient.frame = sbview.bounds;
-    gradient.colors = [NSArray arrayWithObjects:(id)[UIColor colorWithRed:35/ 255.0 green:36/ 255.0 blue:37/ 255.0 alpha:1.0].CGColor, (id)[UIColor colorWithRed:10/ 255.0 green:11/ 255.0 blue:12/ 255.0 alpha:1.0].CGColor, nil];
-    [sbview.layer insertSublayer:gradient atIndex:0];
-    [self.view insertSubview:sbview atIndex:0];
+
 }
 
 # pragma mark - Screen Configuration
