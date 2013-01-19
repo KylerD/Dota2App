@@ -58,7 +58,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    firstLoad = YES;
     fetchItem = @"Item";
     AppDelegate * del = [[UIApplication sharedApplication] delegate];
     managedObjectContext = del.managedObjectContext;
@@ -103,6 +103,22 @@
     // Override point for customization after application launch.
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
         self.splitViewController.viewControllers = itemNavStack;
+    }
+    //Select first hero automatically once view is configured
+    if (firstLoad && [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+        
+        if ([self.tableView.delegate respondsToSelector:@selector(tableView:willSelectRowAtIndexPath:)]) {
+            [self.tableView.delegate tableView:self.tableView willSelectRowAtIndexPath:indexPath];
+        }
+        
+        [self.tableView selectRowAtIndexPath:indexPath animated:YES scrollPosition: UITableViewScrollPositionNone];
+        
+        if ([self.tableView.delegate respondsToSelector:@selector(tableView:didSelectRowAtIndexPath:)]) {
+            [self.tableView.delegate tableView:self.tableView didSelectRowAtIndexPath:indexPath];
+        }
+        
+        firstLoad = NO;
     }
 }
 
