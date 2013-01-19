@@ -77,7 +77,7 @@
         else{
             recipeCost =  [_item.cost intValue]-recipeCost;
         }
-        //Stupid ass hack relationship in CoreData, fix later- -- - -  - - - - - - - - - - - - - - - - - - - - - - - -
+
         if (recipeCost < 0) {
             self.tableView.hidden = YES;
         }
@@ -103,41 +103,26 @@
     self.cost.text = [NSString stringWithFormat:@"%@",_item.cost];
     self.cooldown.text = [NSString stringWithFormat:@"%@", _item.coolDown];
     
-    self.lore.lineBreakMode = UILineBreakModeWordWrap;
-    self.lore.numberOfLines = 0;
-    self.description.lineBreakMode = UILineBreakModeWordWrap;
-    self.description.numberOfLines = 0;
+
     
     CAGradientLayer *makeGradient = [CAGradientLayer layer];
     makeGradient.frame = self.overviewContainer.bounds;
     makeGradient.colors = [NSArray arrayWithObjects:(id)[[UIColor colorWithRed:46/255.0 green:48/255.0 blue:48/255.0 alpha:1] CGColor],(id)[[UIColor colorWithRed:35/255.0 green:38/255.0 blue:38/255.0 alpha:1] CGColor], nil];
-    [self.overviewContainer.layer insertSublayer:makeGradient atIndex:1];
+    [self.overviewContainer.layer insertSublayer:makeGradient atIndex:0];
     
     self.overviewContainer.layer.shadowColor = [UIColor blackColor].CGColor;
     self.overviewContainer.layer.shadowOffset = CGSizeMake(0,1);
     self.overviewContainer.layer.shadowOpacity = 1;
     self.overviewContainer.layer.shadowRadius = 1.0;
-    self.overviewContainer.clipsToBounds = NO;
-    
-    
-    
-    if(UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone){
-        self.description.frame = CGRectMake(self.description.frame.origin.x,self.description.frame.origin.y,280,self.description.frame.size.height);
-        [self.description sizeToFit];
-        self.lore.frame = CGRectMake(self.lore.frame.origin.x,self.description.frame.origin.y+self.description.frame.size.height+10,280,self.lore.frame.size.height);
-    }
-    else{
-        self.description.frame = CGRectMake(self.description.frame.origin.x,self.description.frame.origin.y,670,self.description.frame.size.height);
-        [self.description sizeToFit];
-        self.lore.frame = CGRectMake(self.lore.frame.origin.x,self.description.frame.origin.y+self.description.frame.size.height+10,670,self.lore.frame.size.height);
-    }
-    
+
+    [self.description sizeToFit];
     [self.lore sizeToFit];
     
-    
-    self.tableView.frame = CGRectMake(self.tableView.frame.origin.x, self.lore.frame.origin.y + self.lore.frame.size.height+10, self.tableView.frame.size.width, [itemComponents count]* self.tableView.rowHeight+150);
+    self.lore.frame = CGRectMake(self.lore.frame.origin.x,self.description.frame.origin.y+self.description.frame.size.height + 8,self.lore.frame.size.width,self.lore.frame.size.height);
+    self.tableView.frame = CGRectMake(self.tableView.frame.origin.x, self.lore.frame.origin.y + self.lore.frame.size.height + 8, self.tableView.frame.size.width, self.tableView.frame.size.height);
     
     [self.scrollView setContentSize:CGSizeMake(0, self.tableView.frame.origin.y + self.tableView.frame.size.height)];
+    
     if ([self.cooldown.text isEqualToString:@"0"]) {
         self.cooldown.hidden = true;
         self.manaCost.hidden = true;
@@ -152,10 +137,6 @@
     }
     
     int backgroundGradientHeight = self.scrollView.contentSize.height;
-    
-    if (backgroundGradientHeight<789) {
-        backgroundGradientHeight = 789;
-    }
     
     
     UIView *sbview = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.scrollView.frame.size.width, backgroundGradientHeight)];
