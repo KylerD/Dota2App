@@ -14,6 +14,7 @@
 #import "AbilityDetailViewController.h"
 #import "GuidesViewController.h"
 #import "PagedWelcome.h"
+#import "AppDelegate.h"
 
 @interface DetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
@@ -42,6 +43,18 @@
 
 
 - (void)configureView {
+    
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        
+        AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+        
+            UIButton* infoButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
+            [infoButton addTarget:appDelegate action:@selector(showWelcomePager) forControlEvents:UIControlEventTouchUpInside];
+            self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:infoButton];
+            
+    }
+    
+    
     
     // add viewController so you can switch them later.
     //getCurrent on screenVC

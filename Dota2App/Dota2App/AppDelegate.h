@@ -20,6 +20,7 @@
 @property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
 - (void)saveContext;
+- (void)showWelcomePager;
 - (NSURL *)applicationDocumentsDirectory;
 /*
  * Method which returns a managed object context using the traditional approach, seperate from a stackmob enabled context

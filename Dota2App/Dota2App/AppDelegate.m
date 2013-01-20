@@ -25,7 +25,7 @@
 
 //STACKMOB SETTINGS
 #define STACKMOB_ENABLE NO
-#define DEVELOPER_FORCE_WELCOME NO
+#define DEVELOPER_FORCE_WELCOME YES
 #define STACKMOB_KEY @"6586fffa-0b95-426c-8763-d30299599b40"
 #define UseJSON YES
 
@@ -73,7 +73,7 @@
     return YES;
 }
 
--(void) showWelcomePager{
+- (void)showWelcomePager{
     PagedWelcome * welcome = [PagedWelcome new];
     welcome.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     [self.window.rootViewController presentModalViewController:welcome animated:YES];
