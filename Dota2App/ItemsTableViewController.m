@@ -51,6 +51,16 @@
         
         [self.tableView reloadData];
     }
+    
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
+        
+        AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+        
+        UIButton* infoButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
+        [infoButton addTarget:appDelegate action:@selector(showWelcomePager) forControlEvents:UIControlEventTouchUpInside];
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:infoButton];
+        
+    }
 }
 
 #pragma mark - View lifecycle
