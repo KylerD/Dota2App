@@ -124,8 +124,11 @@
     f.origin.y = tableView.frame.origin.y+tableView.frame.size.height + 20;
     videoWebView.frame = f;
     
+    f = scrollView.frame;
+    f = CGRectMake(0, 0, self.view.frame.size.width-50,self.view.frame.size.height);
+    scrollView.frame =f;
     CGSize s = scrollView.contentSize;
-    s.height = tableView.frame.origin.y+tableView.frame.size.height + 10;
+    s.height = videoWebView.frame.origin.y+videoWebView.frame.size.height-300;
     scrollView.contentSize = s;
     
     //    if(UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone){
