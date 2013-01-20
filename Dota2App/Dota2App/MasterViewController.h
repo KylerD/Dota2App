@@ -17,6 +17,7 @@
     NSArray *heroNavStack;
     NSFetchedResultsController *fetchedRC;
     NSString *fetchItem;
+    BOOL firstLoad;
 }
 
 @property (strong, nonatomic) DetailViewController *detailViewController;

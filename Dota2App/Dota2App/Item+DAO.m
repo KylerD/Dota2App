@@ -89,7 +89,7 @@
             }
         }
 
-        i.attribString = [itemDictionary valueForKey:@"attrib"];
+        i.attribString = [itemDictionary valueForKey:@"attrib"]; //gives raw HTML
         i.lore = [itemDictionary valueForKey:@"lore"];
         
         id tryType = [itemDictionary valueForKey:@"qual"];

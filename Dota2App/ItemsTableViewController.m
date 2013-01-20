@@ -58,7 +58,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    firstLoad = YES;
     fetchItem = @"Item";
     AppDelegate * del = [[UIApplication sharedApplication] delegate];
     managedObjectContext = del.managedObjectContext;
@@ -103,6 +103,22 @@
     // Override point for customization after application launch.
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
         self.splitViewController.viewControllers = itemNavStack;
+    }
+    //Select first hero automatically once view is configured
+    if (firstLoad && [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+        
+        if ([self.tableView.delegate respondsToSelector:@selector(tableView:willSelectRowAtIndexPath:)]) {
+            [self.tableView.delegate tableView:self.tableView willSelectRowAtIndexPath:indexPath];
+        }
+        
+        [self.tableView selectRowAtIndexPath:indexPath animated:YES scrollPosition: UITableViewScrollPositionNone];
+        
+        if ([self.tableView.delegate respondsToSelector:@selector(tableView:didSelectRowAtIndexPath:)]) {
+            [self.tableView.delegate tableView:self.tableView didSelectRowAtIndexPath:indexPath];
+        }
+        
+        firstLoad = NO;
     }
 }
 
@@ -180,14 +196,33 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
 
     Item *item = [fetchedRC objectAtIndexPath:indexPath];
     //Fetch the hero data
-
-    //subtitle = [NSString stringWithFormat:@"%@ - %@", hero.faction, hero.primaryAttribute];
     //Configure the cell
-    NSLog(@"%@",item.imgPath);
     cell.cellTitleLabel.text= item.name;
     cell.cellDetailLabel.text = [item.cost stringValue];
     //cell.cellImage.image = [UIImage imageNamed:item.imgName];
     cell.cellImage.image = [UIImage imageWithContentsOfFile:item.imgPath];
+    
+    cell.cellImage.layer.shadowColor = [UIColor blackColor].CGColor;
+    cell.cellImage.layer.shadowOffset = CGSizeMake(2, 2);
+    cell.cellImage.layer.shadowOpacity = 1;
+    cell.cellImage.layer.shadowRadius = 5.0;
+    cell.cellImage.clipsToBounds = NO;
+    
+    
+    UIView *sbview = [[UIView alloc] initWithFrame:CGRectMake(0, 0, cell.frame.size.width, cell.frame.size.height)];
+    CAGradientLayer *gradient = [CAGradientLayer layer];
+    gradient.frame = sbview.bounds;
+    gradient.colors = [NSArray arrayWithObjects:(id)[UIColor colorWithRed:117/ 255.0 green:0/ 255.0 blue:2/ 255.0 alpha:1.0].CGColor, (id)[UIColor colorWithRed:41/ 255.0 green:0/ 255.0 blue:2/ 255.0 alpha:1.0].CGColor, nil];
+    [sbview.layer insertSublayer:gradient atIndex:0];
+    
+    UIView *bgview = [[UIView alloc] initWithFrame:CGRectMake(0, 0, cell.frame.size.width, cell.frame.size.height)];
+    CAGradientLayer *gradient2 = [CAGradientLayer layer];
+    gradient2.frame = sbview.bounds;
+    gradient2.colors = [NSArray arrayWithObjects:(id)[UIColor colorWithRed:35/ 255.0 green:36/ 255.0 blue:37/ 255.0 alpha:1.0].CGColor, (id)[UIColor colorWithRed:30/ 255.0 green:31/ 255.0 blue:32/ 255.0 alpha:1.0].CGColor, nil];
+    [bgview.layer insertSublayer:gradient2 atIndex:0];
+    cell.backgroundView = bgview;
+    
+    cell.selectedBackgroundView = sbview;
 }
 
 #pragma mark - NSFetchedRC Delegate
@@ -305,7 +340,7 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
         Item *selectedItem = [fetchedRC objectAtIndexPath:indexPath];
         ItemsDetailViewController *detailVC = (ItemsDetailViewController *)[segue destinationViewController];
         [detailVC setItem:selectedItem];
-        NSLog(@"sfsfd");
+
     }
 }
 

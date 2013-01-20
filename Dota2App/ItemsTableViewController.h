@@ -20,6 +20,7 @@
     NSString *savedSearchTerm;
     NSArray *itemNavStack;
     BOOL freshData;
+    BOOL firstLoad;
 }
 
 @property (strong, nonatomic) ItemsDetailViewController *detailViewController;

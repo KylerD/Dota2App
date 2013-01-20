@@ -121,9 +121,7 @@
             calculatedHeight = CELL_MINIMUM_HEIGHT_IPAD;
         }
     }
-    
-    //NSLog(@"Ability %@, calculated at: %i",ability.name,calculatedHeight);
-    
+
     return calculatedHeight;
     
 }
@@ -162,6 +160,12 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     [abilityCell.lore sizeToFit];
     
     abilityCell.icon.image = [UIImage imageWithContentsOfFile:ability.imagePath];
+    
+    abilityCell.icon.layer.shadowColor = [UIColor blackColor].CGColor;
+    abilityCell.icon.layer.shadowOffset = CGSizeMake(2, 2);
+    abilityCell.icon.layer.shadowOpacity = 1;
+    abilityCell.icon.layer.shadowRadius = 5.0;
+    abilityCell.icon.clipsToBounds = NO;
     
     int yOrigin = abilityCell.lore.frame.origin.y + abilityCell.lore.frame.size.height + CELL_MANACOOLDOWN_PADDING;
     if (yOrigin <100) {

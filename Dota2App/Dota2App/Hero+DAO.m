@@ -18,8 +18,6 @@
 + (Hero *)heroFromDictionary:(NSDictionary*)heroDictionary {
     NSString *heroName = [self interpretValue:[heroDictionary valueForKey:@"name"]];
     
-    // NSLog(@"Creating Hero with Dictionary:%@",heroDictionary);
-    
     Hero* hero = [Hero readOrCreateObjectWithParamterName:@"name" andValue:heroName];
     
     //TODO: Map dict to values..
