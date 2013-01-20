@@ -80,7 +80,13 @@
     self.descriptionLabel.lineBreakMode = UILineBreakModeWordWrap;
     self.descriptionLabel.numberOfLines = 0;
     
-    NSString * descriptionString = [NSString stringWithFormat:@"%@\n\n%@",self.ability.lore,self.ability.notes];
+    NSMutableString * loreString = [NSMutableString stringWithFormat:@"%@",self.ability.lore];
+    
+    if (![loreString isEqualToString:@""]) {
+        [loreString appendFormat:@"\n\n"];
+    }
+    
+    NSString * descriptionString = [NSString stringWithFormat:@"%@%@",loreString,self.ability.notes];
     
     [self.descriptionLabel setText:descriptionString];
     [self.descriptionLabel sizeToFit];
@@ -115,7 +121,7 @@
     tableView.frame = f;    
     
     f = videoWebView.frame;
-    f.origin.y = tableView.frame.origin.y+tableView.frame.size.height + 10;
+    f.origin.y = tableView.frame.origin.y+tableView.frame.size.height + 20;
     videoWebView.frame = f;
     
     CGSize s = scrollView.contentSize;
