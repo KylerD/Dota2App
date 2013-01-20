@@ -15,6 +15,7 @@
 #import "HeroCell.h"
 #import "Hero.h"
 #import "Role.h"
+#import "PagedWelcome.h"
 
 
 @interface MasterViewController ()
@@ -131,6 +132,8 @@
         self.splitViewController.viewControllers = heroNavStack;
     }
     self.tableView.scrollsToTop = YES;
+    
+    
 }
 
 - (void)viewWillDisappear:(BOOL)animated

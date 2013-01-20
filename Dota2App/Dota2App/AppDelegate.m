@@ -10,6 +10,7 @@
 #import "MasterViewController.h"
 #import "HeroParser.h"
 #import "Itemparser.h"
+#import "PagedWelcome.h"
 
 @implementation AppDelegate
 
@@ -24,6 +25,7 @@
 
 //STACKMOB SETTINGS
 #define STACKMOB_ENABLE NO
+#define DEVELOPER_FORCE_WELCOME YES
 #define STACKMOB_KEY @"6586fffa-0b95-426c-8763-d30299599b40"
 #define UseJSON YES
 
@@ -59,12 +61,25 @@
             [[[HeroParser alloc] init] parse];
             [[[Itemparser alloc] init] parse];
         }
-
     }
+    
+    NSString *model = [[UIDevice currentDevice] model];
+    //TODO WELCOME MESSAGE SCHEDULING LOGIC
+    if ((![model isEqualToString:@"iPhone Simulator"] && ![model isEqualToString:@"iPad Simulator"]) || DEVELOPER_FORCE_WELCOME) {
+        [self performSelector:@selector(showWelcomePager) withObject:nil afterDelay:0.1];
+    }
+    
     
     return YES;
 }
-							
+
+-(void) showWelcomePager{
+    PagedWelcome * welcome = [PagedWelcome new];
+    welcome.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self.window.rootViewController presentModalViewController:welcome animated:YES];
+    [welcome startAutoPaging];
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     /*

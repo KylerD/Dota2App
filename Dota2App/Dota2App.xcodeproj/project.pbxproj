@@ -19,6 +19,18 @@
 		5C3CB3C61658287400E8341C /* Hero+DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3CB3C51658287400E8341C /* Hero+DAO.m */; };
 		5C3CB3C71659039200E8341C /* NSManagedObject+CRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3CB3BF16581F1700E8341C /* NSManagedObject+CRUD.m */; };
 		5C47D48F1696170F00C2DA74 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C47D48E1696170F00C2DA74 /* QuartzCore.framework */; };
+		5C4DE7CE16A2EC07009E74FF /* StyledPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DE7CB16A2EB63009E74FF /* StyledPageControl.m */; };
+		5C4DE7CF16A2EC07009E74FF /* PagedWelcome.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DE7CD16A2EB63009E74FF /* PagedWelcome.m */; };
+		5C4DE7D316A32CAF009E74FF /* HelloViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DE7D116A32CAF009E74FF /* HelloViewController.m */; };
+		5C4DE7D416A32CAF009E74FF /* HelloViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4DE7D216A32CAF009E74FF /* HelloViewController.xib */; };
+		5C4DE7D616A332E4009E74FF /* bounty hunter_large.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5C4DE7D516A332E4009E74FF /* bounty hunter_large.jpg */; };
+		5C4DE7D916A339EE009E74FF /* destroyer_large.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5C4DE7D716A339EE009E74FF /* destroyer_large.jpg */; };
+		5C4DE7DA16A339EE009E74FF /* ursa_large.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5C4DE7D816A339EE009E74FF /* ursa_large.jpg */; };
+		5C4DE7E116A33B6E009E74FF /* SuggestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DE7DC16A33AB2009E74FF /* SuggestionsViewController.m */; };
+		5C4DE7E216A33B6E009E74FF /* UpdatesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DE7DF16A33AB3009E74FF /* UpdatesViewController.m */; };
+		5C4DE7E316A33B9C009E74FF /* SuggestionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4DE7DD16A33AB2009E74FF /* SuggestionsViewController.xib */; };
+		5C4DE7E416A33B9C009E74FF /* UpdatesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4DE7E016A33AB3009E74FF /* UpdatesViewController.xib */; };
+		5C4DE7E616A33C71009E74FF /* lina_large.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5C4DE7E516A33C71009E74FF /* lina_large.jpg */; };
 		5C550F67168B4A7600249B67 /* item.json in Resources */ = {isa = PBXBuildFile; fileRef = 5C550F66168B4A7600249B67 /* item.json */; };
 		5C550F6E168B4B5300249B67 /* Itemparser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C550F6D168B4B5300249B67 /* Itemparser.m */; };
 		5C550F75168B4CF900249B67 /* Item+DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C550F74168B4CF900249B67 /* Item+DAO.m */; };
@@ -621,6 +633,7 @@
 		5C6DD7BA169B637B004063DF /* Wrath of Nature.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C6DD564169B637A004063DF /* Wrath of Nature.png */; };
 		5C6DD7BB169B637B004063DF /* X Marks the Spot.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C6DD565169B637A004063DF /* X Marks the Spot.png */; };
 		5C6DD7BD169B6B23004063DF /* avatar_container.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C6DD7BC169B6B23004063DF /* avatar_container.png */; };
+		5C75165E16A739F300C9FFC2 /* cancel-14.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C75165D16A739F300C9FFC2 /* cancel-14.png */; };
 		5CD0F77816A046C1003C6A67 /* GuidesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD0F77616A046C1003C6A67 /* GuidesViewController.m */; };
 		5CD0F77B16A04993003C6A67 /* Medusa_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CD0F77A16A04993003C6A67 /* Medusa_icon.png */; };
 		5CD53E061685B08E0002803D /* hero.json in Resources */ = {isa = PBXBuildFile; fileRef = 5CD53E051685B08E0002803D /* hero.json */; };
@@ -685,6 +698,23 @@
 		5C3CB3C41658287400E8341C /* Hero+DAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Hero+DAO.h"; sourceTree = "<group>"; };
 		5C3CB3C51658287400E8341C /* Hero+DAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Hero+DAO.m"; sourceTree = "<group>"; };
 		5C47D48E1696170F00C2DA74 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5C4DE7CA16A2EB63009E74FF /* StyledPageControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StyledPageControl.h; sourceTree = "<group>"; };
+		5C4DE7CB16A2EB63009E74FF /* StyledPageControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StyledPageControl.m; sourceTree = "<group>"; };
+		5C4DE7CC16A2EB63009E74FF /* PagedWelcome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PagedWelcome.h; sourceTree = "<group>"; };
+		5C4DE7CD16A2EB63009E74FF /* PagedWelcome.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PagedWelcome.m; sourceTree = "<group>"; };
+		5C4DE7D016A32CAF009E74FF /* HelloViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloViewController.h; sourceTree = "<group>"; };
+		5C4DE7D116A32CAF009E74FF /* HelloViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloViewController.m; sourceTree = "<group>"; };
+		5C4DE7D216A32CAF009E74FF /* HelloViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelloViewController.xib; sourceTree = "<group>"; };
+		5C4DE7D516A332E4009E74FF /* bounty hunter_large.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "bounty hunter_large.jpg"; path = "../../../../Pictures/dota2/bounty hunter_large.jpg"; sourceTree = "<group>"; };
+		5C4DE7D716A339EE009E74FF /* destroyer_large.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = destroyer_large.jpg; sourceTree = "<group>"; };
+		5C4DE7D816A339EE009E74FF /* ursa_large.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ursa_large.jpg; sourceTree = "<group>"; };
+		5C4DE7DB16A33AB2009E74FF /* SuggestionsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuggestionsViewController.h; sourceTree = "<group>"; };
+		5C4DE7DC16A33AB2009E74FF /* SuggestionsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuggestionsViewController.m; sourceTree = "<group>"; };
+		5C4DE7DD16A33AB2009E74FF /* SuggestionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuggestionsViewController.xib; sourceTree = "<group>"; };
+		5C4DE7DE16A33AB3009E74FF /* UpdatesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpdatesViewController.h; sourceTree = "<group>"; };
+		5C4DE7DF16A33AB3009E74FF /* UpdatesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpdatesViewController.m; sourceTree = "<group>"; };
+		5C4DE7E016A33AB3009E74FF /* UpdatesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpdatesViewController.xib; sourceTree = "<group>"; };
+		5C4DE7E516A33C71009E74FF /* lina_large.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lina_large.jpg; sourceTree = "<group>"; };
 		5C550F66168B4A7600249B67 /* item.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = item.json; path = ../../Scrapper/item.json; sourceTree = "<group>"; };
 		5C550F6C168B4B5300249B67 /* Itemparser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Itemparser.h; sourceTree = "<group>"; };
 		5C550F6D168B4B5300249B67 /* Itemparser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Itemparser.m; sourceTree = "<group>"; };
@@ -1289,12 +1319,14 @@
 		5C6DD564169B637A004063DF /* Wrath of Nature.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wrath of Nature.png"; sourceTree = "<group>"; };
 		5C6DD565169B637A004063DF /* X Marks the Spot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "X Marks the Spot.png"; sourceTree = "<group>"; };
 		5C6DD7BC169B6B23004063DF /* avatar_container.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar_container.png; sourceTree = "<group>"; };
+		5C75165D16A739F300C9FFC2 /* cancel-14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cancel-14.png"; path = "../../../cancel-14.png"; sourceTree = "<group>"; };
 		5CD0F77516A046C1003C6A67 /* GuidesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuidesViewController.h; sourceTree = "<group>"; };
 		5CD0F77616A046C1003C6A67 /* GuidesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuidesViewController.m; sourceTree = "<group>"; };
 		5CD0F77A16A04993003C6A67 /* Medusa_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Medusa_icon.png; sourceTree = "<group>"; };
 		5CD53E051685B08E0002803D /* hero.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = hero.json; path = ../../Scrapper/hero.json; sourceTree = "<group>"; };
 		5CD53E071685B5CE0002803D /* Role+DAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Role+DAO.h"; sourceTree = "<group>"; };
 		5CD53E081685B5CE0002803D /* Role+DAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Role+DAO.m"; sourceTree = "<group>"; };
+		5CF322E016AC0FC7001EC78E /* DismissModalParentDelgate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DismissModalParentDelgate.h; sourceTree = "<group>"; };
 		B18C9E2D164E8B5900ADE97A /* Dota2App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dota2App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B18C9E31164E8B5900ADE97A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B18C9E33164E8B5900ADE97A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -1458,6 +1490,7 @@
 		5C3CAEEB1657F2A400E8341C /* default */ = {
 			isa = PBXGroup;
 			children = (
+				5C75165D16A739F300C9FFC2 /* cancel-14.png */,
 				EDCF644A166CB6FD00BBE08A /* items.png */,
 				EDCA230116552A2900FEDF75 /* Radiant.png */,
 				5C6DD7BC169B6B23004063DF /* avatar_container.png */,
@@ -1485,6 +1518,28 @@
 				5CD53E051685B08E0002803D /* hero.json */,
 			);
 			name = data;
+			sourceTree = "<group>";
+		};
+		5C4DE7C816A2EB3D009E74FF /* pagedMessages */ = {
+			isa = PBXGroup;
+			children = (
+				5CF322DF16AAE9F5001EC78E /* images */,
+				5CF322E016AC0FC7001EC78E /* DismissModalParentDelgate.h */,
+				5C4DE7CA16A2EB63009E74FF /* StyledPageControl.h */,
+				5C4DE7CB16A2EB63009E74FF /* StyledPageControl.m */,
+				5C4DE7CC16A2EB63009E74FF /* PagedWelcome.h */,
+				5C4DE7CD16A2EB63009E74FF /* PagedWelcome.m */,
+				5C4DE7D016A32CAF009E74FF /* HelloViewController.h */,
+				5C4DE7D116A32CAF009E74FF /* HelloViewController.m */,
+				5C4DE7D216A32CAF009E74FF /* HelloViewController.xib */,
+				5C4DE7DB16A33AB2009E74FF /* SuggestionsViewController.h */,
+				5C4DE7DC16A33AB2009E74FF /* SuggestionsViewController.m */,
+				5C4DE7DD16A33AB2009E74FF /* SuggestionsViewController.xib */,
+				5C4DE7DE16A33AB3009E74FF /* UpdatesViewController.h */,
+				5C4DE7DF16A33AB3009E74FF /* UpdatesViewController.m */,
+				5C4DE7E016A33AB3009E74FF /* UpdatesViewController.xib */,
+			);
+			name = pagedMessages;
 			sourceTree = "<group>";
 		};
 		5C550F8E168F09F100249B67 /* ModelManager */ = {
@@ -2158,6 +2213,17 @@
 			name = Guides;
 			sourceTree = "<group>";
 		};
+		5CF322DF16AAE9F5001EC78E /* images */ = {
+			isa = PBXGroup;
+			children = (
+				5C4DE7E516A33C71009E74FF /* lina_large.jpg */,
+				5C4DE7D516A332E4009E74FF /* bounty hunter_large.jpg */,
+				5C4DE7D716A339EE009E74FF /* destroyer_large.jpg */,
+				5C4DE7D816A339EE009E74FF /* ursa_large.jpg */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		B17D98BD164EA18000C60B36 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -2282,6 +2348,7 @@
 		EDCA2303165537DE00FEDF75 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				5C4DE7C816A2EB3D009E74FF /* pagedMessages */,
 				5CD0F77416A0469D003C6A67 /* Guides */,
 				ED0BE403169AE6F80096A843 /* Feedback */,
 				B1D88208168B2FAF00470825 /* Items */,
@@ -2346,6 +2413,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C4DE7E316A33B9C009E74FF /* SuggestionsViewController.xib in Resources */,
+				5C4DE7E416A33B9C009E74FF /* UpdatesViewController.xib in Resources */,
 				B18C9E3E164E8B5900ADE97A /* InfoPlist.strings in Resources */,
 				B18C9E47164E8B5A00ADE97A /* MainStoryboard_iPhone.storyboard in Resources */,
 				B18C9E4A164E8B5A00ADE97A /* MainStoryboard_iPad.storyboard in Resources */,
@@ -2967,6 +3036,12 @@
 				5C6DD7BB169B637B004063DF /* X Marks the Spot.png in Resources */,
 				5C6DD7BD169B6B23004063DF /* avatar_container.png in Resources */,
 				5CD0F77B16A04993003C6A67 /* Medusa_icon.png in Resources */,
+				5C4DE7D416A32CAF009E74FF /* HelloViewController.xib in Resources */,
+				5C4DE7D616A332E4009E74FF /* bounty hunter_large.jpg in Resources */,
+				5C4DE7D916A339EE009E74FF /* destroyer_large.jpg in Resources */,
+				5C4DE7DA16A339EE009E74FF /* ursa_large.jpg in Resources */,
+				5C4DE7E616A33C71009E74FF /* lina_large.jpg in Resources */,
+				5C75165E16A739F300C9FFC2 /* cancel-14.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2977,6 +3052,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C4DE7E116A33B6E009E74FF /* SuggestionsViewController.m in Sources */,
+				5C4DE7E216A33B6E009E74FF /* UpdatesViewController.m in Sources */,
+				5C4DE7CE16A2EC07009E74FF /* StyledPageControl.m in Sources */,
+				5C4DE7CF16A2EC07009E74FF /* PagedWelcome.m in Sources */,
 				5C3CB3C71659039200E8341C /* NSManagedObject+CRUD.m in Sources */,
 				B18C9E40164E8B5900ADE97A /* main.m in Sources */,
 				B18C9E44164E8B5900ADE97A /* AppDelegate.m in Sources */,
@@ -3006,6 +3085,7 @@
 				ED8A1DAC16A066D20042AF9C /* Ability.m in Sources */,
 				ED8A1DFA16A06F6B0042AF9C /* Nickname.m in Sources */,
 				ED8A1DFD16A06F910042AF9C /* Role.m in Sources */,
+				5C4DE7D316A32CAF009E74FF /* HelloViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

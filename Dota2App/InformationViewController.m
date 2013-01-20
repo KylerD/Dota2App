@@ -8,7 +8,7 @@
 
 #import "InformationViewController.h"
 #import "DetailViewController.h"
-
+#import "PagedWelcome.h"
 #import <QuartzCore/QuartzCore.h>
 
 

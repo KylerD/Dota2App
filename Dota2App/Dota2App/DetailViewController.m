@@ -13,6 +13,7 @@
 #import "AbilitiesViewController.h"
 #import "AbilityDetailViewController.h"
 #import "GuidesViewController.h"
+#import "PagedWelcome.h"
 
 @interface DetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
@@ -38,6 +39,7 @@
         [self configureView];
     }
 }
+
 
 - (void)configureView {
     
@@ -75,6 +77,8 @@
 {   
     [super viewDidLoad];
     [self configureView];
+   
+    
     infoVCSelected = YES;
 
 
