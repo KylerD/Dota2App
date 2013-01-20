@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Ability+DAO.h"
 
-@interface AbilityDetailViewController : UIViewController {
+@interface AbilityDetailViewController : UIViewController <UITableViewDataSource,UITableViewDelegate> {
 
 }
 
@@ -25,6 +25,7 @@
 @property (nonatomic, strong) IBOutlet UIScrollView *scrollView;
 @property (nonatomic, strong) IBOutlet UIButton *videoButton;
 @property (nonatomic, retain) IBOutlet UIView * overviewContainer;
+@property (nonatomic, retain) IBOutlet UITableView * tableView;
 
 - (void)makeiPhoneGridWithDictionary: (NSDictionary*)dictionary;
 - (void)makeiPadGridWithDictionary: (NSDictionary*)dictionary;

@@ -9,15 +9,18 @@
 #import "AbilityDetailViewController.h"
 #import "QuartzCore/CALayer.h"
 #import <QuartzCore/QuartzCore.h>
+#import "OrderedDictionary.h"
 
-@interface AbilityDetailViewController ()
+@interface AbilityDetailViewController (){
+    OrderedDictionary * dynamicAbilityAttrributes;
+}
 
 @end
 
 @implementation AbilityDetailViewController
 @synthesize ability;
 @synthesize titleLabel, descriptionLabel, mcLabel, cdLabel, abilityImage, videoWebView, overviewContainer;
-@synthesize mcIcon, cdIcon, scrollView, videoButton;
+@synthesize mcIcon, cdIcon, scrollView, videoButton,tableView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,7 +32,7 @@
 }
 
 - (void)viewDidLoad
-{  
+{
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
@@ -54,69 +57,144 @@
     self.overviewContainer.clipsToBounds = NO;
     
     [self configureView];
-  
+    
+    //Stops the white flash prior to loading vids
     [self.videoWebView  loadHTMLString:@"<html><body style=\"background-color:black;\"></body></html>" baseURL:nil];
-
     [self performSelector:@selector(loadURL:) withObject:nil afterDelay:0.1];
 }
 
 -(void)loadURL:(id)sender{
-
-    [self.videoWebView  stopLoading]; //added this line to stop the previous request
+    
+    [self.videoWebView  stopLoading]; //stops the previous request (static black bg)
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:self.ability.videoUrl]];
     [self.videoWebView loadRequest:request];
-
+    
 }
 
 - (void)configureView {
-
-        //Set the title
-        [self.titleLabel setText:self.ability.name];
-        //Set the mana cost
-
-        self.descriptionLabel.lineBreakMode = UILineBreakModeWordWrap;
-        self.descriptionLabel.numberOfLines = 0;
     
-        [self.descriptionLabel setText:self.ability.notes];
-        [self.descriptionLabel sizeToFit];
-
-        if ([ability.isPassive boolValue]) {
-            [self.mcLabel setHidden:TRUE];
-            [self.cdLabel setHidden:TRUE];
-            [self.mcIcon setHidden:TRUE];
-            [self.cdIcon setHidden:TRUE];
-        }
-        else{
-            [self.mcLabel setText:self.ability.mc];
-            [self.cdLabel setText:self.ability.cd];
-        }
+    //Set the title
+    [self.titleLabel setText:self.ability.name];
+    //Set the mana cost
     
-    NSDictionary *JSON =
-    [NSJSONSerialization JSONObjectWithData: [self.ability.dynamic dataUsingEncoding:NSUTF8StringEncoding]
-                                    options: NSJSONReadingMutableContainers
-                                      error: nil];
-        
-    if(UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone){
-        [self makeiPhoneGridWithDictionary:JSON];
+    self.descriptionLabel.lineBreakMode = UILineBreakModeWordWrap;
+    self.descriptionLabel.numberOfLines = 0;
+    
+    NSString * descriptionString = [NSString stringWithFormat:@"%@\n\n%@",self.ability.lore,self.ability.notes];
+    
+    [self.descriptionLabel setText:descriptionString];
+    [self.descriptionLabel sizeToFit];
+    
+    if ([ability.isPassive boolValue]) {
+        [self.mcLabel setHidden:TRUE];
+        [self.cdLabel setHidden:TRUE];
+        [self.mcIcon setHidden:TRUE];
+        [self.cdIcon setHidden:TRUE];
     }
     else{
-        [self makeiPadGridWithDictionary:JSON];
+        [self.mcLabel setText:self.ability.mc];
+        [self.cdLabel setText:self.ability.cd];
     }
+    
+     NSDictionary * JSONDict = [NSJSONSerialization JSONObjectWithData: [self.ability.dynamic dataUsingEncoding:NSUTF8StringEncoding]
+                                                                options: NSJSONReadingMutableContainers
+                                                                  error: nil];
+    
+    
+    dynamicAbilityAttrributes = [OrderedDictionary dictionaryWithDictionary:JSONDict];
+    
+    
+   
+    
+    int keyCount = [[dynamicAbilityAttrributes allKeys] count];
+    int tableheightCalculation = (keyCount * 44) + 40;
+    CGRect f =   tableView.frame;
+    tableView.backgroundView = nil;
+    f.size.height = tableheightCalculation;
+    f.origin.y = descriptionLabel.frame.origin.y+descriptionLabel.frame.size.height + 10;
+    tableView.frame = f;    
+    
+    f = videoWebView.frame;
+    f.origin.y = tableView.frame.origin.y+tableView.frame.size.height + 10;
+    videoWebView.frame = f;
+    
+    CGSize s = scrollView.contentSize;
+    s.height = tableView.frame.origin.y+tableView.frame.size.height + 10;
+    scrollView.contentSize = s;
+    
+    //    if(UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone){
+    //        [self makeiPhoneGridWithDictionary:JSON];
+    //    }
+    //    else{
+    //        [self makeiPadGridWithDictionary:JSON];
+    //    }
 }
 
+
+- (NSString*)attribValueToString:(id)value{
+    
+    NSString * result;
+    
+    if([value isKindOfClass:[NSString class]]){
+        result = [value copy];
+    } else if([value isKindOfClass:[NSArray class]]){
+        NSMutableString * sb = [NSMutableString string];
+        
+        for (id val in (NSArray*)value) {
+            [sb appendFormat:@"%@, ",val];
+        }
+        
+        if (![sb isEqualToString:@""]){
+            NSRange lastComma = {sb.length-2,2};
+            [sb deleteCharactersInRange:lastComma];
+        }
+        
+        result = [sb copy];
+        
+    }
+    
+    return result;
+    
+}
+
+- (void)createDynamicAbilitySource{
+    
+    
+    
+    //    {
+    //        Ability = "No Target";
+    //        Damage = Physical;
+    //        "Max damage" =     (
+    //                            150,
+    //                            220,
+    //                            290,
+    //                            360
+    //                            );
+    //        "Max stun" =     (
+    //                          "1.75",
+    //                          "2.5",
+    //                          "3.25",
+    //                          4
+    //                          );
+    //        Radius = 175;
+    //    }
+    
+    
+    
+}
 
 -(void)makeiPadGridWithDictionary: (NSDictionary*)badassDictionary{
     int gridSize = [badassDictionary count];
     int y = self.descriptionLabel.frame.origin.y+self.descriptionLabel.frame.size.height; //193 29
-
+    
     NSArray * keys =[badassDictionary allKeys];
-
+    
     for (int count = 0; count<gridSize; count++) {
         
         if (count%2 ==0){
             y+=29;
         }
-
+        
         UILabel * gridLabel = [[UILabel alloc] init];
         
         if (count%2==0) {
@@ -149,6 +227,52 @@
     [self.scrollView setContentSize:CGSizeMake(0, loreLabel.frame.origin.y + loreLabel.frame.size.height+100)];
 }
 
+#pragma mark - Table View
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [[dynamicAbilityAttrributes allKeys] count];
+    
+}
+
+// Customize the appearance of table view cells.
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"DynamicAttribCell";
+    
+    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
+    }
+    
+    
+    [self configureCell:cell atIndexPath:indexPath];
+    return cell;
+}
+
+
+-(NSString *)controller:(NSFetchedResultsController *)controller
+sectionIndexTitleForSectionName:(NSString *)sectionName {
+    return sectionName;
+}
+
+- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
+{   //Fetch the hero
+    
+    NSString * key = [dynamicAbilityAttrributes keyAtIndex:indexPath.row];
+    NSString * value = [self attribValueToString:[dynamicAbilityAttrributes valueForKey:key]];
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"%@",[[key lowercaseString] capitalizedString]];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@",value];
+}
+
+
 - (void)makeiPhoneGridWithDictionary: (NSDictionary*)badassDictionary {
     int gridSize = [badassDictionary count];
     int y = self.descriptionLabel.frame.origin.y+self.descriptionLabel.frame.size.height; //193 29
@@ -163,11 +287,11 @@
     loreLabel.lineBreakMode = UILineBreakModeWordWrap;
     loreLabel.numberOfLines = 0;
     loreLabel.text = self.ability.lore;
-
+    
     [self.scrollView addSubview:loreLabel];
     
     for (int count = 0; count<gridSize; count++) {
-
+        
         if (count%2 ==0){
             y+=29;
         }
@@ -185,7 +309,7 @@
         [loreLabel setFrame:CGRectMake(20, gridLabel.frame.origin.y+gridLabel.frame.size.height+20, 280, loreLabel.frame.size.height)];
         [loreLabel sizeToFit];
         
-         [self.videoWebView setFrame:CGRectMake(self.videoWebView.frame.origin.x, gridLabel.frame.origin.y+gridLabel.frame.size.height+20, self.videoWebView.frame.size.width, self.videoWebView.frame.size.height)];
+        [self.videoWebView setFrame:CGRectMake(self.videoWebView.frame.origin.x, gridLabel.frame.origin.y+gridLabel.frame.size.height+20, self.videoWebView.frame.size.width, self.videoWebView.frame.size.height)];
     }
     [self.scrollView setContentSize:CGSizeMake(0, loreLabel.frame.origin.y + loreLabel.frame.size.height+100)];
 }

@@ -20,6 +20,7 @@
 		5C3CAEE91657D58200E8341C /* HeroParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3CAEE81657D58200E8341C /* HeroParser.m */; };
 		5C3CB3C61658287400E8341C /* Hero+DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3CB3C51658287400E8341C /* Hero+DAO.m */; };
 		5C3CB3C71659039200E8341C /* NSManagedObject+CRUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3CB3BF16581F1700E8341C /* NSManagedObject+CRUD.m */; };
+		5C438AEE16AC2BB100456500 /* OrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C438AEC16AC2B6E00456500 /* OrderedDictionary.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5C47D48F1696170F00C2DA74 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C47D48E1696170F00C2DA74 /* QuartzCore.framework */; };
 		5C4DE7CE16A2EC07009E74FF /* StyledPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DE7CB16A2EB63009E74FF /* StyledPageControl.m */; };
 		5C4DE7CF16A2EC07009E74FF /* PagedWelcome.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DE7CD16A2EB63009E74FF /* PagedWelcome.m */; };
@@ -700,6 +701,8 @@
 		5C3CB3BF16581F1700E8341C /* NSManagedObject+CRUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+CRUD.m"; sourceTree = "<group>"; };
 		5C3CB3C41658287400E8341C /* Hero+DAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Hero+DAO.h"; sourceTree = "<group>"; };
 		5C3CB3C51658287400E8341C /* Hero+DAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Hero+DAO.m"; sourceTree = "<group>"; };
+		5C438AEB16AC2B6E00456500 /* OrderedDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderedDictionary.h; sourceTree = "<group>"; };
+		5C438AEC16AC2B6E00456500 /* OrderedDictionary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderedDictionary.m; sourceTree = "<group>"; };
 		5C47D48E1696170F00C2DA74 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		5C4DE7CA16A2EB63009E74FF /* StyledPageControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StyledPageControl.h; sourceTree = "<group>"; };
 		5C4DE7CB16A2EB63009E74FF /* StyledPageControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StyledPageControl.m; sourceTree = "<group>"; };
@@ -1453,6 +1456,8 @@
 		5C3CAEE41657D54000E8341C /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				5C438AEB16AC2B6E00456500 /* OrderedDictionary.h */,
+				5C438AEC16AC2B6E00456500 /* OrderedDictionary.m */,
 				5C3CAEE61657D55900E8341C /* Parsing */,
 			);
 			name = Utilities;
@@ -3051,6 +3056,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C438AEE16AC2BB100456500 /* OrderedDictionary.m in Sources */,
 				5C4DE7E116A33B6E009E74FF /* SuggestionsViewController.m in Sources */,
 				5C4DE7E216A33B6E009E74FF /* UpdatesViewController.m in Sources */,
 				5C4DE7CE16A2EC07009E74FF /* StyledPageControl.m in Sources */,
