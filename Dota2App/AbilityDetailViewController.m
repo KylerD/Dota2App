@@ -106,11 +106,7 @@
                                                                 options: NSJSONReadingMutableContainers
                                                                   error: nil];
     
-    
     dynamicAbilityAttrributes = [OrderedDictionary dictionaryWithDictionary:JSONDict];
-    
-    
-   
     
     int keyCount = [[dynamicAbilityAttrributes allKeys] count];
     int tableheightCalculation = (keyCount * 44) + 40;
@@ -166,76 +162,6 @@
     
 }
 
-- (void)createDynamicAbilitySource{
-    
-    
-    
-    //    {
-    //        Ability = "No Target";
-    //        Damage = Physical;
-    //        "Max damage" =     (
-    //                            150,
-    //                            220,
-    //                            290,
-    //                            360
-    //                            );
-    //        "Max stun" =     (
-    //                          "1.75",
-    //                          "2.5",
-    //                          "3.25",
-    //                          4
-    //                          );
-    //        Radius = 175;
-    //    }
-    
-    
-    
-}
-
--(void)makeiPadGridWithDictionary: (NSDictionary*)badassDictionary{
-    int gridSize = [badassDictionary count];
-    int y = self.descriptionLabel.frame.origin.y+self.descriptionLabel.frame.size.height; //193 29
-    
-    NSArray * keys =[badassDictionary allKeys];
-    
-    for (int count = 0; count<gridSize; count++) {
-        
-        if (count%2 ==0){
-            y+=29;
-        }
-        
-        UILabel * gridLabel = [[UILabel alloc] init];
-        
-        if (count%2==0) {
-            gridLabel.frame = CGRectMake(20,y,300,200);
-        }
-        else{
-            gridLabel.frame = CGRectMake(392,y,300,200);
-        }
-        [gridLabel setBackgroundColor:[UIColor clearColor]];
-        gridLabel.textColor = [UIColor colorWithRed:153 green:153 blue:153 alpha:1];
-        
-        gridLabel.lineBreakMode = UILineBreakModeWordWrap;
-        gridLabel.numberOfLines = 0;
-        gridLabel.text = [NSString stringWithFormat:@"%@: %@",[keys objectAtIndex:count],[badassDictionary valueForKey:[keys objectAtIndex:count]]];
-        [gridLabel sizeToFit];
-        [self.scrollView addSubview:gridLabel];
-        [self.videoWebView setFrame:CGRectMake(self.videoWebView.frame.origin.x, gridLabel.frame.origin.y+gridLabel.frame.size.height+20, self.videoWebView.frame.size.width, self.videoWebView.frame.size.height)];
-    }
-    
-    UILabel * loreLabel = [[UILabel alloc] init];
-    [loreLabel setBackgroundColor:[UIColor clearColor]];
-    loreLabel.textColor = [UIColor colorWithRed:153 green:153 blue:153 alpha:1];
-    loreLabel.lineBreakMode = UILineBreakModeWordWrap;
-    loreLabel.numberOfLines = 0;
-    loreLabel.text = self.ability.lore;
-    [loreLabel setFrame:CGRectMake(self.videoWebView.frame.origin.x, self.videoWebView.frame.origin.y+self.videoWebView.frame.size.height/1.5, 670, loreLabel.frame.size.height)];
-    [loreLabel sizeToFit];
-    
-    [self.scrollView addSubview:loreLabel];
-    [self.scrollView setContentSize:CGSizeMake(0, loreLabel.frame.origin.y + loreLabel.frame.size.height+100)];
-}
-
 #pragma mark - Table View
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -280,50 +206,6 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     cell.textLabel.text = [NSString stringWithFormat:@"%@",[[key lowercaseString] capitalizedString]];
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%@",value];
 }
-
-
-- (void)makeiPhoneGridWithDictionary: (NSDictionary*)badassDictionary {
-    int gridSize = [badassDictionary count];
-    int y = self.descriptionLabel.frame.origin.y+self.descriptionLabel.frame.size.height; //193 29
-    
-    NSArray * keys =[badassDictionary allKeys];
-    
-    UILabel * loreLabel = [[UILabel alloc] init];
-    
-    [loreLabel setBackgroundColor:[UIColor clearColor]];
-    loreLabel.textColor = [UIColor colorWithRed:153 green:153 blue:153 alpha:1];
-    
-    loreLabel.lineBreakMode = UILineBreakModeWordWrap;
-    loreLabel.numberOfLines = 0;
-    loreLabel.text = self.ability.lore;
-    
-    [self.scrollView addSubview:loreLabel];
-    
-    for (int count = 0; count<gridSize; count++) {
-        
-        if (count%2 ==0){
-            y+=29;
-        }
-        UILabel * gridLabel = [[UILabel alloc] init];
-        
-        gridLabel.frame = CGRectMake(20,y,300,200);
-        [gridLabel setBackgroundColor:[UIColor clearColor]];
-        gridLabel.textColor = [UIColor colorWithRed:153 green:153 blue:153 alpha:1];
-        gridLabel.lineBreakMode = UILineBreakModeWordWrap;
-        gridLabel.numberOfLines = 0;
-        gridLabel.text = [NSString stringWithFormat:@"%@: %@",[keys objectAtIndex:count],[badassDictionary valueForKey:[keys objectAtIndex:count]]];
-        [gridLabel sizeToFit];
-        [self.scrollView addSubview:gridLabel];
-        
-        [loreLabel setFrame:CGRectMake(20, gridLabel.frame.origin.y+gridLabel.frame.size.height+20, 280, loreLabel.frame.size.height)];
-        [loreLabel sizeToFit];
-        
-        [self.videoWebView setFrame:CGRectMake(self.videoWebView.frame.origin.x, gridLabel.frame.origin.y+gridLabel.frame.size.height+20, self.videoWebView.frame.size.width, self.videoWebView.frame.size.height)];
-    }
-    [self.scrollView setContentSize:CGSizeMake(0, loreLabel.frame.origin.y + loreLabel.frame.size.height+100)];
-}
-
-
 
 #pragma mark -
 #pragma mark UIWebViewDelegate
