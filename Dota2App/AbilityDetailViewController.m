@@ -57,7 +57,7 @@
     self.overviewContainer.clipsToBounds = NO;
     
     [self configureView];
-    
+    //videoWebView.hidden = YES;
     //Stops the white flash prior to loading vids
     [self.videoWebView  loadHTMLString:@"<html><body style=\"background-color:black;\"></body></html>" baseURL:nil];
     [self performSelector:@selector(loadURL:) withObject:nil afterDelay:0.1];
@@ -124,7 +124,16 @@
     f = CGRectMake(0, 0, self.view.frame.size.width-50,self.view.frame.size.height);
     scrollView.frame =f;
     CGSize s = scrollView.contentSize;
-    s.height = videoWebView.frame.origin.y+videoWebView.frame.size.height-300;
+    
+    
+    int randomSub = 0;
+    
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        randomSub = 300;
+    }
+    
+    
+    s.height = videoWebView.frame.origin.y+videoWebView.frame.size.height-randomSub;
     scrollView.contentSize = s;
     
     //    if(UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone){
@@ -198,7 +207,7 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
 }
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
-{   //Fetch the hero
+{ 
     
     NSString * key = [dynamicAbilityAttrributes keyAtIndex:indexPath.row];
     NSString * value = [self attribValueToString:[dynamicAbilityAttrributes valueForKey:key]];

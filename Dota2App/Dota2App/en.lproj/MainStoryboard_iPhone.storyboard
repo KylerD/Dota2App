@@ -185,10 +185,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <webView contentMode="scaleToFill" id="eKE-NW-clM">
-                                <rect key="frame" x="20" y="173" width="280" height="267"/>
+                                <rect key="frame" x="20" y="297" width="280" height="267"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
+                            <tableView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="vys-A5-gxb">
+                                <rect key="frame" x="8" y="173" width="304" height="116"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="hZw-Nn-U4y" id="ph6-2S-jE3"/>
+                                    <outlet property="delegate" destination="hZw-Nn-U4y" id="Hzz-6D-aeF"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.13725490196078433" green="0.13725490196078433" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
                     </scrollView>
@@ -202,6 +211,7 @@
                         <outlet property="mcLabel" destination="RIM-Sv-xRj" id="2nL-Tv-6St"/>
                         <outlet property="overviewContainer" destination="Tv0-eS-drq" id="4GY-x3-jhB"/>
                         <outlet property="scrollView" destination="mvR-8N-zt5" id="byP-Ia-KXo"/>
+                        <outlet property="tableView" destination="vys-A5-gxb" id="TUP-tB-wBI"/>
                         <outlet property="titleLabel" destination="q8B-cp-fKX" id="mfn-4p-jY4"/>
                         <outlet property="videoWebView" destination="eKE-NW-clM" id="Q8p-dO-et1"/>
                     </connections>
@@ -859,6 +869,7 @@
                 <relationship kind="outlet" name="mcLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="overviewContainer" candidateClass="UIView"/>
                 <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
                 <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="videoButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="videoWebView" candidateClass="UIWebView"/>
@@ -867,7 +878,6 @@
         <class className="DetailViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
             <relationships>
-                <relationship kind="action" name="segmentChanged:" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="segment" candidateClass="UISegmentedControl"/>
             </relationships>
         </class>

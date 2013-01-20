@@ -158,15 +158,12 @@
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)sender {
-    //    if (pageControlUsed) {
-    //        return;
-    //    }
-    //
 }
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)theScrollView {
     pageControlUsed = NO;
-    CGFloat pageWidth = scrollView.frame.size.width;
-    int page = floor((scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
+    CGFloat pageWidth = theScrollView.frame.size.width;
+    int page = floor((theScrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
     pageControl.currentPage = page;
     [self stopAutoPaging];
     
