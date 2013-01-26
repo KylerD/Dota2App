@@ -88,9 +88,6 @@
     //configure scroll view based on dynamic properties of hero
     [self configureScrollviewLayout];
     
-    //Configure container gradients
-    [self configureGradientLayers];
-    
     //Configure Scrollview
     [self.scrollView setContentSize:CGSizeMake(0, self.statsContainer.frame.origin.y + self.statsContainer.frame.size.height+100)];
 
@@ -99,41 +96,6 @@
 
 # pragma mark - Screen Configuration
 
-- (void)configureGradientLayers {
-    //Hero Overview Gradient
-    CAGradientLayer *overviewGradient = [CAGradientLayer layer];
-    overviewGradient.frame = self.overviewContainer.bounds;
-    overviewGradient.colors = [NSArray arrayWithObjects:(id)[[UIColor colorWithRed:46/255.0 green:48/255.0 blue:48/255.0 alpha:1] CGColor],(id)[[UIColor colorWithRed:35/255.0 green:38/255.0 blue:38/255.0 alpha:1] CGColor], nil];
-    [self.overviewContainer.layer insertSublayer:overviewGradient atIndex:0];
-    
-    self.overviewContainer.layer.shadowColor = [UIColor blackColor].CGColor;
-    self.overviewContainer.layer.shadowOffset = CGSizeMake(0,1);
-    self.overviewContainer.layer.shadowOpacity = 1;
-    self.overviewContainer.layer.shadowRadius = 1.0;
-    
-    //Hero Biography Gradient
-    CAGradientLayer *bioGradient = [CAGradientLayer layer];
-    bioGradient.frame = self.bioContainer.bounds;
-    bioGradient.colors = [NSArray arrayWithObjects:(id)[[UIColor colorWithRed:46/255.0 green:48/255.0 blue:48/255.0 alpha:1] CGColor],(id)[[UIColor colorWithRed:35/255.0 green:38/255.0 blue:38/255.0 alpha:1] CGColor], nil];
-    [self.bioContainer.layer insertSublayer:bioGradient atIndex:0];
-    
-    self.bioContainer.layer.shadowColor = [UIColor blackColor].CGColor;
-    self.bioContainer.layer.shadowOffset = CGSizeMake(0,1);
-    self.bioContainer.layer.shadowOpacity = 1;
-    self.bioContainer.layer.shadowRadius = 1.0;
-    
-    //Hero Stats Gradient
-    CAGradientLayer *statsGradient = [CAGradientLayer layer];
-    statsGradient.frame = self.statsContainer.bounds;
-    statsGradient.colors = [NSArray arrayWithObjects:(id)[[UIColor colorWithRed:46/255.0 green:48/255.0 blue:48/255.0 alpha:1] CGColor],(id)[[UIColor colorWithRed:35/255.0 green:38/255.0 blue:38/255.0 alpha:1] CGColor], nil];
-    [self.statsContainer.layer insertSublayer:statsGradient atIndex:0];
-    
-    self.statsContainer.layer.shadowColor = [UIColor blackColor].CGColor;
-    self.statsContainer.layer.shadowOffset = CGSizeMake(0,1);
-    self.statsContainer.layer.shadowOpacity = 1;
-    self.statsContainer.layer.shadowRadius = 1.0;
-    
-}
 
 - (void)configureScrollviewLayout {
     //First the biography container

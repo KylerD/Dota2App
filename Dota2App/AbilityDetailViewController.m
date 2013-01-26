@@ -45,11 +45,6 @@
     self.abilityImage.layer.shadowRadius = 5.0;
     self.abilityImage.clipsToBounds = NO;
     
-    CAGradientLayer *makeGradient = [CAGradientLayer layer];
-    makeGradient.frame = self.overviewContainer.bounds;
-    makeGradient.colors = [NSArray arrayWithObjects:(id)[[UIColor colorWithRed:46/255.0 green:48/255.0 blue:48/255.0 alpha:1] CGColor],(id)[[UIColor colorWithRed:35/255.0 green:38/255.0 blue:38/255.0 alpha:1] CGColor], nil];
-    [self.overviewContainer.layer insertSublayer:makeGradient atIndex:1];
-    
     self.overviewContainer.layer.shadowColor = [UIColor blackColor].CGColor;
     self.overviewContainer.layer.shadowOffset = CGSizeMake(0,1);
     self.overviewContainer.layer.shadowOpacity = 1;

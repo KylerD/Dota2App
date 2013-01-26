@@ -216,16 +216,7 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     }
     [abilityCell isPassive:[ability.isPassive boolValue]];
     
-    //Draw Gradient
-    CGFloat abilityCellHeight = [self tableView:self.tableView heightForRowAtIndexPath:indexPath];
-    UIView *sbview = [[UIView alloc] initWithFrame:CGRectMake(0, 0, abilityCell.frame.size.width, abilityCellHeight)];
-    CAGradientLayer *gradient = [CAGradientLayer layer];
-    gradient.frame = sbview.bounds;
-    gradient.colors = [NSArray arrayWithObjects:(id)[UIColor colorWithRed:117/ 255.0 green:0/ 255.0 blue:2/ 255.0 alpha:1.0].CGColor, (id)[UIColor colorWithRed:41/ 255.0 green:0/ 255.0 blue:2/ 255.0 alpha:1.0].CGColor, nil];
-    [sbview.layer insertSublayer:gradient atIndex:0];
-    abilityCell.selectedBackgroundView = sbview;
-    
-    
+
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
