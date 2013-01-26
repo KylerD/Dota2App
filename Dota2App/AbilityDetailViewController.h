@@ -23,12 +23,9 @@
 @property (nonatomic, strong) IBOutlet UIImageView *mcIcon;
 @property (nonatomic, strong) IBOutlet UIImageView *cdIcon;
 @property (nonatomic, strong) IBOutlet UIScrollView *scrollView;
-@property (nonatomic, strong) IBOutlet UIButton *videoButton;
 @property (nonatomic, retain) IBOutlet UIView * overviewContainer;
 @property (nonatomic, retain) IBOutlet UITableView * tableView;
 
-- (void)makeiPhoneGridWithDictionary: (NSDictionary*)dictionary;
-- (void)makeiPadGridWithDictionary: (NSDictionary*)dictionary;
-
 -(void)configureView;
+- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 @end

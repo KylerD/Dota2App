@@ -26,7 +26,6 @@
 		5C4DE7CF16A2EC07009E74FF /* PagedWelcome.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DE7CD16A2EB63009E74FF /* PagedWelcome.m */; };
 		5C4DE7D316A32CAF009E74FF /* HelloViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DE7D116A32CAF009E74FF /* HelloViewController.m */; };
 		5C4DE7D416A32CAF009E74FF /* HelloViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C4DE7D216A32CAF009E74FF /* HelloViewController.xib */; };
-		5C4DE7D616A332E4009E74FF /* bounty hunter_large.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5C4DE7D516A332E4009E74FF /* bounty hunter_large.jpg */; };
 		5C4DE7D916A339EE009E74FF /* destroyer_large.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5C4DE7D716A339EE009E74FF /* destroyer_large.jpg */; };
 		5C4DE7DA16A339EE009E74FF /* ursa_large.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5C4DE7D816A339EE009E74FF /* ursa_large.jpg */; };
 		5C4DE7E116A33B6E009E74FF /* SuggestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4DE7DC16A33AB2009E74FF /* SuggestionsViewController.m */; };
@@ -711,7 +710,6 @@
 		5C4DE7D016A32CAF009E74FF /* HelloViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloViewController.h; sourceTree = "<group>"; };
 		5C4DE7D116A32CAF009E74FF /* HelloViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloViewController.m; sourceTree = "<group>"; };
 		5C4DE7D216A32CAF009E74FF /* HelloViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelloViewController.xib; sourceTree = "<group>"; };
-		5C4DE7D516A332E4009E74FF /* bounty hunter_large.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "bounty hunter_large.jpg"; path = "../../../../Pictures/dota2/bounty hunter_large.jpg"; sourceTree = "<group>"; };
 		5C4DE7D716A339EE009E74FF /* destroyer_large.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = destroyer_large.jpg; sourceTree = "<group>"; };
 		5C4DE7D816A339EE009E74FF /* ursa_large.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ursa_large.jpg; sourceTree = "<group>"; };
 		5C4DE7DB16A33AB2009E74FF /* SuggestionsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuggestionsViewController.h; sourceTree = "<group>"; };
@@ -2218,7 +2216,6 @@
 			isa = PBXGroup;
 			children = (
 				5C4DE7E516A33C71009E74FF /* lina_large.jpg */,
-				5C4DE7D516A332E4009E74FF /* bounty hunter_large.jpg */,
 				5C4DE7D716A339EE009E74FF /* destroyer_large.jpg */,
 				5C4DE7D816A339EE009E74FF /* ursa_large.jpg */,
 			);
@@ -3041,7 +3038,6 @@
 				1707692B16A4694F00FAC276 /* playicon.png in Resources */,
 				1707692D16A561B900FAC276 /* Recipe_Scroll.png in Resources */,
 				5C4DE7D416A32CAF009E74FF /* HelloViewController.xib in Resources */,
-				5C4DE7D616A332E4009E74FF /* bounty hunter_large.jpg in Resources */,
 				5C4DE7D916A339EE009E74FF /* destroyer_large.jpg in Resources */,
 				5C4DE7DA16A339EE009E74FF /* ursa_large.jpg in Resources */,
 				5C4DE7E616A33C71009E74FF /* lina_large.jpg in Resources */,

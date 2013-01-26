@@ -20,7 +20,7 @@
 @implementation AbilityDetailViewController
 @synthesize ability;
 @synthesize titleLabel, descriptionLabel, mcLabel, cdLabel, abilityImage, videoWebView, overviewContainer;
-@synthesize mcIcon, cdIcon, scrollView, videoButton,tableView;
+@synthesize mcIcon, cdIcon, scrollView,tableView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

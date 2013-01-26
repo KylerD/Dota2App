@@ -42,6 +42,7 @@
 @synthesize numberOfPages = _numberOfPages;
 @synthesize coreNormalColor = _coreNormalColor, coreSelectedColor = _coreSelectedColor, strokeNormalColor = _strokeNormalColor, strokeSelectedColor = _strokeSelectedColor;
 @synthesize selectedThumbImage = _selectedThumbImage, selectedThumbImageForIndex = _selectedThumbImageForIndex;
+@synthesize thumbImage = _thumbImage, thumbImageForIndex = _thumbImageForIndex;
 
 #define COLOR_GRAYISHBLUE [UIColor colorWithRed:128/255.0 green:130/255.0 blue:133/255.0 alpha:1]
 #define COLOR_GRAY [UIColor colorWithRed:0.2 green:0.2 blue:0.2 alpha:1]
@@ -347,15 +348,15 @@
     }
     
     if ((aThumbImage != nil))
-        [self.thumbImageForIndex setObject:aThumbImage forKey:@(index)];
+        [self.thumbImageForIndex setObject:aThumbImage forKey:[NSNumber numberWithInt:index]];
     else
-        [self.thumbImageForIndex removeObjectForKey:@(index)];
+        [self.thumbImageForIndex removeObjectForKey:[NSNumber numberWithInt:index]];
     
     [self setNeedsDisplay];
 }
 
 - (UIImage *)thumbImageForIndex:(NSInteger)index {
-    UIImage* aThumbImage = [self.thumbImageForIndex objectForKey:@(index)];
+    UIImage* aThumbImage = [self.thumbImageForIndex objectForKey:[NSNumber numberWithInt:index]];
     if (aThumbImage == nil)
         aThumbImage = self.thumbImage;
     
@@ -368,15 +369,15 @@
     }
     
     if ((aSelectedThumbImage != nil))
-        [self.selectedThumbImageForIndex setObject:aSelectedThumbImage forKey:@(index)];
+        [self.selectedThumbImageForIndex setObject:aSelectedThumbImage forKey:[NSNumber numberWithInt:index]];
     else
-        [self.selectedThumbImageForIndex removeObjectForKey:@(index)];
+        [self.selectedThumbImageForIndex removeObjectForKey:[NSNumber numberWithInt:index]];
     
     [self setNeedsDisplay];
 }
 
 - (UIImage *)selectedThumbImageForIndex:(NSInteger)index {
-    UIImage* aSelectedThumbImage = [self.selectedThumbImageForIndex objectForKey:@(index)];
+    UIImage* aSelectedThumbImage = [self.selectedThumbImageForIndex objectForKey:[NSNumber numberWithInt:index]];
     if (aSelectedThumbImage == nil)
         aSelectedThumbImage = self.selectedThumbImage;
     
