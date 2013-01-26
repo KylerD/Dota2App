@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="2843" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="QwK-Pb-ZTE">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="10K549" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="QwK-Pb-ZTE">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
         <scene sceneID="mzi-Xx-fVQ">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="QwK-Pb-ZTE" sceneMemberID="viewController">
@@ -23,7 +23,6 @@
             </objects>
             <point key="canvasLocation" x="-462" y="39"/>
         </scene>
-        <!--Navigation Controller - Heroes-->
         <scene sceneID="oRH-xo-vgD">
             <objects>
                 <navigationController definesPresentationContext="YES" id="ls3-Ln-bdb" sceneMemberID="viewController">
@@ -39,7 +38,6 @@
             </objects>
             <point key="canvasLocation" x="-40" y="39"/>
         </scene>
-        <!--Master View Controller - Master-->
         <scene sceneID="18">
             <objects>
                 <tableViewController storyboardIdentifier="" title="Master" id="12" customClass="MasterViewController" sceneMemberID="viewController">
@@ -64,14 +62,14 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" adjustsFontSizeToFit="NO" id="EhS-WK-OUu">
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" minimumFontSize="11" id="EhS-WK-OUu">
                                             <rect key="frame" x="64" y="6" width="203" height="35"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" adjustsFontSizeToFit="NO" id="Y5z-zJ-Ezt">
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" minimumFontSize="6" id="Y5z-zJ-Ezt">
                                             <rect key="frame" x="64" y="38" width="203" height="15"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="11"/>
@@ -132,7 +130,6 @@
             </objects>
             <point key="canvasLocation" x="426" y="56"/>
         </scene>
-        <!--Ability Detail View Controller-->
         <scene sceneID="W4W-Ga-Enp">
             <objects>
                 <viewController id="hZw-Nn-U4y" customClass="AbilityDetailViewController" sceneMemberID="viewController">
@@ -143,6 +140,7 @@
                             <view contentMode="scaleToFill" id="Tv0-eS-drq">
                                 <rect key="frame" x="8" y="9" width="304" height="127"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.14117647059999999" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="q8B-cp-fKX">
                                 <rect key="frame" x="138" y="25" width="162" height="21"/>
@@ -199,7 +197,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.13725490196078433" green="0.13725490196078433" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.1234513753" green="0.1244762866" blue="0.12755102039999999" alpha="1" colorSpace="calibratedRGB"/>
                     </scrollView>
                     <navigationItem key="navigationItem" id="OgA-Cw-zyf"/>
                     <connections>
@@ -220,7 +218,6 @@
             </objects>
             <point key="canvasLocation" x="426" y="-1249"/>
         </scene>
-        <!--Abilities View Controller-->
         <scene sceneID="RKh-cU-SDJ">
             <objects>
                 <viewController storyboardIdentifier="AbilityVC" id="Jts-s9-SfV" customClass="AbilitiesViewController" sceneMemberID="viewController">
@@ -247,14 +244,14 @@
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="MP" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontSizeToFit="NO" id="gt5-sR-Skf">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="MP" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" minimumFontSize="9" id="gt5-sR-Skf">
                                                     <rect key="frame" x="113" y="38" width="160" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="CD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontSizeToFit="NO" id="sg1-Pw-mUb">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="CD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" minimumFontSize="9" id="sg1-Pw-mUb">
                                                     <rect key="frame" x="113" y="65" width="160" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
@@ -314,7 +311,6 @@
             </objects>
             <point key="canvasLocation" x="-117" y="-1249"/>
         </scene>
-        <!--Items Detail View Controller - Item Detail-->
         <scene sceneID="uEH-ob-S4O">
             <objects>
                 <viewController id="PjS-wH-Wmc" customClass="ItemsDetailViewController" sceneMemberID="viewController">
@@ -372,6 +368,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.14117647059999999" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="Xid-O3-7zj">
                                 <rect key="frame" x="20" y="20" width="85" height="64"/>
@@ -442,7 +439,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="backgroundColor" red="0.1234513753" green="0.1244762866" blue="0.12755102039999999" alpha="1" colorSpace="calibratedRGB"/>
                     </scrollView>
                     <navigationItem key="navigationItem" title="Item Detail" id="0HH-Fl-hWl"/>
                     <connections>
@@ -464,16 +461,15 @@
             </objects>
             <point key="canvasLocation" x="-1059" y="-1257"/>
         </scene>
-        <!--Items Table View Controller - Items-->
         <scene sceneID="mrZ-bO-NmL">
             <objects>
                 <tableViewController id="71I-n7-1hQ" customClass="ItemsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="IF7-uk-cQW">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="separatorColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" barStyle="blackOpaque" placeholder="Enter a name..." id="6cK-EZ-F5O">
+                        <color key="backgroundColor" red="0.1019607843" green="0.1058823529" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" barStyle="blackTranslucent" placeholder="Enter a name..." id="6cK-EZ-F5O">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
@@ -490,22 +486,22 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="78O-80-ros">
-                                            <rect key="frame" x="70" y="9" width="211" height="17"/>
+                                            <rect key="frame" x="84" y="9" width="211" height="24"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="pL0-Px-hhl">
-                                            <rect key="frame" x="6" y="9" width="56" height="43"/>
+                                            <rect key="frame" x="20" y="9" width="56" height="43"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="gold.png" id="iQp-G4-2dc">
-                                            <rect key="frame" x="69" y="36" width="25" height="17"/>
+                                            <rect key="frame" x="84" y="38" width="25" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fzr-Bo-wa7">
-                                            <rect key="frame" x="102" y="34" width="178" height="21"/>
+                                            <rect key="frame" x="117" y="36" width="178" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                             <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -514,7 +510,7 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
-                                <color key="backgroundColor" red="0.13725490196078433" green="0.13725490196078433" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="cellDetailLabel" destination="Fzr-Bo-wa7" id="I6T-5x-9rY"/>
                                     <outlet property="cellImage" destination="pL0-Px-hhl" id="l5K-hk-oCP"/>
@@ -533,7 +529,6 @@
             </objects>
             <point key="canvasLocation" x="-1045" y="-564"/>
         </scene>
-        <!--Navigation Controller - Items-->
         <scene sceneID="bCc-yc-2D5">
             <objects>
                 <navigationController definesPresentationContext="YES" id="TEK-HE-mTp" sceneMemberID="viewController">
@@ -549,7 +544,6 @@
             </objects>
             <point key="canvasLocation" x="-483" y="-564"/>
         </scene>
-        <!--View Controller-->
         <scene sceneID="bnk-54-Fyi">
             <objects>
                 <viewController id="gPp-GD-vjD" sceneMemberID="viewController">
@@ -563,7 +557,6 @@
             </objects>
             <point key="canvasLocation" x="-5" y="-584"/>
         </scene>
-        <!--Information View Controller-->
         <scene sceneID="7UB-by-1hV">
             <objects>
                 <viewController storyboardIdentifier="InformationVC" id="47e-SO-JZt" customClass="InformationViewController" sceneMemberID="viewController">
@@ -661,6 +654,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.14117647059999999" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Overview" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EtG-Tm-YQ1">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="41"/>
@@ -688,6 +682,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.14117647059999999" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" id="hKh-Bs-cz1">
                                 <rect key="frame" x="8" y="752" width="304" height="90"/>
@@ -722,6 +717,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.14117647059999999" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Stats" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1IW-Nc-ysQ">
                                 <rect key="frame" x="0.0" y="744" width="320" height="41"/>
@@ -731,7 +727,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="backgroundColor" red="0.1234513753" green="0.1244762866" blue="0.12755102039999999" alpha="1" colorSpace="calibratedRGB"/>
                         <connections>
                             <outlet property="delegate" destination="47e-SO-JZt" id="jgD-iA-fHA"/>
                         </connections>
@@ -761,7 +757,6 @@
             </objects>
             <point key="canvasLocation" x="426" y="-590"/>
         </scene>
-        <!--Guides View Controller-->
         <scene sceneID="lXv-bf-yKo">
             <objects>
                 <tableViewController storyboardIdentifier="GuidesVC" id="FaU-yd-OsX" customClass="GuidesViewController" sceneMemberID="viewController">
@@ -790,7 +785,6 @@
             </objects>
             <point key="canvasLocation" x="860" y="-595"/>
         </scene>
-        <!--Detail View Controller-->
         <scene sceneID="u1w-LA-eN5">
             <objects>
                 <viewController id="g5B-bk-5l4" customClass="DetailViewController" sceneMemberID="viewController">
@@ -871,7 +865,6 @@
                 <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
                 <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
                 <relationship kind="outlet" name="titleLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="videoButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="videoWebView" candidateClass="UIWebView"/>
             </relationships>
         </class>
