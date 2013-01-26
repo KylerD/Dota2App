@@ -636,6 +636,7 @@
 		5C6DD7BB169B637B004063DF /* X Marks the Spot.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C6DD565169B637A004063DF /* X Marks the Spot.png */; };
 		5C6DD7BD169B6B23004063DF /* avatar_container.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C6DD7BC169B6B23004063DF /* avatar_container.png */; };
 		5C75165E16A739F300C9FFC2 /* cancel-14.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C75165D16A739F300C9FFC2 /* cancel-14.png */; };
+		5C99DFF616B40F8000235CB6 /* bounty hunter_large.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5C99DFF516B40F8000235CB6 /* bounty hunter_large.jpg */; };
 		5CD0F77816A046C1003C6A67 /* GuidesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD0F77616A046C1003C6A67 /* GuidesViewController.m */; };
 		5CD0F77B16A04993003C6A67 /* Medusa_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CD0F77A16A04993003C6A67 /* Medusa_icon.png */; };
 		5CD53E061685B08E0002803D /* hero.json in Resources */ = {isa = PBXBuildFile; fileRef = 5CD53E051685B08E0002803D /* hero.json */; };
@@ -1324,6 +1325,7 @@
 		5C6DD565169B637A004063DF /* X Marks the Spot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "X Marks the Spot.png"; sourceTree = "<group>"; };
 		5C6DD7BC169B6B23004063DF /* avatar_container.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar_container.png; sourceTree = "<group>"; };
 		5C75165D16A739F300C9FFC2 /* cancel-14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cancel-14.png"; path = "../../../cancel-14.png"; sourceTree = "<group>"; };
+		5C99DFF516B40F8000235CB6 /* bounty hunter_large.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bounty hunter_large.jpg"; sourceTree = "<group>"; };
 		5CD0F77516A046C1003C6A67 /* GuidesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuidesViewController.h; sourceTree = "<group>"; };
 		5CD0F77616A046C1003C6A67 /* GuidesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuidesViewController.m; sourceTree = "<group>"; };
 		5CD0F77A16A04993003C6A67 /* Medusa_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Medusa_icon.png; sourceTree = "<group>"; };
@@ -2215,6 +2217,7 @@
 		5CF322DF16AAE9F5001EC78E /* images */ = {
 			isa = PBXGroup;
 			children = (
+				5C99DFF516B40F8000235CB6 /* bounty hunter_large.jpg */,
 				5C4DE7E516A33C71009E74FF /* lina_large.jpg */,
 				5C4DE7D716A339EE009E74FF /* destroyer_large.jpg */,
 				5C4DE7D816A339EE009E74FF /* ursa_large.jpg */,
@@ -3042,6 +3045,7 @@
 				5C4DE7DA16A339EE009E74FF /* ursa_large.jpg in Resources */,
 				5C4DE7E616A33C71009E74FF /* lina_large.jpg in Resources */,
 				5C75165E16A739F300C9FFC2 /* cancel-14.png in Resources */,
+				5C99DFF616B40F8000235CB6 /* bounty hunter_large.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
