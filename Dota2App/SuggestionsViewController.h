@@ -15,4 +15,5 @@
 @property (nonatomic,retain) IBOutlet UIView * messagePanel;
 @property  (nonatomic,assign) id <DismissModalParentDelgate> delegate;
 - (IBAction)close:(id)sender;
+- (CGRect)getScreenFrameForOrientation:(UIInterfaceOrientation)orientation;
 @end

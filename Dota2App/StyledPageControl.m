@@ -37,6 +37,11 @@
 
 
 @implementation StyledPageControl
+@synthesize currentPage = _currentPage, hidesForSinglePage = _hidesForSinglePage, pageControlStyle = _pageControlStyle;
+@synthesize strokeWidth = _strokeWidth, diameter = _diameter, gapWidth = _gapWidth;
+@synthesize numberOfPages = _numberOfPages;
+@synthesize coreNormalColor = _coreNormalColor, coreSelectedColor = _coreSelectedColor, strokeNormalColor = _strokeNormalColor, strokeSelectedColor = _strokeSelectedColor;
+@synthesize selectedThumbImage = _selectedThumbImage, selectedThumbImageForIndex = _selectedThumbImageForIndex;
 
 #define COLOR_GRAYISHBLUE [UIColor colorWithRed:128/255.0 green:130/255.0 blue:133/255.0 alpha:1]
 #define COLOR_GRAY [UIColor colorWithRed:0.2 green:0.2 blue:0.2 alpha:1]

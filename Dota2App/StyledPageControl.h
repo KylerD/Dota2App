@@ -46,18 +46,19 @@ typedef enum
 } PageControlStyle;
 
 @interface StyledPageControl : UIControl
-@property (nonatomic) UIColor *coreNormalColor, *coreSelectedColor;
-@property (nonatomic) UIColor *strokeNormalColor, *strokeSelectedColor;
+@property (nonatomic, strong) UIColor *coreNormalColor, *coreSelectedColor;
+@property (nonatomic, strong) UIColor *strokeNormalColor, *strokeSelectedColor;
 @property (nonatomic, assign) int currentPage, numberOfPages;
 @property (nonatomic, assign) BOOL hidesForSinglePage;
 @property (nonatomic, assign) PageControlStyle pageControlStyle;
 @property (nonatomic, assign) int strokeWidth, diameter, gapWidth;
-@property (nonatomic) UIImage *thumbImage, *selectedThumbImage;
-@property (nonatomic) NSMutableDictionary *thumbImageForIndex, *selectedThumbImageForIndex;
+@property (nonatomic, strong) UIImage *thumbImage, *selectedThumbImage;
+@property (nonatomic, strong) NSMutableDictionary *thumbImageForIndex, *selectedThumbImageForIndex;
 
 - (void)setThumbImage:(UIImage *)aThumbImage forIndex:(NSInteger)index;
 - (UIImage *)thumbImageForIndex:(NSInteger)index;
 - (void)setSelectedThumbImage:(UIImage *)aSelectedThumbImage forIndex:(NSInteger)index;
 - (UIImage *)selectedThumbImageForIndex:(NSInteger)index;
+-(void)setup;
 
 @end

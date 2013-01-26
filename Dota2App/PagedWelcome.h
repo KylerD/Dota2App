@@ -2,8 +2,8 @@
 //  PagedWelcome
 //  pagingComponent
 //
-//  Created by Luke McNeice on 13/01/2013.
-//  Copyright (c) 2013 Luke McNeice. All rights reserved.
+//  Created by Luke  on 13/01/2013.
+//  Copyright (c) 2013 Luke . All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -18,4 +18,7 @@
 @property BOOL pageControlUsed;
 - (void)stopAutoPaging;
 - (void)startAutoPaging;
+- (CGRect)getScreenFrameForOrientation:(UIInterfaceOrientation)orientation;
+- (void)resizeViewsForOrientation:(UIInterfaceOrientation)orientation addingViews:(BOOL)addViews;
+- (void)configureView;
 @end
