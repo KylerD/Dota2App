@@ -333,6 +333,20 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     [self filterContentForSearchText:searchText scope:nil];
 }
 
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
+    [self.searchBar resignFirstResponder];
+}
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
+{
+    [self.searchBar resignFirstResponder];
+}
+
+- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar {
+    [self.searchBar resignFirstResponder];
+}
+
+
 #pragma mark - Screen Navigation
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

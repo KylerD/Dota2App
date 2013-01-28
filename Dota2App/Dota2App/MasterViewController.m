@@ -352,6 +352,10 @@
     [searchBar resignFirstResponder];
 }
 
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
+    [searchBar resignFirstResponder];
+}
+
 #pragma mark - Screen Navigation
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
