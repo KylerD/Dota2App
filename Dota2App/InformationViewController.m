@@ -51,7 +51,7 @@
 
 - (void)configureView {
 
-    
+    self.scrollView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     self.heroNameLabel.text = hero.name;
 
     self.heroImageView.image = [UIImage imageWithContentsOfFile:hero.detailImgPath];

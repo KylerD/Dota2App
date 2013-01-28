@@ -137,8 +137,9 @@
         self.splitViewController.viewControllers = heroNavStack;
     }
     self.tableView.scrollsToTop = YES;
-    //Select first hero automatically once view is configured
-    if (firstLoad && [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+    //Select first hero automatically once view is configured (only in landscape/ipad)
+    UIInterfaceOrientation interfaceOrientation = self.interfaceOrientation;
+    if (firstLoad && [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad && UIDeviceOrientationIsLandscape(interfaceOrientation)) {
         NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
         
         if ([self.tableView.delegate respondsToSelector:@selector(tableView:willSelectRowAtIndexPath:)]) {

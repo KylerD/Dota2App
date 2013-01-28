@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="1938" systemVersion="10K549" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="5">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="11G63" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="5">
     <dependencies>
-        <deployment defaultVersion="1280" identifier="iOS"/>
-        <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller - Heroes-->
         <scene sceneID="14">
             <objects>
                 <navigationController id="3" sceneMemberID="viewController">
@@ -21,6 +21,7 @@
             </objects>
             <point key="canvasLocation" x="-70" y="-1510"/>
         </scene>
+        <!--Detail View Controller - Detail-->
         <scene sceneID="16">
             <objects>
                 <viewController storyboardIdentifier="" title="Detail" id="4" customClass="DetailViewController" sceneMemberID="viewController">
@@ -64,6 +65,7 @@
             </objects>
             <point key="canvasLocation" x="516" y="278"/>
         </scene>
+        <!--Split View Controller-->
         <scene sceneID="18">
             <objects>
                 <splitViewController id="5" sceneMemberID="viewController">
@@ -79,6 +81,7 @@
             </objects>
             <point key="canvasLocation" x="-687" y="-630"/>
         </scene>
+        <!--Master View Controller - Master-->
         <scene sceneID="24">
             <objects>
                 <tableViewController storyboardIdentifier="" title="Master" clearsSelectionOnViewWillAppear="NO" id="19" customClass="MasterViewController" sceneMemberID="viewController">
@@ -187,6 +190,7 @@
             </objects>
             <point key="canvasLocation" x="375" y="-1510"/>
         </scene>
+        <!--Items Table View Controller - Items-->
         <scene sceneID="NR0-Ce-uLU">
             <objects>
                 <tableViewController id="Khv-Ek-cUs" customClass="ItemsTableViewController" sceneMemberID="viewController">
@@ -259,6 +263,7 @@
             </objects>
             <point key="canvasLocation" x="-126" y="-2743"/>
         </scene>
+        <!--Navigation Controller-->
         <scene sceneID="pOm-G0-DkK">
             <objects>
                 <navigationController storyboardIdentifier="ItemNav" definesPresentationContext="YES" id="XDe-kN-O2a" sceneMemberID="viewController">
@@ -273,6 +278,7 @@
             </objects>
             <point key="canvasLocation" x="504" y="-2935"/>
         </scene>
+        <!--Items Detail View Controller-->
         <scene sceneID="rLH-bi-yJo">
             <objects>
                 <viewController id="hFQ-YJ-Fl8" customClass="ItemsDetailViewController" sceneMemberID="viewController">
@@ -357,7 +363,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="728" height="61"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" minimumFontSize="10" id="rtx-QR-YlC">
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontSizeToFit="NO" id="rtx-QR-YlC">
                                                     <rect key="frame" x="78" y="18" width="157" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
@@ -421,6 +427,7 @@
             </objects>
             <point key="canvasLocation" x="1504" y="-2904"/>
         </scene>
+        <!--Navigation Controller - Items-->
         <scene sceneID="1hf-xI-Qg8">
             <objects>
                 <navigationController storyboardIdentifier="" definesPresentationContext="YES" id="I4a-s5-ntI" sceneMemberID="viewController">
@@ -436,6 +443,7 @@
             </objects>
             <point key="canvasLocation" x="-562" y="-2743"/>
         </scene>
+        <!--Tab Bar Controller-->
         <scene sceneID="nJF-Xu-zqg">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="iGa-z1-DcB" sceneMemberID="viewController">
@@ -454,6 +462,7 @@
             </objects>
             <point key="canvasLocation" x="-544" y="-1526"/>
         </scene>
+        <!--Navigation Controller-->
         <scene sceneID="50">
             <objects>
                 <navigationController id="42" sceneMemberID="viewController">
@@ -468,6 +477,7 @@
             </objects>
             <point key="canvasLocation" x="-276" y="278"/>
         </scene>
+        <!--Guides View Controller-->
         <scene sceneID="vPr-Hd-7Nu">
             <objects>
                 <tableViewController storyboardIdentifier="GuidesVC" id="TXn-GJ-XaX" customClass="GuidesViewController" sceneMemberID="viewController">
@@ -496,6 +506,7 @@
             </objects>
             <point key="canvasLocation" x="-1259" y="1263"/>
         </scene>
+        <!--Information View Controller-->
         <scene sceneID="lIw-Jv-2kd">
             <objects>
                 <viewController storyboardIdentifier="InformationVC" id="7V3-sk-vAF" customClass="InformationViewController" sceneMemberID="viewController">
@@ -689,6 +700,7 @@
             </objects>
             <point key="canvasLocation" x="-369" y="1283"/>
         </scene>
+        <!--Abilities View Controller-->
         <scene sceneID="eXJ-NH-WOb">
             <objects>
                 <viewController storyboardIdentifier="AbilityVC" id="T6e-Ig-B8I" customClass="AbilitiesViewController" sceneMemberID="viewController">
@@ -766,6 +778,7 @@
             </objects>
             <point key="canvasLocation" x="575" y="1263"/>
         </scene>
+        <!--Ability Detail View Controller-->
         <scene sceneID="hbI-ge-RXI">
             <objects>
                 <viewController id="j3C-pY-Kim" customClass="AbilityDetailViewController" sceneMemberID="viewController">
