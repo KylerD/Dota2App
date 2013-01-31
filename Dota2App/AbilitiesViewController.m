@@ -57,6 +57,8 @@
     fetchItem = @"Ability";
     AppDelegate *del = [[UIApplication sharedApplication] delegate];
     managedObjectContext = del.managedObjectContext;
+    self.tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     
     
     fetchedRC = [self fetchedResultsControllerForEntity: fetchItem];

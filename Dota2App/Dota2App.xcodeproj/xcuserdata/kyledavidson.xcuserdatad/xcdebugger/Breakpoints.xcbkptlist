@@ -138,11 +138,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "AbilitiesViewController.m"
-         timestampString = "381331145.723291"
+         timestampString = "381336047.594424"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "154"
-         endingLineNumber = "154"
+         startingLineNumber = "156"
+         endingLineNumber = "156"
          landmarkName = "-configureCell:atIndexPath:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -151,11 +151,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "AbilitiesViewController.m"
-         timestampString = "379348008.643032"
+         timestampString = "381336047.594424"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "87"
-         endingLineNumber = "87"
+         startingLineNumber = "89"
+         endingLineNumber = "89"
          landmarkName = "@implementation AbilitiesViewController"
          landmarkType = "3">
       </FileBreakpoint>
@@ -164,11 +164,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "AbilitiesViewController.m"
-         timestampString = "379348303.337063"
+         timestampString = "381336047.594424"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "117"
-         endingLineNumber = "117"
+         startingLineNumber = "119"
+         endingLineNumber = "119"
          landmarkName = "-tableView:heightForRowAtIndexPath:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -177,11 +177,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "AbilitiesViewController.m"
-         timestampString = "379348302.702314"
+         timestampString = "381336047.594424"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "88"
-         endingLineNumber = "88"
+         startingLineNumber = "90"
+         endingLineNumber = "90"
          landmarkName = "@implementation AbilitiesViewController"
          landmarkType = "3">
       </FileBreakpoint>
@@ -190,11 +190,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "AbilitiesViewController.m"
-         timestampString = "379348416.659059"
+         timestampString = "381336047.594424"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "104"
-         endingLineNumber = "104"
+         startingLineNumber = "106"
+         endingLineNumber = "106"
          landmarkName = "-tableView:heightForRowAtIndexPath:"
          landmarkType = "5">
       </FileBreakpoint>
