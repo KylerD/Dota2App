@@ -139,6 +139,10 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
 -(NSString *)controller:(NSFetchedResultsController *)controller
 sectionIndexTitleForSectionName:(NSString *)sectionName {
     return sectionName;
