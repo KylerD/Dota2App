@@ -45,6 +45,8 @@
 - (void)configureView
 {    
     fetchedRC = [self fetchedResultsControllerForEntity: fetchItem];
+    self.tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    
     if (managedObjectContext) {
         NSError *error = nil;
         if (![fetchedRC performFetch:&error]) {

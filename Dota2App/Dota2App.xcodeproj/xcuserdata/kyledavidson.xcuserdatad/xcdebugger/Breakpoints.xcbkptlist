@@ -34,11 +34,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Dota2App/MasterViewController.m"
-         timestampString = "381076299.009815"
+         timestampString = "381336278.949662"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "279"
-         endingLineNumber = "279"
+         startingLineNumber = "281"
+         endingLineNumber = "281"
          landmarkName = "-controller:didChangeSection:atIndex:forChangeType:"
          landmarkType = "5">
       </FileBreakpoint>
