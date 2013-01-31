@@ -72,6 +72,8 @@
     [self.titleLabel setText:self.ability.name];
     //Set the mana cost
     
+    self.scrollView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    
     self.descriptionLabel.lineBreakMode = UILineBreakModeWordWrap;
     self.descriptionLabel.numberOfLines = 0;
     
