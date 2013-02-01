@@ -200,6 +200,8 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
             abilityCell.mp.textColor = [UIColor whiteColor];
             [abilityCell.mp setHighlightedTextColor:[UIColor blackColor]];
             [abilityCell addSubview:abilityCell.mp];
+        } else {
+            [abilityCell.mp setHidden:YES];
         }
         
         if (![ability.cd isEqualToString:@""]) {
@@ -218,6 +220,8 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
             abilityCell.cd.textColor = [UIColor whiteColor];
             [abilityCell.cd setHighlightedTextColor:[UIColor blackColor]];
             [abilityCell addSubview:abilityCell.cd];
+        } else {
+            [abilityCell.cd setHidden:YES];
         }
     }
     [abilityCell isPassive:[ability.isPassive boolValue]];
