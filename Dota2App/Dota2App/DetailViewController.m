@@ -54,7 +54,7 @@
             
     }
     
-    
+    self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     
     // add viewController so you can switch them later.
     //getCurrent on screenVC

@@ -57,6 +57,8 @@
     fetchItem = @"Ability";
     AppDelegate *del = [[UIApplication sharedApplication] delegate];
     managedObjectContext = del.managedObjectContext;
+    self.tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    self.view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     
     
     fetchedRC = [self fetchedResultsControllerForEntity: fetchItem];
@@ -139,6 +141,10 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
 -(NSString *)controller:(NSFetchedResultsController *)controller
 sectionIndexTitleForSectionName:(NSString *)sectionName {
     return sectionName;
@@ -194,6 +200,8 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
             abilityCell.mp.textColor = [UIColor whiteColor];
             [abilityCell.mp setHighlightedTextColor:[UIColor blackColor]];
             [abilityCell addSubview:abilityCell.mp];
+        } else {
+            [abilityCell.mp setHidden:YES];
         }
         
         if (![ability.cd isEqualToString:@""]) {
@@ -212,20 +220,13 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
             abilityCell.cd.textColor = [UIColor whiteColor];
             [abilityCell.cd setHighlightedTextColor:[UIColor blackColor]];
             [abilityCell addSubview:abilityCell.cd];
+        } else {
+            [abilityCell.cd setHidden:YES];
         }
     }
     [abilityCell isPassive:[ability.isPassive boolValue]];
     
-    //Draw Gradient
-    CGFloat abilityCellHeight = [self tableView:self.tableView heightForRowAtIndexPath:indexPath];
-    UIView *sbview = [[UIView alloc] initWithFrame:CGRectMake(0, 0, abilityCell.frame.size.width, abilityCellHeight)];
-    CAGradientLayer *gradient = [CAGradientLayer layer];
-    gradient.frame = sbview.bounds;
-    gradient.colors = [NSArray arrayWithObjects:(id)[UIColor colorWithRed:117/ 255.0 green:0/ 255.0 blue:2/ 255.0 alpha:1.0].CGColor, (id)[UIColor colorWithRed:41/ 255.0 green:0/ 255.0 blue:2/ 255.0 alpha:1.0].CGColor, nil];
-    [sbview.layer insertSublayer:gradient atIndex:0];
-    abilityCell.selectedBackgroundView = sbview;
-    
-    
+
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

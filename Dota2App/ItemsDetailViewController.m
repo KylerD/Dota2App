@@ -104,18 +104,6 @@
     self.cost.text = [NSString stringWithFormat:@"%@",_item.cost];
     self.cooldown.text = [NSString stringWithFormat:@"%@", _item.coolDown];
     
-
-    
-    CAGradientLayer *makeGradient = [CAGradientLayer layer];
-    makeGradient.frame = self.overviewContainer.bounds;
-    makeGradient.colors = [NSArray arrayWithObjects:(id)[[UIColor colorWithRed:46/255.0 green:48/255.0 blue:48/255.0 alpha:1] CGColor],(id)[[UIColor colorWithRed:35/255.0 green:38/255.0 blue:38/255.0 alpha:1] CGColor], nil];
-    [self.overviewContainer.layer insertSublayer:makeGradient atIndex:0];
-    
-    self.overviewContainer.layer.shadowColor = [UIColor blackColor].CGColor;
-    self.overviewContainer.layer.shadowOffset = CGSizeMake(0,1);
-    self.overviewContainer.layer.shadowOpacity = 1;
-    self.overviewContainer.layer.shadowRadius = 1.0;
-    
     CGSize maximumLabelSize = CGSizeMake(self.description.frame.size.width, FLT_MAX);
     
     CGSize descriptionExpectedLabelSize = [self.description.text sizeWithFont:self.description.font constrainedToSize:maximumLabelSize lineBreakMode:self.description.lineBreakMode];   

@@ -51,10 +51,6 @@
 
 - (void)configureView;
 /*
- * Configures gradient layers for the containers and adds them as sublayers
- */
-- (void)configureGradientLayers;
-/*
  * Configures subviews of scrollview depending on dynamic height of hero bio
  */
 - (void)configureScrollviewLayout;
