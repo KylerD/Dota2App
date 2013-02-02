@@ -135,6 +135,15 @@
     
 }
 
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+    // Do something with the url here
+    
+    NSLog(@"REQUEST FROM CUSTOM URL: %@",url);
+    
+    return YES;
+}
+
 - (void)configureScrollviewLayout {
     //First the biography container
     int bioContainerHeight = self.bioLabel.frame.size.height + 40; //40 for padding

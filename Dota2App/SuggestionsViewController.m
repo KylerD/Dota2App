@@ -60,6 +60,17 @@
     self.messagePanel.layer.masksToBounds = YES;
 }
 
+- (IBAction)suggest:(id)sender{
+    NSString *mailurl=[NSString stringWithFormat:
+                       @"mailto:%@?subject=%@%@&body=%@%@",@"l.mcneice@kainos.com",@"DOTA2 Clarity - Suggestion", @"DOTA2 Clarity"
+                       ,@"Hey,\nI have a sugestion.\n\n",@"Sent from the DOTA2Clarity App"];
+    
+    NSURL * url = [NSURL URLWithString:[mailurl stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    
+    [[UIApplication sharedApplication] openURL:url];
+
+}
+
 - (IBAction)close:(id)sender{
     [self.delegate dismissModalFromParent];
 }

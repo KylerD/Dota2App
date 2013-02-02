@@ -8,6 +8,9 @@
 
 #import "HelloViewController.h"
 #import <QuartzCore/QuartzCore.h>
+#import "Socialize/SZTwitterUtils.h"
+#import "Socialize/SZFacebookUtils.h"
+
 
 @interface HelloViewController ()
 
@@ -15,7 +18,7 @@
 
 @implementation HelloViewController
 
-@synthesize backgroundImage,messagePanel,delegate;
+@synthesize backgroundImage,welcomePanel,sharePanel,delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -56,13 +59,43 @@
 {
     [super viewDidLoad];
     
-    self.messagePanel.layer.cornerRadius = 8;
-    self.messagePanel.layer.masksToBounds = YES;
+    //self.welcomePanel.center = self.view.center;
 
 }
 
 - (IBAction)close:(id)sender{
     [self.delegate dismissModalFromParent];
+}
+
+- (IBAction)share:(id)sender{
+    
+    [self postToTwitter];
+}
+
+- (void)postToTwitter {
+    NSString *text = @"Test";
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObject:text forKey:@"status"];
+    
+//    [SZTwitterUtils postWithViewController:self path:@"/1/statuses/update.json" params:params success:^(id result) {
+//        NSLog(@"Posted to Twitter feed: %@", result);
+//        
+//    } failure:^(NSError *error) {
+//        NSLog(@"Failed to post to Twitter feed: %@ / %@", [error localizedDescription], [error userInfo]);
+//    }];
+    
+    NSMutableDictionary *postData = [NSMutableDictionary dictionaryWithObjectsAndKeys:
+                                     @"hi there", @"message",
+                                     nil];
+    
+    
+    [SZFacebookUtils postWithGraphPath:@"me/feed" params:postData success:^(id result) {
+        NSLog(@"Posted to fb feed: %@", result);
+        
+    }  failure:^(NSError *error) {
+        NSLog(@"Failed to post to fb feed: %@ / %@", [error localizedDescription], [error userInfo]);
+    }];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning

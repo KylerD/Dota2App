@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "StyledPageControl.h"
-#import "DismissModalParentDelgate.h"
+#import "PagingDelegate.h"
 
-@interface PagedWelcome : UIViewController <UIScrollViewDelegate,DismissModalParentDelgate>
+@interface PagedWelcome : UIViewController <UIScrollViewDelegate,PagingDelegate>
 @property (nonatomic,retain) StyledPageControl * pageControl;
 @property (nonatomic,retain) UIScrollView * scrollView;
 @property (nonatomic,retain) NSArray * views;

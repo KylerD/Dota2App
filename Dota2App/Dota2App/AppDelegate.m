@@ -11,6 +11,7 @@
 #import "HeroParser.h"
 #import "Itemparser.h"
 #import "PagedWelcome.h"
+#import "Socialize/Socialize.h"
 
 @implementation AppDelegate
 
@@ -25,7 +26,7 @@
 
 //STACKMOB SETTINGS
 #define STACKMOB_ENABLE NO
-#define DEVELOPER_FORCE_WELCOME NO
+#define DEVELOPER_FORCE_WELCOME YES
 #define STACKMOB_KEY @"6586fffa-0b95-426c-8763-d30299599b40"
 #define UseJSON YES
 
@@ -35,6 +36,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
+    // set the socialize api key and secret, register your app here: http://www.getsocialize.com/apps/
+    [Socialize storeConsumerKey:@"82c2299d-cd5c-40b7-995b-9dc70025178c"];
+    [Socialize storeConsumerSecret:@"a1444a54-d869-4fea-b2f6-3c7f3de4e7c8"];
+    [SZTwitterUtils setConsumerKey:@"u9do3dzYoItcDGMrqUy5A" consumerSecret:@"XMxHfK5XXnUhdSddUc0D6UVXnxhVH8ggxbthHCqhQtA"];
+    [SZFacebookUtils setAppId:@"201163993356091"];
     NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:SOB_USER_AGENT, @"UserAgent", nil];
     [[NSUserDefaults standardUserDefaults] registerDefaults:dictionary];
     
