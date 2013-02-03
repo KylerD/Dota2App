@@ -2992,14 +2992,6 @@
 		B18C9E22164E8B5900ADE97A = {
 			isa = PBXGroup;
 			children = (
-				5CEEBF2216B45054000C56AA /* AdSupport.framework */,
-				5CEEBF2016B45045000C56AA /* MapKit.framework */,
-				5C4F114416B44A8F00EB4527 /* Social.framework */,
-				5C4F114216B44A7B00EB4527 /* Twitter.framework */,
-				5C4F114016B44A7400EB4527 /* CoreLocation.framework */,
-				5C4F113E16B44A6E00EB4527 /* CFNetwork.framework */,
-				5C99E0DD16B439D900235CB6 /* MessageUI.framework */,
-				5C47D48E1696170F00C2DA74 /* QuartzCore.framework */,
 				B18C9E39164E8B5900ADE97A /* Dota2App */,
 				B18C9E30164E8B5900ADE97A /* Frameworks */,
 				B18C9E2E164E8B5900ADE97A /* Products */,
@@ -3017,6 +3009,14 @@
 		B18C9E30164E8B5900ADE97A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5CEEBF2216B45054000C56AA /* AdSupport.framework */,
+				5CEEBF2016B45045000C56AA /* MapKit.framework */,
+				5C4F114416B44A8F00EB4527 /* Social.framework */,
+				5C4F114216B44A7B00EB4527 /* Twitter.framework */,
+				5C4F114016B44A7400EB4527 /* CoreLocation.framework */,
+				5C4F113E16B44A6E00EB4527 /* CFNetwork.framework */,
+				5C99E0DD16B439D900235CB6 /* MessageUI.framework */,
+				5C47D48E1696170F00C2DA74 /* QuartzCore.framework */,
 				5CEEBD6316B4502C000C56AA /* Socialize.embeddedframework */,
 				ED08F243165D1923001C4424 /* Security.framework */,
 				ED08F20D165D1322001C4424 /* SystemConfiguration.framework */,
