@@ -13,6 +13,7 @@
 
 @interface UpdatesViewController (){
     JWFolders *folder;
+    ShareViewController * shareViewController;
 }
 
 - (CGRect)getScreenFrameForCurrentOrientation;
@@ -96,7 +97,7 @@
 #define shareViewiPadNibName @"ShareViewipad"
 
 
-- (ShareViewController*)shareSubmitViewController{
+- (ShareViewController*)shareSubmitViewControllerWithContext:(NSString*)context {
     
     
     ShareViewController * shareVC = nil;
@@ -109,12 +110,13 @@
     }
     
     shareVC = [[ShareViewController alloc] initWithNibName:deviceBasedNibName bundle:nil];
+    shareVC.context = context;
     
     return shareVC;
  }
 
 
-- (void)splitFromButton:(UIButton*)button{
+- (void)splitFrom:(NSString*)context button:(UIButton*)button{
     
     [self.delegate stopAutoPaging];
     
@@ -129,8 +131,8 @@
     
     folder.containerView = self.contentView;
     
-    ShareViewController * shareVC = [self shareSubmitViewController];
-    folder.contentView = shareVC.view;
+    shareViewController = [self shareSubmitViewControllerWithContext:context];
+    folder.contentView = shareViewController.view;
     folder.contentView.backgroundColor = [UIColor redColor];
     folder.position = CGPointMake(senderGlobalPosition.x,senderGlobalPosition.y - (button.frame.size.height/2) - 15);
     folder.direction = JWFoldersOpenDirectionUp;
@@ -156,13 +158,13 @@
 
 - (IBAction)facebook:(id)sender{
     //[self animateForShareButton:sender];
-    [self splitFromButton:(UIButton*)sender];
+    [self splitFrom:@"facebook" button:(UIButton*)sender];
 }
 - (IBAction)twitter:(id)sender{
-    [self splitFromButton:(UIButton*)sender];
+    [self splitFrom:@"twitter" button:(UIButton*)sender];
 }
 - (IBAction)google:(id)sender{
-    [self splitFromButton:(UIButton*)sender];
+    [self splitFrom:@"g+" button:(UIButton*)sender];
 }
 
 - (void)didReceiveMemoryWarning

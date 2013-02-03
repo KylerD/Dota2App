@@ -68,6 +68,8 @@
 }
 
 - (IBAction)suggest:(id)sender{
+    NSLog(@"User Suggestion..");
+    
     NSString *mailurl=[NSString stringWithFormat:
                        @"mailto:%@?subject=%@%@&body=%@%@",@"l.mcneice@kainos.com",@"DOTA2 Clarity - Suggestion", @"DOTA2 Clarity"
                        ,@"Hey,\nI have a sugestion.\n\n",@"Sent from the DOTA2Clarity App"];

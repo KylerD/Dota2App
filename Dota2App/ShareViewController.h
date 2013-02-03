@@ -10,4 +10,9 @@
 
 @interface ShareViewController : UIViewController
 
+@property(nonatomic,retain) NSString * context;
+@property(nonatomic,retain) IBOutlet UIButton * shareButton;
+@property(nonatomic,retain) IBOutlet UITextView * shareMessage;
+- (IBAction)share:(id)sender;
+
 @end

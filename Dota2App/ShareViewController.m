@@ -7,13 +7,15 @@
 //
 
 #import "ShareViewController.h"
+//#import "Socialize/Socialize.h"
+#import "SHK.h"
 
 @interface ShareViewController ()
 
 @end
 
 @implementation ShareViewController
-
+@synthesize context,shareButton,shareMessage;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -25,6 +27,8 @@
     }
     return self;
 }
+
+#define twitterMessage @"Just testing the share feature this awesome DOTA2 Clarity app #Clarity #DOTA2 http://imgur.com/a/Dbdtd#0"
 
 - (void)viewDidLoad
 {
@@ -38,9 +42,52 @@
     self.view.frame = viewFrame;
     
     
+    if([self.context isEqualToString:@"twitter"]){
+        self.shareMessage.text = twitterMessage;
+    }
+    
     
     // Do any additional setup after loading the view from its nib.
 }
+
+- (IBAction)share:(id)sender{
+    NSLog(@"Sharing for context: %@",self.context);
+    [self shareWithContext:self.context];
+}
+
+
+- (void)shareWithContext:(NSString*)ctx{
+    
+    if([ctx  isEqualToString:@"twitter"]){
+        //Check userdefaults for existing tokens...
+        NSString * existingAccessToken = [[NSUserDefaults standardUserDefaults] valueForKey:@"DOTA2TwitterAccessToken"];
+        
+        NSString * existingSecret = [[NSUserDefaults standardUserDefaults] valueForKey:@"DOTA2TwitterSecret"];
+        
+//        [SZTwitterUtils linkWithAccessToken:existingAccessToken accessTokenSecret:existingSecret success:^(id<SocializeFullUser> user) {
+//            NSLog(@"Link Complete");
+//        } failure:^(NSError *error) {
+//            NSLog(@"Link failure: %@", [error localizedDescription]);
+//        }];
+        
+        [self postToTwitter:self.shareMessage.text];
+    }     
+}
+
+- (void)postToTwitter:(NSString*)body {
+    
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObject:body forKey:@"status"];
+    
+//    [SZTwitterUtils postWithViewController:self path:@"/1/statuses/update.json" params:params success:^(id result) {
+//        NSLog(@"Posted to Twitter feed: %@", result);
+//        
+//    } failure:^(NSError *error) {
+//        NSLog(@"Failed to post to Twitter feed: %@ / %@", [error localizedDescription], [error userInfo]);
+//    }];
+    
+}
+
+
 
 - (void)didReceiveMemoryWarning
 {

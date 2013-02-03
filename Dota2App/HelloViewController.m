@@ -8,8 +8,8 @@
 
 #import "HelloViewController.h"
 #import <QuartzCore/QuartzCore.h>
-#import "Socialize/SZTwitterUtils.h"
-#import "Socialize/SZFacebookUtils.h"
+//#import "Socialize/SZTwitterUtils.h"
+//#import "Socialize/SZFacebookUtils.h"
 
 
 @interface HelloViewController ()
@@ -87,13 +87,13 @@
                                      @"hi there", @"message",
                                      nil];
     
-    
-    [SZFacebookUtils postWithGraphPath:@"me/feed" params:postData success:^(id result) {
-        NSLog(@"Posted to fb feed: %@", result);
-        
-    }  failure:^(NSError *error) {
-        NSLog(@"Failed to post to fb feed: %@ / %@", [error localizedDescription], [error userInfo]);
-    }];
+//    
+//    [SZFacebookUtils postWithGraphPath:@"me/feed" params:postData success:^(id result) {
+//        NSLog(@"Posted to fb feed: %@", result);
+//        
+//    }  failure:^(NSError *error) {
+//        NSLog(@"Failed to post to fb feed: %@ / %@", [error localizedDescription], [error userInfo]);
+//    }];
     
     
 }
