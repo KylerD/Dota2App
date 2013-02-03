@@ -30,9 +30,6 @@
 #define STACKMOB_KEY @"6586fffa-0b95-426c-8763-d30299599b40"
 #define UseJSON YES
 
-#define SOB_USER_AGENT @"Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; Valve Steam GameOverlay/2119; ) AppleWebKit/535.15 (KHTML, like Gecko) Chrome/18.0.989.0 Safari/535.11"
-
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
@@ -41,9 +38,7 @@
     [Socialize storeConsumerSecret:@"a1444a54-d869-4fea-b2f6-3c7f3de4e7c8"];
     [SZTwitterUtils setConsumerKey:@"u9do3dzYoItcDGMrqUy5A" consumerSecret:@"XMxHfK5XXnUhdSddUc0D6UVXnxhVH8ggxbthHCqhQtA"];
     [SZFacebookUtils setAppId:@"201163993356091"];
-    NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:SOB_USER_AGENT, @"UserAgent", nil];
-    [[NSUserDefaults standardUserDefaults] registerDefaults:dictionary];
-    
+
     [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:85/ 255.0 green:0/ 255.0 blue:2/ 255.0 alpha:1.0]];
     
     // Nav stack hookups for ipad

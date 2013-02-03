@@ -58,6 +58,13 @@
     
     self.messagePanel.layer.cornerRadius = 8;
     self.messagePanel.layer.masksToBounds = YES;
+    
+    
+    suggestLabelButton.userInteractionEnabled = YES;
+    UITapGestureRecognizer *tapGesture =
+    [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(suggest:)];
+    [suggestLabelButton addGestureRecognizer:tapGesture];
+    
 }
 
 - (IBAction)suggest:(id)sender{

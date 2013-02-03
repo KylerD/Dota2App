@@ -10,7 +10,9 @@
 #import "PagingDelegate.h"
 
 
-@interface SuggestionsViewController : UIViewController
+@interface SuggestionsViewController : UIViewController{
+    IBOutlet UILabel * suggestLabelButton;
+}
 @property (nonatomic,retain) IBOutlet UIImageView * backgroundImage;
 @property (nonatomic,retain) IBOutlet UIView * messagePanel;
 @property  (nonatomic,assign) id <PagingDelegate> delegate;
