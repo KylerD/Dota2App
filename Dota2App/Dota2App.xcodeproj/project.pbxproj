@@ -3822,10 +3822,7 @@
 		B18C9E57164E8B5A00ADE97A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Socialize.embeddedframework\"",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dota2App/Dota2App-Prefix.pch";
 				INFOPLIST_FILE = "Dota2App/Dota2App-Info.plist";
@@ -3847,10 +3844,7 @@
 		B18C9E58164E8B5A00ADE97A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Socialize.embeddedframework\"",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dota2App/Dota2App-Prefix.pch";
 				INFOPLIST_FILE = "Dota2App/Dota2App-Info.plist";

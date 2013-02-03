@@ -7,7 +7,6 @@
 //
 
 #import "ShareViewController.h"
-//#import "Socialize/Socialize.h"
 #import "SHK.h"
 
 @interface ShareViewController ()

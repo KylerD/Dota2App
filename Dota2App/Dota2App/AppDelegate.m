@@ -11,7 +11,9 @@
 #import "HeroParser.h"
 #import "Itemparser.h"
 #import "PagedWelcome.h"
-//#import "Socialize/Socialize.h"
+//#import "SHK.h"
+//#import "SHKConfiguration.h"
+//#import "SHKFacebook.h"
 
 @implementation AppDelegate
 
@@ -74,6 +76,25 @@
     return YES;
 }
 
+- (BOOL)handleOpenURL:(NSURL*)url
+{
+    NSString* scheme = [url scheme];
+//    NSString* prefix = [NSString stringWithFormat:@"fb%@", SHKCONFIG(facebookAppId)];
+//    if ([scheme hasPrefix:prefix])
+//        return [SHKFacebook handleOpenURL:url];
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    return [self handleOpenURL:url];
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+    return [self handleOpenURL:url];
+}
+
 - (void)showWelcomePager{
     PagedWelcome * welcome = [PagedWelcome new];
     welcome.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
@@ -109,12 +130,14 @@
     /*
      Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
      */
+    //[SHKFacebook handleDidBecomeActive];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
+     //[SHKFacebook handleWillTerminate];
 }
 
 - (void)saveContext
