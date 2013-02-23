@@ -10,6 +10,229 @@
 		0C493A8D1665065600A5690B /* armor.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C493A8A1665065600A5690B /* armor.png */; };
 		0C493A8E1665065600A5690B /* movementSpeed.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C493A8B1665065600A5690B /* movementSpeed.png */; };
 		0C493A8F1665065600A5690B /* damage.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C493A8C1665065600A5690B /* damage.png */; };
+		0C4BFBB016D905B700C93F7B /* _SZCommentsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAD316D905B700C93F7B /* _SZCommentsListViewController.xib */; };
+		0C4BFBB116D905B700C93F7B /* _SZComposeCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAD416D905B700C93F7B /* _SZComposeCommentViewController.xib */; };
+		0C4BFBB216D905B700C93F7B /* _SZLinkDialogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAD516D905B700C93F7B /* _SZLinkDialogViewController.xib */; };
+		0C4BFBB316D905B700C93F7B /* _SZTwitterLinkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAD616D905B700C93F7B /* _SZTwitterLinkViewController.xib */; };
+		0C4BFBB416D905B700C93F7B /* _SZUserProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAD716D905B700C93F7B /* _SZUserProfileViewController.xib */; };
+		0C4BFBB516D905B700C93F7B /* _SZUserSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAD816D905B700C93F7B /* _SZUserSettingsViewController.xib */; };
+		0C4BFBB616D905B700C93F7B /* action-bar-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAD916D905B700C93F7B /* action-bar-bg.png */; };
+		0C4BFBB716D905B700C93F7B /* action-bar-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFADA16D905B700C93F7B /* action-bar-bg@2x.png */; };
+		0C4BFBB816D905B700C93F7B /* action-bar-button-black-hover.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFADB16D905B700C93F7B /* action-bar-button-black-hover.png */; };
+		0C4BFBB916D905B700C93F7B /* action-bar-button-black-hover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFADC16D905B700C93F7B /* action-bar-button-black-hover@2x.png */; };
+		0C4BFBBA16D905B700C93F7B /* action-bar-button-black.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFADD16D905B700C93F7B /* action-bar-button-black.png */; };
+		0C4BFBBB16D905B700C93F7B /* action-bar-button-black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFADE16D905B700C93F7B /* action-bar-button-black@2x.png */; };
+		0C4BFBBC16D905B700C93F7B /* action-bar-button-red-hover.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFADF16D905B700C93F7B /* action-bar-button-red-hover.png */; };
+		0C4BFBBD16D905B700C93F7B /* action-bar-button-red-hover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAE016D905B700C93F7B /* action-bar-button-red-hover@2x.png */; };
+		0C4BFBBE16D905B700C93F7B /* action-bar-button-red.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAE116D905B700C93F7B /* action-bar-button-red.png */; };
+		0C4BFBBF16D905B700C93F7B /* action-bar-button-red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAE216D905B700C93F7B /* action-bar-button-red@2x.png */; };
+		0C4BFBC016D905B700C93F7B /* action-bar-icon-comments.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAE316D905B700C93F7B /* action-bar-icon-comments.png */; };
+		0C4BFBC116D905B700C93F7B /* action-bar-icon-comments@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAE416D905B700C93F7B /* action-bar-icon-comments@2x.png */; };
+		0C4BFBC216D905B700C93F7B /* action-bar-icon-like.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAE516D905B700C93F7B /* action-bar-icon-like.png */; };
+		0C4BFBC316D905B700C93F7B /* action-bar-icon-like@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAE616D905B700C93F7B /* action-bar-icon-like@2x.png */; };
+		0C4BFBC416D905B700C93F7B /* action-bar-icon-liked.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAE716D905B700C93F7B /* action-bar-icon-liked.png */; };
+		0C4BFBC516D905B700C93F7B /* action-bar-icon-liked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAE816D905B700C93F7B /* action-bar-icon-liked@2x.png */; };
+		0C4BFBC616D905B700C93F7B /* action-bar-icon-share.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAE916D905B700C93F7B /* action-bar-icon-share.png */; };
+		0C4BFBC716D905B700C93F7B /* action-bar-icon-share@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAEA16D905B700C93F7B /* action-bar-icon-share@2x.png */; };
+		0C4BFBC816D905B700C93F7B /* action-bar-icon-views.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAEB16D905B700C93F7B /* action-bar-icon-views.png */; };
+		0C4BFBC916D905B700C93F7B /* action-bar-icon-views@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAEC16D905B700C93F7B /* action-bar-icon-views@2x.png */; };
+		0C4BFBCA16D905B700C93F7B /* background_brushed_metal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAED16D905B700C93F7B /* background_brushed_metal@2x.png */; };
+		0C4BFBCB16D905B700C93F7B /* comment-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAEE16D905B700C93F7B /* comment-bg.png */; };
+		0C4BFBCC16D905B700C93F7B /* comment-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAEF16D905B700C93F7B /* comment-bg@2x.png */; };
+		0C4BFBCD16D905B700C93F7B /* comment-header-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAF016D905B700C93F7B /* comment-header-icon.png */; };
+		0C4BFBCE16D905B700C93F7B /* comment-header-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAF116D905B700C93F7B /* comment-header-icon@2x.png */; };
+		0C4BFBCF16D905B700C93F7B /* comment-sm-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAF216D905B700C93F7B /* comment-sm-icon.png */; };
+		0C4BFBD016D905B700C93F7B /* comment-sm-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAF316D905B700C93F7B /* comment-sm-icon@2x.png */; };
+		0C4BFBD116D905B700C93F7B /* comment_template_clear.htm in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAF416D905B700C93F7B /* comment_template_clear.htm */; };
+		0C4BFBD216D905B700C93F7B /* comments-cell-bg-borders.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAF516D905B700C93F7B /* comments-cell-bg-borders.png */; };
+		0C4BFBD316D905B700C93F7B /* comments-cell-bg-borders@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAF616D905B700C93F7B /* comments-cell-bg-borders@2x.png */; };
+		0C4BFBD416D905B700C93F7B /* commentsNavBarLeftItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAF716D905B700C93F7B /* commentsNavBarLeftItemView.xib */; };
+		0C4BFBD516D905B700C93F7B /* CommentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAF816D905B700C93F7B /* CommentsTableViewCell.xib */; };
+		0C4BFBD616D905B700C93F7B /* SampleEntityLoader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAF916D905B700C93F7B /* SampleEntityLoader.xib */; };
+		0C4BFBD716D905B700C93F7B /* socialize-activity-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAFA16D905B700C93F7B /* socialize-activity-bg.png */; };
+		0C4BFBD816D905B700C93F7B /* socialize-activity-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAFB16D905B700C93F7B /* socialize-activity-bg@2x.png */; };
+		0C4BFBD916D905B700C93F7B /* socialize-activity-call-out-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAFC16D905B700C93F7B /* socialize-activity-call-out-arrow.png */; };
+		0C4BFBDA16D905B700C93F7B /* socialize-activity-call-out-arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAFD16D905B700C93F7B /* socialize-activity-call-out-arrow@2x.png */; };
+		0C4BFBDB16D905B700C93F7B /* socialize-activity-cell-icon-comment-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAFE16D905B700C93F7B /* socialize-activity-cell-icon-comment-highlighted.png */; };
+		0C4BFBDC16D905B700C93F7B /* socialize-activity-cell-icon-comment-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFAFF16D905B700C93F7B /* socialize-activity-cell-icon-comment-highlighted@2x.png */; };
+		0C4BFBDD16D905B700C93F7B /* socialize-activity-cell-icon-comment-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB0016D905B700C93F7B /* socialize-activity-cell-icon-comment-normal.png */; };
+		0C4BFBDE16D905B700C93F7B /* socialize-activity-cell-icon-comment-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB0116D905B700C93F7B /* socialize-activity-cell-icon-comment-normal@2x.png */; };
+		0C4BFBDF16D905B700C93F7B /* socialize-activity-cell-icon-comment.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB0216D905B700C93F7B /* socialize-activity-cell-icon-comment.png */; };
+		0C4BFBE016D905B700C93F7B /* socialize-activity-cell-icon-comment@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB0316D905B700C93F7B /* socialize-activity-cell-icon-comment@2x.png */; };
+		0C4BFBE116D905B700C93F7B /* socialize-activity-cell-icon-facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB0416D905B700C93F7B /* socialize-activity-cell-icon-facebook.png */; };
+		0C4BFBE216D905B700C93F7B /* socialize-activity-cell-icon-facebook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB0516D905B700C93F7B /* socialize-activity-cell-icon-facebook@2x.png */; };
+		0C4BFBE316D905B700C93F7B /* socialize-activity-cell-icon-like-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB0616D905B700C93F7B /* socialize-activity-cell-icon-like-highlighted.png */; };
+		0C4BFBE416D905B700C93F7B /* socialize-activity-cell-icon-like-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB0716D905B700C93F7B /* socialize-activity-cell-icon-like-highlighted@2x.png */; };
+		0C4BFBE516D905B700C93F7B /* socialize-activity-cell-icon-like-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB0816D905B700C93F7B /* socialize-activity-cell-icon-like-normal.png */; };
+		0C4BFBE616D905B700C93F7B /* socialize-activity-cell-icon-like-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB0916D905B700C93F7B /* socialize-activity-cell-icon-like-normal@2x.png */; };
+		0C4BFBE716D905B700C93F7B /* socialize-activity-cell-icon-like.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB0A16D905B700C93F7B /* socialize-activity-cell-icon-like.png */; };
+		0C4BFBE816D905B700C93F7B /* socialize-activity-cell-icon-like@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB0B16D905B700C93F7B /* socialize-activity-cell-icon-like@2x.png */; };
+		0C4BFBE916D905B700C93F7B /* socialize-activity-cell-icon-share.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB0C16D905B700C93F7B /* socialize-activity-cell-icon-share.png */; };
+		0C4BFBEA16D905B700C93F7B /* socialize-activity-cell-icon-share@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB0D16D905B700C93F7B /* socialize-activity-cell-icon-share@2x.png */; };
+		0C4BFBEB16D905B700C93F7B /* socialize-activity-cell-icon-twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB0E16D905B700C93F7B /* socialize-activity-cell-icon-twitter.png */; };
+		0C4BFBEC16D905B700C93F7B /* socialize-activity-cell-icon-twitter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB0F16D905B700C93F7B /* socialize-activity-cell-icon-twitter@2x.png */; };
+		0C4BFBED16D905B700C93F7B /* socialize-activity-details-back-entry-x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB1016D905B700C93F7B /* socialize-activity-details-back-entry-x.png */; };
+		0C4BFBEE16D905B700C93F7B /* socialize-activity-details-back-entry-x@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB1116D905B700C93F7B /* socialize-activity-details-back-entry-x@2x.png */; };
+		0C4BFBEF16D905B700C93F7B /* socialize-activity-details-back-section-x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB1216D905B700C93F7B /* socialize-activity-details-back-section-x.png */; };
+		0C4BFBF016D905B700C93F7B /* socialize-activity-details-back-section-x@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB1316D905B700C93F7B /* socialize-activity-details-back-section-x@2x.png */; };
+		0C4BFBF116D905B700C93F7B /* socialize-activity-details-btn-link.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB1416D905B700C93F7B /* socialize-activity-details-btn-link.png */; };
+		0C4BFBF216D905B700C93F7B /* socialize-activity-details-btn-link@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB1516D905B700C93F7B /* socialize-activity-details-btn-link@2x.png */; };
+		0C4BFBF316D905B700C93F7B /* socialize-activity-details-categ_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB1616D905B700C93F7B /* socialize-activity-details-categ_arrow.png */; };
+		0C4BFBF416D905B700C93F7B /* socialize-activity-details-categ_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB1716D905B700C93F7B /* socialize-activity-details-categ_arrow@2x.png */; };
+		0C4BFBF516D905B700C93F7B /* socialize-activity-details-ico-chat.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB1816D905B700C93F7B /* socialize-activity-details-ico-chat.png */; };
+		0C4BFBF616D905B700C93F7B /* socialize-activity-details-ico-chat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB1916D905B700C93F7B /* socialize-activity-details-ico-chat@2x.png */; };
+		0C4BFBF716D905B700C93F7B /* socialize-activity-details-ico-location.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB1A16D905B700C93F7B /* socialize-activity-details-ico-location.png */; };
+		0C4BFBF816D905B700C93F7B /* socialize-activity-details-ico-location@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB1B16D905B700C93F7B /* socialize-activity-details-ico-location@2x.png */; };
+		0C4BFBF916D905B700C93F7B /* socialize-activity-details-profile-pic-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB1C16D905B700C93F7B /* socialize-activity-details-profile-pic-small.png */; };
+		0C4BFBFA16D905B700C93F7B /* socialize-activity-details-profile-pic-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB1D16D905B700C93F7B /* socialize-activity-details-profile-pic-small@2x.png */; };
+		0C4BFBFB16D905B700C93F7B /* socialize-activity-details-top-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB1E16D905B700C93F7B /* socialize-activity-details-top-back.png */; };
+		0C4BFBFC16D905B700C93F7B /* socialize-activity-details-top-back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB1F16D905B700C93F7B /* socialize-activity-details-top-back@2x.png */; };
+		0C4BFBFD16D905B700C93F7B /* socialize-authorize-authenticate-badge-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB2016D905B700C93F7B /* socialize-authorize-authenticate-badge-icon.png */; };
+		0C4BFBFE16D905B700C93F7B /* socialize-authorize-authenticate-badge-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB2116D905B700C93F7B /* socialize-authorize-authenticate-badge-icon@2x.png */; };
+		0C4BFBFF16D905B700C93F7B /* socialize-authorize-facebook-disabled-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB2216D905B700C93F7B /* socialize-authorize-facebook-disabled-icon.png */; };
+		0C4BFC0016D905B700C93F7B /* socialize-authorize-facebook-disabled-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB2316D905B700C93F7B /* socialize-authorize-facebook-disabled-icon@2x.png */; };
+		0C4BFC0116D905B700C93F7B /* socialize-authorize-facebook-enabled-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB2416D905B700C93F7B /* socialize-authorize-facebook-enabled-icon.png */; };
+		0C4BFC0216D905B700C93F7B /* socialize-authorize-facebook-enabled-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB2516D905B700C93F7B /* socialize-authorize-facebook-enabled-icon@2x.png */; };
+		0C4BFC0316D905B700C93F7B /* socialize-authorize-top-shadow-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB2616D905B700C93F7B /* socialize-authorize-top-shadow-background.png */; };
+		0C4BFC0416D905B700C93F7B /* socialize-authorize-top-shadow-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB2716D905B700C93F7B /* socialize-authorize-top-shadow-background@2x.png */; };
+		0C4BFC0516D905B700C93F7B /* socialize-authorize-twitter-disabled-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB2816D905B700C93F7B /* socialize-authorize-twitter-disabled-icon.png */; };
+		0C4BFC0616D905B700C93F7B /* socialize-authorize-twitter-disabled-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB2916D905B700C93F7B /* socialize-authorize-twitter-disabled-icon@2x.png */; };
+		0C4BFC0716D905B700C93F7B /* socialize-authorize-twitter-enabled-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB2A16D905B700C93F7B /* socialize-authorize-twitter-enabled-icon.png */; };
+		0C4BFC0816D905B700C93F7B /* socialize-authorize-twitter-enabled-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB2B16D905B700C93F7B /* socialize-authorize-twitter-enabled-icon@2x.png */; };
+		0C4BFC0916D905B700C93F7B /* socialize-authorize-user-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB2C16D905B700C93F7B /* socialize-authorize-user-icon.png */; };
+		0C4BFC0A16D905B700C93F7B /* socialize-authorize-user-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB2D16D905B700C93F7B /* socialize-authorize-user-icon@2x.png */; };
+		0C4BFC0B16D905B700C93F7B /* socialize-cell-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB2E16D905B700C93F7B /* socialize-cell-arrow.png */; };
+		0C4BFC0C16D905B700C93F7B /* socialize-cell-arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB2F16D905B700C93F7B /* socialize-cell-arrow@2x.png */; };
+		0C4BFC0D16D905B700C93F7B /* socialize-cell-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB3016D905B700C93F7B /* socialize-cell-bg.png */; };
+		0C4BFC0E16D905B700C93F7B /* socialize-cell-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB3116D905B700C93F7B /* socialize-cell-bg@2x.png */; };
+		0C4BFC0F16D905B700C93F7B /* socialize-cell-image-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB3216D905B700C93F7B /* socialize-cell-image-bg.png */; };
+		0C4BFC1016D905B700C93F7B /* socialize-cell-image-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB3316D905B700C93F7B /* socialize-cell-image-bg@2x.png */; };
+		0C4BFC1116D905B700C93F7B /* socialize-cell-image-default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB3416D905B700C93F7B /* socialize-cell-image-default.png */; };
+		0C4BFC1216D905B700C93F7B /* socialize-cell-image-default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB3516D905B700C93F7B /* socialize-cell-image-default@2x.png */; };
+		0C4BFC1316D905B700C93F7B /* socialize-cell-image.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB3616D905B700C93F7B /* socialize-cell-image.png */; };
+		0C4BFC1416D905B700C93F7B /* socialize-cell-image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB3716D905B700C93F7B /* socialize-cell-image@2x.png */; };
+		0C4BFC1516D905B700C93F7B /* socialize-cell-selected-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB3816D905B700C93F7B /* socialize-cell-selected-bg.png */; };
+		0C4BFC1616D905B700C93F7B /* socialize-cell-selected-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB3916D905B700C93F7B /* socialize-cell-selected-bg@2x.png */; };
+		0C4BFC1716D905B700C93F7B /* socialize-checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB3A16D905B700C93F7B /* socialize-checkmark.png */; };
+		0C4BFC1816D905B700C93F7B /* socialize-checkmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB3B16D905B700C93F7B /* socialize-checkmark@2x.png */; };
+		0C4BFC1916D905B700C93F7B /* socialize-comment-background-text-input.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB3C16D905B700C93F7B /* socialize-comment-background-text-input.png */; };
+		0C4BFC1A16D905B700C93F7B /* socialize-comment-background-text-input@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB3D16D905B700C93F7B /* socialize-comment-background-text-input@2x.png */; };
+		0C4BFC1B16D905B700C93F7B /* socialize-comment-button-active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB3E16D905B700C93F7B /* socialize-comment-button-active.png */; };
+		0C4BFC1C16D905B700C93F7B /* socialize-comment-button-active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB3F16D905B700C93F7B /* socialize-comment-button-active@2x.png */; };
+		0C4BFC1D16D905B700C93F7B /* socialize-comment-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB4016D905B700C93F7B /* socialize-comment-button.png */; };
+		0C4BFC1E16D905B700C93F7B /* socialize-comment-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB4116D905B700C93F7B /* socialize-comment-button@2x.png */; };
+		0C4BFC1F16D905B700C93F7B /* socialize-comment-detail-bottom-shadow-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB4216D905B700C93F7B /* socialize-comment-detail-bottom-shadow-background.png */; };
+		0C4BFC2016D905B700C93F7B /* socialize-comment-detail-bottom-shadow-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB4316D905B700C93F7B /* socialize-comment-detail-bottom-shadow-background@2x.png */; };
+		0C4BFC2116D905B700C93F7B /* socialize-comment-details-icon-geo-disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB4416D905B700C93F7B /* socialize-comment-details-icon-geo-disabled.png */; };
+		0C4BFC2216D905B700C93F7B /* socialize-comment-details-icon-geo-disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB4516D905B700C93F7B /* socialize-comment-details-icon-geo-disabled@2x.png */; };
+		0C4BFC2316D905B700C93F7B /* socialize-comment-details-icon-geo-enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB4616D905B700C93F7B /* socialize-comment-details-icon-geo-enabled.png */; };
+		0C4BFC2416D905B700C93F7B /* socialize-comment-details-icon-geo-enabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB4716D905B700C93F7B /* socialize-comment-details-icon-geo-enabled@2x.png */; };
+		0C4BFC2516D905B700C93F7B /* socialize-comment-facebook-disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB4816D905B700C93F7B /* socialize-comment-facebook-disabled.png */; };
+		0C4BFC2616D905B700C93F7B /* socialize-comment-facebook-disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB4916D905B700C93F7B /* socialize-comment-facebook-disabled@2x.png */; };
+		0C4BFC2716D905B700C93F7B /* socialize-comment-facebook-enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB4A16D905B700C93F7B /* socialize-comment-facebook-enabled.png */; };
+		0C4BFC2816D905B700C93F7B /* socialize-comment-facebook-enabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB4B16D905B700C93F7B /* socialize-comment-facebook-enabled@2x.png */; };
+		0C4BFC2916D905B700C93F7B /* socialize-comment-list-view-location-pin-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB4C16D905B700C93F7B /* socialize-comment-list-view-location-pin-icon.png */; };
+		0C4BFC2A16D905B700C93F7B /* socialize-comment-list-view-location-pin-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB4D16D905B700C93F7B /* socialize-comment-list-view-location-pin-icon@2x.png */; };
+		0C4BFC2B16D905B700C93F7B /* socialize-comment-location-bar-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB4E16D905B700C93F7B /* socialize-comment-location-bar-background.png */; };
+		0C4BFC2C16D905B700C93F7B /* socialize-comment-location-bar-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB4F16D905B700C93F7B /* socialize-comment-location-bar-background@2x.png */; };
+		0C4BFC2D16D905B700C93F7B /* socialize-comment-location-disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB5016D905B700C93F7B /* socialize-comment-location-disabled.png */; };
+		0C4BFC2E16D905B700C93F7B /* socialize-comment-location-disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB5116D905B700C93F7B /* socialize-comment-location-disabled@2x.png */; };
+		0C4BFC2F16D905B700C93F7B /* socialize-comment-location-enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB5216D905B700C93F7B /* socialize-comment-location-enabled.png */; };
+		0C4BFC3016D905B700C93F7B /* socialize-comment-location-enabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB5316D905B700C93F7B /* socialize-comment-location-enabled@2x.png */; };
+		0C4BFC3116D905B700C93F7B /* socialize-comment-notification-disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB5416D905B700C93F7B /* socialize-comment-notification-disabled.png */; };
+		0C4BFC3216D905B700C93F7B /* socialize-comment-notification-disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB5516D905B700C93F7B /* socialize-comment-notification-disabled@2x.png */; };
+		0C4BFC3316D905B700C93F7B /* socialize-comment-notification-enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB5616D905B700C93F7B /* socialize-comment-notification-enabled.png */; };
+		0C4BFC3416D905B700C93F7B /* socialize-comment-notification-enabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB5716D905B700C93F7B /* socialize-comment-notification-enabled@2x.png */; };
+		0C4BFC3516D905B700C93F7B /* socialize-comment-top-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB5816D905B700C93F7B /* socialize-comment-top-background.png */; };
+		0C4BFC3616D905B700C93F7B /* socialize-comment-twitter-disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB5916D905B700C93F7B /* socialize-comment-twitter-disabled.png */; };
+		0C4BFC3716D905B700C93F7B /* socialize-comment-twitter-disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB5A16D905B700C93F7B /* socialize-comment-twitter-disabled@2x.png */; };
+		0C4BFC3816D905B700C93F7B /* socialize-comment-twitter-enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB5B16D905B700C93F7B /* socialize-comment-twitter-enabled.png */; };
+		0C4BFC3916D905B700C93F7B /* socialize-comment-twitter-enabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB5C16D905B700C93F7B /* socialize-comment-twitter-enabled@2x.png */; };
+		0C4BFC3A16D905B700C93F7B /* socialize-comment-user-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB5D16D905B700C93F7B /* socialize-comment-user-background.png */; };
+		0C4BFC3B16D905B700C93F7B /* socialize-comment-user-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB5E16D905B700C93F7B /* socialize-comment-user-background@2x.png */; };
+		0C4BFC3C16D905B700C93F7B /* socialize-comment-user-only-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB5F16D905B700C93F7B /* socialize-comment-user-only-background.png */; };
+		0C4BFC3D16D905B700C93F7B /* socialize-iphone-notification-button-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB6016D905B700C93F7B /* socialize-iphone-notification-button-highlighted.png */; };
+		0C4BFC3E16D905B700C93F7B /* socialize-iphone-notification-button-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB6116D905B700C93F7B /* socialize-iphone-notification-button-highlighted@2x.png */; };
+		0C4BFC3F16D905B700C93F7B /* socialize-iphone-notification-button-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB6216D905B700C93F7B /* socialize-iphone-notification-button-normal.png */; };
+		0C4BFC4016D905B700C93F7B /* socialize-iphone-notification-button-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB6316D905B700C93F7B /* socialize-iphone-notification-button-normal@2x.png */; };
+		0C4BFC4116D905B700C93F7B /* socialize-iphone-subcribe-notification-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB6416D905B700C93F7B /* socialize-iphone-subcribe-notification-icon.png */; };
+		0C4BFC4216D905B700C93F7B /* socialize-iphone-subcribe-notification-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB6516D905B700C93F7B /* socialize-iphone-subcribe-notification-icon@2x.png */; };
+		0C4BFC4316D905B700C93F7B /* socialize-location-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB6616D905B700C93F7B /* socialize-location-icon.png */; };
+		0C4BFC4416D905B700C93F7B /* socialize-navbar-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB6716D905B700C93F7B /* socialize-navbar-bg.png */; };
+		0C4BFC4516D905B700C93F7B /* socialize-navbar-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB6816D905B700C93F7B /* socialize-navbar-bg@2x.png */; };
+		0C4BFC4616D905B700C93F7B /* socialize-navbar-button-back-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB6916D905B700C93F7B /* socialize-navbar-button-back-pressed.png */; };
+		0C4BFC4716D905B700C93F7B /* socialize-navbar-button-back-pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB6A16D905B700C93F7B /* socialize-navbar-button-back-pressed@2x.png */; };
+		0C4BFC4816D905B700C93F7B /* socialize-navbar-button-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB6B16D905B700C93F7B /* socialize-navbar-button-back.png */; };
+		0C4BFC4916D905B700C93F7B /* socialize-navbar-button-back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB6C16D905B700C93F7B /* socialize-navbar-button-back@2x.png */; };
+		0C4BFC4A16D905B700C93F7B /* socialize-navbar-button-blue-bg-highlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB6D16D905B700C93F7B /* socialize-navbar-button-blue-bg-highlighted.png */; };
+		0C4BFC4B16D905B700C93F7B /* socialize-navbar-button-blue-bg-highlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB6E16D905B700C93F7B /* socialize-navbar-button-blue-bg-highlighted@2x.png */; };
+		0C4BFC4C16D905B700C93F7B /* socialize-navbar-button-blue-bg-inactive.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB6F16D905B700C93F7B /* socialize-navbar-button-blue-bg-inactive.png */; };
+		0C4BFC4D16D905B700C93F7B /* socialize-navbar-button-blue-bg-inactive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB7016D905B700C93F7B /* socialize-navbar-button-blue-bg-inactive@2x.png */; };
+		0C4BFC4E16D905B700C93F7B /* socialize-navbar-button-blue-bg-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB7116D905B700C93F7B /* socialize-navbar-button-blue-bg-normal.png */; };
+		0C4BFC4F16D905B700C93F7B /* socialize-navbar-button-blue-bg-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB7216D905B700C93F7B /* socialize-navbar-button-blue-bg-normal@2x.png */; };
+		0C4BFC5016D905B700C93F7B /* socialize-navbar-button-dark-active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB7316D905B700C93F7B /* socialize-navbar-button-dark-active.png */; };
+		0C4BFC5116D905B700C93F7B /* socialize-navbar-button-dark-active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB7416D905B700C93F7B /* socialize-navbar-button-dark-active@2x.png */; };
+		0C4BFC5216D905B700C93F7B /* socialize-navbar-button-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB7516D905B700C93F7B /* socialize-navbar-button-dark.png */; };
+		0C4BFC5316D905B700C93F7B /* socialize-navbar-button-dark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB7616D905B700C93F7B /* socialize-navbar-button-dark@2x.png */; };
+		0C4BFC5416D905B700C93F7B /* socialize-navbar-button-green-active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB7716D905B700C93F7B /* socialize-navbar-button-green-active.png */; };
+		0C4BFC5516D905B700C93F7B /* socialize-navbar-button-green-active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB7816D905B700C93F7B /* socialize-navbar-button-green-active@2x.png */; };
+		0C4BFC5616D905B700C93F7B /* socialize-navbar-button-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB7916D905B700C93F7B /* socialize-navbar-button-green.png */; };
+		0C4BFC5716D905B700C93F7B /* socialize-navbar-button-green@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB7A16D905B700C93F7B /* socialize-navbar-button-green@2x.png */; };
+		0C4BFC5816D905B700C93F7B /* socialize-navbar-button-red-active.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB7B16D905B700C93F7B /* socialize-navbar-button-red-active.png */; };
+		0C4BFC5916D905B700C93F7B /* socialize-navbar-button-red-active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB7C16D905B700C93F7B /* socialize-navbar-button-red-active@2x.png */; };
+		0C4BFC5A16D905B700C93F7B /* socialize-navbar-button-red.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB7D16D905B700C93F7B /* socialize-navbar-button-red.png */; };
+		0C4BFC5B16D905B700C93F7B /* socialize-navbar-button-red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB7E16D905B700C93F7B /* socialize-navbar-button-red@2x.png */; };
+		0C4BFC5C16D905B700C93F7B /* socialize-nocomments-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB7F16D905B700C93F7B /* socialize-nocomments-icon.png */; };
+		0C4BFC5D16D905B700C93F7B /* socialize-nocomments-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB8016D905B700C93F7B /* socialize-nocomments-icon@2x.png */; };
+		0C4BFC5E16D905B700C93F7B /* socialize-notifications-bottom-shadow-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB8116D905B700C93F7B /* socialize-notifications-bottom-shadow-background.png */; };
+		0C4BFC5F16D905B700C93F7B /* socialize-notifications-bottom-shadow-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB8216D905B700C93F7B /* socialize-notifications-bottom-shadow-background@2x.png */; };
+		0C4BFC6016D905B700C93F7B /* socialize-profileimage-large-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB8316D905B700C93F7B /* socialize-profileimage-large-bg.png */; };
+		0C4BFC6116D905B700C93F7B /* socialize-profileimage-large-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB8416D905B700C93F7B /* socialize-profileimage-large-bg@2x.png */; };
+		0C4BFC6216D905B700C93F7B /* socialize-profileimage-large-default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB8516D905B700C93F7B /* socialize-profileimage-large-default.png */; };
+		0C4BFC6316D905B700C93F7B /* socialize-profileimage-large-default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB8616D905B700C93F7B /* socialize-profileimage-large-default@2x.png */; };
+		0C4BFC6416D905B700C93F7B /* socialize-sectionheader-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB8716D905B700C93F7B /* socialize-sectionheader-bg.png */; };
+		0C4BFC6516D905B700C93F7B /* socialize-sectionheader-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB8816D905B700C93F7B /* socialize-sectionheader-bg@2x.png */; };
+		0C4BFC6616D905B700C93F7B /* socialize-selectnetwork-continue-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB8916D905B700C93F7B /* socialize-selectnetwork-continue-btn.png */; };
+		0C4BFC6716D905B700C93F7B /* socialize-selectnetwork-continue-btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB8A16D905B700C93F7B /* socialize-selectnetwork-continue-btn@2x.png */; };
+		0C4BFC6816D905B700C93F7B /* socialize-selectnetwork-email-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB8B16D905B700C93F7B /* socialize-selectnetwork-email-icon.png */; };
+		0C4BFC6916D905B700C93F7B /* socialize-selectnetwork-email-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB8C16D905B700C93F7B /* socialize-selectnetwork-email-icon@2x.png */; };
+		0C4BFC6A16D905B700C93F7B /* socialize-selectnetwork-facebook-dis-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB8D16D905B700C93F7B /* socialize-selectnetwork-facebook-dis-icon.png */; };
+		0C4BFC6B16D905B700C93F7B /* socialize-selectnetwork-facebook-dis-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB8E16D905B700C93F7B /* socialize-selectnetwork-facebook-dis-icon@2x.png */; };
+		0C4BFC6C16D905B700C93F7B /* socialize-selectnetwork-facebook-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB8F16D905B700C93F7B /* socialize-selectnetwork-facebook-icon.png */; };
+		0C4BFC6D16D905B700C93F7B /* socialize-selectnetwork-facebook-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB9016D905B700C93F7B /* socialize-selectnetwork-facebook-icon@2x.png */; };
+		0C4BFC6E16D905B700C93F7B /* socialize-selectnetwork-illustration.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB9116D905B700C93F7B /* socialize-selectnetwork-illustration.png */; };
+		0C4BFC6F16D905B700C93F7B /* socialize-selectnetwork-illustration@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB9216D905B700C93F7B /* socialize-selectnetwork-illustration@2x.png */; };
+		0C4BFC7016D905B700C93F7B /* socialize-selectnetwork-SMS-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB9316D905B700C93F7B /* socialize-selectnetwork-SMS-icon.png */; };
+		0C4BFC7116D905B700C93F7B /* socialize-selectnetwork-SMS-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB9416D905B700C93F7B /* socialize-selectnetwork-SMS-icon@2x.png */; };
+		0C4BFC7216D905B700C93F7B /* socialize-selectnetwork-table-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB9516D905B700C93F7B /* socialize-selectnetwork-table-back.png */; };
+		0C4BFC7316D905B700C93F7B /* socialize-selectnetwork-table-back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB9616D905B700C93F7B /* socialize-selectnetwork-table-back@2x.png */; };
+		0C4BFC7416D905B700C93F7B /* socialize-selectnetwork-twitter-dis-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB9716D905B700C93F7B /* socialize-selectnetwork-twitter-dis-icon.png */; };
+		0C4BFC7516D905B700C93F7B /* socialize-selectnetwork-twitter-dis-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB9816D905B700C93F7B /* socialize-selectnetwork-twitter-dis-icon@2x.png */; };
+		0C4BFC7616D905B700C93F7B /* socialize-selectnetwork-twitter-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB9916D905B700C93F7B /* socialize-selectnetwork-twitter-icon.png */; };
+		0C4BFC7716D905B700C93F7B /* socialize-selectnetwork-twitter-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB9A16D905B700C93F7B /* socialize-selectnetwork-twitter-icon@2x.png */; };
+		0C4BFC7816D905B700C93F7B /* socialize_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB9B16D905B700C93F7B /* socialize_logo.png */; };
+		0C4BFC7916D905B700C93F7B /* socialize_twitter_load.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB9C16D905B700C93F7B /* socialize_twitter_load.png */; };
+		0C4BFC7A16D905B700C93F7B /* SocializeActivityDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB9D16D905B700C93F7B /* SocializeActivityDetailsViewController.xib */; };
+		0C4BFC7B16D905B700C93F7B /* SocializeActivityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB9E16D905B700C93F7B /* SocializeActivityTableViewCell.xib */; };
+		0C4BFC7C16D905B700C93F7B /* SocializeActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFB9F16D905B700C93F7B /* SocializeActivityViewController.xib */; };
+		0C4BFC7D16D905B700C93F7B /* SocializeAuthInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFBA016D905B700C93F7B /* SocializeAuthInfoTableViewCell.xib */; };
+		0C4BFC7E16D905B700C93F7B /* SocializeAuthTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFBA116D905B700C93F7B /* SocializeAuthTableViewCell.xib */; };
+		0C4BFC7F16D905B700C93F7B /* SocializeCommentDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFBA216D905B700C93F7B /* SocializeCommentDetailsViewController.xib */; };
+		0C4BFC8016D905B700C93F7B /* SocializeComposeMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFBA316D905B700C93F7B /* SocializeComposeMessageViewController.xib */; };
+		0C4BFC8116D905B700C93F7B /* SocializeConfigurationInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFBA416D905B700C93F7B /* SocializeConfigurationInfo.plist */; };
+		0C4BFC8216D905B700C93F7B /* SocializeDummyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFBA516D905B700C93F7B /* SocializeDummyViewController.xib */; };
+		0C4BFC8316D905B700C93F7B /* SocializeEditValueTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFBA616D905B700C93F7B /* SocializeEditValueTableViewCell.xib */; };
+		0C4BFC8416D905B700C93F7B /* SocializeNotificationToggleBubbleContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFBA716D905B700C93F7B /* SocializeNotificationToggleBubbleContentView.xib */; };
+		0C4BFC8516D905B700C93F7B /* SocializeProfileEditTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFBA816D905B700C93F7B /* SocializeProfileEditTableViewCell.xib */; };
+		0C4BFC8616D905B700C93F7B /* SocializeProfileEditTableViewImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFBA916D905B700C93F7B /* SocializeProfileEditTableViewImageCell.xib */; };
+		0C4BFC8716D905B700C93F7B /* SocializeProfileEditValueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFBAA16D905B700C93F7B /* SocializeProfileEditValueViewController.xib */; };
+		0C4BFC8816D905B700C93F7B /* SocializeRichPushNotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFBAB16D905B700C93F7B /* SocializeRichPushNotificationViewController.xib */; };
+		0C4BFC8916D905B700C93F7B /* SocializeTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFBAC16D905B700C93F7B /* SocializeTableViewController.xib */; };
+		0C4BFC8A16D905B700C93F7B /* SZBaseShareViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFBAD16D905B700C93F7B /* SZBaseShareViewController.xib */; };
+		0C4BFC8B16D905B700C93F7B /* SZStatusImageLabelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4BFBAE16D905B700C93F7B /* SZStatusImageLabelView.xib */; };
+		0C4BFC8C16D905B700C93F7B /* Socialize.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4BFBAF16D905B700C93F7B /* Socialize.framework */; };
+		0C4BFC8F16D905E200C93F7B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4BFC8E16D905E200C93F7B /* MapKit.framework */; };
+		0C4BFC9116D905F700C93F7B /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4BFC9016D905F700C93F7B /* AdSupport.framework */; };
 		1707692816A43DC100FAC276 /* iconPlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 1707692716A43DC100FAC276 /* iconPlay.png */; };
 		1707692B16A4694F00FAC276 /* playicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1707692A16A4694F00FAC276 /* playicon.png */; };
 		1707692D16A561B900FAC276 /* Recipe_Scroll.png in Resources */ = {isa = PBXBuildFile; fileRef = 1707692C16A561B900FAC276 /* Recipe_Scroll.png */; };
@@ -706,6 +929,229 @@
 		0C493A8A1665065600A5690B /* armor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = armor.png; path = ../../armor.png; sourceTree = "<group>"; };
 		0C493A8B1665065600A5690B /* movementSpeed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = movementSpeed.png; path = ../../movementSpeed.png; sourceTree = "<group>"; };
 		0C493A8C1665065600A5690B /* damage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = damage.png; path = ../../damage.png; sourceTree = "<group>"; };
+		0C4BFAD316D905B700C93F7B /* _SZCommentsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = _SZCommentsListViewController.xib; sourceTree = "<group>"; };
+		0C4BFAD416D905B700C93F7B /* _SZComposeCommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = _SZComposeCommentViewController.xib; sourceTree = "<group>"; };
+		0C4BFAD516D905B700C93F7B /* _SZLinkDialogViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = _SZLinkDialogViewController.xib; sourceTree = "<group>"; };
+		0C4BFAD616D905B700C93F7B /* _SZTwitterLinkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = _SZTwitterLinkViewController.xib; sourceTree = "<group>"; };
+		0C4BFAD716D905B700C93F7B /* _SZUserProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = _SZUserProfileViewController.xib; sourceTree = "<group>"; };
+		0C4BFAD816D905B700C93F7B /* _SZUserSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = _SZUserSettingsViewController.xib; sourceTree = "<group>"; };
+		0C4BFAD916D905B700C93F7B /* action-bar-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "action-bar-bg.png"; sourceTree = "<group>"; };
+		0C4BFADA16D905B700C93F7B /* action-bar-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "action-bar-bg@2x.png"; sourceTree = "<group>"; };
+		0C4BFADB16D905B700C93F7B /* action-bar-button-black-hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "action-bar-button-black-hover.png"; sourceTree = "<group>"; };
+		0C4BFADC16D905B700C93F7B /* action-bar-button-black-hover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "action-bar-button-black-hover@2x.png"; sourceTree = "<group>"; };
+		0C4BFADD16D905B700C93F7B /* action-bar-button-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "action-bar-button-black.png"; sourceTree = "<group>"; };
+		0C4BFADE16D905B700C93F7B /* action-bar-button-black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "action-bar-button-black@2x.png"; sourceTree = "<group>"; };
+		0C4BFADF16D905B700C93F7B /* action-bar-button-red-hover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "action-bar-button-red-hover.png"; sourceTree = "<group>"; };
+		0C4BFAE016D905B700C93F7B /* action-bar-button-red-hover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "action-bar-button-red-hover@2x.png"; sourceTree = "<group>"; };
+		0C4BFAE116D905B700C93F7B /* action-bar-button-red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "action-bar-button-red.png"; sourceTree = "<group>"; };
+		0C4BFAE216D905B700C93F7B /* action-bar-button-red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "action-bar-button-red@2x.png"; sourceTree = "<group>"; };
+		0C4BFAE316D905B700C93F7B /* action-bar-icon-comments.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "action-bar-icon-comments.png"; sourceTree = "<group>"; };
+		0C4BFAE416D905B700C93F7B /* action-bar-icon-comments@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "action-bar-icon-comments@2x.png"; sourceTree = "<group>"; };
+		0C4BFAE516D905B700C93F7B /* action-bar-icon-like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "action-bar-icon-like.png"; sourceTree = "<group>"; };
+		0C4BFAE616D905B700C93F7B /* action-bar-icon-like@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "action-bar-icon-like@2x.png"; sourceTree = "<group>"; };
+		0C4BFAE716D905B700C93F7B /* action-bar-icon-liked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "action-bar-icon-liked.png"; sourceTree = "<group>"; };
+		0C4BFAE816D905B700C93F7B /* action-bar-icon-liked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "action-bar-icon-liked@2x.png"; sourceTree = "<group>"; };
+		0C4BFAE916D905B700C93F7B /* action-bar-icon-share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "action-bar-icon-share.png"; sourceTree = "<group>"; };
+		0C4BFAEA16D905B700C93F7B /* action-bar-icon-share@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "action-bar-icon-share@2x.png"; sourceTree = "<group>"; };
+		0C4BFAEB16D905B700C93F7B /* action-bar-icon-views.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "action-bar-icon-views.png"; sourceTree = "<group>"; };
+		0C4BFAEC16D905B700C93F7B /* action-bar-icon-views@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "action-bar-icon-views@2x.png"; sourceTree = "<group>"; };
+		0C4BFAED16D905B700C93F7B /* background_brushed_metal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background_brushed_metal@2x.png"; sourceTree = "<group>"; };
+		0C4BFAEE16D905B700C93F7B /* comment-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "comment-bg.png"; sourceTree = "<group>"; };
+		0C4BFAEF16D905B700C93F7B /* comment-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "comment-bg@2x.png"; sourceTree = "<group>"; };
+		0C4BFAF016D905B700C93F7B /* comment-header-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "comment-header-icon.png"; sourceTree = "<group>"; };
+		0C4BFAF116D905B700C93F7B /* comment-header-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "comment-header-icon@2x.png"; sourceTree = "<group>"; };
+		0C4BFAF216D905B700C93F7B /* comment-sm-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "comment-sm-icon.png"; sourceTree = "<group>"; };
+		0C4BFAF316D905B700C93F7B /* comment-sm-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "comment-sm-icon@2x.png"; sourceTree = "<group>"; };
+		0C4BFAF416D905B700C93F7B /* comment_template_clear.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = comment_template_clear.htm; sourceTree = "<group>"; };
+		0C4BFAF516D905B700C93F7B /* comments-cell-bg-borders.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "comments-cell-bg-borders.png"; sourceTree = "<group>"; };
+		0C4BFAF616D905B700C93F7B /* comments-cell-bg-borders@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "comments-cell-bg-borders@2x.png"; sourceTree = "<group>"; };
+		0C4BFAF716D905B700C93F7B /* commentsNavBarLeftItemView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = commentsNavBarLeftItemView.xib; sourceTree = "<group>"; };
+		0C4BFAF816D905B700C93F7B /* CommentsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentsTableViewCell.xib; sourceTree = "<group>"; };
+		0C4BFAF916D905B700C93F7B /* SampleEntityLoader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleEntityLoader.xib; sourceTree = "<group>"; };
+		0C4BFAFA16D905B700C93F7B /* socialize-activity-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-bg.png"; sourceTree = "<group>"; };
+		0C4BFAFB16D905B700C93F7B /* socialize-activity-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-bg@2x.png"; sourceTree = "<group>"; };
+		0C4BFAFC16D905B700C93F7B /* socialize-activity-call-out-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-call-out-arrow.png"; sourceTree = "<group>"; };
+		0C4BFAFD16D905B700C93F7B /* socialize-activity-call-out-arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-call-out-arrow@2x.png"; sourceTree = "<group>"; };
+		0C4BFAFE16D905B700C93F7B /* socialize-activity-cell-icon-comment-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-cell-icon-comment-highlighted.png"; sourceTree = "<group>"; };
+		0C4BFAFF16D905B700C93F7B /* socialize-activity-cell-icon-comment-highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-cell-icon-comment-highlighted@2x.png"; sourceTree = "<group>"; };
+		0C4BFB0016D905B700C93F7B /* socialize-activity-cell-icon-comment-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-cell-icon-comment-normal.png"; sourceTree = "<group>"; };
+		0C4BFB0116D905B700C93F7B /* socialize-activity-cell-icon-comment-normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-cell-icon-comment-normal@2x.png"; sourceTree = "<group>"; };
+		0C4BFB0216D905B700C93F7B /* socialize-activity-cell-icon-comment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-cell-icon-comment.png"; sourceTree = "<group>"; };
+		0C4BFB0316D905B700C93F7B /* socialize-activity-cell-icon-comment@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-cell-icon-comment@2x.png"; sourceTree = "<group>"; };
+		0C4BFB0416D905B700C93F7B /* socialize-activity-cell-icon-facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-cell-icon-facebook.png"; sourceTree = "<group>"; };
+		0C4BFB0516D905B700C93F7B /* socialize-activity-cell-icon-facebook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-cell-icon-facebook@2x.png"; sourceTree = "<group>"; };
+		0C4BFB0616D905B700C93F7B /* socialize-activity-cell-icon-like-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-cell-icon-like-highlighted.png"; sourceTree = "<group>"; };
+		0C4BFB0716D905B700C93F7B /* socialize-activity-cell-icon-like-highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-cell-icon-like-highlighted@2x.png"; sourceTree = "<group>"; };
+		0C4BFB0816D905B700C93F7B /* socialize-activity-cell-icon-like-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-cell-icon-like-normal.png"; sourceTree = "<group>"; };
+		0C4BFB0916D905B700C93F7B /* socialize-activity-cell-icon-like-normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-cell-icon-like-normal@2x.png"; sourceTree = "<group>"; };
+		0C4BFB0A16D905B700C93F7B /* socialize-activity-cell-icon-like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-cell-icon-like.png"; sourceTree = "<group>"; };
+		0C4BFB0B16D905B700C93F7B /* socialize-activity-cell-icon-like@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-cell-icon-like@2x.png"; sourceTree = "<group>"; };
+		0C4BFB0C16D905B700C93F7B /* socialize-activity-cell-icon-share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-cell-icon-share.png"; sourceTree = "<group>"; };
+		0C4BFB0D16D905B700C93F7B /* socialize-activity-cell-icon-share@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-cell-icon-share@2x.png"; sourceTree = "<group>"; };
+		0C4BFB0E16D905B700C93F7B /* socialize-activity-cell-icon-twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-cell-icon-twitter.png"; sourceTree = "<group>"; };
+		0C4BFB0F16D905B700C93F7B /* socialize-activity-cell-icon-twitter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-cell-icon-twitter@2x.png"; sourceTree = "<group>"; };
+		0C4BFB1016D905B700C93F7B /* socialize-activity-details-back-entry-x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-details-back-entry-x.png"; sourceTree = "<group>"; };
+		0C4BFB1116D905B700C93F7B /* socialize-activity-details-back-entry-x@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-details-back-entry-x@2x.png"; sourceTree = "<group>"; };
+		0C4BFB1216D905B700C93F7B /* socialize-activity-details-back-section-x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-details-back-section-x.png"; sourceTree = "<group>"; };
+		0C4BFB1316D905B700C93F7B /* socialize-activity-details-back-section-x@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-details-back-section-x@2x.png"; sourceTree = "<group>"; };
+		0C4BFB1416D905B700C93F7B /* socialize-activity-details-btn-link.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-details-btn-link.png"; sourceTree = "<group>"; };
+		0C4BFB1516D905B700C93F7B /* socialize-activity-details-btn-link@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-details-btn-link@2x.png"; sourceTree = "<group>"; };
+		0C4BFB1616D905B700C93F7B /* socialize-activity-details-categ_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-details-categ_arrow.png"; sourceTree = "<group>"; };
+		0C4BFB1716D905B700C93F7B /* socialize-activity-details-categ_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-details-categ_arrow@2x.png"; sourceTree = "<group>"; };
+		0C4BFB1816D905B700C93F7B /* socialize-activity-details-ico-chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-details-ico-chat.png"; sourceTree = "<group>"; };
+		0C4BFB1916D905B700C93F7B /* socialize-activity-details-ico-chat@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-details-ico-chat@2x.png"; sourceTree = "<group>"; };
+		0C4BFB1A16D905B700C93F7B /* socialize-activity-details-ico-location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-details-ico-location.png"; sourceTree = "<group>"; };
+		0C4BFB1B16D905B700C93F7B /* socialize-activity-details-ico-location@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-details-ico-location@2x.png"; sourceTree = "<group>"; };
+		0C4BFB1C16D905B700C93F7B /* socialize-activity-details-profile-pic-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-details-profile-pic-small.png"; sourceTree = "<group>"; };
+		0C4BFB1D16D905B700C93F7B /* socialize-activity-details-profile-pic-small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-details-profile-pic-small@2x.png"; sourceTree = "<group>"; };
+		0C4BFB1E16D905B700C93F7B /* socialize-activity-details-top-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-details-top-back.png"; sourceTree = "<group>"; };
+		0C4BFB1F16D905B700C93F7B /* socialize-activity-details-top-back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-activity-details-top-back@2x.png"; sourceTree = "<group>"; };
+		0C4BFB2016D905B700C93F7B /* socialize-authorize-authenticate-badge-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-authorize-authenticate-badge-icon.png"; sourceTree = "<group>"; };
+		0C4BFB2116D905B700C93F7B /* socialize-authorize-authenticate-badge-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-authorize-authenticate-badge-icon@2x.png"; sourceTree = "<group>"; };
+		0C4BFB2216D905B700C93F7B /* socialize-authorize-facebook-disabled-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-authorize-facebook-disabled-icon.png"; sourceTree = "<group>"; };
+		0C4BFB2316D905B700C93F7B /* socialize-authorize-facebook-disabled-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-authorize-facebook-disabled-icon@2x.png"; sourceTree = "<group>"; };
+		0C4BFB2416D905B700C93F7B /* socialize-authorize-facebook-enabled-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-authorize-facebook-enabled-icon.png"; sourceTree = "<group>"; };
+		0C4BFB2516D905B700C93F7B /* socialize-authorize-facebook-enabled-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-authorize-facebook-enabled-icon@2x.png"; sourceTree = "<group>"; };
+		0C4BFB2616D905B700C93F7B /* socialize-authorize-top-shadow-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-authorize-top-shadow-background.png"; sourceTree = "<group>"; };
+		0C4BFB2716D905B700C93F7B /* socialize-authorize-top-shadow-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-authorize-top-shadow-background@2x.png"; sourceTree = "<group>"; };
+		0C4BFB2816D905B700C93F7B /* socialize-authorize-twitter-disabled-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-authorize-twitter-disabled-icon.png"; sourceTree = "<group>"; };
+		0C4BFB2916D905B700C93F7B /* socialize-authorize-twitter-disabled-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-authorize-twitter-disabled-icon@2x.png"; sourceTree = "<group>"; };
+		0C4BFB2A16D905B700C93F7B /* socialize-authorize-twitter-enabled-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-authorize-twitter-enabled-icon.png"; sourceTree = "<group>"; };
+		0C4BFB2B16D905B700C93F7B /* socialize-authorize-twitter-enabled-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-authorize-twitter-enabled-icon@2x.png"; sourceTree = "<group>"; };
+		0C4BFB2C16D905B700C93F7B /* socialize-authorize-user-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-authorize-user-icon.png"; sourceTree = "<group>"; };
+		0C4BFB2D16D905B700C93F7B /* socialize-authorize-user-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-authorize-user-icon@2x.png"; sourceTree = "<group>"; };
+		0C4BFB2E16D905B700C93F7B /* socialize-cell-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-cell-arrow.png"; sourceTree = "<group>"; };
+		0C4BFB2F16D905B700C93F7B /* socialize-cell-arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-cell-arrow@2x.png"; sourceTree = "<group>"; };
+		0C4BFB3016D905B700C93F7B /* socialize-cell-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-cell-bg.png"; sourceTree = "<group>"; };
+		0C4BFB3116D905B700C93F7B /* socialize-cell-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-cell-bg@2x.png"; sourceTree = "<group>"; };
+		0C4BFB3216D905B700C93F7B /* socialize-cell-image-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-cell-image-bg.png"; sourceTree = "<group>"; };
+		0C4BFB3316D905B700C93F7B /* socialize-cell-image-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-cell-image-bg@2x.png"; sourceTree = "<group>"; };
+		0C4BFB3416D905B700C93F7B /* socialize-cell-image-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-cell-image-default.png"; sourceTree = "<group>"; };
+		0C4BFB3516D905B700C93F7B /* socialize-cell-image-default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-cell-image-default@2x.png"; sourceTree = "<group>"; };
+		0C4BFB3616D905B700C93F7B /* socialize-cell-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-cell-image.png"; sourceTree = "<group>"; };
+		0C4BFB3716D905B700C93F7B /* socialize-cell-image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-cell-image@2x.png"; sourceTree = "<group>"; };
+		0C4BFB3816D905B700C93F7B /* socialize-cell-selected-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-cell-selected-bg.png"; sourceTree = "<group>"; };
+		0C4BFB3916D905B700C93F7B /* socialize-cell-selected-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-cell-selected-bg@2x.png"; sourceTree = "<group>"; };
+		0C4BFB3A16D905B700C93F7B /* socialize-checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-checkmark.png"; sourceTree = "<group>"; };
+		0C4BFB3B16D905B700C93F7B /* socialize-checkmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-checkmark@2x.png"; sourceTree = "<group>"; };
+		0C4BFB3C16D905B700C93F7B /* socialize-comment-background-text-input.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-comment-background-text-input.png"; sourceTree = "<group>"; };
+		0C4BFB3D16D905B700C93F7B /* socialize-comment-background-text-input@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-comment-background-text-input@2x.png"; sourceTree = "<group>"; };
+		0C4BFB3E16D905B700C93F7B /* socialize-comment-button-active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-comment-button-active.png"; sourceTree = "<group>"; };
+		0C4BFB3F16D905B700C93F7B /* socialize-comment-button-active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-comment-button-active@2x.png"; sourceTree = "<group>"; };
+		0C4BFB4016D905B700C93F7B /* socialize-comment-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-comment-button.png"; sourceTree = "<group>"; };
+		0C4BFB4116D905B700C93F7B /* socialize-comment-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-comment-button@2x.png"; sourceTree = "<group>"; };
+		0C4BFB4216D905B700C93F7B /* socialize-comment-detail-bottom-shadow-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-comment-detail-bottom-shadow-background.png"; sourceTree = "<group>"; };
+		0C4BFB4316D905B700C93F7B /* socialize-comment-detail-bottom-shadow-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-comment-detail-bottom-shadow-background@2x.png"; sourceTree = "<group>"; };
+		0C4BFB4416D905B700C93F7B /* socialize-comment-details-icon-geo-disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-comment-details-icon-geo-disabled.png"; sourceTree = "<group>"; };
+		0C4BFB4516D905B700C93F7B /* socialize-comment-details-icon-geo-disabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-comment-details-icon-geo-disabled@2x.png"; sourceTree = "<group>"; };
+		0C4BFB4616D905B700C93F7B /* socialize-comment-details-icon-geo-enabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-comment-details-icon-geo-enabled.png"; sourceTree = "<group>"; };
+		0C4BFB4716D905B700C93F7B /* socialize-comment-details-icon-geo-enabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-comment-details-icon-geo-enabled@2x.png"; sourceTree = "<group>"; };
+		0C4BFB4816D905B700C93F7B /* socialize-comment-facebook-disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-comment-facebook-disabled.png"; sourceTree = "<group>"; };
+		0C4BFB4916D905B700C93F7B /* socialize-comment-facebook-disabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-comment-facebook-disabled@2x.png"; sourceTree = "<group>"; };
+		0C4BFB4A16D905B700C93F7B /* socialize-comment-facebook-enabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-comment-facebook-enabled.png"; sourceTree = "<group>"; };
+		0C4BFB4B16D905B700C93F7B /* socialize-comment-facebook-enabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-comment-facebook-enabled@2x.png"; sourceTree = "<group>"; };
+		0C4BFB4C16D905B700C93F7B /* socialize-comment-list-view-location-pin-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-comment-list-view-location-pin-icon.png"; sourceTree = "<group>"; };
+		0C4BFB4D16D905B700C93F7B /* socialize-comment-list-view-location-pin-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-comment-list-view-location-pin-icon@2x.png"; sourceTree = "<group>"; };
+		0C4BFB4E16D905B700C93F7B /* socialize-comment-location-bar-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-comment-location-bar-background.png"; sourceTree = "<group>"; };
+		0C4BFB4F16D905B700C93F7B /* socialize-comment-location-bar-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-comment-location-bar-background@2x.png"; sourceTree = "<group>"; };
+		0C4BFB5016D905B700C93F7B /* socialize-comment-location-disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-comment-location-disabled.png"; sourceTree = "<group>"; };
+		0C4BFB5116D905B700C93F7B /* socialize-comment-location-disabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-comment-location-disabled@2x.png"; sourceTree = "<group>"; };
+		0C4BFB5216D905B700C93F7B /* socialize-comment-location-enabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-comment-location-enabled.png"; sourceTree = "<group>"; };
+		0C4BFB5316D905B700C93F7B /* socialize-comment-location-enabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-comment-location-enabled@2x.png"; sourceTree = "<group>"; };
+		0C4BFB5416D905B700C93F7B /* socialize-comment-notification-disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-comment-notification-disabled.png"; sourceTree = "<group>"; };
+		0C4BFB5516D905B700C93F7B /* socialize-comment-notification-disabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-comment-notification-disabled@2x.png"; sourceTree = "<group>"; };
+		0C4BFB5616D905B700C93F7B /* socialize-comment-notification-enabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-comment-notification-enabled.png"; sourceTree = "<group>"; };
+		0C4BFB5716D905B700C93F7B /* socialize-comment-notification-enabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-comment-notification-enabled@2x.png"; sourceTree = "<group>"; };
+		0C4BFB5816D905B700C93F7B /* socialize-comment-top-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-comment-top-background.png"; sourceTree = "<group>"; };
+		0C4BFB5916D905B700C93F7B /* socialize-comment-twitter-disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-comment-twitter-disabled.png"; sourceTree = "<group>"; };
+		0C4BFB5A16D905B700C93F7B /* socialize-comment-twitter-disabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-comment-twitter-disabled@2x.png"; sourceTree = "<group>"; };
+		0C4BFB5B16D905B700C93F7B /* socialize-comment-twitter-enabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-comment-twitter-enabled.png"; sourceTree = "<group>"; };
+		0C4BFB5C16D905B700C93F7B /* socialize-comment-twitter-enabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-comment-twitter-enabled@2x.png"; sourceTree = "<group>"; };
+		0C4BFB5D16D905B700C93F7B /* socialize-comment-user-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-comment-user-background.png"; sourceTree = "<group>"; };
+		0C4BFB5E16D905B700C93F7B /* socialize-comment-user-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-comment-user-background@2x.png"; sourceTree = "<group>"; };
+		0C4BFB5F16D905B700C93F7B /* socialize-comment-user-only-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-comment-user-only-background.png"; sourceTree = "<group>"; };
+		0C4BFB6016D905B700C93F7B /* socialize-iphone-notification-button-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-iphone-notification-button-highlighted.png"; sourceTree = "<group>"; };
+		0C4BFB6116D905B700C93F7B /* socialize-iphone-notification-button-highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-iphone-notification-button-highlighted@2x.png"; sourceTree = "<group>"; };
+		0C4BFB6216D905B700C93F7B /* socialize-iphone-notification-button-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-iphone-notification-button-normal.png"; sourceTree = "<group>"; };
+		0C4BFB6316D905B700C93F7B /* socialize-iphone-notification-button-normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-iphone-notification-button-normal@2x.png"; sourceTree = "<group>"; };
+		0C4BFB6416D905B700C93F7B /* socialize-iphone-subcribe-notification-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-iphone-subcribe-notification-icon.png"; sourceTree = "<group>"; };
+		0C4BFB6516D905B700C93F7B /* socialize-iphone-subcribe-notification-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-iphone-subcribe-notification-icon@2x.png"; sourceTree = "<group>"; };
+		0C4BFB6616D905B700C93F7B /* socialize-location-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-location-icon.png"; sourceTree = "<group>"; };
+		0C4BFB6716D905B700C93F7B /* socialize-navbar-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-navbar-bg.png"; sourceTree = "<group>"; };
+		0C4BFB6816D905B700C93F7B /* socialize-navbar-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-navbar-bg@2x.png"; sourceTree = "<group>"; };
+		0C4BFB6916D905B700C93F7B /* socialize-navbar-button-back-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-navbar-button-back-pressed.png"; sourceTree = "<group>"; };
+		0C4BFB6A16D905B700C93F7B /* socialize-navbar-button-back-pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-navbar-button-back-pressed@2x.png"; sourceTree = "<group>"; };
+		0C4BFB6B16D905B700C93F7B /* socialize-navbar-button-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-navbar-button-back.png"; sourceTree = "<group>"; };
+		0C4BFB6C16D905B700C93F7B /* socialize-navbar-button-back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-navbar-button-back@2x.png"; sourceTree = "<group>"; };
+		0C4BFB6D16D905B700C93F7B /* socialize-navbar-button-blue-bg-highlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-navbar-button-blue-bg-highlighted.png"; sourceTree = "<group>"; };
+		0C4BFB6E16D905B700C93F7B /* socialize-navbar-button-blue-bg-highlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-navbar-button-blue-bg-highlighted@2x.png"; sourceTree = "<group>"; };
+		0C4BFB6F16D905B700C93F7B /* socialize-navbar-button-blue-bg-inactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-navbar-button-blue-bg-inactive.png"; sourceTree = "<group>"; };
+		0C4BFB7016D905B700C93F7B /* socialize-navbar-button-blue-bg-inactive@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-navbar-button-blue-bg-inactive@2x.png"; sourceTree = "<group>"; };
+		0C4BFB7116D905B700C93F7B /* socialize-navbar-button-blue-bg-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-navbar-button-blue-bg-normal.png"; sourceTree = "<group>"; };
+		0C4BFB7216D905B700C93F7B /* socialize-navbar-button-blue-bg-normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-navbar-button-blue-bg-normal@2x.png"; sourceTree = "<group>"; };
+		0C4BFB7316D905B700C93F7B /* socialize-navbar-button-dark-active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-navbar-button-dark-active.png"; sourceTree = "<group>"; };
+		0C4BFB7416D905B700C93F7B /* socialize-navbar-button-dark-active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-navbar-button-dark-active@2x.png"; sourceTree = "<group>"; };
+		0C4BFB7516D905B700C93F7B /* socialize-navbar-button-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-navbar-button-dark.png"; sourceTree = "<group>"; };
+		0C4BFB7616D905B700C93F7B /* socialize-navbar-button-dark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-navbar-button-dark@2x.png"; sourceTree = "<group>"; };
+		0C4BFB7716D905B700C93F7B /* socialize-navbar-button-green-active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-navbar-button-green-active.png"; sourceTree = "<group>"; };
+		0C4BFB7816D905B700C93F7B /* socialize-navbar-button-green-active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-navbar-button-green-active@2x.png"; sourceTree = "<group>"; };
+		0C4BFB7916D905B700C93F7B /* socialize-navbar-button-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-navbar-button-green.png"; sourceTree = "<group>"; };
+		0C4BFB7A16D905B700C93F7B /* socialize-navbar-button-green@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-navbar-button-green@2x.png"; sourceTree = "<group>"; };
+		0C4BFB7B16D905B700C93F7B /* socialize-navbar-button-red-active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-navbar-button-red-active.png"; sourceTree = "<group>"; };
+		0C4BFB7C16D905B700C93F7B /* socialize-navbar-button-red-active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-navbar-button-red-active@2x.png"; sourceTree = "<group>"; };
+		0C4BFB7D16D905B700C93F7B /* socialize-navbar-button-red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-navbar-button-red.png"; sourceTree = "<group>"; };
+		0C4BFB7E16D905B700C93F7B /* socialize-navbar-button-red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-navbar-button-red@2x.png"; sourceTree = "<group>"; };
+		0C4BFB7F16D905B700C93F7B /* socialize-nocomments-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-nocomments-icon.png"; sourceTree = "<group>"; };
+		0C4BFB8016D905B700C93F7B /* socialize-nocomments-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-nocomments-icon@2x.png"; sourceTree = "<group>"; };
+		0C4BFB8116D905B700C93F7B /* socialize-notifications-bottom-shadow-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-notifications-bottom-shadow-background.png"; sourceTree = "<group>"; };
+		0C4BFB8216D905B700C93F7B /* socialize-notifications-bottom-shadow-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-notifications-bottom-shadow-background@2x.png"; sourceTree = "<group>"; };
+		0C4BFB8316D905B700C93F7B /* socialize-profileimage-large-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-profileimage-large-bg.png"; sourceTree = "<group>"; };
+		0C4BFB8416D905B700C93F7B /* socialize-profileimage-large-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-profileimage-large-bg@2x.png"; sourceTree = "<group>"; };
+		0C4BFB8516D905B700C93F7B /* socialize-profileimage-large-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-profileimage-large-default.png"; sourceTree = "<group>"; };
+		0C4BFB8616D905B700C93F7B /* socialize-profileimage-large-default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-profileimage-large-default@2x.png"; sourceTree = "<group>"; };
+		0C4BFB8716D905B700C93F7B /* socialize-sectionheader-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-sectionheader-bg.png"; sourceTree = "<group>"; };
+		0C4BFB8816D905B700C93F7B /* socialize-sectionheader-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-sectionheader-bg@2x.png"; sourceTree = "<group>"; };
+		0C4BFB8916D905B700C93F7B /* socialize-selectnetwork-continue-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-selectnetwork-continue-btn.png"; sourceTree = "<group>"; };
+		0C4BFB8A16D905B700C93F7B /* socialize-selectnetwork-continue-btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-selectnetwork-continue-btn@2x.png"; sourceTree = "<group>"; };
+		0C4BFB8B16D905B700C93F7B /* socialize-selectnetwork-email-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-selectnetwork-email-icon.png"; sourceTree = "<group>"; };
+		0C4BFB8C16D905B700C93F7B /* socialize-selectnetwork-email-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-selectnetwork-email-icon@2x.png"; sourceTree = "<group>"; };
+		0C4BFB8D16D905B700C93F7B /* socialize-selectnetwork-facebook-dis-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-selectnetwork-facebook-dis-icon.png"; sourceTree = "<group>"; };
+		0C4BFB8E16D905B700C93F7B /* socialize-selectnetwork-facebook-dis-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-selectnetwork-facebook-dis-icon@2x.png"; sourceTree = "<group>"; };
+		0C4BFB8F16D905B700C93F7B /* socialize-selectnetwork-facebook-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-selectnetwork-facebook-icon.png"; sourceTree = "<group>"; };
+		0C4BFB9016D905B700C93F7B /* socialize-selectnetwork-facebook-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-selectnetwork-facebook-icon@2x.png"; sourceTree = "<group>"; };
+		0C4BFB9116D905B700C93F7B /* socialize-selectnetwork-illustration.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-selectnetwork-illustration.png"; sourceTree = "<group>"; };
+		0C4BFB9216D905B700C93F7B /* socialize-selectnetwork-illustration@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-selectnetwork-illustration@2x.png"; sourceTree = "<group>"; };
+		0C4BFB9316D905B700C93F7B /* socialize-selectnetwork-SMS-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-selectnetwork-SMS-icon.png"; sourceTree = "<group>"; };
+		0C4BFB9416D905B700C93F7B /* socialize-selectnetwork-SMS-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-selectnetwork-SMS-icon@2x.png"; sourceTree = "<group>"; };
+		0C4BFB9516D905B700C93F7B /* socialize-selectnetwork-table-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-selectnetwork-table-back.png"; sourceTree = "<group>"; };
+		0C4BFB9616D905B700C93F7B /* socialize-selectnetwork-table-back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-selectnetwork-table-back@2x.png"; sourceTree = "<group>"; };
+		0C4BFB9716D905B700C93F7B /* socialize-selectnetwork-twitter-dis-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-selectnetwork-twitter-dis-icon.png"; sourceTree = "<group>"; };
+		0C4BFB9816D905B700C93F7B /* socialize-selectnetwork-twitter-dis-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-selectnetwork-twitter-dis-icon@2x.png"; sourceTree = "<group>"; };
+		0C4BFB9916D905B700C93F7B /* socialize-selectnetwork-twitter-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-selectnetwork-twitter-icon.png"; sourceTree = "<group>"; };
+		0C4BFB9A16D905B700C93F7B /* socialize-selectnetwork-twitter-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialize-selectnetwork-twitter-icon@2x.png"; sourceTree = "<group>"; };
+		0C4BFB9B16D905B700C93F7B /* socialize_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = socialize_logo.png; sourceTree = "<group>"; };
+		0C4BFB9C16D905B700C93F7B /* socialize_twitter_load.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = socialize_twitter_load.png; sourceTree = "<group>"; };
+		0C4BFB9D16D905B700C93F7B /* SocializeActivityDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocializeActivityDetailsViewController.xib; sourceTree = "<group>"; };
+		0C4BFB9E16D905B700C93F7B /* SocializeActivityTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocializeActivityTableViewCell.xib; sourceTree = "<group>"; };
+		0C4BFB9F16D905B700C93F7B /* SocializeActivityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocializeActivityViewController.xib; sourceTree = "<group>"; };
+		0C4BFBA016D905B700C93F7B /* SocializeAuthInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocializeAuthInfoTableViewCell.xib; sourceTree = "<group>"; };
+		0C4BFBA116D905B700C93F7B /* SocializeAuthTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocializeAuthTableViewCell.xib; sourceTree = "<group>"; };
+		0C4BFBA216D905B700C93F7B /* SocializeCommentDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocializeCommentDetailsViewController.xib; sourceTree = "<group>"; };
+		0C4BFBA316D905B700C93F7B /* SocializeComposeMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocializeComposeMessageViewController.xib; sourceTree = "<group>"; };
+		0C4BFBA416D905B700C93F7B /* SocializeConfigurationInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SocializeConfigurationInfo.plist; sourceTree = "<group>"; };
+		0C4BFBA516D905B700C93F7B /* SocializeDummyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocializeDummyViewController.xib; sourceTree = "<group>"; };
+		0C4BFBA616D905B700C93F7B /* SocializeEditValueTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocializeEditValueTableViewCell.xib; sourceTree = "<group>"; };
+		0C4BFBA716D905B700C93F7B /* SocializeNotificationToggleBubbleContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocializeNotificationToggleBubbleContentView.xib; sourceTree = "<group>"; };
+		0C4BFBA816D905B700C93F7B /* SocializeProfileEditTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocializeProfileEditTableViewCell.xib; sourceTree = "<group>"; };
+		0C4BFBA916D905B700C93F7B /* SocializeProfileEditTableViewImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocializeProfileEditTableViewImageCell.xib; sourceTree = "<group>"; };
+		0C4BFBAA16D905B700C93F7B /* SocializeProfileEditValueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocializeProfileEditValueViewController.xib; sourceTree = "<group>"; };
+		0C4BFBAB16D905B700C93F7B /* SocializeRichPushNotificationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocializeRichPushNotificationViewController.xib; sourceTree = "<group>"; };
+		0C4BFBAC16D905B700C93F7B /* SocializeTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SocializeTableViewController.xib; sourceTree = "<group>"; };
+		0C4BFBAD16D905B700C93F7B /* SZBaseShareViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SZBaseShareViewController.xib; sourceTree = "<group>"; };
+		0C4BFBAE16D905B700C93F7B /* SZStatusImageLabelView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SZStatusImageLabelView.xib; sourceTree = "<group>"; };
+		0C4BFBAF16D905B700C93F7B /* Socialize.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Socialize.framework; sourceTree = "<group>"; };
+		0C4BFC8E16D905E200C93F7B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		0C4BFC9016D905F700C93F7B /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		1707692716A43DC100FAC276 /* iconPlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconPlay.png; sourceTree = "<group>"; };
 		1707692A16A4694F00FAC276 /* playicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playicon.png; sourceTree = "<group>"; };
 		1707692C16A561B900FAC276 /* Recipe_Scroll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Recipe_Scroll.png; sourceTree = "<group>"; };
@@ -1490,11 +1936,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C4BFC9116D905F700C93F7B /* AdSupport.framework in Frameworks */,
+				5C99E0DE16B439D900235CB6 /* MessageUI.framework in Frameworks */,
+				0C4BFC8F16D905E200C93F7B /* MapKit.framework in Frameworks */,
 				B12189C116D8DE7C001D203D /* CoreLocation.framework in Frameworks */,
 				5CC4635316BED1A600118A97 /* libsqlite3.dylib in Frameworks */,
 				5CC4635116BED19400118A97 /* Accounts.framework in Frameworks */,
 				5C4F113F16B44A6E00EB4527 /* CFNetwork.framework in Frameworks */,
-				5C99E0DE16B439D900235CB6 /* MessageUI.framework in Frameworks */,
 				5C47D48F1696170F00C2DA74 /* QuartzCore.framework in Frameworks */,
 				ED08F245165D1930001C4424 /* Security.framework in Frameworks */,
 				ED08F212165D133F001C4424 /* SystemConfiguration.framework in Frameworks */,
@@ -1504,12 +1952,249 @@
 				B18C9E36164E8B5900ADE97A /* CoreGraphics.framework in Frameworks */,
 				B18C9E38164E8B5900ADE97A /* CoreData.framework in Frameworks */,
 				B12189BE16D8DE2E001D203D /* libstackmob-v1.3.0.a in Frameworks */,
+				0C4BFC8C16D905B700C93F7B /* Socialize.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C4BFAD116D905B700C93F7B /* Socialize.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				0C4BFAD216D905B700C93F7B /* Resources */,
+				0C4BFBAF16D905B700C93F7B /* Socialize.framework */,
+			);
+			path = Socialize.embeddedframework;
+			sourceTree = "<group>";
+		};
+		0C4BFAD216D905B700C93F7B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0C4BFAD316D905B700C93F7B /* _SZCommentsListViewController.xib */,
+				0C4BFAD416D905B700C93F7B /* _SZComposeCommentViewController.xib */,
+				0C4BFAD516D905B700C93F7B /* _SZLinkDialogViewController.xib */,
+				0C4BFAD616D905B700C93F7B /* _SZTwitterLinkViewController.xib */,
+				0C4BFAD716D905B700C93F7B /* _SZUserProfileViewController.xib */,
+				0C4BFAD816D905B700C93F7B /* _SZUserSettingsViewController.xib */,
+				0C4BFAD916D905B700C93F7B /* action-bar-bg.png */,
+				0C4BFADA16D905B700C93F7B /* action-bar-bg@2x.png */,
+				0C4BFADB16D905B700C93F7B /* action-bar-button-black-hover.png */,
+				0C4BFADC16D905B700C93F7B /* action-bar-button-black-hover@2x.png */,
+				0C4BFADD16D905B700C93F7B /* action-bar-button-black.png */,
+				0C4BFADE16D905B700C93F7B /* action-bar-button-black@2x.png */,
+				0C4BFADF16D905B700C93F7B /* action-bar-button-red-hover.png */,
+				0C4BFAE016D905B700C93F7B /* action-bar-button-red-hover@2x.png */,
+				0C4BFAE116D905B700C93F7B /* action-bar-button-red.png */,
+				0C4BFAE216D905B700C93F7B /* action-bar-button-red@2x.png */,
+				0C4BFAE316D905B700C93F7B /* action-bar-icon-comments.png */,
+				0C4BFAE416D905B700C93F7B /* action-bar-icon-comments@2x.png */,
+				0C4BFAE516D905B700C93F7B /* action-bar-icon-like.png */,
+				0C4BFAE616D905B700C93F7B /* action-bar-icon-like@2x.png */,
+				0C4BFAE716D905B700C93F7B /* action-bar-icon-liked.png */,
+				0C4BFAE816D905B700C93F7B /* action-bar-icon-liked@2x.png */,
+				0C4BFAE916D905B700C93F7B /* action-bar-icon-share.png */,
+				0C4BFAEA16D905B700C93F7B /* action-bar-icon-share@2x.png */,
+				0C4BFAEB16D905B700C93F7B /* action-bar-icon-views.png */,
+				0C4BFAEC16D905B700C93F7B /* action-bar-icon-views@2x.png */,
+				0C4BFAED16D905B700C93F7B /* background_brushed_metal@2x.png */,
+				0C4BFAEE16D905B700C93F7B /* comment-bg.png */,
+				0C4BFAEF16D905B700C93F7B /* comment-bg@2x.png */,
+				0C4BFAF016D905B700C93F7B /* comment-header-icon.png */,
+				0C4BFAF116D905B700C93F7B /* comment-header-icon@2x.png */,
+				0C4BFAF216D905B700C93F7B /* comment-sm-icon.png */,
+				0C4BFAF316D905B700C93F7B /* comment-sm-icon@2x.png */,
+				0C4BFAF416D905B700C93F7B /* comment_template_clear.htm */,
+				0C4BFAF516D905B700C93F7B /* comments-cell-bg-borders.png */,
+				0C4BFAF616D905B700C93F7B /* comments-cell-bg-borders@2x.png */,
+				0C4BFAF716D905B700C93F7B /* commentsNavBarLeftItemView.xib */,
+				0C4BFAF816D905B700C93F7B /* CommentsTableViewCell.xib */,
+				0C4BFAF916D905B700C93F7B /* SampleEntityLoader.xib */,
+				0C4BFAFA16D905B700C93F7B /* socialize-activity-bg.png */,
+				0C4BFAFB16D905B700C93F7B /* socialize-activity-bg@2x.png */,
+				0C4BFAFC16D905B700C93F7B /* socialize-activity-call-out-arrow.png */,
+				0C4BFAFD16D905B700C93F7B /* socialize-activity-call-out-arrow@2x.png */,
+				0C4BFAFE16D905B700C93F7B /* socialize-activity-cell-icon-comment-highlighted.png */,
+				0C4BFAFF16D905B700C93F7B /* socialize-activity-cell-icon-comment-highlighted@2x.png */,
+				0C4BFB0016D905B700C93F7B /* socialize-activity-cell-icon-comment-normal.png */,
+				0C4BFB0116D905B700C93F7B /* socialize-activity-cell-icon-comment-normal@2x.png */,
+				0C4BFB0216D905B700C93F7B /* socialize-activity-cell-icon-comment.png */,
+				0C4BFB0316D905B700C93F7B /* socialize-activity-cell-icon-comment@2x.png */,
+				0C4BFB0416D905B700C93F7B /* socialize-activity-cell-icon-facebook.png */,
+				0C4BFB0516D905B700C93F7B /* socialize-activity-cell-icon-facebook@2x.png */,
+				0C4BFB0616D905B700C93F7B /* socialize-activity-cell-icon-like-highlighted.png */,
+				0C4BFB0716D905B700C93F7B /* socialize-activity-cell-icon-like-highlighted@2x.png */,
+				0C4BFB0816D905B700C93F7B /* socialize-activity-cell-icon-like-normal.png */,
+				0C4BFB0916D905B700C93F7B /* socialize-activity-cell-icon-like-normal@2x.png */,
+				0C4BFB0A16D905B700C93F7B /* socialize-activity-cell-icon-like.png */,
+				0C4BFB0B16D905B700C93F7B /* socialize-activity-cell-icon-like@2x.png */,
+				0C4BFB0C16D905B700C93F7B /* socialize-activity-cell-icon-share.png */,
+				0C4BFB0D16D905B700C93F7B /* socialize-activity-cell-icon-share@2x.png */,
+				0C4BFB0E16D905B700C93F7B /* socialize-activity-cell-icon-twitter.png */,
+				0C4BFB0F16D905B700C93F7B /* socialize-activity-cell-icon-twitter@2x.png */,
+				0C4BFB1016D905B700C93F7B /* socialize-activity-details-back-entry-x.png */,
+				0C4BFB1116D905B700C93F7B /* socialize-activity-details-back-entry-x@2x.png */,
+				0C4BFB1216D905B700C93F7B /* socialize-activity-details-back-section-x.png */,
+				0C4BFB1316D905B700C93F7B /* socialize-activity-details-back-section-x@2x.png */,
+				0C4BFB1416D905B700C93F7B /* socialize-activity-details-btn-link.png */,
+				0C4BFB1516D905B700C93F7B /* socialize-activity-details-btn-link@2x.png */,
+				0C4BFB1616D905B700C93F7B /* socialize-activity-details-categ_arrow.png */,
+				0C4BFB1716D905B700C93F7B /* socialize-activity-details-categ_arrow@2x.png */,
+				0C4BFB1816D905B700C93F7B /* socialize-activity-details-ico-chat.png */,
+				0C4BFB1916D905B700C93F7B /* socialize-activity-details-ico-chat@2x.png */,
+				0C4BFB1A16D905B700C93F7B /* socialize-activity-details-ico-location.png */,
+				0C4BFB1B16D905B700C93F7B /* socialize-activity-details-ico-location@2x.png */,
+				0C4BFB1C16D905B700C93F7B /* socialize-activity-details-profile-pic-small.png */,
+				0C4BFB1D16D905B700C93F7B /* socialize-activity-details-profile-pic-small@2x.png */,
+				0C4BFB1E16D905B700C93F7B /* socialize-activity-details-top-back.png */,
+				0C4BFB1F16D905B700C93F7B /* socialize-activity-details-top-back@2x.png */,
+				0C4BFB2016D905B700C93F7B /* socialize-authorize-authenticate-badge-icon.png */,
+				0C4BFB2116D905B700C93F7B /* socialize-authorize-authenticate-badge-icon@2x.png */,
+				0C4BFB2216D905B700C93F7B /* socialize-authorize-facebook-disabled-icon.png */,
+				0C4BFB2316D905B700C93F7B /* socialize-authorize-facebook-disabled-icon@2x.png */,
+				0C4BFB2416D905B700C93F7B /* socialize-authorize-facebook-enabled-icon.png */,
+				0C4BFB2516D905B700C93F7B /* socialize-authorize-facebook-enabled-icon@2x.png */,
+				0C4BFB2616D905B700C93F7B /* socialize-authorize-top-shadow-background.png */,
+				0C4BFB2716D905B700C93F7B /* socialize-authorize-top-shadow-background@2x.png */,
+				0C4BFB2816D905B700C93F7B /* socialize-authorize-twitter-disabled-icon.png */,
+				0C4BFB2916D905B700C93F7B /* socialize-authorize-twitter-disabled-icon@2x.png */,
+				0C4BFB2A16D905B700C93F7B /* socialize-authorize-twitter-enabled-icon.png */,
+				0C4BFB2B16D905B700C93F7B /* socialize-authorize-twitter-enabled-icon@2x.png */,
+				0C4BFB2C16D905B700C93F7B /* socialize-authorize-user-icon.png */,
+				0C4BFB2D16D905B700C93F7B /* socialize-authorize-user-icon@2x.png */,
+				0C4BFB2E16D905B700C93F7B /* socialize-cell-arrow.png */,
+				0C4BFB2F16D905B700C93F7B /* socialize-cell-arrow@2x.png */,
+				0C4BFB3016D905B700C93F7B /* socialize-cell-bg.png */,
+				0C4BFB3116D905B700C93F7B /* socialize-cell-bg@2x.png */,
+				0C4BFB3216D905B700C93F7B /* socialize-cell-image-bg.png */,
+				0C4BFB3316D905B700C93F7B /* socialize-cell-image-bg@2x.png */,
+				0C4BFB3416D905B700C93F7B /* socialize-cell-image-default.png */,
+				0C4BFB3516D905B700C93F7B /* socialize-cell-image-default@2x.png */,
+				0C4BFB3616D905B700C93F7B /* socialize-cell-image.png */,
+				0C4BFB3716D905B700C93F7B /* socialize-cell-image@2x.png */,
+				0C4BFB3816D905B700C93F7B /* socialize-cell-selected-bg.png */,
+				0C4BFB3916D905B700C93F7B /* socialize-cell-selected-bg@2x.png */,
+				0C4BFB3A16D905B700C93F7B /* socialize-checkmark.png */,
+				0C4BFB3B16D905B700C93F7B /* socialize-checkmark@2x.png */,
+				0C4BFB3C16D905B700C93F7B /* socialize-comment-background-text-input.png */,
+				0C4BFB3D16D905B700C93F7B /* socialize-comment-background-text-input@2x.png */,
+				0C4BFB3E16D905B700C93F7B /* socialize-comment-button-active.png */,
+				0C4BFB3F16D905B700C93F7B /* socialize-comment-button-active@2x.png */,
+				0C4BFB4016D905B700C93F7B /* socialize-comment-button.png */,
+				0C4BFB4116D905B700C93F7B /* socialize-comment-button@2x.png */,
+				0C4BFB4216D905B700C93F7B /* socialize-comment-detail-bottom-shadow-background.png */,
+				0C4BFB4316D905B700C93F7B /* socialize-comment-detail-bottom-shadow-background@2x.png */,
+				0C4BFB4416D905B700C93F7B /* socialize-comment-details-icon-geo-disabled.png */,
+				0C4BFB4516D905B700C93F7B /* socialize-comment-details-icon-geo-disabled@2x.png */,
+				0C4BFB4616D905B700C93F7B /* socialize-comment-details-icon-geo-enabled.png */,
+				0C4BFB4716D905B700C93F7B /* socialize-comment-details-icon-geo-enabled@2x.png */,
+				0C4BFB4816D905B700C93F7B /* socialize-comment-facebook-disabled.png */,
+				0C4BFB4916D905B700C93F7B /* socialize-comment-facebook-disabled@2x.png */,
+				0C4BFB4A16D905B700C93F7B /* socialize-comment-facebook-enabled.png */,
+				0C4BFB4B16D905B700C93F7B /* socialize-comment-facebook-enabled@2x.png */,
+				0C4BFB4C16D905B700C93F7B /* socialize-comment-list-view-location-pin-icon.png */,
+				0C4BFB4D16D905B700C93F7B /* socialize-comment-list-view-location-pin-icon@2x.png */,
+				0C4BFB4E16D905B700C93F7B /* socialize-comment-location-bar-background.png */,
+				0C4BFB4F16D905B700C93F7B /* socialize-comment-location-bar-background@2x.png */,
+				0C4BFB5016D905B700C93F7B /* socialize-comment-location-disabled.png */,
+				0C4BFB5116D905B700C93F7B /* socialize-comment-location-disabled@2x.png */,
+				0C4BFB5216D905B700C93F7B /* socialize-comment-location-enabled.png */,
+				0C4BFB5316D905B700C93F7B /* socialize-comment-location-enabled@2x.png */,
+				0C4BFB5416D905B700C93F7B /* socialize-comment-notification-disabled.png */,
+				0C4BFB5516D905B700C93F7B /* socialize-comment-notification-disabled@2x.png */,
+				0C4BFB5616D905B700C93F7B /* socialize-comment-notification-enabled.png */,
+				0C4BFB5716D905B700C93F7B /* socialize-comment-notification-enabled@2x.png */,
+				0C4BFB5816D905B700C93F7B /* socialize-comment-top-background.png */,
+				0C4BFB5916D905B700C93F7B /* socialize-comment-twitter-disabled.png */,
+				0C4BFB5A16D905B700C93F7B /* socialize-comment-twitter-disabled@2x.png */,
+				0C4BFB5B16D905B700C93F7B /* socialize-comment-twitter-enabled.png */,
+				0C4BFB5C16D905B700C93F7B /* socialize-comment-twitter-enabled@2x.png */,
+				0C4BFB5D16D905B700C93F7B /* socialize-comment-user-background.png */,
+				0C4BFB5E16D905B700C93F7B /* socialize-comment-user-background@2x.png */,
+				0C4BFB5F16D905B700C93F7B /* socialize-comment-user-only-background.png */,
+				0C4BFB6016D905B700C93F7B /* socialize-iphone-notification-button-highlighted.png */,
+				0C4BFB6116D905B700C93F7B /* socialize-iphone-notification-button-highlighted@2x.png */,
+				0C4BFB6216D905B700C93F7B /* socialize-iphone-notification-button-normal.png */,
+				0C4BFB6316D905B700C93F7B /* socialize-iphone-notification-button-normal@2x.png */,
+				0C4BFB6416D905B700C93F7B /* socialize-iphone-subcribe-notification-icon.png */,
+				0C4BFB6516D905B700C93F7B /* socialize-iphone-subcribe-notification-icon@2x.png */,
+				0C4BFB6616D905B700C93F7B /* socialize-location-icon.png */,
+				0C4BFB6716D905B700C93F7B /* socialize-navbar-bg.png */,
+				0C4BFB6816D905B700C93F7B /* socialize-navbar-bg@2x.png */,
+				0C4BFB6916D905B700C93F7B /* socialize-navbar-button-back-pressed.png */,
+				0C4BFB6A16D905B700C93F7B /* socialize-navbar-button-back-pressed@2x.png */,
+				0C4BFB6B16D905B700C93F7B /* socialize-navbar-button-back.png */,
+				0C4BFB6C16D905B700C93F7B /* socialize-navbar-button-back@2x.png */,
+				0C4BFB6D16D905B700C93F7B /* socialize-navbar-button-blue-bg-highlighted.png */,
+				0C4BFB6E16D905B700C93F7B /* socialize-navbar-button-blue-bg-highlighted@2x.png */,
+				0C4BFB6F16D905B700C93F7B /* socialize-navbar-button-blue-bg-inactive.png */,
+				0C4BFB7016D905B700C93F7B /* socialize-navbar-button-blue-bg-inactive@2x.png */,
+				0C4BFB7116D905B700C93F7B /* socialize-navbar-button-blue-bg-normal.png */,
+				0C4BFB7216D905B700C93F7B /* socialize-navbar-button-blue-bg-normal@2x.png */,
+				0C4BFB7316D905B700C93F7B /* socialize-navbar-button-dark-active.png */,
+				0C4BFB7416D905B700C93F7B /* socialize-navbar-button-dark-active@2x.png */,
+				0C4BFB7516D905B700C93F7B /* socialize-navbar-button-dark.png */,
+				0C4BFB7616D905B700C93F7B /* socialize-navbar-button-dark@2x.png */,
+				0C4BFB7716D905B700C93F7B /* socialize-navbar-button-green-active.png */,
+				0C4BFB7816D905B700C93F7B /* socialize-navbar-button-green-active@2x.png */,
+				0C4BFB7916D905B700C93F7B /* socialize-navbar-button-green.png */,
+				0C4BFB7A16D905B700C93F7B /* socialize-navbar-button-green@2x.png */,
+				0C4BFB7B16D905B700C93F7B /* socialize-navbar-button-red-active.png */,
+				0C4BFB7C16D905B700C93F7B /* socialize-navbar-button-red-active@2x.png */,
+				0C4BFB7D16D905B700C93F7B /* socialize-navbar-button-red.png */,
+				0C4BFB7E16D905B700C93F7B /* socialize-navbar-button-red@2x.png */,
+				0C4BFB7F16D905B700C93F7B /* socialize-nocomments-icon.png */,
+				0C4BFB8016D905B700C93F7B /* socialize-nocomments-icon@2x.png */,
+				0C4BFB8116D905B700C93F7B /* socialize-notifications-bottom-shadow-background.png */,
+				0C4BFB8216D905B700C93F7B /* socialize-notifications-bottom-shadow-background@2x.png */,
+				0C4BFB8316D905B700C93F7B /* socialize-profileimage-large-bg.png */,
+				0C4BFB8416D905B700C93F7B /* socialize-profileimage-large-bg@2x.png */,
+				0C4BFB8516D905B700C93F7B /* socialize-profileimage-large-default.png */,
+				0C4BFB8616D905B700C93F7B /* socialize-profileimage-large-default@2x.png */,
+				0C4BFB8716D905B700C93F7B /* socialize-sectionheader-bg.png */,
+				0C4BFB8816D905B700C93F7B /* socialize-sectionheader-bg@2x.png */,
+				0C4BFB8916D905B700C93F7B /* socialize-selectnetwork-continue-btn.png */,
+				0C4BFB8A16D905B700C93F7B /* socialize-selectnetwork-continue-btn@2x.png */,
+				0C4BFB8B16D905B700C93F7B /* socialize-selectnetwork-email-icon.png */,
+				0C4BFB8C16D905B700C93F7B /* socialize-selectnetwork-email-icon@2x.png */,
+				0C4BFB8D16D905B700C93F7B /* socialize-selectnetwork-facebook-dis-icon.png */,
+				0C4BFB8E16D905B700C93F7B /* socialize-selectnetwork-facebook-dis-icon@2x.png */,
+				0C4BFB8F16D905B700C93F7B /* socialize-selectnetwork-facebook-icon.png */,
+				0C4BFB9016D905B700C93F7B /* socialize-selectnetwork-facebook-icon@2x.png */,
+				0C4BFB9116D905B700C93F7B /* socialize-selectnetwork-illustration.png */,
+				0C4BFB9216D905B700C93F7B /* socialize-selectnetwork-illustration@2x.png */,
+				0C4BFB9316D905B700C93F7B /* socialize-selectnetwork-SMS-icon.png */,
+				0C4BFB9416D905B700C93F7B /* socialize-selectnetwork-SMS-icon@2x.png */,
+				0C4BFB9516D905B700C93F7B /* socialize-selectnetwork-table-back.png */,
+				0C4BFB9616D905B700C93F7B /* socialize-selectnetwork-table-back@2x.png */,
+				0C4BFB9716D905B700C93F7B /* socialize-selectnetwork-twitter-dis-icon.png */,
+				0C4BFB9816D905B700C93F7B /* socialize-selectnetwork-twitter-dis-icon@2x.png */,
+				0C4BFB9916D905B700C93F7B /* socialize-selectnetwork-twitter-icon.png */,
+				0C4BFB9A16D905B700C93F7B /* socialize-selectnetwork-twitter-icon@2x.png */,
+				0C4BFB9B16D905B700C93F7B /* socialize_logo.png */,
+				0C4BFB9C16D905B700C93F7B /* socialize_twitter_load.png */,
+				0C4BFB9D16D905B700C93F7B /* SocializeActivityDetailsViewController.xib */,
+				0C4BFB9E16D905B700C93F7B /* SocializeActivityTableViewCell.xib */,
+				0C4BFB9F16D905B700C93F7B /* SocializeActivityViewController.xib */,
+				0C4BFBA016D905B700C93F7B /* SocializeAuthInfoTableViewCell.xib */,
+				0C4BFBA116D905B700C93F7B /* SocializeAuthTableViewCell.xib */,
+				0C4BFBA216D905B700C93F7B /* SocializeCommentDetailsViewController.xib */,
+				0C4BFBA316D905B700C93F7B /* SocializeComposeMessageViewController.xib */,
+				0C4BFBA416D905B700C93F7B /* SocializeConfigurationInfo.plist */,
+				0C4BFBA516D905B700C93F7B /* SocializeDummyViewController.xib */,
+				0C4BFBA616D905B700C93F7B /* SocializeEditValueTableViewCell.xib */,
+				0C4BFBA716D905B700C93F7B /* SocializeNotificationToggleBubbleContentView.xib */,
+				0C4BFBA816D905B700C93F7B /* SocializeProfileEditTableViewCell.xib */,
+				0C4BFBA916D905B700C93F7B /* SocializeProfileEditTableViewImageCell.xib */,
+				0C4BFBAA16D905B700C93F7B /* SocializeProfileEditValueViewController.xib */,
+				0C4BFBAB16D905B700C93F7B /* SocializeRichPushNotificationViewController.xib */,
+				0C4BFBAC16D905B700C93F7B /* SocializeTableViewController.xib */,
+				0C4BFBAD16D905B700C93F7B /* SZBaseShareViewController.xib */,
+				0C4BFBAE16D905B700C93F7B /* SZStatusImageLabelView.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		5C0CBC0616B6A7990019E314 /* JWFolders */ = {
 			isa = PBXGroup;
 			children = (
@@ -2429,6 +3114,8 @@
 		B18C9E22164E8B5900ADE97A = {
 			isa = PBXGroup;
 			children = (
+				0C4BFC9016D905F700C93F7B /* AdSupport.framework */,
+				0C4BFC8E16D905E200C93F7B /* MapKit.framework */,
 				B18C9E39164E8B5900ADE97A /* Dota2App */,
 				B18C9E30164E8B5900ADE97A /* Frameworks */,
 				B18C9E2E164E8B5900ADE97A /* Products */,
@@ -2446,6 +3133,7 @@
 		B18C9E30164E8B5900ADE97A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0C4BFAD116D905B700C93F7B /* Socialize.embeddedframework */,
 				B12189C016D8DE7C001D203D /* CoreLocation.framework */,
 				5CC4635216BED1A600118A97 /* libsqlite3.dylib */,
 				5CC4635016BED19400118A97 /* Accounts.framework */,
@@ -3246,6 +3934,226 @@
 				5C0CBC3616BD66750019E314 /* btn_grey.png in Resources */,
 				5C0CBC3816BD73C10019E314 /* SuggestionsViewController.xib in Resources */,
 				B12189BD16D8DE2E001D203D /* CHANGELOG.md in Resources */,
+				0C4BFBB016D905B700C93F7B /* _SZCommentsListViewController.xib in Resources */,
+				0C4BFBB116D905B700C93F7B /* _SZComposeCommentViewController.xib in Resources */,
+				0C4BFBB216D905B700C93F7B /* _SZLinkDialogViewController.xib in Resources */,
+				0C4BFBB316D905B700C93F7B /* _SZTwitterLinkViewController.xib in Resources */,
+				0C4BFBB416D905B700C93F7B /* _SZUserProfileViewController.xib in Resources */,
+				0C4BFBB516D905B700C93F7B /* _SZUserSettingsViewController.xib in Resources */,
+				0C4BFBB616D905B700C93F7B /* action-bar-bg.png in Resources */,
+				0C4BFBB716D905B700C93F7B /* action-bar-bg@2x.png in Resources */,
+				0C4BFBB816D905B700C93F7B /* action-bar-button-black-hover.png in Resources */,
+				0C4BFBB916D905B700C93F7B /* action-bar-button-black-hover@2x.png in Resources */,
+				0C4BFBBA16D905B700C93F7B /* action-bar-button-black.png in Resources */,
+				0C4BFBBB16D905B700C93F7B /* action-bar-button-black@2x.png in Resources */,
+				0C4BFBBC16D905B700C93F7B /* action-bar-button-red-hover.png in Resources */,
+				0C4BFBBD16D905B700C93F7B /* action-bar-button-red-hover@2x.png in Resources */,
+				0C4BFBBE16D905B700C93F7B /* action-bar-button-red.png in Resources */,
+				0C4BFBBF16D905B700C93F7B /* action-bar-button-red@2x.png in Resources */,
+				0C4BFBC016D905B700C93F7B /* action-bar-icon-comments.png in Resources */,
+				0C4BFBC116D905B700C93F7B /* action-bar-icon-comments@2x.png in Resources */,
+				0C4BFBC216D905B700C93F7B /* action-bar-icon-like.png in Resources */,
+				0C4BFBC316D905B700C93F7B /* action-bar-icon-like@2x.png in Resources */,
+				0C4BFBC416D905B700C93F7B /* action-bar-icon-liked.png in Resources */,
+				0C4BFBC516D905B700C93F7B /* action-bar-icon-liked@2x.png in Resources */,
+				0C4BFBC616D905B700C93F7B /* action-bar-icon-share.png in Resources */,
+				0C4BFBC716D905B700C93F7B /* action-bar-icon-share@2x.png in Resources */,
+				0C4BFBC816D905B700C93F7B /* action-bar-icon-views.png in Resources */,
+				0C4BFBC916D905B700C93F7B /* action-bar-icon-views@2x.png in Resources */,
+				0C4BFBCA16D905B700C93F7B /* background_brushed_metal@2x.png in Resources */,
+				0C4BFBCB16D905B700C93F7B /* comment-bg.png in Resources */,
+				0C4BFBCC16D905B700C93F7B /* comment-bg@2x.png in Resources */,
+				0C4BFBCD16D905B700C93F7B /* comment-header-icon.png in Resources */,
+				0C4BFBCE16D905B700C93F7B /* comment-header-icon@2x.png in Resources */,
+				0C4BFBCF16D905B700C93F7B /* comment-sm-icon.png in Resources */,
+				0C4BFBD016D905B700C93F7B /* comment-sm-icon@2x.png in Resources */,
+				0C4BFBD116D905B700C93F7B /* comment_template_clear.htm in Resources */,
+				0C4BFBD216D905B700C93F7B /* comments-cell-bg-borders.png in Resources */,
+				0C4BFBD316D905B700C93F7B /* comments-cell-bg-borders@2x.png in Resources */,
+				0C4BFBD416D905B700C93F7B /* commentsNavBarLeftItemView.xib in Resources */,
+				0C4BFBD516D905B700C93F7B /* CommentsTableViewCell.xib in Resources */,
+				0C4BFBD616D905B700C93F7B /* SampleEntityLoader.xib in Resources */,
+				0C4BFBD716D905B700C93F7B /* socialize-activity-bg.png in Resources */,
+				0C4BFBD816D905B700C93F7B /* socialize-activity-bg@2x.png in Resources */,
+				0C4BFBD916D905B700C93F7B /* socialize-activity-call-out-arrow.png in Resources */,
+				0C4BFBDA16D905B700C93F7B /* socialize-activity-call-out-arrow@2x.png in Resources */,
+				0C4BFBDB16D905B700C93F7B /* socialize-activity-cell-icon-comment-highlighted.png in Resources */,
+				0C4BFBDC16D905B700C93F7B /* socialize-activity-cell-icon-comment-highlighted@2x.png in Resources */,
+				0C4BFBDD16D905B700C93F7B /* socialize-activity-cell-icon-comment-normal.png in Resources */,
+				0C4BFBDE16D905B700C93F7B /* socialize-activity-cell-icon-comment-normal@2x.png in Resources */,
+				0C4BFBDF16D905B700C93F7B /* socialize-activity-cell-icon-comment.png in Resources */,
+				0C4BFBE016D905B700C93F7B /* socialize-activity-cell-icon-comment@2x.png in Resources */,
+				0C4BFBE116D905B700C93F7B /* socialize-activity-cell-icon-facebook.png in Resources */,
+				0C4BFBE216D905B700C93F7B /* socialize-activity-cell-icon-facebook@2x.png in Resources */,
+				0C4BFBE316D905B700C93F7B /* socialize-activity-cell-icon-like-highlighted.png in Resources */,
+				0C4BFBE416D905B700C93F7B /* socialize-activity-cell-icon-like-highlighted@2x.png in Resources */,
+				0C4BFBE516D905B700C93F7B /* socialize-activity-cell-icon-like-normal.png in Resources */,
+				0C4BFBE616D905B700C93F7B /* socialize-activity-cell-icon-like-normal@2x.png in Resources */,
+				0C4BFBE716D905B700C93F7B /* socialize-activity-cell-icon-like.png in Resources */,
+				0C4BFBE816D905B700C93F7B /* socialize-activity-cell-icon-like@2x.png in Resources */,
+				0C4BFBE916D905B700C93F7B /* socialize-activity-cell-icon-share.png in Resources */,
+				0C4BFBEA16D905B700C93F7B /* socialize-activity-cell-icon-share@2x.png in Resources */,
+				0C4BFBEB16D905B700C93F7B /* socialize-activity-cell-icon-twitter.png in Resources */,
+				0C4BFBEC16D905B700C93F7B /* socialize-activity-cell-icon-twitter@2x.png in Resources */,
+				0C4BFBED16D905B700C93F7B /* socialize-activity-details-back-entry-x.png in Resources */,
+				0C4BFBEE16D905B700C93F7B /* socialize-activity-details-back-entry-x@2x.png in Resources */,
+				0C4BFBEF16D905B700C93F7B /* socialize-activity-details-back-section-x.png in Resources */,
+				0C4BFBF016D905B700C93F7B /* socialize-activity-details-back-section-x@2x.png in Resources */,
+				0C4BFBF116D905B700C93F7B /* socialize-activity-details-btn-link.png in Resources */,
+				0C4BFBF216D905B700C93F7B /* socialize-activity-details-btn-link@2x.png in Resources */,
+				0C4BFBF316D905B700C93F7B /* socialize-activity-details-categ_arrow.png in Resources */,
+				0C4BFBF416D905B700C93F7B /* socialize-activity-details-categ_arrow@2x.png in Resources */,
+				0C4BFBF516D905B700C93F7B /* socialize-activity-details-ico-chat.png in Resources */,
+				0C4BFBF616D905B700C93F7B /* socialize-activity-details-ico-chat@2x.png in Resources */,
+				0C4BFBF716D905B700C93F7B /* socialize-activity-details-ico-location.png in Resources */,
+				0C4BFBF816D905B700C93F7B /* socialize-activity-details-ico-location@2x.png in Resources */,
+				0C4BFBF916D905B700C93F7B /* socialize-activity-details-profile-pic-small.png in Resources */,
+				0C4BFBFA16D905B700C93F7B /* socialize-activity-details-profile-pic-small@2x.png in Resources */,
+				0C4BFBFB16D905B700C93F7B /* socialize-activity-details-top-back.png in Resources */,
+				0C4BFBFC16D905B700C93F7B /* socialize-activity-details-top-back@2x.png in Resources */,
+				0C4BFBFD16D905B700C93F7B /* socialize-authorize-authenticate-badge-icon.png in Resources */,
+				0C4BFBFE16D905B700C93F7B /* socialize-authorize-authenticate-badge-icon@2x.png in Resources */,
+				0C4BFBFF16D905B700C93F7B /* socialize-authorize-facebook-disabled-icon.png in Resources */,
+				0C4BFC0016D905B700C93F7B /* socialize-authorize-facebook-disabled-icon@2x.png in Resources */,
+				0C4BFC0116D905B700C93F7B /* socialize-authorize-facebook-enabled-icon.png in Resources */,
+				0C4BFC0216D905B700C93F7B /* socialize-authorize-facebook-enabled-icon@2x.png in Resources */,
+				0C4BFC0316D905B700C93F7B /* socialize-authorize-top-shadow-background.png in Resources */,
+				0C4BFC0416D905B700C93F7B /* socialize-authorize-top-shadow-background@2x.png in Resources */,
+				0C4BFC0516D905B700C93F7B /* socialize-authorize-twitter-disabled-icon.png in Resources */,
+				0C4BFC0616D905B700C93F7B /* socialize-authorize-twitter-disabled-icon@2x.png in Resources */,
+				0C4BFC0716D905B700C93F7B /* socialize-authorize-twitter-enabled-icon.png in Resources */,
+				0C4BFC0816D905B700C93F7B /* socialize-authorize-twitter-enabled-icon@2x.png in Resources */,
+				0C4BFC0916D905B700C93F7B /* socialize-authorize-user-icon.png in Resources */,
+				0C4BFC0A16D905B700C93F7B /* socialize-authorize-user-icon@2x.png in Resources */,
+				0C4BFC0B16D905B700C93F7B /* socialize-cell-arrow.png in Resources */,
+				0C4BFC0C16D905B700C93F7B /* socialize-cell-arrow@2x.png in Resources */,
+				0C4BFC0D16D905B700C93F7B /* socialize-cell-bg.png in Resources */,
+				0C4BFC0E16D905B700C93F7B /* socialize-cell-bg@2x.png in Resources */,
+				0C4BFC0F16D905B700C93F7B /* socialize-cell-image-bg.png in Resources */,
+				0C4BFC1016D905B700C93F7B /* socialize-cell-image-bg@2x.png in Resources */,
+				0C4BFC1116D905B700C93F7B /* socialize-cell-image-default.png in Resources */,
+				0C4BFC1216D905B700C93F7B /* socialize-cell-image-default@2x.png in Resources */,
+				0C4BFC1316D905B700C93F7B /* socialize-cell-image.png in Resources */,
+				0C4BFC1416D905B700C93F7B /* socialize-cell-image@2x.png in Resources */,
+				0C4BFC1516D905B700C93F7B /* socialize-cell-selected-bg.png in Resources */,
+				0C4BFC1616D905B700C93F7B /* socialize-cell-selected-bg@2x.png in Resources */,
+				0C4BFC1716D905B700C93F7B /* socialize-checkmark.png in Resources */,
+				0C4BFC1816D905B700C93F7B /* socialize-checkmark@2x.png in Resources */,
+				0C4BFC1916D905B700C93F7B /* socialize-comment-background-text-input.png in Resources */,
+				0C4BFC1A16D905B700C93F7B /* socialize-comment-background-text-input@2x.png in Resources */,
+				0C4BFC1B16D905B700C93F7B /* socialize-comment-button-active.png in Resources */,
+				0C4BFC1C16D905B700C93F7B /* socialize-comment-button-active@2x.png in Resources */,
+				0C4BFC1D16D905B700C93F7B /* socialize-comment-button.png in Resources */,
+				0C4BFC1E16D905B700C93F7B /* socialize-comment-button@2x.png in Resources */,
+				0C4BFC1F16D905B700C93F7B /* socialize-comment-detail-bottom-shadow-background.png in Resources */,
+				0C4BFC2016D905B700C93F7B /* socialize-comment-detail-bottom-shadow-background@2x.png in Resources */,
+				0C4BFC2116D905B700C93F7B /* socialize-comment-details-icon-geo-disabled.png in Resources */,
+				0C4BFC2216D905B700C93F7B /* socialize-comment-details-icon-geo-disabled@2x.png in Resources */,
+				0C4BFC2316D905B700C93F7B /* socialize-comment-details-icon-geo-enabled.png in Resources */,
+				0C4BFC2416D905B700C93F7B /* socialize-comment-details-icon-geo-enabled@2x.png in Resources */,
+				0C4BFC2516D905B700C93F7B /* socialize-comment-facebook-disabled.png in Resources */,
+				0C4BFC2616D905B700C93F7B /* socialize-comment-facebook-disabled@2x.png in Resources */,
+				0C4BFC2716D905B700C93F7B /* socialize-comment-facebook-enabled.png in Resources */,
+				0C4BFC2816D905B700C93F7B /* socialize-comment-facebook-enabled@2x.png in Resources */,
+				0C4BFC2916D905B700C93F7B /* socialize-comment-list-view-location-pin-icon.png in Resources */,
+				0C4BFC2A16D905B700C93F7B /* socialize-comment-list-view-location-pin-icon@2x.png in Resources */,
+				0C4BFC2B16D905B700C93F7B /* socialize-comment-location-bar-background.png in Resources */,
+				0C4BFC2C16D905B700C93F7B /* socialize-comment-location-bar-background@2x.png in Resources */,
+				0C4BFC2D16D905B700C93F7B /* socialize-comment-location-disabled.png in Resources */,
+				0C4BFC2E16D905B700C93F7B /* socialize-comment-location-disabled@2x.png in Resources */,
+				0C4BFC2F16D905B700C93F7B /* socialize-comment-location-enabled.png in Resources */,
+				0C4BFC3016D905B700C93F7B /* socialize-comment-location-enabled@2x.png in Resources */,
+				0C4BFC3116D905B700C93F7B /* socialize-comment-notification-disabled.png in Resources */,
+				0C4BFC3216D905B700C93F7B /* socialize-comment-notification-disabled@2x.png in Resources */,
+				0C4BFC3316D905B700C93F7B /* socialize-comment-notification-enabled.png in Resources */,
+				0C4BFC3416D905B700C93F7B /* socialize-comment-notification-enabled@2x.png in Resources */,
+				0C4BFC3516D905B700C93F7B /* socialize-comment-top-background.png in Resources */,
+				0C4BFC3616D905B700C93F7B /* socialize-comment-twitter-disabled.png in Resources */,
+				0C4BFC3716D905B700C93F7B /* socialize-comment-twitter-disabled@2x.png in Resources */,
+				0C4BFC3816D905B700C93F7B /* socialize-comment-twitter-enabled.png in Resources */,
+				0C4BFC3916D905B700C93F7B /* socialize-comment-twitter-enabled@2x.png in Resources */,
+				0C4BFC3A16D905B700C93F7B /* socialize-comment-user-background.png in Resources */,
+				0C4BFC3B16D905B700C93F7B /* socialize-comment-user-background@2x.png in Resources */,
+				0C4BFC3C16D905B700C93F7B /* socialize-comment-user-only-background.png in Resources */,
+				0C4BFC3D16D905B700C93F7B /* socialize-iphone-notification-button-highlighted.png in Resources */,
+				0C4BFC3E16D905B700C93F7B /* socialize-iphone-notification-button-highlighted@2x.png in Resources */,
+				0C4BFC3F16D905B700C93F7B /* socialize-iphone-notification-button-normal.png in Resources */,
+				0C4BFC4016D905B700C93F7B /* socialize-iphone-notification-button-normal@2x.png in Resources */,
+				0C4BFC4116D905B700C93F7B /* socialize-iphone-subcribe-notification-icon.png in Resources */,
+				0C4BFC4216D905B700C93F7B /* socialize-iphone-subcribe-notification-icon@2x.png in Resources */,
+				0C4BFC4316D905B700C93F7B /* socialize-location-icon.png in Resources */,
+				0C4BFC4416D905B700C93F7B /* socialize-navbar-bg.png in Resources */,
+				0C4BFC4516D905B700C93F7B /* socialize-navbar-bg@2x.png in Resources */,
+				0C4BFC4616D905B700C93F7B /* socialize-navbar-button-back-pressed.png in Resources */,
+				0C4BFC4716D905B700C93F7B /* socialize-navbar-button-back-pressed@2x.png in Resources */,
+				0C4BFC4816D905B700C93F7B /* socialize-navbar-button-back.png in Resources */,
+				0C4BFC4916D905B700C93F7B /* socialize-navbar-button-back@2x.png in Resources */,
+				0C4BFC4A16D905B700C93F7B /* socialize-navbar-button-blue-bg-highlighted.png in Resources */,
+				0C4BFC4B16D905B700C93F7B /* socialize-navbar-button-blue-bg-highlighted@2x.png in Resources */,
+				0C4BFC4C16D905B700C93F7B /* socialize-navbar-button-blue-bg-inactive.png in Resources */,
+				0C4BFC4D16D905B700C93F7B /* socialize-navbar-button-blue-bg-inactive@2x.png in Resources */,
+				0C4BFC4E16D905B700C93F7B /* socialize-navbar-button-blue-bg-normal.png in Resources */,
+				0C4BFC4F16D905B700C93F7B /* socialize-navbar-button-blue-bg-normal@2x.png in Resources */,
+				0C4BFC5016D905B700C93F7B /* socialize-navbar-button-dark-active.png in Resources */,
+				0C4BFC5116D905B700C93F7B /* socialize-navbar-button-dark-active@2x.png in Resources */,
+				0C4BFC5216D905B700C93F7B /* socialize-navbar-button-dark.png in Resources */,
+				0C4BFC5316D905B700C93F7B /* socialize-navbar-button-dark@2x.png in Resources */,
+				0C4BFC5416D905B700C93F7B /* socialize-navbar-button-green-active.png in Resources */,
+				0C4BFC5516D905B700C93F7B /* socialize-navbar-button-green-active@2x.png in Resources */,
+				0C4BFC5616D905B700C93F7B /* socialize-navbar-button-green.png in Resources */,
+				0C4BFC5716D905B700C93F7B /* socialize-navbar-button-green@2x.png in Resources */,
+				0C4BFC5816D905B700C93F7B /* socialize-navbar-button-red-active.png in Resources */,
+				0C4BFC5916D905B700C93F7B /* socialize-navbar-button-red-active@2x.png in Resources */,
+				0C4BFC5A16D905B700C93F7B /* socialize-navbar-button-red.png in Resources */,
+				0C4BFC5B16D905B700C93F7B /* socialize-navbar-button-red@2x.png in Resources */,
+				0C4BFC5C16D905B700C93F7B /* socialize-nocomments-icon.png in Resources */,
+				0C4BFC5D16D905B700C93F7B /* socialize-nocomments-icon@2x.png in Resources */,
+				0C4BFC5E16D905B700C93F7B /* socialize-notifications-bottom-shadow-background.png in Resources */,
+				0C4BFC5F16D905B700C93F7B /* socialize-notifications-bottom-shadow-background@2x.png in Resources */,
+				0C4BFC6016D905B700C93F7B /* socialize-profileimage-large-bg.png in Resources */,
+				0C4BFC6116D905B700C93F7B /* socialize-profileimage-large-bg@2x.png in Resources */,
+				0C4BFC6216D905B700C93F7B /* socialize-profileimage-large-default.png in Resources */,
+				0C4BFC6316D905B700C93F7B /* socialize-profileimage-large-default@2x.png in Resources */,
+				0C4BFC6416D905B700C93F7B /* socialize-sectionheader-bg.png in Resources */,
+				0C4BFC6516D905B700C93F7B /* socialize-sectionheader-bg@2x.png in Resources */,
+				0C4BFC6616D905B700C93F7B /* socialize-selectnetwork-continue-btn.png in Resources */,
+				0C4BFC6716D905B700C93F7B /* socialize-selectnetwork-continue-btn@2x.png in Resources */,
+				0C4BFC6816D905B700C93F7B /* socialize-selectnetwork-email-icon.png in Resources */,
+				0C4BFC6916D905B700C93F7B /* socialize-selectnetwork-email-icon@2x.png in Resources */,
+				0C4BFC6A16D905B700C93F7B /* socialize-selectnetwork-facebook-dis-icon.png in Resources */,
+				0C4BFC6B16D905B700C93F7B /* socialize-selectnetwork-facebook-dis-icon@2x.png in Resources */,
+				0C4BFC6C16D905B700C93F7B /* socialize-selectnetwork-facebook-icon.png in Resources */,
+				0C4BFC6D16D905B700C93F7B /* socialize-selectnetwork-facebook-icon@2x.png in Resources */,
+				0C4BFC6E16D905B700C93F7B /* socialize-selectnetwork-illustration.png in Resources */,
+				0C4BFC6F16D905B700C93F7B /* socialize-selectnetwork-illustration@2x.png in Resources */,
+				0C4BFC7016D905B700C93F7B /* socialize-selectnetwork-SMS-icon.png in Resources */,
+				0C4BFC7116D905B700C93F7B /* socialize-selectnetwork-SMS-icon@2x.png in Resources */,
+				0C4BFC7216D905B700C93F7B /* socialize-selectnetwork-table-back.png in Resources */,
+				0C4BFC7316D905B700C93F7B /* socialize-selectnetwork-table-back@2x.png in Resources */,
+				0C4BFC7416D905B700C93F7B /* socialize-selectnetwork-twitter-dis-icon.png in Resources */,
+				0C4BFC7516D905B700C93F7B /* socialize-selectnetwork-twitter-dis-icon@2x.png in Resources */,
+				0C4BFC7616D905B700C93F7B /* socialize-selectnetwork-twitter-icon.png in Resources */,
+				0C4BFC7716D905B700C93F7B /* socialize-selectnetwork-twitter-icon@2x.png in Resources */,
+				0C4BFC7816D905B700C93F7B /* socialize_logo.png in Resources */,
+				0C4BFC7916D905B700C93F7B /* socialize_twitter_load.png in Resources */,
+				0C4BFC7A16D905B700C93F7B /* SocializeActivityDetailsViewController.xib in Resources */,
+				0C4BFC7B16D905B700C93F7B /* SocializeActivityTableViewCell.xib in Resources */,
+				0C4BFC7C16D905B700C93F7B /* SocializeActivityViewController.xib in Resources */,
+				0C4BFC7D16D905B700C93F7B /* SocializeAuthInfoTableViewCell.xib in Resources */,
+				0C4BFC7E16D905B700C93F7B /* SocializeAuthTableViewCell.xib in Resources */,
+				0C4BFC7F16D905B700C93F7B /* SocializeCommentDetailsViewController.xib in Resources */,
+				0C4BFC8016D905B700C93F7B /* SocializeComposeMessageViewController.xib in Resources */,
+				0C4BFC8116D905B700C93F7B /* SocializeConfigurationInfo.plist in Resources */,
+				0C4BFC8216D905B700C93F7B /* SocializeDummyViewController.xib in Resources */,
+				0C4BFC8316D905B700C93F7B /* SocializeEditValueTableViewCell.xib in Resources */,
+				0C4BFC8416D905B700C93F7B /* SocializeNotificationToggleBubbleContentView.xib in Resources */,
+				0C4BFC8516D905B700C93F7B /* SocializeProfileEditTableViewCell.xib in Resources */,
+				0C4BFC8616D905B700C93F7B /* SocializeProfileEditTableViewImageCell.xib in Resources */,
+				0C4BFC8716D905B700C93F7B /* SocializeProfileEditValueViewController.xib in Resources */,
+				0C4BFC8816D905B700C93F7B /* SocializeRichPushNotificationViewController.xib in Resources */,
+				0C4BFC8916D905B700C93F7B /* SocializeTableViewController.xib in Resources */,
+				0C4BFC8A16D905B700C93F7B /* SZBaseShareViewController.xib in Resources */,
+				0C4BFC8B16D905B700C93F7B /* SZStatusImageLabelView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3380,7 +4288,10 @@
 		B18C9E57164E8B5A00ADE97A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Socialize.embeddedframework\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dota2App/Dota2App-Prefix.pch";
 				INFOPLIST_FILE = "Dota2App/Dota2App-Info.plist";
@@ -3403,7 +4314,10 @@
 		B18C9E58164E8B5A00ADE97A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Socialize.embeddedframework\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dota2App/Dota2App-Prefix.pch";
 				INFOPLIST_FILE = "Dota2App/Dota2App-Info.plist";

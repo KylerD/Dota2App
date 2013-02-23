@@ -94,7 +94,7 @@
 }
 
 #define shareViewiPhoneNibName @"ShareViewiPhone"
-#define shareViewiPadNibName @"ShareViewipad"
+#define shareViewiPadNibName @"ShareViewiPad"
 
 
 - (ShareViewController*)shareSubmitViewControllerWithContext:(NSString*)context {
