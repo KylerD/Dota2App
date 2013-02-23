@@ -14,5 +14,8 @@
 @property(nonatomic,retain) IBOutlet UIButton * shareButton;
 @property(nonatomic,retain) IBOutlet UITextView * shareMessage;
 - (IBAction)share:(id)sender;
-
+- (CGRect)getScreenFrameForOrientation:(UIInterfaceOrientation)orientation;
+- (CGRect)getScreenFrameForCurrentOrientation;
+- (void)postToTwitter:(NSString*)body;
+- (void)shareWithContext:(NSString*)ctx;
 @end

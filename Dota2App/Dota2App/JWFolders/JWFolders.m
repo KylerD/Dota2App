@@ -27,6 +27,9 @@ const CGFloat JWFoldersOpeningDuration = 0.4f;
 @property (nonatomic, assign) BOOL openingUp;
 @property (nonatomic, assign) BOOL darkensBackground;
 - (void)setHighlightOpacity:(CGFloat)opacity withDuration:(CFTimeInterval)duration;
+- (UIBezierPath *)highlightPath;
+- (void)createHighlightWithFrame:(CGRect)aFrame;
+- (UIBezierPath *)maskPath;
 @end
 
 @interface JWFolders () {
@@ -67,6 +70,9 @@ const CGFloat JWFoldersOpeningDuration = 0.4f;
 @synthesize containerView = _containerView;
 @synthesize closeBlock = _closeBlock;
 @synthesize openBlock = _openBlock;
+@synthesize showsNotch = _showsNotch;
+@synthesize contentViewContainer = _contentViewContainer;
+
 
 + (id)folder {
     return [[self alloc] init];
@@ -312,6 +318,8 @@ const CGFloat JWFoldersOpeningDuration = 0.4f;
 @implementation JWFolderSplitView
 @synthesize position = _position;
 @synthesize highlight = _highlight;
+@synthesize darkensBackground = _darkensBackground;
+@synthesize showsNotch = _showsNotch;
 
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];

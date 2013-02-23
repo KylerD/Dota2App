@@ -17,4 +17,5 @@
 - (IBAction)close:(id)sender;
 - (IBAction)share:(id)sender;
 - (CGRect)getScreenFrameForOrientation:(UIInterfaceOrientation)orientation;
+- (void)postToTwitter;
 @end

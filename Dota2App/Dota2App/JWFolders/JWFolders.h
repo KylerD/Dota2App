@@ -125,4 +125,7 @@ typedef NSInteger JWFoldersOpenDirection;
                   completionBlock:(JWFoldersCompletionBlock)completionBlock
                         direction:(JWFoldersOpenDirection)direction __attribute__((deprecated));
 
+- (UIBezierPath *)highlightPath;
+
+
 @end
