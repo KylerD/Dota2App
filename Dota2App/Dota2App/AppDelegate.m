@@ -11,9 +11,8 @@
 #import "HeroParser.h"
 #import "Itemparser.h"
 #import "PagedWelcome.h"
-//#import "SHK.h"
-//#import "SHKConfiguration.h"
-//#import "SHKFacebook.h"
+#import "StackMob.h"
+#import "SMClient.h"
 
 @implementation AppDelegate
 
@@ -21,25 +20,15 @@
 @synthesize managedObjectContext = __managedObjectContext;
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
-
+@synthesize client = _client;
 @synthesize heroNavStack, itemNavStack;
-//@synthesize client = __client;
 
-
-//STACKMOB SETTINGS
-#define STACKMOB_ENABLE NO
 #define DEVELOPER_FORCE_WELCOME NO
-#define STACKMOB_KEY @"6586fffa-0b95-426c-8763-d30299599b40"
 #define UseJSON YES
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-    // set the socialize api key and secret, register your app here: http://www.getsocialize.com/apps/
-//    [Socialize storeConsumerKey:@"82c2299d-cd5c-40b7-995b-9dc70025178c"];
-//    [Socialize storeConsumerSecret:@"a1444a54-d869-4fea-b2f6-3c7f3de4e7c8"];
-//    [SZTwitterUtils setConsumerKey:@"u9do3dzYoItcDGMrqUy5A" consumerSecret:@"XMxHfK5XXnUhdSddUc0D6UVXnxhVH8ggxbthHCqhQtA"];
-//    [SZFacebookUtils setAppId:@"201163993356091"];
 
     [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:85/ 255.0 green:0/ 255.0 blue:2/ 255.0 alpha:1.0]];
     
@@ -52,22 +41,20 @@
         self.heroNavStack = [splitViewController.viewControllers objectAtIndex:1];
     }
     
-    if(STACKMOB_ENABLE){
-//         self.client = [[SMClient alloc] initWithAPIVersion:@"0" publicKey:STACKMOB_KEY];
-//         SMCoreDataStore *coreDataStore = [self.client coreDataStoreWithManagedObjectModel:self.managedObjectModel];
-//        self.managedObjectContext = [coreDataStore managedObjectContext];
-    } else {
-        self.managedObjectContext = [self offlineManagedObjectContext];
-        
-        if(UseJSON)
-        {
-            [[[HeroParser alloc] init] parse];
-            [[[Itemparser alloc] init] parse];
-        }
+    self.client = [[SMClient alloc] initWithAPIVersion:@"0" publicKey:@"6c23818e-d519-401b-a807-b7ae11b031c2"];
+    
+    SMCoreDataStore *coreDataStore = [self.client coreDataStoreWithManagedObjectModel:self.managedObjectModel];
+    
+    self.managedObjectContext = [coreDataStore contextForCurrentThread];
+    
+    if(UseJSON)
+    {
+        [[[HeroParser alloc] init] parse];
+        [[[Itemparser alloc] init] parse];
     }
     
+    
     NSString *model = [[UIDevice currentDevice] model];
-    //TODO WELCOME MESSAGE SCHEDULING LOGIC
     if ((![model isEqualToString:@"iPhone Simulator"] && ![model isEqualToString:@"iPad Simulator"]) || DEVELOPER_FORCE_WELCOME) {
         [self performSelector:@selector(showWelcomePager) withObject:nil afterDelay:0.1];
     }
@@ -162,26 +149,6 @@
 #pragma mark - Core Data stack
 
 /*
- Returns the managed object context for the application.
- If the context doesn't already exist, it is created and bound to the persistent store coordinator for the application.*/
- 
-- (NSManagedObjectContext *)offlineManagedObjectContext
-{
-    if (__managedObjectContext != nil)
-    {
-        return __managedObjectContext;
-    }
-    
-    NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
-    if (coordinator != nil)
-    {
-        __managedObjectContext = [[NSManagedObjectContext alloc] init];
-        [__managedObjectContext setPersistentStoreCoordinator:coordinator];
-    }
-    return __managedObjectContext;
-}
-
-/*
  Returns the managed object model for the application.
  If the model doesn't already exist, it is created from the application's model.
  */
@@ -192,7 +159,7 @@
     {
         return __managedObjectModel;
     }
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"Dota2App" withExtension:@"momd"];
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"dota2app" withExtension:@"momd"];
     __managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     return __managedObjectModel;
 }

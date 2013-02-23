@@ -9,15 +9,17 @@
 #import <UIKit/UIKit.h>
 
 
+@class SMClient;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate> 
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) UINavigationController *heroNavStack;
 @property (strong, nonatomic) UINavigationController *itemNavStack;
+@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
-@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+@property (strong, nonatomic) SMClient *client;
 
 - (void)saveContext;
 - (void)showWelcomePager;
