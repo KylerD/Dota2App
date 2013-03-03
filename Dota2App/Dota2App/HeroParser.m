@@ -11,6 +11,7 @@
 #import "Hero+DAO.h"
 #import "Ability.h"
 #import "AppDelegate.h"
+#import "StackMob.h"
 
 @implementation HeroParser
 
@@ -20,8 +21,6 @@
     NSData * heroesJSONData = [self getJSONData];
     NSArray * heroesJSON = [self getJSONDictionary:heroesJSONData];
     BOOL success = [self createHeroes:heroesJSON];
-    
-    [Hero saveDatabase];
 
     return success;
 }
@@ -80,6 +79,13 @@
     //TODO: Create Core data objects
     //NSLog(@"Creating Hero for JSON:/n%@",heroJSON);
     [Hero heroFromDictionary:heroJSON];
+    
+    [[NSManagedObject database]  saveOnSuccess:^{
+        NSLog(@"Hero Saved");
+    } onFailure:^(NSError * e){
+        NSLog(@"Hero Save Failed:%@",e);
+    }];
+    
     return YES;
 }
 

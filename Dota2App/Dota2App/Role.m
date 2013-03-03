@@ -2,7 +2,7 @@
 //  Role.m
 //  Dota2App
 //
-//  Created by Kyle Davidson on 11/01/2013.
+//  Created by Systems Kainos on 03/03/2013.
 //
 //
 
@@ -12,9 +12,11 @@
 
 @implementation Role
 
-@dynamic roleImage;
-@dynamic roleName;
-@dynamic roleId;
+@dynamic role_id;
+@dynamic role_image;
+@dynamic role_name;
+@dynamic lastmoddate;
+@dynamic createddate;
 @dynamic heros;
 
 @end

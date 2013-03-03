@@ -37,7 +37,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    self.abilityImage.image = [UIImage imageWithContentsOfFile:ability.imagePath];
+    self.abilityImage.image = [UIImage imageWithContentsOfFile:ability.image_path];
     
     self.abilityImage.layer.shadowColor = [UIColor blackColor].CGColor;
     self.abilityImage.layer.shadowOffset = CGSizeMake(2, 2);
@@ -54,7 +54,7 @@
 -(void)loadURL:(id)sender{
     
     [self.videoWebView  stopLoading]; //stops the previous request (static black bg)
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:self.ability.videoUrl]];
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:self.ability.video_url]];
     [self.videoWebView loadRequest:request];
     //Frame changes after video is loaded so set scrollview content size here
     CGRect f = videoWebView.frame;
@@ -88,7 +88,7 @@
     [self.descriptionLabel setText:descriptionString];
     [self.descriptionLabel sizeToFit];
     
-    if ([ability.isPassive boolValue]) {
+    if ([ability.is_passive boolValue]) {
         [self.mcLabel setHidden:TRUE];
         [self.cdLabel setHidden:TRUE];
         [self.mcIcon setHidden:TRUE];
@@ -200,7 +200,7 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
     NSURL *urlRequest = [request URL];
     
-    if ([[urlRequest absoluteString] isEqualToString:self.ability.videoUrl]) {
+    if ([[urlRequest absoluteString] isEqualToString:self.ability.video_url]) {
         return YES;
     }
     

@@ -19,6 +19,7 @@ typedef enum heroAbilityTypes
     heroAbilityPointAndUnitTargetType
 }heroAbilityType;
 
++ (Ability*)abilityFromSMDictionary:(NSDictionary*)abilityDictionary;
 + (Ability *)abilityFromDictionary:(NSDictionary*)abilityDictionary forHero:(Hero*)hero;
 + (id)interpretValue:(id)value;
 

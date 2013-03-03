@@ -90,7 +90,7 @@
     self.name.text = _item.name;
     self.title = _item.name;
     
-    self.image.image = [UIImage imageWithContentsOfFile:_item.imgPath];
+    self.image.image = [UIImage imageWithContentsOfFile:_item.img_path];
     
     self.image.layer.shadowColor = [UIColor blackColor].CGColor;
     self.image.layer.shadowOffset = CGSizeMake(2, 2);
@@ -100,9 +100,9 @@
     
     self.lore.text = _item.lore;
     self.description.text = [_item.desc stringByReplacingOccurrencesOfString:@"<br />"withString:@""];
-    self.manaCost.text = [NSString stringWithFormat:@"%@",_item.manaCost];
+    self.manaCost.text = [NSString stringWithFormat:@"%@",_item.mana_cost];
     self.cost.text = [NSString stringWithFormat:@"%@",_item.cost];
-    self.cooldown.text = [NSString stringWithFormat:@"%@", _item.coolDown];
+    self.cooldown.text = [NSString stringWithFormat:@"%@", _item.cool_down];
     
     CGSize maximumLabelSize = CGSizeMake(self.description.frame.size.width, FLT_MAX);
     
@@ -196,7 +196,7 @@
         itemCell.cellTitleLabel.text= itemComponent.name;
         itemCell.cellDetailLabel.text = [NSString stringWithFormat:@"%@",itemComponent.cost];
         //cell.cellImage.image = [UIImage imageNamed:item.imgName];
-        itemCell.cellImage.image = [UIImage imageWithContentsOfFile:itemComponent.imgPath];
+        itemCell.cellImage.image = [UIImage imageWithContentsOfFile:itemComponent.img_path];
         
         itemCell.cellImage.layer.shadowColor = [UIColor blackColor].CGColor;
         itemCell.cellImage.layer.shadowOffset = CGSizeMake(1,1);

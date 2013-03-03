@@ -1,99 +1,100 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="11G63" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="12C60" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Ability" representedClassName="Ability" syncable="YES">
-        <attribute name="abilityId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ability_id" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="cd" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createddate" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
         <attribute name="damage" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dynamic" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="imagePath" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="imgUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image_path" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="img_url" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="index" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="isAura" optional="YES" attributeType="Boolean" syncable="YES"/>
-        <attribute name="isAutoCast" optional="YES" attributeType="Boolean" syncable="YES"/>
-        <attribute name="isChanneled" optional="YES" attributeType="Boolean" syncable="YES"/>
-        <attribute name="isPassive" optional="YES" attributeType="Boolean" syncable="YES"/>
-        <attribute name="isToggle" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="is_aura" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="is_auto_cast" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="is_channeled" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="is_passive" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="is_toggle" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="lastmoddate" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
         <attribute name="lore" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="mc" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="radius" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
-        <attribute name="uniqueAbilityId" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="videoUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unique_ability_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="video_url" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="hero" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Hero" inverseName="abilities" inverseEntity="Hero" syncable="YES"/>
     </entity>
-    <entity name="Event">
-        <attribute name="timeStamp" optional="YES" attributeType="Date">
-            <userInfo/>
-        </attribute>
-        <userInfo/>
-    </entity>
     <entity name="Hero" representedClassName="Hero" syncable="YES">
-        <attribute name="agilGain" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
-        <attribute name="agilPoints" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="agil_gain" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="agil_points" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="armour" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
-        <attribute name="attackRange" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
-        <attribute name="attackType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attack_range" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="attack_type" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="bio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createddate" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
         <attribute name="damage" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="detailImgPath" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="detailImgUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="detail_img_url" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="faction" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="heroId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hero_id" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="hp" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
-        <attribute name="iconImage" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="intelGain" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
-        <attribute name="intelPoints" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
-        <attribute name="lastModified" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="icon_image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="intel_gain" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="intel_points" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="lastmoddate" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
         <attribute name="lore" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="mana" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
-        <attribute name="missileSpeed" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="missile_speed" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="ms" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="primaryAttribute" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="primary_attribute" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="role" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="sight" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="strGain" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
-        <attribute name="strPoints" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="str_gain" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="str_points" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="abilities" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Ability" inverseName="hero" inverseEntity="Ability" syncable="YES"/>
         <relationship name="nicknames" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Nickname" inverseName="heroes" inverseEntity="Nickname" syncable="YES"/>
         <relationship name="roles" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Role" inverseName="heros" inverseEntity="Role" syncable="YES"/>
     </entity>
     <entity name="Item" representedClassName="Item" syncable="YES">
-        <attribute name="attribString" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="compString" optional="YES" transient="YES" attributeType="String" syncable="YES"/>
-        <attribute name="coolDown" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="attrib_string" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="comp_string" optional="YES" transient="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cool_down" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <attribute name="cost" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="createddate" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
         <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="imgPath" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="imgUrl" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="itemId" attributeType="String" syncable="YES"/>
+        <attribute name="img_path" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="img_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="item_id" attributeType="String" syncable="YES"/>
+        <attribute name="lastmoddate" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
         <attribute name="lore" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="manaCost" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="mana_cost" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="uniqueItemId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unique_item_id" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="components" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Item" inverseName="components" inverseEntity="Item" syncable="YES"/>
     </entity>
     <entity name="Nickname" representedClassName="Nickname" syncable="YES">
+        <attribute name="createddate" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="lastmoddate" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="nicknameId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nickname_id" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="heroes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Hero" inverseName="nicknames" inverseEntity="Hero" syncable="YES"/>
     </entity>
     <entity name="Role" representedClassName="Role" syncable="YES">
-        <attribute name="roleId" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="roleImage" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="roleName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createddate" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="lastmoddate" optional="YES" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="role_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="role_image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="role_name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="heros" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Hero" inverseName="roles" inverseEntity="Hero" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Ability" positionX="205" positionY="324" width="128" height="360"/>
-        <element name="Event" positionX="351" positionY="201" width="128" height="60"/>
+        <element name="Ability" positionX="205" positionY="324" width="128" height="390"/>
         <element name="Hero" positionX="-27" positionY="204" width="128" height="495"/>
-        <element name="Item" positionX="160" positionY="192" width="128" height="255"/>
-        <element name="Nickname" positionX="160" positionY="192" width="128" height="90"/>
-        <element name="Role" positionX="160" positionY="192" width="128" height="105"/>
+        <element name="Item" positionX="160" positionY="192" width="128" height="285"/>
+        <element name="Nickname" positionX="160" positionY="192" width="128" height="120"/>
+        <element name="Role" positionX="160" positionY="192" width="128" height="135"/>
     </elements>
 </model>

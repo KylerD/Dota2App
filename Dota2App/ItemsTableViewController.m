@@ -210,7 +210,7 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     cell.cellTitleLabel.text= item.name;
     cell.cellDetailLabel.text = [item.cost stringValue];
     //cell.cellImage.image = [UIImage imageNamed:item.imgName];
-    cell.cellImage.image = [UIImage imageWithContentsOfFile:item.imgPath];
+    cell.cellImage.image = [UIImage imageWithContentsOfFile:item.img_path];
     
     cell.cellImage.layer.shadowColor = [UIColor blackColor].CGColor;
     cell.cellImage.layer.shadowOffset = CGSizeMake(2, 2);

@@ -9,11 +9,73 @@
 #import "Hero+DAO.h"
 //#import "StackMob.h"
 #import "Ability+DAO.h"
+#import "Nickname+DAO.h"
 #import "Role.h"
 #import "Role+DAO.h"
 #import "Nickname.h"
 
 @implementation Hero (DAO)
+
++ (Hero *)heroFromSMDictionary:(NSDictionary*)heroDictionary {
+    
+    NSString *heroName = [self interpretValue:[heroDictionary valueForKey:@"name"]];
+    
+    Hero* hero = [Hero readOrCreateObjectWithParamterName:@"name" andValue:heroName];
+    
+    for (NSString * key in [heroDictionary allKeys]) {
+        
+        if([key isEqualToString:@"detail_img_path"]){
+            //TODO: CHANGE/REMOVE
+        } else if([key isEqualToString:@"roles"]){
+
+            NSArray * roles = [heroDictionary valueForKey:key];
+            
+            NSMutableSet * roleObjects = [NSMutableSet set];
+            
+            for (NSDictionary * roleDictionary in roles) {
+                [roleObjects addObject:[Role roleFromSMDictionary:roleDictionary]];
+            }
+            
+            if ([roleObjects anyObject]) {
+                [hero addRoles:roleObjects];
+            }
+            
+            
+        } else  if([key isEqualToString:@"abilities"]){
+
+            NSArray * abilities = [heroDictionary valueForKey:key];
+            
+            NSMutableSet * abiltiyObjects = [NSMutableSet set];
+            
+            for (NSDictionary * abilityDictionary in abilities) {
+                [abiltiyObjects addObject:[Ability abilityFromSMDictionary:abilityDictionary]];
+            }
+            
+            if ([abiltiyObjects anyObject]) {
+                [hero addAbilities:abiltiyObjects];
+            }
+            
+        } else if([key isEqualToString:@"nicknames"]){
+            
+            NSArray * nicks = [heroDictionary valueForKey:key];
+            
+            NSMutableSet * nickObjects = [NSMutableSet set];
+            
+            for (NSDictionary * nickDictionary in nicks) {
+                [nickObjects addObject:[Nickname nicknameFromSMDictionary:nickDictionary]];
+            }
+            
+            if ([nickObjects anyObject]) {
+                [hero addNicknames:nickObjects];
+            }
+        } else {
+            [hero setValue:[heroDictionary valueForKey:key] forKey:key];
+        }
+        
+    }
+    
+    return hero;
+}
 
 + (Hero *)heroFromDictionary:(NSDictionary*)heroDictionary {
     NSString *heroName = [self interpretValue:[heroDictionary valueForKey:@"name"]];
@@ -27,35 +89,35 @@
     /* create the new string */
     NSString *attribute = [attributeLowerCase capitalizedString];
     
-    hero.primaryAttribute = attribute;
+    hero.primary_attribute = attribute;
     
-    if(!hero.primaryAttribute){
-        hero.primaryAttribute = @"Unknown";
+    if(!hero.primary_attribute){
+        hero.primary_attribute = @"Unknown";
     }
     
     //images
     
     NSString *iconImagePath = [NSString stringWithFormat:@"%@_icon.png",heroName];
-    hero.iconImage = iconImagePath;
+    hero.icon_image = iconImagePath;
     
     NSNumberFormatter * nf = [[NSNumberFormatter alloc] init];
     [nf setNumberStyle:NSNumberFormatterDecimalStyle];
     hero.bio = [self interpretValue:[heroDictionary valueForKey:@"bio"]];
     hero.armour = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"amour"]]];
-    hero.strPoints = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"str"]]];
-    hero.agilGain = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"agiGain"]]];
-    hero.attackRange = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"range"]]];
+    hero.str_points = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"str"]]];
+    hero.agil_gain = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"agiGain"]]];
+    hero.attack_range = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"range"]]];
     hero.sight = [self interpretValue:[heroDictionary valueForKey:@"sight"]];
     hero.damage = [self interpretValue:[heroDictionary valueForKey:@"attack"]];
     hero.faction = [self interpretValue:[heroDictionary valueForKey:@"faction"]];
-    hero.attackType = [self interpretValue:[heroDictionary valueForKey:@"attackMode"]];
+    hero.attack_type = [self interpretValue:[heroDictionary valueForKey:@"attackMode"]];
     if(!hero.faction){
         hero.faction = @"Unknown";
     }
     
     //Image download and cache
     NSString *imgUrl = [self interpretValue:[heroDictionary valueForKey:@"portraitUrl"]];
-    hero.detailImgUrl = imgUrl;
+    hero.detail_img_url = imgUrl;
     
     
     NSFileManager *fileManager = [NSFileManager defaultManager];
@@ -70,9 +132,9 @@
     
     
     if ([fileManager fileExistsAtPath:bundleImagePath]) {//Check bundle for image
-        hero.detailImgPath = bundleImagePath;
+        hero.detail_img_url= bundleImagePath;
     } else if ([fileManager fileExistsAtPath:downloadedfilePath]) { //check if previously downloaded
-        hero.detailImgPath = downloadedfilePath;
+        hero.detail_img_url = downloadedfilePath;
     } else {
         //Download it!
         NSURL  *url = [NSURL URLWithString:imgUrl];
@@ -80,16 +142,16 @@
         //If there's an internet connection grab url image
         if (urlData) {
             [urlData writeToFile:downloadedfilePath atomically:YES];
-            hero.detailImgPath = downloadedfilePath;
+            hero.detail_img_url = downloadedfilePath;
         }
     }
     
-    hero.strGain = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"strGain"]]];
-    hero.agilPoints = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"agi"]]];
+    hero.str_gain = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"strGain"]]];
+    hero.agil_points = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"agi"]]];
     hero.url = [self interpretValue:[heroDictionary valueForKey:@"url"]];
-    hero.missileSpeed = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"missileSpeed"]]];
-    hero.intelPoints = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"int"]]];
-    hero.intelGain = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"intGain"]]];
+    hero.missile_speed = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"missileSpeed"]]];
+    hero.intel_points = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"int"]]];
+    hero.intel_gain = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"intGain"]]];
     
     hero.ms = [nf numberFromString:[self interpretValue:[heroDictionary valueForKey:@"ms"]]];
     
@@ -121,7 +183,7 @@
     NSString *sep = @" -";
     NSCharacterSet *set = [NSCharacterSet characterSetWithCharactersInString:sep];
     NSArray *wordsInHeroName=[hero.name componentsSeparatedByCharactersInSet:set];
-
+    
     NSMutableString * simpleNickname = [NSMutableString string];
     
     if([wordsInHeroName count]>1){

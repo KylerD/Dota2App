@@ -14,6 +14,7 @@
 
 @interface MasterViewController : UITableViewController <NSFetchedResultsControllerDelegate, UISearchBarDelegate, UISearchDisplayDelegate> {
     NSManagedObjectContext *managedObjectContext;
+    IBOutlet UISearchBar * searchBar;
     NSArray *heroNavStack;
     NSFetchedResultsController *fetchedRC;
     NSString *fetchItem;

@@ -12,16 +12,34 @@
 
 @implementation Role (DAO)
 
++ (Role*)roleFromSMDictionary:(NSDictionary*)roleDictionary {
+    
+    NSString *uniqueName = [roleDictionary valueForKey:@"role_name"];
+    
+    Role* role = [Role readOrCreateObjectWithParamterName:@"role_name" andValue:uniqueName];
+    
+    for (NSString * key in [roleDictionary allKeys]) {
+        
+        if([key isEqualToString:@"heros"]){
+            continue;
+        } else {
+            [role setValue:[roleDictionary valueForKey:key] forKey:key];
+        }
+        
+    }
+    
+    return role;
+}
 
 + (Role*)createOrFindRole:(NSString*)roleString {
     
     Role * r;
-    r = [Role readObjectWithParamterName:@"roleName" andValue:roleString];
+    r = [Role readOrCreateObjectWithParamterName:@"roleName" andValue:roleString];
     
     if(!r){
         r =  [Role createObject];
-        r.roleName = roleString;
-        r.roleImage = [NSString stringWithFormat:@"%@.%@",roleString,@"png"];
+        r.role_name = roleString;
+        r.role_image = [NSString stringWithFormat:@"%@.%@",roleString,@"png"];
     }
     
     return r;

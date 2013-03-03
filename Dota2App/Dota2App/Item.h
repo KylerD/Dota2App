@@ -2,7 +2,7 @@
 //  Item.h
 //  Dota2App
 //
-//  Created by Kyle Davidson on 09/01/2013.
+//  Created by Systems Kainos on 03/03/2013.
 //
 //
 
@@ -13,19 +13,21 @@
 
 @interface Item : NSManagedObject
 
-@property (nonatomic, retain) NSString * attribString;
-@property (nonatomic, retain) NSString * compString;
-@property (nonatomic, retain) NSNumber * coolDown;
+@property (nonatomic, retain) NSString * attrib_string;
+@property (nonatomic, retain) NSString * comp_string;
+@property (nonatomic, retain) NSNumber * cool_down;
 @property (nonatomic, retain) NSNumber * cost;
 @property (nonatomic, retain) NSString * desc;
-@property (nonatomic, retain) NSString * imgPath;
-@property (nonatomic, retain) NSString * imgUrl;
-@property (nonatomic, retain) NSString * itemId;
+@property (nonatomic, retain) NSString * img_path;
+@property (nonatomic, retain) NSString * img_url;
+@property (nonatomic, retain) NSString * item_id;
 @property (nonatomic, retain) NSString * lore;
-@property (nonatomic, retain) NSNumber * manaCost;
+@property (nonatomic, retain) NSNumber * mana_cost;
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSString * type;
-@property (nonatomic, retain) NSString * uniqueItemId;
+@property (nonatomic, retain) NSString * unique_item_id;
+@property (nonatomic, retain) NSDecimalNumber * createddate;
+@property (nonatomic, retain) NSDecimalNumber * lastmoddate;
 @property (nonatomic, retain) NSSet *components;
 @end
 

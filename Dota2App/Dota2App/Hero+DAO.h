@@ -13,6 +13,7 @@
 
 
 + (Hero*)heroFromDictionary:(NSDictionary*)heroDictionary;
++ (Hero *)heroFromSMDictionary:(NSDictionary*)heroDictionary;
 + (id)interpretValue:(id)value;
 
 @end

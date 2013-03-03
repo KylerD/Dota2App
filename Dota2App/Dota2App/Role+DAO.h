@@ -9,5 +9,6 @@
 #import "Role.h"
 
 @interface Role (DAO)
++ (Role*)roleFromSMDictionary:(NSDictionary*)roleDictionary;
 + (Role*)createOrFindRole:(NSString*)roleString;
 @end

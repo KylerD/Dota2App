@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "StackMob.h"
+#import "SMClient.h"
 
 @class SMClient;
 
@@ -20,6 +21,7 @@
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (strong, nonatomic) SMClient *client;
+@property (strong, nonatomic) SMCoreDataStore *coreDataStore;
 
 - (void)saveContext;
 - (void)showWelcomePager;
@@ -28,6 +30,5 @@
  * Method which returns a managed object context using the traditional approach, seperate from a stackmob enabled context
  *@return the context to be returned
  */
-- (NSManagedObjectContext *)offlineManagedObjectContext;
 
 @end

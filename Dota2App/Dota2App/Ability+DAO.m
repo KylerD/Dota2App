@@ -11,20 +11,42 @@
 
 @implementation Ability (DAO)
 
+
++ (Ability*)abilityFromSMDictionary:(NSDictionary*)abilityDictionary {
+    
+    NSString *uniqueName = [abilityDictionary valueForKey:@"unique_ability_id"];
+    
+    Ability* ability = [Ability readOrCreateObjectWithParamterName:@"unique_ability_id" andValue:uniqueName];
+    
+    for (NSString * key in [abilityDictionary allKeys]) {
+        
+        if([key isEqualToString:@"hero"]){
+            continue;
+        } else {
+            [ability setValue:[abilityDictionary valueForKey:key] forKey:key];
+        }
+        
+    }
+    
+    return ability;
+}
+
+
+
 + (Ability *)abilityFromDictionary:(NSDictionary*)abilityDictionary forHero:(Hero*)hero {
     NSString *abilityName = [self interpretValue:[abilityDictionary valueForKey:@"name"]];
     NSString * uniqueAbilityID = [NSString stringWithFormat:@"%@%@",hero.name,abilityName];
     Ability *ability = [Ability readOrCreateObjectWithParamterName:@"uniqueAbilityId" andValue:uniqueAbilityID];
     
     ability.name = abilityName;
-    ability.uniqueAbilityId = uniqueAbilityID;
+    ability.unique_ability_id = uniqueAbilityID;
     ability.notes = [self interpretValue:[abilityDictionary valueForKey:@"description"]];
     ability.lore = [self interpretValue:[abilityDictionary valueForKey:@"lore"]];
-    ability.videoUrl = [self interpretValue:[abilityDictionary valueForKey:@"videoUrl"]];
+    ability.video_url = [self interpretValue:[abilityDictionary valueForKey:@"videoUrl"]];
     
     //Image download and cache
     NSString *imgUrl = [self interpretValue:[abilityDictionary valueForKey:@"imgUrl"]];
-    ability.imgUrl = imgUrl;
+    ability.img_url = imgUrl;
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString  *documentsDirectory = [paths objectAtIndex:0];
@@ -35,10 +57,10 @@
         NSData *urlData = [NSData dataWithContentsOfURL:url];
         if (urlData) {
             [urlData writeToFile:filePath atomically:YES];
-            ability.imagePath = filePath;
+            ability.image_path = filePath;
         } else {    //Else use bundled image
             NSString *bundleImageName = [NSString stringWithFormat:@"%@.png", ability.name];
-            ability.imagePath = bundleImageName;
+            ability.image_path = bundleImageName;
             
         }
     }
@@ -59,19 +81,19 @@
         NSString * cleanedAbilityType = abilityType;
         
         if([cleanedAbilityType isEqualToString:@"Toggle"]){
-            ability.isToggle = [NSNumber numberWithBool:YES];
+            ability.is_toggle = [NSNumber numberWithBool:YES];
             [abilitiyTypesToRemove addObject:cleanedAbilityType];
         } else if([cleanedAbilityType isEqualToString:@"Aura"]){
-            ability.isAura = [NSNumber numberWithBool:YES];
+            ability.is_aura = [NSNumber numberWithBool:YES];
              [abilitiyTypesToRemove addObject:cleanedAbilityType];
         } else if([cleanedAbilityType isEqualToString:@"Auto-Cast"]){
-            ability.isAutoCast = [NSNumber numberWithBool:YES];
+            ability.is_auto_cast = [NSNumber numberWithBool:YES];
              [abilitiyTypesToRemove addObject:cleanedAbilityType];
         } else if ([abilityType isEqualToString:@"Passive"]) {
-            ability.isPassive = [NSNumber numberWithBool:YES];
+            ability.is_passive = [NSNumber numberWithBool:YES];
             [abilitiyTypesToRemove addObject:cleanedAbilityType];
         } else if ([abilityType isEqualToString:@"Channeled"]) {
-            ability.isChanneled = [NSNumber numberWithBool:YES];
+            ability.is_channeled = [NSNumber numberWithBool:YES];
             [abilitiyTypesToRemove addObject:cleanedAbilityType];
         }
 

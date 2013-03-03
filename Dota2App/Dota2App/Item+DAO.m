@@ -17,7 +17,7 @@
 - (void)mapItemComponents{
     
     if([self.components count]==0){
-    NSArray * comps = [self.compString componentsSeparatedByString:@","];
+    NSArray * comps = [self.comp_string componentsSeparatedByString:@","];
     
     
     for (NSString * comp in comps) {
@@ -58,10 +58,10 @@
         i =  [Item createObject];
         
         i.name = itemName;
-        i.uniqueItemId = itemID;
+        i.unique_item_id = itemID;
         i.desc = [itemDictionary valueForKey:@"desc"];
         //gets the web url for the image, prefix + imgName property of dict
-        i.imgUrl = [NSString stringWithFormat:@"%@%@", itemPathPrefix, [itemDictionary valueForKey:@"img"]];
+        i.img_url = [NSString stringWithFormat:@"%@%@", itemPathPrefix, [itemDictionary valueForKey:@"img"]];
         
         NSFileManager *fileManager = [NSFileManager defaultManager];
         NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
@@ -75,21 +75,21 @@
         
         
         if ([fileManager fileExistsAtPath:bundleImagePath]) {//Check bundle for image
-            i.imgPath = bundleImagePath;
+            i.img_path = bundleImagePath;
         } else if ([fileManager fileExistsAtPath:downloadedfilePath]) { //check if previously downloaded
-            i.imgPath = downloadedfilePath;
+            i.img_path = downloadedfilePath;
         } else {
             //Download it!
-            NSURL  *url = [NSURL URLWithString:i.imgUrl];
+            NSURL  *url = [NSURL URLWithString:i.img_url];
             NSData *urlData = [NSData dataWithContentsOfURL:url];
             //If there's an internet connection grab url image
             if (urlData) {
                 [urlData writeToFile:downloadedfilePath atomically:YES];
-                i.imgPath = downloadedfilePath;
+                i.img_path = downloadedfilePath;
             }
         }
 
-        i.attribString = [itemDictionary valueForKey:@"attrib"]; //gives raw HTML
+        i.attrib_string = [itemDictionary valueForKey:@"attrib"]; //gives raw HTML
         i.lore = [itemDictionary valueForKey:@"lore"];
         
         id tryType = [itemDictionary valueForKey:@"qual"];
@@ -100,11 +100,11 @@
         }
         
         i.cost = [NSNumber numberWithFloat:[[itemDictionary valueForKey:@"cost"] floatValue]];
-        i.coolDown = [NSNumber numberWithFloat:[[itemDictionary valueForKey:@"cd"] floatValue]];
+        i.cool_down = [NSNumber numberWithFloat:[[itemDictionary valueForKey:@"cd"] floatValue]];
         
         id tryMana = [NSNumber numberWithFloat:[[itemDictionary valueForKey:@"mc"] floatValue]];
         if([tryMana isKindOfClass:[NSNumber class]]){
-            i.manaCost = tryMana;
+            i.mana_cost = tryMana;
         }
                 NSArray * compArray  = [itemDictionary valueForKey:@"components"];
         if(compArray && ![compArray isKindOfClass:[NSNull class]]){ //Creating a transient prop for holding the item ID's (These items may not have been created yet!)
@@ -116,7 +116,7 @@
             }
             
             [compArrayString deleteCharactersInRange:NSMakeRange(compArrayString.length-1,1)];
-            i.compString = compArrayString;
+            i.comp_string = compArrayString;
         }
     }
     

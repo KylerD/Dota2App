@@ -165,7 +165,20 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     abilityCell.lore.numberOfLines = 0;
     [abilityCell.lore sizeToFit];
     
-    abilityCell.icon.image = [UIImage imageWithContentsOfFile:ability.imagePath];
+    
+//    UIActivityIndicatorView *spinner = [[UIActivityIndicatorView alloc]
+//                                        initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+//    [spinner setCenter:self.heroImageView.center];
+//    [self.heroImageView  addSubview:spinner];
+//    [spinner startAnimating];
+//    [self.heroImageView setImageWithURL:[NSURL URLWithString:hero.detailImgUrl]
+//                       placeholderImage:nil
+//                              completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType) {
+//                                  [spinner stopAnimating];
+//                                  [spinner removeFromSuperview];
+//                              }];
+    
+    abilityCell.icon.image = [UIImage imageWithContentsOfFile:ability.image_path];
     
     abilityCell.icon.layer.shadowColor = [UIColor blackColor].CGColor;
     abilityCell.icon.layer.shadowOffset = CGSizeMake(2, 2);
@@ -224,7 +237,7 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
             [abilityCell.cd setHidden:YES];
         }
     }
-    [abilityCell isPassive:[ability.isPassive boolValue]];
+    [abilityCell isPassive:[ability.is_passive boolValue]];
     
 
 }
@@ -250,8 +263,7 @@ sectionIndexTitleForSectionName:(NSString *)sectionName {
     entity = [NSEntityDescription entityForName:entityName inManagedObjectContext:managedObjectContext];
     [fetchRequest setEntity:entity];
     
-    
-    NSSortDescriptor *sortDescriptor1 = [[NSSortDescriptor alloc] initWithKey:@"index" ascending:YES selector:@selector(caseInsensitiveCompare:)];
+      NSSortDescriptor *sortDescriptor1 = [[NSSortDescriptor alloc] initWithKey:@"index" ascending:YES];
     
     NSPredicate * pred = [NSPredicate predicateWithFormat:@"hero = %@",self.hero];
     

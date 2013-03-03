@@ -16,6 +16,8 @@
 #import "Hero.h"
 #import "Role.h"
 #import "PagedWelcome.h"
+#import "NSManagedObject+CRUD.h"
+#import "StackMob.h"
 
 
 @interface MasterViewController ()
@@ -43,18 +45,9 @@
 
 #pragma mark - View Setup
 - (void)configureView
-{    
-    fetchedRC = [self fetchedResultsControllerForEntity: fetchItem];
-    self.tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+{
     
-    if (managedObjectContext) {
-        NSError *error = nil;
-        if (![fetchedRC performFetch:&error]) {
-            NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-        }
-        
-        [self.tableView reloadData];
-    }
+    self.tableView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
         
@@ -67,42 +60,149 @@
     }
 }
 
-- (NSFetchedResultsController *)fetchedResultsControllerForEntity: (NSString *)entityName {
+
+
+-(NSFetchRequest*)fetchedRequestForEntity:(NSString*)entityName{
+    
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     // Edit the entity name as appropriate.
     NSEntityDescription *entity;
     entity = [NSEntityDescription entityForName:entityName inManagedObjectContext:managedObjectContext];
     [fetchRequest setEntity:entity];
-
     
-    NSSortDescriptor *sortDescriptor1 = [[NSSortDescriptor alloc] initWithKey:@"primaryAttribute" ascending:YES selector:@selector(caseInsensitiveCompare:)];
-
+    
+    NSSortDescriptor *sortDescriptor1 = [[NSSortDescriptor alloc] initWithKey:@"primary_attribute" ascending:YES selector:@selector(caseInsensitiveCompare:)];
+    
     NSSortDescriptor *sortDescriptor2 = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES selector:@selector(caseInsensitiveCompare:)];
     
     NSArray *sortDescriptors = [NSArray arrayWithObjects:sortDescriptor2, sortDescriptor1, nil];
     
     [fetchRequest setSortDescriptors:sortDescriptors];
-
-    // nil for section name key path means "1 section".
-    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:managedObjectContext sectionNameKeyPath:nil cacheName:nil];
-    aFetchedResultsController.delegate = self;
     
-    return aFetchedResultsController;
-
+    return fetchRequest;
+    
 }
+
+- (NSFetchedResultsController *)fetchedResultsControllerForEntity: (NSString *)entityName {
+    
+    // nil for section name key path means "1 section".
+    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:[self fetchedRequestForEntity:entityName] managedObjectContext:managedObjectContext sectionNameKeyPath:nil cacheName:@"Master"];
+    aFetchedResultsController.delegate = self;
+    return aFetchedResultsController;
+    
+}
+
 #pragma mark - View lifecycle
 
-- (void)viewDidLoad
-{
+-(void)userRefresh{
+    AppDelegate *del = [[UIApplication sharedApplication] delegate];
+    //[self.tableView data]
+    //[del.coreDataStore resetCache];
+    //[self getAndDisplayHeros];
+}
+
+
+-(void)performFetchWithRC{
+    
+    if(!fetchedRC){
+        fetchedRC = [self fetchedResultsControllerForEntity:@"Hero"];
+    }
+    
+    NSError *error = nil;
+    if (![fetchedRC performFetch:&error]) {
+        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+    } else{
+        NSLog(@"Fetch complete");
+    }
+    
+     searchBar.hidden = NO;
+    [self.tableView reloadData];
+    
+}
+
+//-(void)prefetchHeroes{
+//
+//    NSFetchRequest * allHeroesRequest = [self fetchedRequestForEntity:fetchItem];
+//
+//    //NSUInteger count = [managedObjectContext countForFetchRequest:allHeroesRequest error:nil];
+//        [managedObjectContext executeFetchRequest:allHeroesRequest onSuccess:^(NSArray* a){
+//        } onFailure:^(NSError*e){
+//        }];
+//
+//}
+
+-(void)getAndDisplayHeros{
+    [self.refreshControl beginRefreshing];
+    searchBar.hidden = YES;
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0),^{
+        
+        //NSFetchRequest * allHeroesRequest = [self fetchedRequestForEntity:fetchItem];
+        
+        //[managedObjectContext executeFetchRequest:allHeroesRequest onSuccess:^(NSArray* a){
+            
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0),
+                           ^{
+                               [self performSelector:@selector(performFetchWithRC)];
+                               
+                               dispatch_async(dispatch_get_main_queue(),
+                                              ^{
+                                                  [self.tableView reloadData];
+                                                  [self.refreshControl endRefreshing];
+                                                  searchBar.hidden = NO;
+                                              });
+                           });
+            
+            
+            
+//        } onFailure:^(NSError*e){
+//            [self.refreshControl endRefreshing];
+//        }];
+    
+        
+    //});
+}
+
+-(void)heroFetchComplete{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0),
+                   ^{
+                       [self performSelector:@selector(performFetchWithRC)];
+                       
+                       dispatch_async(dispatch_get_main_queue(),
+                                      ^{
+                                          [self.tableView reloadData];
+                                          [self.refreshControl endRefreshing];
+                                          searchBar.hidden = NO;
+                                      });
+                   });
+}
+
+- (void)viewDidLoad{
+    
     [super viewDidLoad];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(heroFetchComplete) name:@"HeroFetchComplete" object:nil];
+    
     firstLoad = YES;
+    
+    //PREFETCHING HEROES...
     fetchItem = @"Hero";
     AppDelegate *del = [[UIApplication sharedApplication] delegate];
-    managedObjectContext = del.managedObjectContext;
+    managedObjectContext = [del.coreDataStore contextForCurrentThread];
+    
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc]
+                                        init];
+    //refreshControl.tintColor = [UIColor colorWithRed:117/ 255.0 green:0/ 255.0 blue:2/ 255.0 alpha:1.0];
+    refreshControl.tintColor = [UIColor whiteColor];
+    [refreshControl addTarget:self action:@selector(userRefresh) forControlEvents:UIControlEventValueChanged];
+    refreshControl.attributedTitle = [[NSAttributedString alloc]initWithString:@"Getting Heroes.."];
+    self.refreshControl = refreshControl;
+    //[self getAndDisplayHeros];
+    
+    //- (void)saveOnSuccess:(SMSuccessBlock)successBlock onFailure:(SMFailureBlock)failureBlock;
     
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-    
-    heroNavStack = [NSArray arrayWithObjects:[self.splitViewController.viewControllers objectAtIndex:0], del.heroNavStack, nil];
+        AppDelegate *del = [[UIApplication sharedApplication] delegate];
+        heroNavStack = [NSArray arrayWithObjects:[self.splitViewController.viewControllers objectAtIndex:0], del.heroNavStack, nil];
     }
     
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
@@ -122,6 +222,7 @@
 - (void)viewDidUnload
 {
     [super viewDidUnload];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
@@ -156,7 +257,7 @@
         
         firstLoad = NO;
     }
-
+    
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -212,17 +313,17 @@
         
         Hero *selectedHero = [fetchedRC objectAtIndexPath:indexPath];
         [self.detailViewController setHero:selectedHero];
-    } 
+    }
 }
 
 -(NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
     id <NSFetchedResultsSectionInfo> sectionInfo = [[fetchedRC sections] objectAtIndex:section];
-
+    
     return [sectionInfo name];
 }
 
 -(NSString *)controller:(NSFetchedResultsController *)controller
-    sectionIndexTitleForSectionName:(NSString *)sectionName {
+sectionIndexTitleForSectionName:(NSString *)sectionName {
     return sectionName;
 }
 
@@ -236,23 +337,24 @@
     
     
     for (Role * r in hero.roles) {
-        [subtitle appendFormat:@"%@ - ",r.roleName];
-    
+        [subtitle appendFormat:@"%@ - ",r.role_name];
+        
     }
-
+    
     if(![subtitle isEqualToString:@""]){
         [subtitle deleteCharactersInRange:NSMakeRange(subtitle.length-3,3)];
     }
     
     NSString *factionImageName = [NSString stringWithFormat:@"%@.png", hero.faction];
-    NSString *attributeImageName = [NSString stringWithFormat:@"%@.png", hero.primaryAttribute];
+    NSString *attributeImageName = [NSString stringWithFormat:@"%@.png", hero.primary_attribute];
     //Configure the cell
     heroCell.cellTitleLabel.text = hero.name;
     heroCell.cellDetailLabel.text = subtitle;
-    heroCell.cellImage.image = [UIImage imageNamed:hero.iconImage];
+    //TODO: ICON IMAGE URL
+    heroCell.cellImage.image = [UIImage imageNamed:hero.icon_image];
     
-//    heroCell.cellImage.layer.borderColor = [UIColor colorWithRed:0.89 green:0.69 blue:0.25 alpha:1.0].CGColor;//89,68,25
-//    heroCell.cellImage.layer.borderWidth = 1.0f;
+    //    heroCell.cellImage.layer.borderColor = [UIColor colorWithRed:0.89 green:0.69 blue:0.25 alpha:1.0].CGColor;//89,68,25
+    //    heroCell.cellImage.layer.borderWidth = 1.0f;
     
     UIView *sbview = [[UIView alloc] initWithFrame:CGRectMake(0, 0, heroCell.frame.size.width, heroCell.frame.size.height)];
     CAGradientLayer *gradient = [CAGradientLayer layer];
@@ -317,6 +419,7 @@
 - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
 {
     [self.tableView endUpdates];
+    [self.refreshControl endRefreshing];
 }
 
 #pragma mark - Search bar
@@ -324,7 +427,7 @@
 - (void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
 {
     if (![searchText isEqualToString:@""]) {
-        NSPredicate *predicate =[NSPredicate predicateWithFormat:@"(name contains[cd] %@) OR (ANY nicknames.name contains[cd] %@) OR (ANY roles.roleName contains[cd] %@)", searchText,searchText,searchText];
+        NSPredicate *predicate =[NSPredicate predicateWithFormat:@"(name contains[cd] %@) OR (ANY nicknames.name contains[cd] %@) OR (ANY roles.role_name contains[cd] %@)", searchText,searchText,searchText];
         [fetchedRC.fetchRequest setPredicate:predicate];
         
     } else {
@@ -341,7 +444,7 @@
 }
 
 - (void)searchBar:(UISearchBar *)theSearchBar textDidChange:(NSString *)searchText {
-
+    
     [self filterContentForSearchText:searchText scope:nil];
 }
 

@@ -2,7 +2,7 @@
 //  Nickname.m
 //  Dota2App
 //
-//  Created by Kyle Davidson on 11/01/2013.
+//  Created by Systems Kainos on 03/03/2013.
 //
 //
 
@@ -13,7 +13,9 @@
 @implementation Nickname
 
 @dynamic name;
-@dynamic nicknameId;
+@dynamic nickname_id;
+@dynamic createddate;
+@dynamic lastmoddate;
 @dynamic heroes;
 
 @end

@@ -8,6 +8,7 @@
 
 #import "Itemparser.h"
 #import "Item+DAO.h"
+#import "StackMob.h"
 
 @implementation Itemparser
 
@@ -20,7 +21,6 @@
     NSDictionary * itemsJSONDict = [self getJSONDictionary:itemsJSONData];
     BOOL success = [self createItems:itemsJSONDict];
     //[Item mapItemComponents];//mapping done laziliy
-    [Item saveDatabase];
     
     return success;
 }
@@ -69,6 +69,12 @@
 
 - (BOOL)createItem:(NSDictionary*)itemJSON {
     [Item createOrFindItem:itemJSON];
+    [[NSManagedObject database]  saveOnSuccess:^{
+        NSLog(@"Hero Saved");
+    } onFailure:^(NSError * e){
+        NSLog(@"Hero Save Failed:%@",e);
+    }];
+    
     return YES;
 }
 

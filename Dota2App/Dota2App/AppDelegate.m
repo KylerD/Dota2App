@@ -11,8 +11,8 @@
 #import "HeroParser.h"
 #import "Itemparser.h"
 #import "PagedWelcome.h"
-#import "StackMob.h"
-#import "SMClient.h"
+#import "FetchManager.h"
+
 
 @implementation AppDelegate
 
@@ -20,16 +20,17 @@
 @synthesize managedObjectContext = __managedObjectContext;
 @synthesize managedObjectModel = __managedObjectModel;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
+@synthesize coreDataStore = _coreDataStore;
 @synthesize client = _client;
 @synthesize heroNavStack, itemNavStack;
 
 #define DEVELOPER_FORCE_WELCOME NO
-#define UseJSON YES
+#define UseJSON NO
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-
+    SM_CACHE_ENABLED = YES;
     [[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:85/ 255.0 green:0/ 255.0 blue:2/ 255.0 alpha:1.0]];
     
     // Nav stack hookups for ipad
@@ -43,16 +44,26 @@
     
     self.client = [[SMClient alloc] initWithAPIVersion:@"0" publicKey:@"6c23818e-d519-401b-a807-b7ae11b031c2"];
     
-    SMCoreDataStore *coreDataStore = [self.client coreDataStoreWithManagedObjectModel:self.managedObjectModel];
+    [self.client.session.networkMonitor setNetworkStatusChangeBlockWithCachePolicyReturn:^SMCachePolicy(SMNetworkStatus status) {
+        //if (status == Reachable) {
+            return SMCachePolicyTryCacheOnly;
+       // } else {
+            //return SMCachePolicyTryCacheOnly;
+        //}
+    }];
     
+    
+    SMCoreDataStore *coreDataStore = [self.client coreDataStoreWithManagedObjectModel:self.managedObjectModel];
+    self.coreDataStore = coreDataStore;
     self.managedObjectContext = [coreDataStore contextForCurrentThread];
     
-    if(UseJSON)
-    {
+    if(UseJSON) {
         [[[HeroParser alloc] init] parse];
         [[[Itemparser alloc] init] parse];
     }
     
+    FetchManager * fm = [[FetchManager alloc] init];
+   [fm fetchAll];
     
     NSString *model = [[UIDevice currentDevice] model];
     if ((![model isEqualToString:@"iPhone Simulator"] && ![model isEqualToString:@"iPad Simulator"]) || DEVELOPER_FORCE_WELCOME) {
@@ -65,7 +76,7 @@
 
 - (BOOL)handleOpenURL:(NSURL*)url
 {
-    NSString* scheme = [url scheme];
+    //NSString* scheme = [url scheme];
 //    NSString* prefix = [NSString stringWithFormat:@"fb%@", SHKCONFIG(facebookAppId)];
 //    if ([scheme hasPrefix:prefix])
 //        return [SHKFacebook handleOpenURL:url];
@@ -114,6 +125,13 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
+
+    SMCoreDataStore *coreDataStore = [self.client coreDataStoreWithManagedObjectModel:self.managedObjectModel];
+    [coreDataStore resetCache];
+    //Write date into userdefaults
+    
+    //if(current>24hours after last launch) invalidate cache
+    
     /*
      Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
      */
@@ -159,7 +177,7 @@
     {
         return __managedObjectModel;
     }
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"dota2app" withExtension:@"momd"];
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"Dota2App" withExtension:@"momd"];
     __managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     return __managedObjectModel;
 }

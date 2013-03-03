@@ -9,6 +9,7 @@
 #import "InformationViewController.h"
 #import "DetailViewController.h"
 #import "PagedWelcome.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 #import <QuartzCore/QuartzCore.h>
 
 
@@ -53,25 +54,40 @@
 
     self.scrollView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     self.heroNameLabel.text = hero.name;
+    
+    //
+    
+    UIActivityIndicatorView *spinner = [[UIActivityIndicatorView alloc]
+                                        initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    [spinner setCenter:self.heroImageView.center];
+    [self.heroImageView  addSubview:spinner];
+    [spinner startAnimating];
+    [self.heroImageView setImageWithURL:[NSURL URLWithString:hero.detail_img_url]
+                   placeholderImage:nil
+                          completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType) {
+                              [spinner stopAnimating];
+                              [spinner removeFromSuperview];
+                          }];
 
-    self.heroImageView.image = [UIImage imageWithContentsOfFile:hero.detailImgPath];
+
+    
     self.heroImageView.layer.shadowColor = [UIColor blackColor].CGColor;
     self.heroImageView.layer.shadowOffset = CGSizeMake(2, 2);
     self.heroImageView.layer.shadowOpacity = 1;
     self.heroImageView.layer.shadowRadius = 5.0;
  
     
-    self.strengthPointsLabel.text = [NSString stringWithFormat:@"%@ +%@",hero.strPoints, hero.strGain];
-    self.intelligencePointsLabel.text = [NSString stringWithFormat:@"%@ +%@",hero.intelPoints, hero.intelGain];
-    self.agilityPointsLabel.text = [NSString stringWithFormat:@"%@ +%@",hero.agilPoints, hero.agilGain];
+    self.strengthPointsLabel.text = [NSString stringWithFormat:@"%@ +%@",hero.str_points, hero.str_gain];
+    self.intelligencePointsLabel.text = [NSString stringWithFormat:@"%@ +%@",hero.intel_points, hero.intel_gain];
+    self.agilityPointsLabel.text = [NSString stringWithFormat:@"%@ +%@",hero.agil_points, hero.agil_gain];
     self.damagePointsLabel.text = hero.damage;
     self.movementSpeedPointsLabel.text = [NSString stringWithFormat:@"%@",hero.ms];
     self.armorPointsLabel.text = [NSString stringWithFormat:@"%@",hero.armour];
     self.roleLabel.text = hero.role;
 
     self.sightRangeLabel.text =  hero.sight;
-    self.attackRangeLabel.text =  [NSString stringWithFormat:@"%@",hero.attackRange];
-    self.missileSpeedLabel.text =   [NSString stringWithFormat:@"%@",hero.missileSpeed];
+    self.attackRangeLabel.text =  [NSString stringWithFormat:@"%@",hero.attack_range];
+    self.missileSpeedLabel.text =   [NSString stringWithFormat:@"%@",hero.missile_speed];
     
     self.bioLabel.text = hero.bio;
     //Calculate the expected size based on the font and linebreak mode of your label
